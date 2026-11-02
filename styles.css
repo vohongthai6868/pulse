@@ -320,3 +320,160 @@ a.news-card:hover { border-color: rgba(139,92,246,.45); background: var(--surfac
   .topbar-links a:nth-child(2), .topbar-links a:nth-child(3) { display: none; }
   .hot-badge { display: none; }
 }
+
+/* ===== Giao diện chuẩn web bệnh viện (v2) ===== */
+:root {
+  --brand: #0b4f9c;
+  --brand-dark: #083a74;
+  --brand-red: #d0202a;
+  --bg: #f4f7fb;
+  --text: #13233b;
+  --text-2: #33445e;
+  --muted: #4d5d75;
+  --dim: #66758c;
+  --accent: #0b4f9c;
+  --focus: #0b4f9c;
+  --grad: linear-gradient(180deg, #0d5cb6, #0b4f9c);
+  --grad-text: none;
+  --border: #dfe6ef;
+  --border-strong: #c9d4e2;
+  --shadow: 0 1px 2px rgba(16,40,80,.05), 0 4px 14px rgba(16,40,80,.05);
+}
+body { font-family: 'Be Vietnam Pro', system-ui, sans-serif; font-size: 15px; }
+h1, h2, h3, .brand, .footer-brand-name, .hero-stats strong { font-family: 'Be Vietnam Pro', system-ui, sans-serif; }
+.container { max-width: 1180px; }
+
+/* Thanh trên cùng */
+.topbar { background: var(--brand-dark); border-bottom: none; }
+.topbar-inner { padding-top: 8px; padding-bottom: 8px; }
+.hot, .hot-title { color: #dce8f7; }
+.hot:hover .hot-title { color: #fff; }
+.hot-badge { background: var(--brand-red); color: #fff; border-radius: 4px; }
+.topbar-links a { color: #dce8f7; }
+.topbar-links a:hover { color: #fff; }
+.tel-115 { color: #fff !important; background: var(--brand-red); padding: 2px 10px; border-radius: 4px; }
+
+/* Header */
+.site-header { background: #fff; backdrop-filter: none; border-bottom: 1px solid var(--border); box-shadow: 0 2px 10px rgba(16,40,80,.06); }
+.header-inner { padding-top: 12px; padding-bottom: 12px; gap: 28px; }
+.brand { gap: 14px; }
+.brand-logo { height: 46px; }
+.brand-text { font-size: 17px; font-weight: 700; color: var(--brand); padding-left: 14px; border-left: 2px solid var(--border); line-height: 1.2; }
+.main-nav { gap: 4px; }
+.main-nav a { padding: 10px 14px; border-radius: 6px; font-size: 14.5px; font-weight: 600; color: var(--text-2); text-transform: none; }
+.main-nav a:hover { color: var(--brand); background: #eef4fb; }
+.btn-primary { border-radius: 8px; background: var(--brand); }
+.btn-primary:hover { background: var(--brand-dark); filter: none; }
+.icon-btn { border-color: var(--border-strong); color: var(--text-2); }
+.pill-btn { border-radius: 8px; }
+.pill-btn.big { border: 1.5px solid var(--brand); color: var(--brand); font-weight: 700; }
+.pill-btn.big:hover { background: #eef4fb; }
+
+/* Hero: dải xanh bệnh viện */
+.hero { position: relative; margin-top: 0; max-width: none; padding: 64px max(32px, calc((100% - 1180px) / 2 + 32px)) 72px; background: linear-gradient(120deg, #0b4f9c 0%, #0d5cb6 55%, #1a6fcb 100%); color: #fff; overflow: hidden; }
+.hero::after { content: ""; position: absolute; right: -120px; bottom: -160px; width: 520px; height: 520px; border-radius: 50%; border: 60px solid rgba(255,255,255,.06); pointer-events: none; }
+.hero .eyebrow { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.28); color: #fff; letter-spacing: .08em; }
+.hero .eyebrow .dot { background: var(--brand-red); }
+.hero h1 { color: #fff; font-size: 46px; font-weight: 800; line-height: 1.15; letter-spacing: -0.01em; }
+.hero .grad-text { background: none; color: #ffd65a; -webkit-text-fill-color: #ffd65a; }
+.hero .lead { color: #dce8f7; font-size: 17px; max-width: 520px; }
+.hero .btn-primary { background: #fff; color: var(--brand); }
+.hero .btn-primary:hover { background: #eef4fb; }
+.hero .pill-btn.big { border-color: rgba(255,255,255,.7); color: #fff; background: transparent; }
+.hero .pill-btn.big:hover { background: rgba(255,255,255,.1); }
+.hero-card { border: none; box-shadow: 0 20px 50px rgba(3,20,50,.30); border-radius: 16px; position: relative; z-index: 1; }
+.hero-stats li { background: #f1f6fc; border-radius: 10px; }
+.hero-stats strong { color: var(--brand); font-weight: 800; }
+
+/* Tiêu đề mục */
+.kicker { display: block; font-size: 12px; font-weight: 700; letter-spacing: .12em; color: var(--brand-red); margin-bottom: 6px; }
+.section-head { flex-wrap: wrap; align-items: flex-end; row-gap: 0; }
+.section-head .kicker { flex-basis: 100%; }
+.section-head h2, .quick-title { font-size: 26px; font-weight: 800; color: var(--text); position: relative; }
+.section-head h2::after, .quick-title::after { content: ""; display: block; width: 44px; height: 3px; background: var(--brand); border-radius: 2px; margin-top: 10px; }
+.block { padding-top: 64px; gap: 22px; }
+.block-note { margin-top: 0; }
+
+/* Tra cứu nhanh: nổi lên trên dải hero */
+.quick { position: relative; z-index: 2; margin-top: -36px; padding-top: 0; }
+.quick-title { display: none; }
+.quick > .kicker { display: none; }
+.quick-grid { background: #fff; border: 1px solid var(--border); box-shadow: 0 10px 30px rgba(16,40,80,.10); border-radius: 14px; padding: 8px; gap: 0; }
+.quick-item { border: none; border-radius: 10px; background: transparent; padding: 18px; box-shadow: none; }
+.quick-item + .quick-item { border-left: 1px solid var(--border); border-radius: 0; }
+.quick-item:hover { background: #f4f8fd; }
+.quick-icon { width: 48px; height: 48px; border-radius: 50%; color: var(--brand) !important; background: #e8f1fb !important; }
+.quick-name { font-size: 15px; color: var(--text); }
+
+/* Hoạt động chuyên môn */
+.tool-card { padding: 22px; border-radius: 12px; border: 1px solid var(--border); gap: 6px; }
+.tool-card:hover { border-color: var(--brand); background: #fff; box-shadow: 0 8px 22px rgba(16,40,80,.10); }
+.tool-swatch { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--brand); background: #e8f1fb; }
+.tool-name { font-size: 16px; color: var(--text); }
+.tool-desc { font-size: 14px; }
+.dlg-swatch { display: flex; align-items: center; justify-content: center; color: var(--brand); background: #e8f1fb; }
+
+/* Bảng nhân lực */
+.price-wrap { border-radius: 12px; border-color: var(--border); }
+.price-table thead th { background: var(--brand); color: #fff; letter-spacing: .05em; }
+.price-table tbody tr:nth-child(even) { background: #f7fafd; }
+.price-table tbody tr:first-child th, .price-table tbody tr:first-child td { font-weight: 800; color: var(--brand); }
+.price-table .num { font-weight: 600; }
+
+/* Tin tức */
+.tabs { gap: 6px; }
+.tab { border-radius: 6px; font-weight: 600; color: var(--text-2); border-color: var(--border-strong); background: #fff; }
+.tab:not([aria-pressed="true"]) { color: var(--text-2) !important; }
+.tab[aria-pressed="true"] { color: #fff; }
+.news-list { gap: 14px; }
+.news-card { border-radius: 12px; padding: 16px; background: #fff; align-items: flex-start; }
+a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #fff; }
+.news-thumb { width: 72px; height: 72px; border-radius: 10px; background: color-mix(in srgb, var(--c) 10%, #fff); }
+.news-title { font-size: 16px; color: var(--text); }
+.news-summary { font-size: 14px; color: var(--muted); }
+.tag { border-radius: 4px; }
+.side-card { border-radius: 12px; padding: 0; overflow: hidden; }
+.side-title { margin: 0; padding: 14px 20px; background: var(--brand); color: #fff; font-size: 15px; font-weight: 700; }
+.notice-list, .topic-list { padding: 14px 20px 18px; }
+.notice-list li { padding-left: 14px; border-left: 3px solid var(--brand-red); border-bottom: none; margin-bottom: 14px; padding-top: 0; padding-bottom: 0; }
+.notice-list li:last-child { margin-bottom: 0; }
+.topic-list { padding: 8px 12px 12px; }
+
+/* Chân trang */
+.site-footer { background: var(--brand-dark); color: #c9d8ec; border-top: 4px solid var(--brand-red); margin-top: 64px; }
+.footer-col h3 { color: #fff; font-size: 15px; text-transform: uppercase; letter-spacing: .06em; }
+.footer-col a, .footer-about p { color: #c9d8ec; }
+.footer-col a:hover { color: #fff; }
+.footer-brand-name { color: #fff; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.12); color: #9fb4d0; }
+
+/* Trang con */
+.page-title { font-size: 34px; font-weight: 800; color: var(--brand); }
+.page-section h2 { font-size: 19px; padding-left: 12px; border-left: 4px solid var(--brand-red); }
+.back-link { color: var(--brand); }
+
+/* Điện thoại */
+@media (max-width: 960px) {
+  .hero { padding: 40px 32px 64px; }
+  .hero h1 { font-size: 36px; }
+}
+@media (max-width: 640px) {
+  .hero { flex-direction: column; padding: 28px 20px 60px; gap: 24px; }
+  .hero h1 { font-size: 30px; }
+  .hero-art { order: 2; }
+  .brand-logo { height: 34px; }
+  .brand-text { font-size: 14px; padding-left: 10px; }
+  .quick { margin-top: -32px; }
+  .quick-grid { grid-template-columns: 1fr 1fr; padding: 6px; }
+  .quick-item { padding: 14px 10px; }
+  .quick-item + .quick-item { border-left: none; }
+  .quick-item:nth-child(even) { border-left: 1px solid var(--border); }
+  .quick-item:nth-child(n+3) { border-top: 1px solid var(--border); }
+  .section-head h2 { font-size: 22px; }
+  .tools-grid { grid-template-columns: 1fr; }
+  .mobile-nav a { color: var(--text-2); }
+  .topbar-links a:nth-child(2) { display: inline; }
+}
+/* Nền tối giữ nguyên dải xanh và chân trang */
+:root[data-theme="dark"] .site-header { background: #101018; }
+:root[data-theme="dark"] .quick-grid, :root[data-theme="dark"] .news-card, :root[data-theme="dark"] .tool-card { background: var(--surface); }

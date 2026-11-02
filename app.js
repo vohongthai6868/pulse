@@ -49,7 +49,7 @@
     var box = $("tabs");
     box.textContent = "";
     ["ALL"].concat(Object.keys(DATA.categories)).forEach(function (key) {
-      var color = key === "ALL" ? "#0b5cad" : DATA.categories[key].color;
+      var color = key === "ALL" ? "#0b4f9c" : DATA.categories[key].color;
       var label = key === "ALL" ? t("allTab") : DATA.categories[key].label[state.lang];
       var b = el("button", { class: "tab", type: "button", style: "--c:" + color, "aria-pressed": String(state.category === key), text: label });
       b.addEventListener("click", function () { state.category = key; renderTabs(); renderNews(); });
@@ -71,7 +71,7 @@
   function newsCard(n) {
       var cat = DATA.categories[n.category];
       var thumb = el("div", { class: "news-thumb", "aria-hidden": "true" });
-      thumb.innerHTML = BOLT;
+      thumb.innerHTML = cat.icon ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + cat.icon + '</svg>' : BOLT;
       var body = el("div", { class: "news-body" }, [
         el("div", { class: "news-meta" }, [
           el("span", { class: "tag", text: cat.label[state.lang] }),
@@ -159,7 +159,7 @@
     shown.forEach(function (tool) {
       var card = el("button", { class: "tool-card", type: "button" }, [
         el("div", { class: "tool-card-top" }, [
-          el("div", { class: "tool-swatch", style: "background:" + tool.gradient }),
+          (function () { var sw = el("div", { class: "tool-swatch" }); if (tool.icon) sw.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + tool.icon + '</svg>'; else sw.setAttribute("style", "background:" + tool.gradient); return sw; })(),
           tool.tag ? el("span", { class: "tool-tag", style: "--c:" + tool.tag.color, text: tool.tag[state.lang] }) : null,
         ]),
         el("div", { class: "tool-name", text: tool.name }),
@@ -176,7 +176,9 @@
   function fillDialog() {
     var tool = DATA.tools.find(function (x) { return x.id === state.toolId; });
     if (!tool) return;
-    $("dlg-swatch").setAttribute("style", "background:" + tool.gradient);
+    var dsw = $("dlg-swatch");
+    if (tool.icon) { dsw.removeAttribute("style"); dsw.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + tool.icon + '</svg>'; }
+    else dsw.setAttribute("style", "background:" + tool.gradient);
     $("dlg-name").textContent = tool.name;
     $("dlg-desc").textContent = tool.description[state.lang];
     $("dlg-detail").textContent = tool.detail[state.lang];

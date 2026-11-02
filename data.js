@@ -3,7 +3,7 @@
 window.PULSE_DATA = {
  "categories": {
   "HOATDONG": {
-   "color": "#0ea5e9",
+   "color": "#0b5cad",
    "label": {
     "en": "Hoạt động",
     "vi": "Hoạt động"
@@ -11,10 +11,11 @@ window.PULSE_DATA = {
    "intro": {
     "en": "Hoạt động chuyên môn, giám sát và phối hợp của Phòng Điều dưỡng.",
     "vi": "Hoạt động chuyên môn, giám sát và phối hợp của Phòng Điều dưỡng."
-   }
+   },
+   "icon": "<path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/>"
   },
   "DAOTAO": {
-   "color": "#7c3aed",
+   "color": "#6d28d9",
    "label": {
     "en": "Đào tạo – Hội thảo",
     "vi": "Đào tạo – Hội thảo"
@@ -22,10 +23,11 @@ window.PULSE_DATA = {
    "intro": {
     "en": "Tập huấn, sinh hoạt khoa học, thi tay nghề và đào tạo ngoài viện.",
     "vi": "Tập huấn, sinh hoạt khoa học, thi tay nghề và đào tạo ngoài viện."
-   }
+   },
+   "icon": "<path d=\"M22 10 12 5 2 10l10 5 10-5z\"/><path d=\"M6 12v5c3 2 9 2 12 0v-5\"/>"
   },
   "CHATLUONG": {
-   "color": "#16a34a",
+   "color": "#15803d",
    "label": {
     "en": "Chất lượng",
     "vi": "Chất lượng"
@@ -33,10 +35,11 @@ window.PULSE_DATA = {
    "intro": {
     "en": "Tiêu chí chất lượng, chỉ số chăm sóc và an toàn người bệnh.",
     "vi": "Tiêu chí chất lượng, chỉ số chăm sóc và an toàn người bệnh."
-   }
+   },
+   "icon": "<circle cx=\"12\" cy=\"8\" r=\"6\"/><path d=\"M15.5 13.5 17 22l-5-3-5 3 1.5-8.5\"/>"
   },
   "SUCKHOE": {
-   "color": "#f59e0b",
+   "color": "#c2410c",
    "label": {
     "en": "Kiến thức sức khỏe",
     "vi": "Kiến thức sức khỏe"
@@ -44,7 +47,8 @@ window.PULSE_DATA = {
    "intro": {
     "en": "Thông tin tư vấn, giáo dục sức khỏe cho người bệnh và người nhà.",
     "vi": "Thông tin tư vấn, giáo dục sức khỏe cho người bệnh và người nhà."
-   }
+   },
+   "icon": "<path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z\"/>"
   }
  },
  "news": [
@@ -179,7 +183,8 @@ window.PULSE_DATA = {
    "detail": {
     "en": "Ban hành, cập nhật bộ quy trình kỹ thuật điều dưỡng cơ bản và quy trình chăm sóc chuyên khoa; thư viện tài liệu chuyên môn dùng chung toàn viện.",
     "vi": "Ban hành, cập nhật bộ quy trình kỹ thuật điều dưỡng cơ bản và quy trình chăm sóc chuyên khoa; thư viện tài liệu chuyên môn dùng chung toàn viện."
-   }
+   },
+   "icon": "<path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"8\" y1=\"13\" x2=\"16\" y2=\"13\"/><line x1=\"8\" y1=\"17\" x2=\"13\" y2=\"17\"/>"
   },
   {
    "id": "giamsat",
@@ -194,7 +199,8 @@ window.PULSE_DATA = {
    "detail": {
     "en": "Giám sát điều dưỡng hằng tuần tại các khoa lâm sàng, cận lâm sàng; kiểm tra tuân thủ quy trình bằng phiếu điện tử có câu hỏi tình huống.",
     "vi": "Giám sát điều dưỡng hằng tuần tại các khoa lâm sàng, cận lâm sàng; kiểm tra tuân thủ quy trình bằng phiếu điện tử có câu hỏi tình huống."
-   }
+   },
+   "icon": "<path d=\"M9 11l3 3L22 4\"/><path d=\"M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11\"/>"
   },
   {
    "id": "binhbenhan",
@@ -209,7 +215,8 @@ window.PULSE_DATA = {
    "detail": {
     "en": "Bình bệnh án phần chăm sóc điều dưỡng, hộ sinh cấp bệnh viện hằng tháng và báo cáo chuyên đề.",
     "vi": "Bình bệnh án phần chăm sóc điều dưỡng, hộ sinh cấp bệnh viện hằng tháng và báo cáo chuyên đề."
-   }
+   },
+   "icon": "<path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/><rect x=\"8\" y=\"2\" width=\"8\" height=\"4\" rx=\"1\"/><path d=\"M9 14h6M12 11v6\"/>"
   },
   {
    "id": "isbar",
@@ -224,7 +231,8 @@ window.PULSE_DATA = {
    "detail": {
     "en": "Bàn giao người bệnh theo mô hình ISBAR; xác định chính xác người bệnh trước khi dùng thuốc, truyền máu, phẫu thuật, thủ thuật.",
     "vi": "Bàn giao người bệnh theo mô hình ISBAR; xác định chính xác người bệnh trước khi dùng thuốc, truyền máu, phẫu thuật, thủ thuật."
-   }
+   },
+   "icon": "<path d=\"M17 1l4 4-4 4\"/><path d=\"M3 11V9a4 4 0 0 1 4-4h14\"/><path d=\"M7 23l-4-4 4-4\"/><path d=\"M21 13v2a4 4 0 0 1-4 4H3\"/>"
   },
   {
    "id": "gdsk",
@@ -239,7 +247,8 @@ window.PULSE_DATA = {
    "detail": {
     "en": "Tư vấn, giáo dục sức khỏe cho người bệnh và người nhà bằng tờ bướm, poster theo bệnh và theo khoa (đái tháo đường, tăng huyết áp, lao phổi, sốt xuất huyết, nuôi con bằng sữa mẹ...).",
     "vi": "Tư vấn, giáo dục sức khỏe cho người bệnh và người nhà bằng tờ bướm, poster theo bệnh và theo khoa (đái tháo đường, tăng huyết áp, lao phổi, sốt xuất huyết, nuôi con bằng sữa mẹ...)."
-   }
+   },
+   "icon": "<path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/><path d=\"M12 7v6M9 10h6\"/>"
   },
   {
    "id": "daotao",
@@ -254,7 +263,8 @@ window.PULSE_DATA = {
    "detail": {
     "en": "Tổ chức đào tạo liên tục, sinh hoạt khoa học hằng quý, thi tay nghề hằng năm; cử điều dưỡng học tập tại bệnh viện tuyến trên.",
     "vi": "Tổ chức đào tạo liên tục, sinh hoạt khoa học hằng quý, thi tay nghề hằng năm; cử điều dưỡng học tập tại bệnh viện tuyến trên."
-   }
+   },
+   "icon": "<path d=\"M22 10 12 5 2 10l10 5 10-5z\"/><path d=\"M6 12v5c3 2 9 2 12 0v-5\"/>"
   }
  ],
  "pricingUpdated": "2026-01-07",
@@ -617,8 +627,8 @@ window.PULSE_DATA = {
    "heroEyebrow": "BỆNH VIỆN ĐA KHOA NHẬT TÂN",
    "heroLine1": "Phòng Điều dưỡng",
    "heroPre": "Chăm sóc",
-   "heroHighlight": "an toàn,",
-   "heroPost": "tận tâm.",
+   "heroHighlight": "an toàn, tận tâm",
+   "heroPost": "",
    "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
    "emailLabel": "",
    "emailPlaceholder": "",
@@ -696,8 +706,8 @@ window.PULSE_DATA = {
    "heroEyebrow": "BỆNH VIỆN ĐA KHOA NHẬT TÂN",
    "heroLine1": "Phòng Điều dưỡng",
    "heroPre": "Chăm sóc",
-   "heroHighlight": "an toàn,",
-   "heroPost": "tận tâm.",
+   "heroHighlight": "an toàn, tận tâm",
+   "heroPost": "",
    "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
    "emailLabel": "",
    "emailPlaceholder": "",
