@@ -49,7 +49,7 @@
     var box = $("tabs");
     box.textContent = "";
     ["ALL"].concat(Object.keys(DATA.categories)).forEach(function (key) {
-      var color = key === "ALL" ? "#a855f7" : DATA.categories[key].color;
+      var color = key === "ALL" ? "#0b5cad" : DATA.categories[key].color;
       var label = key === "ALL" ? t("allTab") : DATA.categories[key].label[state.lang];
       var b = el("button", { class: "tab", type: "button", style: "--c:" + color, "aria-pressed": String(state.category === key), text: label });
       b.addEventListener("click", function () { state.category = key; renderTabs(); renderNews(); });
@@ -98,6 +98,7 @@
   }
 
   function money(v) {
+    if (typeof v === "string") return v;
     var txt = v < 1 ? v.toFixed(2) : String(v);
     return "$" + (state.lang === "vi" ? txt.replace(".", ",") : txt);
   }
@@ -106,16 +107,18 @@
     var body = $("price-body");
     body.textContent = "";
     (DATA.pricing || []).forEach(function (r) {
-      var src = el("a", { href: r.url, target: "_blank", rel: "noopener noreferrer", class: "price-src", text: t("priceSource") });
-      var noteCell = el("td", { class: "price-note" }, [r.note ? document.createTextNode(r.note[state.lang] + " · ") : null, src]);
+      var src = r.url ? el("a", { href: r.url, target: "_blank", rel: "noopener noreferrer", class: "price-src", text: t("priceSource") }) : null;
+      var noteCell = el("td", { class: "price-note" }, [r.note ? document.createTextNode(r.note[state.lang] + (src ? " · " : "")) : null, src]);
       body.appendChild(el("tr", {}, [
         el("th", { scope: "row" }, [document.createTextNode(r.model), el("span", { class: "maker-sm", text: r.maker })]),
         el("td", { class: "col-maker", text: r.maker }),
         el("td", { class: "num", "data-label": t("priceIn"), text: money(r.input) }),
         el("td", { class: "num", "data-label": t("priceOut"), text: money(r.output) }),
-        noteCell,
+        t("priceNoteCol") ? noteCell : null,
       ]));
     });
+    var noteHead = document.querySelector(".price-table thead th:last-child");
+    if (noteHead) noteHead.hidden = !t("priceNoteCol");
     $("price-note").textContent = t("priceNote") + " " + formatDate(DATA.pricingUpdated) + ".";
   }
 
@@ -298,7 +301,7 @@
     var list = el("div", { class: "news-list page-news" });
     DATA.news.filter(function (n) { return n.category === key; }).forEach(function (n) { list.appendChild(newsCard(n)); });
     pageView.appendChild(list);
-    document.title = cat.label[state.lang] + " — Pulse";
+    document.title = cat.label[state.lang] + " — Phòng Điều dưỡng BV Nhật Tân";
   }
 
   function renderPage(name) {
@@ -319,7 +322,7 @@
       }
       pageView.appendChild(block);
     });
-    document.title = page.title[state.lang] + " — Pulse";
+    document.title = page.title[state.lang] + " — Phòng Điều dưỡng BV Nhật Tân";
   }
 
   function route(scroll) {

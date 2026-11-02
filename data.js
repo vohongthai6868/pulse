@@ -1,238 +1,736 @@
-// Nội dung website. Tin tức và công cụ lấy từ các nguồn công khai (xem "url" của từng mục), cập nhật 02/11/2026.
+// Nội dung web Phòng Điều dưỡng, BV Đa khoa Nhật Tân. Sửa nội dung tại đây (tiếng Việt).
+// Không đưa thông tin định danh người bệnh lên trang.
 window.PULSE_DATA = {
-  categories: {
-    MODELS:   { color: "#22d3ee", label: { en: "Models",   vi: "Mô hình" }, intro: { en: "New model launches, updates and prices from the major AI labs.", vi: "Mô hình AI mới, bản cập nhật và giá của các hãng lớn." } },
-    FUNDING:  { color: "#a855f7", label: { en: "Funding & deals", vi: "Gọi vốn & thương vụ" }, intro: { en: "Funding rounds, acquisitions, IPOs and other deals.", vi: "Gọi vốn, mua bán, sáp nhập, IPO và các thương vụ khác." } },
-    RESEARCH: { color: "#f472b6", label: { en: "Research", vi: "Nghiên cứu" }, intro: { en: "Benchmarks, papers and research results.", vi: "Bộ đánh giá, công bố và kết quả nghiên cứu." } },
-    PRODUCT:  { color: "#fbbf24", label: { en: "Product",  vi: "Sản phẩm" }, intro: { en: "New features and products you can use today.", vi: "Tính năng và sản phẩm mới có thể dùng ngay." } },
+ "categories": {
+  "HOATDONG": {
+   "color": "#0ea5e9",
+   "label": {
+    "en": "Hoạt động",
+    "vi": "Hoạt động"
+   },
+   "intro": {
+    "en": "Hoạt động chuyên môn, giám sát và phối hợp của Phòng Điều dưỡng.",
+    "vi": "Hoạt động chuyên môn, giám sát và phối hợp của Phòng Điều dưỡng."
+   }
   },
-
-  // Tin tức: "date" (YYYY-MM-DD) có thể bỏ trống. "url" là bài viết gốc. category: MODELS | FUNDING | RESEARCH | PRODUCT.
-  news: [
-    { category: "MODELS", date: "2026-10-29", url: "https://mistral.ai/news/mistral-large-4-oss/",
-      title: { en: "Mistral releases open weights for its 1-trillion-parameter Large 4", vi: "Mistral công bố trọng số mở của Large 4, mô hình 1.000 tỷ tham số" },
-      summary: { en: "The weights are on Hugging Face under a modified MIT license; companies selling it as a hosted service need a separate commercial license.", vi: "Trọng số có trên Hugging Face theo giấy phép MIT sửa đổi; doanh nghiệp bán dịch vụ chạy mô hình cần giấy phép thương mại riêng." } },
-    { category: "FUNDING", date: "2026-10-26", url: "https://nairametrics.com/2026/10/26/anthropic-files-for-ipo-plans-nasdaq-listing-under-ticker-ant/",
-      title: { en: "Anthropic files to go public on Nasdaq under the ticker ANT", vi: "Anthropic nộp hồ sơ IPO, dự kiến niêm yết trên Nasdaq với mã ANT" },
-      summary: { en: "The S-1 shows $16.3 billion in revenue for the first half of 2026, up from $1.2 billion a year earlier. Share count and price range are not yet set.", vi: "Hồ sơ S-1 cho thấy doanh thu nửa đầu năm 2026 đạt 16,3 tỷ USD, so với 1,2 tỷ USD cùng kỳ năm trước. Số cổ phiếu và khoảng giá chưa được công bố." } },
-    { category: "MODELS", date: "2026-10-26", url: "https://openai.com/index/introducing-gpt-6-1-terra/",
-      title: { en: "OpenAI ships GPT-6.1 Terra for computer use at half the price", vi: "OpenAI ra mắt GPT-6.1 Terra chuyên thao tác máy tính, giá giảm một nửa" },
-      summary: { en: "The mid-size model replaces GPT-5.6 Terra in ChatGPT Work, Codex and the API at $1 input / $5 output per million tokens, about 50% cheaper.", vi: "Mô hình cỡ trung thay GPT-5.6 Terra trong ChatGPT Work, Codex và API, giá $1 (đầu vào) / $5 (đầu ra) mỗi triệu token, rẻ hơn khoảng 50%." } },
-    { category: "MODELS", date: "2026-10-13", url: "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
-      title: { en: "Google makes Gemini 4 Argon generally available", vi: "Google mở rộng Gemini 4 Argon cho mọi người dùng trả phí" },
-      summary: { en: "The flagship reasoning model has a 1-million-token context. Intro API price is $2 / $10 per million tokens until November 30, then rises.", vi: "Mô hình suy luận chủ lực có ngữ cảnh 1 triệu token. Giá API ưu đãi $2 / $10 mỗi triệu token đến 30/11, sau đó tăng." } },
-    { category: "FUNDING", date: "2026-10-12", url: "https://thenextweb.com/news/character-ai-files-for-bankruptcy-as-disney-bids-20m-for-some-assets",
-      title: { en: "Character.AI files for Chapter 11 as Disney bids $20 million", vi: "Character.AI nộp đơn phá sản theo Chương 11, Disney trả giá 20 triệu USD" },
-      summary: { en: "Disney's opening bid is for a non-exclusive license to some IP. The app keeps running during the sale, expected to close by early December.", vi: "Giá mở đầu của Disney là để mua quyền sử dụng không độc quyền một phần tài sản trí tuệ. Ứng dụng vẫn chạy trong lúc bán, dự kiến xong trước đầu tháng 12." } },
-    { category: "MODELS", date: "2026-10-07", url: "https://www.anthropic.com/claude-haiku-5-5",
-      title: { en: "Anthropic launches Claude Haiku 5.5, its cheapest small model", vi: "Anthropic ra mắt Claude Haiku 5.5, mô hình nhỏ rẻ nhất từ trước tới nay" },
-      summary: { en: "Priced at $0.10 / $0.50 per million tokens for prompts up to 100k tokens, it costs about 75% less on average than Haiku 4.5.", vi: "Giá $0,10 / $0,50 mỗi triệu token cho câu lệnh đến 100 nghìn token, trung bình rẻ hơn Haiku 4.5 khoảng 75%." } },
-    { category: "MODELS", date: "2026-09-22", url: "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
-      title: { en: "OpenAI launches GPT-6 Sol and Luna and halves API prices", vi: "OpenAI ra mắt GPT-6 Sol và Luna, giảm một nửa giá API" },
-      summary: { en: "Sol is priced at $2 input / $10 output per million tokens and Luna at $0.10 / $0.50, roughly half of the previous prices.", vi: "Sol có giá $2 (đầu vào) / $10 (đầu ra) mỗi triệu token, Luna là $0,10 / $0,50, tức khoảng một nửa mức giá trước đó." } },
-    { category: "MODELS", date: "2026-09-22", url: "https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/",
-      title: { en: "Anthropic releases Claude Opus 5.5, cheaper and faster", vi: "Anthropic phát hành Claude Opus 5.5, rẻ hơn và nhanh hơn" },
-      summary: { en: "Typical workloads cost about 40% less than on Opus 5, and output speed is up by more than 30%.", vi: "Chi phí cho công việc thông thường thấp hơn khoảng 40% so với Opus 5, tốc độ xuất kết quả nhanh hơn hơn 30%." } },
-    { category: "FUNDING", date: "2026-09-08", url: "https://techcrunch.com/2026/09/08/cognition-hits-48b-valuation-signaling-investors-believe-ai-coding-is-far-from-a-winner-take-all-market/",
-      title: { en: "Coding-agent maker Cognition raises $2 billion at a $48 billion valuation", vi: "Cognition, hãng làm agent lập trình, gọi 2 tỷ USD với định giá 48 tỷ USD" },
-      summary: { en: "The company behind Devin nearly doubled its valuation in four months as investors bet AI coding will not be a winner-take-all market.", vi: "Công ty đứng sau Devin gần như nhân đôi định giá sau bốn tháng khi nhà đầu tư đặt cược rằng mảng lập trình bằng AI sẽ không có người thắng độc chiếm." } },
-    { category: "FUNDING", date: "2026-09-08", url: "https://techcrunch.com/2026/09/08/mistral-raises-e3b-as-sovereign-ai-becomes-big-business/",
-      title: { en: "Mistral raises €3 billion in Europe's largest tech equity round", vi: "Mistral gọi 3 tỷ euro trong vòng cổ phần lớn nhất của công nghệ châu Âu" },
-      summary: { en: "The round values the French AI company at more than €21 billion and was led by Samsung.", vi: "Vòng gọi vốn định giá công ty AI của Pháp trên 21 tỷ euro và do Samsung dẫn đầu." } },
-    { category: "PRODUCT", date: "2026-09-08", url: "https://openai.com/index/introducing-chatgpt-images-2-5/",
-      title: { en: "ChatGPT Images 2.5 lets you guide an image with a quick sketch", vi: "ChatGPT Images 2.5 cho phép bạn dẫn dắt ảnh bằng một nét vẽ phác" },
-      summary: { en: "The update adds a Sketch tool, up to 50% lower latency, and edits that change only what you ask for.", vi: "Bản cập nhật có công cụ Sketch, độ trễ giảm tới 50% và chỉnh sửa chỉ thay đổi đúng phần bạn yêu cầu." } },
-    { category: "FUNDING", date: "2026-09-02", url: "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face/",
-      title: { en: "Nvidia agrees to buy Hugging Face for about $12.9 billion", vi: "Nvidia đồng ý mua Hugging Face với giá khoảng 12,9 tỷ USD" },
-      summary: { en: "Hugging Face is meant to stay an open platform, and the deal is expected to close in the first half of 2027.", vi: "Hugging Face được cam kết vẫn là nền tảng mở, và thương vụ dự kiến hoàn tất trong nửa đầu năm 2027." } },
-    { category: "RESEARCH", url: "https://www.tbench.ai/news/terminal-bench-3-0",
-      title: { en: "Terminal-Bench 3.0: agents still solve only about a third of hard terminal tasks", vi: "Terminal-Bench 3.0: agent vẫn chỉ giải được khoảng một phần ba tác vụ terminal khó" },
-      summary: { en: "The community-built benchmark has 74 tasks across 7 domains, and the best models score around 34%.", vi: "Bộ đánh giá do cộng đồng xây dựng gồm 74 tác vụ thuộc 7 lĩnh vực, mô hình tốt nhất đạt khoảng 34%." } },
-  ],
-
-  // Công cụ: "url" là trang chính thức. tag: null hoặc { en, vi, color }.
-  tools: [
-    { id: "chatgpt", name: "ChatGPT", url: "https://chatgpt.com", gradient: "linear-gradient(135deg,#4ade80,#22d3ee)",
-      tag: { en: "NEW", vi: "MỚI", color: "#4ade80" },
-      description: { en: "AI assistant with image generation", vi: "Trợ lý AI có tạo ảnh" },
-      detail: { en: "OpenAI's assistant for writing, analysis and coding. The Images 2.5 update adds a Sketch tool that turns rough drawings into finished images.", vi: "Trợ lý AI của OpenAI cho viết lách, phân tích và lập trình. Bản Images 2.5 có thêm công cụ Sketch, biến nét vẽ phác thành ảnh hoàn chỉnh." } },
-    { id: "claude", name: "Claude", url: "https://claude.ai", gradient: "linear-gradient(135deg,#f472b6,#fbbf24)",
-      tag: { en: "NEW", vi: "MỚI", color: "#4ade80" },
-      description: { en: "AI assistant from Anthropic", vi: "Trợ lý AI của Anthropic" },
-      detail: { en: "Anthropic's assistant. The new Opus 5.5 model is also available on AWS, Google Cloud and Microsoft Azure.", vi: "Trợ lý AI của Anthropic. Mô hình Opus 5.5 mới cũng có mặt trên AWS, Google Cloud và Microsoft Azure." } },
-    { id: "devin", name: "Devin", url: "https://devin.ai", gradient: "linear-gradient(135deg,#8b5cf6,#22d3ee)",
-      tag: null,
-      description: { en: "Autonomous software engineer", vi: "Kỹ sư phần mềm tự động" },
-      detail: { en: "An agent from Cognition that can plan, write, test and deploy code with limited human supervision.", vi: "Agent của Cognition có thể lập kế hoạch, viết, kiểm thử và triển khai code với sự giám sát hạn chế của con người." } },
-    { id: "huggingface", name: "Hugging Face", url: "https://huggingface.co", gradient: "linear-gradient(135deg,#fbbf24,#f472b6)",
-      tag: null,
-      description: { en: "Open platform for models and datasets", vi: "Nền tảng mở cho mô hình và bộ dữ liệu" },
-      detail: { en: "Hosts more than 3 million models and 500,000 datasets. Nvidia has agreed to acquire it, and it is meant to remain open.", vi: "Lưu trữ hơn 3 triệu mô hình và 500.000 bộ dữ liệu. Nvidia đã đồng ý mua lại và nền tảng được cam kết vẫn mở." } },
-    { id: "lechat", name: "Le Chat", url: "https://chat.mistral.ai", gradient: "linear-gradient(135deg,#818cf8,#8b5cf6)",
-      tag: null,
-      description: { en: "AI assistant from Mistral", vi: "Trợ lý AI của Mistral" },
-      detail: { en: "Mistral's assistant. Its maker has just raised €3 billion to expand computing capacity and international operations.", vi: "Trợ lý AI của Mistral. Hãng vừa gọi 3 tỷ euro để mở rộng năng lực tính toán và hoạt động quốc tế." } },
-    { id: "gemini", name: "Gemini", url: "https://gemini.google.com", gradient: "linear-gradient(135deg,#22d3ee,#818cf8)",
-      tag: null,
-      description: { en: "AI assistant from Google", vi: "Trợ lý AI của Google" },
-      detail: { en: "Google's assistant. Gemini 4 Argon, Google's new flagship reasoning model, became generally available on October 13.", vi: "Trợ lý AI của Google. Gemini 4 Argon, mô hình suy luận chủ lực mới của Google, mở rộng cho người dùng trả phí từ ngày 13/10." } },
-  ],
-
-  // Bảng giá API (USD cho mỗi 1 triệu token). Giá tham khảo, kiểm tra lại trên trang của hãng. "url" là nguồn.
-  pricingUpdated: "2026-11-02",
-  pricing: [
-    { model: "GPT-6 Sol", maker: "OpenAI", input: 2, output: 10, url: "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/" },
-    { model: "GPT-6.1 Terra", maker: "OpenAI", input: 1, output: 5, url: "https://openai.com/index/introducing-gpt-6-1-terra/",
-      note: { en: "Computer use, half the price of GPT-5.6 Terra", vi: "Thao tác máy tính, rẻ bằng nửa GPT-5.6 Terra" } },
-    { model: "GPT-6 Luna", maker: "OpenAI", input: 0.10, output: 0.50, url: "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/" },
-    { model: "Claude Sonnet 5.5", maker: "Anthropic", input: 2, output: 10, url: "https://www.anthropic.com/claude-haiku-5-5" },
-    { model: "Claude Haiku 5.5", maker: "Anthropic", input: 0.10, output: 0.50, url: "https://www.anthropic.com/claude-haiku-5-5",
-      note: { en: "Prompts up to 100k tokens; $0.50 / $2.50 above that", vi: "Câu lệnh đến 100 nghìn token; trên mức đó $0,50 / $2,50" } },
-    { model: "Gemini 4 Argon", maker: "Google", input: 2, output: 10, url: "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
-      note: { en: "Intro price until Nov 30, then $4 / $20", vi: "Giá ưu đãi đến 30/11, sau đó $4 / $20" } },
-  ],
-
-  // Thông báo (cột bên phải phần Tin tức). Mục mới nhất để trên cùng.
-  notices: [
-    { date: "2026-11-02", text: { en: "Pulse has a new layout: API price table, featured tools and a page for each topic.", vi: "Pulse có giao diện mới: bảng giá API, công cụ nổi bật và trang riêng cho từng chuyên mục." } },
-    { date: "2026-11-02", text: { en: "Gemini 4 Argon API prices double on December 1, 2026.", vi: "Giá API Gemini 4 Argon tăng gấp đôi từ ngày 01/12/2026." } },
-    { date: "2026-11-02", text: { en: "Prices in the table are for reference. Always check the provider's own page.", vi: "Giá trong bảng chỉ để tham khảo, hãy kiểm tra lại trên trang của hãng." } },
-  ],
-
-  // Nội dung các trang phụ. Mỗi mục: h = tiêu đề, p = đoạn văn, items = danh sách gạch đầu dòng (ordered:true = đánh số).
-  // Riêng tư / Điều khoản là BẢN MẪU cho website nhỏ — hãy đọc lại và chỉnh cho đúng thực tế trước khi dùng chính thức.
-  pages: {
-    about: {
-      title: { en: "About Pulse", vi: "Giới thiệu Pulse" },
-      sections: [
-        { h: { en: "What we do", vi: "Chúng tôi làm gì" },
-          p: { en: "Pulse is a daily digest of AI news and tools. We pick the stories that matter, highlight the tools worth trying, and skip the noise.", vi: "Pulse là bản tin hằng ngày về tin tức và công cụ AI. Chúng tôi chọn những câu chuyện đáng quan tâm, giới thiệu công cụ đáng thử và bỏ qua phần gây nhiễu." } },
-        { h: { en: "What you get", vi: "Bạn nhận được gì" },
-          items: {
-            en: ["One short email each morning, about five minutes to read.", "News grouped by topic: models, funding, research and products.", "A short list of tools that are worth a look this week."],
-            vi: ["Một email ngắn mỗi sáng, đọc khoảng năm phút.", "Tin tức chia theo chủ đề: mô hình, gọi vốn, nghiên cứu và sản phẩm.", "Danh sách ngắn các công cụ đáng chú ý trong tuần."] } },
-        { h: { en: "Get in touch", vi: "Liên hệ" },
-          p: { en: "Story tips and feedback are welcome. Use the Contact link at the bottom of the page.", vi: "Chúng tôi luôn hoan nghênh gợi ý tin bài và góp ý. Hãy dùng liên kết Liên hệ ở cuối trang." } },
-      ],
-    },
-    guides: {
-      title: { en: "Guides", vi: "Hướng dẫn" },
-      intro: { en: "Short, practical guides for getting more out of AI tools.", vi: "Các hướng dẫn ngắn, thực dụng để dùng công cụ AI hiệu quả hơn." },
-      sections: [
-        { h: { en: "How to write a clear prompt", vi: "Cách viết câu lệnh (prompt) rõ ràng" }, ordered: true,
-          items: {
-            en: ["State the goal in one sentence.", "Give context: who the answer is for and what format you want.", "Add an example of a good answer if you have one.", "Ask the model to check its own work before answering.", "Change one thing at a time when you refine the prompt."],
-            vi: ["Nêu mục tiêu trong một câu.", "Cho biết bối cảnh: câu trả lời dành cho ai và cần định dạng nào.", "Thêm một ví dụ về câu trả lời tốt nếu bạn có.", "Yêu cầu mô hình tự kiểm tra lại trước khi trả lời.", "Khi chỉnh câu lệnh, mỗi lần chỉ thay đổi một điểm."] } },
-        { h: { en: "How to choose an AI tool", vi: "Cách chọn công cụ AI" }, ordered: true,
-          items: {
-            en: ["Start from the task you need done, not from the tool.", "Try the free tier on a real task from your own work.", "Read where your data goes before you upload anything sensitive.", "Compare the monthly cost with the time it actually saves.", "Prefer tools that let you export your work."],
-            vi: ["Bắt đầu từ công việc cần làm, không phải từ công cụ.", "Dùng thử bản miễn phí với một việc thật của bạn.", "Đọc kỹ dữ liệu của bạn được lưu ở đâu trước khi tải lên thông tin nhạy cảm.", "So chi phí hằng tháng với thời gian thực sự tiết kiệm được.", "Ưu tiên công cụ cho phép xuất dữ liệu của bạn ra ngoài."] } },
-        { h: { en: "How to fact-check an AI answer", vi: "Cách kiểm chứng câu trả lời của AI" }, ordered: true,
-          items: {
-            en: ["Ask for sources, then open them yourself.", "Verify numbers, dates and names independently.", "Be extra careful with quotes and citations, they are often invented.", "Cross-check important claims with a second source.", "Treat the answer as a draft, not the final word."],
-            vi: ["Yêu cầu nêu nguồn, sau đó tự mở nguồn ra kiểm tra.", "Tự xác minh các con số, ngày tháng và tên riêng.", "Đặc biệt cẩn thận với trích dẫn và tài liệu tham khảo vì chúng hay bị bịa.", "Đối chiếu các nhận định quan trọng với một nguồn thứ hai.", "Xem câu trả lời như bản nháp, không phải kết luận cuối cùng."] } },
-      ],
-    },
-    privacy: {
-      title: { en: "Privacy Policy", vi: "Chính sách quyền riêng tư" },
-      updated: "2026-09-25",
-      sections: [
-        { h: { en: "What we collect", vi: "Chúng tôi thu thập gì" },
-          items: {
-            en: ["Your email address, only if you subscribe. It is sent to our form provider, Formspree.", "Your language choice, saved in your own browser so the site remembers it. It never leaves your device."],
-            vi: ["Địa chỉ email của bạn, chỉ khi bạn đăng ký. Email được gửi đến nhà cung cấp biểu mẫu của chúng tôi là Formspree.", "Lựa chọn ngôn ngữ của bạn, lưu ngay trong trình duyệt để trang nhớ lại. Thông tin này không rời khỏi thiết bị của bạn."] } },
-        { h: { en: "Third parties", vi: "Bên thứ ba" },
-          p: { en: "This site is hosted by Netlify and loads fonts from Google Fonts. These services may process technical data such as your IP address in order to deliver the page.", vi: "Trang được lưu trữ bởi Netlify và tải phông chữ từ Google Fonts. Các dịch vụ này có thể xử lý dữ liệu kỹ thuật như địa chỉ IP của bạn để hiển thị trang." } },
-        { h: { en: "How we use your email", vi: "Cách chúng tôi dùng email của bạn" },
-          p: { en: "We use it only to send the Pulse digest. We do not sell your email address.", vi: "Chúng tôi chỉ dùng email để gửi bản tin Pulse. Chúng tôi không bán địa chỉ email của bạn." } },
-        { h: { en: "Your choices", vi: "Quyền của bạn" },
-          p: { en: "You can unsubscribe at any time, and you can ask us to delete your email address. Use the Contact link at the bottom of the page.", vi: "Bạn có thể hủy đăng ký bất cứ lúc nào và yêu cầu chúng tôi xóa địa chỉ email của bạn. Hãy dùng liên kết Liên hệ ở cuối trang." } },
-      ],
-    },
-    terms: {
-      title: { en: "Terms of Use", vi: "Điều khoản sử dụng" },
-      updated: "2026-09-25",
-      sections: [
-        { h: { en: "Information only", vi: "Chỉ mang tính thông tin" },
-          p: { en: "Content on Pulse is for general information. It is not professional, legal, financial or investment advice.", vi: "Nội dung trên Pulse chỉ mang tính thông tin chung, không phải tư vấn chuyên môn, pháp lý, tài chính hay đầu tư." } },
-        { h: { en: "Accuracy", vi: "Độ chính xác" },
-          p: { en: "We do our best to keep things accurate and up to date, but we cannot guarantee it. Mentioning a tool is not an endorsement.", vi: "Chúng tôi cố gắng giữ nội dung chính xác và cập nhật nhưng không thể đảm bảo tuyệt đối. Việc nhắc đến một công cụ không đồng nghĩa với bảo chứng." } },
-        { h: { en: "Third-party links", vi: "Liên kết bên ngoài" },
-          p: { en: "Links to other sites are provided for convenience. We are not responsible for their content or practices.", vi: "Các liên kết đến trang khác chỉ để thuận tiện. Chúng tôi không chịu trách nhiệm về nội dung hay cách hoạt động của những trang đó." } },
-        { h: { en: "Changes", vi: "Thay đổi" },
-          p: { en: "We may update these terms from time to time. Continuing to use the site means you accept the updated terms.", vi: "Chúng tôi có thể cập nhật điều khoản theo thời gian. Việc tiếp tục sử dụng trang đồng nghĩa với việc bạn chấp nhận điều khoản đã cập nhật." } },
-      ],
-    },
+  "DAOTAO": {
+   "color": "#7c3aed",
+   "label": {
+    "en": "Đào tạo – Hội thảo",
+    "vi": "Đào tạo – Hội thảo"
+   },
+   "intro": {
+    "en": "Tập huấn, sinh hoạt khoa học, thi tay nghề và đào tạo ngoài viện.",
+    "vi": "Tập huấn, sinh hoạt khoa học, thi tay nghề và đào tạo ngoài viện."
+   }
   },
-
-  i18n: {
-    en: {
-      pageTitle: "Pulse — AI news and tools, curated daily",
-      navPricing: "Pricing", switchTheme: "Switch light/dark", mainNav: "Main menu", hotLabel: "Hot",
-      quickHeading: "What do you need today?",
-      q1Title: "Read the news", q1Sub: "Latest AI stories", q2Title: "Find a tool", q2Sub: "Hand-picked AI tools",
-      q3Title: "Compare prices", q3Sub: "API price per model", q4Title: "Guides", q4Sub: "Use AI well",
-      priceHeading: "AI model API prices", priceModel: "Model", priceMaker: "Company", priceIn: "Input", priceOut: "Output", priceNoteCol: "Notes",
-      priceNote: "US dollars per 1 million tokens. For reference only, updated", priceSource: "Source",
-      noticeHeading: "Notices", topicHeading: "Topics", topicStories: "stories",
-      footerAbout: "A daily digest of AI news and tools. Information only, not investment advice.", footerPages: "Pages", footerEmail: "Email us",
-      metaDescription: "The latest AI news, hand-picked tools, and no-fluff analysis, delivered every morning.",
-      navNews: "News", navTools: "Tools", navGuides: "Guides", navAbout: "About", navStudio: "Creative Studio",
-      subscribeBtn: "Subscribe", searchLabel: "Search", closeSearch: "Close search", switchLang: "Switch language",
-      searchPlaceholder: "Search news and tools…",
-      heroEyebrow: "AI NEWS & TOOLS, CURATED DAILY",
-      heroLine1: "Stay ahead of AI.", heroPre: "Everything in", heroHighlight: "one", heroPost: "place.",
-      heroSubtitle: "The latest AI news, hand-picked tools, and no-fluff analysis — delivered every morning so you never have to go hunting for it again.",
-      emailLabel: "Email address", emailPlaceholder: "Enter your email", getDigestBtn: "Get the digest", sending: "Sending…",
-      subscribedMsg: "You're in! Check your inbox tomorrow morning.",
-      errorInvalid: "Please enter a valid email address.",
-      errorFailed: "Something went wrong. Please try again.",
-      errorNotConfigured: "Email signup isn't set up yet.",
-      microcopy: "Free forever · One email a day · Unsubscribe anytime",
-      f1Title: "Daily briefings", f1Sub: "5 minutes, every morning",
-      f2Title: "Hand-picked tools", f2Sub: "Chosen from the week's news",
-      f3Title: "Zero fluff", f3Sub: "Signal, not noise",
-      newsHeading: "News & events", viewAll: "View all →", allTab: "All", categoriesLabel: "News categories",
-      noResults: "No stories match your filters.", noTools: "No tools match your search.",
-      toolsHeading: "Featured tools",
-      backHome: "← Back to home", lastUpdated: "Last updated",
-      closeBtn: "Close", visitBtn: "Visit tool",
-      footerCopyright: "© 2026 Pulse. All rights reserved.",
-      footerPrivacy: "Privacy", footerTerms: "Terms", footerContact: "Contact",
-    },
-    vi: {
-      pageTitle: "Pulse — Tin tức và công cụ AI, cập nhật mỗi ngày",
-      navPricing: "Bảng giá", switchTheme: "Đổi nền sáng/tối", mainNav: "Menu chính", hotLabel: "Tin nóng",
-      quickHeading: "Bạn cần gì hôm nay?",
-      q1Title: "Đọc tin mới", q1Sub: "Tin AI mới nhất", q2Title: "Tìm công cụ", q2Sub: "Công cụ AI chọn lọc",
-      q3Title: "So sánh giá", q3Sub: "Giá API từng mô hình", q4Title: "Hướng dẫn", q4Sub: "Dùng AI hiệu quả",
-      priceHeading: "Bảng giá API mô hình AI", priceModel: "Mô hình", priceMaker: "Hãng", priceIn: "Đầu vào", priceOut: "Đầu ra", priceNoteCol: "Ghi chú",
-      priceNote: "Đơn vị USD cho mỗi 1 triệu token. Giá tham khảo, cập nhật", priceSource: "Nguồn",
-      noticeHeading: "Thông báo", topicHeading: "Chuyên mục", topicStories: "tin",
-      footerAbout: "Bản tin hằng ngày về tin tức và công cụ AI. Chỉ mang tính thông tin, không phải lời khuyên đầu tư.", footerPages: "Trang", footerEmail: "Gửi email",
-      metaDescription: "Tin tức AI mới nhất, công cụ chọn lọc và phân tích không lan man, gửi đến bạn mỗi sáng.",
-      navNews: "Tin tức", navTools: "Công cụ", navGuides: "Hướng dẫn", navAbout: "Giới thiệu", navStudio: "Phòng sáng tạo",
-      subscribeBtn: "Đăng ký", searchLabel: "Tìm kiếm", closeSearch: "Đóng tìm kiếm", switchLang: "Đổi ngôn ngữ",
-      searchPlaceholder: "Tìm tin tức và công cụ…",
-      heroEyebrow: "TIN TỨC & CÔNG CỤ AI, CẬP NHẬT MỖI NGÀY",
-      heroLine1: "Luôn dẫn đầu về AI.", heroPre: "Tất cả trong", heroHighlight: "một", heroPost: "nơi duy nhất.",
-      heroSubtitle: "Tin tức AI mới nhất, công cụ chọn lọc và phân tích không lan man — gửi đến bạn mỗi sáng để không phải tự đi tìm nữa.",
-      emailLabel: "Địa chỉ email", emailPlaceholder: "Nhập email của bạn", getDigestBtn: "Nhận bản tin", sending: "Đang gửi…",
-      subscribedMsg: "Đã đăng ký thành công! Kiểm tra hộp thư vào sáng mai nhé.",
-      errorInvalid: "Vui lòng nhập một địa chỉ email hợp lệ.",
-      errorFailed: "Có lỗi xảy ra. Vui lòng thử lại.",
-      errorNotConfigured: "Chức năng đăng ký email chưa được cấu hình.",
-      microcopy: "Miễn phí trọn đời · Một email mỗi ngày · Hủy bất cứ lúc nào",
-      f1Title: "Bản tin mỗi ngày", f1Sub: "5 phút mỗi sáng",
-      f2Title: "Công cụ chọn lọc", f2Sub: "Chọn từ tin tức trong tuần",
-      f3Title: "Không lan man", f3Sub: "Chỉ thông tin hữu ích",
-      newsHeading: "Tin tức & Sự kiện", viewAll: "Xem tất cả →", allTab: "Tất cả", categoriesLabel: "Chuyên mục tin tức",
-      noResults: "Không có tin nào khớp bộ lọc.", noTools: "Không có công cụ nào khớp tìm kiếm.",
-      toolsHeading: "Công cụ nổi bật",
-      backHome: "← Về trang chủ", lastUpdated: "Cập nhật lần cuối",
-      closeBtn: "Đóng", visitBtn: "Truy cập công cụ",
-      footerCopyright: "© 2026 Pulse. Đã đăng ký bản quyền.",
-      footerPrivacy: "Quyền riêng tư", footerTerms: "Điều khoản", footerContact: "Liên hệ",
-    },
+  "CHATLUONG": {
+   "color": "#16a34a",
+   "label": {
+    "en": "Chất lượng",
+    "vi": "Chất lượng"
+   },
+   "intro": {
+    "en": "Tiêu chí chất lượng, chỉ số chăm sóc và an toàn người bệnh.",
+    "vi": "Tiêu chí chất lượng, chỉ số chăm sóc và an toàn người bệnh."
+   }
   },
+  "SUCKHOE": {
+   "color": "#f59e0b",
+   "label": {
+    "en": "Kiến thức sức khỏe",
+    "vi": "Kiến thức sức khỏe"
+   },
+   "intro": {
+    "en": "Thông tin tư vấn, giáo dục sức khỏe cho người bệnh và người nhà.",
+    "vi": "Thông tin tư vấn, giáo dục sức khỏe cho người bệnh và người nhà."
+   }
+  }
+ },
+ "news": [
+  {
+   "category": "DAOTAO",
+   "title": {
+    "en": "Tập huấn kỹ năng giao tiếp, ứng xử trong môi trường số",
+    "vi": "Tập huấn kỹ năng giao tiếp, ứng xử trong môi trường số"
+   },
+   "summary": {
+    "en": "Lớp tập huấn theo Kế hoạch số 303/KH-BVNT; Phòng Điều dưỡng tham gia trợ giảng.",
+    "vi": "Lớp tập huấn theo Kế hoạch số 303/KH-BVNT; Phòng Điều dưỡng tham gia trợ giảng."
+   },
+   "date": "2026-11-04"
+  },
+  {
+   "category": "DAOTAO",
+   "title": {
+    "en": "Thi tay nghề thực hành điều dưỡng, hộ sinh năm 2026",
+    "vi": "Thi tay nghề thực hành điều dưỡng, hộ sinh năm 2026"
+   },
+   "summary": {
+    "en": "66 điều dưỡng, hộ sinh của 14 khoa, bộ phận dự thi thực hành trên mô hình, có giám khảo chấm theo bảng kiểm.",
+    "vi": "66 điều dưỡng, hộ sinh của 14 khoa, bộ phận dự thi thực hành trên mô hình, có giám khảo chấm theo bảng kiểm."
+   },
+   "date": "2026-10-28"
+  },
+  {
+   "category": "DAOTAO",
+   "title": {
+    "en": "Thi lý thuyết tay nghề điều dưỡng, hộ sinh",
+    "vi": "Thi lý thuyết tay nghề điều dưỡng, hộ sinh"
+   },
+   "summary": {
+    "en": "Bài thi trắc nghiệm 100 câu về quy trình kỹ thuật, chăm sóc người bệnh và kiểm soát nhiễm khuẩn.",
+    "vi": "Bài thi trắc nghiệm 100 câu về quy trình kỹ thuật, chăm sóc người bệnh và kiểm soát nhiễm khuẩn."
+   },
+   "date": "2026-10-22"
+  },
+  {
+   "category": "DAOTAO",
+   "title": {
+    "en": "Điều dưỡng Khoa Nhi học hồi sức cấp cứu, chống độc nhi tại Bệnh viện Nhi Đồng 1",
+    "vi": "Điều dưỡng Khoa Nhi học hồi sức cấp cứu, chống độc nhi tại Bệnh viện Nhi Đồng 1"
+   },
+   "summary": {
+    "en": "Khóa huấn luyện từ 19 đến 23/10/2026, giúp nâng cao kỹ năng cấp cứu nhi tại khoa.",
+    "vi": "Khóa huấn luyện từ 19 đến 23/10/2026, giúp nâng cao kỹ năng cấp cứu nhi tại khoa."
+   },
+   "date": "2026-10-19"
+  },
+  {
+   "category": "CHATLUONG",
+   "title": {
+    "en": "Hoàn thiện bộ hồ sơ 7 tiêu chí chất lượng năm 2026",
+    "vi": "Hoàn thiện bộ hồ sơ 7 tiêu chí chất lượng năm 2026"
+   },
+   "summary": {
+    "en": "Gồm A2.1, A4.1, A4.2, C6.1, C6.2, C6.3, D2.4 theo Quyết định số 6858/QĐ-BYT, có bảng kiểm tự đánh giá mức.",
+    "vi": "Gồm A2.1, A4.1, A4.2, C6.1, C6.2, C6.3, D2.4 theo Quyết định số 6858/QĐ-BYT, có bảng kiểm tự đánh giá mức."
+   },
+   "date": "2026-10-18"
+  },
+  {
+   "category": "DAOTAO",
+   "title": {
+    "en": "Tập huấn kiểm soát nhiễm khuẩn năm 2026",
+    "vi": "Tập huấn kiểm soát nhiễm khuẩn năm 2026"
+   },
+   "summary": {
+    "en": "Tổ chức ngày 01 và 02/7/2026 theo Kế hoạch số 195/KH-BVNT cho nhân viên y tế toàn viện.",
+    "vi": "Tổ chức ngày 01 và 02/7/2026 theo Kế hoạch số 195/KH-BVNT cho nhân viên y tế toàn viện."
+   },
+   "date": "2026-07-01"
+  },
+  {
+   "category": "CHATLUONG",
+   "title": {
+    "en": "Kết quả tự đánh giá năm 2025 nhóm tiêu chí điều dưỡng",
+    "vi": "Kết quả tự đánh giá năm 2025 nhóm tiêu chí điều dưỡng"
+   },
+   "summary": {
+    "en": "Tiêu chí C6.1 và C6.3 đạt mức 4; tiêu chí C6.2 duy trì mức 4.",
+    "vi": "Tiêu chí C6.1 và C6.3 đạt mức 4; tiêu chí C6.2 duy trì mức 4."
+   }
+  },
+  {
+   "category": "HOATDONG",
+   "title": {
+    "en": "Bàn giao người bệnh theo mô hình ISBAR",
+    "vi": "Bàn giao người bệnh theo mô hình ISBAR"
+   },
+   "summary": {
+    "en": "Điều dưỡng bàn giao theo 5 bước: Nhận diện, Tình trạng, Bệnh sử, Đánh giá, Đề xuất, giúp thông tin không bị bỏ sót khi đổi ca.",
+    "vi": "Điều dưỡng bàn giao theo 5 bước: Nhận diện, Tình trạng, Bệnh sử, Đánh giá, Đề xuất, giúp thông tin không bị bỏ sót khi đổi ca."
+   }
+  },
+  {
+   "category": "SUCKHOE",
+   "title": {
+    "en": "Vệ sinh tay đúng cách để phòng lây nhiễm",
+    "vi": "Vệ sinh tay đúng cách để phòng lây nhiễm"
+   },
+   "summary": {
+    "en": "Rửa tay với xà phòng và nước sạch hoặc chà tay bằng dung dịch sát khuẩn nhanh theo đủ 6 bước, nhất là trước khi ăn và sau khi đi vệ sinh.",
+    "vi": "Rửa tay với xà phòng và nước sạch hoặc chà tay bằng dung dịch sát khuẩn nhanh theo đủ 6 bước, nhất là trước khi ăn và sau khi đi vệ sinh."
+   }
+  },
+  {
+   "category": "SUCKHOE",
+   "title": {
+    "en": "Khi nằm viện, người bệnh và người nhà nên hỏi điều dưỡng những gì?",
+    "vi": "Khi nằm viện, người bệnh và người nhà nên hỏi điều dưỡng những gì?"
+   },
+   "summary": {
+    "en": "Hỏi về chế độ ăn, cách dùng thuốc, các dấu hiệu cần báo ngay cho nhân viên y tế và hướng dẫn chăm sóc khi ra viện.",
+    "vi": "Hỏi về chế độ ăn, cách dùng thuốc, các dấu hiệu cần báo ngay cho nhân viên y tế và hướng dẫn chăm sóc khi ra viện."
+   }
+  }
+ ],
+ "tools": [
+  {
+   "id": "quytrinh",
+   "name": "Quy trình kỹ thuật",
+   "url": "",
+   "gradient": "linear-gradient(135deg,#0ea5e9,#22d3ee)",
+   "tag": null,
+   "description": {
+    "en": "Ban hành, cập nhật quy trình",
+    "vi": "Ban hành, cập nhật quy trình"
+   },
+   "detail": {
+    "en": "Ban hành, cập nhật bộ quy trình kỹ thuật điều dưỡng cơ bản và quy trình chăm sóc chuyên khoa; thư viện tài liệu chuyên môn dùng chung toàn viện.",
+    "vi": "Ban hành, cập nhật bộ quy trình kỹ thuật điều dưỡng cơ bản và quy trình chăm sóc chuyên khoa; thư viện tài liệu chuyên môn dùng chung toàn viện."
+   }
+  },
+  {
+   "id": "giamsat",
+   "name": "Giám sát tuân thủ",
+   "url": "",
+   "gradient": "linear-gradient(135deg,#16a34a,#4ade80)",
+   "tag": null,
+   "description": {
+    "en": "Kiểm tra tại khoa hằng tuần",
+    "vi": "Kiểm tra tại khoa hằng tuần"
+   },
+   "detail": {
+    "en": "Giám sát điều dưỡng hằng tuần tại các khoa lâm sàng, cận lâm sàng; kiểm tra tuân thủ quy trình bằng phiếu điện tử có câu hỏi tình huống.",
+    "vi": "Giám sát điều dưỡng hằng tuần tại các khoa lâm sàng, cận lâm sàng; kiểm tra tuân thủ quy trình bằng phiếu điện tử có câu hỏi tình huống."
+   }
+  },
+  {
+   "id": "binhbenhan",
+   "name": "Bình bệnh án chăm sóc",
+   "url": "",
+   "gradient": "linear-gradient(135deg,#7c3aed,#a78bfa)",
+   "tag": null,
+   "description": {
+    "en": "Hằng tháng, cấp bệnh viện",
+    "vi": "Hằng tháng, cấp bệnh viện"
+   },
+   "detail": {
+    "en": "Bình bệnh án phần chăm sóc điều dưỡng, hộ sinh cấp bệnh viện hằng tháng và báo cáo chuyên đề.",
+    "vi": "Bình bệnh án phần chăm sóc điều dưỡng, hộ sinh cấp bệnh viện hằng tháng và báo cáo chuyên đề."
+   }
+  },
+  {
+   "id": "isbar",
+   "name": "Bàn giao ISBAR",
+   "url": "",
+   "gradient": "linear-gradient(135deg,#f59e0b,#fbbf24)",
+   "tag": null,
+   "description": {
+    "en": "Bàn giao an toàn khi đổi ca",
+    "vi": "Bàn giao an toàn khi đổi ca"
+   },
+   "detail": {
+    "en": "Bàn giao người bệnh theo mô hình ISBAR; xác định chính xác người bệnh trước khi dùng thuốc, truyền máu, phẫu thuật, thủ thuật.",
+    "vi": "Bàn giao người bệnh theo mô hình ISBAR; xác định chính xác người bệnh trước khi dùng thuốc, truyền máu, phẫu thuật, thủ thuật."
+   }
+  },
+  {
+   "id": "gdsk",
+   "name": "Tư vấn, giáo dục sức khỏe",
+   "url": "",
+   "gradient": "linear-gradient(135deg,#ec4899,#f9a8d4)",
+   "tag": null,
+   "description": {
+    "en": "Tờ bướm, poster theo bệnh",
+    "vi": "Tờ bướm, poster theo bệnh"
+   },
+   "detail": {
+    "en": "Tư vấn, giáo dục sức khỏe cho người bệnh và người nhà bằng tờ bướm, poster theo bệnh và theo khoa (đái tháo đường, tăng huyết áp, lao phổi, sốt xuất huyết, nuôi con bằng sữa mẹ...).",
+    "vi": "Tư vấn, giáo dục sức khỏe cho người bệnh và người nhà bằng tờ bướm, poster theo bệnh và theo khoa (đái tháo đường, tăng huyết áp, lao phổi, sốt xuất huyết, nuôi con bằng sữa mẹ...)."
+   }
+  },
+  {
+   "id": "daotao",
+   "name": "Đào tạo, thi tay nghề",
+   "url": "",
+   "gradient": "linear-gradient(135deg,#4f46e5,#818cf8)",
+   "tag": null,
+   "description": {
+    "en": "Đào tạo liên tục cho ĐD, HS, KTY",
+    "vi": "Đào tạo liên tục cho ĐD, HS, KTY"
+   },
+   "detail": {
+    "en": "Tổ chức đào tạo liên tục, sinh hoạt khoa học hằng quý, thi tay nghề hằng năm; cử điều dưỡng học tập tại bệnh viện tuyến trên.",
+    "vi": "Tổ chức đào tạo liên tục, sinh hoạt khoa học hằng quý, thi tay nghề hằng năm; cử điều dưỡng học tập tại bệnh viện tuyến trên."
+   }
+  }
+ ],
+ "pricingUpdated": "2026-01-07",
+ "pricing": [
+  {
+   "model": "Tổng khối ĐD, HS, KTY",
+   "maker": "Toàn viện",
+   "input": "193",
+   "output": "209"
+  },
+  {
+   "model": "Sau đại học",
+   "maker": "Điều dưỡng chuyên khoa I",
+   "input": "–",
+   "output": "01"
+  },
+  {
+   "model": "Đại học",
+   "maker": "ĐD 40, KTY 10, HS 02",
+   "input": "49",
+   "output": "52"
+  },
+  {
+   "model": "Cao đẳng",
+   "maker": "ĐD 103, HS 15, KTY 08",
+   "input": "101",
+   "output": "126"
+  },
+  {
+   "model": "Trung cấp",
+   "maker": "KTY 11, ĐD 07, HS 02",
+   "input": "–",
+   "output": "20"
+  },
+  {
+   "model": "Y sĩ, sơ cấp",
+   "maker": "Y sĩ 08, sơ cấp 02",
+   "input": "–",
+   "output": "10"
+  }
+ ],
+ "notices": [
+  {
+   "date": "2026-11-02",
+   "text": {
+    "en": "Thi tay nghề thực hành đợt 2 dời sang ngày 06/11/2026.",
+    "vi": "Thi tay nghề thực hành đợt 2 dời sang ngày 06/11/2026."
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "text": {
+    "en": "Tập huấn giao tiếp, ứng xử trong môi trường số ngày 04/11/2026.",
+    "vi": "Tập huấn giao tiếp, ứng xử trong môi trường số ngày 04/11/2026."
+   }
+  },
+  {
+   "date": "2026-11-02",
+   "text": {
+    "en": "Góp ý về công tác chăm sóc: gửi hộp thư góp ý tại khoa, Hội đồng người bệnh hoặc liên hệ Phòng Điều dưỡng.",
+    "vi": "Góp ý về công tác chăm sóc: gửi hộp thư góp ý tại khoa, Hội đồng người bệnh hoặc liên hệ Phòng Điều dưỡng."
+   }
+  }
+ ],
+ "pages": {
+  "about": {
+   "title": {
+    "en": "Giới thiệu Phòng Điều dưỡng",
+    "vi": "Giới thiệu Phòng Điều dưỡng"
+   },
+   "intro": {
+    "en": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân (245 giường, 19 khoa, bộ phận).",
+    "vi": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân (245 giường, 19 khoa, bộ phận)."
+   },
+   "sections": [
+    {
+     "h": {
+      "en": "Chức năng, nhiệm vụ",
+      "vi": "Chức năng, nhiệm vụ"
+     },
+     "items": {
+      "en": [
+       "Tham mưu Giám đốc tổ chức, quản lý, chỉ đạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y trong toàn bệnh viện, theo Thông tư số 31/2021/TT-BYT ngày 28/12/2021 của Bộ Y tế.",
+       "Xây dựng và tổ chức thực hiện kế hoạch công tác điều dưỡng hằng năm.",
+       "Xây dựng, rà soát, cập nhật quy trình kỹ thuật, quy trình chăm sóc; kiểm tra, giám sát việc tuân thủ tại các khoa.",
+       "Tổ chức đào tạo liên tục, sinh hoạt khoa học, thi tay nghề cho điều dưỡng, hộ sinh, kỹ thuật y.",
+       "Theo dõi chỉ số chất lượng chăm sóc; phối hợp quản lý sự cố y khoa, an toàn người bệnh.",
+       "Chỉ đạo công tác tư vấn, giáo dục sức khỏe; tham gia Hội đồng người bệnh cấp bệnh viện."
+      ],
+      "vi": [
+       "Tham mưu Giám đốc tổ chức, quản lý, chỉ đạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y trong toàn bệnh viện, theo Thông tư số 31/2021/TT-BYT ngày 28/12/2021 của Bộ Y tế.",
+       "Xây dựng và tổ chức thực hiện kế hoạch công tác điều dưỡng hằng năm.",
+       "Xây dựng, rà soát, cập nhật quy trình kỹ thuật, quy trình chăm sóc; kiểm tra, giám sát việc tuân thủ tại các khoa.",
+       "Tổ chức đào tạo liên tục, sinh hoạt khoa học, thi tay nghề cho điều dưỡng, hộ sinh, kỹ thuật y.",
+       "Theo dõi chỉ số chất lượng chăm sóc; phối hợp quản lý sự cố y khoa, an toàn người bệnh.",
+       "Chỉ đạo công tác tư vấn, giáo dục sức khỏe; tham gia Hội đồng người bệnh cấp bệnh viện."
+      ]
+     }
+    },
+    {
+     "h": {
+      "en": "Đặc điểm, thế mạnh",
+      "vi": "Đặc điểm, thế mạnh"
+     },
+     "items": {
+      "en": [
+       "Điều phối mạng lưới điều dưỡng trưởng 19 khoa, bộ phận.",
+       "Ứng dụng công nghệ thông tin trong quản lý điều dưỡng: phần mềm quản lý Phòng Điều dưỡng, phiếu kiểm tra tuân thủ quy trình điện tử.",
+       "Xây dựng và theo dõi bộ hồ sơ 7 tiêu chí chất lượng năm 2026."
+      ],
+      "vi": [
+       "Điều phối mạng lưới điều dưỡng trưởng 19 khoa, bộ phận.",
+       "Ứng dụng công nghệ thông tin trong quản lý điều dưỡng: phần mềm quản lý Phòng Điều dưỡng, phiếu kiểm tra tuân thủ quy trình điện tử.",
+       "Xây dựng và theo dõi bộ hồ sơ 7 tiêu chí chất lượng năm 2026."
+      ]
+     }
+    },
+    {
+     "h": {
+      "en": "Nhân sự",
+      "vi": "Nhân sự"
+     },
+     "items": {
+      "en": [
+       "Trưởng phòng: CKIĐD. Võ Hồng Thái.",
+       "Mạng lưới quản lý: điều dưỡng trưởng của 19 khoa, bộ phận; nhóm giám sát điều dưỡng.",
+       "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện năm 2025: 209 người (năm 2024: 193 người)."
+      ],
+      "vi": [
+       "Trưởng phòng: CKIĐD. Võ Hồng Thái.",
+       "Mạng lưới quản lý: điều dưỡng trưởng của 19 khoa, bộ phận; nhóm giám sát điều dưỡng.",
+       "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện năm 2025: 209 người (năm 2024: 193 người)."
+      ]
+     }
+    },
+    {
+     "h": {
+      "en": "Định hướng phát triển",
+      "vi": "Định hướng phát triển"
+     },
+     "items": {
+      "en": [
+       "Đẩy mạnh chuyển đổi số trong quản lý điều dưỡng, hồ sơ chăm sóc theo Thông tư số 32/2023/TT-BYT.",
+       "Chăm sóc người bệnh toàn diện theo phân cấp chăm sóc; nâng mức đạt các tiêu chí nhóm C6.",
+       "Phát triển nghiên cứu khoa học, sáng kiến và thực hành dựa vào bằng chứng trong điều dưỡng."
+      ],
+      "vi": [
+       "Đẩy mạnh chuyển đổi số trong quản lý điều dưỡng, hồ sơ chăm sóc theo Thông tư số 32/2023/TT-BYT.",
+       "Chăm sóc người bệnh toàn diện theo phân cấp chăm sóc; nâng mức đạt các tiêu chí nhóm C6.",
+       "Phát triển nghiên cứu khoa học, sáng kiến và thực hành dựa vào bằng chứng trong điều dưỡng."
+      ]
+     }
+    }
+   ]
+  },
+  "guides": {
+   "title": {
+    "en": "Hoạt động chất lượng",
+    "vi": "Hoạt động chất lượng"
+   },
+   "intro": {
+    "en": "Cải tiến chất lượng, đào tạo và an toàn người bệnh.",
+    "vi": "Cải tiến chất lượng, đào tạo và an toàn người bệnh."
+   },
+   "sections": [
+    {
+     "h": {
+      "en": "Cải tiến chất lượng",
+      "vi": "Cải tiến chất lượng"
+     },
+     "items": {
+      "en": [
+       "Bộ hồ sơ 7 tiêu chí chất lượng năm 2026 theo Quyết định số 6858/QĐ-BYT: A2.1, A4.1, A4.2, C6.1, C6.2, C6.3, D2.4.",
+       "Đề án cải tiến: phần mềm quản lý Phòng Điều dưỡng, xe tiêm thuốc chuẩn hóa.",
+       "Báo cáo, phân tích sự cố y khoa theo Thông tư số 43/2018/TT-BYT."
+      ],
+      "vi": [
+       "Bộ hồ sơ 7 tiêu chí chất lượng năm 2026 theo Quyết định số 6858/QĐ-BYT: A2.1, A4.1, A4.2, C6.1, C6.2, C6.3, D2.4.",
+       "Đề án cải tiến: phần mềm quản lý Phòng Điều dưỡng, xe tiêm thuốc chuẩn hóa.",
+       "Báo cáo, phân tích sự cố y khoa theo Thông tư số 43/2018/TT-BYT."
+      ]
+     }
+    },
+    {
+     "h": {
+      "en": "Đào tạo, nâng cao tay nghề",
+      "vi": "Đào tạo, nâng cao tay nghề"
+     },
+     "items": {
+      "en": [
+       "Thi tay nghề điều dưỡng, hộ sinh năm 2026: lý thuyết 100 câu ngày 22/10/2026; thực hành 66 người của 14 khoa, bộ phận.",
+       "Tập huấn kiểm soát nhiễm khuẩn năm 2026 (Kế hoạch số 195/KH-BVNT); sinh hoạt khoa học hằng quý; đào tạo giao tiếp, ứng xử.",
+       "Cử điều dưỡng học ngoài viện: khóa hồi sức cấp cứu, chống độc nhi tại Bệnh viện Nhi Đồng 1 (19 đến 23/10/2026)."
+      ],
+      "vi": [
+       "Thi tay nghề điều dưỡng, hộ sinh năm 2026: lý thuyết 100 câu ngày 22/10/2026; thực hành 66 người của 14 khoa, bộ phận.",
+       "Tập huấn kiểm soát nhiễm khuẩn năm 2026 (Kế hoạch số 195/KH-BVNT); sinh hoạt khoa học hằng quý; đào tạo giao tiếp, ứng xử.",
+       "Cử điều dưỡng học ngoài viện: khóa hồi sức cấp cứu, chống độc nhi tại Bệnh viện Nhi Đồng 1 (19 đến 23/10/2026)."
+      ]
+     }
+    },
+    {
+     "h": {
+      "en": "Kết quả",
+      "vi": "Kết quả"
+     },
+     "items": {
+      "en": [
+       "Tự đánh giá năm 2025: tiêu chí C6.1 và C6.3 đạt mức 4; tiêu chí C6.2 duy trì mức 4.",
+       "Theo dõi 13 chỉ số chất lượng chăm sóc điều dưỡng, báo cáo hằng năm."
+      ],
+      "vi": [
+       "Tự đánh giá năm 2025: tiêu chí C6.1 và C6.3 đạt mức 4; tiêu chí C6.2 duy trì mức 4.",
+       "Theo dõi 13 chỉ số chất lượng chăm sóc điều dưỡng, báo cáo hằng năm."
+      ]
+     }
+    },
+    {
+     "h": {
+      "en": "Vì an toàn và sự hài lòng của người bệnh",
+      "vi": "Vì an toàn và sự hài lòng của người bệnh"
+     },
+     "items": {
+      "en": [
+       "Họp Hội đồng người bệnh cấp bệnh viện định kỳ; tiếp nhận, giải quyết góp ý về chăm sóc.",
+       "Chăm sóc toàn diện, bàn giao an toàn, xác định đúng người bệnh, tư vấn giáo dục sức khỏe khi nằm viện và khi ra viện."
+      ],
+      "vi": [
+       "Họp Hội đồng người bệnh cấp bệnh viện định kỳ; tiếp nhận, giải quyết góp ý về chăm sóc.",
+       "Chăm sóc toàn diện, bàn giao an toàn, xác định đúng người bệnh, tư vấn giáo dục sức khỏe khi nằm viện và khi ra viện."
+      ]
+     }
+    }
+   ]
+  },
+  "privacy": {
+   "title": {
+    "en": "Liên hệ",
+    "vi": "Liên hệ"
+   },
+   "sections": [
+    {
+     "h": {
+      "en": "Địa chỉ",
+      "vi": "Địa chỉ"
+     },
+     "p": {
+      "en": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân, 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang.",
+      "vi": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân, 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang."
+     }
+    },
+    {
+     "h": {
+      "en": "Điện thoại",
+      "vi": "Điện thoại"
+     },
+     "items": {
+      "en": [
+       "Bệnh viện: 0296 3562 357",
+       "Cấp cứu: 115"
+      ],
+      "vi": [
+       "Bệnh viện: 0296 3562 357",
+       "Cấp cứu: 115"
+      ]
+     }
+    },
+    {
+     "h": {
+      "en": "Thời gian làm việc",
+      "vi": "Thời gian làm việc"
+     },
+     "p": {
+      "en": "Giờ hành chính các ngày trong tuần.",
+      "vi": "Giờ hành chính các ngày trong tuần."
+     }
+    },
+    {
+     "h": {
+      "en": "Góp ý về công tác chăm sóc",
+      "vi": "Góp ý về công tác chăm sóc"
+     },
+     "p": {
+      "en": "Góp ý về thái độ phục vụ, công tác chăm sóc của điều dưỡng, hộ sinh có thể gửi qua hộp thư góp ý tại khoa, Hội đồng người bệnh hoặc liên hệ trực tiếp Phòng Điều dưỡng.",
+      "vi": "Góp ý về thái độ phục vụ, công tác chăm sóc của điều dưỡng, hộ sinh có thể gửi qua hộp thư góp ý tại khoa, Hội đồng người bệnh hoặc liên hệ trực tiếp Phòng Điều dưỡng."
+     }
+    }
+   ]
+  },
+  "terms": {
+   "title": {
+    "en": "Lưu ý khi sử dụng thông tin",
+    "vi": "Lưu ý khi sử dụng thông tin"
+   },
+   "sections": [
+    {
+     "h": {
+      "en": "Chỉ mang tính thông tin",
+      "vi": "Chỉ mang tính thông tin"
+     },
+     "p": {
+      "en": "Nội dung trên trang nhằm giới thiệu hoạt động của Phòng Điều dưỡng và cung cấp kiến thức sức khỏe chung, không thay thế chỉ định, tư vấn của bác sĩ.",
+      "vi": "Nội dung trên trang nhằm giới thiệu hoạt động của Phòng Điều dưỡng và cung cấp kiến thức sức khỏe chung, không thay thế chỉ định, tư vấn của bác sĩ."
+     }
+    },
+    {
+     "h": {
+      "en": "Bảo mật người bệnh",
+      "vi": "Bảo mật người bệnh"
+     },
+     "p": {
+      "en": "Trang không đăng thông tin định danh người bệnh. Hình ảnh có người bệnh chỉ dùng khi có đồng ý bằng văn bản.",
+      "vi": "Trang không đăng thông tin định danh người bệnh. Hình ảnh có người bệnh chỉ dùng khi có đồng ý bằng văn bản."
+     }
+    }
+   ]
+  }
+ },
+ "i18n": {
+  "en": {
+   "pageTitle": "Phòng Điều dưỡng — Bệnh viện Đa khoa Nhật Tân",
+   "metaDescription": "Giới thiệu Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân: hoạt động chuyên môn, đào tạo, chất lượng chăm sóc và kiến thức sức khỏe.",
+   "navPricing": "Nhân lực",
+   "switchTheme": "Đổi nền sáng/tối",
+   "mainNav": "Menu chính",
+   "hotLabel": "Tin mới",
+   "quickHeading": "Bạn cần tìm gì?",
+   "q1Title": "Giới thiệu",
+   "q1Sub": "Chức năng, nhiệm vụ",
+   "q2Title": "Hoạt động chuyên môn",
+   "q2Sub": "Quy trình, giám sát, đào tạo",
+   "q3Title": "Nhân lực",
+   "q3Sub": "Điều dưỡng, hộ sinh, KTY",
+   "q4Title": "Góp ý, liên hệ",
+   "q4Sub": "Địa chỉ, điện thoại",
+   "priceHeading": "Nhân lực khối Điều dưỡng, Hộ sinh, Kỹ thuật y",
+   "priceModel": "Trình độ",
+   "priceMaker": "Chi tiết năm 2025",
+   "priceIn": "Năm 2024",
+   "priceOut": "Năm 2025",
+   "priceNoteCol": "",
+   "priceNote": "Nguồn: Báo cáo công tác điều dưỡng năm 2025 của Phòng Điều dưỡng (07/01/2026). Cập nhật",
+   "priceSource": "Nguồn",
+   "noticeHeading": "Thông báo",
+   "topicHeading": "Chuyên mục",
+   "topicStories": "bài",
+   "footerAbout": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Điện thoại: 0296 3562 357.",
+   "footerPages": "Trang",
+   "footerEmail": "Gửi email",
+   "navNews": "Tin tức",
+   "navTools": "Hoạt động",
+   "navGuides": "Chất lượng",
+   "navAbout": "Giới thiệu",
+   "navStudio": "",
+   "subscribeBtn": "Liên hệ",
+   "searchLabel": "Tìm kiếm",
+   "closeSearch": "Đóng tìm kiếm",
+   "switchLang": "Đổi ngôn ngữ",
+   "searchPlaceholder": "Tìm tin tức, hoạt động…",
+   "heroEyebrow": "BỆNH VIỆN ĐA KHOA NHẬT TÂN",
+   "heroLine1": "Phòng Điều dưỡng",
+   "heroPre": "Chăm sóc",
+   "heroHighlight": "an toàn,",
+   "heroPost": "tận tâm.",
+   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
+   "emailLabel": "",
+   "emailPlaceholder": "",
+   "getDigestBtn": "",
+   "sending": "",
+   "subscribedMsg": "",
+   "errorInvalid": "",
+   "errorFailed": "",
+   "errorNotConfigured": "",
+   "microcopy": "",
+   "f1Title": "",
+   "f1Sub": "",
+   "f2Title": "",
+   "f2Sub": "",
+   "f3Title": "",
+   "f3Sub": "",
+   "newsHeading": "Tin tức & Sự kiện",
+   "viewAll": "Xem tất cả →",
+   "allTab": "Tất cả",
+   "categoriesLabel": "Chuyên mục tin",
+   "noResults": "Không có bài nào khớp bộ lọc.",
+   "noTools": "Không có hoạt động nào khớp tìm kiếm.",
+   "toolsHeading": "Hoạt động chuyên môn",
+   "backHome": "← Về trang chủ",
+   "lastUpdated": "Cập nhật lần cuối",
+   "closeBtn": "Đóng",
+   "visitBtn": "Xem thêm",
+   "footerCopyright": "© 2026 Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân.",
+   "footerPrivacy": "Liên hệ",
+   "footerTerms": "Lưu ý sử dụng",
+   "footerContact": "Liên hệ",
+   "heroBtn1": "Giới thiệu",
+   "heroBtn2": "Liên hệ"
+  },
+  "vi": {
+   "pageTitle": "Phòng Điều dưỡng — Bệnh viện Đa khoa Nhật Tân",
+   "metaDescription": "Giới thiệu Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân: hoạt động chuyên môn, đào tạo, chất lượng chăm sóc và kiến thức sức khỏe.",
+   "navPricing": "Nhân lực",
+   "switchTheme": "Đổi nền sáng/tối",
+   "mainNav": "Menu chính",
+   "hotLabel": "Tin mới",
+   "quickHeading": "Bạn cần tìm gì?",
+   "q1Title": "Giới thiệu",
+   "q1Sub": "Chức năng, nhiệm vụ",
+   "q2Title": "Hoạt động chuyên môn",
+   "q2Sub": "Quy trình, giám sát, đào tạo",
+   "q3Title": "Nhân lực",
+   "q3Sub": "Điều dưỡng, hộ sinh, KTY",
+   "q4Title": "Góp ý, liên hệ",
+   "q4Sub": "Địa chỉ, điện thoại",
+   "priceHeading": "Nhân lực khối Điều dưỡng, Hộ sinh, Kỹ thuật y",
+   "priceModel": "Trình độ",
+   "priceMaker": "Chi tiết năm 2025",
+   "priceIn": "Năm 2024",
+   "priceOut": "Năm 2025",
+   "priceNoteCol": "",
+   "priceNote": "Nguồn: Báo cáo công tác điều dưỡng năm 2025 của Phòng Điều dưỡng (07/01/2026). Cập nhật",
+   "priceSource": "Nguồn",
+   "noticeHeading": "Thông báo",
+   "topicHeading": "Chuyên mục",
+   "topicStories": "bài",
+   "footerAbout": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Điện thoại: 0296 3562 357.",
+   "footerPages": "Trang",
+   "footerEmail": "Gửi email",
+   "navNews": "Tin tức",
+   "navTools": "Hoạt động",
+   "navGuides": "Chất lượng",
+   "navAbout": "Giới thiệu",
+   "navStudio": "",
+   "subscribeBtn": "Liên hệ",
+   "searchLabel": "Tìm kiếm",
+   "closeSearch": "Đóng tìm kiếm",
+   "switchLang": "Đổi ngôn ngữ",
+   "searchPlaceholder": "Tìm tin tức, hoạt động…",
+   "heroEyebrow": "BỆNH VIỆN ĐA KHOA NHẬT TÂN",
+   "heroLine1": "Phòng Điều dưỡng",
+   "heroPre": "Chăm sóc",
+   "heroHighlight": "an toàn,",
+   "heroPost": "tận tâm.",
+   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
+   "emailLabel": "",
+   "emailPlaceholder": "",
+   "getDigestBtn": "",
+   "sending": "",
+   "subscribedMsg": "",
+   "errorInvalid": "",
+   "errorFailed": "",
+   "errorNotConfigured": "",
+   "microcopy": "",
+   "f1Title": "",
+   "f1Sub": "",
+   "f2Title": "",
+   "f2Sub": "",
+   "f3Title": "",
+   "f3Sub": "",
+   "newsHeading": "Tin tức & Sự kiện",
+   "viewAll": "Xem tất cả →",
+   "allTab": "Tất cả",
+   "categoriesLabel": "Chuyên mục tin",
+   "noResults": "Không có bài nào khớp bộ lọc.",
+   "noTools": "Không có hoạt động nào khớp tìm kiếm.",
+   "toolsHeading": "Hoạt động chuyên môn",
+   "backHome": "← Về trang chủ",
+   "lastUpdated": "Cập nhật lần cuối",
+   "closeBtn": "Đóng",
+   "visitBtn": "Xem thêm",
+   "footerCopyright": "© 2026 Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân.",
+   "footerPrivacy": "Liên hệ",
+   "footerTerms": "Lưu ý sử dụng",
+   "footerContact": "Liên hệ",
+   "heroBtn1": "Giới thiệu",
+   "heroBtn2": "Liên hệ"
+  }
+ }
 };
