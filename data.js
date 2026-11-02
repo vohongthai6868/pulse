@@ -168,7 +168,7 @@ window.PULSE_DATA = {
   i18n: {
     en: {
       pageTitle: "Pulse — AI news and tools, curated daily",
-      navPricing: "Pricing", mainNav: "Main menu", hotLabel: "Hot",
+      navPricing: "Pricing", switchTheme: "Switch light/dark", mainNav: "Main menu", hotLabel: "Hot",
       quickHeading: "What do you need today?",
       q1Title: "Read the news", q1Sub: "Latest AI stories", q2Title: "Find a tool", q2Sub: "Hand-picked AI tools",
       q3Title: "Compare prices", q3Sub: "API price per model", q4Title: "Guides", q4Sub: "Use AI well",
@@ -202,7 +202,7 @@ window.PULSE_DATA = {
     },
     vi: {
       pageTitle: "Pulse — Tin tức và công cụ AI, cập nhật mỗi ngày",
-      navPricing: "Bảng giá", mainNav: "Menu chính", hotLabel: "Tin nóng",
+      navPricing: "Bảng giá", switchTheme: "Đổi nền sáng/tối", mainNav: "Menu chính", hotLabel: "Tin nóng",
       quickHeading: "Bạn cần gì hôm nay?",
       q1Title: "Đọc tin mới", q1Sub: "Tin AI mới nhất", q2Title: "Tìm công cụ", q2Sub: "Công cụ AI chọn lọc",
       q3Title: "So sánh giá", q3Sub: "Giá API từng mô hình", q4Title: "Hướng dẫn", q4Sub: "Dùng AI hiệu quả",

@@ -212,6 +212,14 @@
   searchInput.addEventListener("input", function () { state.query = searchInput.value.trim(); renderNews(); renderTools(); });
   searchInput.addEventListener("keydown", function (e) { if (e.key === "Escape") setSearch(false); });
 
+  // Theme (sáng mặc định)
+  $("theme-btn").addEventListener("click", function () {
+    var dark = document.documentElement.getAttribute("data-theme") !== "dark";
+    if (dark) document.documentElement.setAttribute("data-theme", "dark"); else document.documentElement.removeAttribute("data-theme");
+    document.querySelector('meta[name="theme-color"]').setAttribute("content", dark ? "#0a0a10" : "#f6f7fb");
+    try { localStorage.setItem("pulse-theme", dark ? "dark" : "light"); } catch (e) {}
+  });
+
   // Language
   $("lang-btn").addEventListener("click", function () {
     state.lang = state.lang === "en" ? "vi" : "en";
