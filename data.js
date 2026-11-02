@@ -1,14 +1,32 @@
-// Nội dung website. Tin tức và công cụ lấy từ các nguồn công khai (xem "url" của từng mục), cập nhật 25/09/2026.
+// Nội dung website. Tin tức và công cụ lấy từ các nguồn công khai (xem "url" của từng mục), cập nhật 02/11/2026.
 window.PULSE_DATA = {
   categories: {
-    MODELS:   { color: "#22d3ee", label: { en: "Models",   vi: "Mô hình" } },
-    FUNDING:  { color: "#a855f7", label: { en: "Funding & deals", vi: "Gọi vốn & thương vụ" } },
-    RESEARCH: { color: "#f472b6", label: { en: "Research", vi: "Nghiên cứu" } },
-    PRODUCT:  { color: "#fbbf24", label: { en: "Product",  vi: "Sản phẩm" } },
+    MODELS:   { color: "#22d3ee", label: { en: "Models",   vi: "Mô hình" }, intro: { en: "New model launches, updates and prices from the major AI labs.", vi: "Mô hình AI mới, bản cập nhật và giá của các hãng lớn." } },
+    FUNDING:  { color: "#a855f7", label: { en: "Funding & deals", vi: "Gọi vốn & thương vụ" }, intro: { en: "Funding rounds, acquisitions, IPOs and other deals.", vi: "Gọi vốn, mua bán, sáp nhập, IPO và các thương vụ khác." } },
+    RESEARCH: { color: "#f472b6", label: { en: "Research", vi: "Nghiên cứu" }, intro: { en: "Benchmarks, papers and research results.", vi: "Bộ đánh giá, công bố và kết quả nghiên cứu." } },
+    PRODUCT:  { color: "#fbbf24", label: { en: "Product",  vi: "Sản phẩm" }, intro: { en: "New features and products you can use today.", vi: "Tính năng và sản phẩm mới có thể dùng ngay." } },
   },
 
   // Tin tức: "date" (YYYY-MM-DD) có thể bỏ trống. "url" là bài viết gốc. category: MODELS | FUNDING | RESEARCH | PRODUCT.
   news: [
+    { category: "MODELS", date: "2026-10-29", url: "https://mistral.ai/news/mistral-large-4-oss/",
+      title: { en: "Mistral releases open weights for its 1-trillion-parameter Large 4", vi: "Mistral công bố trọng số mở của Large 4, mô hình 1.000 tỷ tham số" },
+      summary: { en: "The weights are on Hugging Face under a modified MIT license; companies selling it as a hosted service need a separate commercial license.", vi: "Trọng số có trên Hugging Face theo giấy phép MIT sửa đổi; doanh nghiệp bán dịch vụ chạy mô hình cần giấy phép thương mại riêng." } },
+    { category: "FUNDING", date: "2026-10-26", url: "https://nairametrics.com/2026/10/26/anthropic-files-for-ipo-plans-nasdaq-listing-under-ticker-ant/",
+      title: { en: "Anthropic files to go public on Nasdaq under the ticker ANT", vi: "Anthropic nộp hồ sơ IPO, dự kiến niêm yết trên Nasdaq với mã ANT" },
+      summary: { en: "The S-1 shows $16.3 billion in revenue for the first half of 2026, up from $1.2 billion a year earlier. Share count and price range are not yet set.", vi: "Hồ sơ S-1 cho thấy doanh thu nửa đầu năm 2026 đạt 16,3 tỷ USD, so với 1,2 tỷ USD cùng kỳ năm trước. Số cổ phiếu và khoảng giá chưa được công bố." } },
+    { category: "MODELS", date: "2026-10-26", url: "https://openai.com/index/introducing-gpt-6-1-terra/",
+      title: { en: "OpenAI ships GPT-6.1 Terra for computer use at half the price", vi: "OpenAI ra mắt GPT-6.1 Terra chuyên thao tác máy tính, giá giảm một nửa" },
+      summary: { en: "The mid-size model replaces GPT-5.6 Terra in ChatGPT Work, Codex and the API at $1 input / $5 output per million tokens, about 50% cheaper.", vi: "Mô hình cỡ trung thay GPT-5.6 Terra trong ChatGPT Work, Codex và API, giá $1 (đầu vào) / $5 (đầu ra) mỗi triệu token, rẻ hơn khoảng 50%." } },
+    { category: "MODELS", date: "2026-10-13", url: "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+      title: { en: "Google makes Gemini 4 Argon generally available", vi: "Google mở rộng Gemini 4 Argon cho mọi người dùng trả phí" },
+      summary: { en: "The flagship reasoning model has a 1-million-token context. Intro API price is $2 / $10 per million tokens until November 30, then rises.", vi: "Mô hình suy luận chủ lực có ngữ cảnh 1 triệu token. Giá API ưu đãi $2 / $10 mỗi triệu token đến 30/11, sau đó tăng." } },
+    { category: "FUNDING", date: "2026-10-12", url: "https://thenextweb.com/news/character-ai-files-for-bankruptcy-as-disney-bids-20m-for-some-assets",
+      title: { en: "Character.AI files for Chapter 11 as Disney bids $20 million", vi: "Character.AI nộp đơn phá sản theo Chương 11, Disney trả giá 20 triệu USD" },
+      summary: { en: "Disney's opening bid is for a non-exclusive license to some IP. The app keeps running during the sale, expected to close by early December.", vi: "Giá mở đầu của Disney là để mua quyền sử dụng không độc quyền một phần tài sản trí tuệ. Ứng dụng vẫn chạy trong lúc bán, dự kiến xong trước đầu tháng 12." } },
+    { category: "MODELS", date: "2026-10-07", url: "https://www.anthropic.com/claude-haiku-5-5",
+      title: { en: "Anthropic launches Claude Haiku 5.5, its cheapest small model", vi: "Anthropic ra mắt Claude Haiku 5.5, mô hình nhỏ rẻ nhất từ trước tới nay" },
+      summary: { en: "Priced at $0.10 / $0.50 per million tokens for prompts up to 100k tokens, it costs about 75% less on average than Haiku 4.5.", vi: "Giá $0,10 / $0,50 mỗi triệu token cho câu lệnh đến 100 nghìn token, trung bình rẻ hơn Haiku 4.5 khoảng 75%." } },
     { category: "MODELS", date: "2026-09-22", url: "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
       title: { en: "OpenAI launches GPT-6 Sol and Luna and halves API prices", vi: "OpenAI ra mắt GPT-6 Sol và Luna, giảm một nửa giá API" },
       summary: { en: "Sol is priced at $2 input / $10 output per million tokens and Luna at $0.10 / $0.50, roughly half of the previous prices.", vi: "Sol có giá $2 (đầu vào) / $10 (đầu ra) mỗi triệu token, Luna là $0,10 / $0,50, tức khoảng một nửa mức giá trước đó." } },
@@ -57,7 +75,28 @@ window.PULSE_DATA = {
     { id: "gemini", name: "Gemini", url: "https://gemini.google.com", gradient: "linear-gradient(135deg,#22d3ee,#818cf8)",
       tag: null,
       description: { en: "AI assistant from Google", vi: "Trợ lý AI của Google" },
-      detail: { en: "Google's assistant. Gemini 3.8 Flash launched on September 2 with a focus on software engineering and multi-step tasks.", vi: "Trợ lý AI của Google. Gemini 3.8 Flash ra mắt ngày 2/9, tập trung vào kỹ thuật phần mềm và các tác vụ nhiều bước." } },
+      detail: { en: "Google's assistant. Gemini 4 Argon, Google's new flagship reasoning model, became generally available on October 13.", vi: "Trợ lý AI của Google. Gemini 4 Argon, mô hình suy luận chủ lực mới của Google, mở rộng cho người dùng trả phí từ ngày 13/10." } },
+  ],
+
+  // Bảng giá API (USD cho mỗi 1 triệu token). Giá tham khảo, kiểm tra lại trên trang của hãng. "url" là nguồn.
+  pricingUpdated: "2026-11-02",
+  pricing: [
+    { model: "GPT-6 Sol", maker: "OpenAI", input: 2, output: 10, url: "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/" },
+    { model: "GPT-6.1 Terra", maker: "OpenAI", input: 1, output: 5, url: "https://openai.com/index/introducing-gpt-6-1-terra/",
+      note: { en: "Computer use, half the price of GPT-5.6 Terra", vi: "Thao tác máy tính, rẻ bằng nửa GPT-5.6 Terra" } },
+    { model: "GPT-6 Luna", maker: "OpenAI", input: 0.10, output: 0.50, url: "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/" },
+    { model: "Claude Sonnet 5.5", maker: "Anthropic", input: 2, output: 10, url: "https://www.anthropic.com/claude-haiku-5-5" },
+    { model: "Claude Haiku 5.5", maker: "Anthropic", input: 0.10, output: 0.50, url: "https://www.anthropic.com/claude-haiku-5-5",
+      note: { en: "Prompts up to 100k tokens; $0.50 / $2.50 above that", vi: "Câu lệnh đến 100 nghìn token; trên mức đó $0,50 / $2,50" } },
+    { model: "Gemini 4 Argon", maker: "Google", input: 2, output: 10, url: "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+      note: { en: "Intro price until Nov 30, then $4 / $20", vi: "Giá ưu đãi đến 30/11, sau đó $4 / $20" } },
+  ],
+
+  // Thông báo (cột bên phải phần Tin tức). Mục mới nhất để trên cùng.
+  notices: [
+    { date: "2026-11-02", text: { en: "Pulse has a new layout: API price table, featured tools and a page for each topic.", vi: "Pulse có giao diện mới: bảng giá API, công cụ nổi bật và trang riêng cho từng chuyên mục." } },
+    { date: "2026-11-02", text: { en: "Gemini 4 Argon API prices double on December 1, 2026.", vi: "Giá API Gemini 4 Argon tăng gấp đôi từ ngày 01/12/2026." } },
+    { date: "2026-11-02", text: { en: "Prices in the table are for reference. Always check the provider's own page.", vi: "Giá trong bảng chỉ để tham khảo, hãy kiểm tra lại trên trang của hãng." } },
   ],
 
   // Nội dung các trang phụ. Mỗi mục: h = tiêu đề, p = đoạn văn, items = danh sách gạch đầu dòng (ordered:true = đánh số).
@@ -129,6 +168,14 @@ window.PULSE_DATA = {
   i18n: {
     en: {
       pageTitle: "Pulse — AI news and tools, curated daily",
+      navPricing: "Pricing", switchTheme: "Switch light/dark", mainNav: "Main menu", hotLabel: "Hot",
+      quickHeading: "What do you need today?",
+      q1Title: "Read the news", q1Sub: "Latest AI stories", q2Title: "Find a tool", q2Sub: "Hand-picked AI tools",
+      q3Title: "Compare prices", q3Sub: "API price per model", q4Title: "Guides", q4Sub: "Use AI well",
+      priceHeading: "AI model API prices", priceModel: "Model", priceMaker: "Company", priceIn: "Input", priceOut: "Output", priceNoteCol: "Notes",
+      priceNote: "US dollars per 1 million tokens. For reference only, updated", priceSource: "Source",
+      noticeHeading: "Notices", topicHeading: "Topics", topicStories: "stories",
+      footerAbout: "A daily digest of AI news and tools. Information only, not investment advice.", footerPages: "Pages", footerEmail: "Email us",
       metaDescription: "The latest AI news, hand-picked tools, and no-fluff analysis, delivered every morning.",
       navNews: "News", navTools: "Tools", navGuides: "Guides", navAbout: "About", navStudio: "Creative Studio",
       subscribeBtn: "Subscribe", searchLabel: "Search", closeSearch: "Close search", switchLang: "Switch language",
@@ -145,9 +192,9 @@ window.PULSE_DATA = {
       f1Title: "Daily briefings", f1Sub: "5 minutes, every morning",
       f2Title: "Hand-picked tools", f2Sub: "Chosen from the week's news",
       f3Title: "Zero fluff", f3Sub: "Signal, not noise",
-      newsHeading: "Latest in AI", viewAll: "View all →", allTab: "All", categoriesLabel: "News categories",
+      newsHeading: "News & events", viewAll: "View all →", allTab: "All", categoriesLabel: "News categories",
       noResults: "No stories match your filters.", noTools: "No tools match your search.",
-      toolsHeading: "Tools in the spotlight",
+      toolsHeading: "Featured tools",
       backHome: "← Back to home", lastUpdated: "Last updated",
       closeBtn: "Close", visitBtn: "Visit tool",
       footerCopyright: "© 2026 Pulse. All rights reserved.",
@@ -155,6 +202,14 @@ window.PULSE_DATA = {
     },
     vi: {
       pageTitle: "Pulse — Tin tức và công cụ AI, cập nhật mỗi ngày",
+      navPricing: "Bảng giá", switchTheme: "Đổi nền sáng/tối", mainNav: "Menu chính", hotLabel: "Tin nóng",
+      quickHeading: "Bạn cần gì hôm nay?",
+      q1Title: "Đọc tin mới", q1Sub: "Tin AI mới nhất", q2Title: "Tìm công cụ", q2Sub: "Công cụ AI chọn lọc",
+      q3Title: "So sánh giá", q3Sub: "Giá API từng mô hình", q4Title: "Hướng dẫn", q4Sub: "Dùng AI hiệu quả",
+      priceHeading: "Bảng giá API mô hình AI", priceModel: "Mô hình", priceMaker: "Hãng", priceIn: "Đầu vào", priceOut: "Đầu ra", priceNoteCol: "Ghi chú",
+      priceNote: "Đơn vị USD cho mỗi 1 triệu token. Giá tham khảo, cập nhật", priceSource: "Nguồn",
+      noticeHeading: "Thông báo", topicHeading: "Chuyên mục", topicStories: "tin",
+      footerAbout: "Bản tin hằng ngày về tin tức và công cụ AI. Chỉ mang tính thông tin, không phải lời khuyên đầu tư.", footerPages: "Trang", footerEmail: "Gửi email",
       metaDescription: "Tin tức AI mới nhất, công cụ chọn lọc và phân tích không lan man, gửi đến bạn mỗi sáng.",
       navNews: "Tin tức", navTools: "Công cụ", navGuides: "Hướng dẫn", navAbout: "Giới thiệu", navStudio: "Phòng sáng tạo",
       subscribeBtn: "Đăng ký", searchLabel: "Tìm kiếm", closeSearch: "Đóng tìm kiếm", switchLang: "Đổi ngôn ngữ",
@@ -171,9 +226,9 @@ window.PULSE_DATA = {
       f1Title: "Bản tin mỗi ngày", f1Sub: "5 phút mỗi sáng",
       f2Title: "Công cụ chọn lọc", f2Sub: "Chọn từ tin tức trong tuần",
       f3Title: "Không lan man", f3Sub: "Chỉ thông tin hữu ích",
-      newsHeading: "Mới nhất về AI", viewAll: "Xem tất cả →", allTab: "Tất cả", categoriesLabel: "Chuyên mục tin tức",
+      newsHeading: "Tin tức & Sự kiện", viewAll: "Xem tất cả →", allTab: "Tất cả", categoriesLabel: "Chuyên mục tin tức",
       noResults: "Không có tin nào khớp bộ lọc.", noTools: "Không có công cụ nào khớp tìm kiếm.",
-      toolsHeading: "Công cụ đang được chú ý",
+      toolsHeading: "Công cụ nổi bật",
       backHome: "← Về trang chủ", lastUpdated: "Cập nhật lần cuối",
       closeBtn: "Đóng", visitBtn: "Truy cập công cụ",
       footerCopyright: "© 2026 Pulse. Đã đăng ký bản quyền.",
