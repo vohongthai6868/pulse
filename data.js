@@ -1,4 +1,4 @@
-// Nội dung website. Tin tức và công cụ lấy từ các nguồn công khai (xem "url" của từng mục), cập nhật 25/09/2026.
+// Nội dung website. Tin tức và công cụ lấy từ các nguồn công khai (xem "url" của từng mục), cập nhật 02/11/2026.
 window.PULSE_DATA = {
   categories: {
     MODELS:   { color: "#22d3ee", label: { en: "Models",   vi: "Mô hình" } },
@@ -9,6 +9,24 @@ window.PULSE_DATA = {
 
   // Tin tức: "date" (YYYY-MM-DD) có thể bỏ trống. "url" là bài viết gốc. category: MODELS | FUNDING | RESEARCH | PRODUCT.
   news: [
+    { category: "MODELS", date: "2026-10-29", url: "https://mistral.ai/news/mistral-large-4-oss/",
+      title: { en: "Mistral releases open weights for its 1-trillion-parameter Large 4", vi: "Mistral công bố trọng số mở của Large 4, mô hình 1.000 tỷ tham số" },
+      summary: { en: "The weights are on Hugging Face under a modified MIT license; companies selling it as a hosted service need a separate commercial license.", vi: "Trọng số có trên Hugging Face theo giấy phép MIT sửa đổi; doanh nghiệp bán dịch vụ chạy mô hình cần giấy phép thương mại riêng." } },
+    { category: "FUNDING", date: "2026-10-26", url: "https://nairametrics.com/2026/10/26/anthropic-files-for-ipo-plans-nasdaq-listing-under-ticker-ant/",
+      title: { en: "Anthropic files to go public on Nasdaq under the ticker ANT", vi: "Anthropic nộp hồ sơ IPO, dự kiến niêm yết trên Nasdaq với mã ANT" },
+      summary: { en: "The S-1 shows $16.3 billion in revenue for the first half of 2026, up from $1.2 billion a year earlier. Share count and price range are not yet set.", vi: "Hồ sơ S-1 cho thấy doanh thu nửa đầu năm 2026 đạt 16,3 tỷ USD, so với 1,2 tỷ USD cùng kỳ năm trước. Số cổ phiếu và khoảng giá chưa được công bố." } },
+    { category: "MODELS", date: "2026-10-26", url: "https://openai.com/index/introducing-gpt-6-1-terra/",
+      title: { en: "OpenAI ships GPT-6.1 Terra for computer use at half the price", vi: "OpenAI ra mắt GPT-6.1 Terra chuyên thao tác máy tính, giá giảm một nửa" },
+      summary: { en: "The mid-size model replaces GPT-5.6 Terra in ChatGPT Work, Codex and the API at $1 input / $5 output per million tokens, about 50% cheaper.", vi: "Mô hình cỡ trung thay GPT-5.6 Terra trong ChatGPT Work, Codex và API, giá $1 (đầu vào) / $5 (đầu ra) mỗi triệu token, rẻ hơn khoảng 50%." } },
+    { category: "MODELS", date: "2026-10-13", url: "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+      title: { en: "Google makes Gemini 4 Argon generally available", vi: "Google mở rộng Gemini 4 Argon cho mọi người dùng trả phí" },
+      summary: { en: "The flagship reasoning model has a 1-million-token context. Intro API price is $2 / $10 per million tokens until November 30, then rises.", vi: "Mô hình suy luận chủ lực có ngữ cảnh 1 triệu token. Giá API ưu đãi $2 / $10 mỗi triệu token đến 30/11, sau đó tăng." } },
+    { category: "FUNDING", date: "2026-10-12", url: "https://thenextweb.com/news/character-ai-files-for-bankruptcy-as-disney-bids-20m-for-some-assets",
+      title: { en: "Character.AI files for Chapter 11 as Disney bids $20 million", vi: "Character.AI nộp đơn phá sản theo Chương 11, Disney trả giá 20 triệu USD" },
+      summary: { en: "Disney's opening bid is for a non-exclusive license to some IP. The app keeps running during the sale, expected to close by early December.", vi: "Giá mở đầu của Disney là để mua quyền sử dụng không độc quyền một phần tài sản trí tuệ. Ứng dụng vẫn chạy trong lúc bán, dự kiến xong trước đầu tháng 12." } },
+    { category: "MODELS", date: "2026-10-07", url: "https://www.anthropic.com/claude-haiku-5-5",
+      title: { en: "Anthropic launches Claude Haiku 5.5, its cheapest small model", vi: "Anthropic ra mắt Claude Haiku 5.5, mô hình nhỏ rẻ nhất từ trước tới nay" },
+      summary: { en: "Priced at $0.10 / $0.50 per million tokens for prompts up to 100k tokens, it costs about 75% less on average than Haiku 4.5.", vi: "Giá $0,10 / $0,50 mỗi triệu token cho câu lệnh đến 100 nghìn token, trung bình rẻ hơn Haiku 4.5 khoảng 75%." } },
     { category: "MODELS", date: "2026-09-22", url: "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/",
       title: { en: "OpenAI launches GPT-6 Sol and Luna and halves API prices", vi: "OpenAI ra mắt GPT-6 Sol và Luna, giảm một nửa giá API" },
       summary: { en: "Sol is priced at $2 input / $10 output per million tokens and Luna at $0.10 / $0.50, roughly half of the previous prices.", vi: "Sol có giá $2 (đầu vào) / $10 (đầu ra) mỗi triệu token, Luna là $0,10 / $0,50, tức khoảng một nửa mức giá trước đó." } },
