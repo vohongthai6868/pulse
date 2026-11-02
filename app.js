@@ -64,7 +64,11 @@
       return (state.category === "ALL" || n.category === state.category) &&
         matches(state.query, [n.title[state.lang], n.summary[state.lang]]);
     });
-    shown.forEach(function (n) {
+    shown.forEach(function (n) { list.appendChild(newsCard(n)); });
+    $("news-empty").hidden = shown.length > 0;
+  }
+
+  function newsCard(n) {
       var cat = DATA.categories[n.category];
       var thumb = el("div", { class: "news-thumb", "aria-hidden": "true" });
       thumb.innerHTML = BOLT;
@@ -79,9 +83,68 @@
       var card = n.url
         ? el("a", { class: "news-card", href: n.url, target: "_blank", rel: "noopener noreferrer", style: "--c:" + cat.color }, [thumb, body])
         : el("article", { class: "news-card", style: "--c:" + cat.color }, [thumb, body]);
-      list.appendChild(card);
+      return card;
+  }
+
+  function latestNews() {
+    return DATA.news.reduce(function (best, n) { return !best || (n.date || "") > (best.date || "") ? n : best; }, null);
+  }
+
+  function renderHot() {
+    var n = latestNews();
+    $("hot-title").textContent = n ? n.title[state.lang] : "";
+    var link = $("hot-link");
+    if (n && n.url) { link.setAttribute("href", n.url); link.setAttribute("target", "_blank"); link.setAttribute("rel", "noopener noreferrer"); }
+  }
+
+  function money(v) {
+    var txt = v < 1 ? v.toFixed(2) : String(v);
+    return "$" + (state.lang === "vi" ? txt.replace(".", ",") : txt);
+  }
+
+  function renderPricing() {
+    var body = $("price-body");
+    body.textContent = "";
+    (DATA.pricing || []).forEach(function (r) {
+      var src = el("a", { href: r.url, target: "_blank", rel: "noopener noreferrer", class: "price-src", text: t("priceSource") });
+      var noteCell = el("td", { class: "price-note" }, [r.note ? document.createTextNode(r.note[state.lang] + " · ") : null, src]);
+      body.appendChild(el("tr", {}, [
+        el("th", { scope: "row" }, [document.createTextNode(r.model), el("span", { class: "maker-sm", text: r.maker })]),
+        el("td", { class: "col-maker", text: r.maker }),
+        el("td", { class: "num", "data-label": t("priceIn"), text: money(r.input) }),
+        el("td", { class: "num", "data-label": t("priceOut"), text: money(r.output) }),
+        noteCell,
+      ]));
     });
-    $("news-empty").hidden = shown.length > 0;
+    $("price-note").textContent = t("priceNote") + " " + formatDate(DATA.pricingUpdated) + ".";
+  }
+
+  function renderNotices() {
+    var list = $("notice-list");
+    list.textContent = "";
+    (DATA.notices || []).forEach(function (x) {
+      list.appendChild(el("li", {}, [
+        el("time", { class: "news-time", datetime: x.date, text: formatDate(x.date) }),
+        el("p", { text: x.text[state.lang] }),
+      ]));
+    });
+  }
+
+  function renderTopics() {
+    [["topic-list", true], ["footer-topics", false]].forEach(function (cfg) {
+      var list = $(cfg[0]);
+      list.textContent = "";
+      Object.keys(DATA.categories).forEach(function (key) {
+        var cat = DATA.categories[key];
+        var count = DATA.news.filter(function (n) { return n.category === key; }).length;
+        var a = el("a", { href: "#/topic/" + key.toLowerCase(), style: "--c:" + cat.color }, [
+          cfg[1] ? el("span", { class: "topic-dot" }) : null,
+          el("span", { class: "topic-name", text: cat.label[state.lang] }),
+          cfg[1] ? el("span", { class: "topic-count", text: count + " " + t("topicStories") }) : null,
+        ]);
+        list.appendChild(el("li", {}, [a]));
+      });
+    });
   }
 
   function renderTools() {
@@ -91,17 +154,16 @@
       return matches(state.query, [tool.name, tool.description[state.lang]]);
     });
     shown.forEach(function (tool) {
-      var swatch = el("div", { class: "tool-swatch", style: "background:" + tool.gradient });
-      var row = el("button", { class: "tool-row", type: "button" }, [
-        swatch,
-        el("div", { class: "tool-text" }, [
-          el("div", { class: "tool-name", text: tool.name }),
-          el("div", { class: "tool-desc", text: tool.description[state.lang] }),
+      var card = el("button", { class: "tool-card", type: "button" }, [
+        el("div", { class: "tool-card-top" }, [
+          el("div", { class: "tool-swatch", style: "background:" + tool.gradient }),
+          tool.tag ? el("span", { class: "tool-tag", style: "--c:" + tool.tag.color, text: tool.tag[state.lang] }) : null,
         ]),
-        tool.tag ? el("span", { class: "tool-tag", style: "--c:" + tool.tag.color, text: tool.tag[state.lang] }) : null,
+        el("div", { class: "tool-name", text: tool.name }),
+        el("div", { class: "tool-desc", text: tool.description[state.lang] }),
       ]);
-      row.addEventListener("click", function () { openTool(tool.id); });
-      list.appendChild(row);
+      card.addEventListener("click", function () { openTool(tool.id); });
+      list.appendChild(card);
     });
     $("tools-empty").hidden = shown.length > 0;
   }
@@ -192,8 +254,9 @@
 
   // Contact link
   var contact = $("contact-link");
-  if (CONFIG.contactEmail) contact.setAttribute("href", "mailto:" + CONFIG.contactEmail);
-  else contact.hidden = true;
+  var contactTop = $("contact-top");
+  if (CONFIG.contactEmail) { contact.setAttribute("href", "mailto:" + CONFIG.contactEmail); contactTop.setAttribute("href", "mailto:" + CONFIG.contactEmail); }
+  else { contact.hidden = true; contactTop.hidden = true; }
 
   var studioLink = $("studio-link");
   if (CONFIG.studioUrl) { studioLink.setAttribute("href", CONFIG.studioUrl); studioLink.hidden = false; }
@@ -207,11 +270,27 @@
 
   // Sub-pages (#/about, #/guides, #/privacy, #/terms)
   var PAGE_RE = /^#\/(about|guides|privacy|terms)$/;
+  var TOPIC_RE = /^#\/topic\/([a-z]+)$/;
   var homeView = $("home-view"), pageView = $("page-view");
 
   function currentPage() {
     var m = PAGE_RE.exec(location.hash);
-    return m ? m[1] : null;
+    if (m) return m[1];
+    var tm = TOPIC_RE.exec(location.hash);
+    return tm && DATA.categories[tm[1].toUpperCase()] ? "topic:" + tm[1].toUpperCase() : null;
+  }
+
+  function renderTopicPage(key) {
+    var cat = DATA.categories[key];
+    pageView.textContent = "";
+    pageView.appendChild(el("a", { class: "back-link", href: "#top", text: t("backHome") }));
+    pageView.appendChild(el("span", { class: "tag", style: "--c:" + cat.color, text: t("topicHeading") }));
+    pageView.appendChild(el("h1", { class: "page-title", text: cat.label[state.lang] }));
+    if (cat.intro) pageView.appendChild(el("p", { class: "page-intro", text: cat.intro[state.lang] }));
+    var list = el("div", { class: "news-list page-news" });
+    DATA.news.filter(function (n) { return n.category === key; }).forEach(function (n) { list.appendChild(newsCard(n)); });
+    pageView.appendChild(list);
+    document.title = cat.label[state.lang] + " — Pulse";
   }
 
   function renderPage(name) {
@@ -240,7 +319,7 @@
     if (name) {
       homeView.hidden = true;
       pageView.hidden = false;
-      renderPage(name);
+      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else renderPage(name);
       if (scroll) window.scrollTo(0, 0);
     } else {
       var wasPage = !pageView.hidden;
@@ -260,6 +339,10 @@
     renderTabs();
     renderNews();
     renderTools();
+    renderHot();
+    renderPricing();
+    renderNotices();
+    renderTopics();
     route(false);
   }
   renderAll();
