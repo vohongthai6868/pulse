@@ -6,8 +6,27 @@
   var state = { lang: "en", category: "ALL", query: "", toolId: null };
   try {
     var saved = localStorage.getItem("pulse-lang");
-    state.lang = saved === "vi" || saved === "en" ? saved : (navigator.language || "").toLowerCase().indexOf("vi") === 0 ? "vi" : "en";
-  } catch (e) {}
+    state.lang = saved === "en" ? "en" : "vi";
+  } catch (e) { state.lang = "vi"; }
+
+  // Bản dịch tiếng Anh: tra theo câu tiếng Việt (i18n-en.js)
+  var EN = window.PULSE_EN || {};
+  function tr(s) { return state.lang === "en" && typeof s === "string" && EN[s] ? EN[s] : s; }
+  function L(vi, en) { return state.lang === "en" ? en : vi; }
+  (function fillEn(o) {
+    if (!o || typeof o !== "object") return;
+    if (Array.isArray(o)) { o.forEach(fillEn); return; }
+    if ("vi" in o && "en" in o) {
+      if (typeof o.vi === "string") o.en = EN[o.vi] || o.vi;
+      else if (Array.isArray(o.vi)) o.en = o.vi.map(function (x) { return EN[x] || x; });
+      else if (o.vi && typeof o.vi === "object") Object.keys(o.vi).forEach(function (k) {
+        var v = o.vi[k];
+        if (typeof v === "string" && EN[v]) o.en[k] = EN[v];
+      });
+      return;
+    }
+    Object.keys(o).forEach(function (k) { fillEn(o[k]); });
+  })(DATA);
 
   function t(key) { return DATA.i18n[state.lang][key]; }
 
@@ -43,7 +62,21 @@
     document.querySelectorAll("[data-i18n]").forEach(function (n) { n.textContent = t(n.getAttribute("data-i18n")); });
     document.querySelectorAll("[data-i18n-placeholder]").forEach(function (n) { n.setAttribute("placeholder", t(n.getAttribute("data-i18n-placeholder"))); });
     document.querySelectorAll("[data-i18n-aria]").forEach(function (n) { n.setAttribute("aria-label", t(n.getAttribute("data-i18n-aria"))); });
-    $("lang-btn").textContent = state.lang === "en" ? "VI" : "EN";
+    document.querySelectorAll("[data-en]").forEach(function (n) {
+      if (n.dataset.vi == null) n.dataset.vi = n.innerHTML;
+      n.innerHTML = state.lang === "en" ? n.getAttribute("data-en") : n.dataset.vi;
+    });
+    ["aria-label", "alt"].forEach(function (a) {
+      document.querySelectorAll("[data-en-" + a + "]").forEach(function (n) {
+        var k = "vi" + a.replace("-", "");
+        if (n.dataset[k] == null) n.dataset[k] = n.getAttribute(a);
+        n.setAttribute(a, state.lang === "en" ? n.getAttribute("data-en-" + a) : n.dataset[k]);
+      });
+    });
+    var lb = $("lang-btn");
+    lb.textContent = state.lang === "en" ? "VI" : "EN";
+    lb.setAttribute("aria-label", state.lang === "en" ? "Chuyển sang tiếng Việt" : "Switch to English");
+    lb.setAttribute("title", lb.getAttribute("aria-label"));
   }
 
   function renderTabs() {
@@ -71,7 +104,7 @@
     shown.slice(0, lim).forEach(function (n) { list.appendChild(newsCard(n)); });
     $("news-empty").hidden = shown.length > 0;
     var nm = $("news-more");
-    if (nm) { nm.hidden = shown.length <= nb || !!state.query; nm.textContent = newsAll ? "Thu gọn" : "Xem thêm " + (shown.length - nb) + " tin"; }
+    if (nm) { nm.hidden = shown.length <= nb || !!state.query; nm.textContent = newsAll ? L("Thu gọn", "Show less") : L("Xem thêm " + (shown.length - nb) + " tin", "Show " + (shown.length - nb) + " more"); }
   }
 
   function newsCard(n) {
@@ -116,8 +149,8 @@
       var src = r.url ? el("a", { href: r.url, target: "_blank", rel: "noopener noreferrer", class: "price-src", text: t("priceSource") }) : null;
       var noteCell = el("td", { class: "price-note" }, [r.note ? document.createTextNode(r.note[state.lang] + (src ? " · " : "")) : null, src]);
       body.appendChild(el("tr", {}, [
-        el("th", { scope: "row" }, [document.createTextNode(r.model), el("span", { class: "maker-sm", text: r.maker })]),
-        el("td", { class: "col-maker", text: r.maker }),
+        el("th", { scope: "row" }, [document.createTextNode(tr(r.model)), el("span", { class: "maker-sm", text: tr(r.maker) })]),
+        el("td", { class: "col-maker", text: tr(r.maker) }),
         el("td", { class: "num", "data-label": t("priceIn"), text: money(r.input) }),
         el("td", { class: "num", "data-label": t("priceOut"), text: money(r.output) }),
         t("priceNoteCol") ? noteCell : null,
@@ -162,27 +195,27 @@
     if (!box || !DATA.gdsk) return;
     var G = DATA.gdsk.groups;
     tabs.textContent = "";
-    [["all", "Tất cả", "#0b4f9c"]].concat(Object.keys(G).map(function (k) { return [k, G[k].label, G[k].color]; })).forEach(function (x) {
+    [["all", L("Tất cả", "All"), "#0b4f9c"]].concat(Object.keys(G).map(function (k) { return [k, tr(G[k].label), G[k].color]; })).forEach(function (x) {
       var b = el("button", { class: "tab", style: "--c:" + x[2], type: "button", "aria-pressed": String(gdskGroup === x[0]), text: x[1] });
       b.addEventListener("click", function () { gdskGroup = x[0]; gdskAll = false; renderGdsk(); });
       tabs.appendChild(b);
     });
     box.textContent = "";
     var list = DATA.gdsk.topics.filter(function (tp) {
-      return (gdskGroup === "all" || tp.group === gdskGroup) && matches(state.query, [tp.title].concat(tp.points));
+      return (gdskGroup === "all" || tp.group === gdskGroup) && matches(state.query, [tr(tp.title)].concat(tp.points.map(tr)));
     });
     var base = window.innerWidth < 640 ? 3 : 6;
     var limit = (gdskAll || state.query) ? list.length : base;
     list.slice(0, limit).forEach(function (tp) {
       var g = G[tp.group];
       box.appendChild(el("article", { class: "gdsk-card", style: "--c:" + g.color }, [
-        el("span", { class: "gdsk-tag", text: g.label }),
-        el("h3", { class: "gdsk-title", text: tp.title }),
-        el("ul", { class: "gdsk-points" }, tp.points.map(function (s) { return el("li", { text: s }); })),
+        el("span", { class: "gdsk-tag", text: tr(g.label) }),
+        el("h3", { class: "gdsk-title", text: tr(tp.title) }),
+        el("ul", { class: "gdsk-points" }, tp.points.map(function (s) { return el("li", { text: tr(s) }); })),
       ]));
     });
     var more = $("gdsk-more");
-    if (more) { more.hidden = list.length <= base || !!state.query; more.textContent = gdskAll ? "Thu gọn" : "Xem thêm " + (list.length - base) + " chủ đề"; }
+    if (more) { more.hidden = list.length <= base || !!state.query; more.textContent = gdskAll ? L("Thu gọn", "Show less") : L("Xem thêm " + (list.length - base) + " chủ đề", "Show " + (list.length - base) + " more topics"); }
   }
 
   var roleKey = null;
@@ -192,20 +225,20 @@
     box.textContent = "";
     if (!roleKey) roleKey = DATA.roles[0].key;
     var searching = !!state.query;
-    var tabs = el("div", { class: "tabs seg-tabs", role: "group", "aria-label": "Chức danh" });
+    var tabs = el("div", { class: "tabs seg-tabs", role: "group", "aria-label": L("Chức danh", "Job title") });
     DATA.roles.forEach(function (r) {
-      var b = el("button", { class: "tab", type: "button", style: "--c:#0b4f9c", "aria-pressed": String(!searching && roleKey === r.key), text: r.label });
+      var b = el("button", { class: "tab", type: "button", style: "--c:#0b4f9c", "aria-pressed": String(!searching && roleKey === r.key), text: tr(r.label) });
       b.addEventListener("click", function () { roleKey = r.key; renderRoles(); });
       tabs.appendChild(b);
     });
     box.appendChild(tabs);
     DATA.roles.forEach(function (r) {
       if (!searching && r.key !== roleKey) return;
-      var items = r.items.filter(function (it) { return matches(state.query, [r.label, it]); });
+      var items = r.items.filter(function (it) { return matches(state.query, [tr(r.label), tr(it)]); });
       if (!items.length) return;
       box.appendChild(el("div", { class: "role-card role-" + r.key }, [
-        searching ? el("h3", { class: "role-title", text: r.label }) : null,
-        el("ul", { class: "role-items" }, items.map(function (it) { return el("li", { text: it }); })),
+        searching ? el("h3", { class: "role-title", text: tr(r.label) }) : null,
+        el("ul", { class: "role-items" }, items.map(function (it) { return el("li", { text: tr(it) }); })),
       ]));
     });
   }
@@ -220,9 +253,9 @@
     var c = $("dept-count"); if (c) c.textContent = total;
     var searching = !!state.query;
     if (!deptGroup) deptGroup = DATA.departments[0].group;
-    var tabs = el("div", { class: "tabs seg-tabs", role: "group", "aria-label": "Nhóm đơn vị" });
+    var tabs = el("div", { class: "tabs seg-tabs", role: "group", "aria-label": L("Nhóm đơn vị", "Unit group") });
     DATA.departments.forEach(function (g) {
-      var b = el("button", { class: "tab", type: "button", style: "--c:#0b4f9c", "aria-pressed": String(!searching && deptGroup === g.group), text: g.groupLabel + " (" + g.units.length + ")" });
+      var b = el("button", { class: "tab", type: "button", style: "--c:#0b4f9c", "aria-pressed": String(!searching && deptGroup === g.group), text: tr(g.groupLabel) + " (" + g.units.length + ")" });
       b.addEventListener("click", function () { deptGroup = g.group; renderDepts(); });
       tabs.appendChild(b);
     });
@@ -230,25 +263,25 @@
     var grid = el("div", { class: "dept-grid" });
     DATA.departments.forEach(function (g) {
       if (!searching && g.group !== deptGroup) return;
-      g.units.filter(function (u) { return matches(state.query, [u.name, u.desc]); }).forEach(function (u) {
+      g.units.filter(function (u) { return matches(state.query, [tr(u.name), tr(u.desc)]); }).forEach(function (u) {
         var card = el("button", { class: "dept-card dept-" + g.group, type: "button", "aria-expanded": "false" }, [
-          el("span", { class: "dept-name", text: u.name }),
-          (u.roles && u.roles.length) ? el("span", { class: "dept-roles" }, u.roles.map(function (r) { return el("span", { class: "role-tag", text: r }); })) : null,
-          el("span", { class: "dept-desc", text: u.desc }),
+          el("span", { class: "dept-name", text: tr(u.name) }),
+          (u.roles && u.roles.length) ? el("span", { class: "dept-roles" }, u.roles.map(function (r) { return el("span", { class: "role-tag", text: tr(r) }); })) : null,
+          el("span", { class: "dept-desc", text: tr(u.desc) }),
         ]);
         card.addEventListener("click", function () { card.setAttribute("aria-expanded", String(card.getAttribute("aria-expanded") !== "true")); });
         grid.appendChild(card);
       });
     });
     box.appendChild(grid);
-    box.appendChild(el("p", { class: "dept-hint", text: "Bấm vào từng đơn vị để xem mô tả." }));
+    box.appendChild(el("p", { class: "dept-hint", text: L("Bấm vào từng đơn vị để xem mô tả.", "Tap a unit to see its description.") }));
   }
 
   function renderTools() {
     var list = $("tools-list");
     list.textContent = "";
     var shown = DATA.tools.filter(function (tool) {
-      return matches(state.query, [tool.name, tool.description[state.lang]]);
+      return matches(state.query, [tr(tool.name), tool.description[state.lang]]);
     });
     shown.forEach(function (tool) {
       var card = el("button", { class: "tool-card", type: "button" }, [
@@ -256,7 +289,7 @@
           (function () { var sw = el("div", { class: "tool-swatch" }); if (tool.icon) sw.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + tool.icon + '</svg>'; else sw.setAttribute("style", "background:" + tool.gradient); return sw; })(),
           tool.tag ? el("span", { class: "tool-tag", style: "--c:" + tool.tag.color, text: tool.tag[state.lang] }) : null,
         ]),
-        el("div", { class: "tool-name", text: tool.name }),
+        el("div", { class: "tool-name", text: tr(tool.name) }),
         el("div", { class: "tool-desc", text: tool.description[state.lang] }),
       ]);
       card.addEventListener("click", function () { openTool(tool.id); });
@@ -273,7 +306,7 @@
     var dsw = $("dlg-swatch");
     if (tool.icon) { dsw.removeAttribute("style"); dsw.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + tool.icon + '</svg>'; }
     else dsw.setAttribute("style", "background:" + tool.gradient);
-    $("dlg-name").textContent = tool.name;
+    $("dlg-name").textContent = tr(tool.name);
     $("dlg-desc").textContent = tool.description[state.lang];
     $("dlg-detail").textContent = tool.detail[state.lang];
     var tag = $("dlg-tag");
@@ -397,7 +430,7 @@
     var list = el("div", { class: "news-list page-news" });
     DATA.news.filter(function (n) { return n.category === key; }).forEach(function (n) { list.appendChild(newsCard(n)); });
     pageView.appendChild(list);
-    document.title = cat.label[state.lang] + " — Điều dưỡng BV Nhật Tân";
+    document.title = cat.label[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
   function renderPage(name) {
@@ -418,7 +451,7 @@
       }
       pageView.appendChild(block);
     });
-    document.title = page.title[state.lang] + " — Điều dưỡng BV Nhật Tân";
+    document.title = page.title[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
   function route(scroll) {

@@ -590,3 +590,14 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 #gdsk-section .container { display: flex; flex-direction: column; }
 .news { display: flex; flex-direction: column; }
 .org-step div span { font-size: 12.5px; }
+.lang-btn { min-width: 42px; padding: 7px 10px; }
+@media (max-width: 640px) {
+  .header-inner { gap: 8px; }
+  .brand { min-width: 0; flex: 1 1 auto; overflow: hidden; }
+  .brand-text { min-width: 0; overflow: hidden; }
+  .brand-text small { overflow: hidden; text-overflow: ellipsis; }
+  .header-actions { gap: 6px; flex-shrink: 0; }
+  .header-actions .icon-btn { width: 32px; height: 32px; }
+  .lang-btn { min-width: 34px; padding: 6px 7px; font-size: 11px; }
+}
+@media (max-width: 400px) { .brand-logo { width: 84px; } .brand-text { padding-left: 8px; } }
