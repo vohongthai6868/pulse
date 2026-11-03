@@ -336,8 +336,8 @@ window.PULSE_DATA = {
     "vi": "Giới thiệu Điều dưỡng Nhật Tân"
    },
    "intro": {
-    "en": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và 5 phòng chức năng (245 giường).",
-    "vi": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và 5 phòng chức năng (245 giường)."
+    "en": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và 7 phòng chức năng (245 giường).",
+    "vi": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và 7 phòng chức năng (245 giường)."
    },
    "sections": [
     {
@@ -631,7 +631,7 @@ window.PULSE_DATA = {
    "heroPre": "Chăm sóc",
    "heroHighlight": "an toàn, tận tâm",
    "heroPost": "",
-   "heroSubtitle": "Phòng Điều dưỡng quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận và 5 phòng chức năng, vì sự an toàn và hài lòng của người bệnh.",
+   "heroSubtitle": "Phòng Điều dưỡng quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận và 7 phòng chức năng, vì sự an toàn và hài lòng của người bệnh.",
    "emailLabel": "",
    "emailPlaceholder": "",
    "getDigestBtn": "",
@@ -710,7 +710,7 @@ window.PULSE_DATA = {
    "heroPre": "Chăm sóc",
    "heroHighlight": "an toàn, tận tâm",
    "heroPost": "",
-   "heroSubtitle": "Phòng Điều dưỡng quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận và 5 phòng chức năng, vì sự an toàn và hài lòng của người bệnh.",
+   "heroSubtitle": "Phòng Điều dưỡng quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận và 7 phòng chức năng, vì sự an toàn và hài lòng của người bệnh.",
    "emailLabel": "",
    "emailPlaceholder": "",
    "getDigestBtn": "",
@@ -777,6 +777,16 @@ window.PULSE_DATA = {
     {
      "name": "Phòng Công tác xã hội",
      "desc": "Đón tiếp, hướng dẫn, hỗ trợ người bệnh và tiếp nhận góp ý.",
+     "roles": []
+    },
+    {
+     "name": "Phòng Trang thiết bị – Vật tư y tế",
+     "desc": "Quản lý, bảo dưỡng, sửa chữa trang thiết bị y tế; cung ứng vật tư y tế cho các khoa.",
+     "roles": []
+    },
+    {
+     "name": "Phòng Công nghệ thông tin",
+     "desc": "Quản lý hệ thống phần mềm, hồ sơ bệnh án điện tử, mạng và thiết bị tin học của bệnh viện.",
      "roles": []
     }
    ]
