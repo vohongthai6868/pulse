@@ -563,3 +563,4 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 @media (max-width: 900px) { .gdsk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .gdsk-grid { grid-template-columns: 1fr; } }
 @media (max-width: 1320px) { .header-subscribe { display: none !important; } }
+.dept-to { border-top-color: #0e7490; }

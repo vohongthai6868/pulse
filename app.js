@@ -196,7 +196,7 @@
     var total = 0;
     DATA.departments.forEach(function (g) {
       var units = g.units.filter(function (u) { return matches(state.query, [u.name, u.desc]); });
-      if (g.group !== "phong") total += g.units.length;
+      if (g.group !== "phong" && g.group !== "to") total += g.units.length;
       if (!units.length) return;
       var grid = el("div", { class: "dept-grid" });
       units.forEach(function (u) {

@@ -940,6 +940,22 @@ window.PULSE_DATA = {
      ]
     }
    ]
+  },
+  {
+   "group": "to",
+   "groupLabel": "Tổ chuyên trách",
+   "units": [
+    {
+     "name": "Tổ Quản lý chất lượng",
+     "desc": "Xây dựng, theo dõi kế hoạch cải tiến chất lượng; đánh giá theo bộ tiêu chí chất lượng bệnh viện; quản lý sự cố y khoa.",
+     "roles": []
+    },
+    {
+     "name": "Tổ Bảo hiểm y tế",
+     "desc": "Hướng dẫn thủ tục khám chữa bệnh bảo hiểm y tế; giám định, thanh quyết toán chi phí với cơ quan bảo hiểm xã hội.",
+     "roles": []
+    }
+   ]
   }
  ],
  "roles": [
