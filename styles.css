@@ -508,3 +508,35 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
   .hero-stats li span { font-size: 12px; }
 }
 @media (max-width: 350px) { .brand-text small { display: none; } .brand-logo { width: 84px; } }
+
+/* Hoàn thiện chuyên nghiệp (03/11/2026) */
+.nw { white-space: nowrap; }
+.main-nav a { white-space: nowrap; padding: 10px 11px; }
+@media (max-width: 1180px) and (min-width: 641px) { .main-nav a { padding: 8px 7px; font-size: 13.5px; } .brand-text small { display: none; } .header-subscribe { display: none; } }
+.org-flow { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; counter-reset: none; }
+.org-step { position: relative; display: flex; gap: 12px; align-items: flex-start; padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); }
+.org-step:not(:last-child)::after { content: ""; position: absolute; right: -12px; top: 50%; width: 10px; height: 10px; border-top: 2px solid var(--brand, #0b4f9c); border-right: 2px solid var(--brand, #0b4f9c); transform: translateY(-50%) rotate(45deg); }
+.org-no { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 14px; background: rgba(11,79,156,.1); color: var(--brand, #0b4f9c); }
+.org-step strong { display: block; font-size: 15px; line-height: 1.35; }
+.org-step div span { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.45; }
+.org-main { background: var(--brand, #0b4f9c); border-color: var(--brand, #0b4f9c); }
+.org-main strong, .org-main div span { color: #fff !important; }
+.org-main .org-no { background: #fff; }
+@media (max-width: 900px) {
+  .org-flow { grid-template-columns: 1fr; gap: 12px; }
+  .org-step:not(:last-child)::after { right: auto; left: 32px; top: auto; bottom: -9px; transform: rotate(135deg); }
+}
+.role-items { list-style: none; padding-left: 0; }
+.role-items li { position: relative; padding-left: 24px; }
+.role-items li::before { content: ""; position: absolute; left: 2px; top: 6px; width: 12px; height: 7px; border-left: 2px solid #15803d; border-bottom: 2px solid #15803d; transform: rotate(-45deg); }
+.role-card { border-top: 4px solid var(--brand, #0b4f9c); }
+.role-hs { border-top-color: #be185d; }
+.role-kty { border-top-color: #15803d; }
+.role-chung { border-top-color: #c2410c; }
+@media (max-width: 980px) {
+  .main-nav { display: none !important; }
+  .mobile-nav { display: flex; gap: 18px; overflow-x: auto; padding-top: 0; padding-bottom: 12px; scrollbar-width: none; }
+  .mobile-nav a { flex-shrink: 0; font-size: 14px; font-weight: 600; color: var(--text-2); white-space: nowrap; }
+  .topbar-links .tel-work { display: none !important; }
+}
+.dept-bophan { border-top-color: #7c3aed; }

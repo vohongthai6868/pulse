@@ -613,7 +613,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Tổng đài, cấp cứu 24/24: 0296 3562 357. Liên hệ công tác: 0296 3562 678.",
+   "footerAbout": "32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",
@@ -692,7 +692,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Tổng đài, cấp cứu 24/24: 0296 3562 357. Liên hệ công tác: 0296 3562 678.",
+   "footerAbout": "32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",
@@ -747,8 +747,43 @@ window.PULSE_DATA = {
  },
  "departments": [
   {
+   "group": "phong",
+   "groupLabel": "Phòng chức năng",
+   "units": [
+    {
+     "name": "Phòng Điều dưỡng",
+     "desc": "Quản lý, giám sát, đào tạo và nâng cao chất lượng công tác điều dưỡng toàn viện.",
+     "roles": [
+      "ĐD",
+      "HS",
+      "KTY"
+     ]
+    },
+    {
+     "name": "Phòng Kế hoạch tổng hợp",
+     "desc": "Lập kế hoạch, điều phối hoạt động chuyên môn, quản lý hồ sơ bệnh án và thống kê.",
+     "roles": []
+    },
+    {
+     "name": "Phòng Tổ chức hành chính",
+     "desc": "Quản lý nhân sự, công tác hành chính, văn thư và hậu cần của bệnh viện.",
+     "roles": []
+    },
+    {
+     "name": "Phòng Tài chính kế toán",
+     "desc": "Quản lý tài chính, viện phí, thanh toán bảo hiểm y tế.",
+     "roles": []
+    },
+    {
+     "name": "Phòng Công tác xã hội",
+     "desc": "Đón tiếp, hướng dẫn, hỗ trợ người bệnh và tiếp nhận góp ý.",
+     "roles": []
+    }
+   ]
+  },
+  {
    "group": "lamsang",
-   "groupLabel": "Khối lâm sàng",
+   "groupLabel": "Khoa lâm sàng",
    "units": [
     {
      "name": "Khoa Khám bệnh",
@@ -835,19 +870,12 @@ window.PULSE_DATA = {
       "ĐD",
       "KTY"
      ]
-    },
-    {
-     "name": "Bộ phận Thận nhân tạo",
-     "desc": "Chạy thận nhân tạo chu kỳ, theo dõi và giáo dục người bệnh suy thận.",
-     "roles": [
-      "ĐD"
-     ]
     }
    ]
   },
   {
    "group": "canlamsang",
-   "groupLabel": "Khối cận lâm sàng",
+   "groupLabel": "Khoa cận lâm sàng",
    "units": [
     {
      "name": "Khoa Xét nghiệm",
@@ -880,6 +908,19 @@ window.PULSE_DATA = {
      "name": "Khoa Dinh dưỡng",
      "desc": "Sàng lọc, đánh giá dinh dưỡng và tư vấn chế độ ăn cho người bệnh.",
      "roles": []
+    }
+   ]
+  },
+  {
+   "group": "bophan",
+   "groupLabel": "Bộ phận",
+   "units": [
+    {
+     "name": "Bộ phận Thận nhân tạo",
+     "desc": "Chạy thận nhân tạo chu kỳ, theo dõi và giáo dục người bệnh suy thận.",
+     "roles": [
+      "ĐD"
+     ]
     },
     {
      "name": "Tổ Tiêm chủng",
@@ -887,41 +928,6 @@ window.PULSE_DATA = {
      "roles": [
       "ĐD"
      ]
-    }
-   ]
-  },
-  {
-   "group": "phong",
-   "groupLabel": "Phòng chức năng",
-   "units": [
-    {
-     "name": "Phòng Kế hoạch tổng hợp",
-     "desc": "Lập kế hoạch, điều phối hoạt động chuyên môn, quản lý hồ sơ bệnh án và thống kê.",
-     "roles": []
-    },
-    {
-     "name": "Phòng Tổ chức hành chính",
-     "desc": "Quản lý nhân sự, công tác hành chính, văn thư và hậu cần của bệnh viện.",
-     "roles": []
-    },
-    {
-     "name": "Phòng Tài chính kế toán",
-     "desc": "Quản lý tài chính, viện phí, thanh toán bảo hiểm y tế.",
-     "roles": []
-    },
-    {
-     "name": "Phòng Điều dưỡng",
-     "desc": "Quản lý, giám sát, đào tạo và nâng cao chất lượng công tác điều dưỡng toàn viện.",
-     "roles": [
-      "ĐD",
-      "HS",
-      "KTY"
-     ]
-    },
-    {
-     "name": "Phòng Công tác xã hội",
-     "desc": "Đón tiếp, hướng dẫn, hỗ trợ người bệnh và tiếp nhận góp ý.",
-     "roles": []
     }
    ]
   }
