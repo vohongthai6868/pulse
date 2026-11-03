@@ -524,10 +524,12 @@ window.PULSE_DATA = {
      "items": {
       "en": [
        "Tổng đài, cấp cứu 24/24: 0296 3562 357",
+       "Liên hệ công tác: 0296 3562 678",
        "Cấp cứu ngoài bệnh viện: gọi 115"
       ],
       "vi": [
        "Tổng đài, cấp cứu 24/24: 0296 3562 357",
+       "Liên hệ công tác: 0296 3562 678",
        "Cấp cứu ngoài bệnh viện: gọi 115"
       ]
      }
@@ -611,7 +613,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Tổng đài, cấp cứu 24/24: 0296 3562 357.",
+   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Tổng đài, cấp cứu 24/24: 0296 3562 357. Liên hệ công tác: 0296 3562 678.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",
@@ -690,7 +692,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Tổng đài, cấp cứu 24/24: 0296 3562 357.",
+   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Tổng đài, cấp cứu 24/24: 0296 3562 357. Liên hệ công tác: 0296 3562 678.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",

@@ -498,3 +498,4 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .role-items { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.55; }
 @media (max-width: 900px) { .dept-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) { .dept-grid, .roles-grid { grid-template-columns: 1fr; } .role-card { padding: 16px; } }
+@media (max-width: 640px) { .topbar-links .tel-work { display: none !important; } }
