@@ -601,3 +601,18 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
   .lang-btn { min-width: 34px; padding: 6px 7px; font-size: 11px; }
 }
 @media (max-width: 400px) { .brand-logo { width: 84px; } .brand-text { padding-left: 8px; } }
+
+/* Phương châm giao tiếp SBAR – AIDET (03/11/2026) */
+.comm-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.comm-card { --c: #0b4f9c; background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--c); border-radius: 12px; padding: 20px; box-shadow: var(--shadow); }
+.comm-aidet { --c: #c62828; }
+.comm-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.comm-name { font-size: 24px; font-weight: 800; color: var(--c); letter-spacing: .06em; }
+.comm-who { font-size: 13px; font-weight: 700; color: var(--text-2, #334); text-transform: uppercase; letter-spacing: .04em; }
+.comm-use { margin: 6px 0 14px; color: var(--muted, #5b6b7f); font-size: 14px; }
+.comm-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.comm-steps li { display: flex; gap: 12px; align-items: flex-start; }
+.comm-steps li > .comm-letter { flex: 0 0 34px; height: 34px; border-radius: 8px; background: var(--c); color: #fff; font-weight: 800; font-size: 17px; display: inline-flex; align-items: center; justify-content: center; }
+.comm-steps strong { display: block; font-size: 15px; color: var(--text); }
+.comm-steps span:not(.comm-letter) { display: block; font-size: 14px; color: var(--text-2, #445); line-height: 1.5; }
+@media (max-width: 760px) { .comm-grid { grid-template-columns: 1fr; } .comm-card { padding: 16px; } }
