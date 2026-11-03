@@ -537,9 +537,15 @@ window.PULSE_DATA = {
       "en": "Thời gian làm việc",
       "vi": "Thời gian làm việc"
      },
-     "p": {
-      "en": "Giờ hành chính các ngày trong tuần.",
-      "vi": "Giờ hành chính các ngày trong tuần."
+     "items": {
+      "en": [
+       "Phòng Điều dưỡng: thứ Hai đến thứ Sáu: sáng 7 giờ – 11 giờ, chiều 13 giờ – 17 giờ.",
+       "Thứ Bảy: sáng 7 giờ – 11 giờ."
+      ],
+      "vi": [
+       "Phòng Điều dưỡng: thứ Hai đến thứ Sáu: sáng 7 giờ – 11 giờ, chiều 13 giờ – 17 giờ.",
+       "Thứ Bảy: sáng 7 giờ – 11 giờ."
+      ]
      }
     },
     {
