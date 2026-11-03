@@ -540,3 +540,11 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
   .topbar-links .tel-work { display: none !important; }
 }
 .dept-bophan { border-top-color: #7c3aed; }
+/* Tiêu đề đầu trang */
+.hero-title { display: flex; flex-direction: column; gap: 14px; }
+.hero-name { font-size: 52px; font-weight: 800; line-height: 1.1; letter-spacing: -0.015em; color: #fff; }
+.hero-slogan { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 6px 14px; font-size: 20px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #fcd34d; }
+.hero-slogan i { width: 6px; height: 6px; border-radius: 50%; background: #fff; opacity: .7; }
+@media (max-width: 900px) { .hero-name { font-size: 40px; } .hero-slogan { font-size: 17px; } }
+@media (max-width: 640px) { .hero-name { font-size: 32px; } .hero-slogan { font-size: 14px; gap: 6px 10px; letter-spacing: .04em; } .hero-slogan i { width: 5px; height: 5px; } }
+@media (min-width: 1000px) { .hero-name { font-size: 50px; white-space: nowrap; } }
