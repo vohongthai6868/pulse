@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="styles.css?v=20261103d">
+<link rel="stylesheet" href="styles.css?v=20261103e">
 </head>
 <body>
 
@@ -152,7 +152,6 @@
       <span class="kicker">PHÒNG, KHOA, BỘ PHẬN</span>
       <h2 id="dept-heading">Phòng, khoa, bộ phận</h2>
     </div>
-    <p class="block-note">Đội ngũ điều dưỡng, hộ sinh, kỹ thuật y làm việc tại tất cả các phòng, khoa, bộ phận dưới sự quản lý chuyên môn của Phòng Điều dưỡng.</p>
     <div id="dept-list" class="dept-groups"></div>
   </section>
 
@@ -161,7 +160,7 @@
       <span class="kicker">HOẠT ĐỘNG</span>
       <h2 id="roles-heading">Hoạt động của điều dưỡng, hộ sinh, kỹ thuật y</h2>
     </div>
-    <div id="roles-list" class="roles-grid"></div>
+    <div id="roles-list" class="roles-one"></div>
   </section>
 
   <section id="gdsk-section" class="block gdsk-band" aria-labelledby="gdsk-heading">
@@ -170,13 +169,14 @@
         <span class="kicker">GÓC SỨC KHỎE</span>
         <h2 id="gdsk-heading">Góc truyền thông giáo dục sức khỏe</h2>
       </div>
-      <p class="block-note">Những điều người bệnh và người nhà cần biết, do điều dưỡng, hộ sinh tư vấn hằng ngày tại các khoa. Thông tin chỉ mang tính tham khảo, không thay thế chỉ định của bác sĩ.</p>
+      <p class="block-note">Thông tin tham khảo, không thay thế chỉ định của bác sĩ.</p>
       <div id="gdsk-tabs" class="tabs" role="group" aria-label="Nhóm chủ đề"></div>
       <div id="gdsk-list" class="gdsk-grid"></div>
+      <button id="gdsk-more" class="more-btn" type="button" hidden>Xem thêm</button>
     </div>
   </section>
 
-  <section id="tools-section" class="container block" aria-labelledby="tools-heading">
+  <section id="tools-section" class="container block" hidden aria-labelledby="tools-heading">
     <div class="section-head">
       <span class="kicker">QUẢN LÝ</span>
       <h2 id="tools-heading" data-i18n="toolsHeading">Featured tools</h2>
@@ -215,6 +215,7 @@
       <div id="tabs" class="tabs" role="group" data-i18n-aria="categoriesLabel"></div>
       <div id="news-list" class="news-list"></div>
       <p id="news-empty" class="empty" hidden data-i18n="noResults">No stories match your filters.</p>
+      <button id="news-more" class="more-btn" type="button" hidden>Xem thêm</button>
     </section>
 
     <aside class="side-col">
@@ -287,8 +288,8 @@
   </div>
 </dialog>
 
-<script src="config.js?v=20261103d"></script>
-<script src="data.js?v=20261103d"></script>
-<script src="app.js?v=20261103d"></script>
+<script src="config.js?v=20261103e"></script>
+<script src="data.js?v=20261103e"></script>
+<script src="app.js?v=20261103e"></script>
 </body>
 </html>

@@ -58,6 +58,7 @@
     });
   }
 
+  var newsAll = false;
   function renderNews() {
     var list = $("news-list");
     list.textContent = "";
@@ -65,8 +66,12 @@
       return (state.category === "ALL" || n.category === state.category) &&
         matches(state.query, [n.title[state.lang], n.summary[state.lang]]);
     });
-    shown.forEach(function (n) { list.appendChild(newsCard(n)); });
+    var nb = window.innerWidth < 640 ? 3 : 4;
+    var lim = (newsAll || state.query) ? shown.length : nb;
+    shown.slice(0, lim).forEach(function (n) { list.appendChild(newsCard(n)); });
     $("news-empty").hidden = shown.length > 0;
+    var nm = $("news-more");
+    if (nm) { nm.hidden = shown.length <= nb || !!state.query; nm.textContent = newsAll ? "Thu gọn" : "Xem thêm " + (shown.length - nb) + " tin"; }
   }
 
   function newsCard(n) {
@@ -151,7 +156,7 @@
     });
   }
 
-  var gdskGroup = "all";
+  var gdskGroup = "all", gdskAll = false;
   function renderGdsk() {
     var box = $("gdsk-list"), tabs = $("gdsk-tabs");
     if (!box || !DATA.gdsk) return;
@@ -159,13 +164,16 @@
     tabs.textContent = "";
     [["all", "Tất cả", "#0b4f9c"]].concat(Object.keys(G).map(function (k) { return [k, G[k].label, G[k].color]; })).forEach(function (x) {
       var b = el("button", { class: "tab", style: "--c:" + x[2], type: "button", "aria-pressed": String(gdskGroup === x[0]), text: x[1] });
-      b.addEventListener("click", function () { gdskGroup = x[0]; renderGdsk(); });
+      b.addEventListener("click", function () { gdskGroup = x[0]; gdskAll = false; renderGdsk(); });
       tabs.appendChild(b);
     });
     box.textContent = "";
-    DATA.gdsk.topics.filter(function (tp) {
+    var list = DATA.gdsk.topics.filter(function (tp) {
       return (gdskGroup === "all" || tp.group === gdskGroup) && matches(state.query, [tp.title].concat(tp.points));
-    }).forEach(function (tp) {
+    });
+    var base = window.innerWidth < 640 ? 3 : 6;
+    var limit = (gdskAll || state.query) ? list.length : base;
+    list.slice(0, limit).forEach(function (tp) {
       var g = G[tp.group];
       box.appendChild(el("article", { class: "gdsk-card", style: "--c:" + g.color }, [
         el("span", { class: "gdsk-tag", text: g.label }),
@@ -173,45 +181,67 @@
         el("ul", { class: "gdsk-points" }, tp.points.map(function (s) { return el("li", { text: s }); })),
       ]));
     });
+    var more = $("gdsk-more");
+    if (more) { more.hidden = list.length <= base || !!state.query; more.textContent = gdskAll ? "Thu gọn" : "Xem thêm " + (list.length - base) + " chủ đề"; }
   }
 
+  var roleKey = null;
   function renderRoles() {
     var box = $("roles-list");
     if (!box || !DATA.roles) return;
     box.textContent = "";
+    if (!roleKey) roleKey = DATA.roles[0].key;
+    var searching = !!state.query;
+    var tabs = el("div", { class: "tabs seg-tabs", role: "group", "aria-label": "Chức danh" });
     DATA.roles.forEach(function (r) {
+      var b = el("button", { class: "tab", type: "button", style: "--c:#0b4f9c", "aria-pressed": String(!searching && roleKey === r.key), text: r.label });
+      b.addEventListener("click", function () { roleKey = r.key; renderRoles(); });
+      tabs.appendChild(b);
+    });
+    box.appendChild(tabs);
+    DATA.roles.forEach(function (r) {
+      if (!searching && r.key !== roleKey) return;
       var items = r.items.filter(function (it) { return matches(state.query, [r.label, it]); });
       if (!items.length) return;
       box.appendChild(el("div", { class: "role-card role-" + r.key }, [
-        el("h3", { class: "role-title", text: r.label }),
+        searching ? el("h3", { class: "role-title", text: r.label }) : null,
         el("ul", { class: "role-items" }, items.map(function (it) { return el("li", { text: it }); })),
       ]));
     });
   }
 
+  var deptGroup = null;
   function renderDepts() {
     var box = $("dept-list");
     if (!box || !DATA.departments) return;
     box.textContent = "";
     var total = 0;
-    DATA.departments.forEach(function (g) {
-      var units = g.units.filter(function (u) { return matches(state.query, [u.name, u.desc]); });
-      if (g.group !== "phong" && g.group !== "to") total += g.units.length;
-      if (!units.length) return;
-      var grid = el("div", { class: "dept-grid" });
-      units.forEach(function (u) {
-        grid.appendChild(el("div", { class: "dept-card dept-" + g.group }, [
-          el("div", { class: "dept-name", text: u.name }),
-          (u.roles && u.roles.length) ? el("div", { class: "dept-roles" }, u.roles.map(function (r) { return el("span", { class: "role-tag", text: r }); })) : null,
-          el("div", { class: "dept-desc", text: u.desc }),
-        ]));
-      });
-      box.appendChild(el("div", { class: "dept-group" }, [
-        el("h3", { class: "dept-group-title", text: g.groupLabel + " (" + g.units.length + ")" }),
-        grid,
-      ]));
-    });
+    DATA.departments.forEach(function (g) { if (g.group !== "phong" && g.group !== "to") total += g.units.length; });
     var c = $("dept-count"); if (c) c.textContent = total;
+    var searching = !!state.query;
+    if (!deptGroup) deptGroup = DATA.departments[0].group;
+    var tabs = el("div", { class: "tabs seg-tabs", role: "group", "aria-label": "Nhóm đơn vị" });
+    DATA.departments.forEach(function (g) {
+      var b = el("button", { class: "tab", type: "button", style: "--c:#0b4f9c", "aria-pressed": String(!searching && deptGroup === g.group), text: g.groupLabel + " (" + g.units.length + ")" });
+      b.addEventListener("click", function () { deptGroup = g.group; renderDepts(); });
+      tabs.appendChild(b);
+    });
+    box.appendChild(tabs);
+    var grid = el("div", { class: "dept-grid" });
+    DATA.departments.forEach(function (g) {
+      if (!searching && g.group !== deptGroup) return;
+      g.units.filter(function (u) { return matches(state.query, [u.name, u.desc]); }).forEach(function (u) {
+        var card = el("button", { class: "dept-card dept-" + g.group, type: "button", "aria-expanded": "false" }, [
+          el("span", { class: "dept-name", text: u.name }),
+          (u.roles && u.roles.length) ? el("span", { class: "dept-roles" }, u.roles.map(function (r) { return el("span", { class: "role-tag", text: r }); })) : null,
+          el("span", { class: "dept-desc", text: u.desc }),
+        ]);
+        card.addEventListener("click", function () { card.setAttribute("aria-expanded", String(card.getAttribute("aria-expanded") !== "true")); });
+        grid.appendChild(card);
+      });
+    });
+    box.appendChild(grid);
+    box.appendChild(el("p", { class: "dept-hint", text: "Bấm vào từng đơn vị để xem mô tả." }));
   }
 
   function renderTools() {
@@ -425,5 +455,10 @@
     renderTopics();
     route(false);
   }
+  (function () {
+    var gm = $("gdsk-more"); if (gm) gm.addEventListener("click", function () { gdskAll = !gdskAll; renderGdsk(); });
+    var nm = $("news-more"); if (nm) nm.addEventListener("click", function () { newsAll = !newsAll; renderNews(); });
+  })();
+
   renderAll();
 })();
