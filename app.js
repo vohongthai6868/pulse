@@ -151,6 +151,30 @@
     });
   }
 
+  var gdskGroup = "all";
+  function renderGdsk() {
+    var box = $("gdsk-list"), tabs = $("gdsk-tabs");
+    if (!box || !DATA.gdsk) return;
+    var G = DATA.gdsk.groups;
+    tabs.textContent = "";
+    [["all", "Tất cả", "#0b4f9c"]].concat(Object.keys(G).map(function (k) { return [k, G[k].label, G[k].color]; })).forEach(function (x) {
+      var b = el("button", { class: "tab", style: "--c:" + x[2], type: "button", "aria-pressed": String(gdskGroup === x[0]), text: x[1] });
+      b.addEventListener("click", function () { gdskGroup = x[0]; renderGdsk(); });
+      tabs.appendChild(b);
+    });
+    box.textContent = "";
+    DATA.gdsk.topics.filter(function (tp) {
+      return (gdskGroup === "all" || tp.group === gdskGroup) && matches(state.query, [tp.title].concat(tp.points));
+    }).forEach(function (tp) {
+      var g = G[tp.group];
+      box.appendChild(el("article", { class: "gdsk-card", style: "--c:" + g.color }, [
+        el("span", { class: "gdsk-tag", text: g.label }),
+        el("h3", { class: "gdsk-title", text: tp.title }),
+        el("ul", { class: "gdsk-points" }, tp.points.map(function (s) { return el("li", { text: s }); })),
+      ]));
+    });
+  }
+
   function renderRoles() {
     var box = $("roles-list");
     if (!box || !DATA.roles) return;
@@ -250,11 +274,11 @@
     panel.hidden = !open;
     searchBtn.setAttribute("aria-expanded", String(open));
     if (open) searchInput.focus();
-    else { searchInput.value = ""; state.query = ""; renderNews(); renderTools(); renderDepts(); renderRoles(); }
+    else { searchInput.value = ""; state.query = ""; renderNews(); renderTools(); renderDepts(); renderRoles(); renderGdsk(); }
   }
   searchBtn.addEventListener("click", function () { setSearch(panel.hidden); });
   $("search-close").addEventListener("click", function () { setSearch(false); });
-  searchInput.addEventListener("input", function () { state.query = searchInput.value.trim(); renderNews(); renderTools(); renderDepts(); renderRoles(); });
+  searchInput.addEventListener("input", function () { state.query = searchInput.value.trim(); renderNews(); renderTools(); renderDepts(); renderRoles(); renderGdsk(); });
   searchInput.addEventListener("keydown", function (e) { if (e.key === "Escape") setSearch(false); });
 
   // Theme (sáng mặc định)
@@ -394,6 +418,7 @@
     renderTools();
     renderDepts();
     renderRoles();
+    renderGdsk();
     renderHot();
     renderPricing();
     renderNotices();
