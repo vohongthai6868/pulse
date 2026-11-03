@@ -336,8 +336,8 @@ window.PULSE_DATA = {
     "vi": "Giới thiệu Điều dưỡng Nhật Tân"
    },
    "intro": {
-    "en": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 24 khoa, phòng, bộ phận (245 giường).",
-    "vi": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 24 khoa, phòng, bộ phận (245 giường)."
+    "en": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và 5 phòng chức năng (245 giường).",
+    "vi": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và 5 phòng chức năng (245 giường)."
    },
    "sections": [
     {
@@ -371,12 +371,12 @@ window.PULSE_DATA = {
      },
      "items": {
       "en": [
-       "Điều phối mạng lưới điều dưỡng trưởng 24 khoa, phòng, bộ phận.",
+       "Điều phối mạng lưới điều dưỡng trưởng 19 khoa, bộ phận.",
        "Ứng dụng công nghệ thông tin trong quản lý điều dưỡng: phần mềm quản lý Phòng Điều dưỡng, phiếu kiểm tra tuân thủ quy trình điện tử.",
        "Xây dựng và theo dõi bộ hồ sơ 7 tiêu chí chất lượng năm 2026."
       ],
       "vi": [
-       "Điều phối mạng lưới điều dưỡng trưởng 24 khoa, phòng, bộ phận.",
+       "Điều phối mạng lưới điều dưỡng trưởng 19 khoa, bộ phận.",
        "Ứng dụng công nghệ thông tin trong quản lý điều dưỡng: phần mềm quản lý Phòng Điều dưỡng, phiếu kiểm tra tuân thủ quy trình điện tử.",
        "Xây dựng và theo dõi bộ hồ sơ 7 tiêu chí chất lượng năm 2026."
       ]
@@ -390,12 +390,12 @@ window.PULSE_DATA = {
      "items": {
       "en": [
        "Trưởng phòng: CKIĐD. Võ Hồng Thái.",
-       "Mạng lưới quản lý: điều dưỡng trưởng của 24 khoa, phòng, bộ phận; nhóm giám sát điều dưỡng.",
+       "Mạng lưới quản lý: điều dưỡng trưởng của 19 khoa, bộ phận; nhóm giám sát điều dưỡng.",
        "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện năm 2025: 209 người (năm 2024: 193 người)."
       ],
       "vi": [
        "Trưởng phòng: CKIĐD. Võ Hồng Thái.",
-       "Mạng lưới quản lý: điều dưỡng trưởng của 24 khoa, phòng, bộ phận; nhóm giám sát điều dưỡng.",
+       "Mạng lưới quản lý: điều dưỡng trưởng của 19 khoa, bộ phận; nhóm giám sát điều dưỡng.",
        "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện năm 2025: 209 người (năm 2024: 193 người)."
       ]
      }
@@ -523,12 +523,12 @@ window.PULSE_DATA = {
      },
      "items": {
       "en": [
-       "Bệnh viện: 0296 3562 357",
-       "Cấp cứu: 115"
+       "Tổng đài, cấp cứu 24/24: 0296 3562 357",
+       "Cấp cứu ngoài bệnh viện: gọi 115"
       ],
       "vi": [
-       "Bệnh viện: 0296 3562 357",
-       "Cấp cứu: 115"
+       "Tổng đài, cấp cứu 24/24: 0296 3562 357",
+       "Cấp cứu ngoài bệnh viện: gọi 115"
       ]
      }
     },
@@ -611,7 +611,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Điện thoại: 0296 3562 357.",
+   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Tổng đài, cấp cứu 24/24: 0296 3562 357.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",
@@ -629,7 +629,7 @@ window.PULSE_DATA = {
    "heroPre": "Chăm sóc",
    "heroHighlight": "an toàn, tận tâm",
    "heroPost": "",
-   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 24 khoa, phòng, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
+   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận và 5 phòng chức năng, vì sự an toàn và hài lòng của người bệnh.",
    "emailLabel": "",
    "emailPlaceholder": "",
    "getDigestBtn": "",
@@ -690,7 +690,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Điện thoại: 0296 3562 357.",
+   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Tổng đài, cấp cứu 24/24: 0296 3562 357.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",
@@ -708,7 +708,7 @@ window.PULSE_DATA = {
    "heroPre": "Chăm sóc",
    "heroHighlight": "an toàn, tận tâm",
    "heroPost": "",
-   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 24 khoa, phòng, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
+   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận và 5 phòng chức năng, vì sự an toàn và hài lòng của người bệnh.",
    "emailLabel": "",
    "emailPlaceholder": "",
    "getDigestBtn": "",
