@@ -533,7 +533,7 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .role-hs { border-top-color: #be185d; }
 .role-kty { border-top-color: #15803d; }
 .role-chung { border-top-color: #c2410c; }
-@media (max-width: 980px) {
+@media (max-width: 1080px) {
   .main-nav { display: none !important; }
   .mobile-nav { display: flex; gap: 18px; overflow-x: auto; padding-top: 0; padding-bottom: 12px; scrollbar-width: none; }
   .mobile-nav a { flex-shrink: 0; font-size: 14px; font-weight: 600; color: var(--text-2); white-space: nowrap; }
@@ -548,3 +548,18 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 @media (max-width: 900px) { .hero-name { font-size: 40px; } .hero-slogan { font-size: 17px; } }
 @media (max-width: 640px) { .hero-name { font-size: 32px; } .hero-slogan { font-size: 14px; gap: 6px 10px; letter-spacing: .04em; } .hero-slogan i { width: 5px; height: 5px; } }
 @media (min-width: 1000px) { .hero-name { font-size: 50px; white-space: nowrap; } }
+/* Góc truyền thông GDSK */
+.gdsk-band { background: linear-gradient(180deg, #eef5fc 0%, rgba(238,245,252,0) 100%); padding-top: 8px; }
+:root[data-theme="dark"] .gdsk-band { background: linear-gradient(180deg, rgba(96,165,250,.08) 0%, transparent 100%); }
+#gdsk-tabs { margin: 4px 0 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+.gdsk-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.gdsk-card { display: flex; flex-direction: column; gap: 8px; padding: 18px 20px; background: var(--surface); border: 1px solid var(--border); border-left: 4px solid var(--c); border-radius: 12px; box-shadow: var(--shadow); }
+.gdsk-tag { align-self: flex-start; font-size: 11px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--c); }
+:root[data-theme="dark"] .gdsk-tag { filter: brightness(1.6); }
+.gdsk-title { margin: 0; font-size: 17px; line-height: 1.35; }
+.gdsk-points { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 7px; font-size: 14px; line-height: 1.55; color: var(--text-2); }
+.gdsk-points li { position: relative; padding-left: 18px; }
+.gdsk-points li::before { content: ""; position: absolute; left: 2px; top: 9px; width: 7px; height: 7px; border-radius: 50%; background: var(--c); }
+@media (max-width: 900px) { .gdsk-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .gdsk-grid { grid-template-columns: 1fr; } }
+@media (max-width: 1320px) { .header-subscribe { display: none !important; } }

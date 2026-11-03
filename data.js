@@ -983,5 +983,135 @@ window.PULSE_DATA = {
     "Giao tiếp, ứng xử văn minh; tham gia khảo sát hài lòng và cải tiến chất lượng."
    ]
   }
- ]
+ ],
+ "gdsk": {
+  "groups": {
+   "an": {
+    "label": "An toàn người bệnh",
+    "color": "#0b4f9c"
+   },
+   "man": {
+    "label": "Bệnh mạn tính",
+    "color": "#15803d"
+   },
+   "tn": {
+    "label": "Bệnh truyền nhiễm",
+    "color": "#c2410c"
+   },
+   "me": {
+    "label": "Bà mẹ, trẻ em",
+    "color": "#be185d"
+   }
+  },
+  "topics": [
+   {
+    "group": "an",
+    "title": "Rửa tay đúng cách",
+    "points": [
+     "Rửa tay bằng xà phòng và nước sạch hoặc dung dịch sát khuẩn tay nhanh theo 6 bước.",
+     "Rửa tay trước khi ăn, sau khi đi vệ sinh, trước và sau khi chăm sóc người bệnh.",
+     "Thời gian rửa tay với xà phòng ít nhất 40–60 giây."
+    ]
+   },
+   {
+    "group": "an",
+    "title": "Phòng té ngã khi nằm viện",
+    "points": [
+     "Bật đèn khi đi lại ban đêm, mang dép chống trơn, nhờ người hỗ trợ khi chóng mặt.",
+     "Luôn kéo thanh chắn giường khi người bệnh nằm; để vật dụng cần thiết trong tầm với.",
+     "Báo ngay điều dưỡng khi người bệnh mệt, hoa mắt hoặc vừa dùng thuốc an thần."
+    ]
+   },
+   {
+    "group": "an",
+    "title": "Dùng thuốc an toàn",
+    "points": [
+     "Dùng đúng thuốc, đúng liều, đúng giờ theo chỉ định của bác sĩ.",
+     "Không tự ý mua thêm, ngưng hoặc đổi thuốc; báo tiền sử dị ứng thuốc cho nhân viên y tế.",
+     "Hỏi điều dưỡng khi chưa rõ cách dùng; mang theo toa thuốc khi tái khám."
+    ]
+   },
+   {
+    "group": "an",
+    "title": "Phòng loét tì đè",
+    "points": [
+     "Thay đổi tư thế cho người bệnh nằm lâu ít nhất mỗi 2 giờ.",
+     "Giữ da khô, sạch; dùng nệm chống loét khi có chỉ định.",
+     "Báo điều dưỡng khi thấy vùng da đỏ, phồng hoặc trầy ở lưng, mông, gót chân."
+    ]
+   },
+   {
+    "group": "man",
+    "title": "Tăng huyết áp",
+    "points": [
+     "Đo huyết áp thường xuyên, ghi sổ theo dõi và mang theo khi tái khám.",
+     "Ăn nhạt, hạn chế rượu bia, không hút thuốc lá, vận động đều đặn.",
+     "Uống thuốc hằng ngày kể cả khi huyết áp đã ổn, không tự ý ngưng thuốc."
+    ]
+   },
+   {
+    "group": "man",
+    "title": "Đái tháo đường",
+    "points": [
+     "Ăn đúng giờ, hạn chế đồ ngọt, tinh bột trắng; tăng rau xanh.",
+     "Theo dõi đường huyết theo hướng dẫn; dùng thuốc, tiêm insulin đúng giờ.",
+     "Kiểm tra bàn chân mỗi ngày; đến bệnh viện khi có vết thương lâu lành."
+    ]
+   },
+   {
+    "group": "man",
+    "title": "Nhận biết sớm đột quỵ",
+    "points": [
+     "Dấu hiệu: méo miệng, yếu tay chân một bên, nói khó, nhìn mờ, chóng mặt đột ngột.",
+     "Gọi cấp cứu ngay, ghi lại thời điểm khởi phát triệu chứng.",
+     "Không tự ý cho ăn, uống hoặc dùng thuốc khi người bệnh chưa được thăm khám."
+    ]
+   },
+   {
+    "group": "man",
+    "title": "Dinh dưỡng cho người bệnh",
+    "points": [
+     "Ăn đủ chất, chia nhiều bữa nhỏ, uống đủ nước theo hướng dẫn của bác sĩ.",
+     "Người bệnh có chế độ ăn bệnh lý cần theo đúng tư vấn của khoa Dinh dưỡng.",
+     "Báo nhân viên y tế khi người bệnh ăn kém, sụt cân hoặc nuốt khó."
+    ]
+   },
+   {
+    "group": "tn",
+    "title": "Sốt xuất huyết",
+    "points": [
+     "Loại bỏ nơi muỗi đẻ trứng, ngủ mùng kể cả ban ngày.",
+     "Khi sốt cao, hạ sốt bằng paracetamol, không dùng aspirin, ibuprofen.",
+     "Đến bệnh viện ngay khi đau bụng, nôn nhiều, chảy máu, lừ đừ, tay chân lạnh."
+    ]
+   },
+   {
+    "group": "tn",
+    "title": "Lao phổi",
+    "points": [
+     "Ho kéo dài trên 2 tuần, sốt về chiều, sụt cân cần đi khám và xét nghiệm đàm.",
+     "Uống thuốc đủ liều, đủ thời gian theo phác đồ, không bỏ thuốc.",
+     "Đeo khẩu trang, che miệng khi ho, nhà ở thông thoáng."
+    ]
+   },
+   {
+    "group": "me",
+    "title": "Tay chân miệng ở trẻ",
+    "points": [
+     "Rửa tay cho trẻ và người chăm sóc; vệ sinh đồ chơi, sàn nhà hằng ngày.",
+     "Cho trẻ nghỉ học, theo dõi tại nhà theo hướng dẫn của nhân viên y tế.",
+     "Đưa trẻ đến bệnh viện ngay khi sốt cao không hạ, giật mình, run chi, nôn nhiều."
+    ]
+   },
+   {
+    "group": "me",
+    "title": "Nuôi con bằng sữa mẹ",
+    "points": [
+     "Cho trẻ bú sớm trong giờ đầu sau sinh, da kề da với mẹ.",
+     "Bú mẹ hoàn toàn trong 6 tháng đầu, không cần cho uống thêm nước.",
+     "Tiếp tục cho bú đến 24 tháng hoặc lâu hơn, kết hợp ăn dặm hợp lý."
+    ]
+   }
+  ]
+ }
 };
