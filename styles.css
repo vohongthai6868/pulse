@@ -477,3 +477,24 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 /* Nền tối giữ nguyên dải xanh và chân trang */
 :root[data-theme="dark"] .site-header { background: #101018; }
 :root[data-theme="dark"] .quick-grid, :root[data-theme="dark"] .news-card, :root[data-theme="dark"] .tool-card { background: var(--surface); }
+
+/* Khoa, phòng, bộ phận và hoạt động ĐD-HS-KTY (03/11/2026) */
+.brand-text small { display: block; font-size: 11px; font-weight: 500; color: var(--muted, #5b6b7f); letter-spacing: .2px; }
+.dept-groups { display: flex; flex-direction: column; gap: 22px; }
+.dept-group-title { font-size: 15px; font-weight: 700; color: var(--brand, #0b4f9c); margin: 0 0 10px; padding-left: 10px; border-left: 4px solid var(--brand-red, #d0202a); }
+.dept-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.dept-card { padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); border-top: 3px solid var(--brand, #0b4f9c); }
+.dept-canlamsang { border-top-color: #15803d; }
+.dept-phong { border-top-color: #c2410c; }
+.dept-name { font-weight: 700; font-size: 15px; line-height: 1.35; }
+.dept-desc { font-size: 13.5px; color: var(--muted, #5b6b7f); margin-top: 6px; line-height: 1.5; }
+.dept-roles { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.role-tag { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: rgba(11,79,156,.1); color: var(--brand, #0b4f9c); }
+:root[data-theme="dark"] .role-tag { background: rgba(96,165,250,.18); color: #93c5fd; }
+.roles-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.role-card { padding: 18px 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); }
+.role-title { margin: 0 0 10px; font-size: 17px; color: var(--brand, #0b4f9c); }
+:root[data-theme="dark"] .role-title, :root[data-theme="dark"] .dept-group-title { color: #93c5fd; }
+.role-items { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.55; }
+@media (max-width: 900px) { .dept-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .dept-grid, .roles-grid { grid-template-columns: 1fr; } .role-card { padding: 16px; } }

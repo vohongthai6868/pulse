@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Phòng Điều dưỡng — Bệnh viện Đa khoa Nhật Tân</title>
-<meta name="description" content="Giới thiệu Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân.">
+<title>Điều dưỡng — Bệnh viện Đa khoa Nhật Tân</title>
+<meta name="description" content="Giới thiệu công tác điều dưỡng và các khoa, phòng, bộ phận của Bệnh viện Đa khoa Nhật Tân.">
 <meta name="theme-color" content="#0b4f9c">
 <script>try{if(localStorage.getItem("pulse-theme")==="dark")document.documentElement.setAttribute("data-theme","dark");}catch(e){}</script>
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -28,13 +28,14 @@
     </div>
   </div>
   <div class="container header-inner">
-    <a class="brand" href="#top" aria-label="Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân">
+    <a class="brand" href="#top" aria-label="Điều dưỡng Bệnh viện Đa khoa Nhật Tân">
       <img class="brand-logo" src="logo-nhattan.png" alt="Bệnh viện Đa khoa Nhật Tân" width="129" height="40">
-      <span class="brand-text">Phòng Điều dưỡng</span>
+      <span class="brand-text">Điều dưỡng<small>BV Đa khoa Nhật Tân</small></span>
     </a>
     <nav class="main-nav" aria-label="Main">
       <a href="#/about" data-i18n="navAbout">About</a>
-      <a href="#tools-section" data-i18n="navTools">Tools</a>
+      <a href="#dept-section">Khoa, phòng</a>
+      <a href="#roles-section" data-i18n="navTools">Tools</a>
       <a href="#/guides" data-i18n="navGuides">Guides</a>
       <a href="#price-section" data-i18n="navPricing">Pricing</a>
       <a href="#news-section" data-i18n="navNews">News</a>
@@ -54,7 +55,8 @@
   </div>
   <nav class="container mobile-nav" data-i18n-aria="mainNav">
     <a href="#/about" data-i18n="navAbout">About</a>
-    <a href="#tools-section" data-i18n="navTools">Tools</a>
+    <a href="#dept-section">Khoa, phòng</a>
+    <a href="#roles-section" data-i18n="navTools">Tools</a>
     <a href="#/guides" data-i18n="navGuides">Guides</a>
     <a href="#price-section" data-i18n="navPricing">Pricing</a>
     <a href="#news-section" data-i18n="navNews">News</a>
@@ -100,7 +102,7 @@
         <img src="logo-nhattan.png" alt="Logo Bệnh viện Đa khoa Nhật Tân" width="300" height="93">
         <ul class="hero-stats">
           <li><strong>245</strong><span>giường bệnh</span></li>
-          <li><strong>19</strong><span>khoa, bộ phận</span></li>
+          <li><strong id="dept-count">21</strong><span>khoa, phòng, bộ phận</span></li>
           <li><strong>209</strong><span>điều dưỡng, hộ sinh, KTY</span></li>
         </ul>
       </div>
@@ -115,7 +117,7 @@
         <span class="quick-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h13a3 3 0 0 1 3 3v13H7a3 3 0 0 1-3-3z"/><line x1="8" y1="9" x2="16" y2="9"/><line x1="8" y1="13" x2="16" y2="13"/></svg></span>
         <span class="quick-text"><span class="quick-name" data-i18n="q1Title">Read the news</span><span class="quick-sub" data-i18n="q1Sub">Latest AI stories</span></span>
       </a>
-      <a class="quick-item" href="#tools-section" style="--c:#a855f7">
+      <a class="quick-item" href="#roles-section" style="--c:#a855f7">
         <span class="quick-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></span>
         <span class="quick-text"><span class="quick-name" data-i18n="q2Title">Find a tool</span><span class="quick-sub" data-i18n="q2Sub">Hand-picked AI tools</span></span>
       </a>
@@ -130,9 +132,26 @@
     </div>
   </section>
 
+  <section id="dept-section" class="container block" aria-labelledby="dept-heading">
+    <div class="section-head">
+      <span class="kicker">KHOA, PHÒNG, BỘ PHẬN</span>
+      <h2 id="dept-heading">Điều dưỡng tại các khoa, phòng</h2>
+    </div>
+    <p class="block-note">Đội ngũ điều dưỡng, hộ sinh, kỹ thuật y làm việc tại tất cả các khoa, phòng, bộ phận dưới sự quản lý chuyên môn của Phòng Điều dưỡng.</p>
+    <div id="dept-list" class="dept-groups"></div>
+  </section>
+
+  <section id="roles-section" class="container block" aria-labelledby="roles-heading">
+    <div class="section-head">
+      <span class="kicker">HOẠT ĐỘNG</span>
+      <h2 id="roles-heading">Hoạt động của điều dưỡng, hộ sinh, kỹ thuật y</h2>
+    </div>
+    <div id="roles-list" class="roles-grid"></div>
+  </section>
+
   <section id="tools-section" class="container block" aria-labelledby="tools-heading">
     <div class="section-head">
-      <span class="kicker">CHUYÊN MÔN</span>
+      <span class="kicker">QUẢN LÝ</span>
       <h2 id="tools-heading" data-i18n="toolsHeading">Featured tools</h2>
     </div>
     <div id="tools-list" class="tools-grid"></div>
@@ -191,7 +210,7 @@
   <div class="container footer-grid">
     <div class="footer-col footer-about">
       <div class="footer-brand-name">
-        <span>Phòng Điều dưỡng</span>
+        <span>Điều dưỡng Bệnh viện Đa khoa Nhật Tân</span>
       </div>
       <p data-i18n="footerAbout">A daily digest of AI news and tools.</p>
     </div>

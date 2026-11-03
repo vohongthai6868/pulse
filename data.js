@@ -1,4 +1,4 @@
-// Nội dung web Phòng Điều dưỡng, BV Đa khoa Nhật Tân. Sửa nội dung tại đây (tiếng Việt).
+// Nội dung web Điều dưỡng BV Đa khoa Nhật Tân. Sửa nội dung tại đây (tiếng Việt).
 // Không đưa thông tin định danh người bệnh lên trang.
 window.PULSE_DATA = {
  "categories": {
@@ -9,8 +9,8 @@ window.PULSE_DATA = {
     "vi": "Hoạt động"
    },
    "intro": {
-    "en": "Hoạt động chuyên môn, giám sát và phối hợp của Phòng Điều dưỡng.",
-    "vi": "Hoạt động chuyên môn, giám sát và phối hợp của Phòng Điều dưỡng."
+    "en": "Hoạt động chuyên môn, giám sát và phối hợp của điều dưỡng toàn viện.",
+    "vi": "Hoạt động chuyên môn, giám sát và phối hợp của điều dưỡng toàn viện."
    },
    "icon": "<path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/>"
   },
@@ -332,12 +332,12 @@ window.PULSE_DATA = {
  "pages": {
   "about": {
    "title": {
-    "en": "Giới thiệu Phòng Điều dưỡng",
-    "vi": "Giới thiệu Phòng Điều dưỡng"
+    "en": "Giới thiệu Điều dưỡng Nhật Tân",
+    "vi": "Giới thiệu Điều dưỡng Nhật Tân"
    },
    "intro": {
-    "en": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân (245 giường, 19 khoa, bộ phận).",
-    "vi": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân (245 giường, 19 khoa, bộ phận)."
+    "en": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 21 khoa, phòng, bộ phận (245 giường).",
+    "vi": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 21 khoa, phòng, bộ phận (245 giường)."
    },
    "sections": [
     {
@@ -371,12 +371,12 @@ window.PULSE_DATA = {
      },
      "items": {
       "en": [
-       "Điều phối mạng lưới điều dưỡng trưởng 19 khoa, bộ phận.",
+       "Điều phối mạng lưới điều dưỡng trưởng 21 khoa, phòng, bộ phận.",
        "Ứng dụng công nghệ thông tin trong quản lý điều dưỡng: phần mềm quản lý Phòng Điều dưỡng, phiếu kiểm tra tuân thủ quy trình điện tử.",
        "Xây dựng và theo dõi bộ hồ sơ 7 tiêu chí chất lượng năm 2026."
       ],
       "vi": [
-       "Điều phối mạng lưới điều dưỡng trưởng 19 khoa, bộ phận.",
+       "Điều phối mạng lưới điều dưỡng trưởng 21 khoa, phòng, bộ phận.",
        "Ứng dụng công nghệ thông tin trong quản lý điều dưỡng: phần mềm quản lý Phòng Điều dưỡng, phiếu kiểm tra tuân thủ quy trình điện tử.",
        "Xây dựng và theo dõi bộ hồ sơ 7 tiêu chí chất lượng năm 2026."
       ]
@@ -390,12 +390,12 @@ window.PULSE_DATA = {
      "items": {
       "en": [
        "Trưởng phòng: CKIĐD. Võ Hồng Thái.",
-       "Mạng lưới quản lý: điều dưỡng trưởng của 19 khoa, bộ phận; nhóm giám sát điều dưỡng.",
+       "Mạng lưới quản lý: điều dưỡng trưởng của 21 khoa, phòng, bộ phận; nhóm giám sát điều dưỡng.",
        "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện năm 2025: 209 người (năm 2024: 193 người)."
       ],
       "vi": [
        "Trưởng phòng: CKIĐD. Võ Hồng Thái.",
-       "Mạng lưới quản lý: điều dưỡng trưởng của 19 khoa, bộ phận; nhóm giám sát điều dưỡng.",
+       "Mạng lưới quản lý: điều dưỡng trưởng của 21 khoa, phòng, bộ phận; nhóm giám sát điều dưỡng.",
        "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện năm 2025: 209 người (năm 2024: 193 người)."
       ]
      }
@@ -566,8 +566,8 @@ window.PULSE_DATA = {
       "vi": "Chỉ mang tính thông tin"
      },
      "p": {
-      "en": "Nội dung trên trang nhằm giới thiệu hoạt động của Phòng Điều dưỡng và cung cấp kiến thức sức khỏe chung, không thay thế chỉ định, tư vấn của bác sĩ.",
-      "vi": "Nội dung trên trang nhằm giới thiệu hoạt động của Phòng Điều dưỡng và cung cấp kiến thức sức khỏe chung, không thay thế chỉ định, tư vấn của bác sĩ."
+      "en": "Nội dung trên trang nhằm giới thiệu hoạt động điều dưỡng của bệnh viện và cung cấp kiến thức sức khỏe chung, không thay thế chỉ định, tư vấn của bác sĩ.",
+      "vi": "Nội dung trên trang nhằm giới thiệu hoạt động điều dưỡng của bệnh viện và cung cấp kiến thức sức khỏe chung, không thay thế chỉ định, tư vấn của bác sĩ."
      }
     },
     {
@@ -585,8 +585,8 @@ window.PULSE_DATA = {
  },
  "i18n": {
   "en": {
-   "pageTitle": "Phòng Điều dưỡng — Bệnh viện Đa khoa Nhật Tân",
-   "metaDescription": "Giới thiệu Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân: hoạt động chuyên môn, đào tạo, chất lượng chăm sóc và kiến thức sức khỏe.",
+   "pageTitle": "Điều dưỡng — Bệnh viện Đa khoa Nhật Tân",
+   "metaDescription": "Giới thiệu công tác điều dưỡng, Bệnh viện Đa khoa Nhật Tân: hoạt động chuyên môn, đào tạo, chất lượng chăm sóc và kiến thức sức khỏe.",
    "navPricing": "Nhân lực",
    "switchTheme": "Đổi nền sáng/tối",
    "mainNav": "Menu chính",
@@ -611,7 +611,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Điện thoại: 0296 3562 357.",
+   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Điện thoại: 0296 3562 357.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",
@@ -625,11 +625,11 @@ window.PULSE_DATA = {
    "switchLang": "Đổi ngôn ngữ",
    "searchPlaceholder": "Tìm tin tức, hoạt động…",
    "heroEyebrow": "BỆNH VIỆN ĐA KHOA NHẬT TÂN",
-   "heroLine1": "Phòng Điều dưỡng",
+   "heroLine1": "Điều dưỡng Nhật Tân",
    "heroPre": "Chăm sóc",
    "heroHighlight": "an toàn, tận tâm",
    "heroPost": "",
-   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
+   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 21 khoa, phòng, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
    "emailLabel": "",
    "emailPlaceholder": "",
    "getDigestBtn": "",
@@ -651,12 +651,12 @@ window.PULSE_DATA = {
    "categoriesLabel": "Chuyên mục tin",
    "noResults": "Không có bài nào khớp bộ lọc.",
    "noTools": "Không có hoạt động nào khớp tìm kiếm.",
-   "toolsHeading": "Hoạt động chuyên môn",
+   "toolsHeading": "Công tác quản lý điều dưỡng",
    "backHome": "← Về trang chủ",
    "lastUpdated": "Cập nhật lần cuối",
    "closeBtn": "Đóng",
    "visitBtn": "Xem thêm",
-   "footerCopyright": "© 2026 Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân.",
+   "footerCopyright": "© 2026 Điều dưỡng Bệnh viện Đa khoa Nhật Tân.",
    "footerPrivacy": "Liên hệ",
    "footerTerms": "Lưu ý sử dụng",
    "footerContact": "Liên hệ",
@@ -664,8 +664,8 @@ window.PULSE_DATA = {
    "heroBtn2": "Liên hệ"
   },
   "vi": {
-   "pageTitle": "Phòng Điều dưỡng — Bệnh viện Đa khoa Nhật Tân",
-   "metaDescription": "Giới thiệu Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân: hoạt động chuyên môn, đào tạo, chất lượng chăm sóc và kiến thức sức khỏe.",
+   "pageTitle": "Điều dưỡng — Bệnh viện Đa khoa Nhật Tân",
+   "metaDescription": "Giới thiệu công tác điều dưỡng, Bệnh viện Đa khoa Nhật Tân: hoạt động chuyên môn, đào tạo, chất lượng chăm sóc và kiến thức sức khỏe.",
    "navPricing": "Nhân lực",
    "switchTheme": "Đổi nền sáng/tối",
    "mainNav": "Menu chính",
@@ -690,7 +690,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Điện thoại: 0296 3562 357.",
+   "footerAbout": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân. 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang. Điện thoại: 0296 3562 357.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",
@@ -704,11 +704,11 @@ window.PULSE_DATA = {
    "switchLang": "Đổi ngôn ngữ",
    "searchPlaceholder": "Tìm tin tức, hoạt động…",
    "heroEyebrow": "BỆNH VIỆN ĐA KHOA NHẬT TÂN",
-   "heroLine1": "Phòng Điều dưỡng",
+   "heroLine1": "Điều dưỡng Nhật Tân",
    "heroPre": "Chăm sóc",
    "heroHighlight": "an toàn, tận tâm",
    "heroPost": "",
-   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
+   "heroSubtitle": "Quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 21 khoa, phòng, bộ phận, vì sự an toàn và hài lòng của người bệnh.",
    "emailLabel": "",
    "emailPlaceholder": "",
    "getDigestBtn": "",
@@ -730,17 +730,235 @@ window.PULSE_DATA = {
    "categoriesLabel": "Chuyên mục tin",
    "noResults": "Không có bài nào khớp bộ lọc.",
    "noTools": "Không có hoạt động nào khớp tìm kiếm.",
-   "toolsHeading": "Hoạt động chuyên môn",
+   "toolsHeading": "Công tác quản lý điều dưỡng",
    "backHome": "← Về trang chủ",
    "lastUpdated": "Cập nhật lần cuối",
    "closeBtn": "Đóng",
    "visitBtn": "Xem thêm",
-   "footerCopyright": "© 2026 Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân.",
+   "footerCopyright": "© 2026 Điều dưỡng Bệnh viện Đa khoa Nhật Tân.",
    "footerPrivacy": "Liên hệ",
    "footerTerms": "Lưu ý sử dụng",
    "footerContact": "Liên hệ",
    "heroBtn1": "Giới thiệu",
    "heroBtn2": "Liên hệ"
   }
- }
+ },
+ "departments": [
+  {
+   "group": "lamsang",
+   "groupLabel": "Khối lâm sàng",
+   "units": [
+    {
+     "name": "Khoa Khám bệnh",
+     "desc": "Tiếp đón, phân luồng, hướng dẫn và theo dõi người bệnh khám ngoại trú.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+     "desc": "Tiếp nhận, cấp cứu, hồi sức và chăm sóc người bệnh nặng 24/24 giờ.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Nội tổng quát",
+     "desc": "Chăm sóc, theo dõi người bệnh nội khoa điều trị nội trú.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Nội tiêu hóa",
+     "desc": "Chăm sóc người bệnh các bệnh lý tiêu hóa, gan mật; phối hợp thủ thuật nội soi.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Truyền nhiễm",
+     "desc": "Chăm sóc người bệnh truyền nhiễm, thực hiện cách ly và phòng ngừa lây nhiễm.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Nhi",
+     "desc": "Chăm sóc trẻ em điều trị nội trú, hướng dẫn cha mẹ chăm sóc trẻ.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Phụ sản",
+     "desc": "Hộ sinh chăm sóc bà mẹ, trẻ sơ sinh; theo dõi chuyển dạ, sau sinh, sau mổ.",
+     "roles": [
+      "ĐD",
+      "HS"
+     ]
+    },
+    {
+     "name": "Khoa Ngoại tổng quát",
+     "desc": "Chăm sóc người bệnh trước và sau phẫu thuật ngoại tổng quát.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Ngoại chấn thương",
+     "desc": "Chăm sóc người bệnh chấn thương, chỉnh hình, hướng dẫn vận động sớm.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Phẫu thuật – Gây mê hồi sức",
+     "desc": "Chuẩn bị, phụ mê, dụng cụ phẫu thuật và hồi tỉnh sau mổ.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Liên chuyên khoa",
+     "desc": "Chăm sóc người bệnh các chuyên khoa Tai mũi họng, Răng hàm mặt, Mắt.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Y học cổ truyền – Phục hồi chức năng",
+     "desc": "Chăm sóc, tập luyện phục hồi chức năng và điều trị bằng y học cổ truyền.",
+     "roles": [
+      "ĐD",
+      "KTY"
+     ]
+    },
+    {
+     "name": "Bộ phận Thận nhân tạo",
+     "desc": "Chạy thận nhân tạo chu kỳ, theo dõi và giáo dục người bệnh suy thận.",
+     "roles": [
+      "ĐD"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "canlamsang",
+   "groupLabel": "Khối cận lâm sàng",
+   "units": [
+    {
+     "name": "Khoa Xét nghiệm",
+     "desc": "Kỹ thuật y lấy mẫu, thực hiện và trả kết quả xét nghiệm.",
+     "roles": [
+      "KTY"
+     ]
+    },
+    {
+     "name": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng",
+     "desc": "Kỹ thuật y thực hiện X-quang, CT, siêu âm, điện tim và các thăm dò chức năng.",
+     "roles": [
+      "ĐD",
+      "KTY"
+     ]
+    },
+    {
+     "name": "Khoa Dược",
+     "desc": "Cung ứng thuốc, vật tư; phối hợp điều dưỡng sử dụng thuốc an toàn.",
+     "roles": []
+    },
+    {
+     "name": "Khoa Kiểm soát nhiễm khuẩn",
+     "desc": "Giám sát vệ sinh tay, khử khuẩn, tiệt khuẩn dụng cụ và phòng ngừa nhiễm khuẩn bệnh viện.",
+     "roles": [
+      "ĐD"
+     ]
+    },
+    {
+     "name": "Khoa Dinh dưỡng",
+     "desc": "Sàng lọc, đánh giá dinh dưỡng và tư vấn chế độ ăn cho người bệnh.",
+     "roles": []
+    },
+    {
+     "name": "Tổ Tiêm chủng",
+     "desc": "Tư vấn, khám sàng lọc, tiêm chủng và theo dõi sau tiêm.",
+     "roles": [
+      "ĐD"
+     ]
+    }
+   ]
+  },
+  {
+   "group": "phong",
+   "groupLabel": "Phòng chức năng",
+   "units": [
+    {
+     "name": "Phòng Điều dưỡng",
+     "desc": "Quản lý, giám sát, đào tạo và nâng cao chất lượng công tác điều dưỡng toàn viện.",
+     "roles": [
+      "ĐD",
+      "HS",
+      "KTY"
+     ]
+    },
+    {
+     "name": "Phòng Công tác xã hội",
+     "desc": "Đón tiếp, hướng dẫn, hỗ trợ người bệnh và tiếp nhận góp ý.",
+     "roles": []
+    }
+   ]
+  }
+ ],
+ "roles": [
+  {
+   "key": "dd",
+   "label": "Điều dưỡng",
+   "items": [
+    "Tiếp đón, nhận định người bệnh, lập và thực hiện kế hoạch chăm sóc theo Thông tư 31/2021/TT-BYT.",
+    "Thực hiện y lệnh thuốc, tiêm, truyền dịch, truyền máu an toàn; đối chiếu người bệnh trước mỗi thủ thuật.",
+    "Theo dõi dấu hiệu sinh tồn, phát hiện sớm diễn biến bất thường và báo bác sĩ kịp thời.",
+    "Chăm sóc vệ sinh cá nhân, dinh dưỡng, vận động, phục hồi chức năng cho người bệnh.",
+    "Phòng ngừa té ngã, loét tì đè, nhiễm khuẩn bệnh viện; tham gia cấp cứu, hồi sức.",
+    "Bàn giao người bệnh giữa các ca, các khoa theo mô hình ISBAR.",
+    "Tư vấn, giáo dục sức khỏe, hướng dẫn người bệnh và người nhà khi nằm viện và ra viện.",
+    "Ghi chép hồ sơ chăm sóc theo Thông tư 32/2023/TT-BYT.",
+    "Chạy thận nhân tạo chu kỳ; chuẩn bị, phụ mổ và chăm sóc hồi tỉnh sau phẫu thuật."
+   ]
+  },
+  {
+   "key": "hs",
+   "label": "Hộ sinh",
+   "items": [
+    "Khám thai, tư vấn chăm sóc trong thai kỳ.",
+    "Theo dõi chuyển dạ bằng biểu đồ chuyển dạ, phát hiện sớm dấu hiệu nguy cơ.",
+    "Đỡ đẻ thường, phụ mổ lấy thai; chăm sóc thiết yếu bà mẹ, trẻ sơ sinh trong và ngay sau đẻ (da kề da, bú sớm).",
+    "Chăm sóc bà mẹ, trẻ sơ sinh sau sinh, sau mổ; theo dõi phòng ngừa băng huyết sau sinh.",
+    "Tư vấn nuôi con bằng sữa mẹ, chăm sóc trẻ sơ sinh, kế hoạch hóa gia đình.",
+    "Ghi chép hồ sơ hộ sinh, bàn giao bà mẹ và trẻ sơ sinh an toàn."
+   ]
+  },
+  {
+   "key": "kty",
+   "label": "Kỹ thuật y",
+   "items": [
+    "Lấy mẫu, thực hiện và trả kết quả xét nghiệm chính xác, kịp thời.",
+    "Nội kiểm, ngoại kiểm, bảo đảm chất lượng xét nghiệm.",
+    "Thực hiện chụp X-quang, chụp cắt lớp vi tính; hỗ trợ siêu âm, điện tim và các thăm dò chức năng.",
+    "Bảo đảm an toàn bức xạ cho người bệnh, nhân viên y tế.",
+    "Thực hiện kỹ thuật vật lý trị liệu, phục hồi chức năng theo chỉ định.",
+    "Vận hành, bảo quản trang thiết bị; ghi chép, lưu trữ kết quả kỹ thuật."
+   ]
+  },
+  {
+   "key": "chung",
+   "label": "Hoạt động chung",
+   "items": [
+    "Thực hiện quy trình kỹ thuật, bảng kiểm do bệnh viện ban hành; chịu giám sát tuân thủ định kỳ.",
+    "Vệ sinh tay, phòng ngừa chuẩn, phân loại chất thải theo kế hoạch kiểm soát nhiễm khuẩn.",
+    "Báo cáo sự cố y khoa tự nguyện theo Thông tư 43/2018/TT-BYT.",
+    "Đào tạo liên tục, thi tay nghề hằng năm; tham gia nghiên cứu khoa học, sáng kiến cải tiến.",
+    "Giao tiếp, ứng xử văn minh; tham gia khảo sát hài lòng và cải tiến chất lượng."
+   ]
+  }
+ ]
 };
