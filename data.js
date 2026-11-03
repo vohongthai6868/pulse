@@ -524,13 +524,11 @@ window.PULSE_DATA = {
      "items": {
       "en": [
        "Tổng đài, cấp cứu 24/24: 0296 3562 357",
-       "Liên hệ công tác: 0296 3562 678",
-       "Cấp cứu ngoài bệnh viện: gọi 115"
+       "Liên hệ công tác: 0296 3562 678"
       ],
       "vi": [
        "Tổng đài, cấp cứu 24/24: 0296 3562 357",
-       "Liên hệ công tác: 0296 3562 678",
-       "Cấp cứu ngoài bệnh viện: gọi 115"
+       "Liên hệ công tác: 0296 3562 678"
       ]
      }
     },
