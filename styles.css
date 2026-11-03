@@ -477,3 +477,74 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 /* Nền tối giữ nguyên dải xanh và chân trang */
 :root[data-theme="dark"] .site-header { background: #101018; }
 :root[data-theme="dark"] .quick-grid, :root[data-theme="dark"] .news-card, :root[data-theme="dark"] .tool-card { background: var(--surface); }
+
+/* Khoa, phòng, bộ phận và hoạt động ĐD-HS-KTY (03/11/2026) */
+.brand-text small { display: block; font-size: 11px; font-weight: 500; color: var(--muted, #5b6b7f); letter-spacing: .2px; }
+.dept-groups { display: flex; flex-direction: column; gap: 22px; }
+.dept-group-title { font-size: 15px; font-weight: 700; color: var(--brand, #0b4f9c); margin: 0 0 10px; padding-left: 10px; border-left: 4px solid var(--brand-red, #d0202a); }
+.dept-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.dept-card { padding: 14px 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); box-shadow: var(--shadow); border-top: 3px solid var(--brand, #0b4f9c); }
+.dept-canlamsang { border-top-color: #15803d; }
+.dept-phong { border-top-color: #c2410c; }
+.dept-name { font-weight: 700; font-size: 15px; line-height: 1.35; }
+.dept-desc { font-size: 13.5px; color: var(--muted, #5b6b7f); margin-top: 6px; line-height: 1.5; }
+.dept-roles { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.role-tag { font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: rgba(11,79,156,.1); color: var(--brand, #0b4f9c); }
+:root[data-theme="dark"] .role-tag { background: rgba(96,165,250,.18); color: #93c5fd; }
+.roles-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.role-card { padding: 18px 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); box-shadow: var(--shadow); }
+.role-title { margin: 0 0 10px; font-size: 17px; color: var(--brand, #0b4f9c); }
+:root[data-theme="dark"] .role-title, :root[data-theme="dark"] .dept-group-title { color: #93c5fd; }
+.role-items { margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.55; }
+@media (max-width: 900px) { .dept-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .dept-grid, .roles-grid { grid-template-columns: 1fr; } .role-card { padding: 16px; } }
+@media (max-width: 640px) { .topbar-links .tel-work { display: none !important; } }
+.hero-stats .nw { white-space: nowrap; }
+@media (max-width: 400px) {
+  .brand-logo { width: 96px; height: auto; }
+  .brand-text { font-size: 15px; }
+  .brand-text small { font-size: 10px; }
+  .header-actions { gap: 6px; }
+  .hero-stats li span { font-size: 12px; }
+}
+@media (max-width: 350px) { .brand-text small { display: none; } .brand-logo { width: 84px; } }
+
+/* Hoàn thiện chuyên nghiệp (03/11/2026) */
+.nw { white-space: nowrap; }
+.main-nav a { white-space: nowrap; padding: 10px 11px; }
+@media (max-width: 1180px) and (min-width: 641px) { .main-nav a { padding: 8px 7px; font-size: 13.5px; } .brand-text small { display: none; } .header-subscribe { display: none; } }
+.org-flow { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; counter-reset: none; }
+.org-step { position: relative; display: flex; gap: 12px; align-items: flex-start; padding: 18px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); }
+.org-step:not(:last-child)::after { content: ""; position: absolute; right: -12px; top: 50%; width: 10px; height: 10px; border-top: 2px solid var(--brand, #0b4f9c); border-right: 2px solid var(--brand, #0b4f9c); transform: translateY(-50%) rotate(45deg); }
+.org-no { flex-shrink: 0; width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 14px; background: rgba(11,79,156,.1); color: var(--brand, #0b4f9c); }
+.org-step strong { display: block; font-size: 15px; line-height: 1.35; }
+.org-step div span { display: block; font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.45; }
+.org-main { background: var(--brand, #0b4f9c); border-color: var(--brand, #0b4f9c); }
+.org-main strong, .org-main div span { color: #fff !important; }
+.org-main .org-no { background: #fff; }
+@media (max-width: 900px) {
+  .org-flow { grid-template-columns: 1fr; gap: 12px; }
+  .org-step:not(:last-child)::after { right: auto; left: 32px; top: auto; bottom: -9px; transform: rotate(135deg); }
+}
+.role-items { list-style: none; padding-left: 0; }
+.role-items li { position: relative; padding-left: 24px; }
+.role-items li::before { content: ""; position: absolute; left: 2px; top: 6px; width: 12px; height: 7px; border-left: 2px solid #15803d; border-bottom: 2px solid #15803d; transform: rotate(-45deg); }
+.role-card { border-top: 4px solid var(--brand, #0b4f9c); }
+.role-hs { border-top-color: #be185d; }
+.role-kty { border-top-color: #15803d; }
+.role-chung { border-top-color: #c2410c; }
+@media (max-width: 980px) {
+  .main-nav { display: none !important; }
+  .mobile-nav { display: flex; gap: 18px; overflow-x: auto; padding-top: 0; padding-bottom: 12px; scrollbar-width: none; }
+  .mobile-nav a { flex-shrink: 0; font-size: 14px; font-weight: 600; color: var(--text-2); white-space: nowrap; }
+  .topbar-links .tel-work { display: none !important; }
+}
+.dept-bophan { border-top-color: #7c3aed; }
+/* Tiêu đề đầu trang */
+.hero-title { display: flex; flex-direction: column; gap: 14px; }
+.hero-name { font-size: 52px; font-weight: 800; line-height: 1.1; letter-spacing: -0.015em; color: #fff; }
+.hero-slogan { display: inline-flex; align-items: center; flex-wrap: wrap; gap: 6px 14px; font-size: 20px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: #fcd34d; }
+.hero-slogan i { width: 6px; height: 6px; border-radius: 50%; background: #fff; opacity: .7; }
+@media (max-width: 900px) { .hero-name { font-size: 40px; } .hero-slogan { font-size: 17px; } }
+@media (max-width: 640px) { .hero-name { font-size: 32px; } .hero-slogan { font-size: 14px; gap: 6px 10px; letter-spacing: .04em; } .hero-slogan i { width: 5px; height: 5px; } }
+@media (min-width: 1000px) { .hero-name { font-size: 50px; white-space: nowrap; } }

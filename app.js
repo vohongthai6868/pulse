@@ -24,7 +24,8 @@
   }
 
   function formatDate(day) {
-    return new Date(day + "T12:00:00").toLocaleDateString(state.lang === "vi" ? "vi-VN" : "en-US", { year: "numeric", month: "short", day: "numeric" });
+    var p = String(day).split("-");
+    return p.length === 3 ? p[2] + "/" + p[1] + "/" + p[0] : day;
   }
 
   var BOLT = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>';
@@ -150,6 +151,45 @@
     });
   }
 
+  function renderRoles() {
+    var box = $("roles-list");
+    if (!box || !DATA.roles) return;
+    box.textContent = "";
+    DATA.roles.forEach(function (r) {
+      var items = r.items.filter(function (it) { return matches(state.query, [r.label, it]); });
+      if (!items.length) return;
+      box.appendChild(el("div", { class: "role-card role-" + r.key }, [
+        el("h3", { class: "role-title", text: r.label }),
+        el("ul", { class: "role-items" }, items.map(function (it) { return el("li", { text: it }); })),
+      ]));
+    });
+  }
+
+  function renderDepts() {
+    var box = $("dept-list");
+    if (!box || !DATA.departments) return;
+    box.textContent = "";
+    var total = 0;
+    DATA.departments.forEach(function (g) {
+      var units = g.units.filter(function (u) { return matches(state.query, [u.name, u.desc]); });
+      if (g.group !== "phong") total += g.units.length;
+      if (!units.length) return;
+      var grid = el("div", { class: "dept-grid" });
+      units.forEach(function (u) {
+        grid.appendChild(el("div", { class: "dept-card dept-" + g.group }, [
+          el("div", { class: "dept-name", text: u.name }),
+          (u.roles && u.roles.length) ? el("div", { class: "dept-roles" }, u.roles.map(function (r) { return el("span", { class: "role-tag", text: r }); })) : null,
+          el("div", { class: "dept-desc", text: u.desc }),
+        ]));
+      });
+      box.appendChild(el("div", { class: "dept-group" }, [
+        el("h3", { class: "dept-group-title", text: g.groupLabel + " (" + g.units.length + ")" }),
+        grid,
+      ]));
+    });
+    var c = $("dept-count"); if (c) c.textContent = total;
+  }
+
   function renderTools() {
     var list = $("tools-list");
     list.textContent = "";
@@ -210,11 +250,11 @@
     panel.hidden = !open;
     searchBtn.setAttribute("aria-expanded", String(open));
     if (open) searchInput.focus();
-    else { searchInput.value = ""; state.query = ""; renderNews(); renderTools(); }
+    else { searchInput.value = ""; state.query = ""; renderNews(); renderTools(); renderDepts(); renderRoles(); }
   }
   searchBtn.addEventListener("click", function () { setSearch(panel.hidden); });
   $("search-close").addEventListener("click", function () { setSearch(false); });
-  searchInput.addEventListener("input", function () { state.query = searchInput.value.trim(); renderNews(); renderTools(); });
+  searchInput.addEventListener("input", function () { state.query = searchInput.value.trim(); renderNews(); renderTools(); renderDepts(); renderRoles(); });
   searchInput.addEventListener("keydown", function (e) { if (e.key === "Escape") setSearch(false); });
 
   // Theme (sáng mặc định)
@@ -303,7 +343,7 @@
     var list = el("div", { class: "news-list page-news" });
     DATA.news.filter(function (n) { return n.category === key; }).forEach(function (n) { list.appendChild(newsCard(n)); });
     pageView.appendChild(list);
-    document.title = cat.label[state.lang] + " — Phòng Điều dưỡng BV Nhật Tân";
+    document.title = cat.label[state.lang] + " — Điều dưỡng BV Nhật Tân";
   }
 
   function renderPage(name) {
@@ -324,7 +364,7 @@
       }
       pageView.appendChild(block);
     });
-    document.title = page.title[state.lang] + " — Phòng Điều dưỡng BV Nhật Tân";
+    document.title = page.title[state.lang] + " — Điều dưỡng BV Nhật Tân";
   }
 
   function route(scroll) {
@@ -352,6 +392,8 @@
     renderTabs();
     renderNews();
     renderTools();
+    renderDepts();
+    renderRoles();
     renderHot();
     renderPricing();
     renderNotices();
