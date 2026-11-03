@@ -564,3 +564,40 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 @media (max-width: 640px) { .gdsk-grid { grid-template-columns: 1fr; } }
 @media (max-width: 1320px) { .header-subscribe { display: none !important; } }
 .dept-to { border-top-color: #0e7490; }
+
+/* Gọn giao diện (03/11/2026) */
+[hidden] { display: none !important; }
+.block { padding-top: 72px; }
+@media (max-width: 640px) { .block { padding-top: 48px; } }
+.seg-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.dept-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.dept-card { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left; cursor: pointer; font: inherit; color: inherit; padding: 14px 16px; border-top-width: 3px; transition: border-color .15s, background .15s; }
+.dept-card:hover { background: var(--surface-2, #f5f8fc); }
+.dept-card .dept-name { font-size: 14.5px; }
+.dept-card .dept-roles { margin-top: 0; }
+.dept-card .dept-desc { display: none; margin-top: 2px; }
+.dept-card[aria-expanded="true"] .dept-desc { display: block; }
+.dept-hint { font-size: 12.5px; color: var(--muted); margin: 10px 0 0; }
+.dept-groups { gap: 0; }
+@media (max-width: 1080px) { .dept-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .dept-grid { grid-template-columns: 1fr 1fr; } .dept-card { padding: 12px; } .dept-card .dept-name { font-size: 13.5px; } }
+.roles-one .role-card { padding: 22px 26px; }
+.roles-one .role-items { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 32px; }
+@media (max-width: 760px) { .roles-one .role-items { grid-template-columns: 1fr; } }
+.more-btn { align-self: center; margin-top: 18px; padding: 10px 22px; border-radius: 999px; border: 1px solid var(--brand, #0b4f9c); background: transparent; color: var(--brand, #0b4f9c); font: inherit; font-weight: 700; font-size: 14px; cursor: pointer; }
+.more-btn:hover { background: var(--brand, #0b4f9c); color: #fff; }
+:root[data-theme="dark"] .more-btn { color: #93c5fd; border-color: #93c5fd; }
+#gdsk-section .container { display: flex; flex-direction: column; }
+.news { display: flex; flex-direction: column; }
+.org-step div span { font-size: 12.5px; }
+.lang-btn { min-width: 42px; padding: 7px 10px; }
+@media (max-width: 640px) {
+  .header-inner { gap: 8px; }
+  .brand { min-width: 0; flex: 1 1 auto; overflow: hidden; }
+  .brand-text { min-width: 0; overflow: hidden; }
+  .brand-text small { overflow: hidden; text-overflow: ellipsis; }
+  .header-actions { gap: 6px; flex-shrink: 0; }
+  .header-actions .icon-btn { width: 32px; height: 32px; }
+  .lang-btn { min-width: 34px; padding: 6px 7px; font-size: 11px; }
+}
+@media (max-width: 400px) { .brand-logo { width: 84px; } .brand-text { padding-left: 8px; } }

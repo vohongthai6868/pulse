@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="styles.css?v=20261103d">
+<link rel="stylesheet" href="styles.css?v=20261103f">
 </head>
 <body>
 
@@ -20,23 +20,23 @@
     <div class="container topbar-inner">
       <a id="hot-link" class="hot" href="#news-section"><span class="hot-badge" data-i18n="hotLabel">Hot</span><span id="hot-title" class="hot-title"></span></a>
       <div class="topbar-links">
-        <a class="tel-115" href="tel:02963562357">Tổng đài, cấp cứu 24/24: 0296 3562 357</a>
-        <a class="tel-work" href="tel:02963562678">Liên hệ công tác: 0296 3562 678</a>
-        <a href="#/privacy">Liên hệ</a>
+        <a class="tel-115" href="tel:02963562357" data-en="24/7 emergency: 0296 3562 357">Tổng đài, cấp cứu 24/24: 0296 3562 357</a>
+        <a class="tel-work" href="tel:02963562678" data-en="Work enquiries: 0296 3562 678">Liên hệ công tác: 0296 3562 678</a>
+        <a href="#/privacy" data-en="Contact">Liên hệ</a>
         <a id="contact-top" href="#" hidden data-i18n="footerContact">Contact</a>
       </div>
     </div>
   </div>
   <div class="container header-inner">
-    <a class="brand" href="#top" aria-label="Điều dưỡng Bệnh viện Đa khoa Nhật Tân">
-      <img class="brand-logo" src="logo-nhattan.png" alt="Bệnh viện Đa khoa Nhật Tân" width="129" height="40">
-      <span class="brand-text">Điều dưỡng<small>BV Đa khoa Nhật Tân</small></span>
+    <a class="brand" href="#top" aria-label="Điều dưỡng Bệnh viện Đa khoa Nhật Tân" data-en-aria-label="Nursing, Nhat Tan General Hospital">
+      <img class="brand-logo" src="logo-nhattan.png" alt="Bệnh viện Đa khoa Nhật Tân" data-en-alt="Nhat Tan General Hospital" width="129" height="40">
+      <span class="brand-text" data-en="Nursing<small>Nhat Tan Hospital</small>">Điều dưỡng<small>BV Đa khoa Nhật Tân</small></span>
     </a>
     <nav class="main-nav" aria-label="Main">
       <a href="#/about" data-i18n="navAbout">About</a>
-      <a href="#dept-section">Phòng, khoa</a>
+      <a href="#dept-section" data-en="Departments">Phòng, khoa</a>
       <a href="#roles-section" data-i18n="navTools">Tools</a>
-      <a href="#gdsk-section">Sức khỏe</a>
+      <a href="#gdsk-section" data-en="Health">Sức khỏe</a>
       <a href="#/guides" data-i18n="navGuides">Guides</a>
       <a href="#price-section" data-i18n="navPricing">Pricing</a>
       <a href="#news-section" data-i18n="navNews">News</a>
@@ -47,7 +47,7 @@
         <svg class="i-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         <svg class="i-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       </button>
-      <button id="lang-btn" hidden class="pill-btn" type="button" data-i18n-aria="switchLang">VI</button>
+      <button id="lang-btn" class="pill-btn lang-btn" type="button" data-i18n-aria="switchLang">VI</button>
       <button id="search-btn" class="icon-btn" type="button" aria-expanded="false" aria-controls="search-panel" data-i18n-aria="searchLabel">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
       </button>
@@ -56,9 +56,9 @@
   </div>
   <nav class="container mobile-nav" data-i18n-aria="mainNav">
     <a href="#/about" data-i18n="navAbout">About</a>
-    <a href="#dept-section">Phòng, khoa</a>
+    <a href="#dept-section" data-en="Departments">Phòng, khoa</a>
     <a href="#roles-section" data-i18n="navTools">Tools</a>
-      <a href="#gdsk-section">Sức khỏe</a>
+      <a href="#gdsk-section" data-en="Health">Sức khỏe</a>
     <a href="#/guides" data-i18n="navGuides">Guides</a>
     <a href="#price-section" data-i18n="navPricing">Pricing</a>
     <a href="#news-section" data-i18n="navNews">News</a>
@@ -80,8 +80,8 @@
     <div class="hero-copy">
       <div class="eyebrow"><span class="dot"></span><span data-i18n="heroEyebrow">AI NEWS &amp; TOOLS, CURATED DAILY</span></div>
       <h1 class="hero-title">
-        <span class="hero-name">Điều dưỡng <span class="nw">Nhật Tân</span></span>
-        <span class="hero-slogan"><span>An toàn</span><i aria-hidden="true"></i><span>Tận tâm</span><i aria-hidden="true"></i><span>Chuyên nghiệp</span></span>
+        <span class="hero-name" data-en="Nhat Tan <span class=&quot;nw&quot;>Nursing</span>">Điều dưỡng <span class="nw">Nhật Tân</span></span>
+        <span class="hero-slogan"><span data-en="Safe">An toàn</span><i aria-hidden="true"></i><span data-en="Caring">Tận tâm</span><i aria-hidden="true"></i><span data-en="Professional">Chuyên nghiệp</span></span>
       </h1>
       <p class="lead" data-i18n="heroSubtitle">The latest AI news, hand-picked tools, and no-fluff analysis — delivered every morning so you never have to go hunting for it again.</p>
 
@@ -101,18 +101,18 @@
 
     <div class="hero-art">
       <div class="hero-card">
-        <img src="logo-nhattan.png" alt="Logo Bệnh viện Đa khoa Nhật Tân" width="300" height="93">
+        <img src="logo-nhattan.png" alt="Logo Bệnh viện Đa khoa Nhật Tân" data-en-alt="Nhat Tan General Hospital logo" width="300" height="93">
         <ul class="hero-stats">
-          <li><strong>245</strong><span class="nw">giường bệnh</span></li>
-          <li><strong id="dept-count">19</strong><span>khoa,<br><span class="nw">bộ phận</span></span></li>
-          <li><strong>209</strong><span><span class="nw">điều dưỡng,</span> <span class="nw">hộ sinh, KTY</span></span></li>
+          <li><strong>245</strong><span class="nw" data-en="beds">giường bệnh</span></li>
+          <li><strong id="dept-count">19</strong><span data-en="departments,<br><span class=&quot;nw&quot;>units</span>">khoa,<br><span class="nw">bộ phận</span></span></li>
+          <li><strong>209</strong><span data-en="<span class=&quot;nw&quot;>nurses,</span> <span class=&quot;nw&quot;>midwives,</span> <span class=&quot;nw&quot;>med. techs</span>"><span class="nw">điều dưỡng,</span> <span class="nw">hộ sinh, KTY</span></span></li>
         </ul>
       </div>
     </div>
   </section>
 
   <section class="quick container" aria-labelledby="quick-heading">
-    <span class="kicker">TRA CỨU NHANH</span>
+    <span class="kicker" data-en="QUICK LINKS">TRA CỨU NHANH</span>
       <h2 id="quick-heading" class="quick-title" data-i18n="quickHeading">What do you need today?</h2>
     <div class="quick-grid">
       <a class="quick-item" href="#/about" style="--c:#0ea5e9">
@@ -136,49 +136,49 @@
 
   <section id="org-section" class="container block" aria-labelledby="org-heading">
     <div class="section-head">
-      <span class="kicker">TỔ CHỨC</span>
-      <h2 id="org-heading">Mạng lưới quản lý điều dưỡng</h2>
+      <span class="kicker" data-en="ORGANISATION">TỔ CHỨC</span>
+      <h2 id="org-heading" data-en="Nursing management network">Mạng lưới quản lý điều dưỡng</h2>
     </div>
     <ol class="org-flow">
-      <li class="org-step"><span class="org-no">1</span><div><strong>Ban Giám đốc</strong><span>Chỉ đạo chung công tác điều dưỡng</span></div></li>
-      <li class="org-step org-main"><span class="org-no">2</span><div><strong>Phòng Điều dưỡng</strong><span>Trưởng phòng: CKIĐD. Võ Hồng Thái. Quản lý, đào tạo, giám sát toàn viện</span></div></li>
-      <li class="org-step"><span class="org-no">3</span><div><strong>Điều dưỡng trưởng, hộ sinh trưởng, KTY trưởng</strong><span>19 khoa, bộ phận</span></div></li>
-      <li class="org-step"><span class="org-no">4</span><div><strong>Điều dưỡng, hộ sinh, kỹ thuật y</strong><span>209 người trực tiếp chăm sóc, phục vụ người bệnh</span></div></li>
+      <li class="org-step"><span class="org-no">1</span><div><strong data-en="Board of Directors">Ban Giám đốc</strong><span data-en="Overall direction of nursing">Chỉ đạo chung công tác điều dưỡng</span></div></li>
+      <li class="org-step org-main"><span class="org-no">2</span><div><strong data-en="Nursing Department">Phòng Điều dưỡng</strong><span data-en="Head: CKIĐD. Võ Hồng Thái. Management, training and supervision across the hospital">Trưởng phòng: CKIĐD. Võ Hồng Thái. Quản lý, đào tạo, giám sát toàn viện</span></div></li>
+      <li class="org-step"><span class="org-no">3</span><div><strong data-en="Head nurses, head midwives, head medical technologists">Điều dưỡng trưởng, hộ sinh trưởng, KTY trưởng</strong><span data-en="19 departments and units">19 khoa, bộ phận</span></div></li>
+      <li class="org-step"><span class="org-no">4</span><div><strong data-en="Nurses, midwives, medical technologists">Điều dưỡng, hộ sinh, kỹ thuật y</strong><span data-en="209 staff providing direct patient care">209 người trực tiếp chăm sóc, phục vụ người bệnh</span></div></li>
     </ol>
   </section>
 
   <section id="dept-section" class="container block" aria-labelledby="dept-heading">
     <div class="section-head">
-      <span class="kicker">PHÒNG, KHOA, BỘ PHẬN</span>
-      <h2 id="dept-heading">Phòng, khoa, bộ phận</h2>
+      <span class="kicker" data-en="DEPARTMENTS &amp; UNITS">PHÒNG, KHOA, BỘ PHẬN</span>
+      <h2 id="dept-heading" data-en="Offices, departments &amp; units">Phòng, khoa, bộ phận</h2>
     </div>
-    <p class="block-note">Đội ngũ điều dưỡng, hộ sinh, kỹ thuật y làm việc tại tất cả các phòng, khoa, bộ phận dưới sự quản lý chuyên môn của Phòng Điều dưỡng.</p>
     <div id="dept-list" class="dept-groups"></div>
   </section>
 
   <section id="roles-section" class="container block" aria-labelledby="roles-heading">
     <div class="section-head">
-      <span class="kicker">HOẠT ĐỘNG</span>
-      <h2 id="roles-heading">Hoạt động của điều dưỡng, hộ sinh, kỹ thuật y</h2>
+      <span class="kicker" data-en="ACTIVITIES">HOẠT ĐỘNG</span>
+      <h2 id="roles-heading" data-en="What our nurses, midwives and medical technologists do">Hoạt động của điều dưỡng, hộ sinh, kỹ thuật y</h2>
     </div>
-    <div id="roles-list" class="roles-grid"></div>
+    <div id="roles-list" class="roles-one"></div>
   </section>
 
   <section id="gdsk-section" class="block gdsk-band" aria-labelledby="gdsk-heading">
     <div class="container">
       <div class="section-head">
-        <span class="kicker">GÓC SỨC KHỎE</span>
-        <h2 id="gdsk-heading">Góc truyền thông giáo dục sức khỏe</h2>
+        <span class="kicker" data-en="HEALTH CORNER">GÓC SỨC KHỎE</span>
+        <h2 id="gdsk-heading" data-en="Health education corner">Góc truyền thông giáo dục sức khỏe</h2>
       </div>
-      <p class="block-note">Những điều người bệnh và người nhà cần biết, do điều dưỡng, hộ sinh tư vấn hằng ngày tại các khoa. Thông tin chỉ mang tính tham khảo, không thay thế chỉ định của bác sĩ.</p>
-      <div id="gdsk-tabs" class="tabs" role="group" aria-label="Nhóm chủ đề"></div>
+      <p class="block-note" data-en="For reference only; does not replace your doctor's advice.">Thông tin tham khảo, không thay thế chỉ định của bác sĩ.</p>
+      <div id="gdsk-tabs" class="tabs" role="group" aria-label="Nhóm chủ đề" data-en-aria-label="Topic groups"></div>
       <div id="gdsk-list" class="gdsk-grid"></div>
+      <button id="gdsk-more" class="more-btn" type="button" hidden>Xem thêm</button>
     </div>
   </section>
 
-  <section id="tools-section" class="container block" aria-labelledby="tools-heading">
+  <section id="tools-section" class="container block" hidden aria-labelledby="tools-heading">
     <div class="section-head">
-      <span class="kicker">QUẢN LÝ</span>
+      <span class="kicker" data-en="MANAGEMENT">QUẢN LÝ</span>
       <h2 id="tools-heading" data-i18n="toolsHeading">Featured tools</h2>
     </div>
     <div id="tools-list" class="tools-grid"></div>
@@ -187,7 +187,7 @@
 
   <section id="price-section" class="container block" aria-labelledby="price-heading">
     <div class="section-head">
-      <span class="kicker">NHÂN LỰC</span>
+      <span class="kicker" data-en="STAFFING">NHÂN LỰC</span>
       <h2 id="price-heading" data-i18n="priceHeading">AI model API prices</h2>
     </div>
     <p class="block-note" id="price-note"></p>
@@ -208,13 +208,14 @@
   <div class="container content-grid">
     <section id="news-section" class="news" aria-labelledby="news-heading">
       <div class="section-head">
-        <span class="kicker">TIN TỨC</span>
+        <span class="kicker" data-en="NEWS">TIN TỨC</span>
       <h2 id="news-heading" data-i18n="newsHeading">News &amp; events</h2>
         <a id="view-all" class="link-accent" href="#news-section" data-i18n="viewAll">View all →</a>
       </div>
       <div id="tabs" class="tabs" role="group" data-i18n-aria="categoriesLabel"></div>
       <div id="news-list" class="news-list"></div>
       <p id="news-empty" class="empty" hidden data-i18n="noResults">No stories match your filters.</p>
+      <button id="news-more" class="more-btn" type="button" hidden>Xem thêm</button>
     </section>
 
     <aside class="side-col">
@@ -237,7 +238,7 @@
   <div class="container footer-grid">
     <div class="footer-col footer-about">
       <div class="footer-brand-name">
-        <span>Điều dưỡng Bệnh viện Đa khoa Nhật Tân</span>
+        <span data-en="Nursing, Nhat Tan General Hospital">Điều dưỡng Bệnh viện Đa khoa Nhật Tân</span>
       </div>
       <p data-i18n="footerAbout">A daily digest of AI news and tools.</p>
     </div>
@@ -257,8 +258,8 @@
     <div class="footer-col">
       <h3 data-i18n="footerContact">Contact</h3>
       <ul>
-        <li><a href="tel:02963562357">Tổng đài, cấp cứu 24/24: 0296 3562 357</a></li>
-        <li><a href="tel:02963562678">Liên hệ công tác: 0296 3562 678</a></li>
+        <li><a href="tel:02963562357" data-en="Switchboard &amp; 24/7 emergency: 0296 3562 357">Tổng đài, cấp cứu 24/24: 0296 3562 357</a></li>
+        <li><a href="tel:02963562678" data-en="Work enquiries: 0296 3562 678">Liên hệ công tác: 0296 3562 678</a></li>
         <li><a id="contact-link" href="#" data-i18n="footerEmail">Email us</a></li>
       </ul>
     </div>
@@ -287,8 +288,9 @@
   </div>
 </dialog>
 
-<script src="config.js?v=20261103d"></script>
-<script src="data.js?v=20261103d"></script>
-<script src="app.js?v=20261103d"></script>
+<script src="config.js?v=20261103f"></script>
+<script src="data.js?v=20261103f"></script>
+<script src="i18n-en.js?v=20261103f"></script>
+<script src="app.js?v=20261103f"></script>
 </body>
 </html>
