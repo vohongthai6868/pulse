@@ -1,5 +1,10 @@
 /* Bản dịch tiếng Anh: khóa là câu tiếng Việt trong data.js */
 window.PULSE_EN = {
+"Kết quả thi tay nghề thực hành điều dưỡng, hộ sinh năm 2026": "2026 practical skills exam results for nurses and midwives",
+"64 điều dưỡng, hộ sinh có điểm thi thực hành, điểm trung bình 85,0/100: 24 người xếp loại Giỏi, 25 Khá, 9 Đạt. Điểm lý thuyết đang chờ Hội đồng duyệt đáp án để chấm chính thức.": "64 nurses and midwives received practical exam scores, with an average of 85.0/100: 24 rated Excellent, 25 Good and 9 Pass. Theory scores await the Council's approval of the answer key before official marking.",
+"Người bệnh đánh giá công tác chăm sóc điều dưỡng 4,82/5 điểm": "Patients rate nursing care 4.82 out of 5",
+"Kết quả sơ bộ 36 phiếu khảo sát người bệnh: điểm trung bình 4,82/5, 35/36 phiếu đạt từ 4,0 trở lên. Nội dung cần cải thiện: hướng dẫn chế độ ăn, tư vấn giáo dục sức khỏe và giải thích trước khi làm thủ thuật.": "Preliminary results from 36 patient survey forms: average score 4.82/5, with 35 of 36 forms at 4.0 or above. Areas to improve: dietary guidance, health education counselling and explanations before procedures.",
+"Đã hoàn thành thi tay nghề thực hành; điểm lý thuyết sẽ công bố sau khi Hội đồng duyệt đáp án.": "The practical skills exam is complete; theory scores will be announced after the Council approves the answer key.",
 "Hoạt động": "Activities",
 "Hoạt động chuyên môn, giám sát và phối hợp của điều dưỡng toàn viện.": "Professional activities, supervision and coordination of nursing across the hospital.",
 "Đào tạo – Hội thảo": "Training – Conferences",

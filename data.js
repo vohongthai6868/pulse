@@ -53,6 +53,30 @@ window.PULSE_DATA = {
  },
  "news": [
   {
+   "category": "CHATLUONG",
+   "title": {
+    "en": "Người bệnh đánh giá công tác chăm sóc điều dưỡng 4,82/5 điểm",
+    "vi": "Người bệnh đánh giá công tác chăm sóc điều dưỡng 4,82/5 điểm"
+   },
+   "summary": {
+    "en": "Kết quả sơ bộ 36 phiếu khảo sát người bệnh: điểm trung bình 4,82/5, 35/36 phiếu đạt từ 4,0 trở lên. Nội dung cần cải thiện: hướng dẫn chế độ ăn, tư vấn giáo dục sức khỏe và giải thích trước khi làm thủ thuật.",
+    "vi": "Kết quả sơ bộ 36 phiếu khảo sát người bệnh: điểm trung bình 4,82/5, 35/36 phiếu đạt từ 4,0 trở lên. Nội dung cần cải thiện: hướng dẫn chế độ ăn, tư vấn giáo dục sức khỏe và giải thích trước khi làm thủ thuật."
+   },
+   "date": "2026-11-07"
+  },
+  {
+   "category": "DAOTAO",
+   "title": {
+    "en": "Kết quả thi tay nghề thực hành điều dưỡng, hộ sinh năm 2026",
+    "vi": "Kết quả thi tay nghề thực hành điều dưỡng, hộ sinh năm 2026"
+   },
+   "summary": {
+    "en": "64 điều dưỡng, hộ sinh có điểm thi thực hành, điểm trung bình 85,0/100: 24 người xếp loại Giỏi, 25 Khá, 9 Đạt. Điểm lý thuyết đang chờ Hội đồng duyệt đáp án để chấm chính thức.",
+    "vi": "64 điều dưỡng, hộ sinh có điểm thi thực hành, điểm trung bình 85,0/100: 24 người xếp loại Giỏi, 25 Khá, 9 Đạt. Điểm lý thuyết đang chờ Hội đồng duyệt đáp án để chấm chính thức."
+   },
+   "date": "2026-11-07"
+  },
+  {
    "category": "DAOTAO",
    "title": {
     "en": "Tập huấn kỹ năng giao tiếp, ứng xử trong môi trường số",
@@ -308,10 +332,10 @@ window.PULSE_DATA = {
  ],
  "notices": [
   {
-   "date": "2026-11-02",
+   "date": "2026-11-07",
    "text": {
-    "en": "Thi tay nghề thực hành đợt 2 dời sang ngày 06/11/2026.",
-    "vi": "Thi tay nghề thực hành đợt 2 dời sang ngày 06/11/2026."
+    "en": "Đã hoàn thành thi tay nghề thực hành; điểm lý thuyết sẽ công bố sau khi Hội đồng duyệt đáp án.",
+    "vi": "Đã hoàn thành thi tay nghề thực hành; điểm lý thuyết sẽ công bố sau khi Hội đồng duyệt đáp án."
    }
   },
   {
