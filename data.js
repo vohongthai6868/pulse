@@ -1222,31 +1222,68 @@ window.PULSE_DATA = {
  "khoa": {
   "tc": {
    "name": "Tổ Tiêm chủng",
-   "intro": "Điểm tiêm chủng của Bệnh viện Đa khoa Nhật Tân: tư vấn, khám sàng lọc, tiêm vắc xin và theo dõi sau tiêm cho trẻ em và người lớn, trong không gian sạch, thân thiện, có khu vui chơi cho trẻ.",
+   "intro": "Phòng tiêm chủng của Bệnh viện Đa khoa Nhật Tân cung cấp đầy đủ các loại vắc xin cho trẻ em và người lớn, với quy trình khép kín từ khám sàng lọc, tiêm chủng đến theo dõi sau tiêm, trong không gian thân thiện có khu vui chơi cho trẻ.",
    "updated": "2026-11-12",
    "facts": [
     [
-     "Liên hệ",
-     "Tổng đài bệnh viện: 0296 3562 357"
+     "Vị trí",
+     "Phía sau khu vực hồ cá"
+    ],
+    [
+     "Giờ làm việc",
+     "Thứ Hai – Thứ Sáu: 7g00 – 19g00; Thứ Bảy, Chủ nhật: 7g00 – 17g00"
+    ],
+    [
+     "Điện thoại",
+     "0296 3877 152"
+    ],
+    [
+     "Zalo tư vấn, đặt lịch",
+     "0943 971 821"
     ]
    ],
    "sections": [
     {
-     "h": "Quy trình tiêm chủng",
+     "h": "Chức năng, nhiệm vụ",
      "items": [
-      "Tiếp đón, tư vấn loại vắc xin, lịch tiêm phù hợp với độ tuổi và tình trạng sức khỏe.",
-      "Khám sàng lọc trước tiêm để bảo đảm đủ điều kiện tiêm an toàn.",
-      "Tiêm vắc xin đúng kỹ thuật, kiểm tra kỹ loại vắc xin, liều lượng, hạn dùng trước khi tiêm.",
-      "Theo dõi tại điểm tiêm ít nhất 30 phút sau tiêm; khu tiêm có sẵn phương tiện xử trí phản ứng sau tiêm."
+      "Tiếp nhận, tổ chức tiêm chủng dịch vụ phòng bệnh cho mọi lứa tuổi.",
+      "Bảo quản vắc xin theo đúng tiêu chuẩn dây chuyền lạnh.",
+      "Phối hợp chặt chẽ với bác sĩ khám sàng lọc để bảo đảm an toàn.",
+      "Quản lý, lưu trữ hồ sơ tiêm chủng và nhắc lịch tiêm."
+     ]
+    },
+    {
+     "h": "Dịch vụ nổi bật",
+     "items": [
+      "Gói vắc xin trọn gói và tiêm lẻ cho trẻ em, phụ nữ chuẩn bị mang thai, người trưởng thành và người cao tuổi.",
+      "Kỹ thuật tiêm nhẹ nhàng, chuẩn xác, giúp trẻ bớt sợ hãi.",
+      "Theo dõi và xử trí phản ứng sau tiêm tại chỗ kịp thời theo hướng dẫn của Bộ Y tế."
+     ]
+    },
+    {
+     "h": "Điều dưỡng tại phòng tiêm",
+     "items": [
+      "Trước tiêm: tiếp đón, đo nhiệt độ, cân nặng, nhịp thở, hỗ trợ bác sĩ khám sàng lọc; thực hiện “3 kiểm tra, 5 đối chiếu” và công khai vắc xin (tên, hạn dùng, tình trạng lọ) cho người nhà xem trước khi tiêm.",
+      "Trong khi tiêm: chuẩn bị dụng cụ vô khuẩn, pha hồi chỉnh vắc xin đúng kỹ thuật, tiêm đúng đường, đúng liều, thao tác nhẹ nhàng.",
+      "Sau tiêm: theo dõi tại chỗ ít nhất 30 phút, kiểm tra vị trí tiêm, dặn dò chăm sóc tại nhà, cập nhật sổ và hệ thống tiêm chủng.",
+      "Điều dưỡng đồng hành, trấn an trẻ trước, trong và sau tiêm; khu theo dõi sau tiêm kết hợp khu vui chơi sạch, thoáng."
      ]
     },
     {
      "h": "Dặn dò sau tiêm",
      "items": [
-      "Tiếp tục theo dõi trẻ tại nhà ít nhất 24 giờ: nhiệt độ, ăn, ngủ, chỗ tiêm.",
-      "Cho trẻ bú, uống nước nhiều hơn; không đắp, chườm bất cứ thứ gì lên chỗ tiêm.",
+      "Theo dõi trẻ tại nhà trong 24–48 giờ đầu: nhiệt độ, ăn, ngủ, chỗ tiêm.",
+      "Sốt nhẹ, sưng đau tại chỗ tiêm là phản ứng thường gặp; cho trẻ bú, uống nhiều hơn, không đắp, chườm gì lên chỗ tiêm.",
       "Đưa trẻ đến cơ sở y tế gần nhất ngay khi sốt cao, quấy khóc kéo dài, phát ban, khó thở, tím tái hoặc li bì.",
-      "Mang theo sổ tiêm chủng mỗi lần tiêm và tiêm nhắc đúng hẹn."
+      "Tư vấn lợi ích vắc xin, lịch tiêm theo độ tuổi trực tiếp tại phòng tiêm hoặc qua Zalo của phòng; mang sổ tiêm chủng mỗi lần tiêm."
+     ]
+    },
+    {
+     "h": "Thành tích, sáng kiến",
+     "items": [
+      "Không ghi nhận sai sót chuyên môn trong thực hành tiêm chủng của điều dưỡng.",
+      "Ứng dụng Zalo phòng tiêm để tư vấn, đặt lịch hẹn trước và nhắc lịch tiêm, giúp giảm thời gian chờ.",
+      "Được người dân địa phương tin tưởng về thái độ phục vụ tận tình, chu đáo."
      ]
     }
    ],
