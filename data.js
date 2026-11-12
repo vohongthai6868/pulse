@@ -1218,6 +1218,10 @@ window.PULSE_DATA = {
    "updated": "2026-11-12",
    "facts": [
     [
+     "Điều dưỡng trưởng",
+     "CNĐD. Hồ Thanh Nhàn"
+    ],
+    [
      "Vị trí",
      "Tầng trệt, Khu D"
     ],

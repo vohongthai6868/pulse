@@ -399,6 +399,8 @@ window.PULSE_EN = {
 "Tư vấn giáo dục sức khỏe cho người bệnh": "Health education for patients",
 "Ra mắt trang giới thiệu Bộ phận Thận nhân tạo": "New page: Hemodialysis Unit",
 "Bộ phận Thận nhân tạo có trang riêng: lọc máu chu kỳ HD, HDF Online, lọc máu cấp cứu, chăm sóc FAV và catheter, tư vấn dinh dưỡng, kiểm soát dịch cho người bệnh chạy thận, kèm 9 hình ảnh hoạt động.": "The Hemodialysis Unit now has its own page: regular HD, online HDF, emergency dialysis, fistula and catheter care, diet and fluid counselling for dialysis patients, with 9 photos.",
+"Điều dưỡng trưởng": "Head nurse",
+"CNĐD. Hồ Thanh Nhàn": "Ho Thanh Nhan, BSN",
 "HS": "Midwife",
 "KTY": "MT"
 };
