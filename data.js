@@ -54,6 +54,13 @@ window.PULSE_DATA = {
  "news": [
   {
    "category": "HOATDONG",
+   "title": {"en": "Ra mắt trang giới thiệu Tổ Tiêm chủng", "vi": "Ra mắt trang giới thiệu Tổ Tiêm chủng"},
+   "summary": {"en": "Trang giới thiệu Tổ Tiêm chủng: quy trình tư vấn, khám sàng lọc, tiêm và theo dõi sau tiêm, lời dặn chăm sóc trẻ sau tiêm và hình ảnh khu tiếp đón, phòng tiêm, khu vui chơi cho trẻ.", "vi": "Trang giới thiệu Tổ Tiêm chủng: quy trình tư vấn, khám sàng lọc, tiêm và theo dõi sau tiêm, lời dặn chăm sóc trẻ sau tiêm và hình ảnh khu tiếp đón, phòng tiêm, khu vui chơi cho trẻ."},
+   "url": "#/khoa/tc",
+   "date": "2026-11-12"
+  },
+  {
+   "category": "HOATDONG",
    "title": {"en": "Ra mắt trang giới thiệu Bộ phận Thận nhân tạo", "vi": "Ra mắt trang giới thiệu Bộ phận Thận nhân tạo"},
    "summary": {"en": "Bộ phận Thận nhân tạo có trang riêng: lọc máu chu kỳ HD, HDF Online, lọc máu cấp cứu, chăm sóc FAV và catheter, tư vấn dinh dưỡng, kiểm soát dịch cho người bệnh chạy thận, kèm 9 hình ảnh hoạt động.", "vi": "Bộ phận Thận nhân tạo có trang riêng: lọc máu chu kỳ HD, HDF Online, lọc máu cấp cứu, chăm sóc FAV và catheter, tư vấn dinh dưỡng, kiểm soát dịch cho người bệnh chạy thận, kèm 9 hình ảnh hoạt động."},
    "url": "#/khoa/tnt",
@@ -996,6 +1003,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Tổ Tiêm chủng",
+     "page": "tc",
      "desc": "Tư vấn, khám sàng lọc, tiêm chủng và theo dõi sau tiêm.",
      "roles": [
       "ĐD"
@@ -1212,6 +1220,52 @@ window.PULSE_DATA = {
   ]
  },
  "khoa": {
+  "tc": {
+   "name": "Tổ Tiêm chủng",
+   "intro": "Điểm tiêm chủng của Bệnh viện Đa khoa Nhật Tân: tư vấn, khám sàng lọc, tiêm vắc xin và theo dõi sau tiêm cho trẻ em và người lớn, trong không gian sạch, thân thiện, có khu vui chơi cho trẻ.",
+   "updated": "2026-11-12",
+   "facts": [
+    [
+     "Liên hệ",
+     "Tổng đài bệnh viện: 0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Quy trình tiêm chủng",
+     "items": [
+      "Tiếp đón, tư vấn loại vắc xin, lịch tiêm phù hợp với độ tuổi và tình trạng sức khỏe.",
+      "Khám sàng lọc trước tiêm để bảo đảm đủ điều kiện tiêm an toàn.",
+      "Tiêm vắc xin đúng kỹ thuật, kiểm tra kỹ loại vắc xin, liều lượng, hạn dùng trước khi tiêm.",
+      "Theo dõi tại điểm tiêm ít nhất 30 phút sau tiêm; khu tiêm có sẵn phương tiện xử trí phản ứng sau tiêm."
+     ]
+    },
+    {
+     "h": "Dặn dò sau tiêm",
+     "items": [
+      "Tiếp tục theo dõi trẻ tại nhà ít nhất 24 giờ: nhiệt độ, ăn, ngủ, chỗ tiêm.",
+      "Cho trẻ bú, uống nước nhiều hơn; không đắp, chườm bất cứ thứ gì lên chỗ tiêm.",
+      "Đưa trẻ đến cơ sở y tế gần nhất ngay khi sốt cao, quấy khóc kéo dài, phát ban, khó thở, tím tái hoặc li bì.",
+      "Mang theo sổ tiêm chủng mỗi lần tiêm và tiêm nhắc đúng hẹn."
+     ]
+    }
+   ],
+   "message": "Tiêm chủng đầy đủ, đúng lịch là cách bảo vệ trẻ và cả gia đình trước nhiều bệnh nguy hiểm.",
+   "photos": [
+    [
+     "img/khoa/tc-01.jpg",
+     "Khu tiếp đón Tổ Tiêm chủng"
+    ],
+    [
+     "img/khoa/tc-02.jpg",
+     "Phòng tiêm và khu theo dõi sau tiêm"
+    ],
+    [
+     "img/khoa/tc-03.jpg",
+     "Khu vui chơi cho trẻ trong thời gian chờ và theo dõi sau tiêm"
+    ]
+   ]
+  },
   "tnt": {
    "name": "Bộ phận Thận nhân tạo",
    "intro": "Lọc máu chu kỳ cho người bệnh suy thận: chạy thận nhân tạo (HD), lọc máu HDF Online, lọc máu cấp cứu; chăm sóc đường vào mạch máu và đồng hành cùng người bệnh lâu dài. Phương châm: Tận tâm – Chu đáo – An toàn – Hiệu quả.",
