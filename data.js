@@ -53,6 +53,42 @@ window.PULSE_DATA = {
  },
  "news": [
   {
+   "category": "SUCKHOE",
+   "title": {
+    "en": "Góc GDSK bổ sung chủ đề Hen phế quản",
+    "vi": "Góc GDSK bổ sung chủ đề Hen phế quản"
+   },
+   "summary": {
+    "en": "Phòng Điều dưỡng biên soạn bài truyền thông giáo dục sức khỏe về hen phế quản: tránh yếu tố gây cơn hen, phân biệt thuốc cắt cơn và thuốc dự phòng, cách dùng bình xịt đúng và dấu hiệu cơn hen nặng cần đến bệnh viện ngay. Góc GDSK hiện có 13 chủ đề.",
+    "vi": "Phòng Điều dưỡng biên soạn bài truyền thông giáo dục sức khỏe về hen phế quản: tránh yếu tố gây cơn hen, phân biệt thuốc cắt cơn và thuốc dự phòng, cách dùng bình xịt đúng và dấu hiệu cơn hen nặng cần đến bệnh viện ngay. Góc GDSK hiện có 13 chủ đề."
+   },
+   "date": "2026-11-12"
+  },
+  {
+   "category": "CHATLUONG",
+   "title": {
+    "en": "Người bệnh đánh giá công tác chăm sóc điều dưỡng 4,82/5 điểm",
+    "vi": "Người bệnh đánh giá công tác chăm sóc điều dưỡng 4,82/5 điểm"
+   },
+   "summary": {
+    "en": "Kết quả sơ bộ 36 phiếu khảo sát người bệnh: điểm trung bình 4,82/5, 35/36 phiếu đạt từ 4,0 trở lên. Nội dung cần cải thiện: hướng dẫn chế độ ăn, tư vấn giáo dục sức khỏe và giải thích trước khi làm thủ thuật.",
+    "vi": "Kết quả sơ bộ 36 phiếu khảo sát người bệnh: điểm trung bình 4,82/5, 35/36 phiếu đạt từ 4,0 trở lên. Nội dung cần cải thiện: hướng dẫn chế độ ăn, tư vấn giáo dục sức khỏe và giải thích trước khi làm thủ thuật."
+   },
+   "date": "2026-11-07"
+  },
+  {
+   "category": "DAOTAO",
+   "title": {
+    "en": "Kết quả thi tay nghề thực hành điều dưỡng, hộ sinh năm 2026",
+    "vi": "Kết quả thi tay nghề thực hành điều dưỡng, hộ sinh năm 2026"
+   },
+   "summary": {
+    "en": "64 điều dưỡng, hộ sinh có điểm thi thực hành, điểm trung bình 85,0/100: 24 người xếp loại Giỏi, 25 Khá, 9 Đạt. Điểm lý thuyết đang chờ Hội đồng duyệt đáp án để chấm chính thức.",
+    "vi": "64 điều dưỡng, hộ sinh có điểm thi thực hành, điểm trung bình 85,0/100: 24 người xếp loại Giỏi, 25 Khá, 9 Đạt. Điểm lý thuyết đang chờ Hội đồng duyệt đáp án để chấm chính thức."
+   },
+   "date": "2026-11-07"
+  },
+  {
    "category": "DAOTAO",
    "title": {
     "en": "Tập huấn kỹ năng giao tiếp, ứng xử trong môi trường số",
@@ -308,10 +344,10 @@ window.PULSE_DATA = {
  ],
  "notices": [
   {
-   "date": "2026-11-02",
+   "date": "2026-11-07",
    "text": {
-    "en": "Thi tay nghề thực hành đợt 2 dời sang ngày 06/11/2026.",
-    "vi": "Thi tay nghề thực hành đợt 2 dời sang ngày 06/11/2026."
+    "en": "Đã hoàn thành thi tay nghề thực hành; điểm lý thuyết sẽ công bố sau khi Hội đồng duyệt đáp án.",
+    "vi": "Đã hoàn thành thi tay nghề thực hành; điểm lý thuyết sẽ công bố sau khi Hội đồng duyệt đáp án."
    }
   },
   {
@@ -391,12 +427,12 @@ window.PULSE_DATA = {
       "en": [
        "Trưởng phòng: CKIĐD. Võ Hồng Thái.",
        "Mạng lưới quản lý: điều dưỡng trưởng của 19 khoa, bộ phận; nhóm giám sát điều dưỡng.",
-       "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện năm 2025: 209 người (năm 2024: 193 người)."
+       "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện 9 tháng năm 2026: 217 người (năm 2025: 209 người; năm 2024: 193 người)."
       ],
       "vi": [
        "Trưởng phòng: CKIĐD. Võ Hồng Thái.",
        "Mạng lưới quản lý: điều dưỡng trưởng của 19 khoa, bộ phận; nhóm giám sát điều dưỡng.",
-       "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện năm 2025: 209 người (năm 2024: 193 người)."
+       "Khối điều dưỡng, hộ sinh, kỹ thuật y toàn viện 9 tháng năm 2026: 217 người (năm 2025: 209 người; năm 2024: 193 người)."
       ]
      }
     },
@@ -1090,10 +1126,19 @@ window.PULSE_DATA = {
    },
    {
     "group": "man",
+    "title": "Hen phế quản",
+    "points": [
+     "Tránh khói thuốc lá, khói bếp, khói nhang, bụi nhà, lông thú, nấm mốc; đeo khẩu trang khi ra đường.",
+     "Dùng thuốc dự phòng (thuốc xịt) hằng ngày theo đơn kể cả khi không khó thở; luôn mang theo thuốc cắt cơn; súc miệng sau mỗi lần xịt.",
+     "Đến bệnh viện ngay khi khó thở nhiều, chỉ nói được từng từ, môi tím, hoặc dùng thuốc cắt cơn không đỡ."
+    ]
+   },
+   {
+    "group": "man",
     "title": "Nhận biết sớm đột quỵ",
     "points": [
      "Dấu hiệu: méo miệng, yếu tay chân một bên, nói khó, nhìn mờ, chóng mặt đột ngột.",
-     "Gọi cấp cứu ngay, ghi lại thời điểm khởi phát triệu chứng.",
+     "Đưa người bệnh đến bệnh viện gần nhất ngay, ghi lại thời điểm khởi phát triệu chứng.",
      "Không tự ý cho ăn, uống hoặc dùng thuốc khi người bệnh chưa được thăm khám."
     ]
    },

@@ -601,3 +601,43 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
   .lang-btn { min-width: 34px; padding: 6px 7px; font-size: 11px; }
 }
 @media (max-width: 400px) { .brand-logo { width: 84px; } .brand-text { padding-left: 8px; } }
+
+/* Phương châm giao tiếp SBAR – AIDET (03/11/2026) */
+.comm-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+.comm-card { --c: #0b4f9c; background: var(--surface); border: 1px solid var(--border); border-top: 4px solid var(--c); border-radius: 12px; padding: 20px; box-shadow: var(--shadow); }
+.comm-aidet { --c: #c62828; }
+.comm-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.comm-name { font-size: 24px; font-weight: 800; color: var(--c); letter-spacing: .06em; }
+.comm-who { font-size: 13px; font-weight: 700; color: var(--text-2, #334); text-transform: uppercase; letter-spacing: .04em; }
+.comm-use { margin: 6px 0 14px; color: var(--muted, #5b6b7f); font-size: 14px; }
+.comm-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.comm-steps li { display: flex; gap: 12px; align-items: flex-start; }
+.comm-steps li > .comm-letter { flex: 0 0 34px; height: 34px; border-radius: 8px; background: var(--c); color: #fff; font-weight: 800; font-size: 17px; display: inline-flex; align-items: center; justify-content: center; }
+.comm-steps strong { display: block; font-size: 15px; color: var(--text); }
+.comm-steps span:not(.comm-letter) { display: block; font-size: 14px; color: var(--text-2, #445); line-height: 1.5; }
+@media (max-width: 760px) { .comm-grid { grid-template-columns: 1fr; } .comm-card { padding: 16px; } }
+
+/* Góc truyền thông: khối nổi bật có logo truyền thông chuyên môn */
+.tt-hero { position: relative; overflow: hidden; display: flex; align-items: center; gap: 28px; padding: 28px 32px; border-radius: 20px; color: #fff;
+  background: radial-gradient(120% 140% at 100% 0%, rgba(208,32,42,.35) 0%, transparent 55%), linear-gradient(135deg, #0b5cad 0%, #083a74 100%);
+  box-shadow: 0 18px 40px -18px rgba(8,58,116,.55); }
+.tt-hero::after { content: ""; position: absolute; right: -60px; bottom: -80px; width: 260px; height: 260px; border-radius: 50%; border: 28px solid rgba(255,255,255,.06); pointer-events: none; }
+.tt-logo { flex: none; width: 132px; height: 132px; border-radius: 50%; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+.tt-copy { display: flex; flex-direction: column; gap: 8px; min-width: 0; position: relative; z-index: 1; }
+.tt-kicker { align-self: flex-start; padding: 5px 12px; border-radius: 999px; background: #d0202a; color: #fff; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
+.tt-hero h2 { margin: 0; color: #fff; font-size: 28px; font-weight: 800; line-height: 1.25; }
+.tt-lead { margin: 0; color: rgba(255,255,255,.9); font-size: 15px; line-height: 1.55; max-width: 62ch; }
+.tt-badges { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.tt-badges li { padding: 5px 12px; border-radius: 999px; background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.3); font-size: 13px; font-weight: 600; color: #fff; }
+.tt-note { margin-top: 4px; }
+.gdsk-band { padding-top: 56px; }
+.nav-tt { color: #d0202a !important; font-weight: 800 !important; }
+:root[data-theme="dark"] .nav-tt { color: #ff6b6b !important; }
+:root[data-theme="dark"] .tt-hero { background: radial-gradient(120% 140% at 100% 0%, rgba(208,32,42,.3) 0%, transparent 55%), linear-gradient(135deg, #0d4a8a 0%, #0a2a52 100%); }
+@media (max-width: 640px) {
+  .tt-hero { flex-direction: column; align-items: flex-start; gap: 16px; padding: 22px 18px; border-radius: 16px; }
+  .tt-logo { width: 96px; height: 96px; }
+  .tt-hero h2 { font-size: 22px; }
+  .tt-lead { font-size: 14px; }
+}
+:root[data-theme="dark"] .tab:not([aria-pressed="true"]) { background: var(--surface); }

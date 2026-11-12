@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap">
-<link rel="stylesheet" href="styles.css?v=20261103f">
+<link rel="stylesheet" href="styles.css?v=20261112a">
 </head>
 <body>
 
@@ -36,7 +36,7 @@
       <a href="#/about" data-i18n="navAbout">About</a>
       <a href="#dept-section" data-en="Departments">Phòng, khoa</a>
       <a href="#roles-section" data-i18n="navTools">Tools</a>
-      <a href="#gdsk-section" data-en="Health">Sức khỏe</a>
+      <a href="#gdsk-section" class="nav-tt" data-en="Health communication">Truyền thông</a>
       <a href="#/guides" data-i18n="navGuides">Guides</a>
       <a href="#price-section" data-i18n="navPricing">Pricing</a>
       <a href="#news-section" data-i18n="navNews">News</a>
@@ -58,7 +58,7 @@
     <a href="#/about" data-i18n="navAbout">About</a>
     <a href="#dept-section" data-en="Departments">Phòng, khoa</a>
     <a href="#roles-section" data-i18n="navTools">Tools</a>
-      <a href="#gdsk-section" data-en="Health">Sức khỏe</a>
+      <a href="#gdsk-section" class="nav-tt" data-en="Health communication">Truyền thông</a>
     <a href="#/guides" data-i18n="navGuides">Guides</a>
     <a href="#price-section" data-i18n="navPricing">Pricing</a>
     <a href="#news-section" data-i18n="navNews">News</a>
@@ -105,7 +105,7 @@
         <ul class="hero-stats">
           <li><strong>245</strong><span class="nw" data-en="beds">giường bệnh</span></li>
           <li><strong id="dept-count">19</strong><span data-en="departments,<br><span class=&quot;nw&quot;>units</span>">khoa,<br><span class="nw">bộ phận</span></span></li>
-          <li><strong>209</strong><span data-en="<span class=&quot;nw&quot;>nurses,</span> <span class=&quot;nw&quot;>midwives,</span> <span class=&quot;nw&quot;>med. techs</span>"><span class="nw">điều dưỡng,</span> <span class="nw">hộ sinh, KTY</span></span></li>
+          <li><strong>217</strong><span data-en="<span class=&quot;nw&quot;>nurses,</span> <span class=&quot;nw&quot;>midwives,</span> <span class=&quot;nw&quot;>med. techs</span>"><span class="nw">điều dưỡng,</span> <span class="nw">hộ sinh, KTY</span></span></li>
         </ul>
       </div>
     </div>
@@ -143,10 +143,40 @@
       <li class="org-step"><span class="org-no">1</span><div><strong data-en="Board of Directors">Ban Giám đốc</strong><span data-en="Overall direction of nursing">Chỉ đạo chung công tác điều dưỡng</span></div></li>
       <li class="org-step org-main"><span class="org-no">2</span><div><strong data-en="Nursing Department">Phòng Điều dưỡng</strong><span data-en="Head: CKIĐD. Võ Hồng Thái. Management, training and supervision across the hospital">Trưởng phòng: CKIĐD. Võ Hồng Thái. Quản lý, đào tạo, giám sát toàn viện</span></div></li>
       <li class="org-step"><span class="org-no">3</span><div><strong data-en="Head nurses, head midwives, head medical technologists">Điều dưỡng trưởng, hộ sinh trưởng, KTY trưởng</strong><span data-en="19 departments and units">19 khoa, bộ phận</span></div></li>
-      <li class="org-step"><span class="org-no">4</span><div><strong data-en="Nurses, midwives, medical technologists">Điều dưỡng, hộ sinh, kỹ thuật y</strong><span data-en="209 staff providing direct patient care">209 người trực tiếp chăm sóc, phục vụ người bệnh</span></div></li>
+      <li class="org-step"><span class="org-no">4</span><div><strong data-en="Nurses, midwives, medical technologists">Điều dưỡng, hộ sinh, kỹ thuật y</strong><span data-en="217 staff providing direct patient care">217 người trực tiếp chăm sóc, phục vụ người bệnh</span></div></li>
     </ol>
   </section>
 
+  <section id="comm-section" class="container block" aria-labelledby="comm-heading">
+    <div class="section-head">
+      <span class="kicker" data-en="COMMUNICATION">GIAO TIẾP</span>
+      <h2 id="comm-heading" data-en="Our communication principles">Phương châm giao tiếp</h2>
+    </div>
+    <p class="block-note" data-en="Two tools applied across the hospital: SBAR between staff, AIDET with patients.">Áp dụng hai bộ công cụ trong toàn viện: SBAR giữa nhân viên y tế, AIDET với người bệnh.</p>
+    <div class="comm-grid">
+      <article class="comm-card comm-sbar">
+        <div class="comm-head"><span class="comm-name">SBAR</span><span class="comm-who" data-en="Between staff">Giữa nhân viên y tế</span></div>
+        <p class="comm-use" data-en="Shift handover, transfers, and reporting to doctors.">Bàn giao ca, chuyển khoa, báo cáo bác sĩ.</p>
+        <ol class="comm-steps">
+        <li><span class="comm-letter">S</span><div><strong data-en="Situation">Tình huống</strong><span data-en="Which patient and what is happening now.">Người bệnh nào, vấn đề gì đang xảy ra.</span></div></li>
+        <li><span class="comm-letter">B</span><div><strong data-en="Background">Bối cảnh</strong><span data-en="Diagnosis, history and relevant treatment.">Chẩn đoán, tiền sử, điều trị liên quan.</span></div></li>
+        <li><span class="comm-letter">A</span><div><strong data-en="Assessment">Đánh giá</strong><span data-en="Your assessment: vital signs and how serious it is.">Nhận định của người báo: dấu hiệu sinh tồn, mức độ nặng.</span></div></li>
+        <li><span class="comm-letter">R</span><div><strong data-en="Recommendation">Đề nghị</strong><span data-en="What is needed, by whom and when; the receiver reads it back.">Cần làm gì, ai làm, khi nào; người nhận nhắc lại để xác nhận.</span></div></li>
+        </ol>
+      </article>
+      <article class="comm-card comm-aidet">
+        <div class="comm-head"><span class="comm-name">AIDET</span><span class="comm-who" data-en="With patients">Với người bệnh</span></div>
+        <p class="comm-use" data-en="Every contact with patients and families.">Mỗi lần tiếp xúc với người bệnh, người nhà.</p>
+        <ol class="comm-steps">
+        <li><span class="comm-letter">A</span><div><strong data-en="Acknowledge">Chào hỏi</strong><span data-en="Greet the patient by name with a warm manner.">Chào người bệnh, gọi đúng tên, thái độ niềm nở.</span></div></li>
+        <li><span class="comm-letter">I</span><div><strong data-en="Introduce">Giới thiệu</strong><span data-en="Introduce your name, role and what you are about to do.">Giới thiệu tên, chức danh và việc mình sắp làm.</span></div></li>
+        <li><span class="comm-letter">D</span><div><strong data-en="Duration">Thời gian</strong><span data-en="Say how long the procedure or wait will take.">Cho biết thủ thuật, chờ đợi mất bao lâu.</span></div></li>
+        <li><span class="comm-letter">E</span><div><strong data-en="Explanation">Giải thích</strong><span data-en="Explain what will happen and answer questions in plain words.">Giải thích việc sẽ làm, trả lời câu hỏi bằng lời dễ hiểu.</span></div></li>
+        <li><span class="comm-letter">T</span><div><strong data-en="Thank you">Cảm ơn</strong><span data-en="Thank the patient and family for their cooperation.">Cảm ơn người bệnh, người nhà đã hợp tác.</span></div></li>
+        </ol>
+      </article>
+    </div>
+  </section>
   <section id="dept-section" class="container block" aria-labelledby="dept-heading">
     <div class="section-head">
       <span class="kicker" data-en="DEPARTMENTS &amp; UNITS">PHÒNG, KHOA, BỘ PHẬN</span>
@@ -165,11 +195,20 @@
 
   <section id="gdsk-section" class="block gdsk-band" aria-labelledby="gdsk-heading">
     <div class="container">
-      <div class="section-head">
-        <span class="kicker" data-en="HEALTH CORNER">GÓC SỨC KHỎE</span>
-        <h2 id="gdsk-heading" data-en="Health education corner">Góc truyền thông giáo dục sức khỏe</h2>
+      <div class="tt-hero">
+        <img class="tt-logo" src="logo-truyen-thong.svg?v=20261112a" width="132" height="132" alt="Logo Truyền thông chuyên môn Điều dưỡng Nhật Tân" data-en-alt="Nhat Tan Nursing professional communication logo">
+        <div class="tt-copy">
+          <span class="tt-kicker" data-en="PROFESSIONAL HEALTH COMMUNICATION">TRUYỀN THÔNG CHUYÊN MÔN</span>
+          <h2 id="gdsk-heading" data-en="Health education corner">Góc truyền thông giáo dục sức khỏe</h2>
+          <p class="tt-lead" data-en="Practical advice from the Nursing Department to help patients and families care for their health at home and in hospital.">Lời khuyên thiết thực từ Phòng Điều dưỡng, giúp người bệnh và người nhà tự chăm sóc sức khỏe tại bệnh viện và tại nhà.</p>
+          <ul class="tt-badges">
+            <li data-en="Prepared by nurses">Điều dưỡng biên soạn</li>
+            <li data-en="Easy to follow">Dễ hiểu, dễ làm</li>
+            <li data-en="Ask your care team">Hỏi thêm điều dưỡng tại khoa</li>
+          </ul>
+        </div>
       </div>
-      <p class="block-note" data-en="For reference only; does not replace your doctor's advice.">Thông tin tham khảo, không thay thế chỉ định của bác sĩ.</p>
+      <p class="block-note tt-note" data-en="For reference only; does not replace your doctor's advice.">Thông tin tham khảo, không thay thế chỉ định của bác sĩ.</p>
       <div id="gdsk-tabs" class="tabs" role="group" aria-label="Nhóm chủ đề" data-en-aria-label="Topic groups"></div>
       <div id="gdsk-list" class="gdsk-grid"></div>
       <button id="gdsk-more" class="more-btn" type="button" hidden>Xem thêm</button>
@@ -288,9 +327,9 @@
   </div>
 </dialog>
 
-<script src="config.js?v=20261103f"></script>
-<script src="data.js?v=20261103f"></script>
-<script src="i18n-en.js?v=20261103f"></script>
-<script src="app.js?v=20261103f"></script>
+<script src="config.js?v=20261112a"></script>
+<script src="data.js?v=20261112a"></script>
+<script src="i18n-en.js?v=20261112a"></script>
+<script src="app.js?v=20261112a"></script>
 </body>
 </html>
