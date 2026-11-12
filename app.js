@@ -120,7 +120,7 @@
         el("div", { class: "news-summary", text: n.summary[state.lang] }),
       ]);
       var card = n.url
-        ? el("a", { class: "news-card", href: n.url, target: "_blank", rel: "noopener noreferrer", style: "--c:" + cat.color }, [thumb, body])
+        ? (n.url.charAt(0) === "#" ? el("a", { class: "news-card", href: n.url, style: "--c:" + cat.color }, [thumb, body]) : el("a", { class: "news-card", href: n.url, target: "_blank", rel: "noopener noreferrer", style: "--c:" + cat.color }, [thumb, body]))
         : el("article", { class: "news-card", style: "--c:" + cat.color }, [thumb, body]);
       return card;
   }
@@ -269,7 +269,15 @@
           (u.roles && u.roles.length) ? el("span", { class: "dept-roles" }, u.roles.map(function (r) { return el("span", { class: "role-tag", text: tr(r) }); })) : null,
           el("span", { class: "dept-desc", text: tr(u.desc) }),
         ]);
-        card.addEventListener("click", function () { card.setAttribute("aria-expanded", String(card.getAttribute("aria-expanded") !== "true")); });
+        if (u.page && DATA.khoa && DATA.khoa[u.page]) {
+          card = el("a", { class: "dept-card dept-" + g.group + " dept-has-page", href: "#/khoa/" + u.page }, [
+            el("span", { class: "dept-name", text: tr(u.name) }),
+            (u.roles && u.roles.length) ? el("span", { class: "dept-roles" }, u.roles.map(function (r) { return el("span", { class: "role-tag", text: tr(r) }); })) : null,
+            el("span", { class: "dept-page-link", text: L("Xem trang khoa →", "View department page →") }),
+          ]);
+        } else {
+          card.addEventListener("click", function () { card.setAttribute("aria-expanded", String(card.getAttribute("aria-expanded") !== "true")); });
+        }
         grid.appendChild(card);
       });
     });
@@ -411,13 +419,16 @@
   // Sub-pages (#/about, #/guides, #/privacy, #/terms)
   var PAGE_RE = /^#\/(about|guides|privacy|terms)$/;
   var TOPIC_RE = /^#\/topic\/([a-z]+)$/;
+  var KHOA_RE = /^#\/khoa\/([a-z0-9-]+)$/;
   var homeView = $("home-view"), pageView = $("page-view");
 
   function currentPage() {
     var m = PAGE_RE.exec(location.hash);
     if (m) return m[1];
     var tm = TOPIC_RE.exec(location.hash);
-    return tm && DATA.categories[tm[1].toUpperCase()] ? "topic:" + tm[1].toUpperCase() : null;
+    if (tm && DATA.categories[tm[1].toUpperCase()]) return "topic:" + tm[1].toUpperCase();
+    var km = KHOA_RE.exec(location.hash);
+    return km && DATA.khoa && DATA.khoa[km[1]] ? "khoa:" + km[1] : null;
   }
 
   function renderTopicPage(key) {
@@ -431,6 +442,38 @@
     DATA.news.filter(function (n) { return n.category === key; }).forEach(function (n) { list.appendChild(newsCard(n)); });
     pageView.appendChild(list);
     document.title = cat.label[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
+  }
+
+  function renderKhoaPage(key) {
+    var k = DATA.khoa[key];
+    pageView.textContent = "";
+    pageView.appendChild(el("a", { class: "back-link", href: "#dept-section", text: L("← Danh sách khoa, phòng", "← Departments") }));
+    pageView.appendChild(el("span", { class: "tag", style: "--c:#0b4f9c", text: L("Trang khoa", "Department page") }));
+    pageView.appendChild(el("h1", { class: "page-title", text: tr(k.name) }));
+    pageView.appendChild(el("p", { class: "page-intro", text: tr(k.intro) }));
+    if (k.photos && k.photos[0]) {
+      pageView.appendChild(el("figure", { class: "khoa-hero" }, [
+        el("img", { src: k.photos[0][0], alt: tr(k.photos[0][1]), loading: "eager" }),
+        el("figcaption", { text: tr(k.photos[0][1]) }),
+      ]));
+    }
+    pageView.appendChild(el("dl", { class: "khoa-facts" }, [].concat.apply([], k.facts.map(function (f) { return [el("dt", { text: tr(f[0]) }), el("dd", { text: tr(f[1]) })]; }))));
+    k.sections.forEach(function (s) {
+      pageView.appendChild(el("section", { class: "page-section" }, [
+        el("h2", { text: tr(s.h) }),
+        el("ul", {}, s.items.map(function (txt) { return el("li", { text: tr(txt) }); })),
+      ]));
+    });
+    if (k.photos && k.photos.length > 1) {
+      pageView.appendChild(el("section", { class: "page-section" }, [
+        el("h2", { text: L("Hình ảnh hoạt động", "Photos") }),
+        el("div", { class: "khoa-gallery" }, k.photos.slice(1).map(function (p) {
+          return el("figure", {}, [el("img", { src: p[0], alt: tr(p[1]), loading: "lazy" }), el("figcaption", { text: tr(p[1]) })]);
+        })),
+      ]));
+    }
+    if (k.message) pageView.appendChild(el("blockquote", { class: "khoa-message", text: tr(k.message) }));
+    document.title = tr(k.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
   function renderPage(name) {
@@ -459,7 +502,7 @@
     if (name) {
       homeView.hidden = true;
       pageView.hidden = false;
-      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else renderPage(name);
+      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else renderPage(name);
       if (scroll) window.scrollTo(0, 0);
     } else {
       var wasPage = !pageView.hidden;

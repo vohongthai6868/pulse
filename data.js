@@ -53,6 +53,19 @@ window.PULSE_DATA = {
  },
  "news": [
   {
+   "category": "HOATDONG",
+   "title": {
+    "en": "Ra mắt trang giới thiệu Khoa Y học cổ truyền – Phục hồi chức năng",
+    "vi": "Ra mắt trang giới thiệu Khoa Y học cổ truyền – Phục hồi chức năng"
+   },
+   "summary": {
+    "en": "Khoa YHCT – PHCN là khoa đầu tiên có trang riêng trên web Điều dưỡng: chức năng, kỹ thuật nổi bật như sóng xung kích, laser công suất cao, điện châm, kéo giãn cột sống, hoạt động tư vấn phục hồi chức năng và 11 hình ảnh hoạt động.",
+    "vi": "Khoa YHCT – PHCN là khoa đầu tiên có trang riêng trên web Điều dưỡng: chức năng, kỹ thuật nổi bật như sóng xung kích, laser công suất cao, điện châm, kéo giãn cột sống, hoạt động tư vấn phục hồi chức năng và 11 hình ảnh hoạt động."
+   },
+   "url": "#/khoa/yhct",
+   "date": "2026-11-12"
+  },
+  {
    "category": "SUCKHOE",
    "title": {
     "en": "Góc GDSK bổ sung chủ đề Hen phế quản",
@@ -915,6 +928,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Y học cổ truyền – Phục hồi chức năng",
+     "page": "yhct",
      "desc": "Chăm sóc, tập luyện phục hồi chức năng và điều trị bằng y học cổ truyền.",
      "roles": [
       "ĐD",
@@ -1188,5 +1202,113 @@ window.PULSE_DATA = {
     ]
    }
   ]
+ },
+ "khoa": {
+ "yhct": {
+  "name": "Khoa Y học cổ truyền – Phục hồi chức năng",
+  "intro": "Kết hợp điều trị y học cổ truyền với vật lý trị liệu, phục hồi chức năng hiện đại, giúp người bệnh giảm đau, cải thiện vận động, sớm trở lại sinh hoạt hằng ngày.",
+  "updated": "2026-11-12",
+  "facts": [
+   [
+    "Vị trí",
+    "Tầng trệt, Khu A"
+   ],
+   [
+    "Giờ làm việc",
+    "Thứ Hai – Thứ Sáu: 7g00 – 17g00; Thứ Bảy: 7g00 – 11g00"
+   ],
+   [
+    "Nhân lực",
+    "11 người: 2 điều dưỡng, 7 kỹ thuật y, 2 y sĩ y học cổ truyền"
+   ]
+  ],
+  "sections": [
+   {
+    "h": "Chức năng, nhiệm vụ",
+    "items": [
+     "Lấy người bệnh làm trung tâm: chăm sóc toàn diện, không chỉ giảm đau, cải thiện triệu chứng mà còn giúp người bệnh phục hồi chức năng, tăng khả năng tự chăm sóc.",
+     "Bác sĩ thăm khám, đánh giá tình trạng sức khỏe, mức độ tổn thương và khả năng vận động để lập kế hoạch điều trị phù hợp từng người bệnh.",
+     "Bên cạnh dùng thuốc khi có chỉ định, khoa chú trọng điều trị không dùng thuốc: vận động trị liệu, vật lý trị liệu và y học cổ truyền."
+    ]
+   },
+   {
+    "h": "Kỹ thuật, dịch vụ nổi bật",
+    "items": [
+     "Điều trị kết hợp đa phương pháp: châm cứu, cấy chỉ phối hợp vật lý trị liệu, phục hồi chức năng theo chỉ định.",
+     "Phục hồi chức năng vận động: cải thiện sức cơ, tầm vận động khớp, thăng bằng, phối hợp vận động và đi lại.",
+     "Thiết bị chuyên dụng: sóng xung kích, laser công suất cao, sóng ngắn, siêu âm trị liệu, điện xung, từ trường trị liệu, kéo giãn cột sống."
+    ]
+   },
+   {
+    "h": "Hoạt động chăm sóc đặc trưng",
+    "items": [
+     "Chăm sóc cá thể hóa: đánh giá mức độ hạn chế chức năng, khả năng vận động để chọn phương pháp phục hồi phù hợp.",
+     "Đồng hành trong quá trình phục hồi: hướng dẫn vận động, luyện tập tại nhà và tư vấn chăm sóc để người bệnh tự chăm sóc tốt hơn."
+    ]
+   },
+   {
+    "h": "Tư vấn, giáo dục sức khỏe",
+    "items": [
+     "Hướng dẫn tập luyện tại nhà, tư thế đúng, phòng ngừa đau cột sống, chăm sóc sau té ngã.",
+     "Tờ bướm, poster bài tập vật lý trị liệu: hội chứng ống cổ tay, đau lưng và cổ do thoát vị đĩa đệm, liệt dây thần kinh VII ngoại biên, viêm quanh khớp vai, thoái hóa khớp gối."
+    ]
+   },
+   {
+    "h": "Thành tích, sáng kiến",
+    "items": [
+     "Năm 2025 đạt và vượt mục tiêu đề ra, bằng 132% so với năm 2024.",
+     "Giải Khuyến khích hội thi “Lắng nghe thấu cảm – giao tiếp sẻ san” năm 2025.",
+     "Sáng kiến của kỹ thuật y: đồng phục nhận diện mỗi khoa một màu; cải tiến trang web của khoa và bệnh viện; đề xuất gửi thông tin lương, dịch vụ qua thư điện tử."
+    ]
+   }
+  ],
+  "message": "Sức khỏe và khả năng vận động của người bệnh luôn là ưu tiên hàng đầu của chúng tôi. Hãy kiên trì thực hiện đúng hướng dẫn điều trị và tập phục hồi chức năng; sự phối hợp giữa nhân viên y tế, người bệnh và gia đình là yếu tố quan trọng giúp phục hồi tốt hơn.",
+  "photos": [
+   [
+    "img/khoa/yhct-01.jpg",
+    "Tập thể Khoa Y học cổ truyền – Phục hồi chức năng"
+   ],
+   [
+    "img/khoa/yhct-02.jpg",
+    "Tập vận động có trợ giúp cho người bệnh gãy xương đùi"
+   ],
+   [
+    "img/khoa/yhct-03.jpg",
+    "Siêu âm điều trị đau khớp gối"
+   ],
+   [
+    "img/khoa/yhct-04.jpg",
+    "Tập vận động cho người bệnh yếu nửa người"
+   ],
+   [
+    "img/khoa/yhct-05.jpg",
+    "Điều trị đau vai gáy bằng laser công suất thấp"
+   ],
+   [
+    "img/khoa/yhct-06.jpg",
+    "Điện châm điều trị đau cổ, mất ngủ"
+   ],
+   [
+    "img/khoa/yhct-07.jpg",
+    "Sóng xung kích điều trị đau lưng"
+   ],
+   [
+    "img/khoa/yhct-08.jpg",
+    "Laser công suất cao điều trị thoái hóa khớp gối"
+   ],
+   [
+    "img/khoa/yhct-09.jpg",
+    "Từ trường trị liệu"
+   ],
+   [
+    "img/khoa/yhct-10.jpg",
+    "Kéo giãn cột sống điều trị đau lưng"
+   ],
+   [
+    "img/khoa/yhct-11.jpg",
+    "Siêu âm điều trị đau lưng"
+   ]
+  ]
  }
+}
 };

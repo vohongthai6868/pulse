@@ -641,3 +641,18 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
   .tt-lead { font-size: 14px; }
 }
 :root[data-theme="dark"] .tab:not([aria-pressed="true"]) { background: var(--surface); }
+
+/* Trang khoa (#/khoa/<mã>) */
+.dept-has-page { text-decoration: none; border-top-color: var(--brand-red, #c8102e) !important; }
+.dept-page-link { font-size: 12.5px; font-weight: 700; color: var(--brand-red, #c8102e); }
+.khoa-hero { margin: 24px 0 0; }
+.khoa-hero img { width: 100%; height: auto; border-radius: 12px; display: block; }
+.khoa-hero figcaption, .khoa-gallery figcaption { margin-top: 6px; font-size: 13px; color: var(--muted); line-height: 1.45; }
+.khoa-facts { display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; margin: 24px 0 0; padding: 16px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); font-size: 15px; }
+.khoa-facts dt { font-weight: 700; color: var(--text); }
+.khoa-facts dd { margin: 0; color: var(--text-2); }
+.khoa-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.khoa-gallery figure { margin: 0; }
+.khoa-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; display: block; background: var(--surface-2, #eef2f7); }
+.khoa-message { margin: 36px 0 0; padding: 16px 18px; border-left: 4px solid var(--brand-red, #c8102e); background: var(--surface); border-radius: 0 10px 10px 0; font-size: 16px; line-height: 1.65; font-style: italic; color: var(--text-2); }
+@media (max-width: 640px) { .khoa-facts { grid-template-columns: 1fr; gap: 2px; } .khoa-facts dd { margin-bottom: 8px; } .khoa-gallery { grid-template-columns: 1fr 1fr; gap: 10px; } }
