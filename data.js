@@ -54,6 +54,13 @@ window.PULSE_DATA = {
  "news": [
   {
    "category": "HOATDONG",
+   "title": {"en": "Ra mắt trang giới thiệu Bộ phận Thận nhân tạo", "vi": "Ra mắt trang giới thiệu Bộ phận Thận nhân tạo"},
+   "summary": {"en": "Bộ phận Thận nhân tạo có trang riêng: lọc máu chu kỳ HD, HDF Online, lọc máu cấp cứu, chăm sóc FAV và catheter, tư vấn dinh dưỡng, kiểm soát dịch cho người bệnh chạy thận, kèm 9 hình ảnh hoạt động.", "vi": "Bộ phận Thận nhân tạo có trang riêng: lọc máu chu kỳ HD, HDF Online, lọc máu cấp cứu, chăm sóc FAV và catheter, tư vấn dinh dưỡng, kiểm soát dịch cho người bệnh chạy thận, kèm 9 hình ảnh hoạt động."},
+   "url": "#/khoa/tnt",
+   "date": "2026-11-12"
+  },
+  {
+   "category": "HOATDONG",
    "title": {
     "en": "Ra mắt trang giới thiệu Khoa Y học cổ truyền – Phục hồi chức năng",
     "vi": "Ra mắt trang giới thiệu Khoa Y học cổ truyền – Phục hồi chức năng"
@@ -981,6 +988,7 @@ window.PULSE_DATA = {
    "units": [
     {
      "name": "Bộ phận Thận nhân tạo",
+     "page": "tnt",
      "desc": "Chạy thận nhân tạo chu kỳ, theo dõi và giáo dục người bệnh suy thận.",
      "roles": [
       "ĐD"
@@ -1204,6 +1212,117 @@ window.PULSE_DATA = {
   ]
  },
  "khoa": {
+  "tnt": {
+   "name": "Bộ phận Thận nhân tạo",
+   "intro": "Lọc máu chu kỳ cho người bệnh suy thận: chạy thận nhân tạo (HD), lọc máu HDF Online, lọc máu cấp cứu; chăm sóc đường vào mạch máu và đồng hành cùng người bệnh lâu dài. Phương châm: Tận tâm – Chu đáo – An toàn – Hiệu quả.",
+   "updated": "2026-11-12",
+   "facts": [
+    [
+     "Vị trí",
+     "Tầng trệt, Khu D"
+    ],
+    [
+     "Ca lọc máu",
+     "3 ca/ngày: ca 1 3g30 – 7g00; ca 2 7g30 – 11g00; ca 3 11g30 – 15g00. Nhân viên theo dõi người bệnh liên tục trong suốt ca lọc."
+    ],
+    [
+     "Nhân lực",
+     "10 điều dưỡng: 3 đại học, 7 cao đẳng"
+    ],
+    [
+     "Hình thức",
+     "Điều trị ngoại trú lọc máu chu kỳ, không bố trí giường nội trú"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Tiếp nhận, theo dõi, chăm sóc người bệnh suy thận cấp, suy thận mạn có chỉ định lọc máu.",
+      "Chạy thận nhân tạo chu kỳ (HD), lọc máu HDF Online và lọc máu cấp cứu theo chỉ định của bác sĩ.",
+      "Phát hiện sớm, xử trí kịp thời tai biến trong lọc máu; bảo đảm an toàn người bệnh.",
+      "Quản lý, chăm sóc đường vào mạch máu (FAV, catheter tĩnh mạch trung tâm); kiểm soát nhiễm khuẩn và chất lượng nước RO.",
+      "Tư vấn người bệnh tuân thủ điều trị, dinh dưỡng, kiểm soát dịch và phòng ngừa biến chứng."
+     ]
+    },
+    {
+     "h": "Kỹ thuật, dịch vụ nổi bật",
+     "items": [
+      "Chạy thận nhân tạo chu kỳ (HD) bằng hệ thống máy lọc máu hiện đại.",
+      "Lọc máu HDF Online giúp tăng hiệu quả loại bỏ chất độc phân tử trung bình.",
+      "Lọc máu cấp cứu; phối hợp đặt catheter tĩnh mạch trung tâm khi cần.",
+      "Chọc kim, chăm sóc, theo dõi đường vào mạch máu FAV; chăm sóc catheter lọc máu.",
+      "Kiểm soát thông số máy lọc máu, hệ thống xử lý nước RO và chất lượng dịch lọc."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Chăm sóc trước, trong và sau lọc máu: dấu hiệu sinh tồn, cân nặng, tình trạng dịch và các biểu hiện bất thường.",
+      "Phát hiện sớm biến chứng: tụt huyết áp, tăng huyết áp, chuột rút, hạ đường huyết, tăng kali máu, phản ứng trong lọc máu.",
+      "Chăm sóc toàn diện: phòng ngừa té ngã, kiểm soát nhiễm khuẩn, phòng ngừa sự cố y khoa.",
+      "Bàn giao người bệnh giữa các ca đầy đủ, chính xác, rõ ràng; phối hợp bác sĩ xử trí cấp cứu kịp thời."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Dinh dưỡng hợp lý: hạn chế muối, kali, phospho; kiểm soát lượng nước uống hằng ngày.",
+      "Tuân thủ lịch chạy thận, dùng thuốc đúng chỉ định, không tự ý bỏ buổi lọc máu.",
+      "Bảo vệ đường vào mạch máu FAV, catheter; nhận biết dấu hiệu nhiễm khuẩn, tắc nghẽn.",
+      "Hình thức: tư vấn trực tiếp, sinh hoạt người bệnh, poster, tờ rơi."
+     ]
+    },
+    {
+     "h": "Thành tích, sáng kiến",
+     "items": [
+      "Giải Khuyến khích hội thi “Lắng nghe thấu cảm – giao tiếp sẻ san”.",
+      "Giải Khuyến khích “70 năm tự hào chiến sĩ áo trắng”.",
+      "Đề tài nghiên cứu: tỷ lệ và các yếu tố nguy cơ tụt huyết áp trong chạy thận nhân tạo.",
+      "Chuẩn hóa quy trình chăm sóc người bệnh chạy thận; cải tiến theo dõi, ghi chép, bàn giao; tăng giám sát nước RO, máy lọc, màng lọc và kiểm soát nhiễm khuẩn."
+     ]
+    }
+   ],
+   "message": "Chạy thận đúng lịch, tuân thủ điều trị, ăn uống hợp lý và kiểm soát lượng nước theo hướng dẫn là chìa khóa giữ gìn sức khỏe. Bộ phận Thận nhân tạo luôn đồng hành, tận tâm chăm sóc để mỗi buổi lọc máu an toàn, chu đáo và hiệu quả.",
+   "photos": [
+    [
+     "img/khoa/tnt-01.jpg",
+     "Tập thể điều dưỡng Bộ phận Thận nhân tạo"
+    ],
+    [
+     "img/khoa/tnt-02.jpg",
+     "Hệ thống xử lý nước RO Aqua Bplus"
+    ],
+    [
+     "img/khoa/tnt-03.jpg",
+     "Hệ thống xử lý nước RO MX Eco"
+    ],
+    [
+     "img/khoa/tnt-04.jpg",
+     "Máy lọc máu HDF Online"
+    ],
+    [
+     "img/khoa/tnt-05.jpg",
+     "Điều dưỡng vận hành máy chạy thận"
+    ],
+    [
+     "img/khoa/tnt-06.jpg",
+     "Chăm sóc đường vào mạch máu FAV"
+    ],
+    [
+     "img/khoa/tnt-07.jpg",
+     "Chăm sóc catheter lọc máu"
+    ],
+    [
+     "img/khoa/tnt-08.jpg",
+     "Theo dõi người bệnh khi kết thúc lọc máu, trả máu"
+    ],
+    [
+     "img/khoa/tnt-09.jpg",
+     "Tư vấn giáo dục sức khỏe cho người bệnh"
+    ]
+   ]
+  },
  "yhct": {
   "name": "Khoa Y học cổ truyền – Phục hồi chức năng",
   "intro": "Kết hợp điều trị y học cổ truyền với vật lý trị liệu, phục hồi chức năng hiện đại, giúp người bệnh giảm đau, cải thiện vận động, sớm trở lại sinh hoạt hằng ngày.",
