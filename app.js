@@ -258,19 +258,31 @@
     var kt = $("gdsk-khoa");
     if (kt) {
       kt.textContent = "";
-      var ks = [];
-      DATA.gdsk.topics.forEach(function (tp) { if (tp.khoa && ks.indexOf(tp.khoa) < 0) ks.push(tp.khoa); });
-      kt.appendChild(el("span", { class: "khoa-filter-label", text: L("Theo khoa:", "By department:") }));
-      [["all", L("Tất cả khoa", "All departments")]].concat(ks.map(function (k) { return [k, tr(k)]; })).forEach(function (x) {
-        var b = el("button", { class: "chip", type: "button", "aria-pressed": String(gdskKhoa === x[0]), text: x[1] });
-        b.addEventListener("click", function () { gdskKhoa = x[0]; gdskAll = false; renderGdsk(); });
-        kt.appendChild(b);
+      var units = ["Phòng Điều dưỡng"];
+      (DATA.departments || []).forEach(function (g) {
+        if (["lamsang", "canlamsang", "bophan"].indexOf(g.group) >= 0) g.units.forEach(function (u) { units.push(u.name); });
       });
+      var cnt = {};
+      DATA.gdsk.topics.forEach(function (tp) { if (tp.khoa) cnt[tp.khoa] = (cnt[tp.khoa] || 0) + 1; });
+      var sel = el("select", { id: "gdsk-khoa-select", class: "khoa-select" });
+      sel.appendChild(el("option", { value: "all", text: L("Tất cả khoa, bộ phận (" + DATA.gdsk.topics.length + " bài)", "All departments (" + DATA.gdsk.topics.length + ")") }));
+      units.forEach(function (u) {
+        var n = cnt[u] || 0;
+        var o = el("option", { value: u, text: tr(u) + (n ? " (" + n + ")" : L(" – sẽ bổ sung", " – coming soon")) });
+        if (gdskKhoa === u) o.selected = true;
+        sel.appendChild(o);
+      });
+      sel.addEventListener("change", function () { gdskKhoa = sel.value; gdskAll = false; renderGdsk(); var s2 = $("gdsk-khoa-select"); if (s2) s2.focus(); });
+      kt.appendChild(el("label", { class: "khoa-filter-label", for: "gdsk-khoa-select", text: L("Theo khoa, bộ phận:", "By department:") }));
+      kt.appendChild(sel);
     }
     box.textContent = "";
     var list = DATA.gdsk.topics.filter(function (tp) {
       return (gdskGroup === "all" || tp.group === gdskGroup) && (gdskKhoa === "all" || tp.khoa === gdskKhoa) && matches(state.query, [tr(tp.title)].concat(tp.points.map(tr)));
     });
+    if (!list.length && gdskKhoa !== "all") {
+      box.appendChild(el("p", { class: "gdsk-empty", text: L("Bài truyền thông của " + gdskKhoa + " sẽ được bổ sung sau. Chọn \"Tất cả khoa, bộ phận\" để xem các bài hiện có.", "Articles from this department are coming soon.") }));
+    }
     var base = window.innerWidth < 640 ? 3 : 6;
     var limit = (gdskAll || state.query) ? list.length : base;
     list.slice(0, limit).forEach(function (tp) {

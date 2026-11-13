@@ -678,3 +678,7 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .chip[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
 .chip:focus-visible { outline: 3px solid #ffbf47; outline-offset: 2px; }
 .gdsk-khoa { font-size: 13px; font-weight: 600; color: var(--dim); margin: -4px 0 8px; }
+
+.khoa-select { font: inherit; font-size: 14px; min-height: 40px; padding: 8px 36px 8px 12px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text); max-width: 100%; }
+.khoa-select:focus-visible { outline: 3px solid #ffbf47; outline-offset: 2px; }
+.gdsk-empty { grid-column: 1 / -1; padding: 16px 18px; border-radius: 12px; border: 1px dashed var(--border); background: var(--surface); color: var(--dim); }
