@@ -437,8 +437,8 @@ window.PULSE_DATA = {
     "vi": "Giới thiệu Điều dưỡng Nhật Tân"
    },
    "intro": {
-    "en": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và 7 phòng chức năng (245 giường).",
-    "vi": "Điều dưỡng Bệnh viện Đa khoa Nhật Tân gồm Phòng Điều dưỡng và đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và 7 phòng chức năng (245 giường)."
+    "en": "Phòng Điều dưỡng Bệnh viện Đa khoa Nhật Tân quản lý đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và phối hợp với 7 phòng chức năng (245 giường).",
+    "vi": "Phòng Điều dưỡng Bệnh viện Đa khoa Nhật Tân quản lý đội ngũ điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận và phối hợp với 7 phòng chức năng (245 giường)."
    },
    "sections": [
     {
@@ -1009,7 +1009,7 @@ window.PULSE_DATA = {
    "heroPre": "Chăm sóc",
    "heroHighlight": "an toàn, tận tâm",
    "heroPost": "",
-   "heroSubtitle": "Phòng Điều dưỡng quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận và 7 phòng chức năng, vì sự an toàn và hài lòng của người bệnh.",
+   "heroSubtitle": "The Nursing Department manages, trains and supervises nursing, midwifery and medical technology work in 19 departments and units, and coordinates with 7 administrative offices, for patient safety and satisfaction.",
    "emailLabel": "",
    "emailPlaceholder": "",
    "getDigestBtn": "",
@@ -1088,7 +1088,7 @@ window.PULSE_DATA = {
    "heroPre": "Chăm sóc",
    "heroHighlight": "an toàn, tận tâm",
    "heroPost": "",
-   "heroSubtitle": "Phòng Điều dưỡng quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y của 19 khoa, bộ phận và 7 phòng chức năng, vì sự an toàn và hài lòng của người bệnh.",
+   "heroSubtitle": "Phòng Điều dưỡng quản lý, đào tạo và giám sát công tác điều dưỡng, hộ sinh, kỹ thuật y tại 19 khoa, bộ phận; phối hợp với 7 phòng chức năng, vì sự an toàn và hài lòng của người bệnh.",
    "emailLabel": "",
    "emailPlaceholder": "",
    "getDigestBtn": "",
