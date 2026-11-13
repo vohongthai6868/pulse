@@ -55,6 +55,32 @@ window.PULSE_DATA = {
   {
    "category": "HOATDONG",
    "title": {
+    "en": "Thêm trang Hỏi đáp và Hướng dẫn người bệnh",
+    "vi": "Thêm trang Hỏi đáp và Hướng dẫn người bệnh"
+   },
+   "summary": {
+    "en": "Người bệnh, người nhà xem nhanh những điều cần biết khi nhập viện, nằm viện, ra viện, số điện thoại cần gọi, cách góp ý và cách dùng mã QR trên tờ rơi.",
+    "vi": "Người bệnh, người nhà xem nhanh những điều cần biết khi nhập viện, nằm viện, ra viện, số điện thoại cần gọi, cách góp ý và cách dùng mã QR trên tờ rơi."
+   },
+   "url": "#/hoidap",
+   "date": "2026-11-13"
+  },
+  {
+   "category": "HOATDONG",
+   "title": {
+    "en": "Thêm trang Đào tạo và nghiên cứu khoa học",
+    "vi": "Thêm trang Đào tạo và nghiên cứu khoa học"
+   },
+   "summary": {
+    "en": "Tổng hợp các lớp tập huấn, kiểm tra tay nghề năm 2026, đề tài nghiên cứu khoa học đang thực hiện và sáng kiến cải tiến của điều dưỡng.",
+    "vi": "Tổng hợp các lớp tập huấn, kiểm tra tay nghề năm 2026, đề tài nghiên cứu khoa học đang thực hiện và sáng kiến cải tiến của điều dưỡng."
+   },
+   "url": "#/daotao",
+   "date": "2026-11-13"
+  },
+  {
+   "category": "HOATDONG",
+   "title": {
     "en": "Ra mắt trang giới thiệu Tổ Tiêm chủng",
     "vi": "Ra mắt trang giới thiệu Tổ Tiêm chủng"
    },
@@ -770,6 +796,168 @@ window.PULSE_DATA = {
       "en": [
        "Góp ý trực tiếp với điều dưỡng trưởng khoa, qua hòm thư góp ý tại khoa hoặc liên hệ Phòng Điều dưỡng (mục Liên hệ)."
       ]
+     }
+    }
+   ]
+  },
+  "daotao": {
+   "title": {
+    "vi": "Đào tạo và nghiên cứu khoa học",
+    "en": "Training and research"
+   },
+   "intro": {
+    "vi": "Phòng Điều dưỡng tổ chức đào tạo liên tục, kiểm tra tay nghề và khuyến khích nghiên cứu khoa học, sáng kiến cải tiến để nâng cao chất lượng chăm sóc người bệnh.",
+    "en": "The Nursing Department runs continuing education, skills assessment and encourages research and improvement initiatives to raise the quality of patient care."
+   },
+   "updated": "2026-11-13",
+   "sections": [
+    {
+     "h": {
+      "vi": "Đào tạo, tập huấn năm 2026",
+      "en": "Training in 2026"
+     },
+     "items": {
+      "vi": [
+       "Tập huấn kiểm soát nhiễm khuẩn cho nhân viên toàn viện ngày 01 và 02/7/2026, khoảng 195 người tham dự.",
+       "Thi tay nghề thực hành điều dưỡng, hộ sinh năm 2026.",
+       "Tập huấn \"Kỹ năng giao tiếp, quy tắc ứng xử trong môi trường số\" cho toàn thể nhân viên ngày 04/11/2026.",
+       "Cử điều dưỡng học tập ngoài viện, trong đó có lớp hồi sức cấp cứu nhi tại Bệnh viện Nhi Đồng 1 (10/2026).",
+       "Đào tạo liên tục trực tuyến cho điều dưỡng, hộ sinh, KTY, như lớp bệnh án điện tử theo Thông tư 32/2023/TT-BYT."
+      ],
+      "en": [
+       "Infection control training for hospital-wide staff on 1 and 2 July 2026, about 195 participants.",
+       "2026 practical skills exam for nurses and midwives.",
+       "Training on communication skills and code of conduct in the digital environment for all staff on 4 November 2026.",
+       "Nurses sent to external courses, including paediatric emergency care at Children's Hospital 1 (October 2026).",
+       "Online continuing education for nurses, midwives and medical technologists, such as the electronic medical record course under Circular 32/2023/TT-BYT."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Nghiên cứu khoa học năm 2026",
+      "en": "Research in 2026"
+     },
+     "items": {
+      "vi": [
+       "Đề tài \"Thay đổi kiến thức của người bệnh sau truyền thông giáo dục sức khỏe qua mã QR tại Khoa Truyền nhiễm\": đang trình Hội đồng Khoa học kỹ thuật.",
+       "Đề tài \"Đánh giá chất lượng công tác theo dõi và chăm sóc người bệnh tại các khoa lâm sàng\": đang trình Hội đồng Khoa học kỹ thuật.",
+       "Kết quả nghiên cứu được đăng tại đây sau khi nghiệm thu."
+      ],
+      "en": [
+       "Study on changes in patient knowledge after health education via QR codes at the Infectious Diseases Department: submitted to the Science and Technology Council.",
+       "Study evaluating the quality of patient monitoring and care in clinical departments: submitted to the Science and Technology Council.",
+       "Results will be published here after formal acceptance."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Sáng kiến cải tiến",
+      "en": "Improvement initiatives"
+     },
+     "items": {
+      "vi": [
+       "Năm 2025, điều dưỡng bệnh viện có 05 sáng kiến cải tiến trong chăm sóc người bệnh.",
+       "Nhân viên có ý tưởng cải tiến xin liên hệ Phòng Điều dưỡng để được hướng dẫn đăng ký."
+      ],
+      "en": [
+       "In 2025, hospital nurses produced 5 improvement initiatives in patient care.",
+       "Staff with improvement ideas may contact the Nursing Department for registration guidance."
+      ]
+     }
+    }
+   ]
+  },
+  "hoidap": {
+   "title": {
+    "vi": "Hỏi đáp",
+    "en": "Questions and answers"
+   },
+   "intro": {
+    "vi": "Các câu hỏi người bệnh và người nhà thường hỏi Phòng Điều dưỡng. Trang không tư vấn bệnh cụ thể; khi cần, xin đến khám tại bệnh viện.",
+    "en": "Questions patients and families often ask the Nursing Department. This page does not give advice on individual cases; please visit the hospital when needed."
+   },
+   "updated": "2026-11-13",
+   "sections": [
+    {
+     "h": {
+      "vi": "Tôi cần gọi bệnh viện thì gọi số nào?",
+      "en": "Which number do I call?"
+     },
+     "p": {
+      "vi": "Tổng đài bệnh viện, tiếp nhận cấp cứu 24/24: 0296 3562 357. Liên hệ công tác: 0296 3562 678.",
+      "en": "Hospital switchboard, emergency 24/7: 0296 3562 357. Administrative contact: 0296 3562 678."
+     }
+    },
+    {
+     "h": {
+      "vi": "Khi người bệnh có dấu hiệu nặng ở nhà thì làm gì?",
+      "en": "What if a patient gets worse at home?"
+     },
+     "p": {
+      "vi": "Đưa người bệnh đến bệnh viện, cơ sở y tế gần nhất ngay. Không tự chờ đợi hoặc tự dùng thuốc khi chưa có chỉ định.",
+      "en": "Take the patient to the nearest hospital or health facility immediately. Do not wait or self-medicate without medical advice."
+     }
+    },
+    {
+     "h": {
+      "vi": "Phòng Điều dưỡng làm việc giờ nào?",
+      "en": "When is the Nursing Department open?"
+     },
+     "p": {
+      "vi": "Thứ Hai đến thứ Sáu: 7 giờ – 11 giờ, 13 giờ – 17 giờ; thứ Bảy: 7 giờ – 11 giờ. Ngoài giờ, liên hệ điều dưỡng trực tại khoa.",
+      "en": "Monday to Friday: 7–11 am and 1–5 pm; Saturday: 7–11 am. Outside these hours, contact the nurse on duty in the ward."
+     }
+    },
+    {
+     "h": {
+      "vi": "Tôi muốn góp ý về chăm sóc điều dưỡng thì làm thế nào?",
+      "en": "How do I give feedback on nursing care?"
+     },
+     "p": {
+      "vi": "Góp ý trực tiếp với điều dưỡng trưởng khoa, bỏ thư vào hòm thư góp ý của bệnh viện, hoặc gọi tổng đài 0296 3562 357 gặp Phòng Điều dưỡng. Mọi góp ý đều được ghi nhận và phản hồi.",
+      "en": "Speak to the ward's head nurse, use the hospital feedback box, or call 0296 3562 357 and ask for the Nursing Department. All feedback is recorded and answered."
+     }
+    },
+    {
+     "h": {
+      "vi": "Mã QR trên tờ rơi, poster dùng thế nào?",
+      "en": "How do I use the QR codes on leaflets?"
+     },
+     "p": {
+      "vi": "Mở camera điện thoại, hướng vào mã QR, bấm vào đường dẫn hiện ra để đọc bài giáo dục sức khỏe trên web này. Không cần cài ứng dụng.",
+      "en": "Open your phone camera, point it at the QR code and tap the link to read the health education page on this site. No app needed."
+     }
+    },
+    {
+     "h": {
+      "vi": "Tôi có được biết thông tin về bệnh và việc chăm sóc của mình không?",
+      "en": "Can I know about my condition and care?"
+     },
+     "p": {
+      "vi": "Có. Người bệnh có quyền được cung cấp thông tin về tình trạng bệnh, phương pháp điều trị và chăm sóc. Hãy hỏi bác sĩ, điều dưỡng phụ trách.",
+      "en": "Yes. Patients have the right to information about their condition, treatment and care. Ask your doctor or nurse."
+     }
+    },
+    {
+     "h": {
+      "vi": "Web có thu thập thông tin cá nhân của tôi không?",
+      "en": "Does this site collect my personal data?"
+     },
+     "p": {
+      "vi": "Không. Web không yêu cầu đăng nhập, không thu thập họ tên hay số điện thoại người truy cập.",
+      "en": "No. The site requires no login and does not collect visitors' names or phone numbers."
+     }
+    },
+    {
+     "h": {
+      "vi": "Tôi có câu hỏi khác?",
+      "en": "Have another question?"
+     },
+     "p": {
+      "vi": "Gọi tổng đài 0296 3562 357 gặp Phòng Điều dưỡng. Câu hỏi được nhiều người quan tâm sẽ được Ban biên tập bổ sung vào trang này.",
+      "en": "Call 0296 3562 357 and ask for the Nursing Department. Common questions will be added to this page by the editorial board."
      }
     }
    ]

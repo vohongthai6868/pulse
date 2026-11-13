@@ -418,7 +418,7 @@
   });
 
   // Sub-pages (#/about, #/guides, #/privacy, #/terms)
-  var PAGE_RE = /^#\/(about|guides|privacy|terms|nguoibenh)$/;
+  var PAGE_RE = /^#\/(about|guides|privacy|terms|nguoibenh|daotao|hoidap)$/;
   var GDSK_RE = /^#\/gdsk\/([a-z0-9-]+)$/;
   var TOPIC_RE = /^#\/topic\/([a-z]+)$/;
   var KHOA_RE = /^#\/khoa\/([a-z0-9-]+)$/;

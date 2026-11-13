@@ -1,5 +1,9 @@
 /* Bản dịch tiếng Anh: khóa là câu tiếng Việt trong data.js */
 window.PULSE_EN = {
+"Thêm trang Hỏi đáp và Hướng dẫn người bệnh": "New Q&A and Patient guide pages",
+"Người bệnh, người nhà xem nhanh những điều cần biết khi nhập viện, nằm viện, ra viện, số điện thoại cần gọi, cách góp ý và cách dùng mã QR trên tờ rơi.": "Patients and families can quickly find what to know about admission, hospital stay and discharge, which numbers to call, how to give feedback and how to use leaflet QR codes.",
+"Thêm trang Đào tạo và nghiên cứu khoa học": "New Training and research page",
+"Tổng hợp các lớp tập huấn, kiểm tra tay nghề năm 2026, đề tài nghiên cứu khoa học đang thực hiện và sáng kiến cải tiến của điều dưỡng.": "A summary of 2026 training courses and skills assessment, ongoing research studies and nurses' improvement initiatives.",
 "Kết quả thi tay nghề thực hành điều dưỡng, hộ sinh năm 2026": "2026 practical skills exam results for nurses and midwives",
 "64 điều dưỡng, hộ sinh có điểm thi thực hành, điểm trung bình 85,0/100: 24 người xếp loại Giỏi, 25 Khá, 9 Đạt. Điểm lý thuyết đang chờ Hội đồng duyệt đáp án để chấm chính thức.": "64 nurses and midwives received practical exam scores, with an average of 85.0/100: 24 rated Excellent, 25 Good and 9 Pass. Theory scores await the Council's approval of the answer key before official marking.",
 "Người bệnh đánh giá công tác chăm sóc điều dưỡng 4,82/5 điểm": "Patients rate nursing care 4.82 out of 5",
