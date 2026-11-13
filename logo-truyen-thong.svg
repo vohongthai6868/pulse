@@ -7,7 +7,7 @@
   <circle cx="100" cy="100" r="95" fill="url(#r)"/>
   <circle cx="100" cy="100" r="61" fill="#28186e"/>
   <circle cx="100" cy="100" r="55" fill="#fff"/>
-  <text font-family="Be Vietnam Pro,Segoe UI,Arial,sans-serif" font-size="14.5" font-weight="900" fill="#fff" letter-spacing=".5">
+  <text font-family="Be Vietnam Pro,Segoe UI,Arial,sans-serif" font-size="15" font-weight="900" fill="#28186e" stroke="#fff" stroke-width="2.6" stroke-linejoin="round" paint-order="stroke" letter-spacing=".5">
     <textPath href="#ring" startOffset="0" textLength="462" lengthAdjust="spacingAndGlyphs">TRUYỀN THÔNG CHUYÊN MÔN ★ ĐIỀU DƯỠNG NHẬT TÂN ★</textPath>
   </text>
   <!-- loa truyền thông -->
