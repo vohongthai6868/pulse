@@ -17,8 +17,8 @@
     if (!o || typeof o !== "object") return;
     if (Array.isArray(o)) { o.forEach(fillEn); return; }
     if ("vi" in o && "en" in o) {
-      if (typeof o.vi === "string") o.en = EN[o.vi] || o.vi;
-      else if (Array.isArray(o.vi)) o.en = o.vi.map(function (x) { return EN[x] || x; });
+      if (typeof o.vi === "string") o.en = EN[o.vi] || (o.en && o.en !== o.vi ? o.en : o.vi);
+      else if (Array.isArray(o.vi)) { var own = Array.isArray(o.en) ? o.en : []; o.en = o.vi.map(function (x, i) { return EN[x] || (own[i] && own[i] !== x ? own[i] : x); }); }
       else if (o.vi && typeof o.vi === "object") Object.keys(o.vi).forEach(function (k) {
         var v = o.vi[k];
         if (typeof v === "string" && EN[v]) o.en[k] = EN[v];
