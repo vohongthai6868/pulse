@@ -623,7 +623,7 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
   background: radial-gradient(120% 140% at 100% 0%, rgba(208,32,42,.35) 0%, transparent 55%), linear-gradient(135deg, #0b5cad 0%, #083a74 100%);
   box-shadow: 0 18px 40px -18px rgba(8,58,116,.55); }
 .tt-hero::after { content: ""; position: absolute; right: -60px; bottom: -80px; width: 260px; height: 260px; border-radius: 50%; border: 28px solid rgba(255,255,255,.06); pointer-events: none; }
-.tt-logo { flex: none; width: 132px; height: 132px; border-radius: 50%; box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+.tt-logo { flex: none; width: 168px; height: 168px; border-radius: 50%; box-shadow: 0 0 0 6px rgba(255,255,255,.18), 0 12px 32px rgba(0,0,0,.35); position: relative; z-index: 1; }
 .tt-copy { display: flex; flex-direction: column; gap: 8px; min-width: 0; position: relative; z-index: 1; }
 .tt-kicker { align-self: flex-start; padding: 5px 12px; border-radius: 999px; background: #d0202a; color: #fff; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
 .tt-hero h2 { margin: 0; color: #fff; font-size: 28px; font-weight: 800; line-height: 1.25; }
@@ -637,7 +637,7 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 :root[data-theme="dark"] .tt-hero { background: radial-gradient(120% 140% at 100% 0%, rgba(208,32,42,.3) 0%, transparent 55%), linear-gradient(135deg, #0d4a8a 0%, #0a2a52 100%); }
 @media (max-width: 640px) {
   .tt-hero { flex-direction: column; align-items: flex-start; gap: 16px; padding: 22px 18px; border-radius: 16px; }
-  .tt-logo { width: 96px; height: 96px; }
+  .tt-logo { width: 128px; height: 128px; align-self: center; }
   .tt-hero h2 { font-size: 22px; }
   .tt-lead { font-size: 14px; }
 }
