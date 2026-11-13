@@ -212,6 +212,7 @@
         el("span", { class: "gdsk-tag", text: tr(g.label) }),
         el("h3", { class: "gdsk-title", text: tr(tp.title) }),
         el("ul", { class: "gdsk-points" }, tp.points.map(function (s) { return el("li", { text: tr(s) }); })),
+        tp.slug ? el("a", { class: "gdsk-link", href: "#/gdsk/" + tp.slug, text: L("Xem chi tiết, mã QR →", "Details and QR code →") }) : null,
       ]));
     });
     var more = $("gdsk-more");
@@ -417,7 +418,8 @@
   });
 
   // Sub-pages (#/about, #/guides, #/privacy, #/terms)
-  var PAGE_RE = /^#\/(about|guides|privacy|terms)$/;
+  var PAGE_RE = /^#\/(about|guides|privacy|terms|nguoibenh)$/;
+  var GDSK_RE = /^#\/gdsk\/([a-z0-9-]+)$/;
   var TOPIC_RE = /^#\/topic\/([a-z]+)$/;
   var KHOA_RE = /^#\/khoa\/([a-z0-9-]+)$/;
   var homeView = $("home-view"), pageView = $("page-view");
@@ -427,6 +429,8 @@
     if (m) return m[1];
     var tm = TOPIC_RE.exec(location.hash);
     if (tm && DATA.categories[tm[1].toUpperCase()]) return "topic:" + tm[1].toUpperCase();
+    var gm = GDSK_RE.exec(location.hash);
+    if (gm && DATA.gdsk.topics.some(function (x) { return x.slug === gm[1]; })) return "gdsk:" + gm[1];
     var km = KHOA_RE.exec(location.hash);
     return km && DATA.khoa && DATA.khoa[km[1]] ? "khoa:" + km[1] : null;
   }
@@ -476,6 +480,32 @@
     document.title = tr(k.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
+  function renderGdskPage(slug) {
+    var tp = DATA.gdsk.topics.filter(function (x) { return x.slug === slug; })[0];
+    var g = DATA.gdsk.groups[tp.group];
+    pageView.textContent = "";
+    pageView.appendChild(el("a", { class: "back-link", href: "#gdsk-section", text: L("← Góc giáo dục sức khỏe", "← Health education corner") }));
+    pageView.appendChild(el("span", { class: "tag", style: "--c:" + g.color, text: tr(g.label) }));
+    pageView.appendChild(el("h1", { class: "page-title", text: tr(tp.title) }));
+    pageView.appendChild(el("section", { class: "page-section" }, [
+      el("h2", { text: L("Điều cần biết", "Key points") }),
+      el("ul", {}, tp.points.map(function (s) { return el("li", { text: tr(s) }); })),
+    ]));
+    if (tp.files && tp.files.length) {
+      pageView.appendChild(el("section", { class: "page-section" }, [
+        el("h2", { text: L("Tài liệu tải về", "Downloads") }),
+        el("ul", {}, tp.files.map(function (f) { return el("li", {}, [el("a", { href: f.url, target: "_blank", rel: "noopener noreferrer", text: tr(f.name) })]); })),
+      ]));
+    }
+    pageView.appendChild(el("section", { class: "page-section gdsk-qr" }, [
+      el("h2", { text: L("Mã QR của chủ đề", "QR code for this topic") }),
+      el("img", { src: "img/qr/gdsk-" + tp.slug + ".png", alt: L("Mã QR mở trang ", "QR code opening the page ") + tr(tp.title), width: "180", height: "180" }),
+      el("p", { text: L("Quét mã để mở lại trang này trên điện thoại. Khoa có thể in mã này lên tờ bướm, poster.", "Scan to reopen this page on your phone. Wards can print this code on leaflets and posters.") }),
+    ]));
+    pageView.appendChild(el("p", { class: "page-note", text: L("Nội dung mang tính hướng dẫn chung, không thay thế chỉ định của bác sĩ. Khi có dấu hiệu nặng, đến bệnh viện, cơ sở y tế gần nhất ngay. Tổng đài: 0296 3562 357.", "General guidance only, not a substitute for medical advice. If warning signs appear, go to the nearest hospital or health facility immediately. Switchboard: 0296 3562 357.") }));
+    document.title = tr(tp.title) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
+  }
+
   function renderPage(name) {
     var page = DATA.pages[name];
     pageView.textContent = "";
@@ -502,7 +532,7 @@
     if (name) {
       homeView.hidden = true;
       pageView.hidden = false;
-      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else renderPage(name);
+      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else if (name.indexOf("gdsk:") === 0) renderGdskPage(name.slice(5)); else renderPage(name);
       if (scroll) window.scrollTo(0, 0);
     } else {
       var wasPage = !pageView.hidden;

@@ -54,15 +54,27 @@ window.PULSE_DATA = {
  "news": [
   {
    "category": "HOATDONG",
-   "title": {"en": "Ra mắt trang giới thiệu Tổ Tiêm chủng", "vi": "Ra mắt trang giới thiệu Tổ Tiêm chủng"},
-   "summary": {"en": "Trang giới thiệu Tổ Tiêm chủng: quy trình tư vấn, khám sàng lọc, tiêm và theo dõi sau tiêm, lời dặn chăm sóc trẻ sau tiêm và hình ảnh khu tiếp đón, phòng tiêm, khu vui chơi cho trẻ.", "vi": "Trang giới thiệu Tổ Tiêm chủng: quy trình tư vấn, khám sàng lọc, tiêm và theo dõi sau tiêm, lời dặn chăm sóc trẻ sau tiêm và hình ảnh khu tiếp đón, phòng tiêm, khu vui chơi cho trẻ."},
+   "title": {
+    "en": "Ra mắt trang giới thiệu Tổ Tiêm chủng",
+    "vi": "Ra mắt trang giới thiệu Tổ Tiêm chủng"
+   },
+   "summary": {
+    "en": "Trang giới thiệu Tổ Tiêm chủng: quy trình tư vấn, khám sàng lọc, tiêm và theo dõi sau tiêm, lời dặn chăm sóc trẻ sau tiêm và hình ảnh khu tiếp đón, phòng tiêm, khu vui chơi cho trẻ.",
+    "vi": "Trang giới thiệu Tổ Tiêm chủng: quy trình tư vấn, khám sàng lọc, tiêm và theo dõi sau tiêm, lời dặn chăm sóc trẻ sau tiêm và hình ảnh khu tiếp đón, phòng tiêm, khu vui chơi cho trẻ."
+   },
    "url": "#/khoa/tc",
    "date": "2026-11-12"
   },
   {
    "category": "HOATDONG",
-   "title": {"en": "Ra mắt trang giới thiệu Bộ phận Thận nhân tạo", "vi": "Ra mắt trang giới thiệu Bộ phận Thận nhân tạo"},
-   "summary": {"en": "Bộ phận Thận nhân tạo có trang riêng: lọc máu chu kỳ HD, HDF Online, lọc máu cấp cứu, chăm sóc FAV và catheter, tư vấn dinh dưỡng, kiểm soát dịch cho người bệnh chạy thận, kèm 9 hình ảnh hoạt động.", "vi": "Bộ phận Thận nhân tạo có trang riêng: lọc máu chu kỳ HD, HDF Online, lọc máu cấp cứu, chăm sóc FAV và catheter, tư vấn dinh dưỡng, kiểm soát dịch cho người bệnh chạy thận, kèm 9 hình ảnh hoạt động."},
+   "title": {
+    "en": "Ra mắt trang giới thiệu Bộ phận Thận nhân tạo",
+    "vi": "Ra mắt trang giới thiệu Bộ phận Thận nhân tạo"
+   },
+   "summary": {
+    "en": "Bộ phận Thận nhân tạo có trang riêng: lọc máu chu kỳ HD, HDF Online, lọc máu cấp cứu, chăm sóc FAV và catheter, tư vấn dinh dưỡng, kiểm soát dịch cho người bệnh chạy thận, kèm 9 hình ảnh hoạt động.",
+    "vi": "Bộ phận Thận nhân tạo có trang riêng: lọc máu chu kỳ HD, HDF Online, lọc máu cấp cứu, chăm sóc FAV và catheter, tư vấn dinh dưỡng, kiểm soát dịch cho người bệnh chạy thận, kèm 9 hình ảnh hoạt động."
+   },
    "url": "#/khoa/tnt",
    "date": "2026-11-12"
   },
@@ -650,6 +662,117 @@ window.PULSE_DATA = {
      }
     }
    ]
+  },
+  "nguoibenh": {
+   "title": {
+    "vi": "Hướng dẫn người bệnh và người nhà",
+    "en": "Hướng dẫn người bệnh và người nhà"
+   },
+   "intro": {
+    "vi": "Những điều người bệnh và người nhà cần biết khi đến khám, nằm viện và ra viện tại Bệnh viện Đa khoa Nhật Tân. Khi chưa rõ, hãy hỏi điều dưỡng của khoa.",
+    "en": "Những điều người bệnh và người nhà cần biết khi đến khám, nằm viện và ra viện tại Bệnh viện Đa khoa Nhật Tân. Khi chưa rõ, hãy hỏi điều dưỡng của khoa."
+   },
+   "updated": "2026-11-13",
+   "sections": [
+    {
+     "h": {
+      "vi": "Khi đến khám, nhập viện",
+      "en": "Khi đến khám, nhập viện"
+     },
+     "items": {
+      "vi": [
+       "Mang theo căn cước công dân hoặc định danh điện tử, thẻ bảo hiểm y tế, giấy chuyển tuyến (nếu có), sổ khám bệnh và các thuốc đang dùng.",
+       "Báo cho nhân viên y tế tiền sử dị ứng thuốc, thức ăn và các bệnh đang điều trị.",
+       "Người bệnh nội trú được đeo vòng nhận dạng; giữ vòng suốt thời gian nằm viện, không tự tháo.",
+       "Điều dưỡng sẽ giới thiệu buồng bệnh, nội quy khoa, cách gọi nhân viên y tế khi cần."
+      ],
+      "en": [
+       "Mang theo căn cước công dân hoặc định danh điện tử, thẻ bảo hiểm y tế, giấy chuyển tuyến (nếu có), sổ khám bệnh và các thuốc đang dùng.",
+       "Báo cho nhân viên y tế tiền sử dị ứng thuốc, thức ăn và các bệnh đang điều trị.",
+       "Người bệnh nội trú được đeo vòng nhận dạng; giữ vòng suốt thời gian nằm viện, không tự tháo.",
+       "Điều dưỡng sẽ giới thiệu buồng bệnh, nội quy khoa, cách gọi nhân viên y tế khi cần."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Trong thời gian nằm viện",
+      "en": "Trong thời gian nằm viện"
+     },
+     "items": {
+      "vi": [
+       "Trước khi dùng thuốc, làm thủ thuật, nhân viên y tế sẽ hỏi họ tên, năm sinh và đối chiếu vòng nhận dạng; người bệnh, người nhà vui lòng trả lời rõ ràng.",
+       "Không tự ý dùng thêm thuốc mang từ ngoài vào; đưa cho điều dưỡng các thuốc đang dùng.",
+       "Rửa tay trước khi ăn, sau khi đi vệ sinh, trước và sau khi chăm sóc người bệnh.",
+       "Phòng té ngã: kéo thanh chắn giường, mang dép chống trơn, bật đèn khi đi lại ban đêm, gọi người hỗ trợ khi chóng mặt.",
+       "Người nhà ở lại chăm sóc theo hướng dẫn của khoa; giữ trật tự, không hút thuốc lá trong bệnh viện; tự bảo quản tài sản cá nhân.",
+       "Báo ngay điều dưỡng khi người bệnh mệt hơn, khó thở, đau tăng, chảy máu, sốt cao hoặc có bất kỳ thay đổi bất thường nào."
+      ],
+      "en": [
+       "Trước khi dùng thuốc, làm thủ thuật, nhân viên y tế sẽ hỏi họ tên, năm sinh và đối chiếu vòng nhận dạng; người bệnh, người nhà vui lòng trả lời rõ ràng.",
+       "Không tự ý dùng thêm thuốc mang từ ngoài vào; đưa cho điều dưỡng các thuốc đang dùng.",
+       "Rửa tay trước khi ăn, sau khi đi vệ sinh, trước và sau khi chăm sóc người bệnh.",
+       "Phòng té ngã: kéo thanh chắn giường, mang dép chống trơn, bật đèn khi đi lại ban đêm, gọi người hỗ trợ khi chóng mặt.",
+       "Người nhà ở lại chăm sóc theo hướng dẫn của khoa; giữ trật tự, không hút thuốc lá trong bệnh viện; tự bảo quản tài sản cá nhân.",
+       "Báo ngay điều dưỡng khi người bệnh mệt hơn, khó thở, đau tăng, chảy máu, sốt cao hoặc có bất kỳ thay đổi bất thường nào."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Quyền và nghĩa vụ của người bệnh",
+      "en": "Quyền và nghĩa vụ của người bệnh"
+     },
+     "items": {
+      "vi": [
+       "Được tôn trọng, được giữ bí mật thông tin sức khỏe và đời tư (Luật Khám bệnh, chữa bệnh số 15/2023/QH15).",
+       "Được cung cấp thông tin về tình trạng bệnh, phương pháp điều trị, chi phí; được lựa chọn, đồng ý hoặc từ chối sau khi được giải thích.",
+       "Được góp ý, phản ánh về chất lượng khám bệnh, chữa bệnh và chăm sóc.",
+       "Cung cấp trung thực thông tin sức khỏe; chấp hành chỉ định điều trị và nội quy bệnh viện; tôn trọng nhân viên y tế; thanh toán chi phí theo quy định."
+      ],
+      "en": [
+       "Được tôn trọng, được giữ bí mật thông tin sức khỏe và đời tư (Luật Khám bệnh, chữa bệnh số 15/2023/QH15).",
+       "Được cung cấp thông tin về tình trạng bệnh, phương pháp điều trị, chi phí; được lựa chọn, đồng ý hoặc từ chối sau khi được giải thích.",
+       "Được góp ý, phản ánh về chất lượng khám bệnh, chữa bệnh và chăm sóc.",
+       "Cung cấp trung thực thông tin sức khỏe; chấp hành chỉ định điều trị và nội quy bệnh viện; tôn trọng nhân viên y tế; thanh toán chi phí theo quy định."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Khi ra viện",
+      "en": "Khi ra viện"
+     },
+     "items": {
+      "vi": [
+       "Nhận giấy ra viện, đơn thuốc, giấy hẹn tái khám; hỏi lại khi chưa rõ cách dùng thuốc.",
+       "Điều dưỡng hướng dẫn chế độ ăn, vận động, chăm sóc vết thương, ống thông (nếu có) tại nhà.",
+       "Đến bệnh viện, cơ sở y tế gần nhất ngay khi có dấu hiệu nặng đã được dặn; tổng đài bệnh viện 0296 3562 357.",
+       "Tái khám đúng hẹn, mang theo giấy ra viện, đơn thuốc và sổ khám bệnh."
+      ],
+      "en": [
+       "Nhận giấy ra viện, đơn thuốc, giấy hẹn tái khám; hỏi lại khi chưa rõ cách dùng thuốc.",
+       "Điều dưỡng hướng dẫn chế độ ăn, vận động, chăm sóc vết thương, ống thông (nếu có) tại nhà.",
+       "Đến bệnh viện, cơ sở y tế gần nhất ngay khi có dấu hiệu nặng đã được dặn; tổng đài bệnh viện 0296 3562 357.",
+       "Tái khám đúng hẹn, mang theo giấy ra viện, đơn thuốc và sổ khám bệnh."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Góp ý về công tác chăm sóc",
+      "en": "Góp ý về công tác chăm sóc"
+     },
+     "items": {
+      "vi": [
+       "Góp ý trực tiếp với điều dưỡng trưởng khoa, qua hòm thư góp ý tại khoa hoặc liên hệ Phòng Điều dưỡng (mục Liên hệ)."
+      ],
+      "en": [
+       "Góp ý trực tiếp với điều dưỡng trưởng khoa, qua hòm thư góp ý tại khoa hoặc liên hệ Phòng Điều dưỡng (mục Liên hệ)."
+      ]
+     }
+    }
+   ]
   }
  },
  "i18n": {
@@ -1107,7 +1230,8 @@ window.PULSE_DATA = {
      "Rửa tay bằng xà phòng và nước sạch hoặc dung dịch sát khuẩn tay nhanh theo 6 bước.",
      "Rửa tay trước khi ăn, sau khi đi vệ sinh, trước và sau khi chăm sóc người bệnh.",
      "Thời gian rửa tay với xà phòng ít nhất 40–60 giây."
-    ]
+    ],
+    "slug": "rua-tay-dung-cach"
    },
    {
     "group": "an",
@@ -1116,7 +1240,8 @@ window.PULSE_DATA = {
      "Bật đèn khi đi lại ban đêm, mang dép chống trơn, nhờ người hỗ trợ khi chóng mặt.",
      "Luôn kéo thanh chắn giường khi người bệnh nằm; để vật dụng cần thiết trong tầm với.",
      "Báo ngay điều dưỡng khi người bệnh mệt, hoa mắt hoặc vừa dùng thuốc an thần."
-    ]
+    ],
+    "slug": "phong-te-nga-khi-nam-vien"
    },
    {
     "group": "an",
@@ -1125,7 +1250,8 @@ window.PULSE_DATA = {
      "Dùng đúng thuốc, đúng liều, đúng giờ theo chỉ định của bác sĩ.",
      "Không tự ý mua thêm, ngưng hoặc đổi thuốc; báo tiền sử dị ứng thuốc cho nhân viên y tế.",
      "Hỏi điều dưỡng khi chưa rõ cách dùng; mang theo toa thuốc khi tái khám."
-    ]
+    ],
+    "slug": "dung-thuoc-an-toan"
    },
    {
     "group": "an",
@@ -1134,7 +1260,8 @@ window.PULSE_DATA = {
      "Thay đổi tư thế cho người bệnh nằm lâu ít nhất mỗi 2 giờ.",
      "Giữ da khô, sạch; dùng nệm chống loét khi có chỉ định.",
      "Báo điều dưỡng khi thấy vùng da đỏ, phồng hoặc trầy ở lưng, mông, gót chân."
-    ]
+    ],
+    "slug": "phong-loet-ti-de"
    },
    {
     "group": "man",
@@ -1143,7 +1270,8 @@ window.PULSE_DATA = {
      "Đo huyết áp thường xuyên, ghi sổ theo dõi và mang theo khi tái khám.",
      "Ăn nhạt, hạn chế rượu bia, không hút thuốc lá, vận động đều đặn.",
      "Uống thuốc hằng ngày kể cả khi huyết áp đã ổn, không tự ý ngưng thuốc."
-    ]
+    ],
+    "slug": "tang-huyet-ap"
    },
    {
     "group": "man",
@@ -1152,7 +1280,8 @@ window.PULSE_DATA = {
      "Ăn đúng giờ, hạn chế đồ ngọt, tinh bột trắng; tăng rau xanh.",
      "Theo dõi đường huyết theo hướng dẫn; dùng thuốc, tiêm insulin đúng giờ.",
      "Kiểm tra bàn chân mỗi ngày; đến bệnh viện khi có vết thương lâu lành."
-    ]
+    ],
+    "slug": "dai-thao-duong"
    },
    {
     "group": "man",
@@ -1161,7 +1290,8 @@ window.PULSE_DATA = {
      "Tránh khói thuốc lá, khói bếp, khói nhang, bụi nhà, lông thú, nấm mốc; đeo khẩu trang khi ra đường.",
      "Dùng thuốc dự phòng (thuốc xịt) hằng ngày theo đơn kể cả khi không khó thở; luôn mang theo thuốc cắt cơn; súc miệng sau mỗi lần xịt.",
      "Đến bệnh viện ngay khi khó thở nhiều, chỉ nói được từng từ, môi tím, hoặc dùng thuốc cắt cơn không đỡ."
-    ]
+    ],
+    "slug": "hen-phe-quan"
    },
    {
     "group": "man",
@@ -1170,7 +1300,8 @@ window.PULSE_DATA = {
      "Dấu hiệu: méo miệng, yếu tay chân một bên, nói khó, nhìn mờ, chóng mặt đột ngột.",
      "Đưa người bệnh đến bệnh viện gần nhất ngay, ghi lại thời điểm khởi phát triệu chứng.",
      "Không tự ý cho ăn, uống hoặc dùng thuốc khi người bệnh chưa được thăm khám."
-    ]
+    ],
+    "slug": "nhan-biet-som-dot-quy"
    },
    {
     "group": "man",
@@ -1179,7 +1310,8 @@ window.PULSE_DATA = {
      "Ăn đủ chất, chia nhiều bữa nhỏ, uống đủ nước theo hướng dẫn của bác sĩ.",
      "Người bệnh có chế độ ăn bệnh lý cần theo đúng tư vấn của khoa Dinh dưỡng.",
      "Báo nhân viên y tế khi người bệnh ăn kém, sụt cân hoặc nuốt khó."
-    ]
+    ],
+    "slug": "dinh-duong-cho-nguoi-benh"
    },
    {
     "group": "tn",
@@ -1188,7 +1320,8 @@ window.PULSE_DATA = {
      "Loại bỏ nơi muỗi đẻ trứng, ngủ mùng kể cả ban ngày.",
      "Khi sốt cao, hạ sốt bằng paracetamol, không dùng aspirin, ibuprofen.",
      "Đến bệnh viện ngay khi đau bụng, nôn nhiều, chảy máu, lừ đừ, tay chân lạnh."
-    ]
+    ],
+    "slug": "sot-xuat-huyet"
    },
    {
     "group": "tn",
@@ -1197,7 +1330,8 @@ window.PULSE_DATA = {
      "Ho kéo dài trên 2 tuần, sốt về chiều, sụt cân cần đi khám và xét nghiệm đàm.",
      "Uống thuốc đủ liều, đủ thời gian theo phác đồ, không bỏ thuốc.",
      "Đeo khẩu trang, che miệng khi ho, nhà ở thông thoáng."
-    ]
+    ],
+    "slug": "lao-phoi"
    },
    {
     "group": "me",
@@ -1206,7 +1340,8 @@ window.PULSE_DATA = {
      "Rửa tay cho trẻ và người chăm sóc; vệ sinh đồ chơi, sàn nhà hằng ngày.",
      "Cho trẻ nghỉ học, theo dõi tại nhà theo hướng dẫn của nhân viên y tế.",
      "Đưa trẻ đến bệnh viện ngay khi sốt cao không hạ, giật mình, run chi, nôn nhiều."
-    ]
+    ],
+    "slug": "tay-chan-mieng-o-tre"
    },
    {
     "group": "me",
@@ -1215,7 +1350,8 @@ window.PULSE_DATA = {
      "Cho trẻ bú sớm trong giờ đầu sau sinh, da kề da với mẹ.",
      "Bú mẹ hoàn toàn trong 6 tháng đầu, không cần cho uống thêm nước.",
      "Tiếp tục cho bú đến 24 tháng hoặc lâu hơn, kết hợp ăn dặm hợp lý."
-    ]
+    ],
+    "slug": "nuoi-con-bang-sua-me"
    }
   ]
  },
@@ -1418,111 +1554,111 @@ window.PULSE_DATA = {
     ]
    ]
   },
- "yhct": {
-  "name": "Khoa Y học cổ truyền – Phục hồi chức năng",
-  "intro": "Kết hợp điều trị y học cổ truyền với vật lý trị liệu, phục hồi chức năng hiện đại, giúp người bệnh giảm đau, cải thiện vận động, sớm trở lại sinh hoạt hằng ngày.",
-  "updated": "2026-11-12",
-  "facts": [
-   [
-    "Vị trí",
-    "Tầng trệt, Khu A"
+  "yhct": {
+   "name": "Khoa Y học cổ truyền – Phục hồi chức năng",
+   "intro": "Kết hợp điều trị y học cổ truyền với vật lý trị liệu, phục hồi chức năng hiện đại, giúp người bệnh giảm đau, cải thiện vận động, sớm trở lại sinh hoạt hằng ngày.",
+   "updated": "2026-11-12",
+   "facts": [
+    [
+     "Vị trí",
+     "Tầng trệt, Khu A"
+    ],
+    [
+     "Giờ làm việc",
+     "Thứ Hai – Thứ Sáu: 7g00 – 17g00; Thứ Bảy: 7g00 – 11g00"
+    ],
+    [
+     "Nhân lực",
+     "11 người: 2 điều dưỡng, 7 kỹ thuật y, 2 y sĩ y học cổ truyền"
+    ]
    ],
-   [
-    "Giờ làm việc",
-    "Thứ Hai – Thứ Sáu: 7g00 – 17g00; Thứ Bảy: 7g00 – 11g00"
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Lấy người bệnh làm trung tâm: chăm sóc toàn diện, không chỉ giảm đau, cải thiện triệu chứng mà còn giúp người bệnh phục hồi chức năng, tăng khả năng tự chăm sóc.",
+      "Bác sĩ thăm khám, đánh giá tình trạng sức khỏe, mức độ tổn thương và khả năng vận động để lập kế hoạch điều trị phù hợp từng người bệnh.",
+      "Bên cạnh dùng thuốc khi có chỉ định, khoa chú trọng điều trị không dùng thuốc: vận động trị liệu, vật lý trị liệu và y học cổ truyền."
+     ]
+    },
+    {
+     "h": "Kỹ thuật, dịch vụ nổi bật",
+     "items": [
+      "Điều trị kết hợp đa phương pháp: châm cứu, cấy chỉ phối hợp vật lý trị liệu, phục hồi chức năng theo chỉ định.",
+      "Phục hồi chức năng vận động: cải thiện sức cơ, tầm vận động khớp, thăng bằng, phối hợp vận động và đi lại.",
+      "Thiết bị chuyên dụng: sóng xung kích, laser công suất cao, sóng ngắn, siêu âm trị liệu, điện xung, từ trường trị liệu, kéo giãn cột sống."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Chăm sóc cá thể hóa: đánh giá mức độ hạn chế chức năng, khả năng vận động để chọn phương pháp phục hồi phù hợp.",
+      "Đồng hành trong quá trình phục hồi: hướng dẫn vận động, luyện tập tại nhà và tư vấn chăm sóc để người bệnh tự chăm sóc tốt hơn."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Hướng dẫn tập luyện tại nhà, tư thế đúng, phòng ngừa đau cột sống, chăm sóc sau té ngã.",
+      "Tờ bướm, poster bài tập vật lý trị liệu: hội chứng ống cổ tay, đau lưng và cổ do thoát vị đĩa đệm, liệt dây thần kinh VII ngoại biên, viêm quanh khớp vai, thoái hóa khớp gối."
+     ]
+    },
+    {
+     "h": "Thành tích, sáng kiến",
+     "items": [
+      "Năm 2025 đạt và vượt mục tiêu đề ra, bằng 132% so với năm 2024.",
+      "Giải Khuyến khích hội thi “Lắng nghe thấu cảm – giao tiếp sẻ san” năm 2025.",
+      "Sáng kiến của kỹ thuật y: đồng phục nhận diện mỗi khoa một màu; cải tiến trang web của khoa và bệnh viện; đề xuất gửi thông tin lương, dịch vụ qua thư điện tử."
+     ]
+    }
    ],
-   [
-    "Nhân lực",
-    "11 người: 2 điều dưỡng, 7 kỹ thuật y, 2 y sĩ y học cổ truyền"
+   "message": "Sức khỏe và khả năng vận động của người bệnh luôn là ưu tiên hàng đầu của chúng tôi. Hãy kiên trì thực hiện đúng hướng dẫn điều trị và tập phục hồi chức năng; sự phối hợp giữa nhân viên y tế, người bệnh và gia đình là yếu tố quan trọng giúp phục hồi tốt hơn.",
+   "photos": [
+    [
+     "img/khoa/yhct-01.jpg",
+     "Tập thể Khoa Y học cổ truyền – Phục hồi chức năng"
+    ],
+    [
+     "img/khoa/yhct-02.jpg",
+     "Tập vận động có trợ giúp cho người bệnh gãy xương đùi"
+    ],
+    [
+     "img/khoa/yhct-03.jpg",
+     "Siêu âm điều trị đau khớp gối"
+    ],
+    [
+     "img/khoa/yhct-04.jpg",
+     "Tập vận động cho người bệnh yếu nửa người"
+    ],
+    [
+     "img/khoa/yhct-05.jpg",
+     "Điều trị đau vai gáy bằng laser công suất thấp"
+    ],
+    [
+     "img/khoa/yhct-06.jpg",
+     "Điện châm điều trị đau cổ, mất ngủ"
+    ],
+    [
+     "img/khoa/yhct-07.jpg",
+     "Sóng xung kích điều trị đau lưng"
+    ],
+    [
+     "img/khoa/yhct-08.jpg",
+     "Laser công suất cao điều trị thoái hóa khớp gối"
+    ],
+    [
+     "img/khoa/yhct-09.jpg",
+     "Từ trường trị liệu"
+    ],
+    [
+     "img/khoa/yhct-10.jpg",
+     "Kéo giãn cột sống điều trị đau lưng"
+    ],
+    [
+     "img/khoa/yhct-11.jpg",
+     "Siêu âm điều trị đau lưng"
+    ]
    ]
-  ],
-  "sections": [
-   {
-    "h": "Chức năng, nhiệm vụ",
-    "items": [
-     "Lấy người bệnh làm trung tâm: chăm sóc toàn diện, không chỉ giảm đau, cải thiện triệu chứng mà còn giúp người bệnh phục hồi chức năng, tăng khả năng tự chăm sóc.",
-     "Bác sĩ thăm khám, đánh giá tình trạng sức khỏe, mức độ tổn thương và khả năng vận động để lập kế hoạch điều trị phù hợp từng người bệnh.",
-     "Bên cạnh dùng thuốc khi có chỉ định, khoa chú trọng điều trị không dùng thuốc: vận động trị liệu, vật lý trị liệu và y học cổ truyền."
-    ]
-   },
-   {
-    "h": "Kỹ thuật, dịch vụ nổi bật",
-    "items": [
-     "Điều trị kết hợp đa phương pháp: châm cứu, cấy chỉ phối hợp vật lý trị liệu, phục hồi chức năng theo chỉ định.",
-     "Phục hồi chức năng vận động: cải thiện sức cơ, tầm vận động khớp, thăng bằng, phối hợp vận động và đi lại.",
-     "Thiết bị chuyên dụng: sóng xung kích, laser công suất cao, sóng ngắn, siêu âm trị liệu, điện xung, từ trường trị liệu, kéo giãn cột sống."
-    ]
-   },
-   {
-    "h": "Hoạt động chăm sóc đặc trưng",
-    "items": [
-     "Chăm sóc cá thể hóa: đánh giá mức độ hạn chế chức năng, khả năng vận động để chọn phương pháp phục hồi phù hợp.",
-     "Đồng hành trong quá trình phục hồi: hướng dẫn vận động, luyện tập tại nhà và tư vấn chăm sóc để người bệnh tự chăm sóc tốt hơn."
-    ]
-   },
-   {
-    "h": "Tư vấn, giáo dục sức khỏe",
-    "items": [
-     "Hướng dẫn tập luyện tại nhà, tư thế đúng, phòng ngừa đau cột sống, chăm sóc sau té ngã.",
-     "Tờ bướm, poster bài tập vật lý trị liệu: hội chứng ống cổ tay, đau lưng và cổ do thoát vị đĩa đệm, liệt dây thần kinh VII ngoại biên, viêm quanh khớp vai, thoái hóa khớp gối."
-    ]
-   },
-   {
-    "h": "Thành tích, sáng kiến",
-    "items": [
-     "Năm 2025 đạt và vượt mục tiêu đề ra, bằng 132% so với năm 2024.",
-     "Giải Khuyến khích hội thi “Lắng nghe thấu cảm – giao tiếp sẻ san” năm 2025.",
-     "Sáng kiến của kỹ thuật y: đồng phục nhận diện mỗi khoa một màu; cải tiến trang web của khoa và bệnh viện; đề xuất gửi thông tin lương, dịch vụ qua thư điện tử."
-    ]
-   }
-  ],
-  "message": "Sức khỏe và khả năng vận động của người bệnh luôn là ưu tiên hàng đầu của chúng tôi. Hãy kiên trì thực hiện đúng hướng dẫn điều trị và tập phục hồi chức năng; sự phối hợp giữa nhân viên y tế, người bệnh và gia đình là yếu tố quan trọng giúp phục hồi tốt hơn.",
-  "photos": [
-   [
-    "img/khoa/yhct-01.jpg",
-    "Tập thể Khoa Y học cổ truyền – Phục hồi chức năng"
-   ],
-   [
-    "img/khoa/yhct-02.jpg",
-    "Tập vận động có trợ giúp cho người bệnh gãy xương đùi"
-   ],
-   [
-    "img/khoa/yhct-03.jpg",
-    "Siêu âm điều trị đau khớp gối"
-   ],
-   [
-    "img/khoa/yhct-04.jpg",
-    "Tập vận động cho người bệnh yếu nửa người"
-   ],
-   [
-    "img/khoa/yhct-05.jpg",
-    "Điều trị đau vai gáy bằng laser công suất thấp"
-   ],
-   [
-    "img/khoa/yhct-06.jpg",
-    "Điện châm điều trị đau cổ, mất ngủ"
-   ],
-   [
-    "img/khoa/yhct-07.jpg",
-    "Sóng xung kích điều trị đau lưng"
-   ],
-   [
-    "img/khoa/yhct-08.jpg",
-    "Laser công suất cao điều trị thoái hóa khớp gối"
-   ],
-   [
-    "img/khoa/yhct-09.jpg",
-    "Từ trường trị liệu"
-   ],
-   [
-    "img/khoa/yhct-10.jpg",
-    "Kéo giãn cột sống điều trị đau lưng"
-   ],
-   [
-    "img/khoa/yhct-11.jpg",
-    "Siêu âm điều trị đau lưng"
-   ]
-  ]
+  }
  }
-}
 };

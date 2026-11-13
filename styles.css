@@ -134,7 +134,7 @@ h1 { font-size: 52px; line-height: 1.08; font-weight: 700; letter-spacing: -0.02
 /* Quick actions */
 .quick { padding-top: 8px; padding-bottom: 8px; }
 .quick-title { font-size: 18px; margin-bottom: 14px; }
-.quick-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; padding: 18px; border-radius: 18px; border: 1px solid var(--border); background: var(--quick-bg); }
+.quick-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; padding: 18px; border-radius: 18px; border: 1px solid var(--border); background: var(--quick-bg); }
 .quick-item { display: flex; align-items: center; gap: 12px; padding: 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); transition: all .15s; }
 .quick-item:hover { border-color: color-mix(in srgb, var(--c) 50%, transparent); }
 .quick-icon { width: 44px; height: 44px; flex-shrink: 0; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: var(--c); background: color-mix(in srgb, var(--c) 14%, transparent); }
@@ -248,7 +248,7 @@ a.news-card:hover { border-color: rgba(139,92,246,.45); background: var(--surfac
   .hero-art svg { max-width: 320px; }
   h1 { font-size: 42px; }
   .content-grid { grid-template-columns: 1fr; gap: 32px; }
-  .quick-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .quick-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .main-nav { gap: 20px; }
@@ -399,7 +399,7 @@ h1, h2, h3, .brand, .footer-brand-name, .hero-stats strong { font-family: 'Be Vi
 .quick-title { display: none; }
 .quick > .kicker { display: none; }
 .quick-grid { background: #fff; border: 1px solid var(--border); box-shadow: 0 10px 30px rgba(16,40,80,.10); border-radius: 14px; padding: 8px; gap: 0; }
-.quick-item { border: none; border-radius: 10px; background: transparent; padding: 18px; box-shadow: none; }
+.quick-item { border: none; border-radius: 10px; background: transparent; padding: 18px 14px; box-shadow: none; }
 .quick-item + .quick-item { border-left: 1px solid var(--border); border-radius: 0; }
 .quick-item:hover { background: #f4f8fd; }
 .quick-icon { width: 48px; height: 48px; border-radius: 50%; color: var(--brand) !important; background: #e8f1fb !important; }
@@ -469,6 +469,7 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
   .quick-item + .quick-item { border-left: none; }
   .quick-item:nth-child(even) { border-left: 1px solid var(--border); }
   .quick-item:nth-child(n+3) { border-top: 1px solid var(--border); }
+  .quick-item:last-child:nth-child(odd) { grid-column: 1 / -1; flex-direction: row; align-items: center; }
   .section-head h2 { font-size: 22px; }
   .tools-grid { grid-template-columns: 1fr; }
   .mobile-nav a { color: var(--text-2); }
@@ -656,3 +657,9 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .khoa-gallery img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 10px; display: block; background: var(--surface-2, #eef2f7); }
 .khoa-message { margin: 36px 0 0; padding: 16px 18px; border-left: 4px solid var(--brand-red, #c8102e); background: var(--surface); border-radius: 0 10px 10px 0; font-size: 16px; line-height: 1.65; font-style: italic; color: var(--text-2); }
 @media (max-width: 640px) { .khoa-facts { grid-template-columns: 1fr; gap: 2px; } .khoa-facts dd { margin-bottom: 8px; } .khoa-gallery { grid-template-columns: 1fr 1fr; gap: 10px; } }
+
+/* GDSK: trang chủ đề, mã QR */
+.gdsk-link { display: inline-block; margin-top: 10px; font-size: 13px; font-weight: 700; color: var(--brand, #0b4f9c); text-decoration: none; }
+.gdsk-qr img { display: block; width: 180px; height: 180px; background: #fff; padding: 8px; border-radius: 8px; border: 1px solid var(--border); }
+.gdsk-qr p { margin-top: 10px; font-size: 14px; }
+.page-note { margin-top: 32px; padding: 12px 14px; border: 1px dashed var(--border); border-radius: 8px; font-size: 14px; color: var(--muted); line-height: 1.55; }
