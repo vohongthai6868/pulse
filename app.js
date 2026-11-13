@@ -244,7 +244,7 @@
     });
   }
 
-  var gdskGroup = "all", gdskAll = false;
+  var gdskGroup = "all", gdskAll = false; var gdskKhoa = "all";
   function renderGdsk() {
     var box = $("gdsk-list"), tabs = $("gdsk-tabs");
     if (!box || !DATA.gdsk) return;
@@ -255,9 +255,21 @@
       b.addEventListener("click", function () { gdskGroup = x[0]; gdskAll = false; renderGdsk(); });
       tabs.appendChild(b);
     });
+    var kt = $("gdsk-khoa");
+    if (kt) {
+      kt.textContent = "";
+      var ks = [];
+      DATA.gdsk.topics.forEach(function (tp) { if (tp.khoa && ks.indexOf(tp.khoa) < 0) ks.push(tp.khoa); });
+      kt.appendChild(el("span", { class: "khoa-filter-label", text: L("Theo khoa:", "By department:") }));
+      [["all", L("Tất cả khoa", "All departments")]].concat(ks.map(function (k) { return [k, tr(k)]; })).forEach(function (x) {
+        var b = el("button", { class: "chip", type: "button", "aria-pressed": String(gdskKhoa === x[0]), text: x[1] });
+        b.addEventListener("click", function () { gdskKhoa = x[0]; gdskAll = false; renderGdsk(); });
+        kt.appendChild(b);
+      });
+    }
     box.textContent = "";
     var list = DATA.gdsk.topics.filter(function (tp) {
-      return (gdskGroup === "all" || tp.group === gdskGroup) && matches(state.query, [tr(tp.title)].concat(tp.points.map(tr)));
+      return (gdskGroup === "all" || tp.group === gdskGroup) && (gdskKhoa === "all" || tp.khoa === gdskKhoa) && matches(state.query, [tr(tp.title)].concat(tp.points.map(tr)));
     });
     var base = window.innerWidth < 640 ? 3 : 6;
     var limit = (gdskAll || state.query) ? list.length : base;
@@ -266,6 +278,7 @@
       box.appendChild(el("article", { class: "gdsk-card", style: "--c:" + g.color }, [
         el("span", { class: "gdsk-tag", text: tr(g.label) }),
         el("h3", { class: "gdsk-title", text: tr(tp.title) }),
+        tp.khoa ? el("p", { class: "gdsk-khoa", text: L("Phụ trách: ", "Responsible: ") + tr(tp.khoa) }) : null,
         el("ul", { class: "gdsk-points" }, tp.points.map(function (s) { return el("li", { text: tr(s) }); })),
         tp.slug ? el("a", { class: "gdsk-link", href: "#/gdsk/" + tp.slug, text: L("Xem chi tiết, mã QR →", "Details and QR code →") }) : null,
       ]));
@@ -542,6 +555,7 @@
     pageView.appendChild(el("a", { class: "back-link", href: "#gdsk-section", text: L("← Góc giáo dục sức khỏe", "← Health education corner") }));
     pageView.appendChild(el("span", { class: "tag", style: "--c:" + g.color, text: tr(g.label) }));
     pageView.appendChild(el("h1", { class: "page-title", text: tr(tp.title) }));
+    if (tp.khoa) pageView.appendChild(el("p", { class: "gdsk-khoa", text: L("Khoa, phòng phụ trách: ", "Responsible department: ") + tr(tp.khoa) }));
     pageView.appendChild(el("section", { class: "page-section" }, [
       el("h2", { text: L("Điều cần biết", "Key points") }),
       el("ul", {}, tp.points.map(function (s) { return el("li", { text: tr(s) }); })),
