@@ -699,3 +699,8 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .art-pending { padding: 12px 14px; border-radius: 10px; border: 1px dashed var(--border); color: var(--dim); }
 :root[data-theme="dark"] .art-note { background: #3a1414; color: #ffd0d0; border-color: #6b2323; }
 @media (max-width: 640px) { .art-info { grid-template-columns: 1fr; } .art-info dt { margin-top: 4px; } }
+
+/* Biểu tượng tin nổi bật: nền màu chuyên mục, biểu tượng trắng */
+.news-card .news-thumb { color: #fff; background: linear-gradient(135deg, color-mix(in srgb, var(--c) 78%, #fff), var(--c)); box-shadow: 0 6px 16px color-mix(in srgb, var(--c) 35%, transparent); border-radius: 16px; }
+.news-card .news-thumb svg { width: 42px; height: 42px; }
+@media (max-width: 640px) { .news-card .news-thumb svg { width: 36px; height: 36px; } }

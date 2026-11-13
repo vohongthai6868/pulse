@@ -47,7 +47,7 @@
     return p.length === 3 ? p[2] + "/" + p[1] + "/" + p[0] : day;
   }
 
-  var BOLT = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>';
+  var BOLT = '<svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>';
 
   function matches(query, texts) {
     if (!query) return true;
@@ -110,7 +110,7 @@
   function newsCard(n) {
       var cat = DATA.categories[n.category];
       var thumb = el("div", { class: "news-thumb", "aria-hidden": "true" });
-      thumb.innerHTML = cat.icon ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + cat.icon + '</svg>' : BOLT;
+      thumb.innerHTML = cat.icon ? '<svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + cat.icon + '</svg>' : BOLT;
       var body = el("div", { class: "news-body" }, [
         el("div", { class: "news-meta" }, [
           el("span", { class: "tag", text: cat.label[state.lang] }),
@@ -375,7 +375,7 @@
     shown.forEach(function (tool) {
       var card = el("button", { class: "tool-card", type: "button" }, [
         el("div", { class: "tool-card-top" }, [
-          (function () { var sw = el("div", { class: "tool-swatch" }); if (tool.icon) sw.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + tool.icon + '</svg>'; else sw.setAttribute("style", "background:" + tool.gradient); return sw; })(),
+          (function () { var sw = el("div", { class: "tool-swatch" }); if (tool.icon) sw.innerHTML = '<svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + tool.icon + '</svg>'; else sw.setAttribute("style", "background:" + tool.gradient); return sw; })(),
           tool.tag ? el("span", { class: "tool-tag", style: "--c:" + tool.tag.color, text: tool.tag[state.lang] }) : null,
         ]),
         el("div", { class: "tool-name", text: tr(tool.name) }),
