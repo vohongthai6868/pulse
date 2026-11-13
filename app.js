@@ -568,14 +568,41 @@
     pageView.appendChild(el("span", { class: "tag", style: "--c:" + g.color, text: tr(g.label) }));
     pageView.appendChild(el("h1", { class: "page-title", text: tr(tp.title) }));
     if (tp.khoa) pageView.appendChild(el("p", { class: "gdsk-khoa", text: L("Khoa, phòng phụ trách: ", "Responsible department: ") + tr(tp.khoa) }));
-    pageView.appendChild(el("section", { class: "page-section" }, [
-      el("h2", { text: L("Điều cần biết", "Key points") }),
-      el("ul", {}, tp.points.map(function (s) { return el("li", { text: tr(s) }); })),
-    ]));
+    var art = tp.article;
+    if (art) {
+      if (art.heading) pageView.appendChild(el("p", { class: "art-heading", text: art.heading }));
+      pageView.appendChild(el("dl", { class: "art-info" }, [
+        el("dt", { text: L("Đối tượng", "Audience") }), el("dd", { text: art.audience }),
+        el("dt", { text: L("Mục tiêu", "Goal") }), el("dd", { text: art.goal }),
+      ]));
+      art.sections.forEach(function (sec) {
+        var box = el("section", { class: "page-section art-section" }, [el("h2", { text: sec.h })]);
+        sec.blocks.forEach(function (b) {
+          if (b.p) box.appendChild(el("p", { text: b.p }));
+          else if (b.items) box.appendChild(el(b.ordered ? "ol" : "ul", { class: b.ordered ? "art-steps" : "" }, b.items.map(function (s) { return el("li", { text: s }); })));
+          else if (b.note) box.appendChild(el("p", { class: "art-note", text: b.note }));
+        });
+        pageView.appendChild(box);
+      });
+      if (art.key) pageView.appendChild(el("div", { class: "art-key" }, [el("strong", { text: L("Thông điệp cần nhớ", "Key message") }), el("p", { text: art.key })]));
+    } else {
+      pageView.appendChild(el("section", { class: "page-section" }, [
+        el("h2", { text: L("Điều cần biết", "Key points") }),
+        el("ul", {}, tp.points.map(function (s) { return el("li", { text: tr(s) }); })),
+      ]));
+      pageView.appendChild(el("p", { class: "art-pending", text: L("Bài truyền thông đầy đủ của chủ đề này đang được biên soạn theo cấu trúc chung và sẽ đăng sau khi bác sĩ duyệt.", "The full article for this topic is being prepared and will be published after medical review.") }));
+    }
     if (tp.files && tp.files.length) {
       pageView.appendChild(el("section", { class: "page-section" }, [
         el("h2", { text: L("Tài liệu tải về", "Downloads") }),
         el("ul", {}, tp.files.map(function (f) { return el("li", {}, [el("a", { href: f.url, target: "_blank", rel: "noopener noreferrer", text: tr(f.name) })]); })),
+      ]));
+    }
+    if (art && art.refs && art.refs.length) {
+      pageView.appendChild(el("section", { class: "page-section art-refs" }, [
+        el("h2", { text: L("Tài liệu tham khảo", "References") }),
+        el("ol", {}, art.refs.map(function (r) { return el("li", { text: r }); })),
+        el("p", { class: "art-meta", text: L("Mã ", "Code ") + art.code + L(" · Phiên bản ", " · Version ") + art.version + (art.approved ? L(" · Duyệt ngày ", " · Approved ") + formatDate(art.approved) : "") }),
       ]));
     }
     pageView.appendChild(el("section", { class: "page-section gdsk-qr" }, [
