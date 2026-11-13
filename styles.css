@@ -682,3 +682,20 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .khoa-select { font: inherit; font-size: 14px; min-height: 40px; padding: 8px 36px 8px 12px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text); max-width: 100%; }
 .khoa-select:focus-visible { outline: 3px solid #ffbf47; outline-offset: 2px; }
 .gdsk-empty { grid-column: 1 / -1; padding: 16px 18px; border-radius: 12px; border: 1px dashed var(--border); background: var(--surface); color: var(--dim); }
+
+/* Bài truyền thông GDSK đầy đủ */
+.art-heading { font-size: 18px; font-weight: 700; color: var(--brand, #0b4f9c); margin: 4px 0 14px; line-height: 1.4; }
+.art-info { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; margin: 0 0 22px; padding: 14px 16px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); font-size: 15px; }
+.art-info dt { font-weight: 700; color: var(--dim); }
+.art-info dd { margin: 0; }
+.art-section ol.art-steps { padding-left: 0; list-style: none; }
+.art-section ol.art-steps li { padding: 10px 14px; margin: 0 0 8px; border-left: 4px solid var(--brand, #0b4f9c); background: var(--surface); border-radius: 0 10px 10px 0; }
+.art-note { padding: 12px 14px; border-radius: 10px; border: 1px solid #f3c2c2; background: #fff5f5; color: #8a1313; font-weight: 600; }
+.art-key { margin: 26px 0; padding: 18px 20px; border-radius: 14px; background: linear-gradient(135deg, #0b4f9c, #28186e); color: #fff; }
+.art-key strong { display: block; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #ffd6d6; margin-bottom: 6px; }
+.art-key p { margin: 0; font-size: 17px; font-weight: 700; line-height: 1.5; }
+.art-refs ol { font-size: 13.5px; color: var(--dim); word-break: break-word; }
+.art-meta { font-size: 13px; color: var(--dim); margin-top: 10px; }
+.art-pending { padding: 12px 14px; border-radius: 10px; border: 1px dashed var(--border); color: var(--dim); }
+:root[data-theme="dark"] .art-note { background: #3a1414; color: #ffd0d0; border-color: #6b2323; }
+@media (max-width: 640px) { .art-info { grid-template-columns: 1fr; } .art-info dt { margin-top: 4px; } }
