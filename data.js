@@ -916,8 +916,8 @@ window.PULSE_DATA = {
       "en": "How do I give feedback on nursing care?"
      },
      "p": {
-      "vi": "Góp ý trực tiếp với điều dưỡng trưởng khoa, bỏ thư vào hòm thư góp ý của bệnh viện, hoặc gọi tổng đài 0296 3562 357 gặp Phòng Điều dưỡng. Mọi góp ý đều được ghi nhận và phản hồi.",
-      "en": "Speak to the ward's head nurse, use the hospital feedback box, or call 0296 3562 357 and ask for the Nursing Department. All feedback is recorded and answered."
+      "vi": "Góp ý trực tiếp với điều dưỡng trưởng khoa, gửi hộp thư góp ý tại khoa, qua Hội đồng người bệnh, hoặc gọi tổng đài 0296 3562 357 gặp Phòng Điều dưỡng. Mọi góp ý đều được ghi nhận và phản hồi.",
+      "en": "Speak to the ward's head nurse, use the ward feedback box or the Patient Council, or call 0296 3562 357 and ask for the Nursing Department. All feedback is recorded and answered."
      }
     },
     {
