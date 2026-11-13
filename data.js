@@ -1419,7 +1419,8 @@ window.PULSE_DATA = {
      "Rửa tay trước khi ăn, sau khi đi vệ sinh, trước và sau khi chăm sóc người bệnh.",
      "Thời gian rửa tay với xà phòng ít nhất 40–60 giây."
     ],
-    "slug": "rua-tay-dung-cach"
+    "slug": "rua-tay-dung-cach",
+    "khoa": "Khoa Kiểm soát nhiễm khuẩn"
    },
    {
     "group": "an",
@@ -1429,7 +1430,8 @@ window.PULSE_DATA = {
      "Luôn kéo thanh chắn giường khi người bệnh nằm; để vật dụng cần thiết trong tầm với.",
      "Báo ngay điều dưỡng khi người bệnh mệt, hoa mắt hoặc vừa dùng thuốc an thần."
     ],
-    "slug": "phong-te-nga-khi-nam-vien"
+    "slug": "phong-te-nga-khi-nam-vien",
+    "khoa": "Phòng Điều dưỡng"
    },
    {
     "group": "an",
@@ -1439,7 +1441,8 @@ window.PULSE_DATA = {
      "Không tự ý mua thêm, ngưng hoặc đổi thuốc; báo tiền sử dị ứng thuốc cho nhân viên y tế.",
      "Hỏi điều dưỡng khi chưa rõ cách dùng; mang theo toa thuốc khi tái khám."
     ],
-    "slug": "dung-thuoc-an-toan"
+    "slug": "dung-thuoc-an-toan",
+    "khoa": "Phòng Điều dưỡng"
    },
    {
     "group": "an",
@@ -1449,7 +1452,8 @@ window.PULSE_DATA = {
      "Giữ da khô, sạch; dùng nệm chống loét khi có chỉ định.",
      "Báo điều dưỡng khi thấy vùng da đỏ, phồng hoặc trầy ở lưng, mông, gót chân."
     ],
-    "slug": "phong-loet-ti-de"
+    "slug": "phong-loet-ti-de",
+    "khoa": "Phòng Điều dưỡng"
    },
    {
     "group": "man",
@@ -1459,7 +1463,8 @@ window.PULSE_DATA = {
      "Ăn nhạt, hạn chế rượu bia, không hút thuốc lá, vận động đều đặn.",
      "Uống thuốc hằng ngày kể cả khi huyết áp đã ổn, không tự ý ngưng thuốc."
     ],
-    "slug": "tang-huyet-ap"
+    "slug": "tang-huyet-ap",
+    "khoa": "Khoa Nội tổng quát"
    },
    {
     "group": "man",
@@ -1469,7 +1474,8 @@ window.PULSE_DATA = {
      "Theo dõi đường huyết theo hướng dẫn; dùng thuốc, tiêm insulin đúng giờ.",
      "Kiểm tra bàn chân mỗi ngày; đến bệnh viện khi có vết thương lâu lành."
     ],
-    "slug": "dai-thao-duong"
+    "slug": "dai-thao-duong",
+    "khoa": "Khoa Nội tổng quát"
    },
    {
     "group": "man",
@@ -1479,7 +1485,8 @@ window.PULSE_DATA = {
      "Dùng thuốc dự phòng (thuốc xịt) hằng ngày theo đơn kể cả khi không khó thở; luôn mang theo thuốc cắt cơn; súc miệng sau mỗi lần xịt.",
      "Đến bệnh viện ngay khi khó thở nhiều, chỉ nói được từng từ, môi tím, hoặc dùng thuốc cắt cơn không đỡ."
     ],
-    "slug": "hen-phe-quan"
+    "slug": "hen-phe-quan",
+    "khoa": "Khoa Nội tổng quát"
    },
    {
     "group": "man",
@@ -1489,7 +1496,8 @@ window.PULSE_DATA = {
      "Đưa người bệnh đến bệnh viện gần nhất ngay, ghi lại thời điểm khởi phát triệu chứng.",
      "Không tự ý cho ăn, uống hoặc dùng thuốc khi người bệnh chưa được thăm khám."
     ],
-    "slug": "nhan-biet-som-dot-quy"
+    "slug": "nhan-biet-som-dot-quy",
+    "khoa": "Khoa Nội tổng quát"
    },
    {
     "group": "man",
@@ -1499,7 +1507,8 @@ window.PULSE_DATA = {
      "Người bệnh có chế độ ăn bệnh lý cần theo đúng tư vấn của khoa Dinh dưỡng.",
      "Báo nhân viên y tế khi người bệnh ăn kém, sụt cân hoặc nuốt khó."
     ],
-    "slug": "dinh-duong-cho-nguoi-benh"
+    "slug": "dinh-duong-cho-nguoi-benh",
+    "khoa": "Khoa Dinh dưỡng"
    },
    {
     "group": "tn",
@@ -1509,7 +1518,8 @@ window.PULSE_DATA = {
      "Khi sốt cao, hạ sốt bằng paracetamol, không dùng aspirin, ibuprofen.",
      "Đến bệnh viện ngay khi đau bụng, nôn nhiều, chảy máu, lừ đừ, tay chân lạnh."
     ],
-    "slug": "sot-xuat-huyet"
+    "slug": "sot-xuat-huyet",
+    "khoa": "Khoa Truyền nhiễm"
    },
    {
     "group": "tn",
@@ -1519,7 +1529,8 @@ window.PULSE_DATA = {
      "Uống thuốc đủ liều, đủ thời gian theo phác đồ, không bỏ thuốc.",
      "Đeo khẩu trang, che miệng khi ho, nhà ở thông thoáng."
     ],
-    "slug": "lao-phoi"
+    "slug": "lao-phoi",
+    "khoa": "Khoa Truyền nhiễm"
    },
    {
     "group": "me",
@@ -1529,7 +1540,8 @@ window.PULSE_DATA = {
      "Cho trẻ nghỉ học, theo dõi tại nhà theo hướng dẫn của nhân viên y tế.",
      "Đưa trẻ đến bệnh viện ngay khi sốt cao không hạ, giật mình, run chi, nôn nhiều."
     ],
-    "slug": "tay-chan-mieng-o-tre"
+    "slug": "tay-chan-mieng-o-tre",
+    "khoa": "Khoa Nhi"
    },
    {
     "group": "me",
@@ -1539,7 +1551,8 @@ window.PULSE_DATA = {
      "Bú mẹ hoàn toàn trong 6 tháng đầu, không cần cho uống thêm nước.",
      "Tiếp tục cho bú đến 24 tháng hoặc lâu hơn, kết hợp ăn dặm hợp lý."
     ],
-    "slug": "nuoi-con-bang-sua-me"
+    "slug": "nuoi-con-bang-sua-me",
+    "khoa": "Khoa Phụ sản"
    }
   ]
  },

@@ -670,3 +670,11 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .back-link:focus-visible { outline: 3px solid #ffbf47; outline-offset: 2px; }
 .page-home { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border); text-align: center; }
 .page-home .back-link { margin-bottom: 0; font-size: 16px; padding: 12px 24px; }
+
+/* Lọc GDSK theo khoa */
+.khoa-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 4px 0 18px; }
+.khoa-filter-label { font-size: 13px; font-weight: 700; color: var(--dim); margin-right: 2px; }
+.chip { font: inherit; font-size: 13px; padding: 6px 12px; min-height: 34px; border-radius: 999px; border: 1px solid var(--border); background: var(--surface); color: var(--text); cursor: pointer; }
+.chip[aria-pressed="true"] { background: var(--brand); border-color: var(--brand); color: #fff; }
+.chip:focus-visible { outline: 3px solid #ffbf47; outline-offset: 2px; }
+.gdsk-khoa { font-size: 13px; font-weight: 600; color: var(--dim); margin: -4px 0 8px; }
