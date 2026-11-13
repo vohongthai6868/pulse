@@ -588,6 +588,7 @@
       homeView.hidden = true;
       pageView.hidden = false;
       if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else if (name.indexOf("gdsk:") === 0) renderGdskPage(name.slice(5)); else renderPage(name);
+      pageView.appendChild(el("div", { class: "page-home" }, [el("a", { class: "back-link home-btn", href: "#top", text: L("← Về trang chủ", "← Back to home") })]));
       if (scroll) window.scrollTo(0, 0);
     } else {
       var wasPage = !pageView.hidden;
