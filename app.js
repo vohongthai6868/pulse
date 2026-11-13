@@ -172,6 +172,61 @@
     });
   }
 
+
+  // ---- Tin, thông báo từ Google Sheet (Ban biên tập) ----
+  function parseCSV(text) {
+    var rows = [], row = [], f = "", q = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+      else if (c === '"') q = true;
+      else if (c === ",") { row.push(f); f = ""; }
+      else if (c === "\n" || c === "\r") { if (c === "\r" && text[i + 1] === "\n") i++; row.push(f); rows.push(row); row = []; f = ""; }
+      else f += c;
+    }
+    if (f || row.length) { row.push(f); rows.push(row); }
+    return rows;
+  }
+  function plain(s) { return String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase().trim(); }
+  function sheetDate(s) {
+    s = String(s || "").trim();
+    var m = /^(\d{4})-(\d{1,2})-(\d{1,2})/.exec(s);
+    if (m) return m[1] + "-" + ("0" + m[2]).slice(-2) + "-" + ("0" + m[3]).slice(-2);
+    m = /^(\d{1,2})\/(\d{1,2})\/(\d{4})/.exec(s);
+    if (!m) return "";
+    var a = +m[1], b = +m[2], d = a, mo = b;
+    if (b > 12 && a <= 12) { d = b; mo = a; }
+    if (mo < 1 || mo > 12 || d < 1 || d > 31) return "";
+    return m[3] + "-" + ("0" + mo).slice(-2) + "-" + ("0" + d).slice(-2);
+  }
+  function safeUrl(u) { u = String(u || "").trim(); return /^(https:\/\/|#\/)/.test(u) ? u : ""; }
+  function loadSheetNews() {
+    var id = (window.PULSE_CONFIG || {}).newsSheetId;
+    if (!id || !window.fetch) return;
+    fetch("https://docs.google.com/spreadsheets/d/" + encodeURIComponent(id) + "/gviz/tq?tqx=out:csv&headers=1", { credentials: "omit" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+      .then(function (txt) {
+        var rows = parseCSV(txt).slice(1), catByLabel = {}, addN = [], addT = [];
+        Object.keys(DATA.categories).forEach(function (k) { catByLabel[plain(DATA.categories[k].label.vi)] = k; });
+        var seen = {}; DATA.news.forEach(function (n) { seen[plain(n.title.vi)] = 1; });
+        rows.forEach(function (r) {
+          if (plain(r[6]) !== "da duyet") return;
+          var date = sheetDate(r[0]), title = String(r[3] || "").trim();
+          if (!date || !title) return;
+          if (plain(r[1]) === "thong bao") { addT.push({ date: date, text: { vi: title, en: title } }); return; }
+          if (seen[plain(title)]) return;
+          var sum = String(r[4] || "").trim();
+          addN.push({ category: catByLabel[plain(r[2])] || "HOATDONG", title: { vi: title, en: title }, summary: { vi: sum, en: sum }, url: safeUrl(r[5]), date: date });
+        });
+        if (!addN.length && !addT.length) return;
+        var byDate = function (a, b) { return (b.date || "").localeCompare(a.date || ""); };
+        DATA.news = addN.concat(DATA.news).sort(byDate);
+        DATA.notices = addT.concat(DATA.notices || []).sort(byDate);
+        renderNews(); renderNotices(); renderHot(); renderTopics();
+      })
+      .catch(function () { /* giữ nội dung sẵn có */ });
+  }
+
   function renderTopics() {
     [["topic-list", true], ["footer-topics", false]].forEach(function (cfg) {
       var list = $(cfg[0]);
@@ -567,4 +622,5 @@
   })();
 
   renderAll();
+  loadSheetNews();
 })();

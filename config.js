@@ -11,4 +11,8 @@ window.PULSE_CONFIG = {
 
   // Liên kết tới Phòng sáng tạo (chỉ dùng khi chạy trên máy qua Mo-Pulse.cmd). Để trống trên website công khai.
   studioUrl: "",
+
+  // Google Sheet đăng tin, thông báo (Ban biên tập sửa trên Drive, web tự đọc).
+  // Chỉ dòng có Trạng thái "Đã duyệt" mới hiện lên web. Để trống = tắt.
+  newsSheetId: "1z8GFVBlLOf201bIPIJ1MBBhTZ8mzW4JjVYGit7gomSo",
 };
