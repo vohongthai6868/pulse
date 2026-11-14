@@ -3683,7 +3683,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Nội tiêu hóa · Phòng Điều dưỡng"
     },
-    "icon": "shield"
+    "icon": "shield",
+    "poster": {
+     "img": "img/gdsk/poster-viem-gan-b.jpg",
+     "caption": "Poster Viêm gan B"
+    }
    },
    {
     "group": "man",
