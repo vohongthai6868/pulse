@@ -3936,7 +3936,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
-    "icon": "wind"
+    "icon": "wind",
+    "poster": {
+     "img": "img/gdsk/poster-viem-phe-quan.jpg",
+     "caption": "Poster Viêm phế quản cấp"
+    }
    },
    {
     "group": "tn",
