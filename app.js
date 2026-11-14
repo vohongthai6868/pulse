@@ -528,6 +528,7 @@
   function renderTopicPage(key) {
     var cat = DATA.categories[key];
     pageView.textContent = "";
+    pageView.classList.remove("art-v2");
     pageView.appendChild(el("a", { class: "back-link", href: "#top", text: t("backHome") }));
     pageView.appendChild(el("span", { class: "tag", style: "--c:" + cat.color, text: t("topicHeading") }));
     pageView.appendChild(el("h1", { class: "page-title", text: cat.label[state.lang] }));
@@ -541,6 +542,7 @@
   function renderKhoaPage(key) {
     var k = DATA.khoa[key];
     pageView.textContent = "";
+    pageView.classList.remove("art-v2");
     pageView.appendChild(el("a", { class: "back-link", href: "#dept-section", text: L("← Danh sách khoa, phòng", "← Departments") }));
     pageView.appendChild(el("span", { class: "tag", style: "--c:#0b4f9c", text: L("Trang khoa", "Department page") }));
     pageView.appendChild(el("h1", { class: "page-title", text: tr(k.name) }));
@@ -579,16 +581,112 @@
 
   var GDSK_ICONS = {"hand": "<path d=\"M18 11V6a2 2 0 0 0-4 0v5\"/><path d=\"M14 10V4a2 2 0 0 0-4 0v6\"/><path d=\"M10 10.5V6a2 2 0 0 0-4 0v8\"/><path d=\"M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15\"/>", "walk": "<path d=\"M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z\"/><path d=\"M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z\"/><path d=\"M16 17h4\"/><path d=\"M4 13h4\"/>", "pill": "<path d=\"m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z\"/><path d=\"m8.5 8.5 7 7\"/>", "bed": "<path d=\"M2 4v16\"/><path d=\"M2 8h18a2 2 0 0 1 2 2v10\"/><path d=\"M2 17h20\"/><path d=\"M6 8v9\"/>", "pulse": "<path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/>", "drop": "<path d=\"M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z\"/>", "wind": "<path d=\"M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2\"/><path d=\"M9.6 4.6A2 2 0 1 1 11 8H2\"/><path d=\"M12.6 19.4A2 2 0 1 0 14 16H2\"/>", "clock": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/>", "apple": "<path d=\"M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z\"/><path d=\"M10 2c1 .5 2 2 2 5\"/>", "bug": "<path d=\"m8 2 1.88 1.88\"/><path d=\"M14.12 3.88 16 2\"/><path d=\"M9 7.13v-1a3 3 0 1 1 6 0v1\"/><path d=\"M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6\"/><path d=\"M12 20v-9\"/><path d=\"M6.53 9C4.6 8.8 3 7.1 3 5\"/><path d=\"M6 13H2\"/><path d=\"M3 21c0-2.1 1.7-3.9 3.8-4\"/><path d=\"M20.97 5c0 2.1-1.6 3.8-3.5 4\"/><path d=\"M22 13h-4\"/><path d=\"M17.2 17c2.1.1 3.8 1.9 3.8 4\"/>", "baby": "<path d=\"M9 12h.01\"/><path d=\"M15 12h.01\"/><path d=\"M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5\"/><path d=\"M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1\"/>", "heart": "<path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"/>", "eye": "<path d=\"M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/>", "thermo": "<path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"/>", "clip": "<rect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\"/><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/><path d=\"m9 14 2 2 4-4\"/>", "flame": "<path d=\"M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z\"/>", "bandage": "<path d=\"M10 10.01h.01\"/><path d=\"M10 14.01h.01\"/><path d=\"M14 10.01h.01\"/><path d=\"M14 14.01h.01\"/><path d=\"M18 6v12\"/><path d=\"M6 6v12\"/><rect x=\"2\" y=\"6\" width=\"20\" height=\"12\" rx=\"2\"/>", "shield": "<path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/><path d=\"m9 12 2 2 4-4\"/>", "steth": "<path d=\"M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3\"/><path d=\"M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4\"/><circle cx=\"20\" cy=\"10\" r=\"2\"/>", "flask": "<path d=\"M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5s-2.5-1.1-2.5-2.5V2\"/><path d=\"M8.5 2h7\"/><path d=\"M14.5 16h-5\"/>", "scan": "<path d=\"M3 7V5a2 2 0 0 1 2-2h2\"/><path d=\"M17 3h2a2 2 0 0 1 2 2v2\"/><path d=\"M21 17v2a2 2 0 0 1-2 2h-2\"/><path d=\"M7 21H5a2 2 0 0 1-2-2v-2\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/>", "syringe": "<path d=\"m18 2 4 4\"/><path d=\"m17 7 3-3\"/><path d=\"M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5\"/><path d=\"m9 11 4 4\"/><path d=\"m5 19-3 3\"/><path d=\"m14 4 6 6\"/>", "alert": "<path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4\"/><path d=\"M12 17h.01\"/>", "star": "<path d=\"M11.5 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z\"/>"};
   function gIcon(k, sz) { return '<svg width="' + (sz || 24) + '" height="' + (sz || 24) + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (GDSK_ICONS[k] || GDSK_ICONS.heart) + '</svg>'; }
+
+  function fillCite(node, text) {
+    String(text).split(/(\[\d+\])/).forEach(function (part) {
+      var m = /^\[(\d+)\]$/.exec(part);
+      if (m) { var a = el("a", { class: "cite", href: "javascript:void(0)", text: part, "aria-label": L("Xem nguồn ", "View source ") + m[1] }); a.addEventListener("click", function () { var t = document.getElementById("ref-" + m[1]); if (t) { var d = t.closest("details"); if (d) d.open = true; t.scrollIntoView({ behavior: "smooth", block: "center" }); } }); node.appendChild(a); }
+      else if (part) node.appendChild(document.createTextNode(part));
+    });
+    return node;
+  }
+  function telify(node, text) {
+    String(text).split(/(0296 3562 \d{3})/).forEach(function (part) {
+      if (/^0296 3562 \d{3}$/.test(part)) node.appendChild(el("a", { class: "tel-inline", href: "tel:" + part.replace(/ /g, ""), text: part }));
+      else if (part) fillCite(node, part);
+    });
+    return node;
+  }
+  function artBlocks(box, blocks) {
+    blocks.forEach(function (b) {
+      if (b.sub) box.appendChild(el("h3", { class: "art-sub", text: b.sub }));
+      else if (b.p) box.appendChild(telify(el("p"), b.p));
+      else if (b.items) box.appendChild(el(b.ordered ? "ol" : "ul", { class: b.ordered ? "art-steps" : "" }, b.items.map(function (s) { return telify(el("li"), s); })));
+      else if (b.note) { var nt = el("p", { class: "art-note" }); nt.innerHTML = gIcon("alert", 22); nt.appendChild(telify(el("span"), b.note)); box.appendChild(nt); }
+      else if (b.fig) {
+        var f = el("figure", { class: "art-fig" + (b.fig.small ? " art-fig-sm" : "") }, [
+          el("img", { src: b.fig.img, alt: b.fig.alt || b.fig.cap, loading: "lazy" }),
+          fillCite(el("figcaption"), b.fig.cap),
+        ]);
+        box.appendChild(f);
+      }
+    });
+  }
+  function renderArticleV2(tp, art, g) {
+    pageView.classList.add("art-v2");
+    pageView.appendChild(el("div", { class: "art-head" }, [
+      el("img", { class: "art-logo", src: "logo-nhattan.png", alt: L("Logo Bệnh viện Đa khoa Nhật Tân", "Nhat Tan General Hospital logo"), width: "129", height: "40" }),
+      art.lead ? el("p", { class: "art-lead", text: art.lead }) : null,
+      art.heading ? el("p", { class: "art-action", text: art.heading }) : null,
+    ]));
+    if (art.urgent) {
+      var u = el("section", { class: "art-urgent", "aria-labelledby": "art-urgent-h" }, [el("h2", { id: "art-urgent-h", text: art.urgent.h || L("Cần cấp cứu ngay", "Emergency") })]);
+      u.firstChild.insertAdjacentHTML("afterbegin", gIcon("alert", 24));
+      artBlocks(u, art.urgent.blocks);
+      u.appendChild(el("a", { class: "art-btn art-btn-call", href: "tel:02963562357" }, [el("span", { text: L("Gọi bệnh viện 24/24", "Call the hospital 24/7") }), el("strong", { text: "0296 3562 357" })]));
+      pageView.appendChild(u);
+    }
+    if (art.remember && art.remember.length) {
+      var r = el("section", { class: "art-remember" }, [el("h2", { text: art.rememberTitle || L("3 điều cần nhớ hôm nay", "3 things to remember today") }),
+        el("ul", {}, art.remember.map(function (k) { var li = el("li"); li.innerHTML = gIcon("star", 18); li.appendChild(document.createTextNode(k)); return li; }))]);
+      pageView.appendChild(r);
+    }
+    art.sections.forEach(function (sec) {
+      var box = el("section", { class: "page-section art-section" + (sec.cls ? " " + sec.cls : "") }, [el("h2", { text: sec.h })]);
+      artBlocks(box, sec.blocks);
+      pageView.appendChild(box);
+    });
+    if (tp.poster) pageView.appendChild(el("section", { class: "page-section art-section" }, [
+      el("h2", { text: L("Poster tóm tắt", "Summary poster") }),
+      el("figure", { class: "art-poster" }, [
+        el("a", { href: tp.poster.img, target: "_blank", rel: "noopener" }, [el("img", { src: tp.poster.img, alt: tr(tp.poster.caption), loading: "lazy" })]),
+        el("figcaption", { text: tr(tp.poster.caption) + L(" (bấm để phóng to)", " (tap to enlarge)") }),
+      ])]));
+    if (art.quiz && art.quiz.length) {
+      var q = el("section", { class: "page-section art-quiz" }, [el("h2", { text: L("Tự kiểm tra: bạn đã nhớ chưa?", "Self-check: do you remember?") }),
+        el("p", { class: "art-quiz-hint", text: L("Bấm vào từng câu hỏi để xem đáp án.", "Tap each question to see the answer.") })]);
+      art.quiz.forEach(function (it) { q.appendChild(el("details", {}, [el("summary", { text: it.q }), telify(el("p"), it.a)])); });
+      pageView.appendChild(q);
+    }
+    pageView.appendChild(el("section", { class: "page-section art-contact" }, [
+      el("h2", { text: L("Liên hệ Bệnh viện Đa khoa Nhật Tân", "Contact Nhat Tan General Hospital") }),
+      el("a", { class: "art-btn art-btn-call", href: "tel:02963562357" }, [el("span", { text: L("Gọi tổng đài, cấp cứu 24/24", "Call switchboard, emergency 24/7") }), el("strong", { text: "0296 3562 357" })]),
+      el("a", { class: "art-btn art-btn-work", href: "tel:02963562678" }, [el("span", { text: L("Gọi liên hệ công tác", "Call administrative contact") }), el("strong", { text: "0296 3562 678" })]),
+      el("p", { text: L("Ngoài giờ hoặc ở xa: đến bệnh viện, cơ sở y tế gần nhất.", "Out of hours or far away: go to the nearest hospital or health facility.") }),
+      el("p", { text: L("Địa chỉ: 32 Phạm Ngọc Thạch, Khóm Châu Long 7, Phường Châu Đốc, Tỉnh An Giang.", "Address: 32 Pham Ngoc Thach, Chau Long 7, Chau Doc Ward, An Giang Province.") }),
+    ]));
+    if (art.refs && art.refs.length) {
+      var det = el("details", { class: "art-refs-box" }, [el("summary", { text: L("Nguồn tham khảo (" + art.refs.length + ") — bấm để xem", "References (" + art.refs.length + ") — tap to view") }),
+        el("ol", {}, art.refs.map(function (r, i) {
+          var li = el("li", { id: "ref-" + (i + 1) });
+          if (typeof r === "string") li.textContent = r;
+          else {
+            li.appendChild(document.createTextNode(r.t + " "));
+            if (r.url) li.appendChild(el("a", { class: "art-src", href: r.url, target: "_blank", rel: "noopener noreferrer", text: L("Xem nguồn " + (r.org || ""), "Open source " + (r.org || "")).trim() }));
+          }
+          return li;
+        })),
+        art.credit ? el("p", { class: "art-meta", text: art.credit }) : null]);
+      pageView.appendChild(el("section", { class: "page-section art-refs" }, [
+        el("h2", { text: L("Nguồn và phiên bản", "Sources and version") }),
+        det,
+        el("p", { class: "art-meta", text: L("Mã ", "Code ") + art.code + L(" · Phiên bản ", " · Version ") + art.version + (art.checked ? L(" · Ngày kiểm tra nguồn ", " · Sources checked ") + formatDate(art.checked) : "") + L(" · Đơn vị phụ trách: ", " · Responsible: ") + (art.unit || tr(tp.khoa) || "Phòng Điều dưỡng") + (art.issued ? L(" · Đã ký ban hành", " · Officially issued") : "") }),
+      ]));
+    }
+  }
   function renderGdskPage(slug) {
     var tp = DATA.gdsk.topics.filter(function (x) { return x.slug === slug; })[0];
     var g = DATA.gdsk.groups[tp.group];
     pageView.textContent = "";
+    pageView.classList.remove("art-v2");
     pageView.appendChild(el("a", { class: "back-link", href: "#gdsk-section", text: L("← Góc giáo dục sức khỏe", "← Health education corner") }));
     pageView.appendChild(el("span", { class: "tag", style: "--c:" + g.color, text: tr(g.label) }));
     pageView.appendChild(el("h1", { class: "page-title", text: tr(tp.title) }));
     if (tp.khoa) pageView.appendChild(el("p", { class: "gdsk-khoa", text: L("Khoa, phòng phụ trách: ", "Responsible department: ") + tr(tp.khoa) }));
     var art = tp.article;
-    if (art) {
+    if (art && art.layout === "v2") {
+      renderArticleV2(tp, art, g);
+    } else if (art) {
       var hero = el("div", { class: "art-hero", style: "--c:" + g.color }, [el("div", { class: "art-hero-ico" }), el("p", { class: "art-heading", text: art.heading || tr(tp.title) })]);
       hero.firstChild.innerHTML = gIcon(tp.icon, 56);
       pageView.appendChild(hero);
@@ -624,7 +722,7 @@
         el("ul", {}, tp.files.map(function (f) { return el("li", {}, [el("a", { href: f.url, target: "_blank", rel: "noopener noreferrer", text: tr(f.name) })]); })),
       ]));
     }
-    if (art && art.refs && art.refs.length) {
+    if (art && art.layout !== "v2" && art.refs && art.refs.length) {
       pageView.appendChild(el("section", { class: "page-section art-refs" }, [
         el("h2", { text: L("Tài liệu tham khảo", "References") }),
         el("ol", {}, art.refs.map(function (r) { return el("li", { text: r }); })),
@@ -643,6 +741,7 @@
   function renderPage(name) {
     var page = DATA.pages[name];
     pageView.textContent = "";
+    pageView.classList.remove("art-v2");
     pageView.appendChild(el("a", { class: "back-link", href: "#top", text: t("backHome") }));
     pageView.appendChild(el("h1", { class: "page-title", text: page.title[state.lang] }));
     if (page.intro) pageView.appendChild(el("p", { class: "page-intro", text: page.intro[state.lang] }));
