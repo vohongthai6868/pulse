@@ -609,7 +609,7 @@
       pageView.appendChild(el("section", { class: "page-section art-refs" }, [
         el("h2", { text: L("Tài liệu tham khảo", "References") }),
         el("ol", {}, art.refs.map(function (r) { return el("li", { text: r }); })),
-        el("p", { class: "art-meta", text: L("Mã ", "Code ") + art.code + L(" · Phiên bản ", " · Version ") + art.version + (art.approved ? L(" · Duyệt ngày ", " · Approved ") + formatDate(art.approved) : "") }),
+        el("p", { class: "art-meta", text: L("Mã ", "Code ") + art.code + L(" · Phiên bản ", " · Version ") + art.version + (art.approved ? L(" · Duyệt ngày ", " · Approved ") + formatDate(art.approved) : (art.issued ? L(" · Đã ký ban hành", " · Officially issued") : "")) }),
       ]));
     }
     pageView.appendChild(el("section", { class: "page-section gdsk-qr" }, [
