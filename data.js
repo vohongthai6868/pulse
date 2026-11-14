@@ -1945,137 +1945,178 @@ window.PULSE_DATA = {
     "slug": "dai-thao-duong",
     "khoa": "Khoa Nội tổng quát",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.DTD.BTT",
-     "version": "03",
-     "approved": "2026-11-12",
-     "audience": "người trưởng thành mắc đái tháo đường típ 2 và người chăm sóc.",
-     "goal": "sau khi đọc bài, người bệnh biết cách ăn uống, dùng thuốc, chăm sóc bàn chân, xử trí ban đầu khi hạ đường huyết và nhận biết khi nào cần đến bệnh viện ngay.",
-     "heading": "Đái tháo đường: chăm sóc đúng mỗi ngày, phòng ngừa biến chứng",
+     "version": "04",
+     "issued": true,
+     "lead": "Dành cho người trưởng thành mắc đái tháo đường típ 2 và người chăm sóc.",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Người bệnh lơ mơ, bất tỉnh, co giật, khó thở hoặc không nuốt an toàn: không cho ăn uống, không đổ đường vào miệng. Đưa ngay đến bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24). Nếu đã được kê glucagon, người hỗ trợ dùng theo hướng dẫn đã được huấn luyện. [1]"
+       },
+       {
+        "p": "Nôn nhiều, không giữ được thức ăn hoặc nước uống, đau bụng kèm thở nhanh, sâu hay hơi thở mùi trái cây có thể là dấu hiệu nhiễm toan ceton. Đến cấp cứu ngay, không chờ lịch tái khám. [4]"
+       },
+       {
+        "fig": {
+         "img": "img/gdsk/dai-thao-duong/hinh-1.jpg",
+         "small": true,
+         "cap": "Hình 1. Khi có dấu hiệu nguy hiểm, đưa người bệnh đến cơ sở y tế gần nhất ngay."
+        }
+       }
+      ]
+     },
+     "remember": [
+      "Dùng thuốc đúng đơn; không tự bỏ thuốc khi thấy khỏe.",
+      "Ăn đúng bữa, vận động phù hợp và đo đường huyết theo kế hoạch riêng.",
+      "Kiểm tra bàn chân mỗi ngày; nhận biết sớm hạ đường huyết."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về bệnh đái tháo đường",
+       "h": "Hiểu ngắn gọn về bệnh",
        "blocks": [
         {
-         "p": "Đái tháo đường là bệnh mạn tính, xảy ra khi cơ thể không tạo đủ insulin hoặc sử dụng insulin không hiệu quả, làm đường trong máu tăng cao. Người bệnh có thể khát nhiều, tiểu nhiều, mệt mỏi, nhìn mờ hoặc sụt cân; nhiều trường hợp không có biểu hiện rõ."
+         "p": "Đái tháo đường típ 2 là bệnh mạn tính: cơ thể sử dụng insulin không hiệu quả, khiến đường trong máu tăng cao. Bệnh có thể diễn tiến âm thầm. Dùng thuốc đúng, ăn uống phù hợp và theo dõi đều đặn giúp bảo vệ tim, mắt, thận và bàn chân."
         },
         {
-         "p": "Đường huyết cao kéo dài có thể gây tổn thương tim, mạch máu, mắt, thận và thần kinh. Điều trị đều đặn, ăn uống hợp lý và vận động phù hợp giúp phòng ngừa hoặc làm chậm biến chứng. [1]"
+         "p": "Trẻ em, phụ nữ mang thai và người mắc đái tháo đường típ 1 cần được hướng dẫn riêng."
         }
        ]
       },
       {
-       "h": "2. Ăn uống hợp lý, phù hợp với từng người",
+       "h": "Chăm sóc và phòng biến chứng",
        "blocks": [
         {
-         "p": "Người bệnh cần ăn đúng bữa, kiểm soát lượng thức ăn và không tự kiêng hoàn toàn cơm hay chất bột đường. Có thể hình dung một đĩa ăn gồm:"
+         "p": "Ăn uống: thử chia đĩa ăn thành ½ rau ít tinh bột, ¼ cá, thịt nạc, trứng hoặc đậu phụ và ¼ cơm, bún, khoai. Ưu tiên nước lọc. Không tự bỏ hoàn toàn cơm hoặc chất bột đường. Khẩu phần cần điều chỉnh nếu có bệnh thận, suy dinh dưỡng hoặc mang thai. [2]"
+        },
+        {
+         "fig": {
+          "img": "img/gdsk/dai-thao-duong/hinh-2.jpg",
+          "cap": "Hình 2. Gợi ý đĩa ăn: ½ rau ít tinh bột, ¼ đạm, ¼ chất bột đường; ưu tiên nước lọc. Khẩu phần cần phù hợp từng người. [2]"
+         }
+        },
+        {
+         "p": "Thuốc và theo dõi: dùng đúng đơn; ghi kết quả đo và các triệu chứng bất thường. Nếu quên liều, ăn kém hoặc nôn, hỏi nhân viên y tế cách xử trí theo loại thuốc đang dùng. Người tiêm insulin cần kế hoạch riêng khi bị ốm."
+        },
+        {
+         "fig": {
+          "img": "img/gdsk/dai-thao-duong/hinh-3.jpg",
+          "small": true,
+          "cap": "Hình 3. Dùng thuốc đúng đơn, không tự tăng, giảm liều hoặc ngừng thuốc."
+         }
+        },
+        {
+         "fig": {
+          "img": "img/gdsk/dai-thao-duong/hinh-4.jpg",
+          "small": true,
+          "cap": "Hình 4. Đo và ghi kết quả đường huyết theo kế hoạch riêng; số trên máy chỉ để minh họa."
+         }
+        },
+        {
+         "p": "Vận động: bắt đầu nhẹ, tăng dần theo khả năng và hướng dẫn của nhân viên y tế. Không hút thuốc."
+        },
+        {
+         "fig": {
+          "img": "img/gdsk/dai-thao-duong/hinh-5.jpg",
+          "small": true,
+          "cap": "Hình 5. Vận động phù hợp với sức khỏe; bắt đầu nhẹ và tăng dần theo hướng dẫn."
+         }
+        },
+        {
+         "p": "Bàn chân: nhìn lòng chân, mu chân và kẽ ngón mỗi ngày. Thử nước trước khi rửa, dùng nước ấm, không nóng; không ngâm chân và lau khô kẽ ngón. Dưỡng ẩm nhưng tránh kẽ ngón. Mang giày dép vừa chân, kể cả trong nhà; kiểm tra bên trong giày. Cắt móng ngang, không tự cắt chai chân. [3]"
+        },
+        {
+         "fig": {
+          "img": "img/gdsk/dai-thao-duong/hinh-6.jpg",
+          "cap": "Hình 6. Kiểm tra lòng bàn chân bằng gương, lau khô kẽ ngón và kiểm tra bên trong giày trước khi mang. [3]"
+         }
+        }
+       ]
+      },
+      {
+       "h": "Tình huống thường gặp: hạ đường huyết",
+       "blocks": [
+        {
+         "p": "Dấu hiệu gợi ý: run tay, vã mồ hôi, đói, hồi hộp, chóng mặt hoặc lú lẫn. Đường huyết dưới 70 mg/dL (3,9 mmol/L) là thấp. [1] Chỉ áp dụng các bước dưới đây cho người lớn còn tỉnh và nuốt an toàn. Nếu không nuốt an toàn, làm theo khung cấp cứu ở đầu trang."
+        },
+        {
+         "sub": "Làm gì?"
         },
         {
          "items": [
-          "Một nửa đĩa: rau ít tinh bột như rau lá, cải, dưa leo.",
-          "Một phần tư đĩa: cá, thịt nạc, trứng hoặc đậu phụ.",
-          "Một phần tư đĩa: cơm, bún, khoai hoặc thực phẩm có chất bột đường."
-         ],
-         "ordered": false
-        },
-        {
-         "p": "Ưu tiên nước lọc; hạn chế nước ngọt, trà sữa và bánh kẹo. Chọn trái cây nguyên miếng với khẩu phần phù hợp thay cho nước ép. Người có bệnh thận, suy dinh dưỡng hoặc đang mang thai cần được tư vấn chế độ ăn riêng. [2]"
-        }
-       ]
-      },
-      {
-       "h": "3. Dùng thuốc đúng và theo dõi đều đặn",
-       "blocks": [
-        {
-         "p": "Dùng thuốc theo đơn, đúng liều và thời điểm đã được hướng dẫn. Không tự ngừng thuốc khi thấy khỏe hoặc đường huyết ổn định. Nếu quên liều hoặc gặp tác dụng không mong muốn, liên hệ nhân viên y tế để được hướng dẫn. Người tiêm insulin cần được hướng dẫn riêng cách dùng thuốc khi bị ốm, ăn kém hoặc nôn."
-        },
-        {
-         "p": "Đo đường huyết theo kế hoạch điều trị; ghi lại kết quả cùng các biểu hiện bất thường. Khi tái khám, mang theo sổ theo dõi và danh sách thuốc. Nếu thường xuyên bị hạ đường huyết, cần báo bác sĩ để điều chỉnh kế hoạch điều trị. [3]"
-        }
-       ]
-      },
-      {
-       "h": "4. Vận động và kiểm tra sức khỏe",
-       "blocks": [
-        {
-         "p": "Duy trì vận động đều đặn, bắt đầu nhẹ và tăng dần theo khả năng; lựa chọn hoạt động phù hợp với tình trạng sức khỏe. Không hút thuốc."
-        },
-        {
-         "p": "Tái khám đúng hẹn để được đánh giá đường huyết, huyết áp, mỡ máu, chức năng thận, mắt và bàn chân theo chỉ định. [1]"
-        }
-       ]
-      },
-      {
-       "h": "5. Bảo vệ bàn chân mỗi ngày",
-       "blocks": [
-        {
-         "p": "Tổn thương thần kinh có thể làm giảm cảm giác, khiến người bệnh không nhận ra vết thương ở chân. Vì vậy, mỗi ngày cần:"
-        },
-        {
-         "items": [
-          "Quan sát lòng bàn chân, mu chân và kẽ ngón; dùng gương hoặc nhờ người thân hỗ trợ.",
-          "Thử nước bằng khuỷu tay hoặc nhiệt kế trước khi rửa; rửa bằng nước ấm, không nóng; không ngâm chân; lau khô, nhất là kẽ ngón.",
-          "Dưỡng ẩm vùng da khô, tránh bôi vào kẽ ngón.",
-          "Mang giày dép vừa chân, kiểm tra bên trong trước khi mang; không đi chân trần, kể cả trong nhà.",
-          "Cắt móng ngang; không tự cắt chai chân hoặc dùng thuốc tẩy chai."
-         ],
-         "ordered": false
-        },
-        {
-         "p": "Khi có vết phồng rộp, loét, sưng đỏ hoặc chảy dịch, cần đi khám sớm, kể cả khi không đau. [4]"
-        }
-       ]
-      },
-      {
-       "h": "6. Nhận biết và xử trí hạ đường huyết",
-       "blocks": [
-        {
-         "p": "Hạ đường huyết có thể gây run tay, vã mồ hôi, đói, hồi hộp, chóng mặt hoặc lú lẫn."
-        },
-        {
-         "p": "Ở người lớn, khi đường huyết dưới 70 mg/dL (3,9 mmol/L) và người bệnh còn tỉnh, nuốt an toàn:"
-        },
-        {
-         "items": [
-          "Bước 1. Dùng 15 g đường hấp thu nhanh, chẳng hạn viên glucose đủ 15 g theo nhãn hoặc khoảng 120 mL nước ép hay nước ngọt có đường.",
-          "Bước 2. Chờ 15 phút, đo lại; nếu vẫn dưới 70 mg/dL, lặp lại bước 1.",
-          "Bước 3. Khi đường huyết hồi phục, ăn bữa chính hoặc bữa phụ có chất bột đường và đạm."
+          "Dùng 15 g đường hấp thu nhanh: viên glucose đủ 15 g theo nhãn, hoặc khoảng 120 mL nước ép, nước ngọt có đường. Không dùng nước ngọt không đường. [1]",
+          "Chờ 15 phút rồi đo lại. Nếu vẫn dưới 70 mg/dL, lặp lại bước 1. Nếu không cải thiện, triệu chứng nặng lên hoặc không thể tự xử trí, tìm hỗ trợ y tế ngay. [1]",
+          "Khi hồi phục, ăn bữa chính hoặc bữa phụ có chất bột đường và đạm. Báo bác sĩ nếu hạ đường huyết tái diễn. [1]"
          ],
          "ordered": true
         },
         {
-         "note": "Người đang uống acarbose: khi hạ đường huyết chỉ dùng viên hoặc bột glucose, không dùng đường kính (đường cát), vì thuốc làm chậm hấp thu loại đường này. [7]"
+         "fig": {
+          "img": "img/gdsk/dai-thao-duong/hinh-7.jpg",
+          "cap": "Hình 7. Quy tắc 15–15: dùng đủ 15 g glucose, chờ 15 phút và đo lại; lặp lại nếu vẫn dưới 70 mg/dL. Chỉ áp dụng khi còn tỉnh và nuốt an toàn. [1]"
+         }
         },
         {
-         "p": "Nếu bất tỉnh, co giật hoặc không nuốt an toàn: không cho ăn uống, không đổ đường vào miệng; đưa ngay đến cơ sở y tế gần nhất. Dùng glucagon nếu đã được kê và người hỗ trợ đã được hướng dẫn. [3]"
+         "note": "Nếu đang dùng acarbose: dùng glucose để xử trí hạ đường huyết; không dùng đường cát thay thế. Hỏi nhân viên y tế cách chuẩn bị glucose phù hợp. [5]"
         }
        ]
       },
       {
-       "h": "7. Khi nào cần đến bệnh viện ngay",
+       "h": "Khi nào đi khám, tái khám và cần mang gì",
        "blocks": [
         {
          "items": [
-          "Lơ mơ, bất tỉnh, co giật, hoặc hạ đường huyết không cải thiện sau khi xử trí.",
-          "Nôn nhiều, đau bụng, thở nhanh hoặc khó thở, hơi thở có mùi trái cây, nhất là khi đường huyết cao: có thể là nhiễm toan ceton, cần cấp cứu. [5]"
-         ],
-         "ordered": false
-        },
-        {
-         "p": "Đi khám sớm, không chờ lịch hẹn khi bàn chân có vết thương, hạ đường huyết tái diễn hoặc đường huyết thường xuyên ngoài mục tiêu."
+          "Khám sớm khi chân có vết phồng rộp, loét, sưng đỏ hoặc chảy dịch, kể cả không đau. Không chờ lịch hẹn. [3]",
+          "Báo bác sĩ nếu hạ đường huyết tái diễn hoặc kết quả đo thường xuyên ngoài mục tiêu đã được hướng dẫn. Không tự tăng hoặc giảm liều thuốc.",
+          "Tái khám đúng hẹn; mang theo sổ đo và danh sách thuốc. Hỏi nhân viên y tế về lịch kiểm tra mắt, thận, huyết áp, mỡ máu và bàn chân."
+         ]
         }
        ]
       }
      ],
-     "key": "Ăn hợp lý · Dùng thuốc đúng · Vận động phù hợp · Theo dõi đều · Chăm sóc bàn chân.",
+     "quiz": [
+      {
+       "q": "Khi đường huyết dưới 70 mg/dL, người bệnh còn tỉnh và nuốt an toàn, bạn sẽ làm gì?",
+       "a": "Dùng 15 g đường hấp thu nhanh, chờ 15 phút rồi đo lại; lặp lại nếu vẫn thấp. Khi hồi phục, ăn bữa chính hoặc bữa phụ. [1]"
+      },
+      {
+       "q": "Nếu người bệnh bất tỉnh, có nên cho uống nước đường không?",
+       "a": "Không. Không cho ăn uống, không đổ đường vào miệng; đưa ngay đến cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357. [1]"
+      }
+     ],
      "refs": [
-      "WHO. Diabetes (fact sheet). who.int/news-room/fact-sheets/detail/diabetes",
-      "CDC. Diabetes Meal Planning. cdc.gov/diabetes/healthy-eating/diabetes-meal-planning.html",
-      "CDC. Treatment of Low Blood Sugar (Hypoglycemia). cdc.gov/diabetes/treatment/treatment-low-blood-sugar-hypoglycemia.html",
-      "CDC. Diabetes and Your Feet. cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html",
-      "CDC. Diabetic Ketoacidosis. cdc.gov/diabetes/about/diabetic-ketoacidosis.html",
-      "Bộ Y tế. Quyết định số 5481/QĐ-BYT ngày 30/12/2020 ban hành Hướng dẫn chẩn đoán và điều trị đái tháo đường típ 2; Quyết định số 1353/QĐ-BYT ngày 23/02/2021 sửa đổi Quyết định số 5481/QĐ-BYT.",
-      "Tóm tắt đặc tính sản phẩm Acarbose 50 mg Tablets, mục 4.4 và 4.5. medicines.org.uk/emc/product/9999/smpc"
-     ]
+      {
+       "t": "CDC. Treatment of Low Blood Sugar (Hypoglycemia), 2024",
+       "url": "https://www.cdc.gov/diabetes/treatment/treatment-low-blood-sugar-hypoglycemia.html",
+       "org": "CDC"
+      },
+      {
+       "t": "CDC. Diabetes Meal Planning, 2024",
+       "url": "https://www.cdc.gov/diabetes/healthy-eating/diabetes-meal-planning.html",
+       "org": "CDC"
+      },
+      {
+       "t": "CDC. Diabetes and Your Feet, 2024",
+       "url": "https://www.cdc.gov/diabetes/diabetes-complications/diabetes-and-your-feet.html",
+       "org": "CDC"
+      },
+      {
+       "t": "CDC. Diabetic Ketoacidosis, 2024",
+       "url": "https://www.cdc.gov/diabetes/about/diabetic-ketoacidosis.html",
+       "org": "CDC"
+      },
+      {
+       "t": "Acarbose 50 mg Tablets, tóm tắt đặc tính sản phẩm, mục 4.4–4.5",
+       "url": "https://www.medicines.org.uk/emc/product/9999/smpc",
+       "org": "EMC"
+      }
+     ],
+     "credit": "Hình 1, 3, 4, 5 lấy từ thiết kế Canva poster Đái tháo đường típ 2. Hình 2, 6, 7 được tạo bằng AI và đối chiếu hướng dẫn CDC [1]–[3]; không phải ảnh người bệnh.",
+     "heading": "Dùng thuốc đúng, ăn uống hợp lý, theo dõi đều để phòng biến chứng.",
+     "checked": "2026-11-08",
+     "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
     "files": [
      {

@@ -731,3 +731,50 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .art-qr img { flex: none; width: 120px; height: 120px; background: #fff; border-radius: 8px; }
 .art-qr p { margin: 4px 0 0; font-size: 14.5px; color: var(--dim); }
 @media (max-width: 640px) { .art-hero { padding: 14px; } .art-hero-ico { width: 64px; height: 64px; } .art-hero-ico svg { width: 40px; height: 40px; } .art-hero .art-heading { font-size: 16.5px; } }
+/* Bài GDSK cấu trúc v2 (theo mẫu tờ Đái tháo đường v06) */
+.art-lead { font-size: 16.5px; color: var(--dim); margin: 0 0 16px; }
+.art-urgent { margin: 0 0 18px; padding: 16px 18px; border-radius: 14px; border: 2px solid #c81e1e; background: #fff5f5; color: #5c0f0f; }
+.art-urgent h2 { display: flex; align-items: center; gap: 8px; margin: 0 0 8px; color: #b20000; font-size: 20px; }
+.art-urgent p { margin: 8px 0; }
+.art-urgent a.tel-inline { color: #b20000; font-weight: 800; }
+:root[data-theme="dark"] .art-urgent { background: #3a1414; color: #ffd0d0; border-color: #e05050; }
+:root[data-theme="dark"] .art-urgent h2, :root[data-theme="dark"] .art-urgent a.tel-inline { color: #ff9a9a; }
+.art-remember { margin: 0 0 22px; padding: 16px 18px; border-radius: 14px; background: linear-gradient(135deg, #0b4f9c, #28186e); color: #fff; }
+.art-remember h2 { margin: 0 0 8px; font-size: 18px; color: #fff; }
+.art-remember ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.art-remember li { display: flex; gap: 8px; align-items: flex-start; font-weight: 700; line-height: 1.45; }
+.art-remember svg { flex: none; color: #ffd166; margin-top: 2px; }
+.art-fig { margin: 12px 0 16px; text-align: center; }
+.art-fig img { width: 100%; max-width: 560px; height: auto; border-radius: 12px; border: 1px solid var(--border); background: #fff; }
+.art-fig-sm img { width: auto; max-width: 200px; border: 0; }
+.art-fig figcaption { font-size: 13.5px; color: var(--dim); font-style: italic; margin-top: 6px; }
+a.cite { font-size: .8em; vertical-align: super; text-decoration: none; margin-left: 1px; }
+.art-quiz details { margin: 8px 0; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.art-quiz summary { cursor: pointer; padding: 12px 14px; font-weight: 700; }
+.art-quiz details p { margin: 0; padding: 0 14px 12px; }
+.art-quiz-hint { font-size: 14px; color: var(--dim); }
+.art-contact .art-call { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px; padding: 14px 16px; border-radius: 12px; background: #b20000; color: #fff; text-decoration: none; font-weight: 700; }
+.art-contact .art-call strong { font-size: 22px; letter-spacing: .02em; }
+.art-refs li { margin: 4px 0; }
+/* v2: quy cách đọc trên điện thoại theo khung "Cấu trúc GDSK qua QR" v03 */
+.art-v2 .page-title { font-size: clamp(26px, 6vw, 30px); }
+.art-v2 .art-section h2, .art-v2 .art-quiz h2, .art-v2 .art-contact h2, .art-v2 .art-refs h2 { font-size: clamp(22px, 5.2vw, 26px); }
+.art-v2 .art-section p, .art-v2 .art-section li, .art-v2 .art-urgent p, .art-v2 .art-quiz p, .art-v2 .art-quiz summary, .art-v2 .art-contact p, .art-v2 .art-remember li, .art-v2 .art-lead { font-size: 18px; line-height: 1.6; }
+.art-head { display: grid; gap: 6px; margin: 0 0 16px; }
+.art-logo { width: 129px; height: auto; }
+.art-head .art-lead { margin: 0; }
+.art-action { margin: 0; font-size: 19px; font-weight: 800; color: var(--brand, #0b4f9c); line-height: 1.45; }
+.art-sub { font-size: 19px; margin: 16px 0 6px; }
+.art-btn { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 6px 10px; min-height: 44px; box-sizing: border-box; padding: 12px 16px; margin: 10px 0 0; border-radius: 12px; text-decoration: none; font-weight: 700; font-size: 17px; }
+.art-btn strong { font-size: 21px; letter-spacing: .02em; }
+.art-btn-call { background: #b20000; color: #fff !important; }
+.art-btn-work { background: var(--surface); color: var(--text) !important; border: 1px solid var(--border); }
+.art-urgent .art-btn-call { margin-top: 12px; }
+.art-refs-box { border: 1px solid var(--border); border-radius: 12px; background: var(--surface); }
+.art-refs-box summary { cursor: pointer; padding: 12px 14px; font-weight: 700; min-height: 44px; box-sizing: border-box; }
+.art-refs-box ol { margin: 0; padding: 0 14px 6px 34px; }
+.art-refs-box .art-meta { padding: 0 14px 12px; }
+.art-refs li, .art-refs a { overflow-wrap: anywhere; }
+.art-src { display: inline-block; padding: 4px 0; font-weight: 700; }
+.art-quiz summary { min-height: 44px; box-sizing: border-box; }
+a.cite { cursor: pointer; }
