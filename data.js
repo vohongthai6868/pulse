@@ -1528,7 +1528,8 @@ window.PULSE_DATA = {
       "CDC. Clean Hands. cdc.gov/clean-hands/about/index.html"
      ],
      "issued": true
-    }
+    },
+    "icon": "hand"
    },
    {
     "group": "an",
@@ -1614,7 +1615,8 @@ window.PULSE_DATA = {
       "AHRQ. Preventing Falls in Hospitals: A Toolkit for Improving Quality of Care. ahrq.gov/patient-safety/settings/hospital/fall-prevention/toolkit"
      ],
      "issued": true
-    }
+    },
+    "icon": "walk"
    },
    {
     "group": "an",
@@ -1715,7 +1717,8 @@ window.PULSE_DATA = {
       "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện."
      ],
      "issued": true
-    }
+    },
+    "icon": "pill"
    },
    {
     "group": "an",
@@ -1809,7 +1812,8 @@ window.PULSE_DATA = {
       "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện."
      ],
      "issued": true
-    }
+    },
+    "icon": "bed"
    },
    {
     "group": "man",
@@ -1907,6 +1911,11 @@ window.PULSE_DATA = {
       "WHO. Salt reduction (fact sheet). who.int/news-room/fact-sheets/detail/salt-reduction"
      ],
      "issued": true
+    },
+    "icon": "pulse",
+    "poster": {
+     "img": "img/gdsk/poster-tang-huyet-ap.jpg",
+     "caption": "Poster Tăng huyết áp"
     }
    },
    {
@@ -2057,7 +2066,12 @@ window.PULSE_DATA = {
       "name": "Tờ bướm Đái tháo đường (PDF, 2 trang, bản 03)",
       "url": "tai-lieu/gdsk/NhatTan_DaiThaoDuong_ToBuom_v03_20261112.pdf"
      }
-    ]
+    ],
+    "icon": "drop",
+    "poster": {
+     "img": "img/gdsk/poster-dai-thao-duong.jpg",
+     "caption": "Poster Đái tháo đường típ 2"
+    }
    },
    {
     "group": "man",
@@ -2187,7 +2201,8 @@ window.PULSE_DATA = {
       "Bộ Y tế. Quyết định số 1851/QĐ-BYT năm 2020 ban hành Hướng dẫn chẩn đoán và điều trị hen phế quản người lớn và trẻ em từ 12 tuổi trở lên (Cần xác minh ngày ban hành)."
      ],
      "issued": true
-    }
+    },
+    "icon": "wind"
    },
    {
     "group": "man",
@@ -2272,6 +2287,11 @@ window.PULSE_DATA = {
       "Bộ Y tế. Quyết định số 5331/QĐ-BYT ngày 23/12/2020 ban hành Hướng dẫn chẩn đoán và xử trí đột quỵ não (Cần xác minh)."
      ],
      "issued": true
+    },
+    "icon": "clock",
+    "poster": {
+     "img": "img/gdsk/poster-nhan-biet-som-dot-quy.jpg",
+     "caption": "Poster Đột quỵ: nhận biết sớm F.A.S.T"
     }
    },
    {
@@ -2366,7 +2386,8 @@ window.PULSE_DATA = {
       "WHO. Healthy diet (fact sheet). who.int/news-room/fact-sheets/detail/healthy-diet"
      ],
      "issued": true
-    }
+    },
+    "icon": "apple"
    },
    {
     "group": "tn",
@@ -2462,6 +2483,11 @@ window.PULSE_DATA = {
       "CDC. Dengue: Symptoms and Treatment. cdc.gov/dengue/signs-symptoms"
      ],
      "issued": true
+    },
+    "icon": "bug",
+    "poster": {
+     "img": "img/gdsk/poster-sot-xuat-huyet.jpg",
+     "caption": "Poster Chung tay đẩy lùi sốt xuất huyết"
     }
    },
    {
@@ -2557,6 +2583,11 @@ window.PULSE_DATA = {
       "CDC. Treatment for TB Disease. cdc.gov/tb/treatment"
      ],
      "issued": true
+    },
+    "icon": "wind",
+    "poster": {
+     "img": "img/gdsk/poster-lao-phoi.jpg",
+     "caption": "Poster Bệnh lao phổi: hiểu đúng để phòng ngừa"
     }
    },
    {
@@ -2643,6 +2674,11 @@ window.PULSE_DATA = {
       "CDC. Hand, Foot, and Mouth Disease. cdc.gov/hand-foot-mouth"
      ],
      "issued": true
+    },
+    "icon": "baby",
+    "poster": {
+     "img": "img/gdsk/poster-tay-chan-mieng-o-tre.jpg",
+     "caption": "Poster Bệnh tay chân miệng"
     }
    },
    {
@@ -2738,7 +2774,8 @@ window.PULSE_DATA = {
       "UNICEF. Breastfeeding. unicef.org/nutrition/breastfeeding"
      ],
      "issued": true
-    }
+    },
+    "icon": "heart"
    },
    {
     "group": "tn",
@@ -2828,7 +2865,8 @@ window.PULSE_DATA = {
       "CDC. Conjunctivitis (Pink Eye). cdc.gov/conjunctivitis"
      ],
      "issued": true
-    }
+    },
+    "icon": "eye"
    },
    {
     "group": "man",
@@ -2915,7 +2953,8 @@ window.PULSE_DATA = {
       "National Eye Institute. Cataracts. nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts"
      ],
      "issued": true
-    }
+    },
+    "icon": "eye"
    },
    {
     "group": "me",
@@ -2996,7 +3035,8 @@ window.PULSE_DATA = {
       "WHO. Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age, 2019."
      ],
      "issued": true
-    }
+    },
+    "icon": "eye"
    },
    {
     "group": "tn",
@@ -3089,7 +3129,8 @@ window.PULSE_DATA = {
       "CDC. Hepatitis B Basics. cdc.gov/hepatitis-b/about"
      ],
      "issued": true
-    }
+    },
+    "icon": "shield"
    },
    {
     "group": "man",
@@ -3192,6 +3233,11 @@ window.PULSE_DATA = {
       "Bộ Y tế. Hướng dẫn chẩn đoán và điều trị bệnh phổi tắc nghẽn mạn tính (Cần xác minh số Quyết định bản hiện hành)."
      ],
      "issued": true
+    },
+    "icon": "wind",
+    "poster": {
+     "img": "img/gdsk/poster-copd.jpg",
+     "caption": "Poster COPD – bệnh phổi tắc nghẽn mạn tính"
     }
    },
    {
@@ -3268,7 +3314,8 @@ window.PULSE_DATA = {
       "NHS. Bronchitis. nhs.uk/conditions/bronchitis"
      ],
      "issued": true
-    }
+    },
+    "icon": "wind"
    },
    {
     "group": "tn",
@@ -3361,7 +3408,8 @@ window.PULSE_DATA = {
       "CDC. Preventing Seasonal Flu. cdc.gov/flu/prevention"
      ],
      "issued": true
-    }
+    },
+    "icon": "thermo"
    },
    {
     "group": "me",
@@ -3443,7 +3491,8 @@ window.PULSE_DATA = {
       "Bộ Y tế. Thông tư số 10/2024/TT-BYT ngày 13/6/2024 quy định danh mục bệnh truyền nhiễm, đối tượng và phạm vi sử dụng vắc xin bắt buộc (Cần xác minh); lịch tiêm theo Chương trình Tiêm chủng mở rộng."
      ],
      "issued": true
-    }
+    },
+    "icon": "baby"
    },
    {
     "group": "ck",
@@ -3542,7 +3591,8 @@ window.PULSE_DATA = {
       "Luật Khám bệnh, chữa bệnh số 15/2023/QH15 ngày 09/01/2023 (quy định về ưu tiên khám bệnh)."
      ],
      "issued": true
-    }
+    },
+    "icon": "clip"
    },
    {
     "group": "ck",
@@ -3637,7 +3687,8 @@ window.PULSE_DATA = {
       "International Federation of Red Cross and Red Crescent Societies. International First Aid, Resuscitation and Education Guidelines 2020 (mục bỏng)."
      ],
      "issued": true
-    }
+    },
+    "icon": "flame"
    },
    {
     "group": "ck",
@@ -3724,7 +3775,8 @@ window.PULSE_DATA = {
       "WHO. Global guidelines for the prevention of surgical site infection, 2nd ed., 2018."
      ],
      "issued": true
-    }
+    },
+    "icon": "bandage"
    },
    {
     "group": "ck",
@@ -3812,7 +3864,8 @@ window.PULSE_DATA = {
       "NHS. Plaster cast care (patient information leaflets, các bệnh viện thuộc NHS)."
      ],
      "issued": true
-    }
+    },
+    "icon": "bandage"
    },
    {
     "group": "ck",
@@ -3913,6 +3966,11 @@ window.PULSE_DATA = {
       "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện."
      ],
      "issued": true
+    },
+    "icon": "steth",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-truoc-mo.jpg",
+     "caption": "Poster Quy trình tắm trước phẫu thuật"
     }
    },
    {
@@ -4009,7 +4067,8 @@ window.PULSE_DATA = {
       "NHS. Stroke: Recovery. nhs.uk/conditions/stroke/recovery"
      ],
      "issued": true
-    }
+    },
+    "icon": "walk"
    },
    {
     "group": "me",
@@ -4097,7 +4156,8 @@ window.PULSE_DATA = {
       "WHO. Pregnancy, Childbirth, Postpartum and Newborn Care: A guide for essential practice, 3rd ed., 2015."
      ],
      "issued": true
-    }
+    },
+    "icon": "heart"
    },
    {
     "group": "ck",
@@ -4183,7 +4243,8 @@ window.PULSE_DATA = {
       "MedlinePlus. How to Prepare for a Lab Test. medlineplus.gov/lab-tests/how-to-prepare-for-a-lab-test"
      ],
      "issued": true
-    }
+    },
+    "icon": "flask"
    },
    {
     "group": "ck",
@@ -4279,7 +4340,8 @@ window.PULSE_DATA = {
       "Bộ Khoa học và Công nghệ, Bộ Y tế. Thông tư liên tịch số 13/2014/TTLT-BKHCN-BYT ngày 09/6/2014 quy định về bảo đảm an toàn bức xạ trong y tế (Cần xác minh văn bản thay thế)."
      ],
      "issued": true
-    }
+    },
+    "icon": "scan"
    },
    {
     "group": "an",
@@ -4366,7 +4428,8 @@ window.PULSE_DATA = {
       "Bộ Y tế. Quyết định số 5631/QĐ-BYT ngày 31/12/2020 ban hành tài liệu Hướng dẫn thực hiện quản lý sử dụng kháng sinh trong bệnh viện."
      ],
      "issued": true
-    }
+    },
+    "icon": "pill"
    },
    {
     "group": "man",
@@ -4459,7 +4522,8 @@ window.PULSE_DATA = {
       "KDOQI. Clinical Practice Guideline for Vascular Access: 2019 Update. Am J Kidney Dis 2020;75(4 Suppl 2):S1-S164."
      ],
      "issued": true
-    }
+    },
+    "icon": "pulse"
    },
    {
     "group": "me",
@@ -4555,7 +4619,8 @@ window.PULSE_DATA = {
       "WHO. Vaccines and immunization: Vaccine safety. who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety"
      ],
      "issued": true
-    }
+    },
+    "icon": "syringe"
    }
   ]
  },
