@@ -295,22 +295,30 @@
       return [tp, sc];
     });
     var list = scored.filter(function (x) { return x[1] > 0 && x[1] === best; }).map(function (x) { return x[0]; });
+    list = list.filter(function (tp) { return tp.poster; }).concat(list.filter(function (tp) { return !tp.poster; }));
     var cntEl = $("gdsk-count");
     if (cntEl) cntEl.textContent = (gdskQ || gdskGroup !== "all" || gdskKhoa !== "all") ? (list.length ? L("Có " + list.length + " bài phù hợp.", list.length + " matching articles.") : L("Chưa có bài phù hợp. Thử từ khác, hoặc gọi tổng đài 0296 3562 357 để được hướng dẫn.", "No matching article. Try another word or call 0296 3562 357.")) : L("Có " + list.length + " bài. Chọn nhóm chủ đề hoặc khoa bên dưới.", list.length + " articles. Pick a topic group or department below.");
     if (!list.length && gdskKhoa !== "all") {
       box.appendChild(el("p", { class: "gdsk-empty", text: L("Bài truyền thông của " + gdskKhoa + " sẽ được bổ sung sau. Chọn \"Tất cả khoa, bộ phận\" để xem các bài hiện có.", "Articles from this department are coming soon.") }));
     }
-    var base = window.innerWidth < 640 ? 3 : 6;
+    var base = window.innerWidth < 640 ? 6 : 8;
     var limit = (gdskAll || state.query || gdskQ) ? list.length : base;
+    box.className = "gdsk-grid gdsk-pgrid";
     list.slice(0, limit).forEach(function (tp) {
       var g = G[tp.group];
-      box.appendChild(el("article", { class: "gdsk-card", style: "--c:" + g.color }, [
-        el("span", { class: "gdsk-tag", text: tr(g.label) }),
-        el("h3", { class: "gdsk-title", text: tr(tp.title) }),
-        tp.khoa ? el("p", { class: "gdsk-khoa", text: L("Phụ trách: ", "Responsible: ") + tr(tp.khoa) }) : null,
-        el("ul", { class: "gdsk-points" }, tp.points.map(function (s) { return el("li", { text: tr(s) }); })),
-        tp.slug ? el("a", { class: "gdsk-link", href: "#/gdsk/" + tp.slug, text: L("Đọc bài, mã QR →", "Read article, QR code →") }) : null,
-      ]));
+      var a = el("a", { class: "gdsk-pcard", href: "#/gdsk/" + tp.slug, style: "--c:" + g.color, "aria-label": L("Đọc bài ", "Read ") + tr(tp.title) });
+      if (tp.poster) {
+        a.appendChild(el("span", { class: "gdsk-pimg" }, [el("img", { src: tp.poster.img.replace("img/gdsk/", "img/gdsk/thumb/"), alt: tr(tp.poster.caption), loading: "lazy", width: "440", height: "622" })]));
+      } else {
+        var ph = el("span", { class: "gdsk-pimg gdsk-pph" }, [el("span", { class: "gdsk-pph-ico" }), el("span", { class: "gdsk-pph-t", text: tr(tp.title) }), el("span", { class: "gdsk-pph-s", text: L("Poster đang cập nhật", "Poster coming soon") })]);
+        ph.firstChild.innerHTML = gIcon(tp.icon, 44);
+        a.appendChild(ph);
+      }
+      a.appendChild(el("span", { class: "gdsk-ptag", text: tr(g.label) }));
+      a.appendChild(el("span", { class: "gdsk-ptitle", text: tr(tp.title) }));
+      if (tp.khoa) a.appendChild(el("span", { class: "gdsk-pkhoa", text: tr(tp.khoa) }));
+      a.appendChild(el("span", { class: "gdsk-pread", text: L("Đọc bài →", "Read →") }));
+      box.appendChild(a);
     });
     var more = $("gdsk-more");
     if (more) { more.hidden = list.length <= base || !!state.query || !!gdskQ; more.textContent = gdskAll ? L("Thu gọn", "Show less") : L("Xem thêm " + (list.length - base) + " chủ đề", "Show " + (list.length - base) + " more topics"); }
