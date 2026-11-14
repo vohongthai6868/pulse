@@ -4177,7 +4177,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Nhi · Phòng Điều dưỡng"
     },
-    "icon": "baby"
+    "icon": "baby",
+    "poster": {
+     "img": "img/gdsk/poster-soi.jpg",
+     "caption": "Poster Bệnh sởi"
+    }
    },
    {
     "group": "ck",
