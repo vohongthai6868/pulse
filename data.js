@@ -1699,7 +1699,7 @@ window.PULSE_DATA = {
   "tc": {
    "name": "Tổ Tiêm chủng",
    "intro": "Phòng tiêm chủng của Bệnh viện Đa khoa Nhật Tân cung cấp đầy đủ các loại vắc xin cho trẻ em và người lớn, với quy trình khép kín từ khám sàng lọc, tiêm chủng đến theo dõi sau tiêm, trong không gian thân thiện có khu vui chơi cho trẻ.",
-   "updated": "2026-11-12",
+   "updated": "2026-11-14",
    "facts": [
     [
      "Vị trí",
@@ -1746,6 +1746,13 @@ window.PULSE_DATA = {
      ]
     },
     {
+     "h": "Nhân lực điều dưỡng",
+     "items": [
+      "04 điều dưỡng: 01 cử nhân, 02 cao đẳng, 01 trung cấp.",
+      "Tổ trưởng: CNĐD. Nguyễn Thị Diễm Phương."
+     ]
+    },
+    {
      "h": "Dặn dò sau tiêm",
      "items": [
       "Theo dõi trẻ tại nhà trong 24–48 giờ đầu: nhiệt độ, ăn, ngủ, chỗ tiêm.",
@@ -1777,7 +1784,12 @@ window.PULSE_DATA = {
      "img/khoa/tc-03.jpg",
      "Khu vui chơi cho trẻ trong thời gian chờ và theo dõi sau tiêm"
     ]
-   ]
+   ],
+   "qr": {
+    "img": "img/khoa/tc-qr-zalo.jpg",
+    "title": "Zalo Tổ Tiêm chủng",
+    "text": "Quét mã bằng Zalo hoặc thêm số 0943 971 821 để được tư vấn, đặt lịch hẹn và nhắc lịch tiêm."
+   }
   },
   "tnt": {
    "name": "Bộ phận Thận nhân tạo",
