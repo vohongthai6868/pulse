@@ -1439,15 +1439,28 @@ window.PULSE_DATA = {
     "slug": "rua-tay-dung-cach",
     "khoa": "Khoa Kiểm soát nhiễm khuẩn",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.RT.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh, người nhà và khách đến thăm tại bệnh viện.",
-     "goal": "sau khi đọc bài, người đọc biết khi nào cần vệ sinh tay, làm đúng 6 bước và chọn đúng giữa dung dịch chứa cồn với xà phòng và nước.",
+     "issued": true,
+     "lead": "Dành cho người bệnh, người nhà và khách đến thăm tại bệnh viện.",
      "heading": "Rửa tay đúng cách: bảo vệ người bệnh và chính mình",
+     "urgent": {
+      "h": "Nhớ ngay",
+      "blocks": [
+       {
+        "p": "Vệ sinh tay trước khi ăn, trước và sau khi chăm sóc người bệnh, sau khi đi vệ sinh, khi vào và rời buồng bệnh. Tay dính bẩn nhìn thấy được thì rửa bằng xà phòng và nước, không chỉ dùng dung dịch sát khuẩn."
+       }
+      ]
+     },
+     "remember": [
+      "Vệ sinh tay trước khi ăn, sau khi đi vệ sinh, trước và sau khi chăm sóc người bệnh.",
+      "Chà đủ 6 bước; dung dịch có cồn 20 đến 30 giây, xà phòng và nước 40 đến 60 giây.",
+      "Tay thấy bẩn hoặc dính dịch: rửa bằng xà phòng và nước sạch."
+     ],
      "sections": [
       {
-       "h": "1. Vì sao phải vệ sinh tay",
+       "h": "Vì sao phải vệ sinh tay",
        "blocks": [
         {
          "p": "Bàn tay chạm vào nhiều bề mặt nên dễ mang vi khuẩn, virus. Trong bệnh viện, tay không sạch là một trong những đường lây nhiễm khuẩn chính giữa người bệnh với nhau. Vệ sinh tay đúng cách là biện pháp đơn giản, rẻ và hiệu quả nhất để phòng lây nhiễm. [1]"
@@ -1455,7 +1468,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Khi nào cần vệ sinh tay",
+       "h": "Khi nào cần vệ sinh tay",
        "blocks": [
         {
          "items": [
@@ -1470,7 +1483,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Chọn cách vệ sinh tay phù hợp",
+       "h": "Chọn cách vệ sinh tay phù hợp",
        "blocks": [
         {
          "items": [
@@ -1485,7 +1498,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Sáu bước vệ sinh tay",
+       "h": "Sáu bước vệ sinh tay",
        "blocks": [
         {
          "p": "Lấy đủ dung dịch hoặc xà phòng để phủ kín hai bàn tay, sau đó lần lượt:"
@@ -1507,7 +1520,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Giữ đôi tay sạch",
+       "h": "Giữ đôi tay sạch",
        "blocks": [
         {
          "items": [
@@ -1521,13 +1534,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Vệ sinh tay đúng lúc · Đủ 6 bước · Cồn 20 đến 30 giây, nước và xà phòng 40 đến 60 giây · Tay bẩn thì rửa bằng nước.",
-     "refs": [
-      "WHO. WHO Guidelines on Hand Hygiene in Health Care (2009). who.int/publications/i/item/9789241597906",
-      "Bộ Y tế. Quyết định số 3916/QĐ-BYT ngày 28/8/2017 phê duyệt các Hướng dẫn kiểm soát nhiễm khuẩn trong các cơ sở khám bệnh, chữa bệnh (Hướng dẫn thực hành vệ sinh tay).",
-      "CDC. Clean Hands. cdc.gov/clean-hands/about/index.html"
+     "quiz": [
+      {
+       "q": "Tay dính bẩn nhìn thấy được, dùng dung dịch sát khuẩn có đủ không?",
+       "a": "Không. Rửa tay bằng xà phòng và nước sạch, rồi lau khô."
+      },
+      {
+       "q": "Vệ sinh tay đúng có mấy bước?",
+       "a": "Sáu bước, chà đủ lòng bàn tay, mu bàn tay, kẽ ngón, ngón cái và đầu ngón tay."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO. WHO Guidelines on Hand Hygiene in Health Care (2009).",
+       "url": "https://who.int/publications/i/item/9789241597906",
+       "org": "WHO"
+      },
+      "Bộ Y tế. Quyết định số 3916/QĐ-BYT ngày 28/8/2017 phê duyệt các Hướng dẫn kiểm soát nhiễm khuẩn trong các cơ sở khám bệnh, chữa bệnh (Hướng dẫn thực hành vệ sinh tay).",
+      {
+       "t": "CDC. Clean Hands.",
+       "url": "https://cdc.gov/clean-hands/about/index.html",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Khoa Kiểm soát nhiễm khuẩn · Phòng Điều dưỡng"
     },
     "icon": "hand",
     "poster": {
@@ -1546,15 +1576,28 @@ window.PULSE_DATA = {
     "slug": "phong-te-nga-khi-nam-vien",
     "khoa": "Phòng Điều dưỡng",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.TN.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh nằm viện, nhất là người cao tuổi, người yếu, người dùng thuốc gây buồn ngủ, và người nhà chăm sóc.",
-     "goal": "sau khi đọc bài, người bệnh và người nhà biết ai dễ bị té ngã, các việc cần làm để phòng té ngã và cách xử trí khi người bệnh bị ngã.",
+     "issued": true,
+     "lead": "Dành cho người bệnh nằm viện, nhất là người cao tuổi, người yếu, người dùng thuốc gây buồn ngủ, và người nhà chăm sóc.",
      "heading": "Phòng té ngã khi nằm viện: an toàn từ những việc nhỏ",
+     "urgent": {
+      "h": "Khi người bệnh bị ngã",
+      "blocks": [
+       {
+        "p": "Không vội đỡ người bệnh dậy. Giữ nằm yên và báo ngay điều dưỡng, bác sĩ đang chăm sóc; khi đã về nhà, đến bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24). Báo cả khi thấy không sao, nhất là khi có đập đầu hoặc đang dùng thuốc chống đông."
+       }
+      ]
+     },
+     "remember": [
+      "Bấm chuông gọi điều dưỡng khi cần ra khỏi giường mà chưa đi vững.",
+      "Ngồi ở mép giường 1 đến 2 phút trước khi đứng; mang dép chống trượt.",
+      "Bị ngã: không vội đỡ dậy, báo ngay nhân viên y tế."
+     ],
      "sections": [
       {
-       "h": "1. Té ngã nguy hiểm thế nào",
+       "h": "Té ngã nguy hiểm thế nào",
        "blocks": [
         {
          "p": "Té ngã trong bệnh viện có thể gây bầm dập, gãy xương (nhất là xương hông ở người cao tuổi), chấn thương đầu, làm kéo dài thời gian nằm viện. Phần lớn các trường hợp té ngã có thể phòng ngừa được. [1]"
@@ -1562,7 +1605,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Ai dễ bị té ngã",
+       "h": "Ai dễ bị té ngã",
        "blocks": [
         {
          "items": [
@@ -1579,7 +1622,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Việc người bệnh và người nhà cần làm",
+       "h": "Việc người bệnh và người nhà cần làm",
        "blocks": [
         {
          "items": [
@@ -1596,7 +1639,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Khi người bệnh bị ngã",
+       "h": "Khi người bệnh bị ngã",
        "blocks": [
         {
          "items": [
@@ -1612,13 +1655,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Bấm chuông khi cần · Ngồi dậy từ từ · Dép chống trượt · Đèn ngủ ban đêm · Ngã thì báo ngay.",
-     "refs": [
-      "WHO. Falls (fact sheet). who.int/news-room/fact-sheets/detail/falls",
-      "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện.",
-      "AHRQ. Preventing Falls in Hospitals: A Toolkit for Improving Quality of Care. ahrq.gov/patient-safety/settings/hospital/fall-prevention/toolkit"
+     "quiz": [
+      {
+       "q": "Người bệnh vừa bị ngã, có nên đỡ dậy ngay không?",
+       "a": "Không vội đỡ dậy. Giữ nằm yên và báo ngay điều dưỡng, bác sĩ."
+      },
+      {
+       "q": "Ngã mà thấy không sao thì có cần báo không?",
+       "a": "Có. Nhất là khi có đập đầu hoặc đang dùng thuốc chống đông, vì chảy máu có thể xuất hiện muộn."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO. Falls (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/falls",
+       "org": "WHO"
+      },
+      "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện.",
+      {
+       "t": "AHRQ. Preventing Falls in Hospitals: A Toolkit for Improving Quality of Care.",
+       "url": "https://ahrq.gov/patient-safety/settings/hospital/fall-prevention/toolkit",
+       "org": "AHRQ"
+      }
+     ],
+     "unit": "Phòng Điều dưỡng"
     },
     "icon": "walk",
     "poster": {
@@ -1637,15 +1697,28 @@ window.PULSE_DATA = {
     "slug": "dung-thuoc-an-toan",
     "khoa": "Phòng Điều dưỡng",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.DTAT.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh, người nhà trong thời gian nằm viện và khi về nhà.",
-     "goal": "sau khi đọc bài, người bệnh biết thông tin cần báo cho nhân viên y tế, cách kiểm tra thuốc được dùng và cách dùng thuốc đúng khi về nhà.",
+     "issued": true,
+     "lead": "Dành cho người bệnh, người nhà trong thời gian nằm viện và khi về nhà.",
      "heading": "Dùng thuốc an toàn: hiểu thuốc mình dùng, hỏi khi chưa rõ",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Khó thở, sưng môi, mặt, lưỡi, nổi mẩn toàn thân sau khi dùng thuốc; uống nhầm, quá liều hoặc trẻ nuốt phải thuốc. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24). Mang theo vỏ thuốc."
+       }
+      ]
+     },
+     "remember": [
+      "Báo cho nhân viên y tế các thuốc đang dùng và thuốc từng bị dị ứng.",
+      "Hỏi lại khi thấy thuốc lạ hoặc chưa rõ cách dùng.",
+      "Dùng đúng thuốc, đúng liều, đúng giờ, đúng cách và đủ thời gian."
+     ],
      "sections": [
       {
-       "h": "1. Báo cho nhân viên y tế ngay khi nhập viện",
+       "h": "Báo cho nhân viên y tế ngay khi nhập viện",
        "blocks": [
         {
          "items": [
@@ -1658,7 +1731,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Trong thời gian nằm viện",
+       "h": "Trong thời gian nằm viện",
        "blocks": [
         {
          "items": [
@@ -1673,7 +1746,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Năm điều cần đúng khi dùng thuốc ở nhà",
+       "h": "Năm điều cần đúng khi dùng thuốc ở nhà",
        "blocks": [
         {
          "items": [
@@ -1691,7 +1764,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Bảo quản và sử dụng thuốc",
+       "h": "Bảo quản và sử dụng thuốc",
        "blocks": [
         {
          "items": [
@@ -1705,7 +1778,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Khi nào cần đến bệnh viện ngay",
+       "h": "Khi nào cần đến bệnh viện ngay",
        "blocks": [
         {
          "items": [
@@ -1718,13 +1791,26 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Báo thuốc đang dùng và dị ứng · Hỏi khi chưa rõ · Đúng thuốc, đúng liều, đúng giờ, đúng cách, đủ thời gian.",
+     "quiz": [
+      {
+       "q": "Quên một liều thuốc, có uống gấp đôi ở lần sau không?",
+       "a": "Không. Hỏi dược sĩ, bác sĩ cách xử trí với từng loại thuốc."
+      },
+      {
+       "q": "Khi nhập viện cần báo gì về thuốc?",
+       "a": "Tên các thuốc đang dùng (kể cả thuốc nam, thực phẩm chức năng), thuốc từng bị dị ứng; mang theo đơn hoặc vỏ thuốc."
+      }
+     ],
      "refs": [
-      "WHO. Medication Without Harm: Global Patient Safety Challenge. who.int/initiatives/medication-without-harm",
+      {
+       "t": "WHO. Medication Without Harm: Global Patient Safety Challenge.",
+       "url": "https://who.int/initiatives/medication-without-harm",
+       "org": "WHO"
+      },
       "Bộ Y tế. Thông tư số 23/2011/TT-BYT ngày 10/6/2011 hướng dẫn sử dụng thuốc trong các cơ sở y tế có giường bệnh.",
       "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện."
      ],
-     "issued": true
+     "unit": "Phòng Điều dưỡng"
     },
     "icon": "pill",
     "poster": {
@@ -1743,15 +1829,28 @@ window.PULSE_DATA = {
     "slug": "phong-loet-ti-de",
     "khoa": "Phòng Điều dưỡng",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.LTD.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người nhà chăm sóc người bệnh nằm lâu, ngồi xe lăn, liệt, hôn mê, người cao tuổi yếu.",
-     "goal": "sau khi đọc bài, người chăm sóc biết vị trí dễ bị loét, cách xoay trở, chăm sóc da, dinh dưỡng và nhận biết sớm loét để báo nhân viên y tế.",
+     "issued": true,
+     "lead": "Dành cho người nhà chăm sóc người bệnh nằm lâu, ngồi xe lăn, liệt, hôn mê, người cao tuổi yếu.",
      "heading": "Phòng loét tì đè cho người nằm lâu",
+     "urgent": {
+      "h": "Báo ngay nhân viên y tế khi",
+      "blocks": [
+       {
+        "p": "Vùng da đỏ không mất đi sau khoảng 30 phút hết đè ép, da phồng rộp, rỉ dịch, có mùi hôi, hoặc người bệnh sốt, đau nhiều tại vùng tì đè. Báo ngay điều dưỡng, bác sĩ đang chăm sóc; khi đã về nhà, đến bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Đổi tư thế ít nhất mỗi 2 giờ; kê gối cho gót chân không chạm giường.",
+      "Giữ da sạch, khô; không xoa bóp mạnh lên vùng da đỏ.",
+      "Ăn đủ đạm; báo ngay khi da đỏ không mất hoặc phồng rộp."
+     ],
      "sections": [
       {
-       "h": "1. Loét tì đè là gì",
+       "h": "Loét tì đè là gì",
        "blocks": [
         {
          "p": "Loét tì đè là vùng da và mô bên dưới bị tổn thương do bị đè ép lâu, thường ở chỗ xương nhô. Loét có thể xuất hiện chỉ sau vài giờ nằm yên một tư thế, gây đau, nhiễm trùng và kéo dài thời gian điều trị. Phần lớn loét tì đè phòng ngừa được. [1]"
@@ -1759,7 +1858,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Vị trí dễ bị loét",
+       "h": "Vị trí dễ bị loét",
        "blocks": [
         {
          "items": [
@@ -1772,7 +1871,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Xoay trở và nâng đỡ đúng cách",
+       "h": "Xoay trở và nâng đỡ đúng cách",
        "blocks": [
         {
          "items": [
@@ -1789,7 +1888,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Chăm sóc da và dinh dưỡng",
+       "h": "Chăm sóc da và dinh dưỡng",
        "blocks": [
         {
          "items": [
@@ -1804,7 +1903,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Khi nào cần báo nhân viên y tế",
+       "h": "Khi nào cần báo nhân viên y tế",
        "blocks": [
         {
          "items": [
@@ -1817,13 +1916,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Xoay trở ít nhất mỗi 2 giờ · Giữ da sạch khô · Kê gót chân · Ăn đủ đạm · Da đỏ không mất: báo ngay.",
+     "quiz": [
+      {
+       "q": "Bao lâu thì đổi tư thế cho người bệnh nằm lâu một lần?",
+       "a": "Ít nhất mỗi 2 giờ hoặc theo hướng dẫn của điều dưỡng."
+      },
+      {
+       "q": "Đã nằm nệm chống loét thì có cần xoay trở không?",
+       "a": "Vẫn phải xoay trở đều."
+      }
+     ],
      "refs": [
-      "EPUAP/NPIAP/PPPIA. Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide, 2019. internationalguideline.com",
-      "NHS. Pressure ulcers (pressure sores). nhs.uk/conditions/pressure-sores",
+      {
+       "t": "EPUAP/NPIAP/PPPIA. Prevention and Treatment of Pressure Ulcers/Injuries: Quick Reference Guide, 2019.",
+       "url": "https://internationalguideline.com",
+       "org": "EPUAP"
+      },
+      {
+       "t": "NHS. Pressure ulcers (pressure sores).",
+       "url": "https://nhs.uk/conditions/pressure-sores",
+       "org": "NHS"
+      },
       "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện."
      ],
-     "issued": true
+     "unit": "Phòng Điều dưỡng"
     },
     "icon": "bed",
     "poster": {
@@ -1842,15 +1958,28 @@ window.PULSE_DATA = {
     "slug": "tang-huyet-ap",
     "khoa": "Khoa Nội tổng quát",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.THA.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người trưởng thành bị tăng huyết áp và người chăm sóc.",
-     "goal": "sau khi đọc bài, người bệnh biết đo huyết áp đúng cách, dùng thuốc đều đặn, thay đổi lối sống và nhận biết khi nào cần đến bệnh viện ngay.",
+     "issued": true,
+     "lead": "Dành cho người trưởng thành bị tăng huyết áp và người chăm sóc.",
      "heading": "Tăng huyết áp: đo đều, uống thuốc đều, sống lành mạnh",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Huyết áp từ 180/110 mmHg trở lên kèm đau đầu dữ dội, đau ngực, khó thở, nhìn mờ; hoặc yếu, tê nửa người, méo miệng, nói khó. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24). Không tự uống thêm nhiều viên thuốc hạ áp."
+       }
+      ]
+     },
+     "remember": [
+      "Đo huyết áp đúng cách và ghi sổ; uống thuốc đều, không tự ngừng.",
+      "Ăn nhạt dưới 5 g muối mỗi ngày; vận động 30 phút; bỏ thuốc lá.",
+      "Huyết áp rất cao kèm đau đầu, đau ngực, yếu liệt: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về tăng huyết áp",
+       "h": "Hiểu đúng về tăng huyết áp",
        "blocks": [
         {
          "p": "Tăng huyết áp là khi huyết áp đo tại cơ sở y tế từ 140/90 mmHg trở lên (đo nhiều lần). Phần lớn người bệnh không có triệu chứng, nên thường chỉ phát hiện khi đo huyết áp. Tăng huyết áp không kiểm soát làm tăng nguy cơ đột quỵ, nhồi máu cơ tim, suy tim và suy thận. [1]"
@@ -1861,7 +1990,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Đo huyết áp tại nhà đúng cách",
+       "h": "Đo huyết áp tại nhà đúng cách",
        "blocks": [
         {
          "items": [
@@ -1876,7 +2005,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dùng thuốc đều đặn",
+       "h": "Dùng thuốc đều đặn",
        "blocks": [
         {
          "items": [
@@ -1889,7 +2018,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Thay đổi lối sống",
+       "h": "Thay đổi lối sống",
        "blocks": [
         {
          "items": [
@@ -1904,7 +2033,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Khi nào cần đến bệnh viện ngay",
+       "h": "Khi nào cần đến bệnh viện ngay",
        "blocks": [
         {
          "items": [
@@ -1920,13 +2049,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Đo huyết áp đều · Uống thuốc mỗi ngày · Ăn nhạt dưới 5 g muối · Vận động 30 phút · Bỏ thuốc lá.",
-     "refs": [
-      "WHO. Hypertension (fact sheet). who.int/news-room/fact-sheets/detail/hypertension",
-      "Bộ Y tế. Quyết định số 3192/QĐ-BYT ngày 31/8/2010 ban hành Hướng dẫn chẩn đoán và điều trị tăng huyết áp (Cần xác minh văn bản cập nhật mới hơn).",
-      "WHO. Salt reduction (fact sheet). who.int/news-room/fact-sheets/detail/salt-reduction"
+     "quiz": [
+      {
+       "q": "Huyết áp đã về bình thường, có tự ngừng thuốc được không?",
+       "a": "Không. Uống thuốc đều mỗi ngày; chỉ thay đổi khi bác sĩ chỉ định."
+      },
+      {
+       "q": "Mỗi ngày nên ăn bao nhiêu muối?",
+       "a": "Dưới 5 g muối, khoảng một muỗng cà phê, tính cả nước mắm, bột nêm."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO. Hypertension (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/hypertension",
+       "org": "WHO"
+      },
+      "Bộ Y tế. Quyết định số 3192/QĐ-BYT ngày 31/8/2010 ban hành Hướng dẫn chẩn đoán và điều trị tăng huyết áp (Cần xác minh văn bản cập nhật mới hơn).",
+      {
+       "t": "WHO. Salt reduction (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/salt-reduction",
+       "org": "WHO"
+      }
+     ],
+     "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
     "icon": "pulse",
     "poster": {
@@ -2141,15 +2287,28 @@ window.PULSE_DATA = {
     "slug": "hen-phe-quan",
     "khoa": "Khoa Nội tổng quát",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.HPQ.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh hen phế quản người lớn, trẻ từ 12 tuổi và người chăm sóc.",
-     "goal": "sau khi đọc bài, người bệnh biết tránh yếu tố gây cơn hen, phân biệt và dùng đúng thuốc cắt cơn, thuốc dự phòng, dùng bình xịt đúng cách, nhận biết cơn hen nặng và biết khi nào cần đến bệnh viện.",
+     "issued": true,
+     "lead": "Dành cho người bệnh hen phế quản người lớn, trẻ từ 12 tuổi và người chăm sóc.",
      "heading": "Hen phế quản: dùng thuốc đúng, tránh cơn hen nặng",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Khó thở nhiều, chỉ nói được từng từ, môi hoặc đầu ngón tay tím, dùng thuốc cắt cơn không đỡ, lơ mơ, mệt lả. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Dùng thuốc dự phòng hằng ngày, luôn mang thuốc cắt cơn.",
+      "Tránh khói thuốc, khói bếp, bụi, lông thú; xịt thuốc đúng 6 bước.",
+      "Khó thở nhiều, nói không thành câu, tím môi: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về bệnh hen phế quản",
+       "h": "Hiểu đúng về bệnh hen phế quản",
        "blocks": [
         {
          "p": "Hen phế quản là bệnh mạn tính của đường thở. Đường thở luôn bị viêm và dễ bị kích thích; khi gặp yếu tố khởi phát, đường thở co thắt, phù nề, tăng tiết đờm, gây khó thở, khò khè, nặng ngực và ho, thường nặng hơn về đêm và gần sáng. [1]"
@@ -2160,7 +2319,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Tránh các yếu tố làm khởi phát cơn hen",
+       "h": "Tránh các yếu tố làm khởi phát cơn hen",
        "blocks": [
         {
          "items": [
@@ -2178,7 +2337,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dùng thuốc đúng: thuốc dự phòng và thuốc cắt cơn",
+       "h": "Dùng thuốc đúng: thuốc dự phòng và thuốc cắt cơn",
        "blocks": [
         {
          "items": [
@@ -2205,7 +2364,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Ai dễ bị cơn hen nặng",
+       "h": "Ai dễ bị cơn hen nặng",
        "blocks": [
         {
          "items": [
@@ -2222,7 +2381,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Khi lên cơn hen ở nhà",
+       "h": "Khi lên cơn hen ở nhà",
        "blocks": [
         {
          "items": [
@@ -2237,7 +2396,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "6. Sống khỏe với hen",
+       "h": "Sống khỏe với hen",
        "blocks": [
         {
          "items": [
@@ -2251,13 +2410,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Tránh khói bụi, khói thuốc · Dùng thuốc dự phòng mỗi ngày · Luôn mang thuốc cắt cơn · Xịt đúng cách · Khó thở không đỡ: đến bệnh viện ngay.",
+     "quiz": [
+      {
+       "q": "Thuốc dự phòng hen có dùng khi đã hết khó thở không?",
+       "a": "Có. Dùng đều mỗi ngày theo đơn, không tự ngừng khi thấy khỏe."
+      },
+      {
+       "q": "Dùng thuốc cắt cơn mà không đỡ thì làm gì?",
+       "a": "Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài 0296 3562 357."
+      }
+     ],
      "refs": [
-      "WHO. Asthma (fact sheet). who.int/news-room/fact-sheets/detail/asthma",
-      "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention, bản cập nhật mới nhất. ginasthma.org",
+      {
+       "t": "WHO. Asthma (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/asthma",
+       "org": "WHO"
+      },
+      {
+       "t": "Global Initiative for Asthma (GINA). Global Strategy for Asthma Management and Prevention, bản cập nhật mới nhất.",
+       "url": "https://ginasthma.org",
+       "org": "Global Initiative for Asthma (GINA)"
+      },
       "Bộ Y tế. Quyết định số 1851/QĐ-BYT năm 2020 ban hành Hướng dẫn chẩn đoán và điều trị hen phế quản người lớn và trẻ em từ 12 tuổi trở lên (Cần xác minh ngày ban hành)."
      ],
-     "issued": true
+     "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
     "icon": "wind",
     "poster": {
@@ -2276,15 +2452,28 @@ window.PULSE_DATA = {
     "slug": "nhan-biet-som-dot-quy",
     "khoa": "Khoa Nội tổng quát",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.DQ.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người dân, người bệnh có tăng huyết áp, đái tháo đường, bệnh tim và người nhà.",
-     "goal": "sau khi đọc bài, người đọc nhận ra dấu hiệu đột quỵ theo quy tắc BE FAST, biết việc cần làm, việc không được làm, và cách phòng ngừa.",
+     "issued": true,
+     "lead": "Dành cho người dân, người bệnh có tăng huyết áp, đái tháo đường, bệnh tim và người nhà.",
      "heading": "Nhận biết sớm đột quỵ: mỗi phút đều quý",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Méo miệng, yếu tay chân một bên, nói khó, mất thăng bằng, nhìn mờ đột ngột: đưa người bệnh đến bệnh viện có khả năng điều trị đột quỵ gần nhất càng sớm càng tốt, hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24). Ghi nhớ giờ khởi phát. Không cho ăn uống, không cạo gió, không chích máu đầu ngón tay."
+       }
+      ]
+     },
+     "remember": [
+      "Nhận biết theo BE FAST: mất thăng bằng, nhìn mờ, méo miệng, yếu tay chân, nói khó.",
+      "Ghi giờ khởi phát, đưa ngay đến bệnh viện gần nhất có điều trị đột quỵ.",
+      "Không cho ăn uống, không cạo gió, chích máu đầu ngón tay."
+     ],
      "sections": [
       {
-       "h": "1. Đột quỵ là gì",
+       "h": "Đột quỵ là gì",
        "blocks": [
         {
          "p": "Đột quỵ xảy ra khi mạch máu nuôi não bị tắc hoặc bị vỡ, làm một vùng não bị tổn thương. Đột quỵ có thể gây liệt, mất khả năng nói, tử vong. Điều trị càng sớm, nhất là trong vài giờ đầu, càng có cơ hội phục hồi. [1]"
@@ -2292,7 +2481,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Nhận biết theo quy tắc BE FAST",
+       "h": "Nhận biết theo quy tắc BE FAST",
        "blocks": [
         {
          "items": [
@@ -2311,7 +2500,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Việc cần làm ngay",
+       "h": "Việc cần làm ngay",
        "blocks": [
         {
          "items": [
@@ -2327,7 +2516,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Phòng ngừa đột quỵ",
+       "h": "Phòng ngừa đột quỵ",
        "blocks": [
         {
          "items": [
@@ -2341,13 +2530,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "BE FAST: thăng bằng, mắt, mặt, tay, nói, thời gian · Đi ngay đến bệnh viện · Không cho ăn uống, không chích lể.",
+     "quiz": [
+      {
+       "q": "Nghi đột quỵ, có nên cho uống thuốc hạ áp hoặc an cung không?",
+       "a": "Không. Không cho ăn uống, uống thuốc; đưa ngay đến bệnh viện."
+      },
+      {
+       "q": "Vì sao cần nhớ giờ khởi phát?",
+       "a": "Để bác sĩ quyết định cách điều trị; thời gian càng sớm càng có cơ hội phục hồi."
+      }
+     ],
      "refs": [
-      "WHO. Stroke, Cerebrovascular accident. emro.who.int/health-topics/stroke-cerebrovascular-accident",
-      "CDC. Signs and Symptoms of Stroke. cdc.gov/stroke/signs-symptoms",
+      {
+       "t": "WHO. Stroke, Cerebrovascular accident.",
+       "url": "https://emro.who.int/health-topics/stroke-cerebrovascular-accident",
+       "org": "WHO"
+      },
+      {
+       "t": "CDC. Signs and Symptoms of Stroke.",
+       "url": "https://cdc.gov/stroke/signs-symptoms",
+       "org": "CDC"
+      },
       "Bộ Y tế. Quyết định số 5331/QĐ-BYT ngày 23/12/2020 ban hành Hướng dẫn chẩn đoán và xử trí đột quỵ não (Cần xác minh)."
      ],
-     "issued": true
+     "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
     "icon": "clock",
     "poster": {
@@ -2366,15 +2572,28 @@ window.PULSE_DATA = {
     "slug": "dinh-duong-cho-nguoi-benh",
     "khoa": "Khoa Dinh dưỡng",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.DD.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh nằm viện và người nhà chuẩn bị bữa ăn.",
-     "goal": "sau khi đọc bài, người bệnh và người nhà biết vì sao dinh dưỡng quan trọng, cách thực hiện chế độ ăn bệnh lý, an toàn thực phẩm và khi nào báo nhân viên y tế.",
+     "issued": true,
+     "lead": "Dành cho người bệnh nằm viện và người nhà chuẩn bị bữa ăn.",
      "heading": "Dinh dưỡng cho người bệnh: ăn đúng để mau hồi phục",
+     "urgent": {
+      "h": "Báo ngay nhân viên y tế khi",
+      "blocks": [
+       {
+        "p": "Người bệnh ăn dưới một nửa suất ăn trong nhiều ngày, sụt cân; ho, sặc khi ăn uống; nôn, tiêu chảy, đầy bụng khi ăn qua ống thông. Báo ngay điều dưỡng, bác sĩ đang chăm sóc; khi đã về nhà, đến bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Thực hiện đúng chế độ ăn bệnh lý; hỏi trước khi mang thức ăn từ ngoài vào.",
+      "Mỗi bữa nên có chất đạm; ăn kém thì chia nhiều bữa nhỏ.",
+      "Báo nhân viên y tế khi ăn kém nhiều ngày, sụt cân, ho sặc khi ăn."
+     ],
      "sections": [
       {
-       "h": "1. Vì sao dinh dưỡng quan trọng khi nằm viện",
+       "h": "Vì sao dinh dưỡng quan trọng khi nằm viện",
        "blocks": [
         {
          "p": "Khi ốm, cơ thể cần nhiều năng lượng và chất đạm để chống nhiễm trùng, lành vết thương và giữ sức cơ. Người bệnh ăn kém, sụt cân dễ bị nhiễm trùng, loét tì đè, chậm hồi phục và nằm viện lâu hơn. [1]"
@@ -2385,7 +2604,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Thực hiện đúng chế độ ăn được chỉ định",
+       "h": "Thực hiện đúng chế độ ăn được chỉ định",
        "blocks": [
         {
          "items": [
@@ -2399,7 +2618,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Bữa ăn cân đối hằng ngày",
+       "h": "Bữa ăn cân đối hằng ngày",
        "blocks": [
         {
          "items": [
@@ -2414,7 +2633,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. An toàn thực phẩm trong bệnh viện",
+       "h": "An toàn thực phẩm trong bệnh viện",
        "blocks": [
         {
          "items": [
@@ -2427,7 +2646,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Báo nhân viên y tế khi",
+       "h": "Báo nhân viên y tế khi",
        "blocks": [
         {
          "items": [
@@ -2440,13 +2659,26 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Ăn đúng chế độ được chỉ định · Đủ đạm mỗi bữa · An toàn thực phẩm · Ăn kém, sặc, sụt cân: báo ngay.",
+     "quiz": [
+      {
+       "q": "Người nhà có tự mang thức ăn khác cho người bệnh đang ăn theo chế độ bệnh lý được không?",
+       "a": "Hỏi điều dưỡng, bác sĩ trước; thực hiện đúng chế độ ăn được chỉ định."
+      },
+      {
+       "q": "Người bệnh ho, sặc khi ăn uống thì làm gì?",
+       "a": "Báo ngay nhân viên y tế để được đánh giá nuốt."
+      }
+     ],
      "refs": [
       "ESPEN. ESPEN guideline on hospital nutrition, 2021. Clinical Nutrition 40(12):5684-5709.",
       "Bộ Y tế. Thông tư số 18/2020/TT-BYT ngày 12/11/2020 quy định về hoạt động dinh dưỡng trong bệnh viện.",
-      "WHO. Healthy diet (fact sheet). who.int/news-room/fact-sheets/detail/healthy-diet"
+      {
+       "t": "WHO. Healthy diet (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/healthy-diet",
+       "org": "WHO"
+      }
      ],
-     "issued": true
+     "unit": "Khoa Dinh dưỡng · Phòng Điều dưỡng"
     },
     "icon": "apple",
     "poster": {
@@ -2465,15 +2697,28 @@ window.PULSE_DATA = {
     "slug": "sot-xuat-huyet",
     "khoa": "Khoa Truyền nhiễm",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.SXH.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh sốt xuất huyết điều trị tại nhà hoặc nằm viện, người chăm sóc và người dân.",
-     "goal": "sau khi đọc bài, người đọc biết chăm sóc người bệnh sốt xuất huyết, dùng thuốc hạ sốt an toàn, nhận biết dấu hiệu cảnh báo và cách diệt lăng quăng, phòng muỗi đốt.",
+     "issued": true,
+     "lead": "Dành cho người bệnh sốt xuất huyết điều trị tại nhà hoặc nằm viện, người chăm sóc và người dân.",
      "heading": "Sốt xuất huyết: theo dõi sát, nhận biết sớm dấu hiệu nặng",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Đau bụng nhiều, nôn nhiều, chảy máu cam hoặc chân răng nhiều, nôn ra máu, đi cầu phân đen, li bì, vật vã, tay chân lạnh, tiểu ít. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Chỉ hạ sốt bằng paracetamol; không dùng aspirin, ibuprofen.",
+      "Uống nhiều nước, oresol; theo dõi sát từ ngày 3 đến ngày 7, kể cả khi hết sốt.",
+      "Đau bụng, nôn nhiều, chảy máu, li bì, tay chân lạnh: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về sốt xuất huyết",
+       "h": "Hiểu đúng về sốt xuất huyết",
        "blocks": [
         {
          "p": "Sốt xuất huyết Dengue do virus Dengue gây ra, lây qua muỗi vằn đốt. Bệnh thường sốt cao đột ngột 2 đến 7 ngày, kèm đau đầu, đau nhức người, có thể nổi chấm đỏ dưới da, chảy máu cam, chảy máu chân răng. [1]"
@@ -2484,7 +2729,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Chăm sóc người bệnh tại nhà",
+       "h": "Chăm sóc người bệnh tại nhà",
        "blocks": [
         {
          "items": [
@@ -2499,7 +2744,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dùng thuốc hạ sốt an toàn",
+       "h": "Dùng thuốc hạ sốt an toàn",
        "blocks": [
         {
          "items": [
@@ -2512,7 +2757,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Dấu hiệu cảnh báo: đến bệnh viện ngay",
+       "h": "Dấu hiệu cảnh báo: đến bệnh viện ngay",
        "blocks": [
         {
          "items": [
@@ -2527,7 +2772,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Phòng bệnh: diệt lăng quăng, chống muỗi đốt",
+       "h": "Phòng bệnh: diệt lăng quăng, chống muỗi đốt",
        "blocks": [
         {
          "items": [
@@ -2541,13 +2786,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Hết sốt chưa phải đã khỏi · Chỉ dùng paracetamol · Uống nhiều nước · Đau bụng, nôn nhiều, chảy máu, li bì: đến bệnh viện ngay · Diệt lăng quăng mỗi tuần.",
-     "refs": [
-      "WHO. Dengue and severe dengue (fact sheet). who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
-      "Bộ Y tế. Quyết định số 2760/QĐ-BYT ngày 04/7/2023 ban hành Hướng dẫn chẩn đoán, điều trị sốt xuất huyết Dengue.",
-      "CDC. Dengue: Symptoms and Treatment. cdc.gov/dengue/signs-symptoms"
+     "quiz": [
+      {
+       "q": "Sốt xuất huyết có dùng aspirin, ibuprofen để hạ sốt không?",
+       "a": "Không. Chỉ dùng paracetamol đúng liều theo cân nặng."
+      },
+      {
+       "q": "Khi hết sốt có phải đã hết nguy hiểm?",
+       "a": "Chưa. Giai đoạn hết sốt vẫn có thể trở nặng; theo dõi dấu hiệu cảnh báo."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO. Dengue and severe dengue (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue",
+       "org": "WHO"
+      },
+      "Bộ Y tế. Quyết định số 2760/QĐ-BYT ngày 04/7/2023 ban hành Hướng dẫn chẩn đoán, điều trị sốt xuất huyết Dengue.",
+      {
+       "t": "CDC. Dengue: Symptoms and Treatment.",
+       "url": "https://cdc.gov/dengue/signs-symptoms",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Khoa Truyền nhiễm · Phòng Điều dưỡng"
     },
     "icon": "bug",
     "poster": {
@@ -2566,15 +2828,28 @@ window.PULSE_DATA = {
     "slug": "lao-phoi",
     "khoa": "Khoa Truyền nhiễm",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.LP.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh lao phổi, người nhà, người tiếp xúc và người dân.",
-     "goal": "sau khi đọc bài, người đọc biết dấu hiệu nghi lao, cách điều trị đủ liệu trình, nhận biết tác dụng không mong muốn của thuốc và cách phòng lây cho người xung quanh.",
+     "issued": true,
+     "lead": "Dành cho người bệnh lao phổi, người nhà, người tiếp xúc và người dân.",
      "heading": "Lao phổi: chữa khỏi được nếu điều trị đủ và đúng",
+     "urgent": {
+      "h": "Cần đến bệnh viện ngay",
+      "blocks": [
+       {
+        "p": "Đang uống thuốc lao mà vàng da, vàng mắt, nôn nhiều, nổi mẩn ngứa toàn thân, nhìn mờ, ù tai: ngưng thuốc và đến bệnh viện. Ho ra máu nhiều, khó thở: đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Ho kéo dài từ 2 tuần, sốt về chiều, sụt cân: đi khám lao.",
+      "Uống thuốc đủ, đúng, đều; không bỏ giữa chừng dù đã thấy khỏe.",
+      "Che miệng khi ho, đeo khẩu trang, giữ nhà thông thoáng."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về bệnh lao phổi",
+       "h": "Hiểu đúng về bệnh lao phổi",
        "blocks": [
         {
          "p": "Lao phổi do vi khuẩn lao gây ra, lây qua đường hô hấp khi người bệnh ho, hắt hơi, nói chuyện. Lao chữa khỏi được nếu được phát hiện sớm và điều trị đủ thời gian, đúng cách. Thời gian điều trị lao thông thường kéo dài ít nhất 6 tháng. [1]"
@@ -2582,7 +2857,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Dấu hiệu cần đi khám lao",
+       "h": "Dấu hiệu cần đi khám lao",
        "blocks": [
         {
          "items": [
@@ -2598,7 +2873,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Điều trị đủ và đúng",
+       "h": "Điều trị đủ và đúng",
        "blocks": [
         {
          "items": [
@@ -2612,7 +2887,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Tác dụng không mong muốn của thuốc",
+       "h": "Tác dụng không mong muốn của thuốc",
        "blocks": [
         {
          "items": [
@@ -2627,7 +2902,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Phòng lây cho người xung quanh",
+       "h": "Phòng lây cho người xung quanh",
        "blocks": [
         {
          "items": [
@@ -2641,13 +2916,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Ho trên 2 tuần: đi khám · Uống thuốc đủ, đúng, đều · Không bỏ thuốc giữa chừng · Che miệng khi ho · Phòng thoáng khí.",
-     "refs": [
-      "WHO. Tuberculosis (fact sheet). who.int/news-room/fact-sheets/detail/tuberculosis",
-      "Bộ Y tế. Quyết định số 1314/QĐ-BYT ngày 24/3/2020 ban hành Hướng dẫn chẩn đoán, điều trị và dự phòng bệnh lao.",
-      "CDC. Treatment for TB Disease. cdc.gov/tb/treatment"
+     "quiz": [
+      {
+       "q": "Nước tiểu đỏ cam khi uống thuốc lao có nguy hiểm không?",
+       "a": "Không. Do thuốc rifampicin; vẫn uống thuốc đều."
+      },
+      {
+       "q": "Hết ho có được ngừng thuốc lao không?",
+       "a": "Không. Điều trị đủ thời gian (thường ít nhất 6 tháng) và đúng cách theo hướng dẫn của bác sĩ."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO. Tuberculosis (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/tuberculosis",
+       "org": "WHO"
+      },
+      "Bộ Y tế. Quyết định số 1314/QĐ-BYT ngày 24/3/2020 ban hành Hướng dẫn chẩn đoán, điều trị và dự phòng bệnh lao.",
+      {
+       "t": "CDC. Treatment for TB Disease.",
+       "url": "https://cdc.gov/tb/treatment",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Khoa Truyền nhiễm · Phòng Điều dưỡng"
     },
     "icon": "wind",
     "poster": {
@@ -2666,15 +2958,28 @@ window.PULSE_DATA = {
     "slug": "tay-chan-mieng-o-tre",
     "khoa": "Khoa Nhi",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.TCM.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "cha mẹ, người chăm sóc trẻ dưới 5 tuổi, giáo viên mầm non.",
-     "goal": "sau khi đọc bài, người chăm sóc biết cách chăm sóc trẻ bị tay chân miệng, nhận biết dấu hiệu nặng cần đưa trẻ đến bệnh viện ngay và cách phòng lây lan.",
+     "issued": true,
+     "lead": "Dành cho cha mẹ, người chăm sóc trẻ dưới 5 tuổi, giáo viên mầm non.",
      "heading": "Tay chân miệng ở trẻ: chăm sóc tại nhà và dấu hiệu phải đi viện",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Trẻ sốt cao từ 39 độ C, giật mình chới với, run tay chân, li bì, co giật, nôn nhiều, thở nhanh, thở khó, da nổi vân tím. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Cho trẻ ăn mềm, uống đủ nước; hạ sốt bằng paracetamol theo cân nặng.",
+      "Giật mình, sốt cao khó hạ, nôn nhiều, li bì, thở nhanh: đến bệnh viện ngay.",
+      "Rửa tay bằng xà phòng; lau sạch đồ chơi, sàn nhà; cho trẻ nghỉ học."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về bệnh tay chân miệng",
+       "h": "Hiểu đúng về bệnh tay chân miệng",
        "blocks": [
         {
          "p": "Tay chân miệng do virus đường ruột gây ra, hay gặp ở trẻ dưới 5 tuổi. Bệnh lây qua tiếp xúc với nước bọt, dịch bóng nước, phân của trẻ bệnh, hoặc đồ chơi, bề mặt bị nhiễm. Trẻ thường sốt, đau họng, loét miệng, nổi bóng nước ở lòng bàn tay, lòng bàn chân, mông, gối. [1]"
@@ -2685,7 +2990,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Chăm sóc trẻ tại nhà",
+       "h": "Chăm sóc trẻ tại nhà",
        "blocks": [
         {
          "items": [
@@ -2700,7 +3005,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dấu hiệu nặng: đưa trẻ đến bệnh viện ngay",
+       "h": "Dấu hiệu nặng: đưa trẻ đến bệnh viện ngay",
        "blocks": [
         {
          "items": [
@@ -2718,7 +3023,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Phòng lây lan",
+       "h": "Phòng lây lan",
        "blocks": [
         {
          "items": [
@@ -2732,13 +3037,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Ăn mềm, uống đủ · Không chọc vỡ bóng nước · Giật mình, sốt cao, nôn nhiều, li bì: đến bệnh viện ngay · Rửa tay bằng xà phòng.",
-     "refs": [
-      "WHO Western Pacific. Hand, foot and mouth disease. who.int/westernpacific/health-topics/hand-foot-and-mouth-disease",
-      "Bộ Y tế. Quyết định số 292/QĐ-BYT năm 2024 ban hành Hướng dẫn chẩn đoán, điều trị bệnh tay chân miệng (Cần xác minh số và ngày ban hành).",
-      "CDC. Hand, Foot, and Mouth Disease. cdc.gov/hand-foot-mouth"
+     "quiz": [
+      {
+       "q": "Trẻ giật mình chới với khi ngủ có đáng lo không?",
+       "a": "Có. Đây là dấu hiệu nặng; đưa trẻ đến bệnh viện ngay."
+      },
+      {
+       "q": "Làm sao phòng lây cho trẻ khác?",
+       "a": "Rửa tay bằng xà phòng, lau sạch đồ chơi, sàn nhà; cho trẻ bệnh nghỉ học."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO Western Pacific. Hand, foot and mouth disease.",
+       "url": "https://who.int/westernpacific/health-topics/hand-foot-and-mouth-disease",
+       "org": "WHO Western Pacific"
+      },
+      "Bộ Y tế. Quyết định số 292/QĐ-BYT năm 2024 ban hành Hướng dẫn chẩn đoán, điều trị bệnh tay chân miệng (Cần xác minh số và ngày ban hành).",
+      {
+       "t": "CDC. Hand, Foot, and Mouth Disease.",
+       "url": "https://cdc.gov/hand-foot-mouth",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Khoa Nhi · Phòng Điều dưỡng"
     },
     "icon": "baby",
     "poster": {
@@ -2757,15 +3079,28 @@ window.PULSE_DATA = {
     "slug": "nuoi-con-bang-sua-me",
     "khoa": "Khoa Phụ sản",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.NCBSM.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "bà mẹ mang thai, bà mẹ sau sinh và người thân trong gia đình.",
-     "goal": "sau khi đọc bài, bà mẹ biết lợi ích của sữa mẹ, cách cho con bú sớm, đúng tư thế, nhận biết trẻ bú đủ và cách duy trì nguồn sữa.",
+     "issued": true,
+     "lead": "Dành cho bà mẹ mang thai, bà mẹ sau sinh và người thân trong gia đình.",
      "heading": "Nuôi con bằng sữa mẹ: khởi đầu tốt nhất cho trẻ",
+     "urgent": {
+      "h": "Cần đưa trẻ đi khám ngay",
+      "blocks": [
+       {
+        "p": "Trẻ bỏ bú, bú yếu, li bì, sốt, vàng da tăng, tiểu rất ít. Mẹ sốt, vú sưng đau, đỏ nóng. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Cho trẻ bú sớm trong 1 giờ đầu sau sinh, da kề da.",
+      "Bú mẹ hoàn toàn 6 tháng đầu; tiếp tục bú đến 24 tháng.",
+      "Ngậm bắt vú đúng: miệng mở rộng, ngậm hết quầng vú, mẹ không đau."
+     ],
      "sections": [
       {
-       "h": "1. Lợi ích của sữa mẹ",
+       "h": "Lợi ích của sữa mẹ",
        "blocks": [
         {
          "p": "Sữa mẹ có đủ dưỡng chất và nước cho trẻ trong 6 tháng đầu, chứa kháng thể giúp trẻ phòng tiêu chảy, viêm phổi. Cho con bú giúp mẹ co hồi tử cung, giảm mất máu sau sinh và giảm nguy cơ một số bệnh ung thư. [1]"
@@ -2773,7 +3108,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Ba mốc quan trọng",
+       "h": "Ba mốc quan trọng",
        "blocks": [
         {
          "items": [
@@ -2786,7 +3121,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Tư thế bế và ngậm bắt vú đúng",
+       "h": "Tư thế bế và ngậm bắt vú đúng",
        "blocks": [
         {
          "items": [
@@ -2802,7 +3137,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Trẻ bú đủ khi",
+       "h": "Trẻ bú đủ khi",
        "blocks": [
         {
          "items": [
@@ -2815,7 +3150,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Duy trì nguồn sữa",
+       "h": "Duy trì nguồn sữa",
        "blocks": [
         {
          "items": [
@@ -2832,13 +3167,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Bú sớm trong 1 giờ đầu · Bú mẹ hoàn toàn 6 tháng · Ngậm bắt vú đúng · Bú theo nhu cầu · Tiếp tục bú đến 24 tháng.",
-     "refs": [
-      "WHO. Infant and young child feeding (fact sheet). who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
-      "Bộ Y tế. Quyết định số 4128/QĐ-BYT ngày 29/7/2016 ban hành Hướng dẫn quốc gia về các dịch vụ chăm sóc sức khỏe sinh sản.",
-      "UNICEF. Breastfeeding. unicef.org/nutrition/breastfeeding"
+     "quiz": [
+      {
+       "q": "Khi nào nên cho trẻ bú lần đầu?",
+       "a": "Trong vòng 1 giờ đầu sau sinh."
+      },
+      {
+       "q": "Làm sao biết trẻ bú đủ?",
+       "a": "Bú 8 đến 12 lần mỗi ngày, từ ngày thứ 5 có khoảng 6 tã ướt trở lên, tăng cân đều."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO. Infant and young child feeding (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/infant-and-young-child-feeding",
+       "org": "WHO"
+      },
+      "Bộ Y tế. Quyết định số 4128/QĐ-BYT ngày 29/7/2016 ban hành Hướng dẫn quốc gia về các dịch vụ chăm sóc sức khỏe sinh sản.",
+      {
+       "t": "UNICEF. Breastfeeding.",
+       "url": "https://unicef.org/nutrition/breastfeeding",
+       "org": "UNICEF"
+      }
+     ],
+     "unit": "Khoa Phụ sản · Phòng Điều dưỡng"
     },
     "icon": "heart",
     "poster": {
@@ -2857,15 +3209,28 @@ window.PULSE_DATA = {
     "slug": "viem-ket-mac",
     "khoa": "Khoa Liên chuyên khoa",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.VKM.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bị đau mắt đỏ, cha mẹ có trẻ bị bệnh, người dân.",
-     "goal": "sau khi đọc bài, người đọc biết cách chăm sóc mắt, những việc không nên làm, cách phòng lây và dấu hiệu cần khám chuyên khoa mắt.",
+     "issued": true,
+     "lead": "Dành cho người bị đau mắt đỏ, cha mẹ có trẻ bị bệnh, người dân.",
      "heading": "Viêm kết mạc: chăm sóc đúng, không để lây lan",
+     "urgent": {
+      "h": "Cần khám mắt ngay",
+      "blocks": [
+       {
+        "p": "Đau nhức mắt nhiều, nhìn mờ, sợ ánh sáng; ghèn xanh vàng đặc, sưng mí kèm sốt; trẻ sơ sinh đỏ mắt, có ghèn. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Rửa tay, dùng khăn riêng; lau ghèn từ góc trong ra ngoài.",
+      "Không tự nhỏ thuốc có corticoid, không đắp lá hay mẹo dân gian.",
+      "Đau nhức mắt, nhìn mờ, sợ ánh sáng: khám mắt ngay."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về viêm kết mạc",
+       "h": "Hiểu đúng về viêm kết mạc",
        "blocks": [
         {
          "p": "Viêm kết mạc (đau mắt đỏ) là tình trạng viêm lớp màng mỏng phủ lòng trắng mắt và mặt trong mí mắt. Nguyên nhân thường gặp là virus, vi khuẩn hoặc dị ứng. Mắt đỏ, cộm như có cát, chảy nước mắt hoặc ghèn, mí mắt sưng. Viêm kết mạc do virus và vi khuẩn lây rất nhanh qua tay, khăn mặt, đồ dùng chung. [1]"
@@ -2873,7 +3238,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Chăm sóc mắt đúng cách",
+       "h": "Chăm sóc mắt đúng cách",
        "blocks": [
         {
          "items": [
@@ -2888,7 +3253,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Những việc không nên làm",
+       "h": "Những việc không nên làm",
        "blocks": [
         {
          "items": [
@@ -2901,7 +3266,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Phòng lây lan",
+       "h": "Phòng lây lan",
        "blocks": [
         {
          "items": [
@@ -2914,7 +3279,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Khi nào cần khám chuyên khoa mắt ngay",
+       "h": "Khi nào cần khám chuyên khoa mắt ngay",
        "blocks": [
         {
          "items": [
@@ -2928,12 +3293,29 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Rửa tay · Khăn riêng · Không tự nhỏ thuốc có corticoid · Không đắp lá · Đau nhức, nhìn mờ: khám mắt ngay.",
-     "refs": [
-      "American Academy of Ophthalmology. Conjunctivitis: What Is Pink Eye? aao.org/eye-health/diseases/pink-eye-conjunctivitis",
-      "CDC. Conjunctivitis (Pink Eye). cdc.gov/conjunctivitis"
+     "quiz": [
+      {
+       "q": "Có nên nhỏ sữa mẹ hoặc đắp lá vào mắt đỏ không?",
+       "a": "Không. Rửa mắt bằng nước muối sinh lý, nhỏ thuốc theo đơn của bác sĩ."
+      },
+      {
+       "q": "Làm sao để không lây cho người nhà?",
+       "a": "Rửa tay thường xuyên, dùng khăn, gối riêng, không dụi mắt."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "American Academy of Ophthalmology. Conjunctivitis: What Is Pink Eye?",
+       "url": "https://aao.org/eye-health/diseases/pink-eye-conjunctivitis",
+       "org": "American Academy of Ophthalmology"
+      },
+      {
+       "t": "CDC. Conjunctivitis (Pink Eye).",
+       "url": "https://cdc.gov/conjunctivitis",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
     },
     "icon": "eye",
     "poster": {
@@ -2952,15 +3334,28 @@ window.PULSE_DATA = {
     "slug": "duc-thuy-tinh-the",
     "khoa": "Khoa Liên chuyên khoa",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.DTTT.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người cao tuổi nhìn mờ, người bệnh chuẩn bị hoặc vừa mổ đục thủy tinh thể và người chăm sóc.",
-     "goal": "sau khi đọc bài, người đọc biết dấu hiệu đục thủy tinh thể, cách điều trị, chuẩn bị trước mổ và chăm sóc mắt sau mổ.",
+     "issued": true,
+     "lead": "Dành cho người cao tuổi nhìn mờ, người bệnh chuẩn bị hoặc vừa mổ đục thủy tinh thể và người chăm sóc.",
      "heading": "Đục thủy tinh thể: phẫu thuật đúng lúc, chăm sóc đúng sau mổ",
+     "urgent": {
+      "h": "Cần đến bệnh viện ngay",
+      "blocks": [
+       {
+        "p": "Sau mổ mà đau nhức mắt tăng dần, thị lực giảm đột ngột, mắt đỏ nhiều, có ghèn, thấy chớp sáng hoặc như màn che. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Nhìn mờ như qua sương, chói sáng: đi khám mắt.",
+      "Không có thuốc làm tan đục; mổ thay thủy tinh thể là điều trị hiệu quả.",
+      "Sau mổ: nhỏ thuốc đúng, không dụi mắt; đau tăng, nhìn giảm: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về đục thủy tinh thể",
+       "h": "Hiểu đúng về đục thủy tinh thể",
        "blocks": [
         {
          "p": "Thủy tinh thể là thấu kính trong suốt bên trong mắt. Khi bị đục, ánh sáng khó đi vào mắt, người bệnh nhìn mờ như qua màn sương, chói khi ra nắng hoặc nhìn đèn xe ban đêm, màu sắc nhạt đi. Bệnh hay gặp ở người cao tuổi, người đái tháo đường, người dùng corticoid lâu ngày hoặc từng chấn thương mắt. [1]"
@@ -2968,7 +3363,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Điều trị",
+       "h": "Điều trị",
        "blocks": [
         {
          "p": "Không có thuốc nhỏ, thuốc uống nào làm hết đục thủy tinh thể. Phẫu thuật thay thủy tinh thể nhân tạo là cách điều trị hiệu quả. Bác sĩ chuyên khoa mắt sẽ khám và tư vấn thời điểm mổ phù hợp khi nhìn mờ ảnh hưởng sinh hoạt."
@@ -2979,7 +3374,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Chuẩn bị trước mổ",
+       "h": "Chuẩn bị trước mổ",
        "blocks": [
         {
          "items": [
@@ -2992,7 +3387,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Chăm sóc sau mổ",
+       "h": "Chăm sóc sau mổ",
        "blocks": [
         {
          "items": [
@@ -3007,7 +3402,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Đến bệnh viện ngay khi",
+       "h": "Đến bệnh viện ngay khi",
        "blocks": [
         {
          "items": [
@@ -3020,12 +3415,29 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Nhìn mờ, chói sáng: khám mắt · Mổ là điều trị hiệu quả · Sau mổ nhỏ thuốc đúng, không dụi mắt · Đau tăng, nhìn giảm: đến bệnh viện ngay.",
-     "refs": [
-      "American Academy of Ophthalmology. What Are Cataracts? aao.org/eye-health/diseases/what-are-cataracts",
-      "National Eye Institute. Cataracts. nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts"
+     "quiz": [
+      {
+       "q": "Thuốc nhỏ mắt có làm tan đục thủy tinh thể không?",
+       "a": "Không. Mổ thay thủy tinh thể nhân tạo là cách điều trị hiệu quả."
+      },
+      {
+       "q": "Sau mổ cần tránh gì?",
+       "a": "Dụi mắt, nằm đè lên mắt vừa mổ, để nước, xà phòng vào mắt, cúi thấp, mang vật nặng."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "American Academy of Ophthalmology. What Are Cataracts?",
+       "url": "https://aao.org/eye-health/diseases/what-are-cataracts",
+       "org": "American Academy of Ophthalmology"
+      },
+      {
+       "t": "National Eye Institute. Cataracts.",
+       "url": "https://nei.nih.gov/learn-about-eye-health/eye-conditions-and-diseases/cataracts",
+       "org": "National Eye Institute"
+      }
+     ],
+     "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
     },
     "icon": "eye",
     "poster": {
@@ -3044,15 +3456,28 @@ window.PULSE_DATA = {
     "slug": "tat-khuc-xa",
     "khoa": "Khoa Liên chuyên khoa",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.TKX.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "cha mẹ, học sinh và giáo viên.",
-     "goal": "sau khi đọc bài, người đọc nhận biết dấu hiệu trẻ bị tật khúc xạ, biết cách đeo kính đúng và thói quen giúp phòng ngừa cận thị.",
+     "issued": true,
+     "lead": "Dành cho cha mẹ, học sinh và giáo viên.",
      "heading": "Tật khúc xạ ở trẻ em: phát hiện sớm, đeo kính đúng",
+     "urgent": {
+      "h": "Nên đưa trẻ đi khám mắt khi",
+      "blocks": [
+       {
+        "p": "Trẻ nheo mắt, nghiêng đầu khi nhìn, đến gần ti vi, cúi sát sách vở, kêu mỏi mắt, đau đầu, nhìn bảng không rõ. Khám mắt trước khi vào lớp 1 và kiểm tra mỗi năm."
+       }
+      ]
+     },
+     "remember": [
+      "Nheo mắt, cúi sát sách, dụi mắt nhiều: đưa trẻ đi khám mắt.",
+      "Đeo kính đúng số, khám lại mỗi 6 tháng đến 1 năm.",
+      "Chơi ngoài trời ít nhất 2 giờ mỗi ngày; nghỉ mắt theo quy tắc 20-20-20."
+     ],
      "sections": [
       {
-       "h": "1. Tật khúc xạ là gì",
+       "h": "Tật khúc xạ là gì",
        "blocks": [
         {
          "p": "Tật khúc xạ gồm cận thị, viễn thị và loạn thị, làm hình ảnh không hội tụ đúng trên võng mạc nên trẻ nhìn mờ. Cận thị ở trẻ em đang tăng nhanh, liên quan đến nhìn gần nhiều và ít hoạt động ngoài trời. Không phát hiện và chỉnh kính kịp thời có thể gây nhược thị, ảnh hưởng học tập. [1]"
@@ -3060,7 +3485,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Dấu hiệu nghi ngờ",
+       "h": "Dấu hiệu nghi ngờ",
        "blocks": [
         {
          "items": [
@@ -3076,7 +3501,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Đeo kính đúng cách",
+       "h": "Đeo kính đúng cách",
        "blocks": [
         {
          "items": [
@@ -3090,7 +3515,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Thói quen tốt cho mắt",
+       "h": "Thói quen tốt cho mắt",
        "blocks": [
         {
          "items": [
@@ -3105,13 +3530,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Khám mắt trước lớp 1 và mỗi năm · Đeo kính đúng số · Chơi ngoài trời 2 giờ mỗi ngày · Quy tắc 20-20-20.",
+     "quiz": [
+      {
+       "q": "Khi nào nên cho trẻ khám mắt?",
+       "a": "Trước khi vào lớp 1, kiểm tra mỗi năm và sớm hơn khi có dấu hiệu nghi ngờ."
+      },
+      {
+       "q": "Thói quen nào tốt cho mắt trẻ?",
+       "a": "Học, đọc đủ ánh sáng, giữ khoảng cách; hạn chế màn hình; chơi ngoài trời mỗi ngày."
+      }
+     ],
      "refs": [
-      "WHO. Blindness and vision impairment (fact sheet). who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment",
-      "American Academy of Ophthalmology. Nearsightedness: What Is Myopia? aao.org/eye-health/diseases/myopia-nearsightedness",
+      {
+       "t": "WHO. Blindness and vision impairment (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment",
+       "org": "WHO"
+      },
+      {
+       "t": "American Academy of Ophthalmology. Nearsightedness: What Is Myopia?",
+       "url": "https://aao.org/eye-health/diseases/myopia-nearsightedness",
+       "org": "American Academy of Ophthalmology"
+      },
       "WHO. Guidelines on physical activity, sedentary behaviour and sleep for children under 5 years of age, 2019."
      ],
-     "issued": true
+     "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
     },
     "icon": "eye"
    },
@@ -3126,15 +3568,28 @@ window.PULSE_DATA = {
     "slug": "viem-gan-b",
     "khoa": "Khoa Nội tiêu hóa",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.VGB.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người nhiễm virus viêm gan B, người nhà và người dân.",
-     "goal": "sau khi đọc bài, người đọc biết đường lây và không lây của viêm gan B, cách phòng bằng vắc xin, cách theo dõi, dùng thuốc và sinh hoạt khi bị nhiễm.",
+     "issued": true,
+     "lead": "Dành cho người nhiễm virus viêm gan B, người nhà và người dân.",
      "heading": "Viêm gan B: tiêm phòng, theo dõi đều để bảo vệ lá gan",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Vàng da, vàng mắt, bụng to nhanh, nôn ra máu, đi cầu phân đen, lơ mơ, ngủ gà, nói lẫn lộn. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Viêm gan B lây qua máu, mẹ sang con, quan hệ tình dục; không lây qua ăn uống chung.",
+      "Trẻ sơ sinh tiêm vắc xin trong 24 giờ đầu; người lớn chưa có kháng thể nên tiêm phòng.",
+      "Người nhiễm: khám định kỳ, không tự ngừng thuốc, không rượu bia."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về viêm gan B",
+       "h": "Hiểu đúng về viêm gan B",
        "blocks": [
         {
          "p": "Viêm gan B do virus viêm gan B gây ra. Nhiều người nhiễm lâu năm không có triệu chứng, chỉ phát hiện khi xét nghiệm. Viêm gan B mạn tính nếu không theo dõi, điều trị có thể dẫn đến xơ gan, ung thư gan. [1]"
@@ -3142,7 +3597,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Đường lây và không lây",
+       "h": "Đường lây và không lây",
        "blocks": [
         {
          "items": [
@@ -3158,7 +3613,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Phòng bệnh bằng vắc xin",
+       "h": "Phòng bệnh bằng vắc xin",
        "blocks": [
         {
          "items": [
@@ -3171,7 +3626,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Khi đã nhiễm viêm gan B",
+       "h": "Khi đã nhiễm viêm gan B",
        "blocks": [
         {
          "items": [
@@ -3186,7 +3641,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Đến bệnh viện ngay khi",
+       "h": "Đến bệnh viện ngay khi",
        "blocks": [
         {
          "items": [
@@ -3199,13 +3654,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Tiêm vắc xin trong 24 giờ sau sinh · Không lây qua ăn uống chung · Theo dõi định kỳ · Không tự ngừng thuốc · Không rượu bia.",
-     "refs": [
-      "WHO. Hepatitis B (fact sheet). who.int/news-room/fact-sheets/detail/hepatitis-b",
-      "Bộ Y tế. Quyết định số 3310/QĐ-BYT ngày 29/7/2019 ban hành Hướng dẫn chẩn đoán, điều trị bệnh viêm gan vi rút B.",
-      "CDC. Hepatitis B Basics. cdc.gov/hepatitis-b/about"
+     "quiz": [
+      {
+       "q": "Ăn chung, ôm, bắt tay có lây viêm gan B không?",
+       "a": "Không. Viêm gan B lây qua máu, quan hệ tình dục và từ mẹ sang con."
+      },
+      {
+       "q": "Cách phòng viêm gan B tốt nhất là gì?",
+       "a": "Tiêm vắc xin; trẻ sơ sinh tiêm mũi đầu trong 24 giờ sau sinh."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO. Hepatitis B (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/hepatitis-b",
+       "org": "WHO"
+      },
+      "Bộ Y tế. Quyết định số 3310/QĐ-BYT ngày 29/7/2019 ban hành Hướng dẫn chẩn đoán, điều trị bệnh viêm gan vi rút B.",
+      {
+       "t": "CDC. Hepatitis B Basics.",
+       "url": "https://cdc.gov/hepatitis-b/about",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Khoa Nội tiêu hóa · Phòng Điều dưỡng"
     },
     "icon": "shield"
    },
@@ -3220,15 +3692,28 @@ window.PULSE_DATA = {
     "slug": "copd",
     "khoa": "Khoa Nội tổng quát",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.COPD.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh phổi tắc nghẽn mạn tính và người chăm sóc.",
-     "goal": "sau khi đọc bài, người bệnh biết vì sao phải bỏ thuốc lá, dùng thuốc hít đều và đúng, tập thở, phòng đợt cấp và nhận biết khi nào cần đến bệnh viện.",
+     "issued": true,
+     "lead": "Dành cho người bệnh phổi tắc nghẽn mạn tính và người chăm sóc.",
      "heading": "COPD: bỏ thuốc lá, dùng thuốc hít đúng, thở đúng cách",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Khó thở tăng nhiều, khó thở cả khi nghỉ; môi, đầu ngón tay tím; lơ mơ; dùng thuốc như thường lệ không đỡ. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Bỏ thuốc lá, thuốc lào; tránh khói bếp, bụi.",
+      "Dùng thuốc hít hằng ngày, đúng kỹ thuật; tập thở chúm môi.",
+      "Khó thở tăng, đờm đổi màu, tím môi: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về COPD",
+       "h": "Hiểu đúng về COPD",
        "blocks": [
         {
          "p": "Bệnh phổi tắc nghẽn mạn tính (COPD) làm đường thở bị hẹp và phổi bị tổn thương kéo dài, gây ho, khạc đờm, khó thở tăng dần, nhất là khi gắng sức. Nguyên nhân chính là hút thuốc lá, thuốc lào; khói bếp củi, bụi nghề nghiệp cũng góp phần. Bệnh không chữa khỏi hẳn nhưng điều trị đúng giúp giảm khó thở, giảm đợt cấp và sống tốt hơn. [1]"
@@ -3236,7 +3721,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Bỏ thuốc lá: việc quan trọng nhất",
+       "h": "Bỏ thuốc lá: việc quan trọng nhất",
        "blocks": [
         {
          "items": [
@@ -3249,7 +3734,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dùng thuốc hít đều và đúng",
+       "h": "Dùng thuốc hít đều và đúng",
        "blocks": [
         {
          "items": [
@@ -3263,7 +3748,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Tập thở và vận động",
+       "h": "Tập thở và vận động",
        "blocks": [
         {
          "items": [
@@ -3277,7 +3762,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Phòng đợt cấp",
+       "h": "Phòng đợt cấp",
        "blocks": [
         {
          "items": [
@@ -3290,7 +3775,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "6. Đến bệnh viện ngay khi",
+       "h": "Đến bệnh viện ngay khi",
        "blocks": [
         {
          "items": [
@@ -3303,13 +3788,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Bỏ thuốc lá · Dùng thuốc hít đều và đúng · Thở chúm môi · Tiêm vắc xin cúm, phế cầu · Khó thở tăng: đến bệnh viện ngay.",
+     "quiz": [
+      {
+       "q": "Việc quan trọng nhất với người bệnh COPD là gì?",
+       "a": "Bỏ thuốc lá, tránh khói thuốc và khói bụi."
+      },
+      {
+       "q": "Khi nào cần đến bệnh viện ngay?",
+       "a": "Khó thở tăng nhiều, tím môi, lơ mơ, dùng thuốc không đỡ."
+      }
+     ],
      "refs": [
-      "WHO. Chronic obstructive pulmonary disease (COPD) (fact sheet). who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)",
-      "Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global Strategy for Prevention, Diagnosis and Management of COPD, bản cập nhật mới nhất. goldcopd.org",
+      {
+       "t": "WHO. Chronic obstructive pulmonary disease (COPD) (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/chronic-obstructive-pulmonary-disease-(copd)",
+       "org": "WHO"
+      },
+      {
+       "t": "Global Initiative for Chronic Obstructive Lung Disease (GOLD). Global Strategy for Prevention, Diagnosis and Management of COPD, bản cập nhật mới nhất.",
+       "url": "https://goldcopd.org",
+       "org": "Global Initiative for Chronic Obstructive Lung Disease (GOLD)"
+      },
       "Bộ Y tế. Hướng dẫn chẩn đoán và điều trị bệnh phổi tắc nghẽn mạn tính (Cần xác minh số Quyết định bản hiện hành)."
      ],
-     "issued": true
+     "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
     "icon": "wind",
     "poster": {
@@ -3328,15 +3830,28 @@ window.PULSE_DATA = {
     "slug": "viem-phe-quan",
     "khoa": "Khoa Nội tổng quát",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.VPQ.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người lớn bị ho do viêm phế quản cấp và người chăm sóc.",
-     "goal": "sau khi đọc bài, người đọc biết cách chăm sóc khi bị viêm phế quản cấp, hiểu vì sao không cần kháng sinh trong đa số trường hợp và nhận biết dấu hiệu cần đi khám.",
+     "issued": true,
+     "lead": "Dành cho người lớn bị ho do viêm phế quản cấp và người chăm sóc.",
      "heading": "Viêm phế quản cấp: nghỉ ngơi, uống đủ nước, không lạm dụng kháng sinh",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Khó thở nhiều, tím môi, lơ mơ, ho ra máu. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Nghỉ ngơi, uống nhiều nước ấm; tránh khói thuốc, khói bếp.",
+      "Đa số do virus: không tự dùng kháng sinh.",
+      "Sốt cao trên 3 ngày, khó thở, ho ra máu, ho trên 3 tuần: đi khám."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về viêm phế quản cấp",
+       "h": "Hiểu đúng về viêm phế quản cấp",
        "blocks": [
         {
          "p": "Viêm phế quản cấp là tình trạng viêm đường dẫn khí lớn trong phổi, phần lớn do virus, thường sau cảm cúm. Người bệnh ho, có thể khạc đờm, đau rát ngực khi ho, sốt nhẹ, mệt. Ho có thể kéo dài 2 đến 3 tuần rồi tự khỏi. [1]"
@@ -3344,7 +3859,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Chăm sóc tại nhà",
+       "h": "Chăm sóc tại nhà",
        "blocks": [
         {
          "items": [
@@ -3359,7 +3874,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Không lạm dụng kháng sinh",
+       "h": "Không lạm dụng kháng sinh",
        "blocks": [
         {
          "p": "Kháng sinh không có tác dụng với virus. Dùng kháng sinh khi không cần thiết không làm bệnh khỏi nhanh hơn mà còn gây tác dụng phụ và làm vi khuẩn kháng thuốc. Chỉ dùng kháng sinh khi bác sĩ khám và kê đơn; không tự mua, không dùng thuốc còn lại của lần trước. [2]"
@@ -3367,7 +3882,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Khi nào cần đi khám",
+       "h": "Khi nào cần đi khám",
        "blocks": [
         {
          "items": [
@@ -3384,13 +3899,34 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Nghỉ ngơi, uống nhiều nước · Không tự dùng kháng sinh · Che miệng khi ho · Sốt cao kéo dài, khó thở, ho trên 3 tuần: đi khám.",
-     "refs": [
-      "CDC. Chest Cold (Acute Bronchitis). cdc.gov/acute-bronchitis",
-      "WHO. Antimicrobial resistance (fact sheet). who.int/news-room/fact-sheets/detail/antimicrobial-resistance",
-      "NHS. Bronchitis. nhs.uk/conditions/bronchitis"
+     "quiz": [
+      {
+       "q": "Viêm phế quản cấp có cần uống kháng sinh không?",
+       "a": "Phần lớn do virus, không cần kháng sinh; chỉ dùng khi bác sĩ kê đơn."
+      },
+      {
+       "q": "Ho kéo dài bao lâu thì nên đi khám?",
+       "a": "Trên 3 tuần, hoặc sớm hơn khi sốt cao, khó thở, ho ra máu."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "CDC. Chest Cold (Acute Bronchitis).",
+       "url": "https://cdc.gov/acute-bronchitis",
+       "org": "CDC"
+      },
+      {
+       "t": "WHO. Antimicrobial resistance (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/antimicrobial-resistance",
+       "org": "WHO"
+      },
+      {
+       "t": "NHS. Bronchitis.",
+       "url": "https://nhs.uk/conditions/bronchitis",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
     "icon": "wind"
    },
@@ -3405,15 +3941,28 @@ window.PULSE_DATA = {
     "slug": "cum",
     "khoa": "Khoa Truyền nhiễm",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.CUM.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người dân, người cao tuổi, người có bệnh mạn tính, phụ nữ mang thai, cha mẹ có con nhỏ.",
-     "goal": "sau khi đọc bài, người đọc biết cách phòng cúm, chăm sóc khi bị cúm, nhóm người dễ bị nặng và dấu hiệu cần đến bệnh viện.",
+     "issued": true,
+     "lead": "Dành cho người dân, người cao tuổi, người có bệnh mạn tính, phụ nữ mang thai, cha mẹ có con nhỏ.",
      "heading": "Cúm mùa: tiêm vắc xin hằng năm, nhận biết sớm dấu hiệu nặng",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Khó thở, thở nhanh, đau tức ngực, môi tím, lơ mơ, co giật; trẻ bỏ bú, li bì. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Tiêm vắc xin cúm mỗi năm một lần.",
+      "Nghỉ ngơi, uống nhiều nước, đeo khẩu trang, che miệng khi ho.",
+      "Khó thở, tím môi, li bì, trẻ bỏ bú: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về cúm mùa",
+       "h": "Hiểu đúng về cúm mùa",
        "blocks": [
         {
          "p": "Cúm do virus cúm gây ra, lây qua giọt bắn khi ho, hắt hơi và qua tay chạm vào bề mặt nhiễm virus. Bệnh khởi phát đột ngột với sốt, đau đầu, đau mỏi cơ, ho, đau họng, sổ mũi, mệt nhiều. Đa số khỏi sau khoảng 1 tuần, nhưng cúm có thể gây viêm phổi và biến chứng nặng. [1]"
@@ -3421,7 +3970,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Ai dễ bị cúm nặng",
+       "h": "Ai dễ bị cúm nặng",
        "blocks": [
         {
          "items": [
@@ -3437,7 +3986,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Chăm sóc khi bị cúm",
+       "h": "Chăm sóc khi bị cúm",
        "blocks": [
         {
          "items": [
@@ -3451,7 +4000,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Phòng bệnh",
+       "h": "Phòng bệnh",
        "blocks": [
         {
          "items": [
@@ -3464,7 +4013,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Đến bệnh viện ngay khi",
+       "h": "Đến bệnh viện ngay khi",
        "blocks": [
         {
          "items": [
@@ -3479,12 +4028,29 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Tiêm vắc xin cúm mỗi năm · Rửa tay, che miệng khi ho · Nghỉ ngơi, uống nhiều nước · Khó thở, tím môi, li bì: đến bệnh viện ngay.",
-     "refs": [
-      "WHO. Influenza (seasonal) (fact sheet). who.int/news-room/fact-sheets/detail/influenza-(seasonal)",
-      "CDC. Preventing Seasonal Flu. cdc.gov/flu/prevention"
+     "quiz": [
+      {
+       "q": "Ai nên tiêm vắc xin cúm mỗi năm?",
+       "a": "Mọi người nên tiêm mỗi năm một lần vì virus cúm thay đổi hằng năm, nhất là người cao tuổi, người có bệnh mạn tính, phụ nữ mang thai, trẻ nhỏ."
+      },
+      {
+       "q": "Bị cúm có tự dùng kháng sinh không?",
+       "a": "Không. Kháng sinh không diệt virus cúm; dùng thuốc theo hướng dẫn của bác sĩ."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO. Influenza (seasonal) (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/influenza-(seasonal)",
+       "org": "WHO"
+      },
+      {
+       "t": "CDC. Preventing Seasonal Flu.",
+       "url": "https://cdc.gov/flu/prevention",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Khoa Truyền nhiễm · Phòng Điều dưỡng"
     },
     "icon": "thermo"
    },
@@ -3499,15 +4065,28 @@ window.PULSE_DATA = {
     "slug": "soi",
     "khoa": "Khoa Nhi",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.SOI.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "cha mẹ, người chăm sóc trẻ, phụ nữ trong độ tuổi sinh đẻ và người dân.",
-     "goal": "sau khi đọc bài, người đọc nhận biết bệnh sởi, biết chăm sóc trẻ bị sởi, dấu hiệu biến chứng và tầm quan trọng của tiêm vắc xin đủ mũi.",
+     "issued": true,
+     "lead": "Dành cho cha mẹ, người chăm sóc trẻ, phụ nữ trong độ tuổi sinh đẻ và người dân.",
      "heading": "Bệnh sởi: tiêm đủ 2 mũi vắc xin để bảo vệ trẻ",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Trẻ thở nhanh, khó thở, rút lõm lồng ngực, sốt cao liên tục, li bì, co giật, tiêu chảy hoặc nôn nhiều. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Tiêm vắc xin sởi đủ 2 mũi: 9 tháng và 18 tháng tuổi.",
+      "Cách ly trẻ bệnh; cho ăn uống đủ, không kiêng tắm, kiêng gió.",
+      "Thở nhanh, sốt cao liên tục, li bì, co giật: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Hiểu đúng về bệnh sởi",
+       "h": "Hiểu đúng về bệnh sởi",
        "blocks": [
         {
          "p": "Sởi là bệnh truyền nhiễm do virus sởi gây ra, lây rất mạnh qua đường hô hấp. Bệnh bắt đầu với sốt, ho, chảy mũi, mắt đỏ, chảy nước mắt; sau vài ngày phát ban đỏ từ sau tai, mặt rồi lan xuống thân và tay chân. Sởi có thể gây biến chứng viêm phổi, viêm tai, tiêu chảy, viêm não, nhất là ở trẻ nhỏ và trẻ suy dinh dưỡng. [1]"
@@ -3515,7 +4094,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Chăm sóc trẻ bị sởi",
+       "h": "Chăm sóc trẻ bị sởi",
        "blocks": [
         {
          "items": [
@@ -3533,7 +4112,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dấu hiệu biến chứng: đưa trẻ đến bệnh viện ngay",
+       "h": "Dấu hiệu biến chứng: đưa trẻ đến bệnh viện ngay",
        "blocks": [
         {
          "items": [
@@ -3548,7 +4127,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Phòng bệnh bằng vắc xin",
+       "h": "Phòng bệnh bằng vắc xin",
        "blocks": [
         {
          "items": [
@@ -3562,12 +4141,25 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Tiêm đủ 2 mũi vắc xin · Cách ly trẻ bệnh · Không kiêng ăn, kiêng tắm · Thở nhanh, li bì, co giật: đến bệnh viện ngay.",
+     "quiz": [
+      {
+       "q": "Trẻ bị sởi có cần kiêng nước, kiêng gió không?",
+       "a": "Không. Vẫn tắm rửa bằng nước ấm, ăn uống đủ chất, cho trẻ uống nhiều nước."
+      },
+      {
+       "q": "Cách phòng sởi hiệu quả nhất là gì?",
+       "a": "Tiêm đủ vắc xin sởi theo lịch tiêm chủng."
+      }
+     ],
      "refs": [
-      "WHO. Measles (fact sheet). who.int/news-room/fact-sheets/detail/measles",
+      {
+       "t": "WHO. Measles (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/measles",
+       "org": "WHO"
+      },
       "Bộ Y tế. Thông tư số 10/2024/TT-BYT ngày 13/6/2024 quy định danh mục bệnh truyền nhiễm, đối tượng và phạm vi sử dụng vắc xin bắt buộc (Cần xác minh); lịch tiêm theo Chương trình Tiêm chủng mở rộng."
      ],
-     "issued": true
+     "unit": "Khoa Nhi · Phòng Điều dưỡng"
     },
     "icon": "baby"
    },
@@ -3582,15 +4174,28 @@ window.PULSE_DATA = {
     "slug": "cac-buoc-di-kham-benh",
     "khoa": "Khoa Khám bệnh",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.KB.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh và người nhà đến khám ngoại trú tại Bệnh viện Đa khoa Nhật Tân.",
-     "goal": "sau khi đọc bài, người bệnh biết cần mang theo giấy tờ gì, chuẩn bị trước khi khám và các bước khám bệnh để giảm thời gian chờ.",
+     "issued": true,
+     "lead": "Dành cho người bệnh và người nhà đến khám ngoại trú tại Bệnh viện Đa khoa Nhật Tân.",
      "heading": "Đi khám bệnh thuận lợi: chuẩn bị gì, làm theo thứ tự nào",
+     "urgent": {
+      "h": "Vào thẳng Khoa Cấp cứu khi",
+      "blocks": [
+       {
+        "p": "Đau ngực, khó thở, yếu liệt nửa người, méo miệng, chảy máu nhiều, chấn thương nặng, bất tỉnh, co giật, trẻ nhỏ bỏ bú, thở nhanh: không xếp hàng khám, vào thẳng Khoa Cấp cứu. Ở xa: đến bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Mang giấy tờ tùy thân hoặc VNeID, giấy chuyển tuyến, kết quả cũ, thuốc đang dùng.",
+      "Nhịn ăn sáng nếu có thể phải xét nghiệm máu; vẫn uống nước lọc.",
+      "Đau ngực, khó thở, yếu liệt: vào thẳng Khoa Cấp cứu."
+     ],
      "sections": [
       {
-       "h": "1. Mang theo khi đi khám",
+       "h": "Mang theo khi đi khám",
        "blocks": [
         {
          "items": [
@@ -3604,7 +4209,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Chuẩn bị trước khi đến",
+       "h": "Chuẩn bị trước khi đến",
        "blocks": [
         {
          "items": [
@@ -3617,7 +4222,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Các bước khám bệnh",
+       "h": "Các bước khám bệnh",
        "blocks": [
         {
          "items": [
@@ -3636,7 +4241,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Ưu tiên và hỗ trợ",
+       "h": "Ưu tiên và hỗ trợ",
        "blocks": [
         {
          "items": [
@@ -3649,7 +4254,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Khi nào cần vào thẳng Khoa Cấp cứu",
+       "h": "Khi nào cần vào thẳng Khoa Cấp cứu",
        "blocks": [
         {
          "items": [
@@ -3662,12 +4267,21 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Mang giấy tờ, kết quả cũ, thuốc đang dùng · Nhịn ăn sáng nếu có thể xét nghiệm máu · Làm theo bảng chỉ dẫn · Cấp cứu: vào thẳng Khoa Cấp cứu.",
+     "quiz": [
+      {
+       "q": "Đi khám cần mang theo gì?",
+       "a": "Căn cước công dân, thẻ bảo hiểm y tế (nếu có), giấy chuyển tuyến, đơn thuốc, kết quả khám cũ."
+      },
+      {
+       "q": "Đau ngực, khó thở có cần xếp hàng khám không?",
+       "a": "Không. Vào thẳng Khoa Cấp cứu."
+      }
+     ],
      "refs": [
       "Bộ Y tế. Quyết định số 1313/QĐ-BYT ngày 22/4/2013 ban hành Hướng dẫn quy trình khám bệnh tại Khoa Khám bệnh của bệnh viện.",
       "Luật Khám bệnh, chữa bệnh số 15/2023/QH15 ngày 09/01/2023 (quy định về ưu tiên khám bệnh)."
      ],
-     "issued": true
+     "unit": "Khoa Khám bệnh · Phòng Điều dưỡng"
     },
     "icon": "clip"
    },
@@ -3682,15 +4296,28 @@ window.PULSE_DATA = {
     "slug": "so-cuu-bong",
     "khoa": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.BONG.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người dân, cha mẹ có con nhỏ, người làm bếp, người làm việc với điện, hóa chất.",
-     "goal": "sau khi đọc bài, người đọc biết các bước sơ cứu bỏng nhiệt đúng cách, những việc không được làm và khi nào cần đưa người bị bỏng đến bệnh viện.",
+     "issued": true,
+     "lead": "Dành cho người dân, cha mẹ có con nhỏ, người làm bếp, người làm việc với điện, hóa chất.",
      "heading": "Sơ cứu bỏng: làm mát ngay bằng nước sạch",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Bỏng rộng hơn lòng bàn tay, bỏng sâu, bỏng ở mặt, cổ, bàn tay, bộ phận sinh dục, bỏng điện, hóa chất, hít khói, hoặc người bị bỏng là trẻ nhỏ, người cao tuổi. Làm mát vết bỏng bằng nước sạch rồi đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Làm mát vết bỏng bằng nước sạch mát trong 20 phút.",
+      "Không chườm đá, không bôi kem đánh răng, nước mắm, mỡ; không chọc vỡ bóng nước.",
+      "Bỏng rộng, sâu, ở mặt, tay, bỏng điện, hóa chất: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Bỏng thường gặp",
+       "h": "Bỏng thường gặp",
        "blocks": [
         {
          "p": "Bỏng có thể do nước sôi, dầu mỡ, lửa, vật nóng, điện hoặc hóa chất. Trẻ nhỏ hay bị bỏng nước sôi, canh nóng trong bếp. Sơ cứu đúng trong những phút đầu giúp giảm độ sâu vết bỏng, giảm đau và giảm sẹo. [1]"
@@ -3698,7 +4325,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Các bước sơ cứu bỏng nhiệt",
+       "h": "Các bước sơ cứu bỏng nhiệt",
        "blocks": [
         {
          "items": [
@@ -3716,7 +4343,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Những việc không được làm",
+       "h": "Những việc không được làm",
        "blocks": [
         {
          "items": [
@@ -3730,7 +4357,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Đến bệnh viện ngay khi",
+       "h": "Đến bệnh viện ngay khi",
        "blocks": [
         {
          "items": [
@@ -3744,7 +4371,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Phòng bỏng tại nhà",
+       "h": "Phòng bỏng tại nhà",
        "blocks": [
         {
          "items": [
@@ -3758,12 +4385,25 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Làm mát bằng nước sạch 20 phút · Không chườm đá, không bôi kem đánh răng, nước mắm · Che phủ sạch · Bỏng rộng, sâu, bỏng điện, hóa chất: đến bệnh viện ngay.",
+     "quiz": [
+      {
+       "q": "Bị bỏng có nên bôi kem đánh răng, nước mắm, mỡ trăn không?",
+       "a": "Không. Làm mát vết bỏng bằng nước sạch, mát rồi che phủ sạch."
+      },
+      {
+       "q": "Làm mát vết bỏng bao lâu?",
+       "a": "Khoảng 20 phút dưới vòi nước sạch, mát (không dùng nước đá)."
+      }
+     ],
      "refs": [
-      "WHO. Burns (fact sheet). who.int/news-room/fact-sheets/detail/burns",
+      {
+       "t": "WHO. Burns (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/burns",
+       "org": "WHO"
+      },
       "International Federation of Red Cross and Red Crescent Societies. International First Aid, Resuscitation and Education Guidelines 2020 (mục bỏng)."
      ],
-     "issued": true
+     "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
     },
     "icon": "flame",
     "poster": {
@@ -3782,15 +4422,28 @@ window.PULSE_DATA = {
     "slug": "cham-soc-vet-mo-tai-nha",
     "khoa": "Khoa Ngoại tổng quát",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.VM.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh sau mổ ra viện và người chăm sóc.",
-     "goal": "sau khi đọc bài, người bệnh biết giữ vết mổ sạch, khô, ăn uống và vận động sau mổ, nhận biết dấu hiệu nhiễm trùng và biến chứng cần đến bệnh viện.",
+     "issued": true,
+     "lead": "Dành cho người bệnh sau mổ ra viện và người chăm sóc.",
      "heading": "Chăm sóc vết mổ tại nhà: sạch, khô và theo dõi dấu hiệu nhiễm trùng",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Chảy máu nhiều qua băng; đau bụng dữ dội, bụng chướng, nôn nhiều; sưng đau bắp chân một bên; khó thở, đau ngực đột ngột. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Giữ vết mổ sạch, khô; rửa tay trước khi chạm; không đắp thuốc lá.",
+      "Ăn đủ đạm, không cần kiêng khem; đi lại nhẹ nhàng sớm.",
+      "Vết mổ sưng đỏ, chảy mủ, sốt: đi khám; chảy máu nhiều, đau bụng dữ dội: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Giữ vết mổ sạch và khô",
+       "h": "Giữ vết mổ sạch và khô",
        "blocks": [
         {
          "items": [
@@ -3805,7 +4458,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Ăn uống và vận động",
+       "h": "Ăn uống và vận động",
        "blocks": [
         {
          "items": [
@@ -3821,7 +4474,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dùng thuốc và tái khám",
+       "h": "Dùng thuốc và tái khám",
        "blocks": [
         {
          "items": [
@@ -3833,7 +4486,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Dấu hiệu cần đi khám sớm",
+       "h": "Dấu hiệu cần đi khám sớm",
        "blocks": [
         {
          "items": [
@@ -3849,13 +4502,26 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Vết mổ sạch, khô · Rửa tay trước khi chạm · Không đắp lá, không kiêng khem quá mức · Đi lại sớm · Sưng đỏ, chảy mủ, sốt: đi khám.",
+     "quiz": [
+      {
+       "q": "Dấu hiệu nào cho thấy vết mổ có thể nhiễm trùng?",
+       "a": "Sưng, nóng, đỏ lan rộng, đau tăng, chảy dịch đục, mủ, sốt từ 38 độ C."
+      },
+      {
+       "q": "Sưng đau bắp chân một bên sau mổ có nguy hiểm không?",
+       "a": "Có thể là huyết khối; đến bệnh viện ngay."
+      }
+     ],
      "refs": [
-      "CDC. Surgical Site Infection Basics. cdc.gov/surgical-site-infections/about",
+      {
+       "t": "CDC. Surgical Site Infection Basics.",
+       "url": "https://cdc.gov/surgical-site-infections/about",
+       "org": "CDC"
+      },
       "NHS. Surgical wounds: aftercare and infection. nhs.uk (Caring for your wound after surgery).",
       "WHO. Global guidelines for the prevention of surgical site infection, 2nd ed., 2018."
      ],
-     "issued": true
+     "unit": "Khoa Ngoại tổng quát · Phòng Điều dưỡng"
     },
     "icon": "bandage"
    },
@@ -3870,15 +4536,28 @@ window.PULSE_DATA = {
     "slug": "cham-soc-bo-bot",
     "khoa": "Khoa Ngoại chấn thương",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.BB.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh được bó bột hoặc nẹp, người chăm sóc, cha mẹ có con bị gãy xương.",
-     "goal": "sau khi đọc bài, người bệnh biết cách chăm sóc bột, tập cử động, giữ bột khô sạch và nhận biết dấu hiệu chèn ép cần đến bệnh viện ngay.",
+     "issued": true,
+     "lead": "Dành cho người bệnh được bó bột hoặc nẹp, người chăm sóc, cha mẹ có con bị gãy xương.",
      "heading": "Chăm sóc bó bột, nẹp: nâng cao, cử động ngón, phát hiện sớm chèn ép",
+     "urgent": {
+      "h": "Cần đến bệnh viện ngay",
+      "blocks": [
+       {
+        "p": "Đau tăng dần không đỡ khi kê cao chi; tê bì, mất cảm giác; ngón tím tái, trắng nhợt, lạnh, sưng to, không cử động được ngón. Đây là dấu hiệu bột chèn ép. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Kê cao chi bó bột, cử động ngón tay, ngón chân thường xuyên.",
+      "Giữ bột khô, không chọc vật vào trong bột, không tự tháo bột.",
+      "Đau tăng, tê bì, ngón tím hoặc lạnh: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Những ngày đầu sau bó bột",
+       "h": "Những ngày đầu sau bó bột",
        "blocks": [
         {
          "items": [
@@ -3892,7 +4571,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Giữ bột sạch, khô, nguyên vẹn",
+       "h": "Giữ bột sạch, khô, nguyên vẹn",
        "blocks": [
         {
          "items": [
@@ -3906,7 +4585,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dấu hiệu chèn ép: đến bệnh viện ngay",
+       "h": "Dấu hiệu chèn ép: đến bệnh viện ngay",
        "blocks": [
         {
          "items": [
@@ -3923,7 +4602,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Dấu hiệu bất thường khác",
+       "h": "Dấu hiệu bất thường khác",
        "blocks": [
         {
          "items": [
@@ -3939,12 +4618,25 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Kê cao chi · Cử động ngón thường xuyên · Giữ bột khô · Không chọc vào bột · Đau tăng, tê, ngón tím lạnh: đến bệnh viện ngay.",
+     "quiz": [
+      {
+       "q": "Ngón tay, ngón chân tê bì, tím tái sau bó bột thì làm gì?",
+       "a": "Đến bệnh viện ngay, không chờ đến hẹn tái khám."
+      },
+      {
+       "q": "Ngứa trong bột có được chọc que, đũa vào gãi không?",
+       "a": "Không. Giữ bột sạch, khô, nguyên vẹn; không tự cắt, sửa bột."
+      }
+     ],
      "refs": [
-      "American Academy of Orthopaedic Surgeons (OrthoInfo). Care of Casts and Splints. orthoinfo.aaos.org/en/recovery/care-of-casts-and-splints",
+      {
+       "t": "American Academy of Orthopaedic Surgeons (OrthoInfo). Care of Casts and Splints.",
+       "url": "https://orthoinfo.aaos.org/en/recovery/care-of-casts-and-splints",
+       "org": "American Academy of Orthopaedic Surgeons (OrthoInfo)"
+      },
       "NHS. Plaster cast care (patient information leaflets, các bệnh viện thuộc NHS)."
      ],
-     "issued": true
+     "unit": "Khoa Ngoại chấn thương · Phòng Điều dưỡng"
     },
     "icon": "bandage"
    },
@@ -3959,15 +4651,28 @@ window.PULSE_DATA = {
     "slug": "chuan-bi-truoc-mo",
     "khoa": "Khoa Phẫu thuật – Gây mê hồi sức",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.TM.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh có lịch phẫu thuật, thủ thuật có gây mê, gây tê và người nhà.",
-     "goal": "sau khi đọc bài, người bệnh biết thông tin cần báo, cách nhịn ăn uống, vệ sinh cá nhân và những việc cần làm trước khi vào phòng mổ.",
+     "issued": true,
+     "lead": "Dành cho người bệnh có lịch phẫu thuật, thủ thuật có gây mê, gây tê và người nhà.",
      "heading": "Chuẩn bị trước phẫu thuật: an toàn bắt đầu từ người bệnh",
+     "urgent": {
+      "h": "Báo ngay điều dưỡng khi",
+      "blocks": [
+       {
+        "p": "Trước mổ: lỡ ăn uống sai giờ được dặn nhịn, đang cảm sốt, ho. Sau mổ: đau nhiều, buồn nôn, khó thở, chảy máu thấm băng, bí tiểu."
+       }
+      ]
+     },
+     "remember": [
+      "Báo bác sĩ các bệnh, thuốc đang dùng (nhất là thuốc chống đông) và dị ứng.",
+      "Nhịn ăn, uống đúng giờ được dặn; tháo trang sức, răng giả, sơn móng.",
+      "Trả lời rõ họ tên, vị trí mổ mỗi khi được hỏi."
+     ],
      "sections": [
       {
-       "h": "1. Báo đầy đủ cho bác sĩ, điều dưỡng",
+       "h": "Báo đầy đủ cho bác sĩ, điều dưỡng",
        "blocks": [
         {
          "items": [
@@ -3981,7 +4686,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Nhịn ăn, uống đúng hướng dẫn",
+       "h": "Nhịn ăn, uống đúng hướng dẫn",
        "blocks": [
         {
          "p": "Dạ dày rỗng giúp tránh hít sặc thức ăn vào phổi khi gây mê. Thời gian nhịn sẽ được nhân viên y tế dặn cụ thể cho từng người; thường là:"
@@ -4000,7 +4705,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Vệ sinh và chuẩn bị cá nhân",
+       "h": "Vệ sinh và chuẩn bị cá nhân",
        "blocks": [
         {
          "items": [
@@ -4015,7 +4720,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Giấy tờ và người nhà",
+       "h": "Giấy tờ và người nhà",
        "blocks": [
         {
          "items": [
@@ -4028,7 +4733,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Sau mổ",
+       "h": "Sau mổ",
        "blocks": [
         {
          "items": [
@@ -4040,13 +4745,26 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Báo bệnh, thuốc, dị ứng · Nhịn ăn uống đúng giờ được dặn · Tháo trang sức, răng giả · Trả lời rõ họ tên, vị trí mổ.",
+     "quiz": [
+      {
+       "q": "Vì sao phải nhịn ăn trước mổ?",
+       "a": "Để tránh hít sặc thức ăn vào phổi khi gây mê; ăn uống sai giờ có thể phải hoãn mổ."
+      },
+      {
+       "q": "Thường được uống nước trong đến khi nào?",
+       "a": "Khoảng 2 giờ trước mổ nếu được cho phép; làm đúng giờ được dặn."
+      }
+     ],
      "refs": [
       "American Society of Anesthesiologists. Practice Guidelines for Preoperative Fasting, 2023. Anesthesiology 138(2):132-151.",
-      "WHO. Surgical Safety Checklist. who.int/teams/integrated-health-services/patient-safety/research/safe-surgery",
+      {
+       "t": "WHO. Surgical Safety Checklist.",
+       "url": "https://who.int/teams/integrated-health-services/patient-safety/research/safe-surgery",
+       "org": "WHO"
+      },
       "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện."
      ],
-     "issued": true
+     "unit": "Khoa Phẫu thuật – Gây mê hồi sức · Phòng Điều dưỡng"
     },
     "icon": "steth",
     "poster": {
@@ -4065,15 +4783,28 @@ window.PULSE_DATA = {
     "slug": "tap-van-dong-tai-nha",
     "khoa": "Khoa Y học cổ truyền – Phục hồi chức năng",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.PHCN.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh sau đột quỵ, sau chấn thương, sau mổ, người cao tuổi yếu và người chăm sóc.",
-     "goal": "sau khi đọc bài, người bệnh và người chăm sóc biết nguyên tắc tập luyện tại nhà, các bài tập cơ bản phòng cứng khớp, cách đặt tư thế và dấu hiệu cần ngưng tập.",
+     "issued": true,
+     "lead": "Dành cho người bệnh sau đột quỵ, sau chấn thương, sau mổ, người cao tuổi yếu và người chăm sóc.",
      "heading": "Tập vận động phục hồi chức năng tại nhà: đều đặn, an toàn",
+     "urgent": {
+      "h": "Ngưng tập và đến bệnh viện ngay khi",
+      "blocks": [
+       {
+        "p": "Đau ngực, khó thở, choáng váng, vã mồ hôi; sưng đau bắp chân một bên; yếu liệt nặng thêm, méo miệng, nói khó mới xuất hiện. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Tập đều mỗi ngày theo bài tập được hướng dẫn, tăng dần.",
+      "Vận động nhẹ nhàng từng khớp; đổi tư thế mỗi 2 giờ khi nằm lâu.",
+      "Đau ngực, khó thở, choáng váng khi tập: ngưng ngay và đi khám."
+     ],
      "sections": [
       {
-       "h": "1. Nguyên tắc chung",
+       "h": "Nguyên tắc chung",
        "blocks": [
         {
          "items": [
@@ -4087,7 +4818,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Bài tập tầm vận động phòng cứng khớp",
+       "h": "Bài tập tầm vận động phòng cứng khớp",
        "blocks": [
         {
          "p": "Với người yếu, liệt: người chăm sóc giúp vận động nhẹ nhàng từng khớp, mỗi động tác 5 đến 10 lần, 2 đến 3 lượt mỗi ngày:"
@@ -4104,7 +4835,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Đặt tư thế đúng và thay đổi tư thế",
+       "h": "Đặt tư thế đúng và thay đổi tư thế",
        "blocks": [
         {
          "items": [
@@ -4118,7 +4849,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. An toàn khi tập",
+       "h": "An toàn khi tập",
        "blocks": [
         {
          "items": [
@@ -4133,7 +4864,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Kết hợp y học cổ truyền",
+       "h": "Kết hợp y học cổ truyền",
        "blocks": [
         {
          "p": "Châm cứu, xoa bóp bấm huyệt, thuốc y học cổ truyền chỉ thực hiện tại cơ sở y tế có chuyên môn và theo chỉ định của bác sĩ. Không tự ý bỏ thuốc điều trị bệnh nền (huyết áp, đái tháo đường, chống đông) để thay bằng thuốc nam, thuốc bắc."
@@ -4141,13 +4872,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Tập đều mỗi ngày · Vận động từng khớp · Đổi tư thế mỗi 2 giờ · Tập trong khả năng · Đau ngực, khó thở, choáng: ngưng tập.",
-     "refs": [
-      "WHO. Rehabilitation (fact sheet). who.int/news-room/fact-sheets/detail/rehabilitation",
-      "Bộ Y tế. Quyết định số 5737/QĐ-BYT ngày 22/12/2017 ban hành tài liệu chuyên môn Hướng dẫn quy trình kỹ thuật về phục hồi chức năng (Cần xác minh).",
-      "NHS. Stroke: Recovery. nhs.uk/conditions/stroke/recovery"
+     "quiz": [
+      {
+       "q": "Người chăm sóc nên đứng phía nào khi người bệnh tập đi?",
+       "a": "Phía bên yếu."
+      },
+      {
+       "q": "Khi nào phải ngưng tập?",
+       "a": "Đau ngực, khó thở, choáng váng, sưng đau bắp chân, yếu liệt nặng thêm."
+      }
      ],
-     "issued": true
+     "refs": [
+      {
+       "t": "WHO. Rehabilitation (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/rehabilitation",
+       "org": "WHO"
+      },
+      "Bộ Y tế. Quyết định số 5737/QĐ-BYT ngày 22/12/2017 ban hành tài liệu chuyên môn Hướng dẫn quy trình kỹ thuật về phục hồi chức năng (Cần xác minh).",
+      {
+       "t": "NHS. Stroke: Recovery.",
+       "url": "https://nhs.uk/conditions/stroke/recovery",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Y học cổ truyền – Phục hồi chức năng · Phòng Điều dưỡng"
     },
     "icon": "walk"
    },
@@ -4162,15 +4910,28 @@ window.PULSE_DATA = {
     "slug": "dau-hieu-nguy-hiem-khi-mang-thai",
     "khoa": "Khoa Phụ sản",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.DHNH.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "phụ nữ mang thai và người thân trong gia đình.",
-     "goal": "sau khi đọc bài, thai phụ biết lịch khám thai, các việc chăm sóc thai kỳ và nhận ra dấu hiệu nguy hiểm cần đến bệnh viện ngay.",
+     "issued": true,
+     "lead": "Dành cho phụ nữ mang thai và người thân trong gia đình.",
      "heading": "Dấu hiệu nguy hiểm khi mang thai: đi khám ngay, không chờ hẹn",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Ra máu âm đạo, đau bụng nhiều, ra nước ối, đau đầu nhiều, nhìn mờ, phù mặt, co giật, ngất, thai máy ít hoặc không thấy thai máy. Đến ngay bệnh viện, cơ sở y tế gần nhất có khoa sản hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24). Mang theo sổ khám thai."
+       }
+      ]
+     },
+     "remember": [
+      "Khám thai đủ lần, lần đầu trong 3 tháng đầu; uống sắt, axit folic.",
+      "Theo dõi thai máy mỗi ngày từ khoảng tuần 28.",
+      "Ra máu, đau bụng nhiều, ra nước ối, đau đầu nhìn mờ, thai máy ít: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Khám thai đầy đủ",
+       "h": "Khám thai đầy đủ",
        "blocks": [
         {
          "p": "Khám thai định kỳ giúp phát hiện sớm thiếu máu, tăng huyết áp, tiền sản giật, đái tháo đường thai kỳ, bất thường thai. Thai phụ nên khám thai ít nhất 4 lần trong thai kỳ theo hướng dẫn của Bộ Y tế; Tổ chức Y tế Thế giới khuyến cáo ít nhất 8 lần tiếp xúc. Khám lần đầu càng sớm càng tốt, trong 3 tháng đầu. [1] [2]"
@@ -4178,7 +4939,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Chăm sóc trong thai kỳ",
+       "h": "Chăm sóc trong thai kỳ",
        "blocks": [
         {
          "items": [
@@ -4194,7 +4955,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dấu hiệu nguy hiểm: đến bệnh viện ngay",
+       "h": "Dấu hiệu nguy hiểm: đến bệnh viện ngay",
        "blocks": [
         {
          "items": [
@@ -4215,7 +4976,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Dấu hiệu chuyển dạ",
+       "h": "Dấu hiệu chuyển dạ",
        "blocks": [
         {
          "items": [
@@ -4230,13 +4991,22 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Khám thai đủ lần · Uống sắt, axit folic · Đếm thai máy · Ra máu, đau bụng, ra nước, đau đầu nhìn mờ, thai máy ít: đến bệnh viện ngay.",
+     "quiz": [
+      {
+       "q": "Ra máu âm đạo ít có cần đi khám ngay không?",
+       "a": "Có. Đến bệnh viện ngay, dù ra máu ít."
+      },
+      {
+       "q": "Khi đi cấp cứu cần mang theo gì?",
+       "a": "Sổ khám thai và giấy tờ tùy thân."
+      }
+     ],
      "refs": [
       "Bộ Y tế. Quyết định số 4128/QĐ-BYT ngày 29/7/2016 ban hành Hướng dẫn quốc gia về các dịch vụ chăm sóc sức khỏe sinh sản.",
       "WHO. WHO recommendations on antenatal care for a positive pregnancy experience, 2016.",
       "WHO. Pregnancy, Childbirth, Postpartum and Newborn Care: A guide for essential practice, 3rd ed., 2015."
      ],
-     "issued": true
+     "unit": "Khoa Phụ sản · Phòng Điều dưỡng"
     },
     "icon": "heart"
    },
@@ -4251,15 +5021,28 @@ window.PULSE_DATA = {
     "slug": "chuan-bi-lay-mau-xet-nghiem",
     "khoa": "Khoa Xét nghiệm",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.XN.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh được chỉ định xét nghiệm máu, nước tiểu và người nhà.",
-     "goal": "sau khi đọc bài, người bệnh biết khi nào cần nhịn ăn, cách lấy nước tiểu đúng, chăm sóc chỗ lấy máu và những thông tin cần báo cho kỹ thuật y.",
+     "issued": true,
+     "lead": "Dành cho người bệnh được chỉ định xét nghiệm máu, nước tiểu và người nhà.",
      "heading": "Chuẩn bị trước khi lấy máu xét nghiệm: đúng cách để kết quả chính xác",
+     "urgent": {
+      "h": "Báo ngay nhân viên y tế khi",
+      "blocks": [
+       {
+        "p": "Choáng váng, vã mồ hôi khi nhịn ăn hoặc khi lấy máu (nhất là người đái tháo đường); chỗ lấy máu sưng to, đau nhiều, chảy máu không cầm."
+       }
+      ]
+     },
+     "remember": [
+      "Xét nghiệm đường huyết, mỡ máu: nhịn ăn khoảng 8 giờ; vẫn uống nước lọc.",
+      "Báo nhân viên y tế khi dùng thuốc chống đông, mang thai, hay choáng khi lấy máu.",
+      "Sau lấy máu ấn chặt bông 3 đến 5 phút, không gập tay."
+     ],
      "sections": [
       {
-       "h": "1. Có cần nhịn ăn không",
+       "h": "Có cần nhịn ăn không",
        "blocks": [
         {
          "items": [
@@ -4273,7 +5056,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Báo cho nhân viên y tế",
+       "h": "Báo cho nhân viên y tế",
        "blocks": [
         {
          "items": [
@@ -4287,7 +5070,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Khi lấy máu",
+       "h": "Khi lấy máu",
        "blocks": [
         {
          "items": [
@@ -4302,7 +5085,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Lấy nước tiểu đúng cách",
+       "h": "Lấy nước tiểu đúng cách",
        "blocks": [
         {
          "items": [
@@ -4318,12 +5101,25 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Hỏi rõ có phải nhịn ăn không · Vẫn uống nước lọc · Báo thuốc chống đông, mang thai · Ấn chặt bông 3 đến 5 phút · Lấy nước tiểu giữa dòng.",
+     "quiz": [
+      {
+       "q": "Xét nghiệm đường huyết lúc đói có được uống nước lọc không?",
+       "a": "Được. Nhịn ăn khoảng 8 giờ nhưng vẫn uống nước lọc."
+      },
+      {
+       "q": "Sau khi rút kim nên làm gì?",
+       "a": "Ấn chặt bông 3 đến 5 phút, duỗi thẳng tay, không gập khuỷu."
+      }
+     ],
      "refs": [
       "WHO. WHO guidelines on drawing blood: best practices in phlebotomy, 2010.",
-      "MedlinePlus. How to Prepare for a Lab Test. medlineplus.gov/lab-tests/how-to-prepare-for-a-lab-test"
+      {
+       "t": "MedlinePlus. How to Prepare for a Lab Test.",
+       "url": "https://medlineplus.gov/lab-tests/how-to-prepare-for-a-lab-test",
+       "org": "MedlinePlus"
+      }
      ],
-     "issued": true
+     "unit": "Khoa Xét nghiệm · Phòng Điều dưỡng"
     },
     "icon": "flask"
    },
@@ -4338,15 +5134,28 @@ window.PULSE_DATA = {
     "slug": "chuan-bi-sieu-am-chup-phim",
     "khoa": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.CDHA.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh được chỉ định siêu âm, X-quang, CT, điện tim và người nhà.",
-     "goal": "sau khi đọc bài, người bệnh biết chuẩn bị đúng cho từng loại chẩn đoán hình ảnh, các thông tin phải báo trước và cách giữ an toàn bức xạ.",
+     "issued": true,
+     "lead": "Dành cho người bệnh được chỉ định siêu âm, X-quang, CT, điện tim và người nhà.",
      "heading": "Chuẩn bị trước khi siêu âm, chụp X-quang, chụp CT",
+     "urgent": {
+      "h": "Báo ngay nhân viên y tế khi",
+      "blocks": [
+       {
+        "p": "Ngứa, nổi mẩn, khó thở, chóng mặt, buồn nôn trong hoặc sau khi tiêm thuốc cản quang. Báo trước nếu từng dị ứng thuốc cản quang, có hen, suy thận, đang mang thai."
+       }
+      ]
+     },
+     "remember": [
+      "Siêu âm bụng trên nhịn ăn khoảng 6 giờ; siêu âm bụng dưới uống nước, nhịn tiểu.",
+      "Đang mang thai hoặc nghi có thai: báo trước khi chụp X-quang, CT.",
+      "Dị ứng thuốc cản quang, suy thận, đang uống metformin: báo trước khi chụp CT."
+     ],
      "sections": [
       {
-       "h": "1. Siêu âm",
+       "h": "Siêu âm",
        "blocks": [
         {
          "items": [
@@ -4363,7 +5172,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Chụp X-quang, CT",
+       "h": "Chụp X-quang, CT",
        "blocks": [
         {
          "items": [
@@ -4377,7 +5186,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Chụp CT có tiêm thuốc cản quang",
+       "h": "Chụp CT có tiêm thuốc cản quang",
        "blocks": [
         {
          "items": [
@@ -4394,7 +5203,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Điện tim",
+       "h": "Điện tim",
        "blocks": [
         {
          "items": [
@@ -4406,7 +5215,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Nhận kết quả",
+       "h": "Nhận kết quả",
        "blocks": [
         {
          "p": "Giữ phiếu hẹn, nhận kết quả đúng giờ; mang kết quả về phòng khám để bác sĩ đọc và tư vấn. Giữ lại phim, đĩa kết quả cũ để so sánh ở các lần khám sau."
@@ -4414,13 +5223,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Siêu âm bụng trên: nhịn ăn 6 giờ · Siêu âm bụng dưới: uống nước, nhịn tiểu · Có thai: báo trước khi chụp · Dị ứng cản quang, suy thận: báo trước.",
+     "quiz": [
+      {
+       "q": "Cảm giác nóng khắp người khi tiêm thuốc cản quang có bình thường không?",
+       "a": "Bình thường và mất nhanh. Ngứa, khó thở, chóng mặt thì báo ngay."
+      },
+      {
+       "q": "Cần báo gì trước khi chụp CT có thuốc cản quang?",
+       "a": "Tiền sử dị ứng thuốc cản quang, hen, suy thận, đái tháo đường đang uống metformin."
+      }
+     ],
      "refs": [
-      "RadiologyInfo.org (ACR/RSNA). Ultrasound - Abdomen; CT - Body: How should I prepare? radiologyinfo.org",
-      "American College of Radiology. ACR Manual on Contrast Media, bản cập nhật mới nhất. acr.org",
+      {
+       "t": "RadiologyInfo.org (ACR/RSNA). Ultrasound - Abdomen; CT - Body: How should I prepare?",
+       "url": "https://radiologyinfo.org",
+       "org": "RadiologyInfo"
+      },
+      {
+       "t": "American College of Radiology. ACR Manual on Contrast Media, bản cập nhật mới nhất.",
+       "url": "https://acr.org",
+       "org": "American College of Radiology"
+      },
       "Bộ Khoa học và Công nghệ, Bộ Y tế. Thông tư liên tịch số 13/2014/TTLT-BKHCN-BYT ngày 09/6/2014 quy định về bảo đảm an toàn bức xạ trong y tế (Cần xác minh văn bản thay thế)."
      ],
-     "issued": true
+     "unit": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng · Phòng Điều dưỡng"
     },
     "icon": "scan"
    },
@@ -4435,15 +5261,28 @@ window.PULSE_DATA = {
     "slug": "dung-khang-sinh-dung-cach",
     "khoa": "Khoa Dược",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.KS.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh, người nhà và người dân.",
-     "goal": "sau khi đọc bài, người đọc hiểu kháng sinh dùng khi nào, cách dùng đúng và hậu quả của việc dùng sai, góp phần phòng chống kháng thuốc.",
+     "issued": true,
+     "lead": "Dành cho người bệnh, người nhà và người dân.",
      "heading": "Dùng kháng sinh đúng cách: chống kháng thuốc vì chính mình",
+     "urgent": {
+      "h": "Ngưng thuốc và đến bệnh viện ngay khi",
+      "blocks": [
+       {
+        "p": "Nổi mẩn, ngứa toàn thân, sưng môi, mắt, khó thở, choáng váng; da phồng rộp, bong tróc; tiêu chảy nhiều lần, phân có máu. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Kháng sinh không có tác dụng với virus cảm cúm.",
+      "Chỉ dùng khi có đơn; uống đủ liều, đủ ngày; không tự mua.",
+      "Nổi mẩn, khó thở sau dùng thuốc: ngưng thuốc, đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Kháng sinh là gì, dùng khi nào",
+       "h": "Kháng sinh là gì, dùng khi nào",
        "blocks": [
         {
          "p": "Kháng sinh là thuốc diệt hoặc ức chế vi khuẩn. Kháng sinh không có tác dụng với virus, nên không giúp khỏi cảm lạnh, cúm, phần lớn trường hợp đau họng, ho, sổ mũi. Chỉ dùng kháng sinh khi bác sĩ khám và kê đơn. [1]"
@@ -4451,7 +5290,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Kháng thuốc nguy hiểm thế nào",
+       "h": "Kháng thuốc nguy hiểm thế nào",
        "blocks": [
         {
          "p": "Dùng kháng sinh không cần thiết, dùng không đủ liều, không đủ ngày làm vi khuẩn trở nên kháng thuốc. Khi đó, nhiễm khuẩn khó chữa, phải dùng thuốc mạnh hơn, đắt hơn, nằm viện lâu hơn, thậm chí không còn thuốc chữa. Vi khuẩn kháng thuốc có thể lây sang người khác. [2]"
@@ -4459,7 +5298,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Dùng kháng sinh đúng",
+       "h": "Dùng kháng sinh đúng",
        "blocks": [
         {
          "items": [
@@ -4474,7 +5313,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Theo dõi tác dụng không mong muốn",
+       "h": "Theo dõi tác dụng không mong muốn",
        "blocks": [
         {
          "items": [
@@ -4489,7 +5328,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Phòng nhiễm khuẩn để ít phải dùng kháng sinh",
+       "h": "Phòng nhiễm khuẩn để ít phải dùng kháng sinh",
        "blocks": [
         {
          "items": [
@@ -4502,13 +5341,30 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Kháng sinh không trị virus · Chỉ dùng khi có đơn · Đủ liều, đủ ngày · Không tự mua, không dùng thuốc thừa · Dị ứng: ngưng thuốc, đến bệnh viện.",
+     "quiz": [
+      {
+       "q": "Cảm lạnh, sổ mũi có cần uống kháng sinh không?",
+       "a": "Không. Kháng sinh không có tác dụng với virus."
+      },
+      {
+       "q": "Đã khỏe sau vài ngày có ngừng kháng sinh được không?",
+       "a": "Không. Dùng đủ đợt theo đơn của bác sĩ."
+      }
+     ],
      "refs": [
-      "WHO. Antibiotic resistance (fact sheet). who.int/news-room/fact-sheets/detail/antibiotic-resistance",
-      "WHO. Antimicrobial resistance (fact sheet). who.int/news-room/fact-sheets/detail/antimicrobial-resistance",
+      {
+       "t": "WHO. Antibiotic resistance (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/antibiotic-resistance",
+       "org": "WHO"
+      },
+      {
+       "t": "WHO. Antimicrobial resistance (fact sheet).",
+       "url": "https://who.int/news-room/fact-sheets/detail/antimicrobial-resistance",
+       "org": "WHO"
+      },
       "Bộ Y tế. Quyết định số 5631/QĐ-BYT ngày 31/12/2020 ban hành tài liệu Hướng dẫn thực hiện quản lý sử dụng kháng sinh trong bệnh viện."
      ],
-     "issued": true
+     "unit": "Khoa Dược · Phòng Điều dưỡng"
     },
     "icon": "pill"
    },
@@ -4523,15 +5379,28 @@ window.PULSE_DATA = {
     "slug": "cham-soc-cau-noi-fav",
     "khoa": "Bộ phận Thận nhân tạo",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.FAV.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "người bệnh suy thận chạy thận nhân tạo chu kỳ, người bệnh mới làm FAV và người nhà.",
-     "goal": "sau khi đọc bài, người bệnh biết kiểm tra FAV mỗi ngày, bảo vệ tay có FAV, tập luyện sau mổ, chăm sóc sau mỗi lần chạy thận và nhận biết dấu hiệu bất thường.",
+     "issued": true,
+     "lead": "Dành cho người bệnh suy thận chạy thận nhân tạo chu kỳ, người bệnh mới làm FAV và người nhà.",
      "heading": "Chăm sóc cầu nối động tĩnh mạch (FAV): giữ gìn đường sống của người chạy thận",
+     "urgent": {
+      "h": "Cần đến bệnh viện ngay",
+      "blocks": [
+       {
+        "p": "Không còn cảm nhận rung hoặc nghe tiếng thổi ở FAV; vùng FAV sưng, đỏ, nóng, chảy dịch, chảy máu không cầm. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Sờ rung, nghe tiếng thổi của FAV mỗi sáng và tối.",
+      "Không đo huyết áp, lấy máu, tiêm, đeo đồ chật, mang nặng ở tay có FAV.",
+      "Mất rung, chảy máu không cầm, sưng đỏ đau: đến ngay cơ sở chạy thận hoặc bệnh viện."
+     ],
      "sections": [
       {
-       "h": "1. FAV là gì",
+       "h": "FAV là gì",
        "blocks": [
         {
          "p": "Cầu nối động tĩnh mạch (FAV) là chỗ nối một động mạch với một tĩnh mạch ở tay, thường ở cổ tay hoặc khuỷu tay, giúp tĩnh mạch to và chắc để kim chạy thận lấy đủ máu. FAV thường cần vài tuần đến vài tháng để đủ trưởng thành. Giữ FAV tốt giúp chạy thận hiệu quả, ít biến chứng. [1]"
@@ -4539,7 +5408,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Kiểm tra FAV mỗi ngày",
+       "h": "Kiểm tra FAV mỗi ngày",
        "blocks": [
         {
          "items": [
@@ -4553,7 +5422,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Bảo vệ tay có FAV",
+       "h": "Bảo vệ tay có FAV",
        "blocks": [
         {
          "items": [
@@ -4568,7 +5437,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Tập luyện sau mổ tạo FAV",
+       "h": "Tập luyện sau mổ tạo FAV",
        "blocks": [
         {
          "items": [
@@ -4581,7 +5450,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Sau mỗi lần chạy thận",
+       "h": "Sau mỗi lần chạy thận",
        "blocks": [
         {
          "items": [
@@ -4597,12 +5466,25 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Sờ rung mỗi ngày · Không đo huyết áp, lấy máu ở tay FAV · Không đeo đồ chật, không mang nặng · Giữ sạch · Mất rung, chảy máu không cầm: đến ngay.",
+     "quiz": [
+      {
+       "q": "Kiểm tra FAV hằng ngày bằng cách nào?",
+       "a": "Sờ thấy rung đều, nghe có tiếng thổi; kiểm tra sáng và tối."
+      },
+      {
+       "q": "Có được đo huyết áp ở tay có FAV không?",
+       "a": "Không. Không đo huyết áp, lấy máu, tiêm truyền ở tay có FAV."
+      }
+     ],
      "refs": [
-      "National Kidney Foundation. Hemodialysis Access. kidney.org/kidney-topics/hemodialysis-access",
+      {
+       "t": "National Kidney Foundation. Hemodialysis Access.",
+       "url": "https://kidney.org/kidney-topics/hemodialysis-access",
+       "org": "National Kidney Foundation"
+      },
       "KDOQI. Clinical Practice Guideline for Vascular Access: 2019 Update. Am J Kidney Dis 2020;75(4 Suppl 2):S1-S164."
      ],
-     "issued": true
+     "unit": "Bộ phận Thận nhân tạo · Phòng Điều dưỡng"
     },
     "icon": "pulse"
    },
@@ -4617,15 +5499,28 @@ window.PULSE_DATA = {
     "slug": "theo-doi-tre-sau-tiem-chung",
     "khoa": "Tổ Tiêm chủng",
     "article": {
+     "layout": "v2",
      "code": "TTGDSK.TC.BTT",
      "version": "01",
-     "approved": null,
-     "audience": "cha mẹ, người chăm sóc trẻ đi tiêm chủng.",
-     "goal": "sau khi đọc bài, cha mẹ biết chuẩn bị trước khi tiêm, theo dõi trẻ tại điểm tiêm và tại nhà, chăm sóc phản ứng thông thường và nhận biết dấu hiệu bất thường.",
+     "issued": true,
+     "lead": "Dành cho cha mẹ, người chăm sóc trẻ đi tiêm chủng.",
      "heading": "Theo dõi trẻ sau tiêm chủng: yên tâm khi biết cách",
+     "urgent": {
+      "h": "Cần cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Trẻ sốt cao từ 39 độ C không hạ, co giật, li bì, khóc thét kéo dài, tím tái, khó thở, sưng môi, mặt, nổi ban toàn thân. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Ở lại điểm tiêm ít nhất 30 phút; theo dõi tại nhà ít nhất 24 giờ.",
+      "Không đắp, chườm thứ gì lên chỗ tiêm; cho trẻ bú, uống nhiều hơn.",
+      "Sốt cao, co giật, tím tái, li bì, khóc thét kéo dài: đến bệnh viện ngay."
+     ],
      "sections": [
       {
-       "h": "1. Trước khi tiêm",
+       "h": "Trước khi tiêm",
        "blocks": [
         {
          "items": [
@@ -4638,7 +5533,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "2. Theo dõi tại điểm tiêm 30 phút",
+       "h": "Theo dõi tại điểm tiêm 30 phút",
        "blocks": [
         {
          "p": "Sau tiêm, ở lại điểm tiêm ít nhất 30 phút để nhân viên y tế theo dõi và xử trí kịp thời nếu có phản ứng. Báo ngay khi trẻ tím tái, khó thở, nổi mẩn, quấy khóc bất thường, li bì. [1]"
@@ -4646,7 +5541,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "3. Theo dõi tại nhà",
+       "h": "Theo dõi tại nhà",
        "blocks": [
         {
          "items": [
@@ -4660,7 +5555,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "4. Phản ứng thông thường",
+       "h": "Phản ứng thông thường",
        "blocks": [
         {
          "items": [
@@ -4675,7 +5570,7 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "5. Dấu hiệu bất thường: đưa trẻ đến cơ sở y tế ngay",
+       "h": "Dấu hiệu bất thường: đưa trẻ đến cơ sở y tế ngay",
        "blocks": [
         {
          "items": [
@@ -4693,13 +5588,26 @@ window.PULSE_DATA = {
        ]
       }
      ],
-     "key": "Báo tình trạng trẻ trước tiêm · Ở lại 30 phút · Theo dõi tại nhà ít nhất 24 giờ · Không đắp gì lên chỗ tiêm · Sốt cao, co giật, tím tái, li bì: đến bệnh viện ngay.",
+     "quiz": [
+      {
+       "q": "Sau tiêm cần ở lại theo dõi bao lâu?",
+       "a": "30 phút tại điểm tiêm, sau đó theo dõi tiếp tại nhà."
+      },
+      {
+       "q": "Sốt nhẹ, quấy khóc, đau nhẹ chỗ tiêm có bình thường không?",
+       "a": "Thường là phản ứng thông thường; theo dõi, nếu sốt cao, co giật, khó thở thì đến cơ sở y tế ngay."
+      }
+     ],
      "refs": [
       "Chính phủ. Nghị định số 104/2016/NĐ-CP ngày 01/7/2016 quy định về hoạt động tiêm chủng.",
       "Bộ Y tế. Thông tư số 34/2018/TT-BYT ngày 16/11/2018 quy định chi tiết một số điều của Nghị định số 104/2016/NĐ-CP.",
-      "WHO. Vaccines and immunization: Vaccine safety. who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety"
+      {
+       "t": "WHO. Vaccines and immunization: Vaccine safety.",
+       "url": "https://who.int/news-room/questions-and-answers/item/vaccines-and-immunization-vaccine-safety",
+       "org": "WHO"
+      }
      ],
-     "issued": true
+     "unit": "Tổ Tiêm chủng · Phòng Điều dưỡng"
     },
     "icon": "syringe",
     "poster": {
