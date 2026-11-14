@@ -4064,7 +4064,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Truyền nhiễm · Phòng Điều dưỡng"
     },
-    "icon": "thermo"
+    "icon": "thermo",
+    "poster": {
+     "img": "img/gdsk/poster-cum.jpg",
+     "caption": "Poster Cúm mùa"
+    }
    },
    {
     "group": "me",
