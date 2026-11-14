@@ -704,3 +704,6 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .news-card .news-thumb { color: #fff; background: linear-gradient(135deg, color-mix(in srgb, var(--c) 78%, #fff), var(--c)); box-shadow: 0 6px 16px color-mix(in srgb, var(--c) 35%, transparent); border-radius: 16px; }
 .news-card .news-thumb svg { width: 42px; height: 42px; }
 @media (max-width: 640px) { .news-card .news-thumb svg { width: 36px; height: 36px; } }
+.khoa-qr { text-align: center; }
+.khoa-qr img { width: min(320px, 100%); height: auto; border-radius: 16px; border: 1px solid var(--border); box-shadow: var(--shadow); }
+.khoa-qr p { max-width: 46ch; margin: 10px auto 0; }

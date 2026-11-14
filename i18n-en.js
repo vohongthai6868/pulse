@@ -472,6 +472,11 @@ window.PULSE_EN = {
 "Đến bệnh viện, cơ sở y tế gần nhất ngay khi có dấu hiệu nặng đã được dặn; tổng đài bệnh viện 0296 3562 357.": "Go to the nearest hospital or health facility immediately if warning signs appear; hospital switchboard 0296 3562 357.",
 "Tái khám đúng hẹn, mang theo giấy ra viện, đơn thuốc và sổ khám bệnh.": "Return for follow-up on time with your discharge paper, prescription and record book.",
 "Góp ý trực tiếp với điều dưỡng trưởng khoa, qua hòm thư góp ý tại khoa hoặc liên hệ Phòng Điều dưỡng (mục Liên hệ).": "Speak to the head nurse, use the ward feedback box or contact the Nursing Department (see Contact).",
+"Zalo Tổ Tiêm chủng": "Immunization Team on Zalo",
+"Quét mã bằng Zalo hoặc thêm số 0943 971 821 để được tư vấn, đặt lịch hẹn và nhắc lịch tiêm.": "Scan with Zalo or add 0943 971 821 for advice, appointments and vaccination reminders.",
+"Nhân lực điều dưỡng": "Nursing staff",
+"04 điều dưỡng: 01 cử nhân, 02 cao đẳng, 01 trung cấp.": "4 nurses: 1 bachelor's degree, 2 college diploma, 1 vocational diploma.",
+"Tổ trưởng: CNĐD. Nguyễn Thị Diễm Phương.": "Team leader: Nguyen Thi Diem Phuong, BSN.",
 "HS": "Midwife",
 "KTY": "MT"
 };
