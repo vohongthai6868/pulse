@@ -4303,7 +4303,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Khám bệnh · Phòng Điều dưỡng"
     },
-    "icon": "clip"
+    "icon": "clip",
+    "poster": {
+     "img": "img/gdsk/poster-cac-buoc-di-kham-benh.jpg",
+     "caption": "Poster Các bước đi khám bệnh"
+    }
    },
    {
     "group": "ck",
