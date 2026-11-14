@@ -3555,7 +3555,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
     },
-    "icon": "eye"
+    "icon": "eye",
+    "poster": {
+     "img": "img/gdsk/poster-tat-khuc-xa.jpg",
+     "caption": "Poster Tật khúc xạ ở trẻ em"
+    }
    },
    {
     "group": "tn",
