@@ -1529,7 +1529,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "hand"
+    "icon": "hand",
+    "poster": {
+     "img": "img/gdsk/poster-rua-tay-dung-cach.jpg",
+     "caption": "Poster Rửa tay đúng cách"
+    }
    },
    {
     "group": "an",
@@ -1616,7 +1620,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "walk"
+    "icon": "walk",
+    "poster": {
+     "img": "img/gdsk/poster-phong-te-nga-khi-nam-vien.jpg",
+     "caption": "Poster Phòng té ngã khi nằm viện"
+    }
    },
    {
     "group": "an",
@@ -1718,7 +1726,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "pill"
+    "icon": "pill",
+    "poster": {
+     "img": "img/gdsk/poster-dung-thuoc-an-toan.jpg",
+     "caption": "Poster Dùng thuốc an toàn"
+    }
    },
    {
     "group": "an",
@@ -1813,7 +1825,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "bed"
+    "icon": "bed",
+    "poster": {
+     "img": "img/gdsk/poster-phong-loet-ti-de.jpg",
+     "caption": "Poster Phòng loét tì đè"
+    }
    },
    {
     "group": "man",
@@ -2202,7 +2218,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "wind"
+    "icon": "wind",
+    "poster": {
+     "img": "img/gdsk/poster-hen-phe-quan.jpg",
+     "caption": "Poster Hen phế quản"
+    }
    },
    {
     "group": "man",
@@ -2387,7 +2407,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "apple"
+    "icon": "apple",
+    "poster": {
+     "img": "img/gdsk/poster-dinh-duong-cho-nguoi-benh.jpg",
+     "caption": "Poster Dinh dưỡng cho người bệnh"
+    }
    },
    {
     "group": "tn",
@@ -2775,7 +2799,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "heart"
+    "icon": "heart",
+    "poster": {
+     "img": "img/gdsk/poster-nuoi-con-bang-sua-me.jpg",
+     "caption": "Poster Nuôi con bằng sữa mẹ"
+    }
    },
    {
     "group": "tn",
@@ -2866,7 +2894,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "eye"
+    "icon": "eye",
+    "poster": {
+     "img": "img/gdsk/poster-viem-ket-mac.jpg",
+     "caption": "Poster Viêm kết mạc"
+    }
    },
    {
     "group": "man",
@@ -2954,7 +2986,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "eye"
+    "icon": "eye",
+    "poster": {
+     "img": "img/gdsk/poster-duc-thuy-tinh-the.jpg",
+     "caption": "Poster Đục thủy tinh thể"
+    }
    },
    {
     "group": "me",
@@ -3688,7 +3724,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "flame"
+    "icon": "flame",
+    "poster": {
+     "img": "img/gdsk/poster-so-cuu-bong.jpg",
+     "caption": "Poster Sơ cứu bỏng"
+    }
    },
    {
     "group": "ck",
@@ -4620,7 +4660,11 @@ window.PULSE_DATA = {
      ],
      "issued": true
     },
-    "icon": "syringe"
+    "icon": "syringe",
+    "poster": {
+     "img": "img/gdsk/poster-theo-doi-tre-sau-tiem-chung.jpg",
+     "caption": "Poster Theo dõi trẻ sau tiêm chủng"
+    }
    }
   ]
  },
