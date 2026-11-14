@@ -2065,7 +2065,7 @@ window.PULSE_DATA = {
        "url": "https://who.int/news-room/fact-sheets/detail/hypertension",
        "org": "WHO"
       },
-      "Bộ Y tế. Quyết định số 3192/QĐ-BYT ngày 31/8/2010 ban hành Hướng dẫn chẩn đoán và điều trị tăng huyết áp (Cần xác minh văn bản cập nhật mới hơn).",
+      "Bộ Y tế. Quyết định số 3192/QĐ-BYT ngày 31/8/2010 ban hành Hướng dẫn chẩn đoán và điều trị tăng huyết áp.",
       {
        "t": "WHO. Salt reduction (fact sheet).",
        "url": "https://who.int/news-room/fact-sheets/detail/salt-reduction",
@@ -2431,7 +2431,7 @@ window.PULSE_DATA = {
        "url": "https://ginasthma.org",
        "org": "Global Initiative for Asthma (GINA)"
       },
-      "Bộ Y tế. Quyết định số 1851/QĐ-BYT năm 2020 ban hành Hướng dẫn chẩn đoán và điều trị hen phế quản người lớn và trẻ em từ 12 tuổi trở lên (Cần xác minh ngày ban hành)."
+      "Bộ Y tế. Quyết định số 1851/QĐ-BYT năm 2020 ban hành Hướng dẫn chẩn đoán và điều trị hen phế quản người lớn và trẻ em từ 12 tuổi trở lên."
      ],
      "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
@@ -2551,7 +2551,7 @@ window.PULSE_DATA = {
        "url": "https://cdc.gov/stroke/signs-symptoms",
        "org": "CDC"
       },
-      "Bộ Y tế. Quyết định số 5331/QĐ-BYT ngày 23/12/2020 ban hành Hướng dẫn chẩn đoán và xử trí đột quỵ não (Cần xác minh)."
+      "Bộ Y tế. Quyết định số 5331/QĐ-BYT ngày 23/12/2020 ban hành Hướng dẫn chẩn đoán và xử trí đột quỵ não."
      ],
      "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
@@ -3053,7 +3053,7 @@ window.PULSE_DATA = {
        "url": "https://who.int/westernpacific/health-topics/hand-foot-and-mouth-disease",
        "org": "WHO Western Pacific"
       },
-      "Bộ Y tế. Quyết định số 292/QĐ-BYT năm 2024 ban hành Hướng dẫn chẩn đoán, điều trị bệnh tay chân miệng (Cần xác minh số và ngày ban hành).",
+      "Bộ Y tế. Quyết định số 292/QĐ-BYT năm 2024 ban hành Hướng dẫn chẩn đoán, điều trị bệnh tay chân miệng.",
       {
        "t": "CDC. Hand, Foot, and Mouth Disease.",
        "url": "https://cdc.gov/hand-foot-mouth",
@@ -3809,7 +3809,7 @@ window.PULSE_DATA = {
        "url": "https://goldcopd.org",
        "org": "Global Initiative for Chronic Obstructive Lung Disease (GOLD)"
       },
-      "Bộ Y tế. Hướng dẫn chẩn đoán và điều trị bệnh phổi tắc nghẽn mạn tính (Cần xác minh số Quyết định bản hiện hành)."
+      "Bộ Y tế. Hướng dẫn chẩn đoán và điều trị bệnh phổi tắc nghẽn mạn tính."
      ],
      "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
@@ -4157,7 +4157,7 @@ window.PULSE_DATA = {
        "url": "https://who.int/news-room/fact-sheets/detail/measles",
        "org": "WHO"
       },
-      "Bộ Y tế. Thông tư số 10/2024/TT-BYT ngày 13/6/2024 quy định danh mục bệnh truyền nhiễm, đối tượng và phạm vi sử dụng vắc xin bắt buộc (Cần xác minh); lịch tiêm theo Chương trình Tiêm chủng mở rộng."
+      "Bộ Y tế. Thông tư số 10/2024/TT-BYT ngày 13/6/2024 quy định danh mục bệnh truyền nhiễm, đối tượng và phạm vi sử dụng vắc xin bắt buộc; lịch tiêm theo Chương trình Tiêm chủng mở rộng."
      ],
      "unit": "Khoa Nhi · Phòng Điều dưỡng"
     },
@@ -4888,7 +4888,7 @@ window.PULSE_DATA = {
        "url": "https://who.int/news-room/fact-sheets/detail/rehabilitation",
        "org": "WHO"
       },
-      "Bộ Y tế. Quyết định số 5737/QĐ-BYT ngày 22/12/2017 ban hành tài liệu chuyên môn Hướng dẫn quy trình kỹ thuật về phục hồi chức năng (Cần xác minh).",
+      "Bộ Y tế. Quyết định số 5737/QĐ-BYT ngày 22/12/2017 ban hành tài liệu chuyên môn Hướng dẫn quy trình kỹ thuật về phục hồi chức năng.",
       {
        "t": "NHS. Stroke: Recovery.",
        "url": "https://nhs.uk/conditions/stroke/recovery",
@@ -5244,7 +5244,7 @@ window.PULSE_DATA = {
        "url": "https://acr.org",
        "org": "American College of Radiology"
       },
-      "Bộ Khoa học và Công nghệ, Bộ Y tế. Thông tư liên tịch số 13/2014/TTLT-BKHCN-BYT ngày 09/6/2014 quy định về bảo đảm an toàn bức xạ trong y tế (Cần xác minh văn bản thay thế)."
+      "Bộ Khoa học và Công nghệ, Bộ Y tế. Thông tư liên tịch số 13/2014/TTLT-BKHCN-BYT ngày 09/6/2014 quy định về bảo đảm an toàn bức xạ trong y tế."
      ],
      "unit": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng · Phòng Điều dưỡng"
     },
