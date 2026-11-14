@@ -4547,7 +4547,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Ngoại tổng quát · Phòng Điều dưỡng"
     },
-    "icon": "bandage"
+    "icon": "bandage",
+    "poster": {
+     "img": "img/gdsk/poster-cham-soc-vet-mo-tai-nha.jpg",
+     "caption": "Poster Chăm sóc vết mổ tại nhà"
+    }
    },
    {
     "group": "ck",
