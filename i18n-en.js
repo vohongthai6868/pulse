@@ -1,5 +1,8 @@
 /* Bản dịch tiếng Anh: khóa là câu tiếng Việt trong data.js */
 window.PULSE_EN = {
+"Video: Bữa ăn hôm nay, bớt mặn một chút": "Video: Today's meal, a little less salty",
+"Video ngắn 20 giây về giảm muối: dưới 5 g muối mỗi ngày, bớt chấm, nêm nhạt dần, đọc nhãn natri. Hình ảnh minh họa AI.": "A 20-second video on cutting salt: under 5 g of salt a day, less dipping sauce, season lighter step by step, read sodium labels. AI-generated illustrations.",
+"Nguồn: WHO – Healthy diet": "Source: WHO – Healthy diet",
 "Thêm trang Hỏi đáp và Hướng dẫn người bệnh": "New Q&A and Patient guide pages",
 "Người bệnh, người nhà xem nhanh những điều cần biết khi nhập viện, nằm viện, ra viện, số điện thoại cần gọi, cách góp ý và cách dùng mã QR trên tờ rơi.": "Patients and families can quickly find what to know about admission, hospital stay and discharge, which numbers to call, how to give feedback and how to use leaflet QR codes.",
 "Thêm trang Đào tạo và nghiên cứu khoa học": "New Training and research page",

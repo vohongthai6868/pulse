@@ -724,6 +724,10 @@ a.news-card:hover, .news-card:hover { border-color: var(--brand); background: #f
 .art-poster { margin: 4px 0 22px; text-align: center; }
 .art-poster img { width: 100%; max-width: 760px; height: auto; border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--shadow); }
 .art-poster figcaption { font-size: 13.5px; color: var(--dim); margin-top: 6px; }
+.art-video { text-align: center; }
+.art-video video { display: block; width: 100%; max-width: 360px; height: auto; aspect-ratio: 720 / 1276; margin: 8px auto 10px; border-radius: 14px; background: #000; border: 1px solid var(--border); box-shadow: var(--shadow); }
+.art-video-cap { font-size: 14.5px; color: var(--dim); max-width: 560px; margin: 0 auto 4px; }
+.art-video-src { font-size: 13.5px; margin: 0; }
 .art-key-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
 .art-key-list li { display: flex; gap: 8px; align-items: flex-start; font-size: 16.5px; font-weight: 700; line-height: 1.45; }
 .art-key-list svg { flex: none; color: #ffd166; margin-top: 2px; }
