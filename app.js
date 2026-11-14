@@ -618,6 +618,16 @@
       ]));
       pageView.appendChild(el("p", { class: "art-pending", text: L("Bài truyền thông đầy đủ của chủ đề này đang được biên soạn theo cấu trúc chung và sẽ đăng sau khi bác sĩ duyệt.", "The full article for this topic is being prepared and will be published after medical review.") }));
     }
+    if (tp.video) {
+      var vEl = el("video", { src: tp.video.src, poster: tp.video.poster, controls: "", playsinline: "", preload: "metadata", width: "360", height: "638" });
+      vEl.setAttribute("aria-label", tr(tp.video.title));
+      pageView.appendChild(el("section", { class: "page-section art-video" }, [
+        el("h2", { text: tr(tp.video.title) }),
+        vEl,
+        el("p", { class: "art-video-cap", text: tr(tp.video.caption) }),
+        tp.video.sourceUrl ? el("p", { class: "art-video-src" }, [el("a", { href: tp.video.sourceUrl, target: "_blank", rel: "noopener noreferrer", text: tr(tp.video.source) })]) : null,
+      ].filter(Boolean)));
+    }
     if (tp.files && tp.files.length) {
       pageView.appendChild(el("section", { class: "page-section" }, [
         el("h2", { text: L("Tài liệu tải về", "Downloads") }),

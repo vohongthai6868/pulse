@@ -1916,6 +1916,14 @@ window.PULSE_DATA = {
     "poster": {
      "img": "img/gdsk/poster-tang-huyet-ap.jpg",
      "caption": "Poster Tăng huyết áp"
+    },
+    "video": {
+     "src": "video/gdsk/reel-giam-muoi.mp4",
+     "poster": "video/gdsk/reel-giam-muoi.jpg",
+     "title": "Video: Bữa ăn hôm nay, bớt mặn một chút",
+     "caption": "Video ngắn 20 giây về giảm muối: dưới 5 g muối mỗi ngày, bớt chấm, nêm nhạt dần, đọc nhãn natri. Hình ảnh minh họa AI.",
+     "source": "Nguồn: WHO – Healthy diet",
+     "sourceUrl": "https://www.who.int/news-room/fact-sheets/detail/healthy-diet"
     }
    },
    {
