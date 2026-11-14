@@ -502,6 +502,16 @@
   var GDSK_RE = /^#\/gdsk\/([a-z0-9-]+)$/;
   var TOPIC_RE = /^#\/topic\/([a-z]+)$/;
   var KHOA_RE = /^#\/khoa\/([a-z0-9-]+)$/;
+  var TT_RE = /^#\/truyenthong\/([a-z0-9-]+)$/;
+  function khoaSlug(name) {
+    return name.replace(/^(Khoa|Bộ phận|Tổ|Phòng)\s+/, "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  }
+  function khoaFromSlug(sl) {
+    if (sl === "phong-dieu-duong" || sl === "dieu-duong") return "Phòng Điều dưỡng";
+    var hit = null;
+    DATA.gdsk.topics.forEach(function (t) { if (t.khoa && khoaSlug(t.khoa) === sl) hit = t.khoa; });
+    return hit;
+  }
   var homeView = $("home-view"), pageView = $("page-view");
 
   function currentPage() {
@@ -567,6 +577,8 @@
     document.title = tr(k.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
+  var GDSK_ICONS = {"hand": "<path d=\"M18 11V6a2 2 0 0 0-4 0v5\"/><path d=\"M14 10V4a2 2 0 0 0-4 0v6\"/><path d=\"M10 10.5V6a2 2 0 0 0-4 0v8\"/><path d=\"M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15\"/>", "walk": "<path d=\"M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z\"/><path d=\"M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z\"/><path d=\"M16 17h4\"/><path d=\"M4 13h4\"/>", "pill": "<path d=\"m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z\"/><path d=\"m8.5 8.5 7 7\"/>", "bed": "<path d=\"M2 4v16\"/><path d=\"M2 8h18a2 2 0 0 1 2 2v10\"/><path d=\"M2 17h20\"/><path d=\"M6 8v9\"/>", "pulse": "<path d=\"M22 12h-4l-3 9L9 3l-3 9H2\"/>", "drop": "<path d=\"M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z\"/>", "wind": "<path d=\"M17.7 7.7a2.5 2.5 0 1 1 1.8 4.3H2\"/><path d=\"M9.6 4.6A2 2 0 1 1 11 8H2\"/><path d=\"M12.6 19.4A2 2 0 1 0 14 16H2\"/>", "clock": "<circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M12 6v6l4 2\"/>", "apple": "<path d=\"M12 20.94c1.5 0 2.75 1.06 4 1.06 3 0 6-8 6-12.22A4.91 4.91 0 0 0 17 5c-2.22 0-4 1.44-5 2-1-.56-2.78-2-5-2a4.9 4.9 0 0 0-5 4.78C2 14 5 22 8 22c1.25 0 2.5-1.06 4-1.06Z\"/><path d=\"M10 2c1 .5 2 2 2 5\"/>", "bug": "<path d=\"m8 2 1.88 1.88\"/><path d=\"M14.12 3.88 16 2\"/><path d=\"M9 7.13v-1a3 3 0 1 1 6 0v1\"/><path d=\"M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6\"/><path d=\"M12 20v-9\"/><path d=\"M6.53 9C4.6 8.8 3 7.1 3 5\"/><path d=\"M6 13H2\"/><path d=\"M3 21c0-2.1 1.7-3.9 3.8-4\"/><path d=\"M20.97 5c0 2.1-1.6 3.8-3.5 4\"/><path d=\"M22 13h-4\"/><path d=\"M17.2 17c2.1.1 3.8 1.9 3.8 4\"/>", "baby": "<path d=\"M9 12h.01\"/><path d=\"M15 12h.01\"/><path d=\"M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5\"/><path d=\"M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1\"/>", "heart": "<path d=\"M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z\"/>", "eye": "<path d=\"M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/>", "thermo": "<path d=\"M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z\"/>", "clip": "<rect width=\"8\" height=\"4\" x=\"8\" y=\"2\" rx=\"1\"/><path d=\"M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2\"/><path d=\"m9 14 2 2 4-4\"/>", "flame": "<path d=\"M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07-2.14-.22-4.05 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.15.43-2.29 1-3a2.5 2.5 0 0 0 2.5 2.5z\"/>", "bandage": "<path d=\"M10 10.01h.01\"/><path d=\"M10 14.01h.01\"/><path d=\"M14 10.01h.01\"/><path d=\"M14 14.01h.01\"/><path d=\"M18 6v12\"/><path d=\"M6 6v12\"/><rect x=\"2\" y=\"6\" width=\"20\" height=\"12\" rx=\"2\"/>", "shield": "<path d=\"M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z\"/><path d=\"m9 12 2 2 4-4\"/>", "steth": "<path d=\"M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6 6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3\"/><path d=\"M8 15v1a6 6 0 0 0 6 6 6 6 0 0 0 6-6v-4\"/><circle cx=\"20\" cy=\"10\" r=\"2\"/>", "flask": "<path d=\"M14.5 2v17.5c0 1.4-1.1 2.5-2.5 2.5s-2.5-1.1-2.5-2.5V2\"/><path d=\"M8.5 2h7\"/><path d=\"M14.5 16h-5\"/>", "scan": "<path d=\"M3 7V5a2 2 0 0 1 2-2h2\"/><path d=\"M17 3h2a2 2 0 0 1 2 2v2\"/><path d=\"M21 17v2a2 2 0 0 1-2 2h-2\"/><path d=\"M7 21H5a2 2 0 0 1-2-2v-2\"/><circle cx=\"12\" cy=\"12\" r=\"3\"/>", "syringe": "<path d=\"m18 2 4 4\"/><path d=\"m17 7 3-3\"/><path d=\"M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5\"/><path d=\"m9 11 4 4\"/><path d=\"m5 19-3 3\"/><path d=\"m14 4 6 6\"/>", "alert": "<path d=\"m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3\"/><path d=\"M12 9v4\"/><path d=\"M12 17h.01\"/>", "star": "<path d=\"M11.5 2.5l2.9 5.9 6.5.9-4.7 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.7-4.6 6.5-.9z\"/>"};
+  function gIcon(k, sz) { return '<svg width="' + (sz || 24) + '" height="' + (sz || 24) + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + (GDSK_ICONS[k] || GDSK_ICONS.heart) + '</svg>'; }
   function renderGdskPage(slug) {
     var tp = DATA.gdsk.topics.filter(function (x) { return x.slug === slug; })[0];
     var g = DATA.gdsk.groups[tp.group];
@@ -577,21 +589,28 @@
     if (tp.khoa) pageView.appendChild(el("p", { class: "gdsk-khoa", text: L("Khoa, phòng phụ trách: ", "Responsible department: ") + tr(tp.khoa) }));
     var art = tp.article;
     if (art) {
-      if (art.heading) pageView.appendChild(el("p", { class: "art-heading", text: art.heading }));
+      var hero = el("div", { class: "art-hero", style: "--c:" + g.color }, [el("div", { class: "art-hero-ico" }), el("p", { class: "art-heading", text: art.heading || tr(tp.title) })]);
+      hero.firstChild.innerHTML = gIcon(tp.icon, 56);
+      pageView.appendChild(hero);
       pageView.appendChild(el("dl", { class: "art-info" }, [
         el("dt", { text: L("Đối tượng", "Audience") }), el("dd", { text: art.audience }),
         el("dt", { text: L("Mục tiêu", "Goal") }), el("dd", { text: art.goal }),
       ]));
-      art.sections.forEach(function (sec) {
+      art.sections.forEach(function (sec, si) {
         var box = el("section", { class: "page-section art-section" }, [el("h2", { text: sec.h })]);
         sec.blocks.forEach(function (b) {
           if (b.p) box.appendChild(el("p", { text: b.p }));
           else if (b.items) box.appendChild(el(b.ordered ? "ol" : "ul", { class: b.ordered ? "art-steps" : "" }, b.items.map(function (s) { return el("li", { text: s }); })));
-          else if (b.note) box.appendChild(el("p", { class: "art-note", text: b.note }));
+          else if (b.note) { var nt = el("p", { class: "art-note" }); nt.innerHTML = gIcon("alert", 22); nt.appendChild(document.createTextNode(b.note)); box.appendChild(nt); }
         });
         pageView.appendChild(box);
+        if (si === 0 && tp.poster) pageView.appendChild(el("figure", { class: "art-poster" }, [
+          el("a", { href: tp.poster.img, target: "_blank", rel: "noopener" }, [el("img", { src: tp.poster.img, alt: tr(tp.poster.caption), loading: "lazy" })]),
+          el("figcaption", { text: tr(tp.poster.caption) + L(" (bấm để phóng to)", " (tap to enlarge)") }),
+        ]));
       });
-      if (art.key) pageView.appendChild(el("div", { class: "art-key" }, [el("strong", { text: L("Thông điệp cần nhớ", "Key message") }), el("p", { text: art.key })]));
+      if (art.key) pageView.appendChild(el("div", { class: "art-key" }, [el("strong", { text: L("Thông điệp cần nhớ", "Key message") }),
+        el("ul", { class: "art-key-list" }, art.key.split(" · ").map(function (k) { var li = el("li"); li.innerHTML = gIcon("star", 18); li.appendChild(document.createTextNode(k.replace(/\.$/, ""))); return li; }))]));
     } else {
       pageView.appendChild(el("section", { class: "page-section" }, [
         el("h2", { text: L("Điều cần biết", "Key points") }),
@@ -651,6 +670,13 @@
       pageView.appendChild(el("div", { class: "page-home" }, [el("a", { class: "back-link home-btn", href: "#top", text: L("← Về trang chủ", "← Back to home") })]));
       if (scroll) window.scrollTo(0, 0);
     } else {
+      var ttm = TT_RE.exec(location.hash), ttk = ttm ? khoaFromSlug(ttm[1]) : null;
+      if (ttk) {
+        pageView.hidden = true; homeView.hidden = false; document.title = t("pageTitle");
+        gdskKhoa = ttk; gdskGroup = "all"; gdskAll = true; renderGdsk();
+        setTimeout(function () { var sec = $("gdsk-khoa-select") || $("gdsk-section"); if (sec) window.scrollTo(0, sec.getBoundingClientRect().top + window.pageYOffset - 150); }, 300);
+        return;
+      }
       var wasPage = !pageView.hidden;
       pageView.hidden = true;
       homeView.hidden = false;
