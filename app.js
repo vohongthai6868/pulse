@@ -805,7 +805,7 @@
       el("h2", { text: L("Liên hệ Bệnh viện Đa khoa Nhật Tân", "Contact Nhat Tan General Hospital") }),
       el("a", { class: "art-btn art-btn-call", href: "tel:02963562357" }, [el("span", { text: L("Gọi tổng đài, cấp cứu 24/24", "Call switchboard, emergency 24/7") }), el("strong", { text: "0296 3562 357" })]),
       el("a", { class: "art-btn art-btn-work", href: "tel:02963562678" }, [el("span", { text: L("Gọi liên hệ công tác", "Call administrative contact") }), el("strong", { text: "0296 3562 678" })]),
-      el("p", { text: L("Ngoài giờ hoặc ở xa: đến bệnh viện, cơ sở y tế gần nhất.", "Out of hours or far away: go to the nearest hospital or health facility.") }),
+      el("p", { text: L("Nhật Tân 24/24. Khi ở xa: đến bệnh viện, cơ sở y tế gần nhất.", "Nhat Tan 24/7. If you are far away: go to the nearest hospital or health facility.") }),
       el("p", { text: L("Địa chỉ: 32 Phạm Ngọc Thạch, Khóm Châu Long 7, Phường Châu Đốc, Tỉnh An Giang.", "Address: 32 Pham Ngoc Thach, Chau Long 7, Chau Doc Ward, An Giang Province.") }),
     ]));
     if (art.refs && art.refs.length) {

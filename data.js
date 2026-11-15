@@ -971,8 +971,8 @@ window.PULSE_DATA = {
       "en": "When is the Nursing Department open?"
      },
      "p": {
-      "vi": "Thứ Hai đến thứ Sáu: 7 giờ – 11 giờ, 13 giờ – 17 giờ; thứ Bảy: 7 giờ – 11 giờ. Ngoài giờ, liên hệ điều dưỡng trực tại khoa.",
-      "en": "Monday to Friday: 7–11 am and 1–5 pm; Saturday: 7–11 am. Outside these hours, contact the nurse on duty in the ward."
+      "vi": "Thứ Hai đến thứ Sáu: 7 giờ – 11 giờ, 13 giờ – 17 giờ; thứ Bảy: 7 giờ – 11 giờ. Nhật Tân 24/24: liên hệ điều dưỡng trực tại khoa.",
+      "en": "Monday to Friday: 7–11 am and 1–5 pm; Saturday: 7–11 am. Nhat Tan 24/7: contact the nurse on duty in the ward."
      }
     },
     {
@@ -4743,7 +4743,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Ngoại chấn thương · Phòng Điều dưỡng"
     },
-    "icon": "bandage"
+    "icon": "bandage",
+    "poster": {
+     "img": "img/gdsk/poster-cham-soc-bo-bot.jpg",
+     "caption": "Poster Chăm sóc bó bột, nẹp"
+    }
    },
    {
     "group": "ck",
@@ -5002,7 +5006,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Y học cổ truyền – Phục hồi chức năng · Phòng Điều dưỡng"
     },
-    "icon": "walk"
+    "icon": "walk",
+    "poster": {
+     "img": "img/gdsk/poster-tap-van-dong-tai-nha.jpg",
+     "caption": "Poster Tập vận động phục hồi tại nhà"
+    }
    },
    {
     "group": "me",
