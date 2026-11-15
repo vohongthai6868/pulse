@@ -5414,7 +5414,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Dược · Phòng Điều dưỡng"
     },
-    "icon": "pill"
+    "icon": "pill",
+    "poster": {
+     "img": "img/gdsk/poster-dung-khang-sinh-dung-cach.jpg",
+     "caption": "Poster Dùng kháng sinh đúng cách"
+    }
    },
    {
     "group": "man",
