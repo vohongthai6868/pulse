@@ -5292,7 +5292,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng · Phòng Điều dưỡng"
     },
-    "icon": "scan"
+    "icon": "scan",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-sieu-am-chup-phim.jpg",
+     "caption": "Poster Chuẩn bị trước khi siêu âm, chụp phim"
+    }
    },
    {
     "group": "an",
