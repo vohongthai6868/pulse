@@ -4666,7 +4666,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Ngoại chấn thương · Phòng Điều dưỡng"
     },
-    "icon": "bandage"
+    "icon": "bandage",
+    "poster": {
+     "img": "img/gdsk/poster-cham-soc-bo-bot.jpg",
+     "caption": "Poster Chăm sóc bó bột, nẹp"
+    }
    },
    {
     "group": "ck",
