@@ -5161,7 +5161,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Xét nghiệm · Phòng Điều dưỡng"
     },
-    "icon": "flask"
+    "icon": "flask",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-lay-mau-xet-nghiem.jpg",
+     "caption": "Poster Chuẩn bị trước khi lấy máu xét nghiệm"
+    }
    },
    {
     "group": "ck",
