@@ -5044,7 +5044,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Phụ sản · Phòng Điều dưỡng"
     },
-    "icon": "heart"
+    "icon": "heart",
+    "poster": {
+     "img": "img/gdsk/poster-dau-hieu-nguy-hiem-khi-mang-thai.jpg",
+     "caption": "Poster Dấu hiệu nguy hiểm khi mang thai"
+    }
    },
    {
     "group": "ck",
