@@ -4929,7 +4929,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Y học cổ truyền – Phục hồi chức năng · Phòng Điều dưỡng"
     },
-    "icon": "walk"
+    "icon": "walk",
+    "poster": {
+     "img": "img/gdsk/poster-tap-van-dong-tai-nha.jpg",
+     "caption": "Poster Tập vận động phục hồi tại nhà"
+    }
    },
    {
     "group": "me",
