@@ -5538,7 +5538,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Bộ phận Thận nhân tạo · Phòng Điều dưỡng"
     },
-    "icon": "pulse"
+    "icon": "pulse",
+    "poster": {
+     "img": "img/gdsk/poster-cham-soc-cau-noi-fav.jpg",
+     "caption": "Poster Chăm sóc cầu nối động tĩnh mạch"
+    }
    },
    {
     "group": "me",
