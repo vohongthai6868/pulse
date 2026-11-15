@@ -244,6 +244,28 @@
     });
   }
 
+  // Mục lục GDSK theo khoa: một bài có thể nằm trong mục lục nhiều khoa (DATA.mucluc[mã khoa]).
+  function unitCodeOf(name) {
+    var c = null;
+    (DATA.departments || []).forEach(function (g) { g.units.forEach(function (u) { if (u.name === name) c = u.page; }); });
+    return c;
+  }
+  function mucluc(name) { var c = unitCodeOf(name); return (c && DATA.mucluc && DATA.mucluc[c]) || null; }
+  function topicBySlug(sl) { return DATA.gdsk.topics.filter(function (x) { return x.slug === sl; })[0]; }
+  function unitTopics(name) {
+    var m = mucluc(name), out = [], seen = {};
+    if (m) m.items.forEach(function (it) { var tp = topicBySlug(it.slug); if (tp && !seen[tp.slug]) { seen[tp.slug] = 1; out.push(tp); } });
+    DATA.gdsk.topics.forEach(function (tp) { if (tp.khoa === name && !seen[tp.slug]) { seen[tp.slug] = 1; out.push(tp); } });
+    return out;
+  }
+  function inUnit(tp, name) { return unitTopics(name).indexOf(tp) >= 0; }
+  function unitsOfTopic(tp) {
+    var res = [];
+    (DATA.departments || []).forEach(function (g) { g.units.forEach(function (u) {
+      if (u.name !== tp.khoa && DATA.mucluc && DATA.mucluc[u.page] && DATA.mucluc[u.page].items.some(function (it) { return it.slug === tp.slug; })) res.push(u);
+    }); });
+    return res;
+  }
   var gdskGroup = "all", gdskAll = false; var gdskKhoa = "all"; var gdskQ = "";
   function fold(s) { return String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d"); }
   function foldMatch(q, texts) {
@@ -272,7 +294,7 @@
         if (["lamsang", "canlamsang", "bophan"].indexOf(g.group) >= 0) g.units.forEach(function (u) { units.push(u.name); });
       });
       var cnt = {};
-      DATA.gdsk.topics.forEach(function (tp) { if (tp.khoa) cnt[tp.khoa] = (cnt[tp.khoa] || 0) + 1; });
+      units.forEach(function (u) { cnt[u] = unitTopics(u).length; });
       var sel = el("select", { id: "gdsk-khoa-select", class: "khoa-select" });
       sel.appendChild(el("option", { value: "all", text: L("Tất cả khoa, bộ phận (" + DATA.gdsk.topics.length + " bài)", "All departments (" + DATA.gdsk.topics.length + ")") }));
       units.forEach(function (u) {
@@ -287,7 +309,7 @@
     }
     box.textContent = "";
     var best = 0, scored = DATA.gdsk.topics.filter(function (tp) {
-      return (gdskGroup === "all" || tp.group === gdskGroup) && (gdskKhoa === "all" || tp.khoa === gdskKhoa) && matches(state.query, [tr(tp.title)].concat(tp.points.map(tr)));
+      return (gdskGroup === "all" || tp.group === gdskGroup) && (gdskKhoa === "all" || inUnit(tp, gdskKhoa)) && matches(state.query, [tr(tp.title)].concat(tp.points.map(tr)));
     }).map(function (tp) {
       var art = tp.article || {};
       var sc = foldMatch(gdskQ, [tr(tp.title), tp.khoa || "", art.heading || "", art.lead || "", tr(G[tp.group].label)].concat(tp.points.map(tr)).concat((art.sections || []).map(function (s) { return s.h; })));
@@ -295,7 +317,8 @@
       return [tp, sc];
     });
     var list = scored.filter(function (x) { return x[1] > 0 && x[1] === best; }).map(function (x) { return x[0]; });
-    list = list.filter(function (tp) { return tp.poster; }).concat(list.filter(function (tp) { return !tp.poster; }));
+    if (gdskKhoa !== "all") { var ord = unitTopics(gdskKhoa); list.sort(function (a, b) { return ord.indexOf(a) - ord.indexOf(b); }); }
+    else list = list.filter(function (tp) { return tp.poster; }).concat(list.filter(function (tp) { return !tp.poster; }));
     var cntEl = $("gdsk-count");
     if (cntEl) cntEl.textContent = (gdskQ || gdskGroup !== "all" || gdskKhoa !== "all") ? (list.length ? L("Có " + list.length + " bài phù hợp.", list.length + " matching articles.") : L("Chưa có bài phù hợp. Thử từ khác, hoặc gọi tổng đài 0296 3562 357 để được hướng dẫn.", "No matching article. Try another word or call 0296 3562 357.")) : L("Có " + list.length + " bài. Chọn nhóm chủ đề hoặc khoa bên dưới.", list.length + " articles. Pick a topic group or department below.");
     if (!list.length && gdskKhoa !== "all") {
@@ -572,9 +595,7 @@
     document.title = cat.label[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
-  function unitGdskList(name) {
-    return DATA.gdsk.topics.filter(function (tp) { return tp.khoa === name; });
-  }
+  function unitGdskList(name) { return unitTopics(name); }
   function renderKhoaPage(key) {
     var hit = unitByCode(key);
     var k = DATA.khoa && DATA.khoa[key];
@@ -647,12 +668,17 @@
   function unitExtras(hit, key) {
     unitGuide(hit);
     var name = hit && hit.u ? hit.u.name : "";
-    var list = unitGdskList(name);
-    var sec = el("section", { class: "page-section unit-gdsk" }, [el("h2", { text: L("Bài giáo dục sức khỏe của đơn vị", "Health education articles from this unit") })]);
+    var list = unitGdskList(name), ml = mucluc(name);
+    var why = {}; if (ml) ml.items.forEach(function (it) { why[it.slug] = it.why; });
+    var sec = el("section", { class: "page-section unit-gdsk" }, [el("h2", { text: ml ? L("Mục lục bài giáo dục sức khỏe của khoa", "Health education index") : L("Bài giáo dục sức khỏe của đơn vị", "Health education articles from this unit") })]);
+    if (ml && ml.intro) sec.appendChild(el("p", { class: "unit-guide-hint", text: ml.intro }));
     if (list.length) {
-      sec.appendChild(el("ul", { class: "unit-gdsk-list" }, list.map(function (tp) {
+      sec.appendChild(el(ml ? "ol" : "ul", { class: "unit-gdsk-list" + (ml ? " unit-gdsk-ol" : "") }, list.map(function (tp, i) {
         var g = DATA.gdsk.groups[tp.group] || { color: "#0b4f9c" };
-        var a = el("a", { href: "#/gdsk/" + tp.slug, style: "--c:" + g.color }, [el("span", { class: "unit-gdsk-ico" }), el("span", { text: tr(tp.title) })]);
+        var txt = el("span", { class: "unit-gdsk-txt" }, [el("span", { class: "unit-gdsk-title", text: (ml ? (i + 1) + ". " : "") + tr(tp.title) })]);
+        if (why[tp.slug]) txt.appendChild(el("span", { class: "unit-gdsk-why", text: why[tp.slug] }));
+        if (ml && tp.khoa && tp.khoa !== name) txt.appendChild(el("span", { class: "unit-gdsk-shared", text: L("Bài dùng chung · " + tp.khoa, "Shared · " + tp.khoa) }));
+        var a = el("a", { href: "#/gdsk/" + tp.slug, style: "--c:" + g.color }, [el("span", { class: "unit-gdsk-ico" }), txt]);
         a.firstChild.innerHTML = gIcon(tp.icon, 22);
         return el("li", {}, [a]);
       })));
@@ -860,6 +886,8 @@
         el("p", { class: "art-meta", text: L("Mã ", "Code ") + art.code + L(" · Phiên bản ", " · Version ") + art.version + (art.approved ? L(" · Duyệt ngày ", " · Approved ") + formatDate(art.approved) : (art.issued ? L(" · Đã ký ban hành", " · Officially issued") : "")) }),
       ]));
     }
+    var also = unitsOfTopic(tp);
+    if (also.length) pageView.appendChild(el("p", { class: "unit-also" }, [document.createTextNode(L("Bài này cũng có trong mục lục của: ", "Also listed by: "))].concat([].concat.apply([], also.map(function (u, i) { return [i ? document.createTextNode(", ") : null, el("a", { href: "#/khoa/" + u.page, text: tr(u.name) })].filter(Boolean); })))));
     if (owner) {
       var rich = DATA.khoa && DATA.khoa[owner.u.page];
       pageView.appendChild(el("section", { class: "page-section unit-card" }, [

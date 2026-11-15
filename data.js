@@ -6199,5 +6199,45 @@ window.PULSE_DATA = {
     "Mọi thắc mắc về chăm sóc, góp ý về thái độ phục vụ: gặp điều dưỡng trưởng khoa hoặc Phòng Điều dưỡng (giờ hành chính)."
    ]
   }
+ },
+ "mucluc": {
+  "cap-cuu": {
+   "updated": "2026-11-15",
+   "intro": "Sắp xếp theo các tình trạng thường gặp tại Khoa Cấp cứu trước. Bài dùng chung là bài của khoa khác, được đưa vào mục lục này vì người bệnh hay vào cấp cứu với tình trạng đó.",
+   "items": [
+    {
+     "slug": "nhan-biet-som-dot-quy",
+     "why": "Méo miệng, yếu tay chân, nói khó: đến bệnh viện ngay, càng sớm càng tốt."
+    },
+    {
+     "slug": "tang-huyet-ap",
+     "why": "Huyết áp tăng cao đột ngột, đau đầu, chóng mặt, đau ngực."
+    },
+    {
+     "slug": "hen-phe-quan",
+     "why": "Cơn hen cấp: khó thở, khò khè, nói không thành câu."
+    },
+    {
+     "slug": "copd",
+     "why": "Đợt cấp COPD: khó thở tăng, ho nhiều đờm đục."
+    },
+    {
+     "slug": "sot-xuat-huyet",
+     "why": "Dấu hiệu cảnh báo: đau bụng, nôn nhiều, chảy máu, lừ đừ."
+    },
+    {
+     "slug": "dai-thao-duong",
+     "why": "Hạ đường huyết: run tay, vã mồ hôi; cách xử trí ban đầu và khi nào cần đến viện."
+    },
+    {
+     "slug": "tay-chan-mieng-o-tre",
+     "why": "Trẻ giật mình, sốt cao khó hạ, đi loạng choạng."
+    },
+    {
+     "slug": "so-cuu-bong",
+     "why": "Sơ cứu đúng trong 20 phút đầu, không bôi kem đánh răng, nước mắm."
+    }
+   ]
+  }
  }
 };
