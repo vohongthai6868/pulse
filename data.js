@@ -5121,7 +5121,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Phụ sản · Phòng Điều dưỡng"
     },
-    "icon": "heart"
+    "icon": "heart",
+    "poster": {
+     "img": "img/gdsk/poster-dau-hieu-nguy-hiem-khi-mang-thai.jpg",
+     "caption": "Poster Dấu hiệu nguy hiểm khi mang thai"
+    }
    },
    {
     "group": "ck",
@@ -5234,7 +5238,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Xét nghiệm · Phòng Điều dưỡng"
     },
-    "icon": "flask"
+    "icon": "flask",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-lay-mau-xet-nghiem.jpg",
+     "caption": "Poster Chuẩn bị trước khi lấy máu xét nghiệm"
+    }
    },
    {
     "group": "ck",
@@ -5361,7 +5369,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng · Phòng Điều dưỡng"
     },
-    "icon": "scan"
+    "icon": "scan",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-sieu-am-chup-phim.jpg",
+     "caption": "Poster Chuẩn bị trước khi siêu âm, chụp phim"
+    }
    },
    {
     "group": "an",
@@ -5479,7 +5491,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Dược · Phòng Điều dưỡng"
     },
-    "icon": "pill"
+    "icon": "pill",
+    "poster": {
+     "img": "img/gdsk/poster-dung-khang-sinh-dung-cach.jpg",
+     "caption": "Poster Dùng kháng sinh đúng cách"
+    }
    },
    {
     "group": "man",
@@ -5599,7 +5615,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Bộ phận Thận nhân tạo · Phòng Điều dưỡng"
     },
-    "icon": "pulse"
+    "icon": "pulse",
+    "poster": {
+     "img": "img/gdsk/poster-cham-soc-cau-noi-fav.jpg",
+     "caption": "Poster Chăm sóc cầu nối động tĩnh mạch"
+    }
    },
    {
     "group": "me",
