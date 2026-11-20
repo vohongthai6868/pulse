@@ -244,6 +244,28 @@
     });
   }
 
+  // Mục lục GDSK theo khoa: một bài có thể nằm trong mục lục nhiều khoa (DATA.mucluc[mã khoa]).
+  function unitCodeOf(name) {
+    var c = null;
+    (DATA.departments || []).forEach(function (g) { g.units.forEach(function (u) { if (u.name === name) c = u.page; }); });
+    return c;
+  }
+  function mucluc(name) { var c = unitCodeOf(name); return (c && DATA.mucluc && DATA.mucluc[c]) || null; }
+  function topicBySlug(sl) { return DATA.gdsk.topics.filter(function (x) { return x.slug === sl; })[0]; }
+  function unitTopics(name) {
+    var m = mucluc(name), out = [], seen = {};
+    if (m) m.items.forEach(function (it) { var tp = topicBySlug(it.slug); if (tp && !seen[tp.slug]) { seen[tp.slug] = 1; out.push(tp); } });
+    DATA.gdsk.topics.forEach(function (tp) { if (tp.khoa === name && !seen[tp.slug]) { seen[tp.slug] = 1; out.push(tp); } });
+    return out;
+  }
+  function inUnit(tp, name) { return unitTopics(name).indexOf(tp) >= 0; }
+  function unitsOfTopic(tp) {
+    var res = [];
+    (DATA.departments || []).forEach(function (g) { g.units.forEach(function (u) {
+      if (u.name !== tp.khoa && DATA.mucluc && DATA.mucluc[u.page] && DATA.mucluc[u.page].items.some(function (it) { return it.slug === tp.slug; })) res.push(u);
+    }); });
+    return res;
+  }
   var gdskGroup = "all", gdskAll = false; var gdskKhoa = "all"; var gdskQ = "";
   function fold(s) { return String(s).toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d"); }
   function foldMatch(q, texts) {
@@ -272,7 +294,7 @@
         if (["lamsang", "canlamsang", "bophan"].indexOf(g.group) >= 0) g.units.forEach(function (u) { units.push(u.name); });
       });
       var cnt = {};
-      DATA.gdsk.topics.forEach(function (tp) { if (tp.khoa) cnt[tp.khoa] = (cnt[tp.khoa] || 0) + 1; });
+      units.forEach(function (u) { cnt[u] = unitTopics(u).length; });
       var sel = el("select", { id: "gdsk-khoa-select", class: "khoa-select" });
       sel.appendChild(el("option", { value: "all", text: L("Tất cả khoa, bộ phận (" + DATA.gdsk.topics.length + " bài)", "All departments (" + DATA.gdsk.topics.length + ")") }));
       units.forEach(function (u) {
@@ -287,7 +309,7 @@
     }
     box.textContent = "";
     var best = 0, scored = DATA.gdsk.topics.filter(function (tp) {
-      return (gdskGroup === "all" || tp.group === gdskGroup) && (gdskKhoa === "all" || tp.khoa === gdskKhoa) && matches(state.query, [tr(tp.title)].concat(tp.points.map(tr)));
+      return (gdskGroup === "all" || tp.group === gdskGroup) && (gdskKhoa === "all" || inUnit(tp, gdskKhoa)) && matches(state.query, [tr(tp.title)].concat(tp.points.map(tr)));
     }).map(function (tp) {
       var art = tp.article || {};
       var sc = foldMatch(gdskQ, [tr(tp.title), tp.khoa || "", art.heading || "", art.lead || "", tr(G[tp.group].label)].concat(tp.points.map(tr)).concat((art.sections || []).map(function (s) { return s.h; })));
@@ -295,7 +317,8 @@
       return [tp, sc];
     });
     var list = scored.filter(function (x) { return x[1] > 0 && x[1] === best; }).map(function (x) { return x[0]; });
-    list = list.filter(function (tp) { return tp.poster; }).concat(list.filter(function (tp) { return !tp.poster; }));
+    if (gdskKhoa !== "all") { var ord = unitTopics(gdskKhoa); list.sort(function (a, b) { return ord.indexOf(a) - ord.indexOf(b); }); }
+    else list = list.filter(function (tp) { return tp.poster; }).concat(list.filter(function (tp) { return !tp.poster; }));
     var cntEl = $("gdsk-count");
     if (cntEl) cntEl.textContent = (gdskQ || gdskGroup !== "all" || gdskKhoa !== "all") ? (list.length ? L("Có " + list.length + " bài phù hợp.", list.length + " matching articles.") : L("Chưa có bài phù hợp. Thử từ khác, hoặc gọi tổng đài 0296 3562 357 để được hướng dẫn.", "No matching article. Try another word or call 0296 3562 357.")) : L("Có " + list.length + " bài. Chọn nhóm chủ đề hoặc khoa bên dưới.", list.length + " articles. Pick a topic group or department below.");
     if (!list.length && gdskKhoa !== "all") {
@@ -375,11 +398,11 @@
           (u.roles && u.roles.length) ? el("span", { class: "dept-roles" }, u.roles.map(function (r) { return el("span", { class: "role-tag", text: tr(r) }); })) : null,
           el("span", { class: "dept-desc", text: tr(u.desc) }),
         ]);
-        if (u.page && DATA.khoa && DATA.khoa[u.page]) {
+        if (u.page) {
           card = el("a", { class: "dept-card dept-" + g.group + " dept-has-page", href: "#/khoa/" + u.page }, [
             el("span", { class: "dept-name", text: tr(u.name) }),
             (u.roles && u.roles.length) ? el("span", { class: "dept-roles" }, u.roles.map(function (r) { return el("span", { class: "role-tag", text: tr(r) }); })) : null,
-            el("span", { class: "dept-page-link", text: L("Xem trang khoa →", "View department page →") }),
+            el("span", { class: "dept-page-link", text: L("Xem giới thiệu →", "View introduction →") }),
           ]);
         } else {
           card.addEventListener("click", function () { card.setAttribute("aria-expanded", String(card.getAttribute("aria-expanded") !== "true")); });
@@ -388,7 +411,7 @@
       });
     });
     box.appendChild(grid);
-    box.appendChild(el("p", { class: "dept-hint", text: L("Bấm vào từng đơn vị để xem mô tả.", "Tap a unit to see its description.") }));
+    box.appendChild(el("p", { class: "dept-hint", text: L("Bấm vào từng đơn vị để xem trang giới thiệu và bài giáo dục sức khỏe của đơn vị.", "Tap a unit to see its introduction and health education articles.") }));
   }
 
   function renderTools() {
@@ -537,6 +560,14 @@
     DATA.gdsk.topics.forEach(function (t) { if (t.khoa && khoaSlug(t.khoa) === sl) hit = t.khoa; });
     return hit;
   }
+  function unitBy(fn) {
+    var hit = null;
+    (DATA.departments || []).forEach(function (g) { g.units.forEach(function (u) { if (!hit && fn(u)) hit = { u: u, g: g }; }); });
+    return hit;
+  }
+  function unitByCode(code) { return unitBy(function (u) { return u.page === code; }); }
+  function unitByName(name) { return name ? unitBy(function (u) { return u.name === name; }) : null; }
+  var GDSK_HOME_RE = /^#\/gdsk\/?$/;
   var homeView = $("home-view"), pageView = $("page-view");
 
   function currentPage() {
@@ -547,7 +578,7 @@
     var gm = GDSK_RE.exec(location.hash);
     if (gm && DATA.gdsk.topics.some(function (x) { return x.slug === gm[1]; })) return "gdsk:" + gm[1];
     var km = KHOA_RE.exec(location.hash);
-    return km && DATA.khoa && DATA.khoa[km[1]] ? "khoa:" + km[1] : null;
+    return km && ((DATA.khoa && DATA.khoa[km[1]]) || unitByCode(km[1])) ? "khoa:" + km[1] : null;
   }
 
   function renderTopicPage(key) {
@@ -564,8 +595,105 @@
     document.title = cat.label[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
+  function unitGdskList(name) { return unitTopics(name); }
   function renderKhoaPage(key) {
-    var k = DATA.khoa[key];
+    var hit = unitByCode(key);
+    var k = DATA.khoa && DATA.khoa[key];
+    if (!k) { renderUnitPage(hit); unitExtras(hit, key); return; }
+    renderRichKhoa(k);
+    unitExtras(hit || { u: { name: k.name, page: key } }, key);
+    document.title = tr(k.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
+  }
+  function renderUnitPage(hit) {
+    var u = hit.u, g = hit.g;
+    pageView.textContent = "";
+    pageView.classList.remove("art-v2");
+    pageView.appendChild(el("a", { class: "back-link", href: "#dept-section", text: L("← Danh sách khoa, phòng", "← Departments") }));
+    pageView.appendChild(el("div", { class: "unit-head" }, [
+      el("img", { class: "art-logo", src: "logo-nhattan.png", alt: L("Logo Bệnh viện Đa khoa Nhật Tân", "Nhat Tan General Hospital logo"), width: "129", height: "40" }),
+      el("span", { class: "tag", style: "--c:#0b4f9c", text: tr(g.groupLabel) }),
+    ]));
+    pageView.appendChild(el("h1", { class: "page-title", text: tr(u.name) }));
+    pageView.appendChild(el("p", { class: "page-intro", text: tr(u.desc) }));
+    var facts = [
+      [L("Thuộc", "Part of"), L("Bệnh viện Đa khoa Nhật Tân", "Nhat Tan General Hospital")],
+      [L("Nhóm đơn vị", "Unit group"), tr(g.groupLabel)],
+    ];
+    if (u.roles && u.roles.length) facts.push([L("Nhân lực điều dưỡng", "Nursing staff"), u.roles.map(tr).join(", ")]);
+    facts.push([L("Tổng đài, cấp cứu 24/24", "Switchboard, emergency 24/7"), "0296 3562 357"]);
+    facts.push([L("Liên hệ công tác", "Administrative contact"), "0296 3562 678"]);
+    pageView.appendChild(el("dl", { class: "khoa-facts" }, [].concat.apply([], facts.map(function (f) { return [el("dt", { text: f[0] }), telify(el("dd"), f[1])]; }))));
+    if (u.page === "dieu-duong" && DATA.pages.about) {
+      var ab = DATA.pages.about;
+      ab.sections.slice(0, 1).forEach(function (s) {
+        pageView.appendChild(el("section", { class: "page-section" }, [
+          el("h2", { text: s.h[state.lang] }),
+          s.items ? el("ul", {}, s.items[state.lang].map(function (txt) { return el("li", { text: txt }); })) : el("p", { text: s.p ? s.p[state.lang] : "" }),
+          el("p", {}, [el("a", { class: "unit-more", href: "#/about", text: L("Xem đầy đủ phần giới thiệu Phòng Điều dưỡng →", "Read the full Nursing Department introduction →") })]),
+        ]));
+      });
+    }
+    document.title = tr(u.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
+  }
+  function unitGuide(hit) {
+    var H = DATA.huongdan; if (!H || !hit || !hit.u) return;
+    var code = hit.u.page, grp = hit.g ? hit.g.group : "";
+    var inList = function (arr) { return arr.indexOf(grp) >= 0 || arr.indexOf(grp + ":" + code) >= 0; };
+    var keys = inList(H.show.all) ? ["noiquy", "bhyt", "nhapvien", "namvien", "ravien"] : inList(H.show.basic) ? ["noiquy", "bhyt"] : inList(H.show.bhyt) ? ["bhyt"] : [];
+    if (!keys.length) return;
+    var rich = DATA.khoa && DATA.khoa[code];
+    var sec = el("section", { class: "page-section unit-guide" }, [
+      el("h2", { text: L("Hướng dẫn người bệnh và người nhà", "Guidance for patients and families") }),
+      el("p", { class: "unit-guide-hint", text: L("Bấm vào từng mục để xem.", "Tap each item to open.") }),
+    ]);
+    keys.forEach(function (k, idx) {
+      var blk = H[k];
+      var items = (k === "noiquy" && rich && rich.noiquy) ? rich.noiquy : blk.items;
+      var body = [];
+      var intro = (k === "noiquy" && rich && rich.noiquy) ? L("Nội quy của " + tr(hit.u.name) + ".", "") : blk.intro;
+      if (intro) body.push(el("p", { text: intro }));
+      body.push(el("ul", {}, items.map(function (x) { return telify(el("li"), x); })));
+      if (k === "noiquy" && H.rieng[code]) {
+        body.push(el("p", { class: "unit-guide-sub", text: L("Lưu ý riêng tại " + tr(hit.u.name), "Unit-specific notes") }));
+        body.push(el("ul", {}, H.rieng[code].map(function (x) { return telify(el("li"), x); })));
+      }
+      if (blk.refs) body.push(el("p", { class: "art-meta", text: L("Căn cứ: ", "Basis: ") + blk.refs.join(" ") }));
+      var d = el("details", { class: "unit-guide-item" }, [el("summary", { text: blk.h })].concat(body));
+      if (idx === 0) d.open = false;
+      sec.appendChild(d);
+    });
+    sec.appendChild(el("p", { class: "art-meta", text: L("Căn cứ chung: ", "General basis: ") + H.refs.join(" ") }));
+    pageView.appendChild(sec);
+  }
+  function unitExtras(hit, key) {
+    unitGuide(hit);
+    var name = hit && hit.u ? hit.u.name : "";
+    var list = unitGdskList(name), ml = mucluc(name);
+    var why = {}; if (ml) ml.items.forEach(function (it) { why[it.slug] = it.why; });
+    var sec = el("section", { class: "page-section unit-gdsk" }, [el("h2", { text: ml ? L("Mục lục bài giáo dục sức khỏe của khoa", "Health education index") : L("Bài giáo dục sức khỏe của đơn vị", "Health education articles from this unit") })]);
+    if (ml && ml.intro) sec.appendChild(el("p", { class: "unit-guide-hint", text: ml.intro }));
+    if (list.length) {
+      sec.appendChild(el(ml ? "ol" : "ul", { class: "unit-gdsk-list" + (ml ? " unit-gdsk-ol" : "") }, list.map(function (tp, i) {
+        var g = DATA.gdsk.groups[tp.group] || { color: "#0b4f9c" };
+        var txt = el("span", { class: "unit-gdsk-txt" }, [el("span", { class: "unit-gdsk-title", text: (ml ? (i + 1) + ". " : "") + tr(tp.title) })]);
+        if (why[tp.slug]) txt.appendChild(el("span", { class: "unit-gdsk-why", text: why[tp.slug] }));
+        if (ml && tp.khoa && tp.khoa !== name) txt.appendChild(el("span", { class: "unit-gdsk-shared", text: L("Bài dùng chung · " + tp.khoa, "Shared · " + tp.khoa) }));
+        var a = el("a", { href: "#/gdsk/" + tp.slug, style: "--c:" + g.color }, [el("span", { class: "unit-gdsk-ico" }), txt]);
+        a.firstChild.innerHTML = gIcon(tp.icon, 22);
+        return el("li", {}, [a]);
+      })));
+    } else {
+      sec.appendChild(el("p", { text: L("Bài truyền thông của đơn vị sẽ được bổ sung.", "Articles from this unit are coming soon.") }));
+    }
+    sec.appendChild(el("p", {}, [el("a", { class: "unit-more", href: "#/gdsk", text: L("Xem toàn bộ Góc giáo dục sức khỏe →", "Browse the whole health education corner →") })]));
+    pageView.appendChild(sec);
+    pageView.appendChild(el("section", { class: "page-section gdsk-qr" }, [
+      el("h2", { text: L("Mã QR của đơn vị", "QR code for this unit") }),
+      el("img", { src: "img/qr/don-vi-" + key + ".png", alt: L("Mã QR mở trang ", "QR code opening the page ") + tr(name), width: "180", height: "180" }),
+      el("p", { text: L("Quét mã để mở trang giới thiệu này trên điện thoại.", "Scan to open this introduction page on your phone.") }),
+    ]));
+  }
+  function renderRichKhoa(k) {
     pageView.textContent = "";
     pageView.classList.remove("art-v2");
     pageView.appendChild(el("a", { class: "back-link", href: "#dept-section", text: L("← Danh sách khoa, phòng", "← Departments") }));
@@ -677,7 +805,7 @@
       el("h2", { text: L("Liên hệ Bệnh viện Đa khoa Nhật Tân", "Contact Nhat Tan General Hospital") }),
       el("a", { class: "art-btn art-btn-call", href: "tel:02963562357" }, [el("span", { text: L("Gọi tổng đài, cấp cứu 24/24", "Call switchboard, emergency 24/7") }), el("strong", { text: "0296 3562 357" })]),
       el("a", { class: "art-btn art-btn-work", href: "tel:02963562678" }, [el("span", { text: L("Gọi liên hệ công tác", "Call administrative contact") }), el("strong", { text: "0296 3562 678" })]),
-      el("p", { text: L("Ngoài giờ hoặc ở xa: đến bệnh viện, cơ sở y tế gần nhất.", "Out of hours or far away: go to the nearest hospital or health facility.") }),
+      el("p", { text: L("Nhật Tân 24/24. Khi ở xa: đến bệnh viện, cơ sở y tế gần nhất.", "Nhat Tan 24/7. If you are far away: go to the nearest hospital or health facility.") }),
       el("p", { text: L("Địa chỉ: 32 Phạm Ngọc Thạch, Khóm Châu Long 7, Phường Châu Đốc, Tỉnh An Giang.", "Address: 32 Pham Ngoc Thach, Chau Long 7, Chau Doc Ward, An Giang Province.") }),
     ]));
     if (art.refs && art.refs.length) {
@@ -707,7 +835,11 @@
     pageView.appendChild(el("a", { class: "back-link", href: "#gdsk-section", text: L("← Góc giáo dục sức khỏe", "← Health education corner") }));
     pageView.appendChild(el("span", { class: "tag", style: "--c:" + g.color, text: tr(g.label) }));
     pageView.appendChild(el("h1", { class: "page-title", text: tr(tp.title) }));
-    if (tp.khoa) pageView.appendChild(el("p", { class: "gdsk-khoa", text: L("Khoa, phòng phụ trách: ", "Responsible department: ") + tr(tp.khoa) }));
+    var owner = unitByName(tp.khoa);
+    if (tp.khoa) pageView.appendChild(el("p", { class: "gdsk-khoa" }, [
+      document.createTextNode(L("Khoa, phòng phụ trách: ", "Responsible department: ")),
+      owner ? el("a", { href: "#/khoa/" + owner.u.page, text: tr(tp.khoa) + L(" (xem giới thiệu)", " (view intro)") }) : document.createTextNode(tr(tp.khoa)),
+    ]));
     var art = tp.article;
     if (art && art.layout === "v2") {
       renderArticleV2(tp, art, g);
@@ -754,6 +886,18 @@
         el("p", { class: "art-meta", text: L("Mã ", "Code ") + art.code + L(" · Phiên bản ", " · Version ") + art.version + (art.approved ? L(" · Duyệt ngày ", " · Approved ") + formatDate(art.approved) : (art.issued ? L(" · Đã ký ban hành", " · Officially issued") : "")) }),
       ]));
     }
+    var also = unitsOfTopic(tp);
+    if (also.length) pageView.appendChild(el("p", { class: "unit-also" }, [document.createTextNode(L("Bài này cũng có trong mục lục của: ", "Also listed by: "))].concat([].concat.apply([], also.map(function (u, i) { return [i ? document.createTextNode(", ") : null, el("a", { href: "#/khoa/" + u.page, text: tr(u.name) })].filter(Boolean); })))));
+    if (owner) {
+      var rich = DATA.khoa && DATA.khoa[owner.u.page];
+      pageView.appendChild(el("section", { class: "page-section unit-card" }, [
+        el("p", { class: "unit-card-kicker", text: L("Đơn vị phụ trách bài viết", "Unit responsible for this article") }),
+        el("h2", { text: tr(owner.u.name) }),
+        el("p", { text: rich && rich.intro ? tr(rich.intro) : tr(owner.u.desc) }),
+        (DATA.huongdan && (DATA.huongdan.show.all.indexOf(owner.g.group) >= 0 || DATA.huongdan.show.all.indexOf(owner.g.group + ":" + owner.u.page) >= 0)) ? el("p", { class: "unit-card-note", text: L("Trang giới thiệu có: nội quy khoa, quyền lợi bảo hiểm y tế, hướng dẫn khi nhập viện, trong khi nằm viện và khi ra viện.", "The unit page includes ward rules, health insurance benefits and admission, inpatient and discharge guidance.") }) : null,
+        el("a", { class: "art-btn unit-card-btn", href: "#/khoa/" + owner.u.page }, [el("span", { text: L("Xem giới thiệu " + tr(owner.u.name), "View introduction") }), el("strong", { text: "→" })]),
+      ]));
+    }
     pageView.appendChild(el("section", { class: "page-section gdsk-qr" }, [
       el("h2", { text: L("Mã QR của chủ đề", "QR code for this topic") }),
       el("img", { src: "img/qr/gdsk-" + tp.slug + ".png", alt: L("Mã QR mở trang ", "QR code opening the page ") + tr(tp.title), width: "180", height: "180" }),
@@ -794,6 +938,12 @@
       pageView.appendChild(el("div", { class: "page-home" }, [el("a", { class: "back-link home-btn", href: "#top", text: L("← Về trang chủ", "← Back to home") })]));
       if (scroll) window.scrollTo(0, 0);
     } else {
+      if (GDSK_HOME_RE.test(location.hash)) {
+        pageView.hidden = true; homeView.hidden = false; document.title = t("pageTitle");
+        gdskKhoa = "all"; gdskGroup = "all"; renderGdsk();
+        setTimeout(function () { var sec = $("gdsk-section"); if (sec) window.scrollTo(0, sec.getBoundingClientRect().top + window.pageYOffset - 70); }, 300);
+        return;
+      }
       var ttm = TT_RE.exec(location.hash), ttk = ttm ? khoaFromSlug(ttm[1]) : null;
       if (ttk) {
         pageView.hidden = true; homeView.hidden = false; document.title = t("pageTitle");

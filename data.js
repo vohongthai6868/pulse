@@ -711,7 +711,7 @@ window.PULSE_DATA = {
     "vi": "Những điều người bệnh và người nhà cần biết khi đến khám, nằm viện và ra viện tại Bệnh viện Đa khoa Nhật Tân. Khi chưa rõ, hãy hỏi điều dưỡng của khoa.",
     "en": "Những điều người bệnh và người nhà cần biết khi đến khám, nằm viện và ra viện tại Bệnh viện Đa khoa Nhật Tân. Khi chưa rõ, hãy hỏi điều dưỡng của khoa."
    },
-   "updated": "2026-11-13",
+   "updated": "2026-11-15",
    "sections": [
     {
      "h": {
@@ -754,6 +754,58 @@ window.PULSE_DATA = {
        "Phòng té ngã: kéo thanh chắn giường, mang dép chống trơn, bật đèn khi đi lại ban đêm, gọi người hỗ trợ khi chóng mặt.",
        "Người nhà ở lại chăm sóc theo hướng dẫn của khoa; giữ trật tự, không hút thuốc lá trong bệnh viện; tự bảo quản tài sản cá nhân.",
        "Báo ngay điều dưỡng khi người bệnh mệt hơn, khó thở, đau tăng, chảy máu, sốt cao hoặc có bất kỳ thay đổi bất thường nào."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Nội quy khoa, bộ phận",
+      "en": "Nội quy khoa, bộ phận"
+     },
+     "items": {
+      "vi": [
+       "Người bệnh nội trú giữ vòng nhận dạng suốt thời gian nằm viện, không tự tháo; mặc quần áo bệnh viện khi được cấp.",
+       "Người nhà ở lại chăm sóc theo số lượng và hướng dẫn của khoa; thăm người bệnh đúng giờ niêm yết tại khoa, không thăm khi bác sĩ đang khám hoặc đang làm thủ thuật; hạn chế đưa trẻ nhỏ vào khoa.",
+       "Không hút thuốc lá (kể cả thuốc lá điện tử), không uống rượu bia, không đánh bạc; không mang vũ khí, chất dễ cháy nổ vào bệnh viện.",
+       "Giữ trật tự, vệ sinh chung; bỏ rác đúng thùng theo màu; không nấu ăn, không phơi đồ trong buồng bệnh và hành lang.",
+       "Không tự ý rời khoa, ra khỏi bệnh viện; khi cần đi đâu, báo điều dưỡng của khoa.",
+       "Không tự ý dùng thuốc mang từ ngoài vào, không tự chỉnh tốc độ dịch truyền, máy thở, máy theo dõi.",
+       "Tự bảo quản tài sản cá nhân; giữ gìn tài sản, tiết kiệm điện nước của bệnh viện.",
+       "Tôn trọng nhân viên y tế và người bệnh khác; mọi góp ý xin gửi điều dưỡng trưởng khoa, hòm thư góp ý hoặc tổng đài 0296 3562 357."
+      ],
+      "en": [
+       "Người bệnh nội trú giữ vòng nhận dạng suốt thời gian nằm viện, không tự tháo; mặc quần áo bệnh viện khi được cấp.",
+       "Người nhà ở lại chăm sóc theo số lượng và hướng dẫn của khoa; thăm người bệnh đúng giờ niêm yết tại khoa, không thăm khi bác sĩ đang khám hoặc đang làm thủ thuật; hạn chế đưa trẻ nhỏ vào khoa.",
+       "Không hút thuốc lá (kể cả thuốc lá điện tử), không uống rượu bia, không đánh bạc; không mang vũ khí, chất dễ cháy nổ vào bệnh viện.",
+       "Giữ trật tự, vệ sinh chung; bỏ rác đúng thùng theo màu; không nấu ăn, không phơi đồ trong buồng bệnh và hành lang.",
+       "Không tự ý rời khoa, ra khỏi bệnh viện; khi cần đi đâu, báo điều dưỡng của khoa.",
+       "Không tự ý dùng thuốc mang từ ngoài vào, không tự chỉnh tốc độ dịch truyền, máy thở, máy theo dõi.",
+       "Tự bảo quản tài sản cá nhân; giữ gìn tài sản, tiết kiệm điện nước của bệnh viện.",
+       "Tôn trọng nhân viên y tế và người bệnh khác; mọi góp ý xin gửi điều dưỡng trưởng khoa, hòm thư góp ý hoặc tổng đài 0296 3562 357."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Quyền lợi bảo hiểm y tế",
+      "en": "Quyền lợi bảo hiểm y tế"
+     },
+     "items": {
+      "vi": [
+       "Khi đi khám, nhập viện: mang thẻ bảo hiểm y tế, hoặc căn cước, ứng dụng định danh điện tử VNeID đã tích hợp thông tin bảo hiểm y tế; kèm giấy chuyển cơ sở khám bệnh, chữa bệnh hoặc giấy hẹn khám lại (nếu có).",
+       "Mức hưởng phụ thuộc đối tượng ghi trên thẻ (thường là 80%, 95% hoặc 100% chi phí trong phạm vi quỹ bảo hiểm y tế chi trả); phần còn lại người bệnh cùng chi trả.",
+       "Trường hợp cấp cứu được khám, chữa bệnh tại bất kỳ cơ sở y tế nào và được hưởng quyền lợi theo quy định; sau khi qua cấp cứu, người nhà bổ sung thẻ và giấy tờ cho khoa càng sớm càng tốt.",
+       "Người tham gia bảo hiểm y tế 5 năm liên tục trở lên và có số tiền cùng chi trả trong năm vượt 6 tháng lương cơ sở được miễn phần cùng chi trả cho thời gian còn lại của năm; giữ lại hóa đơn, chứng từ để làm thủ tục.",
+       "Bảo hiểm y tế không chi trả: thuốc, vật tư, dịch vụ ngoài danh mục; dịch vụ theo yêu cầu riêng; khám sức khỏe; tiêm vắc xin phòng bệnh (tiêm chủng dịch vụ) và các trường hợp khác theo quy định.",
+       "Thẻ hết hạn, sai thông tin hoặc chưa có thẻ: báo ngay khi làm thủ tục để được hướng dẫn; có thắc mắc về chi phí, hỏi Tổ Bảo hiểm y tế hoặc Phòng Tài chính kế toán trước khi thanh toán ra viện."
+      ],
+      "en": [
+       "Khi đi khám, nhập viện: mang thẻ bảo hiểm y tế, hoặc căn cước, ứng dụng định danh điện tử VNeID đã tích hợp thông tin bảo hiểm y tế; kèm giấy chuyển cơ sở khám bệnh, chữa bệnh hoặc giấy hẹn khám lại (nếu có).",
+       "Mức hưởng phụ thuộc đối tượng ghi trên thẻ (thường là 80%, 95% hoặc 100% chi phí trong phạm vi quỹ bảo hiểm y tế chi trả); phần còn lại người bệnh cùng chi trả.",
+       "Trường hợp cấp cứu được khám, chữa bệnh tại bất kỳ cơ sở y tế nào và được hưởng quyền lợi theo quy định; sau khi qua cấp cứu, người nhà bổ sung thẻ và giấy tờ cho khoa càng sớm càng tốt.",
+       "Người tham gia bảo hiểm y tế 5 năm liên tục trở lên và có số tiền cùng chi trả trong năm vượt 6 tháng lương cơ sở được miễn phần cùng chi trả cho thời gian còn lại của năm; giữ lại hóa đơn, chứng từ để làm thủ tục.",
+       "Bảo hiểm y tế không chi trả: thuốc, vật tư, dịch vụ ngoài danh mục; dịch vụ theo yêu cầu riêng; khám sức khỏe; tiêm vắc xin phòng bệnh (tiêm chủng dịch vụ) và các trường hợp khác theo quy định.",
+       "Thẻ hết hạn, sai thông tin hoặc chưa có thẻ: báo ngay khi làm thủ tục để được hướng dẫn; có thắc mắc về chi phí, hỏi Tổ Bảo hiểm y tế hoặc Phòng Tài chính kế toán trước khi thanh toán ra viện."
       ]
      }
     },
@@ -919,8 +971,8 @@ window.PULSE_DATA = {
       "en": "When is the Nursing Department open?"
      },
      "p": {
-      "vi": "Thứ Hai đến thứ Sáu: 7 giờ – 11 giờ, 13 giờ – 17 giờ; thứ Bảy: 7 giờ – 11 giờ. Ngoài giờ, liên hệ điều dưỡng trực tại khoa.",
-      "en": "Monday to Friday: 7–11 am and 1–5 pm; Saturday: 7–11 am. Outside these hours, contact the nurse on duty in the ward."
+      "vi": "Thứ Hai đến thứ Sáu: 7 giờ – 11 giờ, 13 giờ – 17 giờ; thứ Bảy: 7 giờ – 11 giờ. Nhật Tân 24/24: liên hệ điều dưỡng trực tại khoa.",
+      "en": "Monday to Friday: 7–11 am and 1–5 pm; Saturday: 7–11 am. Nhat Tan 24/7: contact the nurse on duty in the ward."
      }
     },
     {
@@ -1143,6 +1195,7 @@ window.PULSE_DATA = {
    "units": [
     {
      "name": "Phòng Điều dưỡng",
+     "page": "dieu-duong",
      "desc": "Quản lý, giám sát, đào tạo và nâng cao chất lượng công tác điều dưỡng toàn viện.",
      "roles": [
       "ĐD",
@@ -1152,31 +1205,37 @@ window.PULSE_DATA = {
     },
     {
      "name": "Phòng Kế hoạch tổng hợp",
+     "page": "khth",
      "desc": "Lập kế hoạch, điều phối hoạt động chuyên môn, quản lý hồ sơ bệnh án và thống kê.",
      "roles": []
     },
     {
      "name": "Phòng Tổ chức hành chính",
+     "page": "tchc",
      "desc": "Quản lý nhân sự, công tác hành chính, văn thư và hậu cần của bệnh viện.",
      "roles": []
     },
     {
      "name": "Phòng Tài chính kế toán",
+     "page": "tckt",
      "desc": "Quản lý tài chính, viện phí, thanh toán bảo hiểm y tế.",
      "roles": []
     },
     {
      "name": "Phòng Công tác xã hội",
+     "page": "ctxh",
      "desc": "Đón tiếp, hướng dẫn, hỗ trợ người bệnh và tiếp nhận góp ý.",
      "roles": []
     },
     {
      "name": "Phòng Trang thiết bị – Vật tư y tế",
+     "page": "ttb-vtyt",
      "desc": "Quản lý, bảo dưỡng, sửa chữa trang thiết bị y tế; cung ứng vật tư y tế cho các khoa.",
      "roles": []
     },
     {
      "name": "Phòng Công nghệ thông tin",
+     "page": "cntt",
      "desc": "Quản lý hệ thống phần mềm, hồ sơ bệnh án điện tử, mạng và thiết bị tin học của bệnh viện.",
      "roles": []
     }
@@ -1188,6 +1247,7 @@ window.PULSE_DATA = {
    "units": [
     {
      "name": "Khoa Khám bệnh",
+     "page": "kham-benh",
      "desc": "Tiếp đón, phân luồng, hướng dẫn và theo dõi người bệnh khám ngoại trú.",
      "roles": [
       "ĐD"
@@ -1195,6 +1255,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+     "page": "cap-cuu",
      "desc": "Tiếp nhận, cấp cứu, hồi sức và chăm sóc người bệnh nặng 24/24 giờ.",
      "roles": [
       "ĐD"
@@ -1202,6 +1263,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Nội tổng quát",
+     "page": "noi-tq",
      "desc": "Chăm sóc, theo dõi người bệnh nội khoa điều trị nội trú.",
      "roles": [
       "ĐD"
@@ -1209,6 +1271,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Nội tiêu hóa",
+     "page": "noi-th",
      "desc": "Chăm sóc người bệnh các bệnh lý tiêu hóa, gan mật; phối hợp thủ thuật nội soi.",
      "roles": [
       "ĐD"
@@ -1216,6 +1279,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Truyền nhiễm",
+     "page": "truyen-nhiem",
      "desc": "Chăm sóc người bệnh truyền nhiễm, thực hiện cách ly và phòng ngừa lây nhiễm.",
      "roles": [
       "ĐD"
@@ -1223,6 +1287,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Nhi",
+     "page": "nhi",
      "desc": "Chăm sóc trẻ em điều trị nội trú, hướng dẫn cha mẹ chăm sóc trẻ.",
      "roles": [
       "ĐD"
@@ -1230,6 +1295,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Phụ sản",
+     "page": "phu-san",
      "desc": "Hộ sinh chăm sóc bà mẹ, trẻ sơ sinh; theo dõi chuyển dạ, sau sinh, sau mổ.",
      "roles": [
       "ĐD",
@@ -1238,6 +1304,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Ngoại tổng quát",
+     "page": "ngoai-tq",
      "desc": "Chăm sóc người bệnh trước và sau phẫu thuật ngoại tổng quát.",
      "roles": [
       "ĐD"
@@ -1245,6 +1312,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Ngoại chấn thương",
+     "page": "ngoai-ct",
      "desc": "Chăm sóc người bệnh chấn thương, chỉnh hình, hướng dẫn vận động sớm.",
      "roles": [
       "ĐD"
@@ -1252,6 +1320,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Phẫu thuật – Gây mê hồi sức",
+     "page": "ptgmhs",
      "desc": "Chuẩn bị, phụ mê, dụng cụ phẫu thuật và hồi tỉnh sau mổ.",
      "roles": [
       "ĐD"
@@ -1259,6 +1328,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Liên chuyên khoa",
+     "page": "lien-ck",
      "desc": "Chăm sóc người bệnh các chuyên khoa Tai mũi họng, Răng hàm mặt, Mắt.",
      "roles": [
       "ĐD"
@@ -1281,6 +1351,7 @@ window.PULSE_DATA = {
    "units": [
     {
      "name": "Khoa Xét nghiệm",
+     "page": "xet-nghiem",
      "desc": "Kỹ thuật y lấy mẫu, thực hiện và trả kết quả xét nghiệm.",
      "roles": [
       "KTY"
@@ -1288,6 +1359,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng",
+     "page": "cdha",
      "desc": "Kỹ thuật y thực hiện X-quang, CT, siêu âm, điện tim và các thăm dò chức năng.",
      "roles": [
       "ĐD",
@@ -1296,11 +1368,13 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Dược",
+     "page": "duoc",
      "desc": "Cung ứng thuốc, vật tư; phối hợp điều dưỡng sử dụng thuốc an toàn.",
      "roles": []
     },
     {
      "name": "Khoa Kiểm soát nhiễm khuẩn",
+     "page": "ksnk",
      "desc": "Giám sát vệ sinh tay, khử khuẩn, tiệt khuẩn dụng cụ và phòng ngừa nhiễm khuẩn bệnh viện.",
      "roles": [
       "ĐD"
@@ -1308,6 +1382,7 @@ window.PULSE_DATA = {
     },
     {
      "name": "Khoa Dinh dưỡng",
+     "page": "dinh-duong",
      "desc": "Sàng lọc, đánh giá dinh dưỡng và tư vấn chế độ ăn cho người bệnh.",
      "roles": []
     }
@@ -1341,11 +1416,13 @@ window.PULSE_DATA = {
    "units": [
     {
      "name": "Tổ Quản lý chất lượng",
+     "page": "qlcl",
      "desc": "Xây dựng, theo dõi kế hoạch cải tiến chất lượng; đánh giá theo bộ tiêu chí chất lượng bệnh viện; quản lý sự cố y khoa.",
      "roles": []
     },
     {
      "name": "Tổ Bảo hiểm y tế",
+     "page": "bhyt",
      "desc": "Hướng dẫn thủ tục khám chữa bệnh bảo hiểm y tế; giám định, thanh quyết toán chi phí với cơ quan bảo hiểm xã hội.",
      "roles": []
     }
@@ -5988,6 +6065,206 @@ window.PULSE_DATA = {
      "img/khoa/yhct-11.jpg",
      "Siêu âm điều trị đau lưng"
     ]
+   ]
+  }
+ },
+ "huongdan": {
+  "updated": "2026-11-15",
+  "show": {
+   "all": [
+    "lamsang",
+    "bophan:tnt",
+    "phong:dieu-duong"
+   ],
+   "basic": [
+    "canlamsang",
+    "bophan:tc"
+   ],
+   "bhyt": [
+    "to:bhyt",
+    "phong:tckt",
+    "phong:ctxh"
+   ]
+  },
+  "noiquy": {
+   "h": "Nội quy khoa, bộ phận",
+   "intro": "Nội quy chung áp dụng tại các khoa, bộ phận của Bệnh viện Đa khoa Nhật Tân. Nội quy chi tiết của từng khoa được niêm yết tại khoa; điều dưỡng sẽ giới thiệu khi người bệnh vào khoa.",
+   "items": [
+    "Người bệnh nội trú giữ vòng nhận dạng suốt thời gian nằm viện, không tự tháo; mặc quần áo bệnh viện khi được cấp.",
+    "Người nhà ở lại chăm sóc theo số lượng và hướng dẫn của khoa; thăm người bệnh đúng giờ niêm yết tại khoa, không thăm khi bác sĩ đang khám hoặc đang làm thủ thuật; hạn chế đưa trẻ nhỏ vào khoa.",
+    "Không hút thuốc lá (kể cả thuốc lá điện tử), không uống rượu bia, không đánh bạc; không mang vũ khí, chất dễ cháy nổ vào bệnh viện.",
+    "Giữ trật tự, vệ sinh chung; bỏ rác đúng thùng theo màu; không nấu ăn, không phơi đồ trong buồng bệnh và hành lang.",
+    "Không tự ý rời khoa, ra khỏi bệnh viện; khi cần đi đâu, báo điều dưỡng của khoa.",
+    "Không tự ý dùng thuốc mang từ ngoài vào, không tự chỉnh tốc độ dịch truyền, máy thở, máy theo dõi.",
+    "Tự bảo quản tài sản cá nhân; giữ gìn tài sản, tiết kiệm điện nước của bệnh viện.",
+    "Tôn trọng nhân viên y tế và người bệnh khác; mọi góp ý xin gửi điều dưỡng trưởng khoa, hòm thư góp ý hoặc tổng đài 0296 3562 357."
+   ]
+  },
+  "bhyt": {
+   "h": "Quyền lợi bảo hiểm y tế",
+   "intro": "Thông tin chung để người bệnh chuẩn bị. Mức hưởng cụ thể của từng người do nhân viên tiếp đón và Tổ Bảo hiểm y tế giải thích khi làm thủ tục.",
+   "items": [
+    "Khi đi khám, nhập viện: mang thẻ bảo hiểm y tế, hoặc căn cước, ứng dụng định danh điện tử VNeID đã tích hợp thông tin bảo hiểm y tế; kèm giấy chuyển cơ sở khám bệnh, chữa bệnh hoặc giấy hẹn khám lại (nếu có).",
+    "Mức hưởng phụ thuộc đối tượng ghi trên thẻ (thường là 80%, 95% hoặc 100% chi phí trong phạm vi quỹ bảo hiểm y tế chi trả); phần còn lại người bệnh cùng chi trả.",
+    "Trường hợp cấp cứu được khám, chữa bệnh tại bất kỳ cơ sở y tế nào và được hưởng quyền lợi theo quy định; sau khi qua cấp cứu, người nhà bổ sung thẻ và giấy tờ cho khoa càng sớm càng tốt.",
+    "Người tham gia bảo hiểm y tế 5 năm liên tục trở lên và có số tiền cùng chi trả trong năm vượt 6 tháng lương cơ sở được miễn phần cùng chi trả cho thời gian còn lại của năm; giữ lại hóa đơn, chứng từ để làm thủ tục.",
+    "Bảo hiểm y tế không chi trả: thuốc, vật tư, dịch vụ ngoài danh mục; dịch vụ theo yêu cầu riêng; khám sức khỏe; tiêm vắc xin phòng bệnh (tiêm chủng dịch vụ) và các trường hợp khác theo quy định.",
+    "Thẻ hết hạn, sai thông tin hoặc chưa có thẻ: báo ngay khi làm thủ tục để được hướng dẫn; có thắc mắc về chi phí, hỏi Tổ Bảo hiểm y tế hoặc Phòng Tài chính kế toán trước khi thanh toán ra viện."
+   ],
+   "refs": [
+    "Luật Bảo hiểm y tế số 25/2008/QH12, được sửa đổi, bổ sung bởi Luật số 46/2014/QH13 và Luật số 51/2024/QH15.",
+    "Luật Khám bệnh, chữa bệnh số 15/2023/QH15."
+   ]
+  },
+  "nhapvien": {
+   "h": "Tư vấn khi nhập viện",
+   "items": [
+    "Mang theo căn cước công dân hoặc định danh điện tử, thẻ bảo hiểm y tế, giấy chuyển tuyến (nếu có), sổ khám bệnh và các thuốc đang dùng.",
+    "Báo cho nhân viên y tế tiền sử dị ứng thuốc, thức ăn và các bệnh đang điều trị.",
+    "Người bệnh nội trú được đeo vòng nhận dạng; giữ vòng suốt thời gian nằm viện, không tự tháo.",
+    "Điều dưỡng sẽ giới thiệu buồng bệnh, nội quy khoa, cách gọi nhân viên y tế khi cần.",
+    "Điều dưỡng hỏi và ghi nhận tình trạng hiện tại, nguy cơ té ngã, loét tì đè, dinh dưỡng để lập kế hoạch chăm sóc.",
+    "Người bệnh, người nhà được giải thích về bệnh, các xét nghiệm, thủ thuật dự kiến và chi phí; hỏi lại bất cứ khi nào chưa rõ."
+   ]
+  },
+  "namvien": {
+   "h": "Tư vấn trong khi nằm viện",
+   "items": [
+    "Trước khi dùng thuốc, làm thủ thuật, nhân viên y tế sẽ hỏi họ tên, năm sinh và đối chiếu vòng nhận dạng; người bệnh, người nhà vui lòng trả lời rõ ràng.",
+    "Không tự ý dùng thêm thuốc mang từ ngoài vào; đưa cho điều dưỡng các thuốc đang dùng.",
+    "Rửa tay trước khi ăn, sau khi đi vệ sinh, trước và sau khi chăm sóc người bệnh.",
+    "Phòng té ngã: kéo thanh chắn giường, mang dép chống trơn, bật đèn khi đi lại ban đêm, gọi người hỗ trợ khi chóng mặt.",
+    "Người nhà ở lại chăm sóc theo hướng dẫn của khoa; giữ trật tự, không hút thuốc lá trong bệnh viện; tự bảo quản tài sản cá nhân.",
+    "Báo ngay điều dưỡng khi người bệnh mệt hơn, khó thở, đau tăng, chảy máu, sốt cao hoặc có bất kỳ thay đổi bất thường nào."
+   ]
+  },
+  "ravien": {
+   "h": "Tư vấn khi ra viện",
+   "items": [
+    "Nhận giấy ra viện, đơn thuốc, giấy hẹn tái khám; hỏi lại khi chưa rõ cách dùng thuốc.",
+    "Điều dưỡng hướng dẫn chế độ ăn, vận động, chăm sóc vết thương, ống thông (nếu có) tại nhà.",
+    "Đến bệnh viện, cơ sở y tế gần nhất ngay khi có dấu hiệu nặng đã được dặn; tổng đài bệnh viện 0296 3562 357.",
+    "Tái khám đúng hẹn, mang theo giấy ra viện, đơn thuốc và sổ khám bệnh.",
+    "Hỏi rõ thuốc nào dùng tiếp, thuốc nào ngưng; mang theo danh sách thuốc khi tái khám hoặc đi khám nơi khác.",
+    "Thanh toán viện phí, nhận lại giấy tờ, thẻ bảo hiểm y tế trước khi rời bệnh viện."
+   ]
+  },
+  "refs": [
+   "Luật Khám bệnh, chữa bệnh số 15/2023/QH15.",
+   "Thông tư số 31/2021/TT-BYT ngày 28/12/2021 của Bộ Y tế quy định hoạt động điều dưỡng trong bệnh viện.",
+   "Quy chế bệnh viện ban hành kèm theo Quyết định số 1895/1997/BYT-QĐ ngày 19/9/1997 của Bộ Y tế.",
+   "Luật Phòng, chống tác hại của thuốc lá số 09/2012/QH13."
+  ],
+  "rieng": {
+   "kham-benh": [
+    "Lấy số thứ tự, làm thủ tục tại quầy tiếp đón; người cao tuổi, trẻ em, phụ nữ có thai, người khuyết tật được ưu tiên.",
+    "Khi được chỉ định nhập viện, nhân viên khoa hướng dẫn đường đến khoa điều trị."
+   ],
+   "cap-cuu": [
+    "Người nhà chờ ở khu vực chờ, để nhân viên y tế tập trung cấp cứu; cung cấp ngay tiền sử bệnh, thuốc đang dùng, dị ứng.",
+    "Người bệnh được phân loại theo mức độ nặng; người nặng hơn được xử trí trước."
+   ],
+   "noi-tq": [
+    "Người bệnh tăng huyết áp, đái tháo đường: mang theo sổ theo dõi, thuốc đang dùng; ăn theo chế độ khoa hướng dẫn."
+   ],
+   "noi-th": [
+    "Nhịn ăn, uống đúng giờ khi được hẹn nội soi; báo ngay khi đi ngoài phân đen, nôn ra máu."
+   ],
+   "truyen-nhiem": [
+    "Đeo khẩu trang, rửa tay khi vào và ra khỏi buồng bệnh; hạn chế thăm, không đưa trẻ nhỏ, người già yếu vào khoa.",
+    "Tuân thủ khu vực cách ly theo hướng dẫn của điều dưỡng."
+   ],
+   "nhi": [
+    "Luôn có cha mẹ hoặc người nhà bên cạnh trẻ; kéo thanh chắn giường; không cho trẻ tự chơi với dây truyền, ổ điện.",
+    "Báo ngay khi trẻ sốt cao, co giật, li bì, bú kém, thở nhanh."
+   ],
+   "phu-san": [
+    "Mẹ và bé được da kề da, cho bú sớm; báo ngay khi mẹ ra máu nhiều, đau bụng tăng, sốt; trẻ bú kém, vàng da tăng.",
+    "Người nhà rửa tay trước khi bế trẻ; hạn chế thăm để phòng lây nhiễm cho trẻ sơ sinh."
+   ],
+   "ngoai-tq": [
+    "Trước mổ nhịn ăn, uống đúng giờ được dặn; tháo trang sức, răng giả, tẩy sơn móng.",
+    "Sau mổ vận động sớm theo hướng dẫn; giữ vết mổ khô, sạch; báo khi vết mổ đau tăng, chảy dịch, sốt."
+   ],
+   "ngoai-ct": [
+    "Giữ nẹp, bột đúng tư thế; báo ngay khi chi tê, lạnh, tím, sưng đau tăng.",
+    "Tập vận động theo hướng dẫn để phòng cứng khớp, huyết khối."
+   ],
+   "ptgmhs": [
+    "Người nhà chờ ở khu vực chờ phòng mổ; nhân viên sẽ thông báo khi người bệnh ra phòng hồi tỉnh.",
+    "Nhịn ăn, uống trước mổ đúng giờ được dặn; báo dị ứng thuốc, tiền sử gây mê."
+   ],
+   "lien-ck": [
+    "Làm theo hướng dẫn nhỏ mắt, súc miệng, vệ sinh tai mũi họng sau thủ thuật; không tự ý dụi mắt, cạy vết mổ."
+   ],
+   "yhct": [
+    "Tập phục hồi chức năng đúng giờ, đúng bài; báo ngay khi chóng mặt, đau tăng, bỏng rát khi điều trị nhiệt, điện."
+   ],
+   "tnt": [
+    "Đến đúng giờ lọc máu theo lịch; giữ vệ sinh, không đo huyết áp, không lấy máu, không mang vật nặng ở tay có cầu nối (FAV).",
+    "Hạn chế nước, muối, kali theo hướng dẫn; ghi lại cân nặng giữa hai kỳ lọc."
+   ],
+   "tc": [
+    "Mang sổ hoặc thông tin tiêm chủng; báo tiền sử dị ứng, phản ứng sau tiêm lần trước.",
+    "Ở lại theo dõi ít nhất 30 phút sau tiêm tại bệnh viện."
+   ],
+   "xet-nghiem": [
+    "Nhịn ăn đúng giờ khi được dặn (xét nghiệm đường máu, mỡ máu); lấy mẫu nước tiểu, phân theo hướng dẫn."
+   ],
+   "cdha": [
+    "Báo nếu có thai hoặc nghi có thai trước khi chụp X-quang, CT; uống nước, nhịn tiểu, nhịn ăn theo yêu cầu của từng loại siêu âm."
+   ],
+   "duoc": [
+    "Kiểm tra tên thuốc, số lượng khi nhận; hỏi lại cách dùng; không tự mua thêm thuốc khi chưa hỏi bác sĩ."
+   ],
+   "ksnk": [
+    "Rửa tay đúng cách; đeo khẩu trang khi ho, sốt; bỏ rác đúng thùng theo màu."
+   ],
+   "dinh-duong": [
+    "Ăn theo chế độ bệnh lý bác sĩ chỉ định; báo trước khi mang thức ăn từ ngoài vào cho người bệnh ăn kiêng."
+   ],
+   "dieu-duong": [
+    "Mọi thắc mắc về chăm sóc, góp ý về thái độ phục vụ: gặp điều dưỡng trưởng khoa hoặc Phòng Điều dưỡng (giờ hành chính)."
+   ]
+  }
+ },
+ "mucluc": {
+  "cap-cuu": {
+   "updated": "2026-11-15",
+   "intro": "Sắp xếp theo các tình trạng thường gặp tại Khoa Cấp cứu trước. Bài dùng chung là bài của khoa khác, được đưa vào mục lục này vì người bệnh hay vào cấp cứu với tình trạng đó.",
+   "items": [
+    {
+     "slug": "nhan-biet-som-dot-quy",
+     "why": "Méo miệng, yếu tay chân, nói khó: đến bệnh viện ngay, càng sớm càng tốt."
+    },
+    {
+     "slug": "tang-huyet-ap",
+     "why": "Huyết áp tăng cao đột ngột, đau đầu, chóng mặt, đau ngực."
+    },
+    {
+     "slug": "hen-phe-quan",
+     "why": "Cơn hen cấp: khó thở, khò khè, nói không thành câu."
+    },
+    {
+     "slug": "copd",
+     "why": "Đợt cấp COPD: khó thở tăng, ho nhiều đờm đục."
+    },
+    {
+     "slug": "sot-xuat-huyet",
+     "why": "Dấu hiệu cảnh báo: đau bụng, nôn nhiều, chảy máu, lừ đừ."
+    },
+    {
+     "slug": "dai-thao-duong",
+     "why": "Hạ đường huyết: run tay, vã mồ hôi; cách xử trí ban đầu và khi nào cần đến viện."
+    },
+    {
+     "slug": "tay-chan-mieng-o-tre",
+     "why": "Trẻ giật mình, sốt cao khó hạ, đi loạng choạng."
+    },
+    {
+     "slug": "so-cuu-bong",
+     "why": "Sơ cứu đúng trong 20 phút đầu, không bôi kem đánh răng, nước mắm."
+    }
    ]
   }
  }

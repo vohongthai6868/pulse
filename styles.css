@@ -811,3 +811,34 @@ a.cite { cursor: pointer; }
 :root[data-theme="dark"] .gdsk-pph-t { color: #e5edf7; }
 :root[data-theme="dark"] .gdsk-pph-s { color: #b7c4d6; }
 :root[data-theme="dark"] .gdsk-pread { color: #93c5fd; }
+
+/* Trang giới thiệu khoa, phòng, bộ phận + liên kết từ bài GDSK (15/11/2026) */
+.unit-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin: 4px 0 6px; }
+.unit-head .art-logo { background: #fff; border-radius: 6px; padding: 2px 4px; }
+.unit-gdsk-list { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 8px; }
+.unit-gdsk-list a { display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px; border: 1px solid var(--border); border-left: 4px solid var(--c, #0b4f9c); border-radius: 10px; background: var(--surface); color: var(--text); text-decoration: none; font-weight: 600; font-size: 16px; }
+.unit-gdsk-list a:hover { border-color: var(--c, #0b4f9c); }
+.unit-gdsk-ico { display: inline-flex; color: var(--c, #0b4f9c); flex: none; }
+.unit-more { font-weight: 700; color: var(--brand, #0b4f9c); }
+.gdsk-khoa a { color: var(--brand, #0b4f9c); font-weight: 700; }
+.unit-card { border: 1px solid var(--border); border-top: 4px solid var(--brand, #0b4f9c); border-radius: 12px; padding: 14px 16px; background: var(--surface); }
+.unit-card h2 { margin-top: 2px; }
+.unit-card-kicker { margin: 0; font-size: 12.5px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--brand-red, #d0202a); }
+.unit-card-btn { background: var(--brand, #0b4f9c); color: #fff !important; font-size: 16px; }
+:root[data-theme="dark"] .unit-gdsk-list a, :root[data-theme="dark"] .unit-card { background: var(--surface-2); }
+.unit-guide-hint { font-size: 14px; color: var(--dim); margin: 0 0 8px; }
+.unit-guide-item { border: 1px solid var(--border); border-radius: 10px; background: var(--surface); margin: 8px 0; padding: 0 14px; }
+.unit-guide-item summary { min-height: 44px; display: flex; align-items: center; font-weight: 700; font-size: 16.5px; cursor: pointer; color: var(--brand, #0b4f9c); }
+.unit-guide-item[open] { padding-bottom: 10px; }
+.unit-guide-item li { margin: 6px 0; line-height: 1.55; }
+.unit-guide-sub { font-weight: 700; margin: 12px 0 0; color: var(--brand-red, #d0202a); }
+:root[data-theme="dark"] .unit-guide-item { background: var(--surface-2); }
+:root[data-theme="dark"] .unit-guide-item summary { color: #8fc1ff; }
+:root[data-theme="dark"] .unit-more, :root[data-theme="dark"] .gdsk-khoa a { color: #8fc1ff; }
+.unit-card-note { font-size: 14.5px; color: var(--text-2); }
+.unit-gdsk-txt { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.unit-gdsk-why { font-size: 14px; font-weight: 400; color: var(--text-2); }
+.unit-gdsk-shared { font-size: 12.5px; font-weight: 600; color: var(--dim); }
+.unit-also { font-size: 14.5px; color: var(--text-2); }
+.unit-also a { font-weight: 700; color: var(--brand, #0b4f9c); }
+:root[data-theme="dark"] .unit-also a { color: #8fc1ff; }
