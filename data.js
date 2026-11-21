@@ -5893,6 +5893,11 @@ window.PULSE_DATA = {
     "img": "img/khoa/tc-qr-zalo.jpg",
     "title": "Zalo Tổ Tiêm chủng",
     "text": "Quét mã bằng Zalo hoặc thêm số 0943 971 821 để được tư vấn, đặt lịch hẹn và nhắc lịch tiêm."
+   },
+   "video": {
+    "src": "video/khoa/tc.mp4",
+    "poster": "video/khoa/tc.jpg",
+    "caption": "Video giới thiệu Tổ Tiêm chủng (khoảng 22 giây, dựng từ ảnh của khoa)"
    }
   },
   "tnt": {
@@ -6230,7 +6235,12 @@ window.PULSE_DATA = {
     "Không hút thuốc lá, không mang dụng cụ điện cá nhân vào phòng bệnh.",
     "Thân nhân, người bệnh tự bảo quản tài sản cá nhân.",
     "Mong quý bà con vui lòng hợp tác, thực hiện nội quy này. Trân trọng cảm ơn."
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/cap-cuu.mp4",
+    "poster": "video/khoa/cap-cuu.jpg",
+    "caption": "Video giới thiệu Khoa Cấp cứu – HSTC – Chống độc (khoảng 28 giây, dựng từ ảnh của khoa)"
+   }
   },
   "noi-tq": {
    "name": "Khoa Nội tổng quát",
@@ -6679,7 +6689,12 @@ window.PULSE_DATA = {
      "img/khoa/phu-san-09.jpg",
      "Theo dõi cơn gò chuyển dạ"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/phu-san.mp4",
+    "poster": "video/khoa/phu-san.jpg",
+    "caption": "Video giới thiệu Khoa Phụ sản (khoảng 36 giây, dựng từ ảnh của khoa)"
+   }
   },
   "cdha": {
    "name": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng",
