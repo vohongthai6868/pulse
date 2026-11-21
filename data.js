@@ -5893,6 +5893,11 @@ window.PULSE_DATA = {
     "img": "img/khoa/tc-qr-zalo.jpg",
     "title": "Zalo Tổ Tiêm chủng",
     "text": "Quét mã bằng Zalo hoặc thêm số 0943 971 821 để được tư vấn, đặt lịch hẹn và nhắc lịch tiêm."
+   },
+   "video": {
+    "src": "video/khoa/tc.mp4",
+    "poster": "video/khoa/tc.jpg",
+    "caption": "Video giới thiệu Tổ Tiêm chủng (khoảng 22 giây, dựng từ ảnh của khoa)"
    }
   },
   "tnt": {
@@ -6230,7 +6235,12 @@ window.PULSE_DATA = {
     "Không hút thuốc lá, không mang dụng cụ điện cá nhân vào phòng bệnh.",
     "Thân nhân, người bệnh tự bảo quản tài sản cá nhân.",
     "Mong quý bà con vui lòng hợp tác, thực hiện nội quy này. Trân trọng cảm ơn."
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/cap-cuu.mp4",
+    "poster": "video/khoa/cap-cuu.jpg",
+    "caption": "Video giới thiệu Khoa Cấp cứu – HSTC – Chống độc (khoảng 28 giây, dựng từ ảnh của khoa)"
+   }
   },
   "noi-tq": {
    "name": "Khoa Nội tổng quát",
@@ -6679,7 +6689,12 @@ window.PULSE_DATA = {
      "img/khoa/phu-san-09.jpg",
      "Theo dõi cơn gò chuyển dạ"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/phu-san.mp4",
+    "poster": "video/khoa/phu-san.jpg",
+    "caption": "Video giới thiệu Khoa Phụ sản (khoảng 36 giây, dựng từ ảnh của khoa)"
+   }
   },
   "cdha": {
    "name": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng",
@@ -6871,7 +6886,12 @@ window.PULSE_DATA = {
      "img/khoa/kham-benh-02.jpg",
      "Điều dưỡng Tổ Nhận bệnh tại khu nhận bệnh"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/kham-benh.mp4",
+    "poster": "video/khoa/kham-benh.jpg",
+    "caption": "Video giới thiệu Khoa Khám bệnh (36 giây; hình từ video của khoa, đã che mặt người bệnh)"
+   }
   },
   "lien-ck": {
    "name": "Khoa Liên chuyên khoa",
@@ -6889,6 +6909,14 @@ window.PULSE_DATA = {
     [
      "Liên hệ công tác",
      "0296 3562 678"
+    ],
+    [
+     "Buồng khám Mắt",
+     "Thứ Hai – Thứ Sáu: 7g00 – 11g00, 13g00 – 17g00; Thứ Bảy: 7g00 – 11g00; nghỉ chiều Thứ Bảy và Chủ nhật"
+    ],
+    [
+     "Nhân lực chuyên khoa Mắt",
+     "11 điều dưỡng, trong đó 5 điều dưỡng chuyên khoa Mắt; 2 kỹ thuật y khúc xạ"
     ]
    ],
    "sections": [
@@ -6945,9 +6973,9 @@ window.PULSE_DATA = {
     ]
    ],
    "video": {
-    "src": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.mp4",
-    "poster": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.jpg",
-    "caption": "Video: Chăm sóc mắt sau mổ đục thủy tinh thể (khoảng 1 phút)"
+    "src": "video/khoa/lien-ck-mat.mp4",
+    "poster": "video/khoa/lien-ck-mat.jpg",
+    "caption": "Video giới thiệu buồng khám Mắt (43 giây; hình từ video của khoa, đã che mặt người bệnh)"
    }
   }
  },
