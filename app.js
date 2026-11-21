@@ -732,7 +732,8 @@
         el("h2", { text: tr(k.qr.title) }),
         el("img", { src: k.qr.img, alt: L("Mã QR Zalo ", "Zalo QR code ") + tr(k.name), loading: "lazy", width: "320" }),
         el("p", { text: tr(k.qr.text) }),
-      ]));
+        k.qr.href ? el("a", { class: "btn-primary", href: k.qr.href, target: "_blank", rel: "noopener", text: L("Mở trang đăng ký", "Open booking page") }) : null,
+      ].filter(Boolean)));
     }
     if (k.message) pageView.appendChild(el("blockquote", { class: "khoa-message", text: tr(k.message) }));
     document.title = tr(k.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");

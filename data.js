@@ -6776,6 +6776,10 @@ window.PULSE_DATA = {
      "55 người: 12 bác sĩ, 36 điều dưỡng, 04 dược sĩ, 03 nhân viên khác"
     ],
     [
+     "Đăng ký khám trực tuyến",
+     "Có, quét mã QR ở cuối trang"
+    ],
+    [
      "Tổng đài, cấp cứu 24/24",
      "0296 3562 357"
     ],
@@ -6817,7 +6821,13 @@ window.PULSE_DATA = {
       "Lấy người bệnh làm trung tâm; cải tiến quy trình tiếp đón và khám bệnh, xây dựng phong cách phục vụ chuyên nghiệp, thân thiện và trách nhiệm."
      ]
     }
-   ]
+   ],
+   "qr": {
+    "title": "Đăng ký khám trực tuyến",
+    "img": "img/qr/dang-ky-kham.png",
+    "href": "https://89338.byt.vn/kcb/dang-ky-kham",
+    "text": "Quét mã hoặc bấm nút để đăng ký khám trước trên cổng thông tin của bệnh viện, giảm thời gian chờ tại quầy."
+   }
   },
   "lien-ck": {
    "name": "Khoa Liên chuyên khoa",
