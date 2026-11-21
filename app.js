@@ -365,12 +365,21 @@
       if (!searching && r.key !== roleKey) return;
       var items = r.items.filter(function (it) { return matches(state.query, [tr(r.label), tr(it)]); });
       if (!items.length) return;
-      box.appendChild(el("div", { class: "role-card role-" + r.key }, [
+      var N = 3, cut = !searching && !rolesAll && items.length > N + 1;
+      var shown = cut ? items.slice(0, N) : items;
+      var card = el("div", { class: "role-card role-" + r.key }, [
         searching ? el("h3", { class: "role-title", text: tr(r.label) }) : null,
-        el("ul", { class: "role-items" }, items.map(function (it) { return el("li", { text: tr(it) }); })),
-      ]));
+        el("ul", { class: "role-items" }, shown.map(function (it) { return el("li", { text: tr(it) }); })),
+      ]);
+      if (!searching && items.length > N + 1) {
+        var mb = el("button", { class: "sec-toggle role-more", type: "button", "aria-expanded": String(!!rolesAll), text: rolesAll ? L("Thu gọn", "Collapse") : L("Xem thêm " + (items.length - N) + " hoạt động", "Show " + (items.length - N) + " more") });
+        mb.addEventListener("click", function () { rolesAll = !rolesAll; renderRoles(); var t = $("roles-section"); if (!rolesAll && t) t.scrollIntoView({ block: "start" }); });
+        card.appendChild(mb);
+      }
+      box.appendChild(card);
     });
   }
+  var rolesAll = false;
 
   var deptGroup = null;
   function renderDepts() {

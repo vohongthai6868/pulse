@@ -915,3 +915,5 @@ a.cite { cursor: pointer; }
   .tt-hero { animation: tt-blink 1.2s step-end infinite; }
   .nav-tt { animation: nav-tt-blink 1.2s step-end infinite; }
 }
+
+.role-more { display: block; margin: 14px auto 0; }
