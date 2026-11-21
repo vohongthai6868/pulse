@@ -6886,7 +6886,12 @@ window.PULSE_DATA = {
      "img/khoa/kham-benh-02.jpg",
      "Điều dưỡng Tổ Nhận bệnh tại khu nhận bệnh"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/kham-benh.mp4",
+    "poster": "video/khoa/kham-benh.jpg",
+    "caption": "Video giới thiệu Khoa Khám bệnh (36 giây; hình từ video của khoa, đã che mặt người bệnh)"
+   }
   },
   "lien-ck": {
    "name": "Khoa Liên chuyên khoa",
@@ -6904,6 +6909,14 @@ window.PULSE_DATA = {
     [
      "Liên hệ công tác",
      "0296 3562 678"
+    ],
+    [
+     "Buồng khám Mắt",
+     "Thứ Hai – Thứ Sáu: 7g00 – 11g00, 13g00 – 17g00; Thứ Bảy: 7g00 – 11g00; nghỉ chiều Thứ Bảy và Chủ nhật"
+    ],
+    [
+     "Nhân lực chuyên khoa Mắt",
+     "11 điều dưỡng, trong đó 5 điều dưỡng chuyên khoa Mắt; 2 kỹ thuật y khúc xạ"
     ]
    ],
    "sections": [
@@ -6960,9 +6973,9 @@ window.PULSE_DATA = {
     ]
    ],
    "video": {
-    "src": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.mp4",
-    "poster": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.jpg",
-    "caption": "Video: Chăm sóc mắt sau mổ đục thủy tinh thể (khoảng 1 phút)"
+    "src": "video/khoa/lien-ck-mat.mp4",
+    "poster": "video/khoa/lien-ck-mat.jpg",
+    "caption": "Video giới thiệu buồng khám Mắt (43 giây; hình từ video của khoa, đã che mặt người bệnh)"
    }
   }
  },
