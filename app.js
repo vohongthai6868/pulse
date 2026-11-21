@@ -947,6 +947,26 @@
     document.title = page.title[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
+  // SBAR, AIDET trên trang chủ: giữ hình, phần chữ thu gọn mặc định, bấm để mở.
+  (function commToggles() {
+    Array.prototype.forEach.call(document.querySelectorAll(".comm-card"), function (card, idx) {
+      var parts = card.querySelectorAll(".comm-use, .comm-steps");
+      if (!parts.length) return;
+      var body = el("div", { class: "comm-body", id: "commb-" + idx });
+      card.insertBefore(body, parts[0]);
+      Array.prototype.forEach.call(parts, function (p) { body.appendChild(p); });
+      var n = card.querySelectorAll(".comm-steps li").length;
+      var lbl = function (open) { return open ? L("Thu gọn", "Collapse") : L("Xem " + n + " bước", "Show " + n + " steps"); };
+      var btn = el("button", { class: "sec-toggle comm-toggle", type: "button", "aria-expanded": "false", "aria-controls": body.id, text: lbl(false) });
+      body.hidden = true;
+      btn.addEventListener("click", function () {
+        var open = btn.getAttribute("aria-expanded") !== "true";
+        body.hidden = !open; btn.setAttribute("aria-expanded", String(open)); btn.textContent = lbl(open);
+      });
+      card.insertBefore(btn, body);
+    });
+  })();
+
   // Nút "Thu gọn / Mở ra" cho mọi mục có tiêu đề trên trang con; danh sách dài hiện 5 mục đầu + "Xem thêm".
   function addCollapse(root) {
     Array.prototype.forEach.call(root.querySelectorAll("section.page-section, section.art-remember"), function (sec, idx) {
