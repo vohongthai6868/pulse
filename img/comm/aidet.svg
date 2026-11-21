@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" role="img" aria-labelledby="t d">
+  <title id="t">Minh họa AIDET</title>
+  <desc id="d">Điều dưỡng chào hỏi, giới thiệu, nói thời gian, giải thích và cảm ơn người bệnh đang nằm trên giường bệnh.</desc>
+  <rect width="480" height="260" rx="18" fill="#fdf1ec"/>
+  <rect x="0" y="222" width="480" height="38" fill="#f6dfd4"/>
+  <!-- giường bệnh -->
+  <g>
+    <rect x="250" y="150" width="190" height="20" rx="6" fill="#b9c7d8"/>
+    <rect x="250" y="168" width="8" height="54" fill="#8fa3bb"/>
+    <rect x="432" y="168" width="8" height="54" fill="#8fa3bb"/>
+    <rect x="426" y="112" width="14" height="58" rx="4" fill="#8fa3bb"/>
+    <rect x="262" y="132" width="164" height="22" rx="10" fill="#ffffff"/>
+    <!-- người bệnh -->
+    <circle cx="398" cy="118" r="20" fill="#e8b98e"/>
+    <path d="M380 114c2-14 10-20 18-20s16 6 18 18c-6-6-12-8-18-8s-12 4-18 10z" fill="#5a5a66"/>
+    <circle cx="392" cy="116" r="2.2" fill="#2a2a3a"/><circle cx="404" cy="116" r="2.2" fill="#2a2a3a"/><path d="M392 125q6 5 12 0" fill="none" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="270" y="122" width="116" height="30" rx="12" fill="#7fb3e0"/>
+    <!-- vòng nhận dạng -->
+    <rect x="300" y="128" width="14" height="6" rx="3" fill="#ffffff"/>
+  </g>
+  <!-- điều dưỡng -->
+  <g>
+    <rect x="120" y="128" width="64" height="94" rx="20" fill="#0b4f9c"/>
+    <rect x="142" y="128" width="20" height="30" fill="#ffffff"/>
+    <circle cx="152" cy="100" r="26" fill="#f2c9a0"/>
+    <path d="M126 96c2-22 18-32 26-32s26 8 26 32c-8-10-18-14-26-14s-18 4-26 14z" fill="#2a2a3a"/>
+    <circle cx="143" cy="100" r="2.6" fill="#2a2a3a"/><circle cx="161" cy="100" r="2.6" fill="#2a2a3a"/><path d="M143 110q9 7 18 0" fill="none" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="134" y="66" width="36" height="12" rx="4" fill="#ffffff"/>
+    <rect x="150" y="68" width="4" height="8" fill="#d0202a"/><rect x="148" y="70" width="8" height="4" fill="#d0202a"/>
+    <!-- bảng tên -->
+    <rect x="164" y="148" width="16" height="10" rx="2" fill="#ffffff"/>
+    <!-- tay vẫy chào -->
+    <path d="M184 150 L218 118" stroke="#0b4f9c" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="222" cy="112" r="10" fill="#f2c9a0"/>
+  </g>
+  <!-- bóng thoại -->
+  <g>
+    <path d="M30 12h200a14 14 0 0 1 14 14v24a14 14 0 0 1-14 14H120l-24 18 4-18H30a14 14 0 0 1-14-14V26a14 14 0 0 1 14-14z" fill="#ffffff" stroke="#e0662a" stroke-width="2.5"/>
+    <text x="130" y="35" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="14" font-weight="700" fill="#1d2b44" text-anchor="middle">Chào bác, con là Lan,</text>
+    <text x="130" y="54" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="14" font-weight="700" fill="#1d2b44" text-anchor="middle">điều dưỡng của khoa…</text>
+  </g>
+  <!-- 5 bước -->
+  <g font-family="Be Vietnam Pro, Arial, sans-serif" font-weight="800" font-size="18" text-anchor="middle" fill="#ffffff">
+    <circle cx="290" cy="34" r="17" fill="#d0202a"/><text x="290" y="40">A</text>
+    <circle cx="328" cy="34" r="17" fill="#e0662a"/><text x="328" y="40">I</text>
+    <circle cx="366" cy="34" r="17" fill="#c58a00"/><text x="366" y="40">D</text>
+    <circle cx="404" cy="34" r="17" fill="#0b4f9c"/><text x="404" y="40">E</text>
+    <circle cx="442" cy="34" r="17" fill="#2f7a5b"/><text x="442" y="40">T</text>
+  </g>
+  <g font-family="Be Vietnam Pro, Arial, sans-serif" font-size="11" font-weight="600" fill="#1d2b44" text-anchor="middle">
+    <text x="290" y="68">Chào</text><text x="328" y="84">Giới thiệu</text><text x="366" y="68">Thời gian</text><text x="404" y="84">Giải thích</text><text x="442" y="68">Cảm ơn</text>
+  </g>
+  <text x="152" y="246" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="13" font-weight="700" fill="#0b4f9c" text-anchor="middle">Điều dưỡng</text>
+  <text x="345" y="246" font-family="Be Vietnam Pro, Arial, sans-serif" font-size="13" font-weight="700" fill="#b4441a" text-anchor="middle">Người bệnh</text>
+</svg>

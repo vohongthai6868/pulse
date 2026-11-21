@@ -853,3 +853,6 @@ a.cite { cursor: pointer; }
 :root[data-theme="dark"] .sec-toggle, :root[data-theme="dark"] .sec-more { color: #8fc1ff; border-color: #8fc1ff; background: var(--surface-2); }
 :root[data-theme="dark"] .sec-toggle[aria-expanded="false"] { background: #8fc1ff; color: #0b1a33; }
 .sec-body > .khoa-facts { margin-top: 0; }
+/* Hình minh họa SBAR, AIDET (21/11/2026) */
+.comm-fig { margin: 4px 0 12px; }
+.comm-fig img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 14px; }

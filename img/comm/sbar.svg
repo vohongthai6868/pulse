@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" role="img" aria-labelledby="t d">
+  <title id="t">Minh họa SBAR</title>
+  <desc id="d">Hai điều dưỡng bàn giao người bệnh cho nhau theo 4 bước S, B, A, R; người nhận nhắc lại để xác nhận.</desc>
+  <rect width="480" height="260" rx="18" fill="#eef4fb"/>
+  <!-- sàn -->
+  <rect x="0" y="222" width="480" height="38" rx="0" fill="#dbe7f5"/>
+  <!-- điều dưỡng trái (người báo) -->
+  <g>
+    <rect x="58" y="128" width="64" height="94" rx="20" fill="#0b4f9c"/>
+    <rect x="80" y="128" width="20" height="30" fill="#ffffff"/>
+    <circle cx="90" cy="100" r="26" fill="#f2c9a0"/>
+    <path d="M64 96c2-22 18-32 26-32s26 8 26 32c-8-10-18-14-26-14s-18 4-26 14z" fill="#2a2a3a"/>
+    <circle cx="81" cy="102" r="2.6" fill="#2a2a3a"/><circle cx="99" cy="102" r="2.6" fill="#2a2a3a"/><path d="M83 112q7 6 14 0" fill="none" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="72" y="66" width="36" height="12" rx="4" fill="#ffffff"/>
+        <rect x="88" y="68" width="4" height="8" fill="#d0202a"/><rect x="86" y="70" width="8" height="4" fill="#d0202a"/>
+    <!-- bìa hồ sơ -->
+    <rect x="112" y="150" width="34" height="42" rx="4" fill="#ffffff" stroke="#0b4f9c" stroke-width="3"/>
+    <line x1="119" y1="162" x2="139" y2="162" stroke="#0b4f9c" stroke-width="3"/>
+    <line x1="119" y1="172" x2="139" y2="172" stroke="#0b4f9c" stroke-width="3"/>
+    <line x1="119" y1="182" x2="133" y2="182" stroke="#0b4f9c" stroke-width="3"/>
+  </g>
+  <!-- điều dưỡng phải (người nhận) -->
+  <g>
+    <rect x="358" y="128" width="64" height="94" rx="20" fill="#2f7a5b"/>
+    <rect x="380" y="128" width="20" height="30" fill="#ffffff"/>
+    <circle cx="390" cy="100" r="26" fill="#e8b98e"/>
+    <path d="M364 98c0-20 14-34 26-34s26 12 26 34c-6-8-16-12-26-12s-20 4-26 12z" fill="#3a2a22"/>
+    <circle cx="381" cy="102" r="2.6" fill="#2a2a3a"/><circle cx="399" cy="102" r="2.6" fill="#2a2a3a"/><path d="M383 112q7 6 14 0" fill="none" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="372" y="66" width="36" height="12" rx="4" fill="#ffffff"/>
+    <rect x="388" y="68" width="4" height="8" fill="#d0202a"/><rect x="386" y="70" width="8" height="4" fill="#d0202a"/>
+    <!-- dấu xác nhận -->
+    <circle cx="438" cy="70" r="16" fill="#2f7a5b"/>
+    <path d="M430 70l6 6 11-12" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- chuỗi S B A R -->
+  <g font-family="Be Vietnam Pro, Arial, sans-serif" font-weight="800" font-size="24" text-anchor="middle">
+    <path d="M160 160 H322" stroke="#9db8d8" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
+    <path d="M316 152l10 8-10 8" fill="none" stroke="#9db8d8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="170" cy="78" r="22" fill="#d0202a"/><text x="170" y="86" fill="#ffffff">S</text>
+    <circle cx="218" cy="78" r="22" fill="#e0662a"/><text x="218" y="86" fill="#ffffff">B</text>
+    <circle cx="266" cy="78" r="22" fill="#0b4f9c"/><text x="266" y="86" fill="#ffffff">A</text>
+    <circle cx="314" cy="78" r="22" fill="#2f7a5b"/><text x="314" y="86" fill="#ffffff">R</text>
+  </g>
+  <g font-family="Be Vietnam Pro, Arial, sans-serif" font-size="13" font-weight="600" fill="#1d2b44" text-anchor="middle">
+    <text x="170" y="120">Tình huống</text>
+    <text x="218" y="138">Bối cảnh</text>
+    <text x="266" y="120">Đánh giá</text>
+    <text x="314" y="138">Đề nghị</text>
+  </g>
+  <g font-family="Be Vietnam Pro, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+    <text x="90" y="246" fill="#0b4f9c">Người báo</text>
+    <text x="390" y="246" fill="#2f7a5b">Người nhận nhắc lại</text>
+  </g>
+</svg>
