@@ -622,7 +622,7 @@
     if (u.roles && u.roles.length) facts.push([L("Nhân lực điều dưỡng", "Nursing staff"), u.roles.map(tr).join(", ")]);
     facts.push([L("Tổng đài, cấp cứu 24/24", "Switchboard, emergency 24/7"), "0296 3562 357"]);
     facts.push([L("Liên hệ công tác", "Administrative contact"), "0296 3562 678"]);
-    pageView.appendChild(el("dl", { class: "khoa-facts" }, [].concat.apply([], facts.map(function (f) { return [el("dt", { text: f[0] }), telify(el("dd"), f[1])]; }))));
+    pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Thông tin đơn vị", "Unit information") }), el("dl", { class: "khoa-facts" }, [].concat.apply([], facts.map(function (f) { return [el("dt", { text: f[0] }), telify(el("dd"), f[1])]; })))]));
     if (u.page === "dieu-duong" && DATA.pages.about) {
       var ab = DATA.pages.about;
       ab.sections.slice(0, 1).forEach(function (s) {
@@ -706,7 +706,7 @@
         el("figcaption", { text: tr(k.photos[0][1]) }),
       ]));
     }
-    pageView.appendChild(el("dl", { class: "khoa-facts" }, [].concat.apply([], k.facts.map(function (f) { return [el("dt", { text: tr(f[0]) }), el("dd", { text: tr(f[1]) })]; }))));
+    pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Thông tin đơn vị", "Unit information") }), el("dl", { class: "khoa-facts" }, [].concat.apply([], k.facts.map(function (f) { return [el("dt", { text: tr(f[0]) }), el("dd", { text: tr(f[1]) })]; })))]));
     k.sections.forEach(function (s) {
       pageView.appendChild(el("section", { class: "page-section" }, [
         el("h2", { text: tr(s.h) }),
@@ -929,12 +929,47 @@
     document.title = page.title[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
+  // Nút "Thu gọn / Mở ra" cho mọi mục có tiêu đề trên trang con; danh sách dài hiện 5 mục đầu + "Xem thêm".
+  function addCollapse(root) {
+    Array.prototype.forEach.call(root.querySelectorAll("section.page-section, section.art-remember"), function (sec, idx) {
+      var h = null;
+      for (var i = 0; i < sec.children.length; i++) if (sec.children[i].tagName === "H2") { h = sec.children[i]; break; }
+      if (!h || sec.getAttribute("data-col")) return;
+      sec.setAttribute("data-col", "1");
+      var body = el("div", { class: "sec-body", id: "secb-" + idx });
+      Array.prototype.slice.call(sec.children).forEach(function (c) { if (c !== h) body.appendChild(c); });
+      var btn = el("button", { class: "sec-toggle", type: "button", "aria-expanded": "true", "aria-controls": "secb-" + idx, text: L("Thu gọn", "Collapse") });
+      btn.addEventListener("click", function () {
+        var open = btn.getAttribute("aria-expanded") === "true";
+        body.hidden = open; btn.setAttribute("aria-expanded", String(!open));
+        btn.textContent = open ? L("Mở ra", "Expand") : L("Thu gọn", "Collapse");
+      });
+      var head = el("div", { class: "sec-head" });
+      sec.insertBefore(head, h); head.appendChild(h); head.appendChild(btn);
+      sec.appendChild(body);
+    });
+    Array.prototype.forEach.call(root.querySelectorAll(".unit-gdsk-list"), function (list) {
+      var items = list.children, N = 5;
+      if (items.length <= N + 1 || list.getAttribute("data-more")) return;
+      list.setAttribute("data-more", "1");
+      var hide = function (on) { for (var i = N; i < items.length; i++) items[i].hidden = on; };
+      hide(true);
+      var more = el("button", { class: "sec-more", type: "button", text: L("Xem thêm " + (items.length - N) + " bài", "Show " + (items.length - N) + " more") });
+      more.addEventListener("click", function () {
+        var collapsed = items[N].hidden; hide(!collapsed);
+        more.textContent = collapsed ? L("Thu gọn danh sách", "Show less") : L("Xem thêm " + (items.length - N) + " bài", "Show " + (items.length - N) + " more");
+      });
+      list.parentNode.insertBefore(more, list.nextSibling);
+    });
+  }
+
   function route(scroll) {
     var name = currentPage();
     if (name) {
       homeView.hidden = true;
       pageView.hidden = false;
       if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else if (name.indexOf("gdsk:") === 0) renderGdskPage(name.slice(5)); else renderPage(name);
+      addCollapse(pageView);
       pageView.appendChild(el("div", { class: "page-home" }, [el("a", { class: "back-link home-btn", href: "#top", text: L("← Về trang chủ", "← Back to home") })]));
       if (scroll) window.scrollTo(0, 0);
     } else {
