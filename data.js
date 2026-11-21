@@ -6408,6 +6408,14 @@ window.PULSE_DATA = {
      ]
     },
     {
+     "h": "Thành tích",
+     "items": [
+      "Giải nhì Hội thi \"70 năm tự hào chiến sĩ áo trắng\" do Bệnh viện tổ chức (tháng 3/2025).",
+      "Giải khuyến khích Hội thi \"Chẩn đoán chính xác - Điều trị an toàn - Giao tiếp giỏi giang\" (tháng 11/2024).",
+      "Tập thể đoàn kết, hoàn thành tốt nhiệm vụ chuyên môn; cá nhân tích cực thi đua, thực hiện tốt quy tắc ứng xử."
+     ]
+    },
+    {
      "h": "Sáng kiến, cải tiến",
      "items": [
       "Phòng bệnh có màn che giữa hai giường, bảo đảm riêng tư khi thăm khám, làm thủ thuật và vệ sinh cá nhân.",
@@ -6420,7 +6428,33 @@ window.PULSE_DATA = {
     "src": "video/khoa/noi-th.mp4",
     "poster": "video/khoa/noi-th.jpg",
     "caption": "Video giới thiệu Khoa Nội tiêu hóa (khoảng 1 phút)"
-   }
+   },
+   "photos": [
+    [
+     "img/khoa/noi-th-01.jpg",
+     "Tập thể điều dưỡng Khoa Nội tiêu hóa"
+    ],
+    [
+     "img/khoa/noi-th-02.jpg",
+     "Điều dưỡng hỗ trợ người bệnh vận động, di chuyển an toàn"
+    ],
+    [
+     "img/khoa/noi-th-03.jpg",
+     "Điều dưỡng đo huyết áp, theo dõi dấu hiệu sinh tồn tại giường"
+    ],
+    [
+     "img/khoa/noi-th-04.jpg",
+     "Tư vấn giáo dục sức khỏe kèm tờ rơi"
+    ],
+    [
+     "img/khoa/noi-th-05.jpg",
+     "Giải nhì Hội thi \"70 năm tự hào chiến sĩ áo trắng\" (03/2025)"
+    ],
+    [
+     "img/khoa/noi-th-06.jpg",
+     "Giải khuyến khích Hội thi \"Chẩn đoán chính xác - Điều trị an toàn - Giao tiếp giỏi giang\" (11/2024)"
+    ]
+   ]
   },
   "nhi": {
    "name": "Khoa Nhi",
@@ -6827,7 +6861,17 @@ window.PULSE_DATA = {
     "img": "img/qr/dang-ky-kham.png",
     "href": "https://89338.byt.vn/kcb/dang-ky-kham",
     "text": "Quét mã hoặc bấm nút để đăng ký khám trước trên cổng thông tin của bệnh viện, giảm thời gian chờ tại quầy."
-   }
+   },
+   "photos": [
+    [
+     "img/khoa/kham-benh-01.jpg",
+     "Tập thể điều dưỡng Khoa Khám bệnh"
+    ],
+    [
+     "img/khoa/kham-benh-02.jpg",
+     "Điều dưỡng Tổ Nhận bệnh tại khu nhận bệnh"
+    ]
+   ]
   },
   "lien-ck": {
    "name": "Khoa Liên chuyên khoa",

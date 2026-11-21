@@ -599,7 +599,7 @@
   var BOOKING_URL = "https://89338.byt.vn/kcb/dang-ky-kham";
   function addBookingBar() {
     var bar = el("a", { class: "booking-bar", href: BOOKING_URL, target: "_blank", rel: "noopener" }, [
-      el("span", { class: "booking-bar-txt" }, [el("strong", { text: L("Đăng ký khám trực tuyến", "Book an appointment online") }), el("span", { text: L("Đăng ký trước trên cổng của bệnh viện, giảm thời gian chờ", "Register ahead on the hospital portal") })]),
+      el("span", { class: "booking-bar-txt" }, [el("strong", { text: L("ĐĂNG KÝ KHÁM BỆNH TRỰC TUYẾN", "BOOK AN APPOINTMENT ONLINE") }), el("span", { text: L("Đăng ký trước trên cổng của bệnh viện, giảm thời gian chờ", "Register ahead on the hospital portal") })]),
       el("span", { class: "booking-bar-go", "aria-hidden": "true", text: "→" }),
     ]);
     var intro = pageView.querySelector(".page-intro");
@@ -946,6 +946,18 @@
     });
     document.title = page.title[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
+
+  // Tin hoạt động trên trang chủ: chỉ hiện tiêu đề, bấm "Xem tóm tắt" để hiện đoạn tóm tắt.
+  (function newsTextToggle() {
+    var btn = document.getElementById("news-text-toggle"), list = document.getElementById("news-list");
+    if (!btn || !list) return;
+    btn.addEventListener("click", function () {
+      var open = btn.getAttribute("aria-expanded") !== "true";
+      btn.setAttribute("aria-expanded", String(open));
+      list.classList.toggle("news-compact", !open);
+      btn.textContent = open ? L("Thu gọn chữ", "Hide summaries") : L("Xem tóm tắt", "Show summaries");
+    });
+  })();
 
   // SBAR, AIDET trên trang chủ: giữ hình, phần chữ thu gọn mặc định, bấm để mở.
   (function commToggles() {

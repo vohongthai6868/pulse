@@ -870,3 +870,33 @@ a.cite { cursor: pointer; }
 
 .comm-toggle { display: block; margin: 12px auto 0; }
 .comm-toggle[aria-expanded="false"] { background: var(--surface); color: var(--brand, #0b4f9c); }
+
+.news-compact .news-summary { display: none; }
+.news-text-toggle { margin: 0 0 12px; }
+.news-text-toggle[aria-expanded="false"] { background: var(--surface); color: var(--brand, #0b4f9c); }
+.news-text-toggle { display: inline-flex; width: auto; align-items: center; }
+
+.btn-booking { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; margin-top: 4px; padding: 16px 20px; border-radius: 14px; background: #d0202a; color: #fff; font-size: 19px; font-weight: 800; letter-spacing: .3px; line-height: 1.25; text-align: center; text-decoration: none; box-shadow: 0 6px 18px rgba(208,32,42,.35); border: 2px solid #fff; }
+.btn-booking:hover { background: #b0151f; }
+.btn-booking:focus-visible { outline: 3px solid #ffd54a; outline-offset: 3px; }
+.hero-actions { flex-wrap: wrap; }
+.booking-bar { background: #d0202a; padding: 16px 18px; box-shadow: 0 6px 18px rgba(208,32,42,.3); }
+.booking-bar:hover { background: #b0151f; }
+.booking-bar-txt strong { font-size: 19px; font-weight: 800; letter-spacing: .3px; }
+.booking-bar-txt span { font-size: 14px; }
+.booking-bar-go { font-size: 28px; }
+@keyframes booking-pulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 6px 18px rgba(208,32,42,.35), 0 0 0 0 rgba(208,32,42,.55); background: #d0202a; }
+  50% { transform: scale(1.03); box-shadow: 0 6px 18px rgba(208,32,42,.35), 0 0 0 10px rgba(208,32,42,0); background: #ee2b36; }
+}
+.btn-booking, .booking-bar { animation: booking-pulse 1.6s ease-in-out infinite; }
+.btn-booking:hover, .booking-bar:hover, .btn-booking:focus-visible, .booking-bar:focus-visible { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) { .btn-booking, .booking-bar { animation: none; } }
+/* Góc truyền thông GDSK nhấp nháy nhẹ */
+@keyframes tt-pulse { 0%, 100% { box-shadow: 0 8px 24px rgba(11,79,156,.25), 0 0 0 0 rgba(208,32,42,.55); } 50% { box-shadow: 0 8px 24px rgba(11,79,156,.25), 0 0 0 10px rgba(208,32,42,0); } }
+@keyframes tt-title { 0%, 100% { color: #fff; text-shadow: none; } 50% { color: #ffe066; text-shadow: 0 0 14px rgba(255,224,102,.65); } }
+@keyframes nav-tt-blink { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+.tt-hero { animation: tt-pulse 1.6s ease-in-out infinite; }
+.tt-hero h2 { animation: tt-title 1.6s ease-in-out infinite; }
+.nav-tt { animation: nav-tt-blink 1.6s ease-in-out infinite; }
+@media (prefers-reduced-motion: reduce) { .tt-hero, .tt-hero h2, .nav-tt { animation: none; } }
