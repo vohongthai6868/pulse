@@ -3464,15 +3464,59 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "Chăm sóc sau mổ",
+       "h": "Chăm sóc sau mổ (hướng dẫn của khoa)",
        "blocks": [
         {
+         "sub": "Vệ sinh"
+        },
+        {
          "items": [
-          "Nhỏ thuốc đúng loại, đúng giờ, rửa tay trước khi nhỏ; nhiều loại thuốc thì nhỏ cách nhau khoảng 5 phút.",
-          "Đeo kính bảo vệ ban ngày, che mắt khi ngủ theo hướng dẫn; không dụi mắt, không nằm đè lên mắt vừa mổ.",
-          "Tránh để nước, xà phòng vào mắt; gội đầu ngửa ra sau hoặc nhờ người khác gội trong thời gian được dặn.",
-          "Tránh cúi thấp, mang vật nặng, nơi nhiều bụi khói trong những tuần đầu.",
-          "Tái khám đúng hẹn; đo kính lại khi bác sĩ hẹn."
+          "Rửa mặt bằng nước sạch, hạn chế nước vào mắt mổ trong 2 tuần đầu.",
+          "Tránh khói bụi, nước xà phòng, dầu gội vào mắt."
+         ],
+         "ordered": false
+        },
+        {
+         "sub": "Ăn uống"
+        },
+        {
+         "items": [
+          "Không kiêng cữ; ăn uống đủ dinh dưỡng để vết mổ mau lành.",
+          "Hạn chế đồ cứng, khó nhai trong 1 tuần đầu sau mổ.",
+          "Người có bệnh đái tháo đường: hạn chế thức ăn, nước uống ngọt."
+         ],
+         "ordered": false
+        },
+        {
+         "sub": "Vận động"
+        },
+        {
+         "items": [
+          "Tránh đụng chạm mạnh vào mắt; nhà có trẻ nhỏ thì tránh để trẻ va vào mắt.",
+          "Đeo kính để tránh gió bụi; không dụi mắt mổ.",
+          "Vận động nhẹ, không gắng sức trong 1 tuần.",
+          "Nằm ngủ xoay trở nhẹ nhàng, tư thế nào cũng được; có thể nằm võng nếu võng chắc chắn."
+         ],
+         "ordered": false
+        },
+        {
+         "sub": "Dùng thuốc"
+        },
+        {
+         "items": [
+          "Dùng thuốc theo toa của bác sĩ chuyên khoa mắt.",
+          "Thuốc viên: uống sáng, chiều mỗi loại 1 viên, sau khi ăn no.",
+          "Thuốc nhỏ: mỗi lọ nhỏ mắt mổ 6 lần/ngày, mỗi lần 1 giọt; các lọ nhỏ cách nhau 1 giờ. Rửa tay trước khi nhỏ."
+         ],
+         "ordered": false
+        },
+        {
+         "sub": "Tái khám"
+        },
+        {
+         "items": [
+          "Tái khám sau mổ 1 ngày, 1 tuần, 1 tháng, 3 tháng và 6 tháng.",
+          "Đến khám ngay khi mở băng mà mắt không sáng, hoặc đau nhức mắt, đau đầu."
          ],
          "ordered": false
         }
@@ -6434,7 +6478,29 @@ window.PULSE_DATA = {
      ]
     }
    ],
-   "message": "Mỗi em bé là một niềm hi vọng, mỗi nụ cười của trẻ là động lực để chúng tôi không ngừng nỗ lực. Khoa Nhi – Tận tâm chăm sóc – An toàn điều trị – Trọn vẹn yêu thương."
+   "message": "Mỗi em bé là một niềm hi vọng, mỗi nụ cười của trẻ là động lực để chúng tôi không ngừng nỗ lực. Khoa Nhi – Tận tâm chăm sóc – An toàn điều trị – Trọn vẹn yêu thương.",
+   "photos": [
+    [
+     "img/khoa/nhi-01.jpg",
+     "Tập thể Khoa Nhi"
+    ],
+    [
+     "img/khoa/nhi-02.jpg",
+     "Điều dưỡng Khoa Nhi"
+    ],
+    [
+     "img/khoa/nhi-03.jpg",
+     "Không gian Khoa Nhi xây mới"
+    ],
+    [
+     "img/khoa/nhi-04.jpg",
+     "Điều dưỡng chăm sóc trẻ sơ sinh"
+    ],
+    [
+     "img/khoa/nhi-05.jpg",
+     "Chiếu đèn điều trị vàng da sơ sinh"
+    ]
+   ]
   },
   "phu-san": {
    "name": "Khoa Phụ sản",
@@ -6716,6 +6782,66 @@ window.PULSE_DATA = {
       "Lấy người bệnh làm trung tâm; cải tiến quy trình tiếp đón và khám bệnh, xây dựng phong cách phục vụ chuyên nghiệp, thân thiện và trách nhiệm."
      ]
     }
+   ]
+  },
+  "lien-ck": {
+   "name": "Khoa Liên chuyên khoa",
+   "updated": "2026-11-21",
+   "intro": "Chăm sóc người bệnh các chuyên khoa Mắt, Tai mũi họng, Răng hàm mặt. Điều dưỡng phối hợp bác sĩ trong khám, đo, chuẩn bị và chăm sóc người bệnh trước, trong và sau phẫu thuật, thủ thuật.",
+   "facts": [
+    [
+     "Thuộc",
+     "Bệnh viện Đa khoa Nhật Tân"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ],
+    [
+     "Liên hệ công tác",
+     "0296 3562 678"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chuyên khoa Mắt: hoạt động của điều dưỡng",
+     "items": [
+      "Đo khúc xạ tự động, đo sinh trắc nhãn cầu (tính công suất thủy tinh thể nhân tạo) trước mổ.",
+      "Chăm sóc, vệ sinh mắt và thực hiện thủ thuật chăm sóc mắt theo y lệnh.",
+      "Phụ giúp bác sĩ trong phẫu thuật mắt, chuẩn bị dụng cụ vô khuẩn.",
+      "Hướng dẫn người bệnh chăm sóc sau mổ đục thủy tinh thể và lịch tái khám."
+     ]
+    }
+   ],
+   "photos": [
+    [
+     "img/khoa/lien-ck-01.jpg",
+     "Phẫu thuật mắt dưới kính hiển vi"
+    ],
+    [
+     "img/khoa/lien-ck-02.jpg",
+     "Điều dưỡng đo khúc xạ tự động cho người bệnh"
+    ],
+    [
+     "img/khoa/lien-ck-03.jpg",
+     "Đo sinh trắc nhãn cầu trước mổ đục thủy tinh thể"
+    ],
+    [
+     "img/khoa/lien-ck-04.jpg",
+     "Điều dưỡng chăm sóc, vệ sinh mắt cho người bệnh"
+    ],
+    [
+     "img/khoa/lien-ck-05.jpg",
+     "Điều dưỡng thực hiện thủ thuật chăm sóc mắt"
+    ],
+    [
+     "img/khoa/lien-ck-06.jpg",
+     "Điều dưỡng chăm sóc mắt cho người bệnh"
+    ],
+    [
+     "img/khoa/lien-ck-07.jpg",
+     "Điều dưỡng phụ giúp bác sĩ phẫu thuật mắt"
+    ]
    ]
   }
  },
