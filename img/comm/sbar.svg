@@ -1,54 +1,114 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" role="img" aria-labelledby="t d">
-  <title id="t">Minh họa SBAR</title>
-  <desc id="d">Hai điều dưỡng bàn giao người bệnh cho nhau theo 4 bước S, B, A, R; người nhận nhắc lại để xác nhận.</desc>
-  <rect width="480" height="260" rx="18" fill="#eef4fb"/>
-  <!-- sàn -->
-  <rect x="0" y="222" width="480" height="38" rx="0" fill="#dbe7f5"/>
-  <!-- điều dưỡng trái (người báo) -->
-  <g>
-    <rect x="58" y="128" width="64" height="94" rx="20" fill="#0b4f9c"/>
-    <rect x="80" y="128" width="20" height="30" fill="#ffffff"/>
-    <circle cx="90" cy="100" r="26" fill="#f2c9a0"/>
-    <path d="M64 96c2-22 18-32 26-32s26 8 26 32c-8-10-18-14-26-14s-18 4-26 14z" fill="#2a2a3a"/>
-    <circle cx="81" cy="102" r="2.6" fill="#2a2a3a"/><circle cx="99" cy="102" r="2.6" fill="#2a2a3a"/><path d="M83 112q7 6 14 0" fill="none" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round"/>
-    <rect x="72" y="66" width="36" height="12" rx="4" fill="#ffffff"/>
-        <rect x="88" y="68" width="4" height="8" fill="#d0202a"/><rect x="86" y="70" width="8" height="4" fill="#d0202a"/>
-    <!-- bìa hồ sơ -->
-    <rect x="112" y="150" width="34" height="42" rx="4" fill="#ffffff" stroke="#0b4f9c" stroke-width="3"/>
-    <line x1="119" y1="162" x2="139" y2="162" stroke="#0b4f9c" stroke-width="3"/>
-    <line x1="119" y1="172" x2="139" y2="172" stroke="#0b4f9c" stroke-width="3"/>
-    <line x1="119" y1="182" x2="133" y2="182" stroke="#0b4f9c" stroke-width="3"/>
-  </g>
-  <!-- điều dưỡng phải (người nhận) -->
-  <g>
-    <rect x="358" y="128" width="64" height="94" rx="20" fill="#2f7a5b"/>
-    <rect x="380" y="128" width="20" height="30" fill="#ffffff"/>
-    <circle cx="390" cy="100" r="26" fill="#e8b98e"/>
-    <path d="M364 98c0-20 14-34 26-34s26 12 26 34c-6-8-16-12-26-12s-20 4-26 12z" fill="#3a2a22"/>
-    <circle cx="381" cy="102" r="2.6" fill="#2a2a3a"/><circle cx="399" cy="102" r="2.6" fill="#2a2a3a"/><path d="M383 112q7 6 14 0" fill="none" stroke="#7a4a2a" stroke-width="2.5" stroke-linecap="round"/>
-    <rect x="372" y="66" width="36" height="12" rx="4" fill="#ffffff"/>
-    <rect x="388" y="68" width="4" height="8" fill="#d0202a"/><rect x="386" y="70" width="8" height="4" fill="#d0202a"/>
-    <!-- dấu xác nhận -->
-    <circle cx="438" cy="70" r="16" fill="#2f7a5b"/>
-    <path d="M430 70l6 6 11-12" fill="none" stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  </g>
-  <!-- chuỗi S B A R -->
-  <g font-family="Be Vietnam Pro, Arial, sans-serif" font-weight="800" font-size="24" text-anchor="middle">
-    <path d="M160 160 H322" stroke="#9db8d8" stroke-width="4" stroke-dasharray="2 8" stroke-linecap="round"/>
-    <path d="M316 152l10 8-10 8" fill="none" stroke="#9db8d8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="170" cy="78" r="22" fill="#d0202a"/><text x="170" y="86" fill="#ffffff">S</text>
-    <circle cx="218" cy="78" r="22" fill="#e0662a"/><text x="218" y="86" fill="#ffffff">B</text>
-    <circle cx="266" cy="78" r="22" fill="#0b4f9c"/><text x="266" y="86" fill="#ffffff">A</text>
-    <circle cx="314" cy="78" r="22" fill="#2f7a5b"/><text x="314" y="86" fill="#ffffff">R</text>
-  </g>
-  <g font-family="Be Vietnam Pro, Arial, sans-serif" font-size="13" font-weight="600" fill="#1d2b44" text-anchor="middle">
-    <text x="170" y="120">Tình huống</text>
-    <text x="218" y="138">Bối cảnh</text>
-    <text x="266" y="120">Đánh giá</text>
-    <text x="314" y="138">Đề nghị</text>
-  </g>
-  <g font-family="Be Vietnam Pro, Arial, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
-    <text x="90" y="246" fill="#0b4f9c">Người báo</text>
-    <text x="390" y="246" fill="#2f7a5b">Người nhận nhắc lại</text>
-  </g>
+<title id="t">Minh họa SBAR</title>
+<desc id="d">Hai điều dưỡng bàn giao người bệnh tại quầy điều dưỡng theo 4 bước Tình huống, Bối cảnh, Đánh giá, Đề nghị; người nhận nhắc lại để xác nhận.</desc>
+<defs>
+  <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e6f1fc"/><stop offset="1" stop-color="#f7fbff"/></linearGradient>
+  <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#cfe0f2"/><stop offset="1" stop-color="#b7cde6"/></linearGradient>
+  <linearGradient id="uBlue" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2f7fd6"/><stop offset="1" stop-color="#0b4f9c"/></linearGradient>
+  <linearGradient id="uGreen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3fa57c"/><stop offset="1" stop-color="#226a4d"/></linearGradient>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9fd3ff"/><stop offset="1" stop-color="#dff1ff"/></linearGradient>
+  <filter id="sh" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#0b2a4a" flood-opacity=".22"/></filter>
+  
+</defs>
+<rect width="480" height="260" rx="18" fill="url(#wall)"/>
+<rect x="0" y="206" width="480" height="54" fill="url(#floor)"/>
+<rect x="0" y="204" width="480" height="3" fill="#a9c2de"/>
+<g>
+  <rect x="196" y="84" width="88" height="62" rx="6" fill="#ffffff"/>
+  <rect x="201" y="89" width="78" height="52" rx="3" fill="url(#sky)"/>
+  <circle cx="262" cy="106" r="9" fill="#ffe27a"/>
+  <path d="M201 132 q17.6 -16 35.2 -4 t35.2 -2 v9 h-70.4z" fill="#9fd89a"/>
+  <path d="M210 110 q8 -8 16 0 q6 -6 12 0 z" fill="#ffffff" opacity=".9"/>
+  <rect x="238.5" y="89" width="3" height="52" fill="#ffffff"/>
+</g>
+<rect x="30" y="92" width="30" height="30" rx="7" fill="#ffffff" stroke="#f2c6c8" stroke-width="2"/><rect x="42" y="98" width="6" height="18" rx="2" fill="#d0202a"/><rect x="36" y="104" width="18" height="6" rx="2" fill="#d0202a"/>
+<rect x="176" y="168" width="128" height="62" rx="8" fill="#ffffff" stroke="#c9d6e6" stroke-width="2"/>
+<rect x="170" y="162" width="140" height="10" rx="5" fill="#8fb0d4"/>
+<rect x="214" y="132" width="52" height="32" rx="4" fill="#1d2b44"/><rect x="236" y="164" width="8" height="4" fill="#1d2b44"/>
+<path d="M218 150 h10 l4 -9 l5 16 l4 -11 l3 4 h18" fill="none" stroke="#5ee0a0" stroke-width="2" stroke-linejoin="round"/>
+<rect x="188" y="184" width="22" height="30" rx="3" fill="#ffe2a8"/><rect x="214" y="184" width="22" height="30" rx="3" fill="#cfe6ff"/><rect x="240" y="184" width="22" height="30" rx="3" fill="#d6f0e2"/>
+<rect x="270" y="188" width="24" height="24" rx="12" fill="#eef4fb"/><path d="M276 200 l5 5 l9 -10" stroke="#2f7a5b" stroke-width="3" fill="none" stroke-linecap="round"/>
+<ellipse cx="104" cy="231" rx="34" ry="5" fill="#0b2a4a" opacity=".15"/>
+<rect x="89" y="216" width="11" height="12" rx="4" fill="#e9eef5"/>
+<rect x="108" y="216" width="11" height="12" rx="4" fill="#e9eef5"/>
+<rect x="86" y="224" width="16" height="7" rx="3.5" fill="#ffffff" stroke="#c9d6e6"/>
+<rect x="106" y="224" width="16" height="7" rx="3.5" fill="#ffffff" stroke="#c9d6e6"/>
+<path d="M79 124 q-4 34 6 46 h38 q10 -12 6 -46z" fill="#2a2030"/>
+<path d="M74 160 q0 -10 12 -10 h36 q12 0 12 10 l4 62 q0 10 -10 10 h-48 q-10 0 -10 -10z" fill="url(#uBlue)"/>
+<path d="M92 150 l12 16 l12 -16z" fill="#ffffff"/>
+<path d="M97 150 l7 9 l7 -9z" fill="#f6cfa8"/>
+<rect x="112" y="178" width="14" height="12" rx="2" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.5"/>
+<rect x="115" y="172" width="2.5" height="10" rx="1" fill="#ffd34d"/>
+<rect x="82" y="170" width="14" height="9" rx="2" fill="#ffffff"/>
+<rect x="84" y="173" width="10" height="1.6" fill="#0b4f9c"/>
+<rect x="84" y="176" width="6" height="1.4" fill="#9db8d8"/>
+<rect x="98" y="140" width="12" height="12" rx="4" fill="#f6cfa8"/>
+<circle cx="81" cy="127" r="5" fill="#f6cfa8"/><circle cx="127" cy="127" r="5" fill="#f6cfa8"/>
+<circle cx="104" cy="124" r="23" fill="#f6cfa8"/>
+<path d="M80 125 q-1 -26 24 -26 q25 0 24 26 q-6 -12 -16 -14 q-6 8 -22 8 q-6 0 -10 6z" fill="#2a2030"/>
+<path d="M87 102 q17 -10 34 0 l-3 -12 q-14 -6 -28 0z" fill="#ffffff" stroke="#d7e2ef" stroke-width="1"/>
+<rect x="102.4" y="91" width="3.2" height="9" rx="1" fill="#d0202a"/><rect x="99.5" y="93.9" width="9" height="3.2" rx="1" fill="#d0202a"/>
+<path d="M91 119 q4 -3 8 0 M109 119 q4 -3 8 0" fill="none" stroke="#3a2a22" stroke-width="1.6" stroke-linecap="round"/>
+<ellipse cx="95" cy="126" rx="2.6" ry="3.2" fill="#2a2030"/><ellipse cx="113" cy="126" rx="2.6" ry="3.2" fill="#2a2030"/>
+<circle cx="96" cy="125" r=".9" fill="#ffffff"/><circle cx="114" cy="125" r=".9" fill="#ffffff"/>
+<circle cx="90" cy="133" r="4" fill="#ff8f8f" opacity=".45"/><circle cx="118" cy="133" r="4" fill="#ff8f8f" opacity=".45"/>
+<path d="M98 134 q6 8 12 0z" fill="#b8434a"/>
+<path d="M80 160 L92 186" stroke="url(#uBlue)" stroke-width="13" stroke-linecap="round"/><circle cx="92" cy="186" r="6.5" fill="#f6cfa8"/>
+<g transform="translate(8 0) rotate(-8 140 176)"><rect x="124" y="156" width="32" height="42" rx="4" fill="#c58a3a"/><rect x="128" y="162" width="24" height="32" rx="2" fill="#ffffff"/><rect x="134" y="153" width="12" height="7" rx="2" fill="#7a5a2a"/><text x="140" y="174" font-family="Arial, sans-serif" font-size="8" font-weight="800" fill="#d0202a" text-anchor="middle">S B</text><text x="140" y="185" font-family="Arial, sans-serif" font-size="8" font-weight="800" fill="#0b4f9c" text-anchor="middle">A R</text></g>
+<path d="M128 160 L134 196" stroke="url(#uBlue)" stroke-width="13" stroke-linecap="round"/><circle cx="134" cy="196" r="6.5" fill="#f6cfa8"/>
+<ellipse cx="376" cy="231" rx="34" ry="5" fill="#0b2a4a" opacity=".15"/>
+<rect x="361" y="216" width="11" height="12" rx="4" fill="#e9eef5"/>
+<rect x="380" y="216" width="11" height="12" rx="4" fill="#e9eef5"/>
+<rect x="358" y="224" width="16" height="7" rx="3.5" fill="#ffffff" stroke="#c9d6e6"/>
+<rect x="378" y="224" width="16" height="7" rx="3.5" fill="#ffffff" stroke="#c9d6e6"/>
+<path d="M346 160 q0 -10 12 -10 h36 q12 0 12 10 l4 62 q0 10 -10 10 h-48 q-10 0 -10 -10z" fill="url(#uGreen)"/>
+<path d="M364 150 l12 16 l12 -16z" fill="#ffffff"/>
+<path d="M369 150 l7 9 l7 -9z" fill="#e9b88f"/>
+<rect x="384" y="178" width="14" height="12" rx="2" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="1.5"/>
+<rect x="387" y="172" width="2.5" height="10" rx="1" fill="#ffd34d"/>
+<rect x="354" y="170" width="14" height="9" rx="2" fill="#ffffff"/>
+<rect x="356" y="173" width="10" height="1.6" fill="#0b4f9c"/>
+<rect x="356" y="176" width="6" height="1.4" fill="#9db8d8"/>
+<rect x="370" y="140" width="12" height="12" rx="4" fill="#e9b88f"/>
+<circle cx="353" cy="127" r="5" fill="#e9b88f"/><circle cx="399" cy="127" r="5" fill="#e9b88f"/>
+<circle cx="376" cy="124" r="23" fill="#e9b88f"/>
+<path d="M352 125 q-1 -26 24 -26 q25 0 24 26 q-6 -12 -16 -14 q-6 8 -22 8 q-6 0 -10 6z" fill="#3a2a22"/>
+<path d="M359 102 q17 -10 34 0 l-3 -12 q-14 -6 -28 0z" fill="#ffffff" stroke="#d7e2ef" stroke-width="1"/>
+<rect x="374.4" y="91" width="3.2" height="9" rx="1" fill="#d0202a"/><rect x="371.5" y="93.9" width="9" height="3.2" rx="1" fill="#d0202a"/>
+<path d="M363 119 q4 -3 8 0 M381 119 q4 -3 8 0" fill="none" stroke="#3a2a22" stroke-width="1.6" stroke-linecap="round"/>
+<ellipse cx="367" cy="126" rx="2.6" ry="3.2" fill="#2a2030"/><ellipse cx="385" cy="126" rx="2.6" ry="3.2" fill="#2a2030"/>
+<circle cx="368" cy="125" r=".9" fill="#ffffff"/><circle cx="386" cy="125" r=".9" fill="#ffffff"/>
+<circle cx="362" cy="133" r="4" fill="#ff8f8f" opacity=".45"/><circle cx="390" cy="133" r="4" fill="#ff8f8f" opacity=".45"/>
+<path d="M370 134 q6 6 12 0" fill="none" stroke="#9a4a3a" stroke-width="2" stroke-linecap="round"/>
+<path d="M400 160 L392 186" stroke="url(#uGreen)" stroke-width="13" stroke-linecap="round"/><circle cx="392" cy="186" r="6.5" fill="#e9b88f"/>
+<rect x="336" y="160" width="26" height="34" rx="4" fill="#1d2b44"/><rect x="339" y="164" width="20" height="25" rx="2" fill="#dff1ff"/><path d="M342 170 h14 M342 175 h14 M342 180 h9" stroke="#0b4f9c" stroke-width="1.6"/>
+<path d="M352 160 L356 178" stroke="url(#uGreen)" stroke-width="13" stroke-linecap="round"/><circle cx="356" cy="178" r="6.5" fill="#e9b88f"/>
+<path d="M408 84 h54 q12 0 12 12 v20 q0 12 -12 12 H414 L392 138 L402 128 H408 q-12 0 -12 -12 v-20 q0 -12 12 -12z" fill="#ffffff" stroke="#2f7a5b" stroke-width="2" filter="url(#sh)"/>
+<text x="435.0" y="102" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1d2b44" text-anchor="middle">Nhắc lại,</text>
+<text x="435.0" y="118" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#1d2b44" text-anchor="middle">xác nhận</text>
+<circle cx="462" cy="130" r="11" fill="#2f7a5b" stroke="#ffffff" stroke-width="2"/><path d="M457 130 l4 4 l7 -8" stroke="#ffffff" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150 124 q90 -26 180 0" fill="none" stroke="#e0662a" stroke-width="3" stroke-dasharray="6 6" stroke-linecap="round"/>
+<path d="M322 116 l10 8 l-12 4" fill="none" stroke="#e0662a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<g filter="url(#sh)"><rect x="12" y="10" width="108" height="58" rx="12" fill="#ffffff"/></g>
+<rect x="12" y="10" width="108" height="5" rx="2.5" fill="#d0202a"/>
+<circle cx="66.0" cy="32" r="14" fill="#d0202a"/>
+<text x="66.0" y="38" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#ffffff" text-anchor="middle">S</text>
+<text x="66.0" y="60" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#1d2b44" text-anchor="middle">Tình huống</text>
+<g filter="url(#sh)"><rect x="128" y="10" width="108" height="58" rx="12" fill="#ffffff"/></g>
+<rect x="128" y="10" width="108" height="5" rx="2.5" fill="#e0662a"/>
+<circle cx="182.0" cy="32" r="14" fill="#e0662a"/>
+<text x="182.0" y="38" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#ffffff" text-anchor="middle">B</text>
+<text x="182.0" y="60" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#1d2b44" text-anchor="middle">Bối cảnh</text>
+<g filter="url(#sh)"><rect x="244" y="10" width="108" height="58" rx="12" fill="#ffffff"/></g>
+<rect x="244" y="10" width="108" height="5" rx="2.5" fill="#0b4f9c"/>
+<circle cx="298.0" cy="32" r="14" fill="#0b4f9c"/>
+<text x="298.0" y="38" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#ffffff" text-anchor="middle">A</text>
+<text x="298.0" y="60" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#1d2b44" text-anchor="middle">Đánh giá</text>
+<g filter="url(#sh)"><rect x="360" y="10" width="108" height="58" rx="12" fill="#ffffff"/></g>
+<rect x="360" y="10" width="108" height="5" rx="2.5" fill="#2f7a5b"/>
+<circle cx="414.0" cy="32" r="14" fill="#2f7a5b"/>
+<text x="414.0" y="38" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="17" font-weight="800" fill="#ffffff" text-anchor="middle">R</text>
+<text x="414.0" y="60" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" fill="#1d2b44" text-anchor="middle">Đề nghị</text>
+<rect x="58.0" y="236" width="92" height="20" rx="10" fill="#0b4f9c"/><text x="104" y="250" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Người báo</text>
+<rect x="306.0" y="236" width="140" height="20" rx="10" fill="#2f7a5b"/><text x="376" y="250" font-family="Be Vietnam Pro, Arial, Helvetica, sans-serif" font-size="12" font-weight="700" fill="#ffffff" text-anchor="middle">Người nhận nhắc lại</text>
 </svg>
