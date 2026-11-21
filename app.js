@@ -596,12 +596,22 @@
   }
 
   function unitGdskList(name) { return unitTopics(name); }
+  var BOOKING_URL = "https://89338.byt.vn/kcb/dang-ky-kham";
+  function addBookingBar() {
+    var bar = el("a", { class: "booking-bar", href: BOOKING_URL, target: "_blank", rel: "noopener" }, [
+      el("span", { class: "booking-bar-txt" }, [el("strong", { text: L("Đăng ký khám trực tuyến", "Book an appointment online") }), el("span", { text: L("Đăng ký trước trên cổng của bệnh viện, giảm thời gian chờ", "Register ahead on the hospital portal") })]),
+      el("span", { class: "booking-bar-go", "aria-hidden": "true", text: "→" }),
+    ]);
+    var intro = pageView.querySelector(".page-intro");
+    if (intro && intro.nextSibling) pageView.insertBefore(bar, intro.nextSibling); else pageView.appendChild(bar);
+  }
   function renderKhoaPage(key) {
     var hit = unitByCode(key);
     var k = DATA.khoa && DATA.khoa[key];
-    if (!k) { renderUnitPage(hit); unitExtras(hit, key); return; }
+    if (!k) { renderUnitPage(hit); unitExtras(hit, key); addBookingBar(); return; }
     renderRichKhoa(k);
     unitExtras(hit || { u: { name: k.name, page: key } }, key);
+    addBookingBar();
     document.title = tr(k.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
   function renderUnitPage(hit) {
@@ -732,7 +742,8 @@
         el("h2", { text: tr(k.qr.title) }),
         el("img", { src: k.qr.img, alt: L("Mã QR Zalo ", "Zalo QR code ") + tr(k.name), loading: "lazy", width: "320" }),
         el("p", { text: tr(k.qr.text) }),
-      ]));
+        k.qr.href ? el("a", { class: "btn-primary", href: k.qr.href, target: "_blank", rel: "noopener", text: L("Mở trang đăng ký", "Open booking page") }) : null,
+      ].filter(Boolean)));
     }
     if (k.message) pageView.appendChild(el("blockquote", { class: "khoa-message", text: tr(k.message) }));
     document.title = tr(k.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
@@ -935,6 +946,26 @@
     });
     document.title = page.title[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
+
+  // SBAR, AIDET trên trang chủ: giữ hình, phần chữ thu gọn mặc định, bấm để mở.
+  (function commToggles() {
+    Array.prototype.forEach.call(document.querySelectorAll(".comm-card"), function (card, idx) {
+      var parts = card.querySelectorAll(".comm-use, .comm-steps");
+      if (!parts.length) return;
+      var body = el("div", { class: "comm-body", id: "commb-" + idx });
+      card.insertBefore(body, parts[0]);
+      Array.prototype.forEach.call(parts, function (p) { body.appendChild(p); });
+      var n = card.querySelectorAll(".comm-steps li").length;
+      var lbl = function (open) { return open ? L("Thu gọn", "Collapse") : L("Xem " + n + " bước", "Show " + n + " steps"); };
+      var btn = el("button", { class: "sec-toggle comm-toggle", type: "button", "aria-expanded": "false", "aria-controls": body.id, text: lbl(false) });
+      body.hidden = true;
+      btn.addEventListener("click", function () {
+        var open = btn.getAttribute("aria-expanded") !== "true";
+        body.hidden = !open; btn.setAttribute("aria-expanded", String(open)); btn.textContent = lbl(open);
+      });
+      card.insertBefore(btn, body);
+    });
+  })();
 
   // Nút "Thu gọn / Mở ra" cho mọi mục có tiêu đề trên trang con; danh sách dài hiện 5 mục đầu + "Xem thêm".
   function addCollapse(root) {
