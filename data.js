@@ -7109,31 +7109,42 @@ window.PULSE_DATA = {
    ]
   },
   "noi-tq": {
+   "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
    "updated": "2026-11-21",
    "items": [
     {
-     "slug": "tang-huyet-ap"
+     "slug": "viem-phe-quan",
+     "why": "Viêm phổi: nhiều nhất tại khoa năm 2026"
     },
     {
-     "slug": "dai-thao-duong"
+     "slug": "phong-te-nga-khi-nam-vien",
+     "why": "Chóng mặt (thứ 2): phòng té ngã"
     },
     {
-     "slug": "nhan-biet-som-dot-quy"
+     "slug": "dung-khang-sinh-dung-cach",
+     "why": "Nhiễm trùng tiết niệu, nhiễm trùng huyết"
+    },
+    {
+     "slug": "tang-huyet-ap",
+     "why": "Thứ 4 trong 10 bệnh thường gặp"
+    },
+    {
+     "slug": "dai-thao-duong",
+     "why": "Thứ 6 trong 10 bệnh thường gặp"
+    },
+    {
+     "slug": "nhan-biet-som-dot-quy",
+     "why": "Nhồi máu não (thứ 7)"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh",
+     "why": "Thiếu máu mạn, suy tim"
     },
     {
      "slug": "copd"
     },
     {
      "slug": "hen-phe-quan"
-    },
-    {
-     "slug": "viem-phe-quan"
-    },
-    {
-     "slug": "dinh-duong-cho-nguoi-benh"
-    },
-    {
-     "slug": "phong-te-nga-khi-nam-vien"
     },
     {
      "slug": "phong-loet-ti-de"
