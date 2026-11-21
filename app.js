@@ -693,6 +693,11 @@
       el("p", { text: L("Quét mã để mở trang giới thiệu này trên điện thoại.", "Scan to open this introduction page on your phone.") }),
     ]));
   }
+  function reelFigure(vd) {
+    var v = el("video", { controls: "", playsinline: "", preload: "none", poster: vd.poster || "", src: vd.src });
+    v.setAttribute("aria-label", tr(vd.caption));
+    return el("figure", { class: "reel" }, [v, el("figcaption", { text: tr(vd.caption) })]);
+  }
   function renderRichKhoa(k) {
     pageView.textContent = "";
     pageView.classList.remove("art-v2");
@@ -706,6 +711,7 @@
         el("figcaption", { text: tr(k.photos[0][1]) }),
       ]));
     }
+    if (k.video) pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Video giới thiệu", "Intro video") }), reelFigure(k.video)]));
     pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Thông tin đơn vị", "Unit information") }), el("dl", { class: "khoa-facts" }, [].concat.apply([], k.facts.map(function (f) { return [el("dt", { text: tr(f[0]) }), el("dd", { text: tr(f[1]) })]; })))]));
     k.sections.forEach(function (s) {
       pageView.appendChild(el("section", { class: "page-section" }, [
@@ -784,6 +790,7 @@
         el("ul", {}, art.remember.map(function (k) { var li = el("li"); li.innerHTML = gIcon("star", 18); li.appendChild(document.createTextNode(k)); return li; }))]);
       pageView.appendChild(r);
     }
+    if (tp.video) pageView.appendChild(el("section", { class: "page-section art-section" }, [el("h2", { text: L("Xem video ngắn", "Short video") }), reelFigure(tp.video)]));
     art.sections.forEach(function (sec) {
       var box = el("section", { class: "page-section art-section" + (sec.cls ? " " + sec.cls : "") }, [el("h2", { text: sec.h })]);
       artBlocks(box, sec.blocks);

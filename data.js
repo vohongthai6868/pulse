@@ -3564,6 +3564,11 @@ window.PULSE_DATA = {
     "poster": {
      "img": "img/gdsk/poster-duc-thuy-tinh-the.jpg",
      "caption": "Poster Đục thủy tinh thể"
+    },
+    "video": {
+     "src": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.mp4",
+     "poster": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.jpg",
+     "caption": "Video: Chăm sóc mắt sau mổ đục thủy tinh thể (khoảng 1 phút)"
     }
    },
    {
@@ -6003,7 +6008,12 @@ window.PULSE_DATA = {
      "img/khoa/tnt-09.jpg",
      "Tư vấn giáo dục sức khỏe cho người bệnh"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/tnt.mp4",
+    "poster": "video/khoa/tnt.jpg",
+    "caption": "Video giới thiệu Bộ phận Thận nhân tạo (khoảng 1 phút)"
+   }
   },
   "yhct": {
    "name": "Khoa Y học cổ truyền – Phục hồi chức năng",
@@ -6121,7 +6131,12 @@ window.PULSE_DATA = {
     "Người bệnh, thân nhân tự giữ đồ đạc, tư trang.",
     "Giờ tập: Thứ Hai – Thứ Sáu 7g00 – 17g00 (kể cả buổi trưa); Thứ Bảy 7g00 – 11g00; Chủ nhật nghỉ.",
     "Mong quý người bệnh và thân nhân thực hiện tốt nội quy, chúc quý người bệnh sớm phục hồi sức khỏe."
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/yhct.mp4",
+    "poster": "video/khoa/yhct.jpg",
+    "caption": "Video giới thiệu Khoa Y học cổ truyền - Phục hồi chức năng (khoảng 1 phút)"
+   }
   },
   "cap-cuu": {
    "name": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
@@ -6326,7 +6341,12 @@ window.PULSE_DATA = {
      "img/khoa/noi-tq-09.jpg",
      "Máy đo điện tim kết nối mạng nội bộ"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/noi-tq.mp4",
+    "poster": "video/khoa/noi-tq.jpg",
+    "caption": "Video giới thiệu Khoa Nội tổng quát (khoảng 1 phút)"
+   }
   },
   "noi-th": {
    "name": "Khoa Nội tiêu hóa",
@@ -6500,7 +6520,12 @@ window.PULSE_DATA = {
      "img/khoa/nhi-05.jpg",
      "Chiếu đèn điều trị vàng da sơ sinh"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/nhi.mp4",
+    "poster": "video/khoa/nhi.jpg",
+    "caption": "Video giới thiệu Khoa Nhi (khoảng 1 phút)"
+   }
   },
   "phu-san": {
    "name": "Khoa Phụ sản",
@@ -6721,7 +6746,12 @@ window.PULSE_DATA = {
      "img/khoa/cdha-08.jpg",
      "Ghi điện cơ, điện não"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/cdha.mp4",
+    "poster": "video/khoa/cdha.jpg",
+    "caption": "Video giới thiệu Khoa Chẩn đoán hình ảnh - Thăm dò chức năng (khoảng 1 phút)"
+   }
   },
   "kham-benh": {
    "name": "Khoa Khám bệnh",
@@ -6854,7 +6884,12 @@ window.PULSE_DATA = {
      "img/khoa/lien-ck-07.jpg",
      "Điều dưỡng phụ giúp bác sĩ phẫu thuật mắt"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.mp4",
+    "poster": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.jpg",
+    "caption": "Video: Chăm sóc mắt sau mổ đục thủy tinh thể (khoảng 1 phút)"
+   }
   }
  },
  "huongdan": {

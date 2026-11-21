@@ -856,3 +856,7 @@ a.cite { cursor: pointer; }
 /* Hình minh họa SBAR, AIDET (21/11/2026) */
 .comm-fig { margin: 4px 0 12px; }
 .comm-fig img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 14px; }
+
+.reel { margin: 12px auto 0; max-width: 360px; }
+.reel video { width: 100%; aspect-ratio: 9 / 16; height: auto; border-radius: 14px; background: #0b2340; display: block; }
+.reel figcaption { margin-top: 6px; font-size: 13px; color: var(--muted); line-height: 1.45; text-align: center; }
