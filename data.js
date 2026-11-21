@@ -6415,7 +6415,12 @@ window.PULSE_DATA = {
      ]
     }
    ],
-   "message": "Sức khỏe của người bệnh là sự quan tâm và trách nhiệm của chúng tôi. Rất mong người bệnh và thân nhân phối hợp, tuân thủ hướng dẫn điều trị để phục hồi tốt nhất."
+   "message": "Sức khỏe của người bệnh là sự quan tâm và trách nhiệm của chúng tôi. Rất mong người bệnh và thân nhân phối hợp, tuân thủ hướng dẫn điều trị để phục hồi tốt nhất.",
+   "video": {
+    "src": "video/khoa/noi-th.mp4",
+    "poster": "video/khoa/noi-th.jpg",
+    "caption": "Video giới thiệu Khoa Nội tiêu hóa (khoảng 1 phút)"
+   }
   },
   "nhi": {
    "name": "Khoa Nhi",
