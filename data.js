@@ -7155,16 +7155,32 @@ window.PULSE_DATA = {
    ]
   },
   "truyen-nhiem": {
+   "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
    "updated": "2026-11-21",
    "items": [
     {
-     "slug": "sot-xuat-huyet"
+     "slug": "viem-phe-quan",
+     "why": "Viêm phổi, viêm phế quản phổi: nhiều nhất tại khoa năm 2026"
     },
     {
-     "slug": "cum"
+     "slug": "sot-xuat-huyet",
+     "why": "Thứ 2 trong 10 bệnh thường gặp"
     },
     {
-     "slug": "lao-phoi"
+     "slug": "lao-phoi",
+     "why": "Thứ 3 trong 10 bệnh thường gặp"
+    },
+    {
+     "slug": "cum",
+     "why": "Nhiễm virus"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach",
+     "why": "Nhiễm khuẩn tiết niệu, đường ruột, nhiễm trùng huyết"
+    },
+    {
+     "slug": "rua-tay-dung-cach",
+     "why": "Phòng lây nhiễm quai bị, thủy đậu, tiêu chảy"
     },
     {
      "slug": "soi"
@@ -7174,12 +7190,6 @@ window.PULSE_DATA = {
     },
     {
      "slug": "tay-chan-mieng-o-tre"
-    },
-    {
-     "slug": "rua-tay-dung-cach"
-    },
-    {
-     "slug": "dung-khang-sinh-dung-cach"
     }
    ]
   },
@@ -7331,25 +7341,30 @@ window.PULSE_DATA = {
    ]
   },
   "yhct": {
+   "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
    "updated": "2026-11-21",
    "items": [
     {
-     "slug": "tap-van-dong-tai-nha"
+     "slug": "tap-van-dong-tai-nha",
+     "why": "Thoát vị đĩa đệm, thoái hóa cột sống, sau gãy xương, liệt dây VII"
     },
     {
-     "slug": "nhan-biet-som-dot-quy"
+     "slug": "nhan-biet-som-dot-quy",
+     "why": "Liệt nửa người do tai biến mạch máu não"
+    },
+    {
+     "slug": "cham-soc-bo-bot",
+     "why": "Gãy cổ xương đùi, xương cánh tay, đầu dưới xương quay"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien",
+     "why": "Người cao tuổi, sau gãy xương, liệt nửa người"
     },
     {
      "slug": "tang-huyet-ap"
     },
     {
-     "slug": "phong-te-nga-khi-nam-vien"
-    },
-    {
      "slug": "phong-loet-ti-de"
-    },
-    {
-     "slug": "cham-soc-bo-bot"
     }
    ]
   },
@@ -7439,22 +7454,28 @@ window.PULSE_DATA = {
    ]
   },
   "tnt": {
+   "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
    "updated": "2026-11-21",
    "items": [
     {
-     "slug": "cham-soc-cau-noi-fav"
+     "slug": "cham-soc-cau-noi-fav",
+     "why": "Suy thận mạn giai đoạn cuối: bảo vệ đường vào mạch máu"
     },
     {
-     "slug": "tang-huyet-ap"
+     "slug": "tang-huyet-ap",
+     "why": "Thứ 2; kèm hạ huyết áp trong chạy thận"
     },
     {
-     "slug": "dai-thao-duong"
+     "slug": "dai-thao-duong",
+     "why": "Đái tháo đường type 2"
     },
     {
-     "slug": "dinh-duong-cho-nguoi-benh"
+     "slug": "dinh-duong-cho-nguoi-benh",
+     "why": "Tăng kali, hạ canxi, dư dịch, táo bón, thiếu máu"
     },
     {
-     "slug": "dung-thuoc-an-toan"
+     "slug": "dung-thuoc-an-toan",
+     "why": "Thuốc huyết áp, sắt, tạo máu, chống ngứa"
     }
    ]
   },
