@@ -3464,15 +3464,59 @@ window.PULSE_DATA = {
        ]
       },
       {
-       "h": "Chăm sóc sau mổ",
+       "h": "Chăm sóc sau mổ (hướng dẫn của khoa)",
        "blocks": [
         {
+         "sub": "Vệ sinh"
+        },
+        {
          "items": [
-          "Nhỏ thuốc đúng loại, đúng giờ, rửa tay trước khi nhỏ; nhiều loại thuốc thì nhỏ cách nhau khoảng 5 phút.",
-          "Đeo kính bảo vệ ban ngày, che mắt khi ngủ theo hướng dẫn; không dụi mắt, không nằm đè lên mắt vừa mổ.",
-          "Tránh để nước, xà phòng vào mắt; gội đầu ngửa ra sau hoặc nhờ người khác gội trong thời gian được dặn.",
-          "Tránh cúi thấp, mang vật nặng, nơi nhiều bụi khói trong những tuần đầu.",
-          "Tái khám đúng hẹn; đo kính lại khi bác sĩ hẹn."
+          "Rửa mặt bằng nước sạch, hạn chế nước vào mắt mổ trong 2 tuần đầu.",
+          "Tránh khói bụi, nước xà phòng, dầu gội vào mắt."
+         ],
+         "ordered": false
+        },
+        {
+         "sub": "Ăn uống"
+        },
+        {
+         "items": [
+          "Không kiêng cữ; ăn uống đủ dinh dưỡng để vết mổ mau lành.",
+          "Hạn chế đồ cứng, khó nhai trong 1 tuần đầu sau mổ.",
+          "Người có bệnh đái tháo đường: hạn chế thức ăn, nước uống ngọt."
+         ],
+         "ordered": false
+        },
+        {
+         "sub": "Vận động"
+        },
+        {
+         "items": [
+          "Tránh đụng chạm mạnh vào mắt; nhà có trẻ nhỏ thì tránh để trẻ va vào mắt.",
+          "Đeo kính để tránh gió bụi; không dụi mắt mổ.",
+          "Vận động nhẹ, không gắng sức trong 1 tuần.",
+          "Nằm ngủ xoay trở nhẹ nhàng, tư thế nào cũng được; có thể nằm võng nếu võng chắc chắn."
+         ],
+         "ordered": false
+        },
+        {
+         "sub": "Dùng thuốc"
+        },
+        {
+         "items": [
+          "Dùng thuốc theo toa của bác sĩ chuyên khoa mắt.",
+          "Thuốc viên: uống sáng, chiều mỗi loại 1 viên, sau khi ăn no.",
+          "Thuốc nhỏ: mỗi lọ nhỏ mắt mổ 6 lần/ngày, mỗi lần 1 giọt; các lọ nhỏ cách nhau 1 giờ. Rửa tay trước khi nhỏ."
+         ],
+         "ordered": false
+        },
+        {
+         "sub": "Tái khám"
+        },
+        {
+         "items": [
+          "Tái khám sau mổ 1 ngày, 1 tuần, 1 tháng, 3 tháng và 6 tháng.",
+          "Đến khám ngay khi mở băng mà mắt không sáng, hoặc đau nhức mắt, đau đầu."
          ],
          "ordered": false
         }
@@ -3520,6 +3564,11 @@ window.PULSE_DATA = {
     "poster": {
      "img": "img/gdsk/poster-duc-thuy-tinh-the.jpg",
      "caption": "Poster Đục thủy tinh thể"
+    },
+    "video": {
+     "src": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.mp4",
+     "poster": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.jpg",
+     "caption": "Video: Chăm sóc mắt sau mổ đục thủy tinh thể (khoảng 1 phút)"
     }
    },
    {
@@ -5959,12 +6008,17 @@ window.PULSE_DATA = {
      "img/khoa/tnt-09.jpg",
      "Tư vấn giáo dục sức khỏe cho người bệnh"
     ]
-   ]
+   ],
+   "video": {
+    "src": "video/khoa/tnt.mp4",
+    "poster": "video/khoa/tnt.jpg",
+    "caption": "Video giới thiệu Bộ phận Thận nhân tạo (khoảng 1 phút)"
+   }
   },
   "yhct": {
    "name": "Khoa Y học cổ truyền – Phục hồi chức năng",
    "intro": "Kết hợp điều trị y học cổ truyền với vật lý trị liệu, phục hồi chức năng hiện đại, giúp người bệnh giảm đau, cải thiện vận động, sớm trở lại sinh hoạt hằng ngày.",
-   "updated": "2026-11-12",
+   "updated": "2026-11-21",
    "facts": [
     [
      "Vị trí",
@@ -6065,7 +6119,777 @@ window.PULSE_DATA = {
      "img/khoa/yhct-11.jpg",
      "Siêu âm điều trị đau lưng"
     ]
+   ],
+   "noiquy": [
+    "Khi đến khám, xuất trình căn cước (có tích hợp bảo hiểm y tế) còn hạn tại buồng khám A29, A34; chế độ bảo hiểm được giải quyết kể từ lúc xuất trình thẻ.",
+    "Người bệnh đóng tạm ứng mỗi liệu trình tập; hết liệu trình lăn tay, thanh toán viện phí (bệnh viện hoàn lại nếu tạm ứng thừa, thiếu đóng thêm). Muốn tập tiếp liệu trình sau, đến buồng A29, A34 để được tư vấn.",
+    "Người bệnh yếu, đi đứng khó khăn được hỗ trợ đăng ký khám, nhưng phải có thân nhân đi cùng.",
+    "Chấp hành thứ tự sắp xếp của kỹ thuật y phòng tập; chú ý các bài tập về nhà được hướng dẫn.",
+    "Giữ trật tự, vệ sinh; không hút thuốc, không quay phim, chụp ảnh trong phòng tập.",
+    "Thân nhân không ngồi trên giường tập hoặc ghế tập.",
+    "Không tự ý di chuyển dụng cụ tập, không tự điều chỉnh máy móc; cần thì báo kỹ thuật y tại phòng.",
+    "Người bệnh, thân nhân tự giữ đồ đạc, tư trang.",
+    "Giờ tập: Thứ Hai – Thứ Sáu 7g00 – 17g00 (kể cả buổi trưa); Thứ Bảy 7g00 – 11g00; Chủ nhật nghỉ.",
+    "Mong quý người bệnh và thân nhân thực hiện tốt nội quy, chúc quý người bệnh sớm phục hồi sức khỏe."
+   ],
+   "video": {
+    "src": "video/khoa/yhct.mp4",
+    "poster": "video/khoa/yhct.jpg",
+    "caption": "Video giới thiệu Khoa Y học cổ truyền - Phục hồi chức năng (khoảng 1 phút)"
+   }
+  },
+  "cap-cuu": {
+   "name": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+   "intro": "Điều dưỡng Khoa Cấp cứu – Hồi sức tích cực và Chống độc thực hiện, phối hợp và tổ chức chăm sóc, theo dõi, hỗ trợ điều trị người bệnh cấp cứu, bảo đảm người bệnh được chăm sóc kịp thời, liên tục, toàn diện và an toàn.",
+   "updated": "2026-11-21",
+   "facts": [
+    [
+     "Thuộc",
+     "Bệnh viện Đa khoa Nhật Tân"
+    ],
+    [
+     "Hoạt động",
+     "Tiếp nhận cấp cứu 24/24 giờ"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ],
+    [
+     "Liên hệ công tác",
+     "0296 3562 678"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ của điều dưỡng",
+     "items": [
+      "Thực hiện, phối hợp và tổ chức chăm sóc, theo dõi, hỗ trợ điều trị người bệnh cấp cứu kịp thời, liên tục, toàn diện và an toàn.",
+      "Phối hợp với bác sĩ và các bộ phận liên quan trong tiếp nhận, phân loại, cấp cứu, điều trị và chăm sóc người bệnh, góp phần nâng cao chất lượng khám chữa bệnh tại bệnh viện."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Phối hợp với bác sĩ cấp cứu ngưng tuần hoàn, suy hô hấp, sốc phản vệ, sốc nhiễm trùng và các tình trạng nguy kịch khác.",
+      "Ép tim ngoài lồng ngực, bóp bóng, hỗ trợ kiểm soát đường thở theo phân công và phạm vi chuyên môn."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Chăm sóc người bệnh thở máy, mở khí quản, đặt sonde Blakemore, catheter tĩnh mạch trung tâm."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Hướng dẫn người nhà phối hợp chăm sóc và phòng ngừa biến chứng.",
+      "Tư vấn, giáo dục sức khỏe cho người bệnh, người nhà về các bệnh hô hấp, tuần hoàn, tiêu hóa."
+     ]
+    },
+    {
+     "h": "Thành tích",
+     "items": [
+      "Giải Nhì Hội thi “Lắng nghe thấu cảm – Giao tiếp sẻ san”.",
+      "Giải Ba Hội thi “70 năm tự hào chiến sĩ áo trắng”."
+     ]
+    }
+   ],
+   "message": "Chúc người bệnh sớm hồi phục. Mong người bệnh và thân nhân phối hợp tốt với nhân viên y tế trong quá trình điều trị.",
+   "photos": [
+    [
+     "img/khoa/cap-cuu-02.jpg",
+     "Điều dưỡng hướng dẫn người bệnh, người nhà đọc tờ bướm giáo dục sức khỏe"
+    ],
+    [
+     "img/khoa/cap-cuu-05.jpg",
+     "Theo dõi người bệnh thở máy, monitor liên tục"
+    ],
+    [
+     "img/khoa/cap-cuu-03.jpg",
+     "Chăm sóc đường thở cho người bệnh thở máy"
+    ],
+    [
+     "img/khoa/cap-cuu-04.jpg",
+     "Hút đờm, chăm sóc ống nội khí quản"
+    ],
+    [
+     "img/khoa/cap-cuu-01.jpg",
+     "Điều dưỡng phối hợp bác sĩ thực hiện thủ thuật vô khuẩn"
+    ]
+   ],
+   "noiquy": [
+    "Người bệnh: tuân thủ chế độ ăn uống, sinh hoạt và điều trị tại bệnh viện.",
+    "Người bệnh: mặc quần áo dành cho người bệnh (đã được tiệt trùng).",
+    "Thân nhân: mỗi giường bệnh chỉ một người nuôi bệnh.",
+    "Thân nhân: mặc áo choàng và thay dép khi vào buồng bệnh.",
+    "Thân nhân: giữ trật tự trong buồng bệnh để người bệnh nghỉ ngơi; bỏ rác đúng nơi quy định.",
+    "Giờ thay đổi người nuôi bệnh: sáng 11h – 13h, chiều 17h – 19h.",
+    "Không ngồi hoặc nằm trên giường bệnh; không mang ghế bố vào buồng bệnh; không mắc võng trong khu vực hành lang.",
+    "Không hút thuốc lá, không mang dụng cụ điện cá nhân vào phòng bệnh.",
+    "Thân nhân, người bệnh tự bảo quản tài sản cá nhân.",
+    "Mong quý bà con vui lòng hợp tác, thực hiện nội quy này. Trân trọng cảm ơn."
    ]
+  },
+  "noi-tq": {
+   "name": "Khoa Nội tổng quát",
+   "updated": "2026-11-21",
+   "intro": "Khám, điều trị và chăm sóc nội trú người bệnh nội khoa; chăm sóc toàn diện theo phân cấp chăm sóc, phối hợp cùng gia đình và tư vấn dinh dưỡng, phòng bệnh.",
+   "facts": [
+    [
+     "Điều dưỡng trưởng",
+     "CNĐD. Lê Thị Huỳnh Hoa"
+    ],
+    [
+     "Vị trí",
+     "Tầng 3, Khu B"
+    ],
+    [
+     "Giường bệnh",
+     "55 giường kế hoạch / 80 giường thực kê"
+    ],
+    [
+     "Nhân lực",
+     "16 điều dưỡng: 5 đại học, 11 cao đẳng"
+    ],
+    [
+     "Hoạt động",
+     "24/24 giờ"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Khám, điều trị, chăm sóc người bệnh nội trú.",
+      "Chăm sóc toàn diện theo phân cấp chăm sóc, phối hợp với gia đình trong chăm sóc người bệnh.",
+      "Tư vấn dinh dưỡng, phòng bệnh cho người bệnh."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Khí dung, hút đàm, thở oxy, theo dõi monitor, bơm tiêm điện.",
+      "Đặt và chăm sóc đường truyền tĩnh mạch ngoại vi.",
+      "Theo dõi, chăm sóc người bệnh tai biến mạch máu não, người bệnh hạn chế đi lại."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Đánh giá nguy cơ té ngã khi người bệnh nhập khoa; hướng dẫn người nhà kéo thanh chắn giường.",
+      "Bàn giao người bệnh giữa các ca theo ISBAR, tại giường bệnh.",
+      "Làm việc theo đội chăm sóc, mỗi đội phụ trách một nhóm buồng bệnh."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Chủ đề: chăm sóc bệnh tăng huyết áp, đái tháo đường, suy thận mạn, suy tim, viêm phổi.",
+      "Hình thức: nói chuyện giáo dục sức khỏe hằng tuần tại khoa, tờ bướm."
+     ]
+    },
+    {
+     "h": "Thành tích, sáng kiến",
+     "items": [
+      "Năm 2025: Tập thể lao động tiên tiến (Giám đốc bệnh viện khen thưởng).",
+      "Năm 2025: 01 điều dưỡng đạt giải Nhì Hội thi tay nghề cấp bệnh viện.",
+      "Cải tiến: đặt điện thoại gọi điều dưỡng tại phòng bệnh."
+     ]
+    }
+   ],
+   "message": "Điều dưỡng Khoa Nội tổng quát luôn tận tâm chăm sóc, đồng hành và lắng nghe. Kính chúc quý cô chú mau chóng hồi phục sức khỏe, an tâm điều trị.",
+   "photos": [
+    [
+     "img/khoa/noi-tq-01.jpg",
+     "Tập thể điều dưỡng Khoa Nội tổng quát"
+    ],
+    [
+     "img/khoa/noi-tq-02.jpg",
+     "Điều dưỡng đo dấu hiệu sinh tồn cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-03.jpg",
+     "Điều dưỡng tư vấn sức khỏe cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-04.jpg",
+     "Điều dưỡng vỗ lưng cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-05.jpg",
+     "Điều dưỡng cho người bệnh khí dung"
+    ],
+    [
+     "img/khoa/noi-tq-06.jpg",
+     "Điều dưỡng đo điện tim cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-07.jpg",
+     "Điều dưỡng thực hiện thuốc cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-08.jpg",
+     "Điện thoại gọi nhân viên đặt tại phòng bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-09.jpg",
+     "Máy đo điện tim kết nối mạng nội bộ"
+    ]
+   ],
+   "video": {
+    "src": "video/khoa/noi-tq.mp4",
+    "poster": "video/khoa/noi-tq.jpg",
+    "caption": "Video giới thiệu Khoa Nội tổng quát (khoảng 1 phút)"
+   }
+  },
+  "noi-th": {
+   "name": "Khoa Nội tiêu hóa",
+   "updated": "2026-11-21",
+   "intro": "Tiếp nhận, khám, điều trị và chăm sóc người bệnh mắc các bệnh lý đường tiêu hóa, gan mật và tụy; theo dõi sát, phát hiện và xử trí kịp thời diễn biến bất thường.",
+   "facts": [
+    [
+     "Vị trí",
+     "Lầu 2, Khu B"
+    ],
+    [
+     "Giường bệnh",
+     "25 giường kế hoạch"
+    ],
+    [
+     "Nhân lực",
+     "08 điều dưỡng: 3 đại học, 4 cao đẳng, 1 trung cấp"
+    ],
+    [
+     "Hoạt động",
+     "24/24 giờ"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Tiếp nhận, khám, điều trị và chăm sóc người bệnh mắc các bệnh lý đường tiêu hóa, gan mật và tụy.",
+      "Theo dõi, phát hiện và xử trí kịp thời các diễn biến bất thường, hạn chế biến chứng trong quá trình điều trị.",
+      "Chăm sóc toàn diện, bảo đảm an toàn, nâng cao chất lượng điều trị và sự hài lòng của người bệnh."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Tiêm truyền, sử dụng thuốc, truyền dịch, lấy máu xét nghiệm và theo dõi dấu hiệu sinh tồn.",
+      "Chăm sóc người bệnh xuất huyết tiêu hóa, xơ gan, viêm gan, viêm tụy, viêm loét dạ dày – tá tràng và các bệnh lý tiêu hóa khác.",
+      "Chuẩn bị người bệnh trước và chăm sóc sau nội soi tiêu hóa, siêu âm và các cận lâm sàng liên quan."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Theo dõi sát người bệnh, đặc biệt các trường hợp xuất huyết tiêu hóa và bệnh lý gan mật nặng.",
+      "Phòng ngừa té ngã, phòng loét tì đè, kiểm soát nhiễm khuẩn và an toàn trong sử dụng thuốc.",
+      "Bàn giao người bệnh theo ISBAR, bảo đảm thông tin liên tục, chính xác giữa hai tua trực."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Chế độ ăn uống hợp lý, ăn chín uống sôi, vệ sinh an toàn thực phẩm, hạn chế thực phẩm gây kích ứng đường tiêu hóa.",
+      "Hạn chế rượu bia, thuốc lá; tuân thủ điều trị và tái khám đúng hẹn.",
+      "Tư vấn trực tiếp tại giường bệnh, kết hợp tờ rơi, poster."
+     ]
+    },
+    {
+     "h": "Sáng kiến, cải tiến",
+     "items": [
+      "Phòng bệnh có màn che giữa hai giường, bảo đảm riêng tư khi thăm khám, làm thủ thuật và vệ sinh cá nhân.",
+      "Tăng cường áp dụng bảng kiểm an toàn người bệnh."
+     ]
+    }
+   ],
+   "message": "Sức khỏe của người bệnh là sự quan tâm và trách nhiệm của chúng tôi. Rất mong người bệnh và thân nhân phối hợp, tuân thủ hướng dẫn điều trị để phục hồi tốt nhất."
+  },
+  "nhi": {
+   "name": "Khoa Nhi",
+   "updated": "2026-11-21",
+   "intro": "Tiếp nhận khám, cấp cứu và điều trị các bệnh cho trẻ dưới 16 tuổi. Khoa được xây mới khang trang, đầy đủ tiện nghi, thiết bị hiện đại và sẵn sàng cấp cứu 24/24.",
+   "facts": [
+    [
+     "Vị trí",
+     "Tầng 1, Khu A"
+    ],
+    [
+     "Giường bệnh",
+     "55 giường kế hoạch / 60 giường thực kê"
+    ],
+    [
+     "Khám ngoại trú BHYT",
+     "Thứ Hai – Thứ Sáu: 7g00 – 11g00, 13g00 – 17g00; Thứ Bảy: 7g00 – 11g00; Chủ nhật: khám thu phí"
+    ],
+    [
+     "Cấp cứu",
+     "24/24 giờ"
+    ],
+    [
+     "Nhân lực",
+     "15 điều dưỡng: 2 đại học, 13 cao đẳng"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Bệnh lý thường gặp được khám, điều trị",
+     "items": [
+      "Hô hấp: viêm họng, viêm amidan, viêm phổi, hen (suyễn), viêm phế quản.",
+      "Tiêu hóa: rối loạn tiêu hóa, nhiễm trùng đường ruột, hội chứng lỵ.",
+      "Truyền nhiễm: sốt xuất huyết, quai bị, sởi, thủy đậu, viêm gan, tay chân miệng.",
+      "Thận, tiết niệu: nhiễm trùng đường tiểu, viêm cầu thận cấp, hội chứng thận hư.",
+      "Sơ sinh: non tháng, suy hô hấp, viêm phổi, vàng da sơ sinh; chăm sóc trẻ bằng phương pháp Kangaroo.",
+      "Chuyển hóa, nội tiết, dinh dưỡng: suy dinh dưỡng, còi xương, thiếu canxi; phát hiện sớm bệnh về máu.",
+      "Tim mạch: tăng huyết áp ở trẻ, thấp khớp cấp, tim bẩm sinh.",
+      "Khám sức khỏe, theo dõi định kỳ theo nhu cầu."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Chăm sóc trẻ sơ sinh và chiếu đèn điều trị vàng da.",
+      "Thiết lập đường truyền tĩnh mạch khó ở trẻ em, ứng dụng thang điểm DIVA.",
+      "Theo dõi, đánh giá và phòng ngừa thoát mạch khi truyền dịch ở trẻ.",
+      "Sử dụng, theo dõi máy truyền dịch, bơm tiêm điện.",
+      "Khí dung, thở oxy, theo dõi SpO2 qua monitor."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Chăm sóc người bệnh toàn diện, phối hợp chặt chẽ giữa bác sĩ, điều dưỡng và người nhà.",
+      "Theo dõi sát dấu hiệu sinh tồn, diễn biến bệnh, phát hiện sớm dấu hiệu bất thường, chú trọng trẻ sơ sinh, trẻ bệnh nặng.",
+      "An toàn dùng thuốc theo nguyên tắc 5 đúng; khuyến khích người nhà cùng kiểm tra thông tin thuốc trước khi điều dưỡng thực hiện.",
+      "Theo dõi vị trí catheter tĩnh mạch ngoại vi, phát hiện sớm thoát mạch, thấm dịch, viêm tĩnh mạch.",
+      "Bàn giao người bệnh theo SBAR."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Bệnh thường gặp ở trẻ: viêm phổi, sốt xuất huyết, tay chân miệng, vàng da sơ sinh, nhiễm trùng đường ruột, viêm thanh khí quản.",
+      "Tư vấn trực tiếp tại giường, hướng dẫn khi nhập viện và ra viện; tờ rơi, poster và tài liệu truyền thông."
+     ]
+    },
+    {
+     "h": "Sáng kiến, cải tiến",
+     "items": [
+      "Chuẩn hóa kiểm tra xe tiêm, tủ thuốc trực, tủ dụng cụ, tủ cấp cứu ngưng tim – ngưng thở và trang thiết bị.",
+      "Ứng dụng mã QR trong quản lý, kiểm tra và bàn giao trang thiết bị.",
+      "Xây dựng bộ công cụ theo dõi, đánh giá thoát mạch ngoại vi ở trẻ em (Pediatric PIV Infiltration).",
+      "Đào tạo kỹ thuật thiết lập đường truyền tĩnh mạch khó ở trẻ, ứng dụng thang điểm DIVA; chuẩn hóa bàn giao theo SBAR."
+     ]
+    }
+   ],
+   "message": "Mỗi em bé là một niềm hi vọng, mỗi nụ cười của trẻ là động lực để chúng tôi không ngừng nỗ lực. Khoa Nhi – Tận tâm chăm sóc – An toàn điều trị – Trọn vẹn yêu thương.",
+   "photos": [
+    [
+     "img/khoa/nhi-01.jpg",
+     "Tập thể Khoa Nhi"
+    ],
+    [
+     "img/khoa/nhi-02.jpg",
+     "Điều dưỡng Khoa Nhi"
+    ],
+    [
+     "img/khoa/nhi-03.jpg",
+     "Không gian Khoa Nhi xây mới"
+    ],
+    [
+     "img/khoa/nhi-04.jpg",
+     "Điều dưỡng chăm sóc trẻ sơ sinh"
+    ],
+    [
+     "img/khoa/nhi-05.jpg",
+     "Chiếu đèn điều trị vàng da sơ sinh"
+    ]
+   ],
+   "video": {
+    "src": "video/khoa/nhi.mp4",
+    "poster": "video/khoa/nhi.jpg",
+    "caption": "Video giới thiệu Khoa Nhi (khoảng 1 phút)"
+   }
+  },
+  "phu-san": {
+   "name": "Khoa Phụ sản",
+   "updated": "2026-11-21",
+   "intro": "Khám, chẩn đoán, điều trị bệnh lý sản khoa và phụ khoa; quản lý thai kỳ, đỡ đẻ, phẫu thuật sản phụ khoa và chăm sóc sức khỏe bà mẹ, trẻ sơ sinh trước, trong và sau sinh.",
+   "facts": [
+    [
+     "Hộ sinh trưởng",
+     "CNHS. Trần Thị Minh Trang"
+    ],
+    [
+     "Vị trí",
+     "Tầng 1, Khu B"
+    ],
+    [
+     "Giường bệnh",
+     "40 giường kế hoạch / 40 giường thực kê"
+    ],
+    [
+     "Giờ hành chính",
+     "Thứ Hai – Thứ Sáu: 7g00 – 11g00, 13g00 – 17g00; trực 24/24 tất cả các ngày"
+    ],
+    [
+     "Nhân lực",
+     "20 hộ sinh: 5 đại học, 14 cao đẳng, 1 trung cấp"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Khám, chẩn đoán, điều trị các bệnh lý sản khoa và phụ khoa.",
+      "Quản lý, theo dõi thai kỳ và chăm sóc sức khỏe phụ nữ mang thai.",
+      "Đỡ đẻ, phẫu thuật sản phụ khoa và các thủ thuật chuyên môn theo quy định.",
+      "Chăm sóc sức khỏe bà mẹ và trẻ sơ sinh trước, trong và sau sinh.",
+      "Tư vấn sức khỏe sinh sản, kế hoạch hóa gia đình, phòng ngừa bệnh phụ khoa."
+     ]
+    },
+    {
+     "h": "Kỹ thuật, dịch vụ nổi bật của hộ sinh",
+     "items": [
+      "Khám, theo dõi thai kỳ, theo dõi chuyển dạ, đỡ đẻ thường và chăm sóc thiết yếu bà mẹ, trẻ sơ sinh.",
+      "Chăm sóc sản phụ sau sinh, chăm sóc vết may tầng sinh môn.",
+      "Chăm sóc trẻ sơ sinh: tắm bé, giữ ấm, chăm sóc rốn, hỗ trợ bé bú mẹ.",
+      "Tư vấn nuôi con bằng sữa mẹ, hướng dẫn tư thế bú và cách cho bé bú.",
+      "Dịch vụ xông phụ khoa; chiếu tia plasma vết mổ, vết may tầng sinh môn và rốn bé."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Đánh giá nguy cơ té ngã cho thai phụ, người bệnh khi nhập khoa; hướng dẫn người nhà kéo thanh chắn giường, điều chỉnh độ cao, khóa bánh xe.",
+      "Bàn giao người bệnh giữa các ca theo ISBAR, tại giường bệnh.",
+      "Làm việc theo đội chăm sóc, mỗi đội phụ trách một nhóm buồng bệnh."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Chủ đề: nuôi con bằng sữa mẹ, xử trí trẻ sặc sữa, cho bé bú đúng cách, chăm sóc sau sinh, sau mổ lấy thai, kế hoạch hóa gia đình.",
+      "Hình thức: nói chuyện giáo dục sức khỏe hằng tuần tại khoa, tờ bướm, poster có mã QR."
+     ]
+    },
+    {
+     "h": "Thành tích, sáng kiến",
+     "items": [
+      "Năm 2025: 01 hộ sinh đạt giải Nhất Hội thi “Rung chuông vàng” bệnh viện.",
+      "Sáng kiến bảng kiểm theo dõi sản phụ trong 24 giờ sau sinh.",
+      "Nâng cao tỷ lệ bú mẹ trong giờ đầu sau sinh."
+     ]
+    }
+   ],
+   "message": "Người nhà đồng hành – Nhân viên y tế chia sẻ – Mẹ và bé an toàn. Mỗi em bé chào đời khỏe mạnh là niềm hạnh phúc của gia đình và niềm tự hào của nhân viên y tế.",
+   "photos": [
+    [
+     "img/khoa/phu-san-01.jpg",
+     "Tập thể Khoa Phụ sản"
+    ],
+    [
+     "img/khoa/phu-san-02.jpg",
+     "Chăm sóc thiết yếu bà mẹ và trẻ sơ sinh sau mổ"
+    ],
+    [
+     "img/khoa/phu-san-03.jpg",
+     "Chiếu tia plasma chăm sóc rốn bé"
+    ],
+    [
+     "img/khoa/phu-san-04.jpg",
+     "Hộ sinh hướng dẫn mẹ cho bé bú"
+    ],
+    [
+     "img/khoa/phu-san-05.jpg",
+     "Khám thai, theo dõi tim thai bằng monitor"
+    ],
+    [
+     "img/khoa/phu-san-06.jpg",
+     "Lấy mẫu máu gót chân cho bé"
+    ],
+    [
+     "img/khoa/phu-san-07.jpg",
+     "Massage cho bé"
+    ],
+    [
+     "img/khoa/phu-san-08.jpg",
+     "Tắm bé"
+    ],
+    [
+     "img/khoa/phu-san-09.jpg",
+     "Theo dõi cơn gò chuyển dạ"
+    ]
+   ]
+  },
+  "cdha": {
+   "name": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng",
+   "updated": "2026-11-21",
+   "intro": "Thực hiện các kỹ thuật chẩn đoán hình ảnh và thăm dò chức năng hỗ trợ bác sĩ chẩn đoán, theo dõi bệnh; điều dưỡng, kỹ thuật y tiếp đón, chuẩn bị, theo dõi và hỗ trợ người bệnh suốt quá trình thực hiện kỹ thuật.",
+   "facts": [
+    [
+     "Kỹ thuật y trưởng",
+     "YS. Điền Văn On"
+    ],
+    [
+     "Vị trí",
+     "Tầng trệt, Khu B"
+    ],
+    [
+     "Giờ hành chính",
+     "Thứ Hai – Thứ Sáu: 7g00 – 17g00; Thứ Bảy: 7g00 – 11g00. Trực 24/24 tất cả các ngày"
+    ],
+    [
+     "Nhân lực",
+     "20 người: 14 điều dưỡng, 6 kỹ thuật y"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Thực hiện kỹ thuật chẩn đoán hình ảnh và thăm dò chức năng hỗ trợ chẩn đoán, theo dõi bệnh.",
+      "Tiếp đón, hướng dẫn, chuẩn bị người bệnh trước kỹ thuật; phối hợp bác sĩ và theo dõi người bệnh sau thủ thuật.",
+      "Quản lý, vận hành, bảo quản trang thiết bị; tuân thủ kiểm soát nhiễm khuẩn, an toàn bức xạ và an toàn người bệnh.",
+      "Phối hợp các khoa, phòng để khám, chẩn đoán và điều trị nhanh chóng, chính xác."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Chẩn đoán hình ảnh: X-quang thường quy, chụp đường mật qua Kehr, chụp tử cung – vòi trứng (HSG), CT-scanner răng toàn hàm, đo loãng xương bằng máy DEXA, siêu âm.",
+      "Thăm dò chức năng: điện tim, holter điện tim, đo chức năng hô hấp, điện cơ, điện não, lưu huyết não, nội soi tiêu hóa.",
+      "Chăm sóc, hỗ trợ đặc biệt cho người cao tuổi, trẻ em, người hạn chế vận động."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Kiểm tra, đối chiếu thông tin người bệnh, chỉ định và điều kiện an toàn trước khi thực hiện; hỏi tình trạng mang thai, tiền sử dị ứng, yếu tố nguy cơ khi dùng thuốc cản quang.",
+      "Hướng dẫn tư thế, giải thích quy trình để người bệnh an tâm, hợp tác.",
+      "Theo dõi người bệnh trong và sau kỹ thuật, phát hiện sớm dấu hiệu bất thường, phòng ngừa sự cố y khoa.",
+      "Bàn giao, trao đổi thông tin giữa nhân viên đầy đủ, chính xác."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Hướng dẫn chuẩn bị trước kỹ thuật: nhịn ăn khi có chỉ định, trang phục phù hợp, tháo bỏ vật dụng kim loại.",
+      "Báo cho nhân viên y tế nếu đang mang thai hoặc nghi ngờ mang thai trước khi chụp có tia X.",
+      "Hướng dẫn theo dõi sức khỏe sau kỹ thuật, báo ngay khi có dấu hiệu bất thường.",
+      "Tư vấn trực tiếp tại khu tiếp đón, tờ rơi và tài liệu truyền thông."
+     ]
+    },
+    {
+     "h": "Thành tích, sáng kiến",
+     "items": [
+      "Giải Ba thực hiện 5S năm 2026.",
+      "Cải tiến quy trình tiếp đón, hướng dẫn và chuẩn bị người bệnh, rút ngắn thời gian chờ."
+     ]
+    }
+   ],
+   "message": "Lấy người bệnh làm trung tâm, đội ngũ điều dưỡng và kỹ thuật y luôn tận tâm, đồng hành cùng người bệnh trong từng bước thăm khám, hướng đến an toàn, chính xác, nhanh chóng.",
+   "photos": [
+    [
+     "img/khoa/cdha-01.jpg",
+     "Tập thể Khoa Chẩn đoán hình ảnh – Thăm dò chức năng"
+    ],
+    [
+     "img/khoa/cdha-02.jpg",
+     "Siêu âm"
+    ],
+    [
+     "img/khoa/cdha-03.jpg",
+     "Chuẩn bị người bệnh chụp cắt lớp vi tính"
+    ],
+    [
+     "img/khoa/cdha-04.jpg",
+     "Hướng dẫn tư thế người bệnh trước khi chụp"
+    ],
+    [
+     "img/khoa/cdha-05.jpg",
+     "Phối hợp thực hiện nội soi tiêu hóa"
+    ],
+    [
+     "img/khoa/cdha-06.jpg",
+     "Thực hiện kỹ thuật thăm dò chức năng"
+    ],
+    [
+     "img/khoa/cdha-07.jpg",
+     "Chụp X-quang: hướng dẫn tư thế cho người bệnh"
+    ],
+    [
+     "img/khoa/cdha-08.jpg",
+     "Ghi điện cơ, điện não"
+    ]
+   ],
+   "video": {
+    "src": "video/khoa/cdha.mp4",
+    "poster": "video/khoa/cdha.jpg",
+    "caption": "Video giới thiệu Khoa Chẩn đoán hình ảnh - Thăm dò chức năng (khoảng 1 phút)"
+   }
+  },
+  "kham-benh": {
+   "name": "Khoa Khám bệnh",
+   "updated": "2026-11-21",
+   "intro": "“Ân cần tiếp đón – Phục vụ tận tình – An tâm điều trị”. Khoa Khám bệnh là đầu mối tiếp đón, tổ chức khám bệnh, tư vấn và kết nối người bệnh với các chuyên khoa, cận lâm sàng trong bệnh viện.",
+   "facts": [
+    [
+     "Vị trí",
+     "Mặt tiền đường Phan Đình Phùng"
+    ],
+    [
+     "Buồng khám",
+     "46 buồng khám, trong đó 06 buồng khám theo yêu cầu"
+    ],
+    [
+     "Nhân sự",
+     "55 người: 12 bác sĩ, 36 điều dưỡng, 04 dược sĩ, 03 nhân viên khác"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ],
+    [
+     "Liên hệ công tác",
+     "0296 3562 678"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Khám bảo hiểm y tế, khám theo yêu cầu và khám thu phí.",
+      "Khám và cấp giấy chứng nhận sức khỏe: lái xe, xin việc, định kỳ, bổ sung hồ sơ.",
+      "Buồng khám nhiều chuyên khoa: nội, ngoại, phụ sản, nhi, mắt, tai – mũi – họng, răng – hàm – mặt, da liễu, sức khỏe tâm thần, y học cổ truyền, phục hồi chức năng, tư vấn dinh dưỡng, hiếm muộn.",
+      "Phối hợp các khoa, phòng hướng dẫn người bệnh làm xét nghiệm, chẩn đoán hình ảnh và dịch vụ cần thiết."
+     ]
+    },
+    {
+     "h": "Điều dưỡng tại Tổ Nhận bệnh",
+     "items": [
+      "Tiếp đón, hướng dẫn và hỗ trợ thủ tục đăng ký khám.",
+      "Kiểm tra, đối chiếu thông tin hành chính; hướng dẫn đến đúng buồng khám.",
+      "Điều phối người bệnh trong lúc chờ khám, hạn chế ùn tắc, giảm thời gian chờ."
+     ]
+    },
+    {
+     "h": "Điều dưỡng tại buồng khám",
+     "items": [
+      "Hỗ trợ người bệnh trước, trong và sau khi khám; đo dấu hiệu sinh tồn.",
+      "Hỗ trợ bác sĩ khám bệnh, thực hiện y lệnh và kỹ thuật điều dưỡng trong phạm vi chuyên môn.",
+      "Hướng dẫn làm xét nghiệm, chẩn đoán hình ảnh, thủ thuật và cận lâm sàng.",
+      "Tư vấn chăm sóc sức khỏe, sử dụng thuốc và thực hiện chỉ định sau khám."
+     ]
+    },
+    {
+     "h": "Định hướng hoạt động",
+     "items": [
+      "Lấy người bệnh làm trung tâm; cải tiến quy trình tiếp đón và khám bệnh, xây dựng phong cách phục vụ chuyên nghiệp, thân thiện và trách nhiệm."
+     ]
+    }
+   ]
+  },
+  "lien-ck": {
+   "name": "Khoa Liên chuyên khoa",
+   "updated": "2026-11-21",
+   "intro": "Chăm sóc người bệnh các chuyên khoa Mắt, Tai mũi họng, Răng hàm mặt. Điều dưỡng phối hợp bác sĩ trong khám, đo, chuẩn bị và chăm sóc người bệnh trước, trong và sau phẫu thuật, thủ thuật.",
+   "facts": [
+    [
+     "Thuộc",
+     "Bệnh viện Đa khoa Nhật Tân"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ],
+    [
+     "Liên hệ công tác",
+     "0296 3562 678"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chuyên khoa Mắt: hoạt động của điều dưỡng",
+     "items": [
+      "Đo khúc xạ tự động, đo sinh trắc nhãn cầu (tính công suất thủy tinh thể nhân tạo) trước mổ.",
+      "Chăm sóc, vệ sinh mắt và thực hiện thủ thuật chăm sóc mắt theo y lệnh.",
+      "Phụ giúp bác sĩ trong phẫu thuật mắt, chuẩn bị dụng cụ vô khuẩn.",
+      "Hướng dẫn người bệnh chăm sóc sau mổ đục thủy tinh thể và lịch tái khám."
+     ]
+    },
+    {
+     "h": "Chuyên khoa Răng hàm mặt: bệnh thường gặp năm 2026",
+     "items": [
+      "Áp xe quanh chân răng, áp xe quanh chóp răng.",
+      "Viêm quanh răng (nha chu), viêm lợi (nướu) cấp tính.",
+      "Hội chứng mọc răng (răng khôn mọc lệch, mọc ngầm).",
+      "Viêm niêm mạc miệng (loét miệng).",
+      "Viêm tủy răng, sâu răng.",
+      "Nang nguồn gốc răng.",
+      "Loạn năng khớp thái dương hàm."
+     ]
+    }
+   ],
+   "photos": [
+    [
+     "img/khoa/lien-ck-01.jpg",
+     "Phẫu thuật mắt dưới kính hiển vi"
+    ],
+    [
+     "img/khoa/lien-ck-02.jpg",
+     "Điều dưỡng đo khúc xạ tự động cho người bệnh"
+    ],
+    [
+     "img/khoa/lien-ck-03.jpg",
+     "Đo sinh trắc nhãn cầu trước mổ đục thủy tinh thể"
+    ],
+    [
+     "img/khoa/lien-ck-04.jpg",
+     "Điều dưỡng chăm sóc, vệ sinh mắt cho người bệnh"
+    ],
+    [
+     "img/khoa/lien-ck-05.jpg",
+     "Điều dưỡng thực hiện thủ thuật chăm sóc mắt"
+    ],
+    [
+     "img/khoa/lien-ck-06.jpg",
+     "Điều dưỡng chăm sóc mắt cho người bệnh"
+    ],
+    [
+     "img/khoa/lien-ck-07.jpg",
+     "Điều dưỡng phụ giúp bác sĩ phẫu thuật mắt"
+    ]
+   ],
+   "video": {
+    "src": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.mp4",
+    "poster": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.jpg",
+    "caption": "Video: Chăm sóc mắt sau mổ đục thủy tinh thể (khoảng 1 phút)"
+   }
   }
  },
  "huongdan": {
@@ -6264,6 +7088,469 @@ window.PULSE_DATA = {
     {
      "slug": "so-cuu-bong",
      "why": "Sơ cứu đúng trong 20 phút đầu, không bôi kem đánh răng, nước mắm."
+    }
+   ]
+  },
+  "dieu-duong": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    },
+    {
+     "slug": "dung-thuoc-an-toan"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    },
+    {
+     "slug": "rua-tay-dung-cach"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "cac-buoc-di-kham-benh"
+    }
+   ]
+  },
+  "kham-benh": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "cac-buoc-di-kham-benh"
+    },
+    {
+     "slug": "tang-huyet-ap"
+    },
+    {
+     "slug": "dai-thao-duong"
+    },
+    {
+     "slug": "viem-phe-quan"
+    },
+    {
+     "slug": "cum"
+    },
+    {
+     "slug": "chuan-bi-lay-mau-xet-nghiem"
+    },
+    {
+     "slug": "chuan-bi-sieu-am-chup-phim"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    }
+   ]
+  },
+  "noi-tq": {
+   "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "viem-phe-quan",
+     "why": "Viêm phổi: nhiều nhất tại khoa năm 2026"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien",
+     "why": "Chóng mặt (thứ 2): phòng té ngã"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach",
+     "why": "Nhiễm trùng tiết niệu, nhiễm trùng huyết"
+    },
+    {
+     "slug": "tang-huyet-ap",
+     "why": "Thứ 4 trong 10 bệnh thường gặp"
+    },
+    {
+     "slug": "dai-thao-duong",
+     "why": "Thứ 6 trong 10 bệnh thường gặp"
+    },
+    {
+     "slug": "nhan-biet-som-dot-quy",
+     "why": "Nhồi máu não (thứ 7)"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh",
+     "why": "Thiếu máu mạn, suy tim"
+    },
+    {
+     "slug": "copd"
+    },
+    {
+     "slug": "hen-phe-quan"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    },
+    {
+     "slug": "dung-thuoc-an-toan"
+    }
+   ]
+  },
+  "noi-th": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "viem-gan-b"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "dung-thuoc-an-toan"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    },
+    {
+     "slug": "chuan-bi-lay-mau-xet-nghiem"
+    },
+    {
+     "slug": "chuan-bi-sieu-am-chup-phim"
+    }
+   ]
+  },
+  "truyen-nhiem": {
+   "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "viem-phe-quan",
+     "why": "Viêm phổi, viêm phế quản phổi: nhiều nhất tại khoa năm 2026"
+    },
+    {
+     "slug": "sot-xuat-huyet",
+     "why": "Thứ 2 trong 10 bệnh thường gặp"
+    },
+    {
+     "slug": "lao-phoi",
+     "why": "Thứ 3 trong 10 bệnh thường gặp"
+    },
+    {
+     "slug": "cum",
+     "why": "Nhiễm virus"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach",
+     "why": "Nhiễm khuẩn tiết niệu, đường ruột, nhiễm trùng huyết"
+    },
+    {
+     "slug": "rua-tay-dung-cach",
+     "why": "Phòng lây nhiễm quai bị, thủy đậu, tiêu chảy"
+    },
+    {
+     "slug": "soi"
+    },
+    {
+     "slug": "viem-gan-b"
+    },
+    {
+     "slug": "tay-chan-mieng-o-tre"
+    }
+   ]
+  },
+  "nhi": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "tay-chan-mieng-o-tre"
+    },
+    {
+     "slug": "soi"
+    },
+    {
+     "slug": "sot-xuat-huyet"
+    },
+    {
+     "slug": "viem-phe-quan"
+    },
+    {
+     "slug": "cum"
+    },
+    {
+     "slug": "hen-phe-quan"
+    },
+    {
+     "slug": "theo-doi-tre-sau-tiem-chung"
+    },
+    {
+     "slug": "nuoi-con-bang-sua-me"
+    },
+    {
+     "slug": "tat-khuc-xa"
+    },
+    {
+     "slug": "so-cuu-bong"
+    },
+    {
+     "slug": "rua-tay-dung-cach"
+    }
+   ]
+  },
+  "phu-san": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "dau-hieu-nguy-hiem-khi-mang-thai"
+    },
+    {
+     "slug": "nuoi-con-bang-sua-me"
+    },
+    {
+     "slug": "cham-soc-vet-mo-tai-nha"
+    },
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "theo-doi-tre-sau-tiem-chung"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "rua-tay-dung-cach"
+    }
+   ]
+  },
+  "ngoai-tq": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "cham-soc-vet-mo-tai-nha"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    }
+   ]
+  },
+  "ngoai-ct": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "cham-soc-bo-bot"
+    },
+    {
+     "slug": "tap-van-dong-tai-nha"
+    },
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "cham-soc-vet-mo-tai-nha"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    }
+   ]
+  },
+  "ptgmhs": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "cham-soc-vet-mo-tai-nha"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    }
+   ]
+  },
+  "lien-ck": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "viem-ket-mac"
+    },
+    {
+     "slug": "duc-thuy-tinh-the"
+    },
+    {
+     "slug": "tat-khuc-xa"
+    },
+    {
+     "slug": "viem-phe-quan"
+    },
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    }
+   ]
+  },
+  "yhct": {
+   "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "tap-van-dong-tai-nha",
+     "why": "Thoát vị đĩa đệm, thoái hóa cột sống, sau gãy xương, liệt dây VII"
+    },
+    {
+     "slug": "nhan-biet-som-dot-quy",
+     "why": "Liệt nửa người do tai biến mạch máu não"
+    },
+    {
+     "slug": "cham-soc-bo-bot",
+     "why": "Gãy cổ xương đùi, xương cánh tay, đầu dưới xương quay"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien",
+     "why": "Người cao tuổi, sau gãy xương, liệt nửa người"
+    },
+    {
+     "slug": "tang-huyet-ap"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    }
+   ]
+  },
+  "xet-nghiem": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "chuan-bi-lay-mau-xet-nghiem"
+    },
+    {
+     "slug": "dai-thao-duong"
+    },
+    {
+     "slug": "viem-gan-b"
+    }
+   ]
+  },
+  "cdha": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "chuan-bi-sieu-am-chup-phim"
+    },
+    {
+     "slug": "dau-hieu-nguy-hiem-khi-mang-thai"
+    },
+    {
+     "slug": "cac-buoc-di-kham-benh"
+    }
+   ]
+  },
+  "duoc": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "dung-thuoc-an-toan"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    },
+    {
+     "slug": "hen-phe-quan"
+    }
+   ]
+  },
+  "ksnk": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "rua-tay-dung-cach"
+    },
+    {
+     "slug": "cum"
+    },
+    {
+     "slug": "lao-phoi"
+    },
+    {
+     "slug": "sot-xuat-huyet"
+    },
+    {
+     "slug": "soi"
+    },
+    {
+     "slug": "tay-chan-mieng-o-tre"
+    }
+   ]
+  },
+  "dinh-duong": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "dai-thao-duong"
+    },
+    {
+     "slug": "tang-huyet-ap"
+    },
+    {
+     "slug": "nuoi-con-bang-sua-me"
+    },
+    {
+     "slug": "cham-soc-cau-noi-fav"
+    }
+   ]
+  },
+  "tnt": {
+   "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "cham-soc-cau-noi-fav",
+     "why": "Suy thận mạn giai đoạn cuối: bảo vệ đường vào mạch máu"
+    },
+    {
+     "slug": "tang-huyet-ap",
+     "why": "Thứ 2; kèm hạ huyết áp trong chạy thận"
+    },
+    {
+     "slug": "dai-thao-duong",
+     "why": "Đái tháo đường type 2"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh",
+     "why": "Tăng kali, hạ canxi, dư dịch, táo bón, thiếu máu"
+    },
+    {
+     "slug": "dung-thuoc-an-toan",
+     "why": "Thuốc huyết áp, sắt, tạo máu, chống ngứa"
+    }
+   ]
+  },
+  "tc": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "theo-doi-tre-sau-tiem-chung"
+    },
+    {
+     "slug": "soi"
+    },
+    {
+     "slug": "viem-gan-b"
+    },
+    {
+     "slug": "cum"
     }
    ]
   }

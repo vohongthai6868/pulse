@@ -842,3 +842,21 @@ a.cite { cursor: pointer; }
 .unit-also { font-size: 14.5px; color: var(--text-2); }
 .unit-also a { font-weight: 700; color: var(--brand, #0b4f9c); }
 :root[data-theme="dark"] .unit-also a { color: #8fc1ff; }
+/* Nút thu gọn mục (21/11/2026) */
+.sec-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.sec-head h2 { margin-bottom: 0; flex: 1 1 auto; min-width: 0; }
+.page-section > .sec-head { margin-bottom: 12px; }
+.sec-toggle, .sec-more { min-height: 40px; padding: 6px 14px; border-radius: 999px; border: 1.5px solid var(--brand, #0b4f9c); background: var(--surface); color: var(--brand, #0b4f9c); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
+.sec-more { margin-top: 10px; }
+.sec-toggle[aria-expanded="false"] { background: var(--brand, #0b4f9c); color: #fff; }
+.sec-toggle:focus-visible, .sec-more:focus-visible { outline: 3px solid var(--brand-red, #d0202a); outline-offset: 2px; }
+:root[data-theme="dark"] .sec-toggle, :root[data-theme="dark"] .sec-more { color: #8fc1ff; border-color: #8fc1ff; background: var(--surface-2); }
+:root[data-theme="dark"] .sec-toggle[aria-expanded="false"] { background: #8fc1ff; color: #0b1a33; }
+.sec-body > .khoa-facts { margin-top: 0; }
+/* Hình minh họa SBAR, AIDET (21/11/2026) */
+.comm-fig { margin: 4px 0 12px; }
+.comm-fig img { display: block; width: 100%; max-width: 100%; height: auto; border-radius: 14px; }
+
+.reel { margin: 12px auto 0; max-width: 360px; }
+.reel video { width: 100%; aspect-ratio: 9 / 16; height: auto; border-radius: 14px; background: #0b2340; display: block; }
+.reel figcaption { margin-top: 6px; font-size: 13px; color: var(--muted); line-height: 1.45; text-align: center; }
