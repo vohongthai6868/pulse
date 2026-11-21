@@ -6811,6 +6811,18 @@ window.PULSE_DATA = {
       "Phụ giúp bác sĩ trong phẫu thuật mắt, chuẩn bị dụng cụ vô khuẩn.",
       "Hướng dẫn người bệnh chăm sóc sau mổ đục thủy tinh thể và lịch tái khám."
      ]
+    },
+    {
+     "h": "Chuyên khoa Răng hàm mặt: bệnh thường gặp năm 2026",
+     "items": [
+      "Áp xe quanh chân răng, áp xe quanh chóp răng.",
+      "Viêm quanh răng (nha chu), viêm lợi (nướu) cấp tính.",
+      "Hội chứng mọc răng (răng khôn mọc lệch, mọc ngầm).",
+      "Viêm niêm mạc miệng (loét miệng).",
+      "Viêm tủy răng, sâu răng.",
+      "Nang nguồn gốc răng.",
+      "Loạn năng khớp thái dương hàm."
+     ]
     }
    ],
    "photos": [
