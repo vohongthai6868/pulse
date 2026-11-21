@@ -670,8 +670,8 @@
     var name = hit && hit.u ? hit.u.name : "";
     var list = unitGdskList(name), ml = mucluc(name);
     var why = {}; if (ml) ml.items.forEach(function (it) { why[it.slug] = it.why; });
-    var sec = el("section", { class: "page-section unit-gdsk" }, [el("h2", { text: ml ? L("Mục lục bài giáo dục sức khỏe của khoa", "Health education index") : L("Bài giáo dục sức khỏe của đơn vị", "Health education articles from this unit") })]);
-    if (ml && ml.intro) sec.appendChild(el("p", { class: "unit-guide-hint", text: ml.intro }));
+    var sec = el("section", { class: "page-section unit-gdsk" }, [el("h2", { text: ml ? L("Mục lục bài giáo dục sức khỏe của " + (/^Khoa /.test(name) ? "khoa" : "đơn vị"), "Health education index") : L("Bài giáo dục sức khỏe của đơn vị", "Health education articles from this unit") })]);
+    if (ml) sec.appendChild(el("p", { class: "unit-guide-hint", text: ml.intro || L("Sắp xếp theo bệnh, tình trạng thường gặp tại đơn vị trước. Bài dùng chung là bài của khoa khác, được đưa vào vì liên quan đến người bệnh của đơn vị.", "Ordered by the conditions most common in this unit. Shared articles come from other departments.") }));
     if (list.length) {
       sec.appendChild(el(ml ? "ol" : "ul", { class: "unit-gdsk-list" + (ml ? " unit-gdsk-ol" : "") }, list.map(function (tp, i) {
         var g = DATA.gdsk.groups[tp.group] || { color: "#0b4f9c" };

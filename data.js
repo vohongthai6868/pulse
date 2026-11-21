@@ -6266,6 +6266,437 @@ window.PULSE_DATA = {
      "why": "Sơ cứu đúng trong 20 phút đầu, không bôi kem đánh răng, nước mắm."
     }
    ]
+  },
+  "dieu-duong": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    },
+    {
+     "slug": "dung-thuoc-an-toan"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    },
+    {
+     "slug": "rua-tay-dung-cach"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "cac-buoc-di-kham-benh"
+    }
+   ]
+  },
+  "kham-benh": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "cac-buoc-di-kham-benh"
+    },
+    {
+     "slug": "tang-huyet-ap"
+    },
+    {
+     "slug": "dai-thao-duong"
+    },
+    {
+     "slug": "viem-phe-quan"
+    },
+    {
+     "slug": "cum"
+    },
+    {
+     "slug": "chuan-bi-lay-mau-xet-nghiem"
+    },
+    {
+     "slug": "chuan-bi-sieu-am-chup-phim"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    }
+   ]
+  },
+  "noi-tq": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "tang-huyet-ap"
+    },
+    {
+     "slug": "dai-thao-duong"
+    },
+    {
+     "slug": "nhan-biet-som-dot-quy"
+    },
+    {
+     "slug": "copd"
+    },
+    {
+     "slug": "hen-phe-quan"
+    },
+    {
+     "slug": "viem-phe-quan"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    },
+    {
+     "slug": "dung-thuoc-an-toan"
+    }
+   ]
+  },
+  "noi-th": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "viem-gan-b"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "dung-thuoc-an-toan"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    },
+    {
+     "slug": "chuan-bi-lay-mau-xet-nghiem"
+    },
+    {
+     "slug": "chuan-bi-sieu-am-chup-phim"
+    }
+   ]
+  },
+  "truyen-nhiem": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "sot-xuat-huyet"
+    },
+    {
+     "slug": "cum"
+    },
+    {
+     "slug": "lao-phoi"
+    },
+    {
+     "slug": "soi"
+    },
+    {
+     "slug": "viem-gan-b"
+    },
+    {
+     "slug": "tay-chan-mieng-o-tre"
+    },
+    {
+     "slug": "rua-tay-dung-cach"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    }
+   ]
+  },
+  "nhi": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "tay-chan-mieng-o-tre"
+    },
+    {
+     "slug": "soi"
+    },
+    {
+     "slug": "sot-xuat-huyet"
+    },
+    {
+     "slug": "viem-phe-quan"
+    },
+    {
+     "slug": "cum"
+    },
+    {
+     "slug": "hen-phe-quan"
+    },
+    {
+     "slug": "theo-doi-tre-sau-tiem-chung"
+    },
+    {
+     "slug": "nuoi-con-bang-sua-me"
+    },
+    {
+     "slug": "tat-khuc-xa"
+    },
+    {
+     "slug": "so-cuu-bong"
+    },
+    {
+     "slug": "rua-tay-dung-cach"
+    }
+   ]
+  },
+  "phu-san": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "dau-hieu-nguy-hiem-khi-mang-thai"
+    },
+    {
+     "slug": "nuoi-con-bang-sua-me"
+    },
+    {
+     "slug": "cham-soc-vet-mo-tai-nha"
+    },
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "theo-doi-tre-sau-tiem-chung"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "rua-tay-dung-cach"
+    }
+   ]
+  },
+  "ngoai-tq": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "cham-soc-vet-mo-tai-nha"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    }
+   ]
+  },
+  "ngoai-ct": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "cham-soc-bo-bot"
+    },
+    {
+     "slug": "tap-van-dong-tai-nha"
+    },
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "cham-soc-vet-mo-tai-nha"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    }
+   ]
+  },
+  "ptgmhs": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "cham-soc-vet-mo-tai-nha"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    }
+   ]
+  },
+  "lien-ck": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "viem-ket-mac"
+    },
+    {
+     "slug": "duc-thuy-tinh-the"
+    },
+    {
+     "slug": "tat-khuc-xa"
+    },
+    {
+     "slug": "viem-phe-quan"
+    },
+    {
+     "slug": "chuan-bi-truoc-mo"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    }
+   ]
+  },
+  "yhct": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "tap-van-dong-tai-nha"
+    },
+    {
+     "slug": "nhan-biet-som-dot-quy"
+    },
+    {
+     "slug": "tang-huyet-ap"
+    },
+    {
+     "slug": "phong-te-nga-khi-nam-vien"
+    },
+    {
+     "slug": "phong-loet-ti-de"
+    },
+    {
+     "slug": "cham-soc-bo-bot"
+    }
+   ]
+  },
+  "xet-nghiem": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "chuan-bi-lay-mau-xet-nghiem"
+    },
+    {
+     "slug": "dai-thao-duong"
+    },
+    {
+     "slug": "viem-gan-b"
+    }
+   ]
+  },
+  "cdha": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "chuan-bi-sieu-am-chup-phim"
+    },
+    {
+     "slug": "dau-hieu-nguy-hiem-khi-mang-thai"
+    },
+    {
+     "slug": "cac-buoc-di-kham-benh"
+    }
+   ]
+  },
+  "duoc": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "dung-thuoc-an-toan"
+    },
+    {
+     "slug": "dung-khang-sinh-dung-cach"
+    },
+    {
+     "slug": "hen-phe-quan"
+    }
+   ]
+  },
+  "ksnk": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "rua-tay-dung-cach"
+    },
+    {
+     "slug": "cum"
+    },
+    {
+     "slug": "lao-phoi"
+    },
+    {
+     "slug": "sot-xuat-huyet"
+    },
+    {
+     "slug": "soi"
+    },
+    {
+     "slug": "tay-chan-mieng-o-tre"
+    }
+   ]
+  },
+  "dinh-duong": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "dai-thao-duong"
+    },
+    {
+     "slug": "tang-huyet-ap"
+    },
+    {
+     "slug": "nuoi-con-bang-sua-me"
+    },
+    {
+     "slug": "cham-soc-cau-noi-fav"
+    }
+   ]
+  },
+  "tnt": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "cham-soc-cau-noi-fav"
+    },
+    {
+     "slug": "tang-huyet-ap"
+    },
+    {
+     "slug": "dai-thao-duong"
+    },
+    {
+     "slug": "dinh-duong-cho-nguoi-benh"
+    },
+    {
+     "slug": "dung-thuoc-an-toan"
+    }
+   ]
+  },
+  "tc": {
+   "updated": "2026-11-21",
+   "items": [
+    {
+     "slug": "theo-doi-tre-sau-tiem-chung"
+    },
+    {
+     "slug": "soi"
+    },
+    {
+     "slug": "viem-gan-b"
+    },
+    {
+     "slug": "cum"
+    }
+   ]
   }
  }
 };
