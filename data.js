@@ -5964,7 +5964,7 @@ window.PULSE_DATA = {
   "yhct": {
    "name": "Khoa Y học cổ truyền – Phục hồi chức năng",
    "intro": "Kết hợp điều trị y học cổ truyền với vật lý trị liệu, phục hồi chức năng hiện đại, giúp người bệnh giảm đau, cải thiện vận động, sớm trở lại sinh hoạt hằng ngày.",
-   "updated": "2026-11-12",
+   "updated": "2026-11-21",
    "facts": [
     [
      "Vị trí",
@@ -6065,6 +6065,18 @@ window.PULSE_DATA = {
      "img/khoa/yhct-11.jpg",
      "Siêu âm điều trị đau lưng"
     ]
+   ],
+   "noiquy": [
+    "Khi đến khám, xuất trình căn cước (có tích hợp bảo hiểm y tế) còn hạn tại buồng khám A29, A34; chế độ bảo hiểm được giải quyết kể từ lúc xuất trình thẻ.",
+    "Người bệnh đóng tạm ứng mỗi liệu trình tập; hết liệu trình lăn tay, thanh toán viện phí (bệnh viện hoàn lại nếu tạm ứng thừa, thiếu đóng thêm). Muốn tập tiếp liệu trình sau, đến buồng A29, A34 để được tư vấn.",
+    "Người bệnh yếu, đi đứng khó khăn được hỗ trợ đăng ký khám, nhưng phải có thân nhân đi cùng.",
+    "Chấp hành thứ tự sắp xếp của kỹ thuật y phòng tập; chú ý các bài tập về nhà được hướng dẫn.",
+    "Giữ trật tự, vệ sinh; không hút thuốc, không quay phim, chụp ảnh trong phòng tập.",
+    "Thân nhân không ngồi trên giường tập hoặc ghế tập.",
+    "Không tự ý di chuyển dụng cụ tập, không tự điều chỉnh máy móc; cần thì báo kỹ thuật y tại phòng.",
+    "Người bệnh, thân nhân tự giữ đồ đạc, tư trang.",
+    "Giờ tập: Thứ Hai – Thứ Sáu 7g00 – 17g00 (kể cả buổi trưa); Thứ Bảy 7g00 – 11g00; Chủ nhật nghỉ.",
+    "Mong quý người bệnh và thân nhân thực hiện tốt nội quy, chúc quý người bệnh sớm phục hồi sức khỏe."
    ]
   },
   "cap-cuu": {
@@ -6159,6 +6171,551 @@ window.PULSE_DATA = {
     "Không hút thuốc lá, không mang dụng cụ điện cá nhân vào phòng bệnh.",
     "Thân nhân, người bệnh tự bảo quản tài sản cá nhân.",
     "Mong quý bà con vui lòng hợp tác, thực hiện nội quy này. Trân trọng cảm ơn."
+   ]
+  },
+  "noi-tq": {
+   "name": "Khoa Nội tổng quát",
+   "updated": "2026-11-21",
+   "intro": "Khám, điều trị và chăm sóc nội trú người bệnh nội khoa; chăm sóc toàn diện theo phân cấp chăm sóc, phối hợp cùng gia đình và tư vấn dinh dưỡng, phòng bệnh.",
+   "facts": [
+    [
+     "Điều dưỡng trưởng",
+     "CNĐD. Lê Thị Huỳnh Hoa"
+    ],
+    [
+     "Vị trí",
+     "Tầng 3, Khu B"
+    ],
+    [
+     "Giường bệnh",
+     "55 giường kế hoạch / 80 giường thực kê"
+    ],
+    [
+     "Nhân lực",
+     "16 điều dưỡng: 5 đại học, 11 cao đẳng"
+    ],
+    [
+     "Hoạt động",
+     "24/24 giờ"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Khám, điều trị, chăm sóc người bệnh nội trú.",
+      "Chăm sóc toàn diện theo phân cấp chăm sóc, phối hợp với gia đình trong chăm sóc người bệnh.",
+      "Tư vấn dinh dưỡng, phòng bệnh cho người bệnh."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Khí dung, hút đàm, thở oxy, theo dõi monitor, bơm tiêm điện.",
+      "Đặt và chăm sóc đường truyền tĩnh mạch ngoại vi.",
+      "Theo dõi, chăm sóc người bệnh tai biến mạch máu não, người bệnh hạn chế đi lại."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Đánh giá nguy cơ té ngã khi người bệnh nhập khoa; hướng dẫn người nhà kéo thanh chắn giường.",
+      "Bàn giao người bệnh giữa các ca theo ISBAR, tại giường bệnh.",
+      "Làm việc theo đội chăm sóc, mỗi đội phụ trách một nhóm buồng bệnh."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Chủ đề: chăm sóc bệnh tăng huyết áp, đái tháo đường, suy thận mạn, suy tim, viêm phổi.",
+      "Hình thức: nói chuyện giáo dục sức khỏe hằng tuần tại khoa, tờ bướm."
+     ]
+    },
+    {
+     "h": "Thành tích, sáng kiến",
+     "items": [
+      "Năm 2025: Tập thể lao động tiên tiến (Giám đốc bệnh viện khen thưởng).",
+      "Năm 2025: 01 điều dưỡng đạt giải Nhì Hội thi tay nghề cấp bệnh viện.",
+      "Cải tiến: đặt điện thoại gọi điều dưỡng tại phòng bệnh."
+     ]
+    }
+   ],
+   "message": "Điều dưỡng Khoa Nội tổng quát luôn tận tâm chăm sóc, đồng hành và lắng nghe. Kính chúc quý cô chú mau chóng hồi phục sức khỏe, an tâm điều trị.",
+   "photos": [
+    [
+     "img/khoa/noi-tq-01.jpg",
+     "Tập thể điều dưỡng Khoa Nội tổng quát"
+    ],
+    [
+     "img/khoa/noi-tq-02.jpg",
+     "Điều dưỡng đo dấu hiệu sinh tồn cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-03.jpg",
+     "Điều dưỡng tư vấn sức khỏe cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-04.jpg",
+     "Điều dưỡng vỗ lưng cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-05.jpg",
+     "Điều dưỡng cho người bệnh khí dung"
+    ],
+    [
+     "img/khoa/noi-tq-06.jpg",
+     "Điều dưỡng đo điện tim cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-07.jpg",
+     "Điều dưỡng thực hiện thuốc cho người bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-08.jpg",
+     "Điện thoại gọi nhân viên đặt tại phòng bệnh"
+    ],
+    [
+     "img/khoa/noi-tq-09.jpg",
+     "Máy đo điện tim kết nối mạng nội bộ"
+    ]
+   ]
+  },
+  "noi-th": {
+   "name": "Khoa Nội tiêu hóa",
+   "updated": "2026-11-21",
+   "intro": "Tiếp nhận, khám, điều trị và chăm sóc người bệnh mắc các bệnh lý đường tiêu hóa, gan mật và tụy; theo dõi sát, phát hiện và xử trí kịp thời diễn biến bất thường.",
+   "facts": [
+    [
+     "Vị trí",
+     "Lầu 2, Khu B"
+    ],
+    [
+     "Giường bệnh",
+     "25 giường kế hoạch"
+    ],
+    [
+     "Nhân lực",
+     "08 điều dưỡng: 3 đại học, 4 cao đẳng, 1 trung cấp"
+    ],
+    [
+     "Hoạt động",
+     "24/24 giờ"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Tiếp nhận, khám, điều trị và chăm sóc người bệnh mắc các bệnh lý đường tiêu hóa, gan mật và tụy.",
+      "Theo dõi, phát hiện và xử trí kịp thời các diễn biến bất thường, hạn chế biến chứng trong quá trình điều trị.",
+      "Chăm sóc toàn diện, bảo đảm an toàn, nâng cao chất lượng điều trị và sự hài lòng của người bệnh."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Tiêm truyền, sử dụng thuốc, truyền dịch, lấy máu xét nghiệm và theo dõi dấu hiệu sinh tồn.",
+      "Chăm sóc người bệnh xuất huyết tiêu hóa, xơ gan, viêm gan, viêm tụy, viêm loét dạ dày – tá tràng và các bệnh lý tiêu hóa khác.",
+      "Chuẩn bị người bệnh trước và chăm sóc sau nội soi tiêu hóa, siêu âm và các cận lâm sàng liên quan."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Theo dõi sát người bệnh, đặc biệt các trường hợp xuất huyết tiêu hóa và bệnh lý gan mật nặng.",
+      "Phòng ngừa té ngã, phòng loét tì đè, kiểm soát nhiễm khuẩn và an toàn trong sử dụng thuốc.",
+      "Bàn giao người bệnh theo ISBAR, bảo đảm thông tin liên tục, chính xác giữa hai tua trực."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Chế độ ăn uống hợp lý, ăn chín uống sôi, vệ sinh an toàn thực phẩm, hạn chế thực phẩm gây kích ứng đường tiêu hóa.",
+      "Hạn chế rượu bia, thuốc lá; tuân thủ điều trị và tái khám đúng hẹn.",
+      "Tư vấn trực tiếp tại giường bệnh, kết hợp tờ rơi, poster."
+     ]
+    },
+    {
+     "h": "Sáng kiến, cải tiến",
+     "items": [
+      "Phòng bệnh có màn che giữa hai giường, bảo đảm riêng tư khi thăm khám, làm thủ thuật và vệ sinh cá nhân.",
+      "Tăng cường áp dụng bảng kiểm an toàn người bệnh."
+     ]
+    }
+   ],
+   "message": "Sức khỏe của người bệnh là sự quan tâm và trách nhiệm của chúng tôi. Rất mong người bệnh và thân nhân phối hợp, tuân thủ hướng dẫn điều trị để phục hồi tốt nhất."
+  },
+  "nhi": {
+   "name": "Khoa Nhi",
+   "updated": "2026-11-21",
+   "intro": "Tiếp nhận khám, cấp cứu và điều trị các bệnh cho trẻ dưới 16 tuổi. Khoa được xây mới khang trang, đầy đủ tiện nghi, thiết bị hiện đại và sẵn sàng cấp cứu 24/24.",
+   "facts": [
+    [
+     "Vị trí",
+     "Tầng 1, Khu A"
+    ],
+    [
+     "Giường bệnh",
+     "55 giường kế hoạch / 60 giường thực kê"
+    ],
+    [
+     "Khám ngoại trú BHYT",
+     "Thứ Hai – Thứ Sáu: 7g00 – 11g00, 13g00 – 17g00; Thứ Bảy: 7g00 – 11g00; Chủ nhật: khám thu phí"
+    ],
+    [
+     "Cấp cứu",
+     "24/24 giờ"
+    ],
+    [
+     "Nhân lực",
+     "15 điều dưỡng: 2 đại học, 13 cao đẳng"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Bệnh lý thường gặp được khám, điều trị",
+     "items": [
+      "Hô hấp: viêm họng, viêm amidan, viêm phổi, hen (suyễn), viêm phế quản.",
+      "Tiêu hóa: rối loạn tiêu hóa, nhiễm trùng đường ruột, hội chứng lỵ.",
+      "Truyền nhiễm: sốt xuất huyết, quai bị, sởi, thủy đậu, viêm gan, tay chân miệng.",
+      "Thận, tiết niệu: nhiễm trùng đường tiểu, viêm cầu thận cấp, hội chứng thận hư.",
+      "Sơ sinh: non tháng, suy hô hấp, viêm phổi, vàng da sơ sinh; chăm sóc trẻ bằng phương pháp Kangaroo.",
+      "Chuyển hóa, nội tiết, dinh dưỡng: suy dinh dưỡng, còi xương, thiếu canxi; phát hiện sớm bệnh về máu.",
+      "Tim mạch: tăng huyết áp ở trẻ, thấp khớp cấp, tim bẩm sinh.",
+      "Khám sức khỏe, theo dõi định kỳ theo nhu cầu."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Chăm sóc trẻ sơ sinh và chiếu đèn điều trị vàng da.",
+      "Thiết lập đường truyền tĩnh mạch khó ở trẻ em, ứng dụng thang điểm DIVA.",
+      "Theo dõi, đánh giá và phòng ngừa thoát mạch khi truyền dịch ở trẻ.",
+      "Sử dụng, theo dõi máy truyền dịch, bơm tiêm điện.",
+      "Khí dung, thở oxy, theo dõi SpO2 qua monitor."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Chăm sóc người bệnh toàn diện, phối hợp chặt chẽ giữa bác sĩ, điều dưỡng và người nhà.",
+      "Theo dõi sát dấu hiệu sinh tồn, diễn biến bệnh, phát hiện sớm dấu hiệu bất thường, chú trọng trẻ sơ sinh, trẻ bệnh nặng.",
+      "An toàn dùng thuốc theo nguyên tắc 5 đúng; khuyến khích người nhà cùng kiểm tra thông tin thuốc trước khi điều dưỡng thực hiện.",
+      "Theo dõi vị trí catheter tĩnh mạch ngoại vi, phát hiện sớm thoát mạch, thấm dịch, viêm tĩnh mạch.",
+      "Bàn giao người bệnh theo SBAR."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Bệnh thường gặp ở trẻ: viêm phổi, sốt xuất huyết, tay chân miệng, vàng da sơ sinh, nhiễm trùng đường ruột, viêm thanh khí quản.",
+      "Tư vấn trực tiếp tại giường, hướng dẫn khi nhập viện và ra viện; tờ rơi, poster và tài liệu truyền thông."
+     ]
+    },
+    {
+     "h": "Sáng kiến, cải tiến",
+     "items": [
+      "Chuẩn hóa kiểm tra xe tiêm, tủ thuốc trực, tủ dụng cụ, tủ cấp cứu ngưng tim – ngưng thở và trang thiết bị.",
+      "Ứng dụng mã QR trong quản lý, kiểm tra và bàn giao trang thiết bị.",
+      "Xây dựng bộ công cụ theo dõi, đánh giá thoát mạch ngoại vi ở trẻ em (Pediatric PIV Infiltration).",
+      "Đào tạo kỹ thuật thiết lập đường truyền tĩnh mạch khó ở trẻ, ứng dụng thang điểm DIVA; chuẩn hóa bàn giao theo SBAR."
+     ]
+    }
+   ],
+   "message": "Mỗi em bé là một niềm hi vọng, mỗi nụ cười của trẻ là động lực để chúng tôi không ngừng nỗ lực. Khoa Nhi – Tận tâm chăm sóc – An toàn điều trị – Trọn vẹn yêu thương."
+  },
+  "phu-san": {
+   "name": "Khoa Phụ sản",
+   "updated": "2026-11-21",
+   "intro": "Khám, chẩn đoán, điều trị bệnh lý sản khoa và phụ khoa; quản lý thai kỳ, đỡ đẻ, phẫu thuật sản phụ khoa và chăm sóc sức khỏe bà mẹ, trẻ sơ sinh trước, trong và sau sinh.",
+   "facts": [
+    [
+     "Hộ sinh trưởng",
+     "CNHS. Trần Thị Minh Trang"
+    ],
+    [
+     "Vị trí",
+     "Tầng 1, Khu B"
+    ],
+    [
+     "Giường bệnh",
+     "40 giường kế hoạch / 40 giường thực kê"
+    ],
+    [
+     "Giờ hành chính",
+     "Thứ Hai – Thứ Sáu: 7g00 – 11g00, 13g00 – 17g00; trực 24/24 tất cả các ngày"
+    ],
+    [
+     "Nhân lực",
+     "20 hộ sinh: 5 đại học, 14 cao đẳng, 1 trung cấp"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Khám, chẩn đoán, điều trị các bệnh lý sản khoa và phụ khoa.",
+      "Quản lý, theo dõi thai kỳ và chăm sóc sức khỏe phụ nữ mang thai.",
+      "Đỡ đẻ, phẫu thuật sản phụ khoa và các thủ thuật chuyên môn theo quy định.",
+      "Chăm sóc sức khỏe bà mẹ và trẻ sơ sinh trước, trong và sau sinh.",
+      "Tư vấn sức khỏe sinh sản, kế hoạch hóa gia đình, phòng ngừa bệnh phụ khoa."
+     ]
+    },
+    {
+     "h": "Kỹ thuật, dịch vụ nổi bật của hộ sinh",
+     "items": [
+      "Khám, theo dõi thai kỳ, theo dõi chuyển dạ, đỡ đẻ thường và chăm sóc thiết yếu bà mẹ, trẻ sơ sinh.",
+      "Chăm sóc sản phụ sau sinh, chăm sóc vết may tầng sinh môn.",
+      "Chăm sóc trẻ sơ sinh: tắm bé, giữ ấm, chăm sóc rốn, hỗ trợ bé bú mẹ.",
+      "Tư vấn nuôi con bằng sữa mẹ, hướng dẫn tư thế bú và cách cho bé bú.",
+      "Dịch vụ xông phụ khoa; chiếu tia plasma vết mổ, vết may tầng sinh môn và rốn bé."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Đánh giá nguy cơ té ngã cho thai phụ, người bệnh khi nhập khoa; hướng dẫn người nhà kéo thanh chắn giường, điều chỉnh độ cao, khóa bánh xe.",
+      "Bàn giao người bệnh giữa các ca theo ISBAR, tại giường bệnh.",
+      "Làm việc theo đội chăm sóc, mỗi đội phụ trách một nhóm buồng bệnh."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Chủ đề: nuôi con bằng sữa mẹ, xử trí trẻ sặc sữa, cho bé bú đúng cách, chăm sóc sau sinh, sau mổ lấy thai, kế hoạch hóa gia đình.",
+      "Hình thức: nói chuyện giáo dục sức khỏe hằng tuần tại khoa, tờ bướm, poster có mã QR."
+     ]
+    },
+    {
+     "h": "Thành tích, sáng kiến",
+     "items": [
+      "Năm 2025: 01 hộ sinh đạt giải Nhất Hội thi “Rung chuông vàng” bệnh viện.",
+      "Sáng kiến bảng kiểm theo dõi sản phụ trong 24 giờ sau sinh.",
+      "Nâng cao tỷ lệ bú mẹ trong giờ đầu sau sinh."
+     ]
+    }
+   ],
+   "message": "Người nhà đồng hành – Nhân viên y tế chia sẻ – Mẹ và bé an toàn. Mỗi em bé chào đời khỏe mạnh là niềm hạnh phúc của gia đình và niềm tự hào của nhân viên y tế.",
+   "photos": [
+    [
+     "img/khoa/phu-san-01.jpg",
+     "Tập thể Khoa Phụ sản"
+    ],
+    [
+     "img/khoa/phu-san-02.jpg",
+     "Chăm sóc thiết yếu bà mẹ và trẻ sơ sinh sau mổ"
+    ],
+    [
+     "img/khoa/phu-san-03.jpg",
+     "Chiếu tia plasma chăm sóc rốn bé"
+    ],
+    [
+     "img/khoa/phu-san-04.jpg",
+     "Hộ sinh hướng dẫn mẹ cho bé bú"
+    ],
+    [
+     "img/khoa/phu-san-05.jpg",
+     "Khám thai, theo dõi tim thai bằng monitor"
+    ],
+    [
+     "img/khoa/phu-san-06.jpg",
+     "Lấy mẫu máu gót chân cho bé"
+    ],
+    [
+     "img/khoa/phu-san-07.jpg",
+     "Massage cho bé"
+    ],
+    [
+     "img/khoa/phu-san-08.jpg",
+     "Tắm bé"
+    ],
+    [
+     "img/khoa/phu-san-09.jpg",
+     "Theo dõi cơn gò chuyển dạ"
+    ]
+   ]
+  },
+  "cdha": {
+   "name": "Khoa Chẩn đoán hình ảnh – Thăm dò chức năng",
+   "updated": "2026-11-21",
+   "intro": "Thực hiện các kỹ thuật chẩn đoán hình ảnh và thăm dò chức năng hỗ trợ bác sĩ chẩn đoán, theo dõi bệnh; điều dưỡng, kỹ thuật y tiếp đón, chuẩn bị, theo dõi và hỗ trợ người bệnh suốt quá trình thực hiện kỹ thuật.",
+   "facts": [
+    [
+     "Kỹ thuật y trưởng",
+     "YS. Điền Văn On"
+    ],
+    [
+     "Vị trí",
+     "Tầng trệt, Khu B"
+    ],
+    [
+     "Giờ hành chính",
+     "Thứ Hai – Thứ Sáu: 7g00 – 17g00; Thứ Bảy: 7g00 – 11g00. Trực 24/24 tất cả các ngày"
+    ],
+    [
+     "Nhân lực",
+     "20 người: 14 điều dưỡng, 6 kỹ thuật y"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Thực hiện kỹ thuật chẩn đoán hình ảnh và thăm dò chức năng hỗ trợ chẩn đoán, theo dõi bệnh.",
+      "Tiếp đón, hướng dẫn, chuẩn bị người bệnh trước kỹ thuật; phối hợp bác sĩ và theo dõi người bệnh sau thủ thuật.",
+      "Quản lý, vận hành, bảo quản trang thiết bị; tuân thủ kiểm soát nhiễm khuẩn, an toàn bức xạ và an toàn người bệnh.",
+      "Phối hợp các khoa, phòng để khám, chẩn đoán và điều trị nhanh chóng, chính xác."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Chẩn đoán hình ảnh: X-quang thường quy, chụp đường mật qua Kehr, chụp tử cung – vòi trứng (HSG), CT-scanner răng toàn hàm, đo loãng xương bằng máy DEXA, siêu âm.",
+      "Thăm dò chức năng: điện tim, holter điện tim, đo chức năng hô hấp, điện cơ, điện não, lưu huyết não, nội soi tiêu hóa.",
+      "Chăm sóc, hỗ trợ đặc biệt cho người cao tuổi, trẻ em, người hạn chế vận động."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Kiểm tra, đối chiếu thông tin người bệnh, chỉ định và điều kiện an toàn trước khi thực hiện; hỏi tình trạng mang thai, tiền sử dị ứng, yếu tố nguy cơ khi dùng thuốc cản quang.",
+      "Hướng dẫn tư thế, giải thích quy trình để người bệnh an tâm, hợp tác.",
+      "Theo dõi người bệnh trong và sau kỹ thuật, phát hiện sớm dấu hiệu bất thường, phòng ngừa sự cố y khoa.",
+      "Bàn giao, trao đổi thông tin giữa nhân viên đầy đủ, chính xác."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Hướng dẫn chuẩn bị trước kỹ thuật: nhịn ăn khi có chỉ định, trang phục phù hợp, tháo bỏ vật dụng kim loại.",
+      "Báo cho nhân viên y tế nếu đang mang thai hoặc nghi ngờ mang thai trước khi chụp có tia X.",
+      "Hướng dẫn theo dõi sức khỏe sau kỹ thuật, báo ngay khi có dấu hiệu bất thường.",
+      "Tư vấn trực tiếp tại khu tiếp đón, tờ rơi và tài liệu truyền thông."
+     ]
+    },
+    {
+     "h": "Thành tích, sáng kiến",
+     "items": [
+      "Giải Ba thực hiện 5S năm 2026.",
+      "Cải tiến quy trình tiếp đón, hướng dẫn và chuẩn bị người bệnh, rút ngắn thời gian chờ."
+     ]
+    }
+   ],
+   "message": "Lấy người bệnh làm trung tâm, đội ngũ điều dưỡng và kỹ thuật y luôn tận tâm, đồng hành cùng người bệnh trong từng bước thăm khám, hướng đến an toàn, chính xác, nhanh chóng.",
+   "photos": [
+    [
+     "img/khoa/cdha-01.jpg",
+     "Tập thể Khoa Chẩn đoán hình ảnh – Thăm dò chức năng"
+    ],
+    [
+     "img/khoa/cdha-02.jpg",
+     "Siêu âm"
+    ],
+    [
+     "img/khoa/cdha-03.jpg",
+     "Chuẩn bị người bệnh chụp cắt lớp vi tính"
+    ],
+    [
+     "img/khoa/cdha-04.jpg",
+     "Hướng dẫn tư thế người bệnh trước khi chụp"
+    ],
+    [
+     "img/khoa/cdha-05.jpg",
+     "Phối hợp thực hiện nội soi tiêu hóa"
+    ],
+    [
+     "img/khoa/cdha-06.jpg",
+     "Thực hiện kỹ thuật thăm dò chức năng"
+    ],
+    [
+     "img/khoa/cdha-07.jpg",
+     "Chụp X-quang: hướng dẫn tư thế cho người bệnh"
+    ],
+    [
+     "img/khoa/cdha-08.jpg",
+     "Ghi điện cơ, điện não"
+    ]
+   ]
+  },
+  "kham-benh": {
+   "name": "Khoa Khám bệnh",
+   "updated": "2026-11-21",
+   "intro": "“Ân cần tiếp đón – Phục vụ tận tình – An tâm điều trị”. Khoa Khám bệnh là đầu mối tiếp đón, tổ chức khám bệnh, tư vấn và kết nối người bệnh với các chuyên khoa, cận lâm sàng trong bệnh viện.",
+   "facts": [
+    [
+     "Vị trí",
+     "Mặt tiền đường Phan Đình Phùng"
+    ],
+    [
+     "Buồng khám",
+     "46 buồng khám, trong đó 06 buồng khám theo yêu cầu"
+    ],
+    [
+     "Nhân sự",
+     "55 người: 12 bác sĩ, 36 điều dưỡng, 04 dược sĩ, 03 nhân viên khác"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ],
+    [
+     "Liên hệ công tác",
+     "0296 3562 678"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Khám bảo hiểm y tế, khám theo yêu cầu và khám thu phí.",
+      "Khám và cấp giấy chứng nhận sức khỏe: lái xe, xin việc, định kỳ, bổ sung hồ sơ.",
+      "Buồng khám nhiều chuyên khoa: nội, ngoại, phụ sản, nhi, mắt, tai – mũi – họng, răng – hàm – mặt, da liễu, sức khỏe tâm thần, y học cổ truyền, phục hồi chức năng, tư vấn dinh dưỡng, hiếm muộn.",
+      "Phối hợp các khoa, phòng hướng dẫn người bệnh làm xét nghiệm, chẩn đoán hình ảnh và dịch vụ cần thiết."
+     ]
+    },
+    {
+     "h": "Điều dưỡng tại Tổ Nhận bệnh",
+     "items": [
+      "Tiếp đón, hướng dẫn và hỗ trợ thủ tục đăng ký khám.",
+      "Kiểm tra, đối chiếu thông tin hành chính; hướng dẫn đến đúng buồng khám.",
+      "Điều phối người bệnh trong lúc chờ khám, hạn chế ùn tắc, giảm thời gian chờ."
+     ]
+    },
+    {
+     "h": "Điều dưỡng tại buồng khám",
+     "items": [
+      "Hỗ trợ người bệnh trước, trong và sau khi khám; đo dấu hiệu sinh tồn.",
+      "Hỗ trợ bác sĩ khám bệnh, thực hiện y lệnh và kỹ thuật điều dưỡng trong phạm vi chuyên môn.",
+      "Hướng dẫn làm xét nghiệm, chẩn đoán hình ảnh, thủ thuật và cận lâm sàng.",
+      "Tư vấn chăm sóc sức khỏe, sử dụng thuốc và thực hiện chỉ định sau khám."
+     ]
+    },
+    {
+     "h": "Định hướng hoạt động",
+     "items": [
+      "Lấy người bệnh làm trung tâm; cải tiến quy trình tiếp đón và khám bệnh, xây dựng phong cách phục vụ chuyên nghiệp, thân thiện và trách nhiệm."
+     ]
+    }
    ]
   }
  },
