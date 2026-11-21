@@ -6066,6 +6066,100 @@ window.PULSE_DATA = {
      "Siêu âm điều trị đau lưng"
     ]
    ]
+  },
+  "cap-cuu": {
+   "name": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+   "intro": "Điều dưỡng Khoa Cấp cứu – Hồi sức tích cực và Chống độc thực hiện, phối hợp và tổ chức chăm sóc, theo dõi, hỗ trợ điều trị người bệnh cấp cứu, bảo đảm người bệnh được chăm sóc kịp thời, liên tục, toàn diện và an toàn.",
+   "updated": "2026-11-21",
+   "facts": [
+    [
+     "Thuộc",
+     "Bệnh viện Đa khoa Nhật Tân"
+    ],
+    [
+     "Hoạt động",
+     "Tiếp nhận cấp cứu 24/24 giờ"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ],
+    [
+     "Liên hệ công tác",
+     "0296 3562 678"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ của điều dưỡng",
+     "items": [
+      "Thực hiện, phối hợp và tổ chức chăm sóc, theo dõi, hỗ trợ điều trị người bệnh cấp cứu kịp thời, liên tục, toàn diện và an toàn.",
+      "Phối hợp với bác sĩ và các bộ phận liên quan trong tiếp nhận, phân loại, cấp cứu, điều trị và chăm sóc người bệnh, góp phần nâng cao chất lượng khám chữa bệnh tại bệnh viện."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Phối hợp với bác sĩ cấp cứu ngưng tuần hoàn, suy hô hấp, sốc phản vệ, sốc nhiễm trùng và các tình trạng nguy kịch khác.",
+      "Ép tim ngoài lồng ngực, bóp bóng, hỗ trợ kiểm soát đường thở theo phân công và phạm vi chuyên môn."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Chăm sóc người bệnh thở máy, mở khí quản, đặt sonde Blakemore, catheter tĩnh mạch trung tâm."
+     ]
+    },
+    {
+     "h": "Tư vấn, giáo dục sức khỏe",
+     "items": [
+      "Hướng dẫn người nhà phối hợp chăm sóc và phòng ngừa biến chứng.",
+      "Tư vấn, giáo dục sức khỏe cho người bệnh, người nhà về các bệnh hô hấp, tuần hoàn, tiêu hóa."
+     ]
+    },
+    {
+     "h": "Thành tích",
+     "items": [
+      "Giải Nhì Hội thi “Lắng nghe thấu cảm – Giao tiếp sẻ san”.",
+      "Giải Ba Hội thi “70 năm tự hào chiến sĩ áo trắng”."
+     ]
+    }
+   ],
+   "message": "Chúc người bệnh sớm hồi phục. Mong người bệnh và thân nhân phối hợp tốt với nhân viên y tế trong quá trình điều trị.",
+   "photos": [
+    [
+     "img/khoa/cap-cuu-02.jpg",
+     "Điều dưỡng hướng dẫn người bệnh, người nhà đọc tờ bướm giáo dục sức khỏe"
+    ],
+    [
+     "img/khoa/cap-cuu-05.jpg",
+     "Theo dõi người bệnh thở máy, monitor liên tục"
+    ],
+    [
+     "img/khoa/cap-cuu-03.jpg",
+     "Chăm sóc đường thở cho người bệnh thở máy"
+    ],
+    [
+     "img/khoa/cap-cuu-04.jpg",
+     "Hút đờm, chăm sóc ống nội khí quản"
+    ],
+    [
+     "img/khoa/cap-cuu-01.jpg",
+     "Điều dưỡng phối hợp bác sĩ thực hiện thủ thuật vô khuẩn"
+    ]
+   ],
+   "noiquy": [
+    "Người bệnh: tuân thủ chế độ ăn uống, sinh hoạt và điều trị tại bệnh viện.",
+    "Người bệnh: mặc quần áo dành cho người bệnh (đã được tiệt trùng).",
+    "Thân nhân: mỗi giường bệnh chỉ một người nuôi bệnh.",
+    "Thân nhân: mặc áo choàng và thay dép khi vào buồng bệnh.",
+    "Thân nhân: giữ trật tự trong buồng bệnh để người bệnh nghỉ ngơi; bỏ rác đúng nơi quy định.",
+    "Giờ thay đổi người nuôi bệnh: sáng 11h – 13h, chiều 17h – 19h.",
+    "Không ngồi hoặc nằm trên giường bệnh; không mang ghế bố vào buồng bệnh; không mắc võng trong khu vực hành lang.",
+    "Không hút thuốc lá, không mang dụng cụ điện cá nhân vào phòng bệnh.",
+    "Thân nhân, người bệnh tự bảo quản tài sản cá nhân.",
+    "Mong quý bà con vui lòng hợp tác, thực hiện nội quy này. Trân trọng cảm ơn."
+   ]
   }
  },
  "huongdan": {
