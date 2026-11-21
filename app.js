@@ -947,6 +947,18 @@
     document.title = page.title[state.lang] + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
+  // Tin hoạt động trên trang chủ: chỉ hiện tiêu đề, bấm "Xem tóm tắt" để hiện đoạn tóm tắt.
+  (function newsTextToggle() {
+    var btn = document.getElementById("news-text-toggle"), list = document.getElementById("news-list");
+    if (!btn || !list) return;
+    btn.addEventListener("click", function () {
+      var open = btn.getAttribute("aria-expanded") !== "true";
+      btn.setAttribute("aria-expanded", String(open));
+      list.classList.toggle("news-compact", !open);
+      btn.textContent = open ? L("Thu gọn chữ", "Hide summaries") : L("Xem tóm tắt", "Show summaries");
+    });
+  })();
+
   // SBAR, AIDET trên trang chủ: giữ hình, phần chữ thu gọn mặc định, bấm để mở.
   (function commToggles() {
     Array.prototype.forEach.call(document.querySelectorAll(".comm-card"), function (card, idx) {
