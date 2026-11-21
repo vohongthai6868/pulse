@@ -875,3 +875,13 @@ a.cite { cursor: pointer; }
 .news-text-toggle { margin: 0 0 12px; }
 .news-text-toggle[aria-expanded="false"] { background: var(--surface); color: var(--brand, #0b4f9c); }
 .news-text-toggle { display: inline-flex; width: auto; align-items: center; }
+
+.btn-booking { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; margin-top: 4px; padding: 16px 20px; border-radius: 14px; background: #d0202a; color: #fff; font-size: 19px; font-weight: 800; letter-spacing: .3px; line-height: 1.25; text-align: center; text-decoration: none; box-shadow: 0 6px 18px rgba(208,32,42,.35); border: 2px solid #fff; }
+.btn-booking:hover { background: #b0151f; }
+.btn-booking:focus-visible { outline: 3px solid #ffd54a; outline-offset: 3px; }
+.hero-actions { flex-wrap: wrap; }
+.booking-bar { background: #d0202a; padding: 16px 18px; box-shadow: 0 6px 18px rgba(208,32,42,.3); }
+.booking-bar:hover { background: #b0151f; }
+.booking-bar-txt strong { font-size: 19px; font-weight: 800; letter-spacing: .3px; }
+.booking-bar-txt span { font-size: 14px; }
+.booking-bar-go { font-size: 28px; }
