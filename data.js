@@ -10376,5 +10376,176 @@ window.PULSE_DATA = {
     "bacsi": []
    }
   ]
+ },
+ "trolyPK": {
+  "updated": "2026-11-22",
+  "note": "Gợi ý tham khảo theo triệu chứng chính, không thay thế chẩn đoán của bác sĩ. Trang không lưu và không gửi đi thông tin bạn chọn.",
+  "redflags": [
+   "Đau ngực dữ dội hoặc kéo dài trên 15 phút",
+   "Khó thở nhiều, tím môi",
+   "Yếu, liệt nửa người, méo miệng, nói khó",
+   "Co giật, lơ mơ, ngất",
+   "Chảy máu nhiều không cầm",
+   "Chấn thương nặng, nghi gãy xương lớn, vết thương sâu",
+   "Đau bụng dữ dội",
+   "Trẻ sốt cao li bì, bỏ bú, co giật",
+   "Đang mang thai bị ra huyết, đau bụng, ra nước ối",
+   "Ngộ độc, rắn cắn, ong đốt, dị ứng nổi mề đay kèm khó thở"
+  ],
+  "symptoms": [
+   {
+    "id": "sot-ho",
+    "t": "Sốt, ho, cảm cúm",
+    "pk": [
+     "noi-tong-quat"
+    ]
+   },
+   {
+    "id": "tim",
+    "t": "Huyết áp cao, đau ngực nhẹ, hồi hộp",
+    "pk": [
+     "noi-tong-quat"
+    ]
+   },
+   {
+    "id": "ho-keo-dai",
+    "t": "Ho kéo dài trên 2 tuần, khó thở khi gắng sức",
+    "pk": [
+     "noi-tong-quat"
+    ]
+   },
+   {
+    "id": "duong",
+    "t": "Tiểu đường, tuyến giáp, béo phì",
+    "pk": [
+     "noi-tiet"
+    ]
+   },
+   {
+    "id": "bung",
+    "t": "Đau bụng, ợ chua, tiêu chảy, táo bón, trĩ ra máu",
+    "pk": [
+     "noi-tieu-hoa",
+     "ngoai-tong-quat"
+    ]
+   },
+   {
+    "id": "gan",
+    "t": "Viêm gan B, C, men gan cao, vàng da",
+    "pk": [
+     "viem-gan"
+    ]
+   },
+   {
+    "id": "khop",
+    "t": "Đau khớp, gout, đau lưng, đau cổ vai gáy",
+    "pk": [
+     "co-xuong-khop"
+    ]
+   },
+   {
+    "id": "u",
+    "t": "Khối u, cục dưới da, thoát vị bẹn, cần tư vấn mổ",
+    "pk": [
+     "ngoai-tong-quat"
+    ]
+   },
+   {
+    "id": "tieu",
+    "t": "Tiểu buốt, tiểu máu, sỏi thận, tuyến tiền liệt",
+    "pk": [
+     "ngoai-tiet-nieu"
+    ]
+   },
+   {
+    "id": "chan-thuong",
+    "t": "Té ngã, bong gân, chấn thương nhẹ, tái khám bó bột",
+    "pk": [
+     "ngoai-chan-thuong"
+    ]
+   },
+   {
+    "id": "phu-khoa",
+    "t": "Kinh nguyệt, khí hư, khám phụ khoa, kế hoạch hóa gia đình",
+    "pk": [
+     "san-phu-khoa"
+    ],
+    "sex": "nu"
+   },
+   {
+    "id": "thai",
+    "t": "Khám thai",
+    "pk": [
+     "san-phu-khoa"
+    ],
+    "sex": "nu"
+   },
+   {
+    "id": "hiem-muon",
+    "t": "Mong con lâu chưa có",
+    "pk": [
+     "hiem-muon"
+    ]
+   },
+   {
+    "id": "mat",
+    "t": "Mắt đỏ, nhìn mờ, đo kính",
+    "pk": [
+     "mat"
+    ]
+   },
+   {
+    "id": "tmh",
+    "t": "Đau họng, nghẹt mũi, viêm xoang, đau tai, ù tai",
+    "pk": [
+     "tai-mui-hong"
+    ]
+   },
+   {
+    "id": "rang",
+    "t": "Đau răng, sâu răng, nhổ răng, chảy máu nướu",
+    "pk": [
+     "rang-ham-mat"
+    ]
+   },
+   {
+    "id": "da",
+    "t": "Ngứa, mẩn đỏ, mụn, nấm da, rụng tóc",
+    "pk": [
+     "da-lieu"
+    ]
+   },
+   {
+    "id": "tiem",
+    "t": "Tiêm vắc xin",
+    "pk": [
+     "tiem-chung"
+    ]
+   },
+   {
+    "id": "ksk",
+    "t": "Khám sức khỏe đi làm, đi học, lái xe, định kỳ",
+    "pk": [
+     "kham-suc-khoe"
+    ]
+   },
+   {
+    "id": "cao-tuoi",
+    "t": "Người cao tuổi nhiều bệnh mạn tính, hay quên, dễ té ngã",
+    "pk": [
+     "lao-hoc"
+    ],
+    "age": "lon"
+   }
+  ],
+  "childKeep": [
+   "mat",
+   "tai-mui-hong",
+   "rang-ham-mat",
+   "da-lieu",
+   "tiem-chung",
+   "kham-suc-khoe",
+   "ngoai-chan-thuong"
+  ]
  }
 };

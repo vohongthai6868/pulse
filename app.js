@@ -587,6 +587,7 @@
     if (tm && DATA.categories[tm[1].toUpperCase()]) return "topic:" + tm[1].toUpperCase();
     var gm = GDSK_RE.exec(location.hash);
     if (gm && DATA.gdsk.topics.some(function (x) { return x.slug === gm[1]; })) return "gdsk:" + gm[1];
+    if (/^#\/chon-phong-kham\/?$/.test(location.hash) && DATA.trolyPK) return "chonpk";
     var pm = PK_RE.exec(location.hash);
     if (pm && DATA.phongkham && DATA.phongkham.items.some(function (x) { return x.slug === pm[1]; })) return "pk:" + pm[1];
     var km = KHOA_RE.exec(location.hash);
@@ -609,6 +610,7 @@
 
   function unitGdskList(name) { return unitTopics(name); }
   var BOOKING_URL = "https://89338.byt.vn/kcb/dang-ky-kham";
+  function cpkLink() { return el("a", { class: "cpk-link", href: "#/chon-phong-kham", text: L("Chưa biết chọn phòng khám nào? Dùng trợ lý gợi ý →", "Not sure which clinic? Use the helper →") }); }
   function addBookingBar() {
     var bar = el("a", { class: "booking-bar", href: BOOKING_URL, target: "_blank", rel: "noopener" }, [
       el("span", { class: "booking-bar-txt" }, [el("strong", { text: L("ĐĂNG KÝ KHÁM BỆNH TRỰC TUYẾN", "BOOK AN APPOINTMENT ONLINE") }), el("span", { text: L("Khám lần đầu hoặc đổi phòng khám: gọi 0296 3562 357 để được tư vấn chọn phòng · Tái khám: chọn lại phòng khám cũ", "First visit or new clinic: call for advice · Follow-up: choose your previous clinic") })]),
@@ -616,6 +618,7 @@
     ]);
     var intro = pageView.querySelector(".page-intro");
     if (intro && intro.nextSibling) pageView.insertBefore(bar, intro.nextSibling); else pageView.appendChild(bar);
+    if (DATA.trolyPK) bar.parentNode.insertBefore(cpkLink(), bar.nextSibling);
   }
   function pkGuide() {
     var P = DATA.phongkham;
@@ -623,7 +626,8 @@
       el("h2", { text: L("Hướng dẫn đăng ký khám trực tuyến", "How to book online") }),
       el("ul", {}, P.huongdan.map(function (x) { return telify(el("li"), x); })),
       el("p", { class: "unit-guide-hint", text: L("Giờ khám: ", "Hours: ") + P.gio }),
-    ]);
+      DATA.trolyPK ? cpkLink() : null,
+    ].filter(Boolean));
   }
   function pkList() {
     var P = DATA.phongkham;
@@ -655,6 +659,76 @@
       el("img", { src: "img/qr/pk-" + x.slug + ".png", alt: L("Mã QR ", "QR code ") + x.name, loading: "lazy", width: "280" }),
       el("p", { text: L("Dán tại cửa phòng khám; người bệnh quét để đăng ký khám và đọc bài giáo dục sức khỏe.", "Posted at the clinic door.") })]));
     document.title = x.name + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
+  }
+
+  // Trợ lý gợi ý chọn phòng khám: chạy trong trình duyệt, không lưu, không gửi dữ liệu.
+  function renderChonPK() {
+    var R = DATA.trolyPK, P = DATA.phongkham, st = { lan: null, tuoi: null, gioi: null, rf: {}, sy: {} };
+    function pkBy(s) { return P.items.filter(function (i) { return i.slug === s; })[0]; }
+    pageView.textContent = ""; pageView.classList.remove("art-v2");
+    pageView.appendChild(el("a", { class: "back-link", href: "#/khoa/kham-benh", text: L("← Khoa Khám bệnh", "← Outpatient department") }));
+    pageView.appendChild(el("span", { class: "tag", style: "--c:#0b4f9c", text: L("Trợ lý đặt lịch", "Booking helper") }));
+    pageView.appendChild(el("h1", { class: "page-title", text: L("Gợi ý chọn phòng khám", "Which clinic should I book?") }));
+    pageView.appendChild(el("p", { class: "page-intro", text: L("Trả lời vài câu hỏi ngắn, trang sẽ gợi ý phòng khám phù hợp rồi chuyển bạn sang cổng đăng ký khám trực tuyến của bệnh viện.", "Answer a few questions to get a clinic suggestion, then book on the hospital portal.") }));
+    var box = el("div", { class: "cpk" }); pageView.appendChild(box);
+    pageView.appendChild(el("p", { class: "cpk-note", text: R.note }));
+    function chips(name, opts, multi, store, key) {
+      return el("div", { class: "cpk-chips", role: multi ? "group" : "radiogroup" }, opts.map(function (o) {
+        var on = multi ? !!store[o.v] : st[key] === o.v;
+        var b = el("button", { type: "button", class: "cpk-chip" + (on ? " on" : ""), "aria-pressed": on ? "true" : "false", text: o.t });
+        b.addEventListener("click", function () { if (multi) { store[o.v] = !store[o.v]; } else { st[key] = o.v; } draw(); });
+        return b;
+      }));
+    }
+    function step(n, title, body) { return el("section", { class: "page-section cpk-step" }, [el("h2", { text: n + ". " + title }), body]); }
+    function bookBtn(x) { return el("a", { class: "cpk-book", href: BOOKING_URL, target: "_blank", rel: "noopener", text: L("Đăng ký khám ", "Book ") + (x ? x.name.replace(/^Phòng khám /, "") : "") + " →" }); }
+    function card(x, why) {
+      return el("li", { class: "cpk-res" }, [el("strong", { text: x.name }), why ? el("span", { class: "cpk-why", text: why }) : null,
+        el("span", { class: "pk-doc", text: x.bacsi && x.bacsi.length ? L("Bác sĩ: ", "Doctors: ") + x.bacsi.join(", ") : L("Bác sĩ: đang cập nhật", "Doctors: updating") }),
+        el("span", { class: "cpk-act" }, [bookBtn(x), el("a", { href: "#/phong-kham/" + x.slug, text: L("Xem phòng khám", "Clinic page") })])].filter(Boolean));
+    }
+    function draw() {
+      box.textContent = "";
+      box.appendChild(step(1, L("Bạn khám lần nào?", "Visit type"), chips("lan", [{ v: "dau", t: L("Khám lần đầu hoặc muốn đổi phòng khám", "First visit / change clinic") }, { v: "tai", t: L("Tái khám", "Follow-up") }], false, null, "lan")));
+      if (!st.lan) return;
+      if (st.lan === "tai") {
+        box.appendChild(step(2, L("Chọn lại phòng khám cũ", "Choose your previous clinic"), el("div", {}, [
+          el("p", { class: "unit-guide-hint", text: L("Tái khám: chọn đúng phòng khám đã khám lần trước, mang theo giấy hẹn, đơn thuốc và kết quả cũ.", "Choose the clinic you visited last time.") }),
+          el("ul", { class: "cpk-list" }, P.items.map(function (x) { return card(x); }))])));
+        return;
+      }
+      box.appendChild(step(2, L("Bạn có dấu hiệu nào dưới đây không?", "Any of these warning signs?"), el("div", {}, [
+        chips("rf", R.redflags.map(function (t, i) { return { v: i, t: t }; }), true, st.rf),
+        chips("rf0", [{ v: "khong", t: L("Không có dấu hiệu nào", "None of these") }], false, null, "rfNone")])));
+      var anyRF = Object.keys(st.rf).some(function (k) { return st.rf[k]; });
+      if (anyRF) {
+        box.appendChild(el("div", { class: "cpk-alert", role: "alert" }, [el("strong", { text: L("Không đặt lịch: hãy đến ngay Khoa Cấp cứu", "Do not book: go to the Emergency Department now") }),
+          telify(el("p"), L("Đến ngay Khoa Cấp cứu Bệnh viện Nhật Tân hoặc cơ sở y tế gần nhất, hoặc gọi tổng đài 0296 3562 357 (24/24).", "Go to the nearest emergency department or call 0296 3562 357 (24/7)."))]));
+        return;
+      }
+      if (st.rfNone !== "khong") return;
+      box.appendChild(step(3, L("Người đi khám là", "The patient is"), el("div", {}, [
+        chips("tuoi", [{ v: "tre", t: L("Trẻ em dưới 16 tuổi", "Child under 16") }, { v: "lon", t: L("Người lớn", "Adult") }], false, null, "tuoi"),
+        chips("gioi", [{ v: "nam", t: L("Nam", "Male") }, { v: "nu", t: L("Nữ", "Female") }], false, null, "gioi")])));
+      if (!st.tuoi || !st.gioi) return;
+      var syms = R.symptoms.filter(function (s) { return (!s.sex || s.sex === st.gioi) && (!s.age || s.age === st.tuoi) && !(st.tuoi === "tre" && (s.id === "thai" || s.id === "hiem-muon")); });
+      box.appendChild(step(4, L("Lý do đi khám chính (chọn một hoặc vài mục)", "Main reason (choose one or more)"), chips("sy", syms.map(function (s) { return { v: s.id, t: s.t }; }), true, st.sy)));
+      var picked = syms.filter(function (s) { return st.sy[s.id]; });
+      if (!picked.length) return;
+      var score = {}, why = {};
+      picked.forEach(function (s) { s.pk.forEach(function (p, i) {
+        var q = p;
+        if (st.tuoi === "tre" && R.childKeep.indexOf(p) < 0) q = "nhi-khoa";
+        score[q] = (score[q] || 0) + (i ? 1 : 2); (why[q] = why[q] || []).indexOf(s.t) < 0 && why[q].push(s.t);
+      }); });
+      var res = Object.keys(score).sort(function (a, b) { return score[b] - score[a]; }).map(pkBy).filter(Boolean).slice(0, 3);
+      box.appendChild(step(5, L("Phòng khám gợi ý", "Suggested clinics"), el("div", {}, [
+        el("ul", { class: "cpk-list" }, res.map(function (x) { return card(x, L("Phù hợp với: ", "Matches: ") + why[x.slug].join("; ")); })),
+        telify(el("p", { class: "unit-guide-hint" }), L("Chưa chắc chắn? Gọi 0296 3562 357 hoặc hỏi Tổ Nhận bệnh để được tư vấn chọn phòng khám.", "Not sure? Call 0296 3562 357 for advice.")),
+        el("p", { class: "unit-guide-hint", text: L("Giờ khám: ", "Hours: ") + P.gio + L(". Mang theo căn cước công dân, thẻ BHYT hoặc VNeID.", ". Bring your ID and health insurance card.") })])));
+    }
+    draw();
+    document.title = L("Gợi ý chọn phòng khám — Điều dưỡng BV Nhật Tân", "Clinic helper — Nhat Tan Hospital Nursing");
   }
   function renderKhoaPage(key) {
     var hit = unitByCode(key);
@@ -1074,7 +1148,7 @@
     if (name) {
       homeView.hidden = true;
       pageView.hidden = false;
-      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else if (name.indexOf("gdsk:") === 0) renderGdskPage(name.slice(5)); else if (name.indexOf("pk:") === 0) renderPhongKham(name.slice(3)); else renderPage(name);
+      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else if (name.indexOf("gdsk:") === 0) renderGdskPage(name.slice(5)); else if (name.indexOf("pk:") === 0) renderPhongKham(name.slice(3)); else if (name === "chonpk") renderChonPK(); else renderPage(name);
       addCollapse(pageView);
       pageView.appendChild(el("div", { class: "page-home" }, [el("a", { class: "back-link home-btn", href: "#top", text: L("← Về trang chủ", "← Back to home") })]));
       if (scroll) window.scrollTo(0, 0);
