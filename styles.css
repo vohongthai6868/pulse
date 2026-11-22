@@ -931,3 +931,18 @@ a.cite { cursor: pointer; }
 .pk-guide ul li { margin-bottom: 6px; }
 .hero-booking-note { margin: 8px 0 0; font-size: 14px; line-height: 1.45; color: #fff; opacity: .95; }
 .hero-booking-note { width: 100%; }
+/* Trợ lý gợi ý chọn phòng khám */
+.cpk-link { display: inline-block; margin: 8px 0 4px; padding: 10px 14px; border-radius: 10px; border: 2px solid #0b4f9c; color: #0b4f9c; font-weight: 700; text-decoration: none; background: var(--surface, #fff); min-height: 44px; box-sizing: border-box; }
+.cpk-link:hover { background: #eaf2fb; }
+.hero .cpk-link { background: #fff; }
+.cpk-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+.cpk-chip { font: inherit; font-size: 1rem; min-height: 44px; padding: 8px 14px; border-radius: 22px; border: 1.5px solid #9db8d8; background: var(--surface, #fff); color: inherit; cursor: pointer; text-align: left; }
+.cpk-chip.on { background: #0b4f9c; border-color: #0b4f9c; color: #fff; }
+.cpk-alert { margin: 14px 0; padding: 16px; border-radius: 12px; background: #fdecec; border: 2px solid #d0202a; color: #8a1018; }
+.cpk-alert strong { display: block; font-size: 1.15rem; margin-bottom: 6px; }
+.cpk-list { list-style: none; padding: 0; margin: 10px 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.cpk-res { display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 12px; border: 1.5px solid #cfe0f3; background: var(--surface, #fff); }
+.cpk-why { font-size: .92rem; opacity: .85; }
+.cpk-act { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 4px; }
+.cpk-book { display: inline-block; padding: 9px 14px; border-radius: 10px; background: #d0202a; color: #fff; font-weight: 700; text-decoration: none; min-height: 44px; box-sizing: border-box; }
+.cpk-note { font-size: .9rem; opacity: .8; margin-top: 18px; }
