@@ -922,3 +922,12 @@ a.cite { cursor: pointer; }
 .tel-115 { animation: tel-blink 1.2s ease-in-out infinite; }
 .footer-col .tel-blink-off, .tel-115:hover, .tel-115:focus-visible { animation-play-state: paused; }
 @media (prefers-reduced-motion: reduce) { .tel-115 { animation: tel-blink 1.2s step-end infinite; } }
+
+.pk-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 10px; }
+.pk-list a { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; border-radius: 12px; border: 1.5px solid #cfe0f3; background: var(--surface, #fff); text-decoration: none; }
+.pk-list a:hover { border-color: #0b4f9c; }
+.pk-name { font-weight: 800; color: #0b4f9c; font-size: 16px; }
+.pk-doc { font-size: 13px; color: var(--muted, #667); }
+.pk-guide ul li { margin-bottom: 6px; }
+.hero-booking-note { margin: 8px 0 0; font-size: 14px; line-height: 1.45; color: #fff; opacity: .95; }
+.hero-booking-note { width: 100%; }

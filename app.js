@@ -559,6 +559,7 @@
   var GDSK_RE = /^#\/gdsk\/([a-z0-9-]+)$/;
   var TOPIC_RE = /^#\/topic\/([a-z]+)$/;
   var KHOA_RE = /^#\/khoa\/([a-z0-9-]+)$/;
+  var PK_RE = /^#\/phong-kham\/([a-z0-9-]+)$/;
   var TT_RE = /^#\/truyenthong\/([a-z0-9-]+)$/;
   function khoaSlug(name) {
     return name.replace(/^(Khoa|Bộ phận|Tổ|Phòng)\s+/, "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/đ/g, "d").replace(/Đ/g, "D").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -586,6 +587,8 @@
     if (tm && DATA.categories[tm[1].toUpperCase()]) return "topic:" + tm[1].toUpperCase();
     var gm = GDSK_RE.exec(location.hash);
     if (gm && DATA.gdsk.topics.some(function (x) { return x.slug === gm[1]; })) return "gdsk:" + gm[1];
+    var pm = PK_RE.exec(location.hash);
+    if (pm && DATA.phongkham && DATA.phongkham.items.some(function (x) { return x.slug === pm[1]; })) return "pk:" + pm[1];
     var km = KHOA_RE.exec(location.hash);
     return km && ((DATA.khoa && DATA.khoa[km[1]]) || unitByCode(km[1])) ? "khoa:" + km[1] : null;
   }
@@ -608,17 +611,61 @@
   var BOOKING_URL = "https://89338.byt.vn/kcb/dang-ky-kham";
   function addBookingBar() {
     var bar = el("a", { class: "booking-bar", href: BOOKING_URL, target: "_blank", rel: "noopener" }, [
-      el("span", { class: "booking-bar-txt" }, [el("strong", { text: L("ĐĂNG KÝ KHÁM BỆNH TRỰC TUYẾN", "BOOK AN APPOINTMENT ONLINE") }), el("span", { text: L("Đăng ký trước trên cổng của bệnh viện, giảm thời gian chờ", "Register ahead on the hospital portal") })]),
+      el("span", { class: "booking-bar-txt" }, [el("strong", { text: L("ĐĂNG KÝ KHÁM BỆNH TRỰC TUYẾN", "BOOK AN APPOINTMENT ONLINE") }), el("span", { text: L("Khám lần đầu hoặc đổi phòng khám: gọi 0296 3562 357 để được tư vấn chọn phòng · Tái khám: chọn lại phòng khám cũ", "First visit or new clinic: call for advice · Follow-up: choose your previous clinic") })]),
       el("span", { class: "booking-bar-go", "aria-hidden": "true", text: "→" }),
     ]);
     var intro = pageView.querySelector(".page-intro");
     if (intro && intro.nextSibling) pageView.insertBefore(bar, intro.nextSibling); else pageView.appendChild(bar);
+  }
+  function pkGuide() {
+    var P = DATA.phongkham;
+    return el("section", { class: "page-section pk-guide" }, [
+      el("h2", { text: L("Hướng dẫn đăng ký khám trực tuyến", "How to book online") }),
+      el("ul", {}, P.huongdan.map(function (x) { return telify(el("li"), x); })),
+      el("p", { class: "unit-guide-hint", text: L("Giờ khám: ", "Hours: ") + P.gio }),
+    ]);
+  }
+  function pkList() {
+    var P = DATA.phongkham;
+    return el("section", { class: "page-section pk-list-sec" }, [
+      el("h2", { text: L("Phòng khám chuyên khoa (" + P.items.length + ")", "Specialty clinics") }),
+      el("p", { class: "unit-guide-hint", text: P.intro }),
+      el("ul", { class: "pk-list" }, P.items.map(function (x) {
+        return el("li", {}, [el("a", { href: "#/phong-kham/" + x.slug }, [el("span", { class: "pk-name", text: x.name }), el("span", { class: "pk-doc", text: x.bacsi && x.bacsi.length ? x.bacsi.join(", ") : L("Bác sĩ: đang cập nhật", "Doctors: updating") })])]);
+      })),
+    ]);
+  }
+  function renderPhongKham(slug) {
+    var P = DATA.phongkham, x = P.items.filter(function (i) { return i.slug === slug; })[0];
+    pageView.textContent = ""; pageView.classList.remove("art-v2");
+    pageView.appendChild(el("a", { class: "back-link", href: "#/khoa/kham-benh", text: L("← Khoa Khám bệnh", "← Outpatient department") }));
+    pageView.appendChild(el("span", { class: "tag", style: "--c:#0b4f9c", text: L("Phòng khám", "Clinic") }));
+    pageView.appendChild(el("h1", { class: "page-title", text: x.name }));
+    pageView.appendChild(el("p", { class: "page-intro", text: L("Thuộc Khoa Khám bệnh, Bệnh viện Đa khoa Nhật Tân. Giờ khám: ", "Outpatient department, Nhat Tan General Hospital. Hours: ") + P.gio + "." }));
+    addBookingBar();
+    pageView.appendChild(pkGuide());
+    pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Bác sĩ khám", "Doctors") }),
+      el("p", { text: x.bacsi && x.bacsi.length ? x.bacsi.join(", ") : L("Danh sách bác sĩ đang được cập nhật.", "Doctor list is being updated.") })]));
+    var tps = x.topics.map(function (s) { return DATA.gdsk.topics.filter(function (t) { return t.slug === s; })[0]; }).filter(Boolean);
+    pageView.appendChild(el("section", { class: "page-section unit-gdsk" }, [el("h2", { text: L("Bài giáo dục sức khỏe nên đọc", "Health education articles") }),
+      el("ol", { class: "unit-gdsk-list unit-gdsk-ol" }, tps.map(function (t, i) { return el("li", {}, [el("a", { href: "#/gdsk/" + t.slug, text: (i + 1) + ". " + tr(t.title) })]); }))]));
+    var hit = unitByCode(x.khoa);
+    if (hit && x.khoa !== "kham-benh") pageView.appendChild(el("p", { class: "unit-also" }, [document.createTextNode(L("Điều trị nội trú liên quan: ", "Related inpatient department: ")), el("a", { href: "#/khoa/" + x.khoa, text: tr(hit.u.name) })]));
+    pageView.appendChild(el("section", { class: "page-section khoa-qr" }, [el("h2", { text: L("Mã QR của phòng khám", "Clinic QR code") }),
+      el("img", { src: "img/qr/pk-" + x.slug + ".png", alt: L("Mã QR ", "QR code ") + x.name, loading: "lazy", width: "280" }),
+      el("p", { text: L("Dán tại cửa phòng khám; người bệnh quét để đăng ký khám và đọc bài giáo dục sức khỏe.", "Posted at the clinic door.") })]));
+    document.title = x.name + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
   function renderKhoaPage(key) {
     var hit = unitByCode(key);
     var k = DATA.khoa && DATA.khoa[key];
     if (!k) { renderUnitPage(hit); unitExtras(hit, key); addBookingBar(); return; }
     renderRichKhoa(k);
+    if (key === "kham-benh" && DATA.phongkham) {
+      var vsec = pageView.querySelector(".reel") ? pageView.querySelector(".reel").parentNode : null;
+      var ref = vsec ? vsec.nextSibling : null;
+      pageView.insertBefore(pkGuide(), ref); pageView.insertBefore(pkList(), ref);
+    }
     unitExtras(hit || { u: { name: k.name, page: key } }, key);
     addBookingBar();
     document.title = tr(k.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
@@ -1027,7 +1074,7 @@
     if (name) {
       homeView.hidden = true;
       pageView.hidden = false;
-      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else if (name.indexOf("gdsk:") === 0) renderGdskPage(name.slice(5)); else renderPage(name);
+      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else if (name.indexOf("gdsk:") === 0) renderGdskPage(name.slice(5)); else if (name.indexOf("pk:") === 0) renderPhongKham(name.slice(3)); else renderPage(name);
       addCollapse(pageView);
       pageView.appendChild(el("div", { class: "page-home" }, [el("a", { class: "back-link home-btn", href: "#top", text: L("← Về trang chủ", "← Back to home") })]));
       if (scroll) window.scrollTo(0, 0);

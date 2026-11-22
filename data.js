@@ -7641,5 +7641,244 @@ window.PULSE_DATA = {
     }
    ]
   }
+ },
+ "phongkham": {
+  "updated": "2026-11-22",
+  "source": "Danh mục chuyên khoa trên cổng đăng ký khám của bệnh viện (89338.byt.vn), 22/11/2026",
+  "intro": "Danh sách phòng khám theo chuyên khoa tại Khoa Khám bệnh. Mỗi phòng khám có mã QR riêng dẫn đến trang này: đăng ký khám trực tuyến và các bài giáo dục sức khỏe phù hợp.",
+  "huongdan": [
+   "Khám lần đầu hoặc muốn đổi sang phòng khám khác: gọi tổng đài 0296 3562 357 hoặc hỏi Tổ Nhận bệnh để được tư vấn chọn phòng khám (chuyên khoa) phù hợp, sau đó mới đăng ký.",
+   "Tái khám: chọn lại đúng phòng khám (chuyên khoa) đã khám lần trước, mang theo giấy hẹn tái khám, đơn thuốc và kết quả cũ.",
+   "Đăng ký trước ít nhất 1 ngày; chọn khung giờ khám: sáng 7g00 – 11g00, chiều 13g00 – 17g00.",
+   "Mang theo căn cước công dân, thẻ BHYT (hoặc ứng dụng VNeID) khi đến khám."
+  ],
+  "gio": "Sáng 7g00 – 11g00 · Chiều 13g00 – 17g00 (khung 1 giờ)",
+  "items": [
+   {
+    "slug": "noi-tong-quat",
+    "name": "Phòng khám Nội tổng quát",
+    "khoa": "noi-tq",
+    "topics": [
+     "tang-huyet-ap",
+     "dai-thao-duong",
+     "copd",
+     "nhan-biet-som-dot-quy",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "viem-gan",
+    "name": "Phòng khám Viêm gan",
+    "khoa": "noi-th",
+    "topics": [
+     "viem-gan-b",
+     "dinh-duong-cho-nguoi-benh",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "noi-tiet",
+    "name": "Phòng khám Nội tiết",
+    "khoa": "noi-tq",
+    "topics": [
+     "dai-thao-duong",
+     "tang-huyet-ap",
+     "dinh-duong-cho-nguoi-benh",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "noi-tieu-hoa",
+    "name": "Phòng khám Nội tiêu hóa",
+    "khoa": "noi-th",
+    "topics": [
+     "viem-gan-b",
+     "dinh-duong-cho-nguoi-benh",
+     "dung-khang-sinh-dung-cach",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "co-xuong-khop",
+    "name": "Phòng khám Cơ xương khớp",
+    "khoa": "yhct",
+    "topics": [
+     "tap-van-dong-tai-nha",
+     "phong-te-nga-khi-nam-vien",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "ngoai-tong-quat",
+    "name": "Phòng khám Ngoại tổng quát",
+    "khoa": "ngoai-tq",
+    "topics": [
+     "chuan-bi-truoc-mo",
+     "cham-soc-vet-mo-tai-nha",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "ngoai-tiet-nieu",
+    "name": "Phòng khám Ngoại tiết niệu",
+    "khoa": "ngoai-tq",
+    "topics": [
+     "chuan-bi-truoc-mo",
+     "cham-soc-vet-mo-tai-nha",
+     "dung-khang-sinh-dung-cach",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "ngoai-chan-thuong",
+    "name": "Phòng khám Ngoại chấn thương",
+    "khoa": "ngoai-ct",
+    "topics": [
+     "cham-soc-bo-bot",
+     "tap-van-dong-tai-nha",
+     "so-cuu-bong",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "san-phu-khoa",
+    "name": "Phòng khám Sản phụ khoa",
+    "khoa": "phu-san",
+    "topics": [
+     "dau-hieu-nguy-hiem-khi-mang-thai",
+     "nuoi-con-bang-sua-me",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "nhi-khoa",
+    "name": "Phòng khám Nhi khoa",
+    "khoa": "nhi",
+    "topics": [
+     "tay-chan-mieng-o-tre",
+     "sot-xuat-huyet",
+     "soi",
+     "theo-doi-tre-sau-tiem-chung",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "mat",
+    "name": "Phòng khám Mắt",
+    "khoa": "lien-ck",
+    "topics": [
+     "viem-ket-mac",
+     "duc-thuy-tinh-the",
+     "tat-khuc-xa",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "tai-mui-hong",
+    "name": "Phòng khám Tai – Mũi – Họng",
+    "khoa": "lien-ck",
+    "topics": [
+     "viem-phe-quan",
+     "cum",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "rang-ham-mat",
+    "name": "Phòng khám Răng – Hàm – Mặt",
+    "khoa": "lien-ck",
+    "topics": [
+     "dung-khang-sinh-dung-cach",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "da-lieu",
+    "name": "Phòng khám Da liễu",
+    "khoa": "kham-benh",
+    "topics": [
+     "soi",
+     "rua-tay-dung-cach",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "hiem-muon",
+    "name": "Phòng khám Hiếm muộn",
+    "khoa": "phu-san",
+    "topics": [
+     "dau-hieu-nguy-hiem-khi-mang-thai",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "tiem-chung",
+    "name": "Tiêm chủng",
+    "khoa": "tc",
+    "topics": [
+     "theo-doi-tre-sau-tiem-chung",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "kham-suc-khoe",
+    "name": "Phòng khám sức khỏe",
+    "khoa": "kham-benh",
+    "topics": [
+     "chuan-bi-lay-mau-xet-nghiem",
+     "chuan-bi-sieu-am-chup-phim",
+     "tang-huyet-ap",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   },
+   {
+    "slug": "lao-hoc",
+    "name": "Phòng khám Lão học",
+    "khoa": "noi-tq",
+    "topics": [
+     "tang-huyet-ap",
+     "phong-te-nga-khi-nam-vien",
+     "nhan-biet-som-dot-quy",
+     "dinh-duong-cho-nguoi-benh",
+     "cac-buoc-di-kham-benh",
+     "dung-thuoc-an-toan"
+    ],
+    "bacsi": []
+   }
+  ]
  }
 };
