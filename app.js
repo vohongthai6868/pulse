@@ -722,10 +722,12 @@
         score[q] = (score[q] || 0) + (i ? 1 : 2); (why[q] = why[q] || []).indexOf(s.t) < 0 && why[q].push(s.t);
       }); });
       var res = Object.keys(score).sort(function (a, b) { return score[b] - score[a]; }).map(pkBy).filter(Boolean).slice(0, 3);
-      box.appendChild(step(5, L("Phòng khám gợi ý", "Suggested clinics"), el("div", {}, [
-        el("ul", { class: "cpk-list" }, res.map(function (x) { return card(x, L("Phù hợp với: ", "Matches: ") + why[x.slug].join("; ")); })),
+      var rsec = step(5, L("Phòng khám gợi ý cho bạn", "Suggested clinics"), el("div", {}, [
+        el("ul", { class: "cpk-list" }, res.map(function (x, i) { var c = card(x, L("Phù hợp với: ", "Matches: ") + why[x.slug].join("; ")); if (!i) c.insertBefore(el("span", { class: "cpk-best", text: L("Phù hợp nhất", "Best match") }), c.firstChild); return c; })),
         telify(el("p", { class: "unit-guide-hint" }), L("Chưa chắc chắn? Gọi 0296 3562 357 hoặc hỏi Tổ Nhận bệnh để được tư vấn chọn phòng khám.", "Not sure? Call 0296 3562 357 for advice.")),
-        el("p", { class: "unit-guide-hint", text: L("Giờ khám: ", "Hours: ") + P.gio + L(". Mang theo căn cước công dân, thẻ BHYT hoặc VNeID.", ". Bring your ID and health insurance card.") })])));
+        el("p", { class: "unit-guide-hint", text: L("Giờ khám: ", "Hours: ") + P.gio + L(". Mang theo căn cước công dân, thẻ BHYT hoặc VNeID.", ". Bring your ID and health insurance card.") })]));
+      rsec.classList.add("cpk-result-sec"); box.appendChild(rsec);
+      if (!st.shown) { st.shown = 1; setTimeout(function () { rsec.scrollIntoView({ behavior: "smooth", block: "start" }); }, 50); }
     }
     draw();
     document.title = L("Gợi ý chọn phòng khám — Điều dưỡng BV Nhật Tân", "Clinic helper — Nhat Tan Hospital Nursing");
