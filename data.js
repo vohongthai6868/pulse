@@ -5796,6 +5796,2373 @@ window.PULSE_DATA = {
      "img": "img/gdsk/poster-theo-doi-tre-sau-tiem-chung.jpg",
      "caption": "Poster Theo dõi trẻ sau tiêm chủng"
     }
+   },
+   {
+    "group": "man",
+    "title": "Nhồi máu cơ tim: nhận biết sớm",
+    "points": [
+     "Đau ngực trên 15 phút không đỡ khi nghỉ: đi cấp cứu ngay.",
+     "Không tự lái xe, không chờ xem có tự hết không.",
+     "Kiểm soát huyết áp, đường máu, mỡ máu và bỏ thuốc lá để phòng bệnh."
+    ],
+    "slug": "nhoi-mau-co-tim",
+    "khoa": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.NMCT.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người có tăng huyết áp, đái tháo đường, mỡ máu cao, hút thuốc lá và người nhà.",
+     "heading": "Đau ngực trên 15 phút: đi cấp cứu ngay, mỗi phút đều quý",
+     "urgent": {
+      "h": "Đi cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Đau, thắt, đè nặng giữa ngực trên 15 phút, lan lên cổ, hàm, vai, tay trái; kèm vã mồ hôi, khó thở, buồn nôn, choáng. Ngồi nghỉ, không tự lái xe đi viện. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Đau ngực trên 15 phút không đỡ khi nghỉ: đi cấp cứu ngay.",
+      "Không tự lái xe, không chờ xem có tự hết không.",
+      "Kiểm soát huyết áp, đường máu, mỡ máu và bỏ thuốc lá để phòng bệnh."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về nhồi máu cơ tim",
+       "blocks": [
+        {
+         "p": "Nhồi máu cơ tim xảy ra khi mạch máu nuôi tim bị tắc, một phần cơ tim thiếu máu và hoại tử. Điều trị càng sớm thì phần cơ tim cứu được càng nhiều. Người cao tuổi, phụ nữ, người đái tháo đường có thể chỉ thấy mệt, khó thở, đau thượng vị. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Khi có cơn đau: ngừng mọi hoạt động, ngồi hoặc nằm đầu cao, nới lỏng quần áo.",
+          "Người đã được bác sĩ kê thuốc ngậm dưới lưỡi khi đau ngực thì dùng đúng như đã dặn.",
+          "Mang theo đơn thuốc, kết quả khám cũ khi đến viện.",
+          "Sau điều trị: uống thuốc đều, tái khám đúng hẹn, tập luyện theo hướng dẫn."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự uống thuốc giảm đau, thuốc dạ dày rồi chờ.",
+          "Không cạo gió, xoa dầu rồi nằm nghỉ ở nhà.",
+          "Không tự ngưng thuốc chống đông, thuốc tim mạch sau khi ra viện."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Đau ngực kéo dài, đau tăng dần hoặc đau cả khi nghỉ.",
+          "Khó thở, ngất, tim đập rất nhanh hoặc rất chậm.",
+          "Đã đặt stent mà đau ngực trở lại."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Đau ngực 20 phút, nghỉ không đỡ, nên làm gì?",
+       "a": "Đi cấp cứu ngay, không tự lái xe, không chờ tự hết."
+      },
+      {
+       "q": "Người đái tháo đường có thể không đau ngực nhiều không?",
+       "a": "Có. Mệt, khó thở, vã mồ hôi cũng có thể là dấu hiệu, cần đi khám ngay."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Heart attack.",
+       "url": "https://www.nhs.uk/conditions/heart-attack/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
+    },
+    "icon": "heart"
+   },
+   {
+    "group": "an",
+    "title": "Ngừng tim: gọi người và ép tim ngay",
+    "points": [
+     "Bất tỉnh, không thở: hô người hỗ trợ và ép tim ngay.",
+     "Ép giữa ngực, mạnh, nhanh 100 đến 120 lần mỗi phút, sâu khoảng 5 cm ở người lớn.",
+     "Ép liên tục đến khi người bệnh tự thở hoặc có nhân viên y tế tiếp nhận."
+    ],
+    "slug": "ngung-tim-ep-tim",
+    "khoa": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.NTEP.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người dân, người nhà người bệnh tim mạch.",
+     "heading": "Gặp người bất tỉnh, không thở: gọi người và ép tim ngay",
+     "urgent": {
+      "h": "Làm ngay",
+      "blocks": [
+       {
+        "p": "Người bất tỉnh, gọi không đáp, không thở hoặc thở ngáp: hô hoán người hỗ trợ, nhờ người gọi xe đưa đi viện, bắt đầu ép tim ngay. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Bất tỉnh, không thở: hô người hỗ trợ và ép tim ngay.",
+      "Ép giữa ngực, mạnh, nhanh 100 đến 120 lần mỗi phút, sâu khoảng 5 cm ở người lớn.",
+      "Ép liên tục đến khi người bệnh tự thở hoặc có nhân viên y tế tiếp nhận."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về ngừng tim",
+       "blocks": [
+        {
+         "p": "Ngừng tim là khi tim ngừng bơm máu, não bị tổn thương sau vài phút. Ép tim sớm giúp máu tiếp tục đến não và tim, tăng cơ hội sống. Người không được đào tạo vẫn có thể chỉ ép tim mà không cần thổi ngạt. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Đặt người bệnh nằm ngửa trên nền cứng.",
+          "Đặt gót một bàn tay giữa ngực (nửa dưới xương ức), tay kia đặt chồng lên, khuỷu tay thẳng.",
+          "Ép thẳng xuống khoảng 5 cm, để ngực nảy lên hết sau mỗi lần ép, nhịp 100 đến 120 lần mỗi phút.",
+          "Có máy sốc tim tự động (AED) thì bật máy và làm theo hướng dẫn bằng giọng nói.",
+          "Mệt thì đổi người ép, hạn chế ngừng ép."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không bỏ người bệnh đi tìm người khi có thể vừa ép vừa hô hoán.",
+          "Không đổ nước, cho uống thuốc vào miệng người bất tỉnh.",
+          "Không ngừng ép để kiểm tra mạch nhiều lần."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Tham gia lớp sơ cứu, ép tim do bệnh viện hoặc Hội Chữ thập đỏ tổ chức.",
+          "Người nhà người bệnh tim mạch nên học trước cách ép tim."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Không biết thổi ngạt có ép tim được không?",
+       "a": "Được. Chỉ ép tim liên tục vẫn có ích, quan trọng là bắt đầu sớm."
+      },
+      {
+       "q": "Ép tim nhanh bao nhiêu?",
+       "a": "100 đến 120 lần mỗi phút, sâu khoảng 5 cm ở người lớn."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. How to do CPR.",
+       "url": "https://www.nhs.uk/conditions/first-aid/cpr/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
+    },
+    "icon": "heart"
+   },
+   {
+    "group": "an",
+    "title": "Rắn cắn: sơ cứu đúng",
+    "points": [
+     "Giữ người bị cắn nằm yên, bất động chi bị cắn bằng nẹp.",
+     "Không rạch, không hút, không garô chặt, không đắp lá.",
+     "Đến viện ngay; chụp ảnh con rắn nếu làm được an toàn, không cố bắt."
+    ],
+    "slug": "ran-can",
+    "khoa": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.RC.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người làm ruộng, làm vườn, người dân vùng nông thôn.",
+     "heading": "Bị rắn cắn: giữ yên, bất động chi và đến viện ngay",
+     "urgent": {
+      "h": "Đến viện ngay",
+      "blocks": [
+       {
+        "p": "Mọi trường hợp rắn cắn đều cần đến viện, kể cả khi chưa thấy triệu chứng. Đặc biệt khi sưng lan nhanh, chảy máu, sụp mí, nói khó, khó thở. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Giữ người bị cắn nằm yên, bất động chi bị cắn bằng nẹp.",
+      "Không rạch, không hút, không garô chặt, không đắp lá.",
+      "Đến viện ngay; chụp ảnh con rắn nếu làm được an toàn, không cố bắt."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về rắn cắn",
+       "blocks": [
+        {
+         "p": "Nọc rắn độc có thể gây rối loạn đông máu, liệt cơ hô hấp hoặc hoại tử vùng bị cắn. Thuốc đặc hiệu là huyết thanh kháng nọc, chỉ có ở cơ sở y tế. Cử động nhiều làm nọc lan nhanh hơn. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Trấn an, đặt người bị cắn nằm yên.",
+          "Tháo nhẫn, vòng, đồng hồ ở chi bị cắn trước khi sưng.",
+          "Bất động chi bằng nẹp như khi gãy xương, để chi ngang hoặc thấp hơn tim.",
+          "Rửa vết cắn bằng nước sạch, che bằng gạc sạch.",
+          "Vận chuyển bằng cáng hoặc xe, hạn chế để người bệnh tự đi."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không rạch, hút, chích vết cắn; không đốt, không chườm đá.",
+          "Không garô chặt; không đắp lá, uống thuốc nam, rượu.",
+          "Không mất thời gian đi tìm thầy lang."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Mọi trường hợp bị rắn cắn, kể cả nghi ngờ.",
+          "Sưng tím lan nhanh, chảy máu chân răng, tiểu đỏ.",
+          "Sụp mí, nhìn đôi, nói khó, nuốt khó, khó thở."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Có nên garô thật chặt để chặn nọc không?",
+       "a": "Không. Garô chặt gây hoại tử chi; chỉ bất động chi và đến viện ngay."
+      },
+      {
+       "q": "Chưa thấy sưng đau có cần đi viện không?",
+       "a": "Có. Triệu chứng có thể xuất hiện muộn, cần theo dõi tại cơ sở y tế."
+      }
+     ],
+     "refs": [
+      {
+       "t": "WHO. Snakebite envenoming.",
+       "url": "https://www.who.int/news-room/fact-sheets/detail/snakebite-envenoming",
+       "org": "WHO"
+      },
+      {
+       "t": "NHS. Snake bites.",
+       "url": "https://www.nhs.uk/conditions/snake-bites/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
+    },
+    "icon": "alert"
+   },
+   {
+    "group": "an",
+    "title": "Phản vệ: dị ứng nặng, xử trí khẩn",
+    "points": [
+     "Nổi mề đay kèm khó thở, choáng: đến viện ngay.",
+     "Luôn khai báo tiền sử dị ứng với nhân viên y tế trước khi dùng thuốc.",
+     "Người đã từng phản vệ: giữ thẻ ghi dị nguyên, tránh tiếp xúc lại."
+    ],
+    "slug": "phan-ve",
+    "khoa": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.PV.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người có tiền sử dị ứng thuốc, thức ăn, côn trùng đốt và người nhà.",
+     "heading": "Phản vệ diễn tiến rất nhanh: nhận biết sớm, đến viện ngay",
+     "urgent": {
+      "h": "Đến viện ngay",
+      "blocks": [
+       {
+        "p": "Sau khi dùng thuốc, ăn thức ăn lạ hoặc bị ong đốt mà nổi mề đay lan nhanh, sưng môi, mắt, khó thở, khò khè, choáng, tụt huyết áp, đau bụng nôn ói. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Nổi mề đay kèm khó thở, choáng: đến viện ngay.",
+      "Luôn khai báo tiền sử dị ứng với nhân viên y tế trước khi dùng thuốc.",
+      "Người đã từng phản vệ: giữ thẻ ghi dị nguyên, tránh tiếp xúc lại."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về phản vệ",
+       "blocks": [
+        {
+         "p": "Phản vệ là phản ứng dị ứng toàn thân, có thể gây tử vong trong vài phút đến vài giờ. Nguyên nhân hay gặp: thuốc (kháng sinh, thuốc giảm đau, thuốc cản quang), thức ăn (hải sản, đậu phộng), nọc ong. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Ngừng ngay thuốc hoặc thức ăn nghi gây dị ứng.",
+          "Đặt người bệnh nằm, kê chân cao; khó thở thì ngồi.",
+          "Người đã được kê bút tiêm adrenalin thì tiêm ngay theo hướng dẫn và vẫn phải đến viện.",
+          "Sau khi điều trị: ghi rõ tên thuốc, thức ăn gây dị ứng vào thẻ, sổ khám bệnh."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự uống thêm thuốc chống dị ứng rồi ở nhà chờ.",
+          "Không dùng lại thuốc đã từng gây dị ứng.",
+          "Không giấu tiền sử dị ứng khi đi khám, tiêm chủng."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Mề đay lan rộng, sưng môi, lưỡi, mí mắt.",
+          "Khó thở, khò khè, khàn tiếng, nuốt vướng.",
+          "Choáng váng, vã mồ hôi, ngất."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Phản vệ có thể xảy ra sau ăn hải sản không?",
+       "a": "Có. Thức ăn, thuốc, ong đốt đều có thể gây phản vệ."
+      },
+      {
+       "q": "Vì sao phải khai tiền sử dị ứng?",
+       "a": "Để nhân viên y tế tránh dùng thuốc gây dị ứng và chuẩn bị xử trí."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Anaphylaxis.",
+       "url": "https://www.nhs.uk/conditions/anaphylaxis/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
+    },
+    "icon": "alert"
+   },
+   {
+    "group": "an",
+    "title": "Ngộ độc thuốc trừ sâu",
+    "points": [
+     "Đưa người bệnh ra nơi thoáng, cởi bỏ quần áo dính thuốc.",
+     "Không cố gây nôn khi người bệnh lơ mơ; đến viện ngay, mang theo bao bì thuốc.",
+     "Cất giữ thuốc trừ sâu ở nơi khóa kín, xa tầm tay trẻ em."
+    ],
+    "slug": "ngo-doc-thuoc-tru-sau",
+    "khoa": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.NDTS.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho nông dân, người phun xịt thuốc bảo vệ thực vật và gia đình có trẻ nhỏ.",
+     "heading": "Ngộ độc thuốc trừ sâu: đưa ra khỏi nơi nhiễm độc, đến viện ngay",
+     "urgent": {
+      "h": "Đến viện ngay",
+      "blocks": [
+       {
+        "p": "Uống nhầm, hít hoặc dính thuốc trừ sâu; vã mồ hôi, chảy nước bọt, co giật cơ, nôn, khó thở, lơ mơ. Mang theo chai, bao bì thuốc. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Đưa người bệnh ra nơi thoáng, cởi bỏ quần áo dính thuốc.",
+      "Không cố gây nôn khi người bệnh lơ mơ; đến viện ngay, mang theo bao bì thuốc.",
+      "Cất giữ thuốc trừ sâu ở nơi khóa kín, xa tầm tay trẻ em."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về ngộ độc thuốc trừ sâu",
+       "blocks": [
+        {
+         "p": "Thuốc trừ sâu có thể vào cơ thể qua đường uống, đường thở và qua da. Nhiều loại gây ngộ độc nặng, cần điều trị tại khoa cấp cứu, chống độc. Biết tên thuốc giúp bác sĩ chọn thuốc giải độc phù hợp. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Người cứu cần đeo găng hoặc túi nilon khi chạm vào người bệnh dính thuốc.",
+          "Tắm, rửa da bằng xà phòng và nhiều nước; rửa mắt bằng nước sạch nếu thuốc văng vào mắt.",
+          "Người bất tỉnh còn thở: đặt nằm nghiêng an toàn.",
+          "Phun thuốc: mặc đồ bảo hộ, đeo khẩu trang, găng tay; không ăn uống, hút thuốc khi phun."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không cho uống sữa, nước chanh, dầu ăn hay mẹo dân gian để giải độc.",
+          "Không đựng thuốc trừ sâu trong chai nước uống.",
+          "Không chờ triệu chứng nặng mới đi viện."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Mọi trường hợp uống nhầm hoặc nghi uống thuốc trừ sâu.",
+          "Choáng, nôn, khó thở, co giật sau khi phun thuốc.",
+          "Có ý định tự hại: cần được hỗ trợ y tế và tâm lý ngay."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Có nên đựng thuốc trừ sâu trong chai nước suối không?",
+       "a": "Không. Dễ uống nhầm, nhất là trẻ em."
+      },
+      {
+       "q": "Dính thuốc trên da cần làm gì?",
+       "a": "Cởi quần áo dính thuốc, rửa da bằng xà phòng, nhiều nước rồi đến viện."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Poisoning.",
+       "url": "https://www.nhs.uk/conditions/poisoning/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
+    },
+    "icon": "flask"
+   },
+   {
+    "group": "an",
+    "title": "Ngộ độc rượu và thực phẩm",
+    "points": [
+     "Không uống rượu không rõ nguồn gốc; nhìn mờ sau uống rượu là dấu hiệu nguy hiểm.",
+     "Ăn chín, uống sôi, bảo quản thức ăn đúng cách.",
+     "Tiêu chảy: uống ORS pha đúng hướng dẫn; dấu hiệu nặng thì đến viện."
+    ],
+    "slug": "ngo-doc-ruou-thuc-pham",
+    "khoa": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.NDRT.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người dân, gia đình hay tổ chức tiệc, đám tiệc.",
+     "heading": "Rượu không rõ nguồn gốc, thức ăn ôi thiu: phòng ngộ độc",
+     "urgent": {
+      "h": "Đến viện ngay",
+      "blocks": [
+       {
+        "p": "Sau uống rượu: lơ mơ, gọi khó tỉnh, nôn nhiều, thở chậm, nhìn mờ; sau ăn: nôn, tiêu chảy nhiều, khát, tiểu ít, đi ngoài ra máu, sốt cao. Nhiều người cùng ăn cùng bị. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Không uống rượu không rõ nguồn gốc; nhìn mờ sau uống rượu là dấu hiệu nguy hiểm.",
+      "Ăn chín, uống sôi, bảo quản thức ăn đúng cách.",
+      "Tiêu chảy: uống ORS pha đúng hướng dẫn; dấu hiệu nặng thì đến viện."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về ngộ độc rượu và thực phẩm",
+       "blocks": [
+        {
+         "p": "Rượu pha cồn công nghiệp (methanol) có thể gây mù, tổn thương não và tử vong, dấu hiệu có thể xuất hiện sau nhiều giờ. Ngộ độc thực phẩm thường do vi khuẩn, độc tố trong thức ăn ôi thiu, nấm độc, cá nóc, cóc. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Người say rượu: đặt nằm nghiêng an toàn, có người trông, không để nằm ngửa một mình.",
+          "Tiêu chảy, nôn: uống từng ngụm nhỏ dung dịch ORS; trẻ nhỏ tiếp tục bú mẹ.",
+          "Giữ lại mẫu thức ăn, rượu nghi ngờ để cơ quan y tế kiểm tra.",
+          "Rửa tay trước khi chế biến và trước khi ăn."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không cho uống cà phê, tắm nước lạnh để giải rượu.",
+          "Không ăn nấm lạ, cá nóc, cóc; không ăn thức ăn để qua đêm không bảo quản lạnh.",
+          "Không tự uống thuốc cầm tiêu chảy cho trẻ."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Lơ mơ, co giật, thở chậm, nhìn mờ sau uống rượu.",
+          "Nôn hoặc tiêu chảy nhiều, không uống được, tiểu ít.",
+          "Đi ngoài ra máu, sốt cao, đau bụng dữ dội."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Nhìn mờ sau khi uống rượu có đáng lo không?",
+       "a": "Có. Đó có thể là ngộ độc methanol, cần đến viện ngay."
+      },
+      {
+       "q": "Tiêu chảy nên uống gì?",
+       "a": "Dung dịch ORS pha đúng tỉ lệ ghi trên gói, uống từng ngụm nhỏ."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Alcohol poisoning.",
+       "url": "https://www.nhs.uk/conditions/alcohol-poisoning/",
+       "org": "NHS"
+      },
+      {
+       "t": "NHS. Food poisoning.",
+       "url": "https://www.nhs.uk/conditions/food-poisoning/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
+    },
+    "icon": "alert"
+   },
+   {
+    "group": "man",
+    "title": "Tụt huyết áp khi chạy thận",
+    "points": [
+     "Hạn chế nước, muối để tăng cân giữa hai lần chạy thận không quá mức bác sĩ dặn.",
+     "Đang chạy thận thấy chóng mặt, buồn nôn: báo ngay điều dưỡng.",
+     "Hỏi bác sĩ về thời điểm uống thuốc huyết áp vào ngày chạy thận."
+    ],
+    "slug": "ha-huyet-ap-khi-chay-than",
+    "khoa": "Bộ phận Thận nhân tạo",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.HHA.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người bệnh chạy thận nhân tạo chu kỳ và người nhà.",
+     "heading": "Hạn chế tăng cân giữa hai lần chạy thận để tránh tụt huyết áp",
+     "urgent": {
+      "h": "Báo ngay cho điều dưỡng",
+      "blocks": [
+       {
+        "p": "Đang chạy thận mà chóng mặt, hoa mắt, buồn nôn, ngáp nhiều, chuột rút, vã mồ hôi: báo ngay điều dưỡng. Ở nhà mà choáng, ngất, đau ngực, khó thở: Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Hạn chế nước, muối để tăng cân giữa hai lần chạy thận không quá mức bác sĩ dặn.",
+      "Đang chạy thận thấy chóng mặt, buồn nôn: báo ngay điều dưỡng.",
+      "Hỏi bác sĩ về thời điểm uống thuốc huyết áp vào ngày chạy thận."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về tụt huyết áp khi chạy thận",
+       "blocks": [
+        {
+         "p": "Khi chạy thận, máy rút bớt nước dư trong cơ thể. Nếu tăng cân nhiều giữa hai lần chạy, lượng nước phải rút lớn, dễ gây tụt huyết áp, chuột rút, mệt sau chạy thận. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Cân mỗi ngày, ghi lại cân nặng; uống nước theo lượng bác sĩ dặn.",
+          "Ăn nhạt, hạn chế canh, cháo, trái cây nhiều nước.",
+          "Ngậm đá viên nhỏ, súc miệng khi khát.",
+          "Sau chạy thận: ngồi dậy từ từ, đứng lên chậm."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không ăn mặn, uống nhiều nước rồi trông chờ máy rút bớt.",
+          "Không tự ý bỏ hoặc đổi giờ uống thuốc huyết áp.",
+          "Không đứng dậy đột ngột ngay sau khi chạy thận."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Choáng, ngất ở nhà sau chạy thận.",
+          "Đau ngực, khó thở, phù nhiều.",
+          "Tụt huyết áp lặp lại nhiều buổi chạy thận."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Vì sao tăng cân nhiều giữa hai lần chạy thận dễ tụt huyết áp?",
+       "a": "Vì máy phải rút nhiều nước trong thời gian ngắn."
+      },
+      {
+       "q": "Khát nước nên làm gì?",
+       "a": "Ngậm đá viên nhỏ, súc miệng, ăn nhạt để bớt khát."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Dialysis.",
+       "url": "https://www.nhs.uk/conditions/dialysis/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Bộ phận Thận nhân tạo · Phòng Điều dưỡng"
+    },
+    "icon": "drop"
+   },
+   {
+    "group": "man",
+    "title": "Kali máu cao ở người bệnh thận",
+    "points": [
+     "Hạn chế trái cây, rau nhiều kali như chuối, cam, dừa, sầu riêng, bơ.",
+     "Không bỏ buổi chạy thận.",
+     "Xét nghiệm kali định kỳ theo hẹn."
+    ],
+    "slug": "tang-kali-mau",
+    "khoa": "Bộ phận Thận nhân tạo",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.KALI.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người bệnh thận mạn, chạy thận nhân tạo và người nấu ăn trong gia đình.",
+     "heading": "Ăn đúng để không tăng kali máu, bảo vệ tim",
+     "urgent": {
+      "h": "Đến viện ngay",
+      "blocks": [
+       {
+        "p": "Yếu, tê chân tay, tim đập chậm hoặc không đều, khó thở, nhất là khi bỏ buổi chạy thận hoặc ăn nhiều trái cây. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Hạn chế trái cây, rau nhiều kali như chuối, cam, dừa, sầu riêng, bơ.",
+      "Không bỏ buổi chạy thận.",
+      "Xét nghiệm kali định kỳ theo hẹn."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về kali máu cao ở người bệnh thận",
+       "blocks": [
+        {
+         "p": "Thận suy không thải được kali. Kali máu cao có thể gây rối loạn nhịp tim nguy hiểm, có khi không có triệu chứng báo trước. Xét nghiệm máu định kỳ giúp phát hiện sớm. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Ngâm rau củ đã cắt nhỏ trong nước, luộc rồi bỏ nước luộc để giảm kali.",
+          "Chọn trái cây ít kali, ăn lượng vừa phải theo hướng dẫn của bác sĩ, khoa Dinh dưỡng.",
+          "Hỏi bác sĩ trước khi dùng muối ăn kiêng, thuốc nam, thực phẩm chức năng.",
+          "Uống thuốc theo đơn, mang danh sách thuốc khi tái khám."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không uống nước dừa, nước ép trái cây nhiều.",
+          "Không dùng muối thay thế có kali khi chưa hỏi bác sĩ.",
+          "Không tự bỏ buổi chạy thận."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Yếu cơ, tê bì chân tay.",
+          "Hồi hộp, tim đập chậm hoặc không đều.",
+          "Bỏ lỡ buổi chạy thận và thấy mệt."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Người chạy thận có nên uống nước dừa không?",
+       "a": "Không nên, nước dừa nhiều kali."
+      },
+      {
+       "q": "Làm sao giảm kali trong rau?",
+       "a": "Cắt nhỏ, ngâm nước, luộc rồi bỏ nước luộc."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Dialysis.",
+       "url": "https://www.nhs.uk/conditions/dialysis/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Bộ phận Thận nhân tạo · Phòng Điều dưỡng"
+    },
+    "icon": "apple"
+   },
+   {
+    "group": "man",
+    "title": "Ngứa da ở người chạy thận",
+    "points": [
+     "Giữ da ẩm, tắm nước ấm vừa, dùng kem dưỡng không mùi.",
+     "Uống thuốc gắn phosphat và ăn đúng chế độ theo hướng dẫn.",
+     "Cắt móng tay ngắn, không gãi mạnh làm trầy da."
+    ],
+    "slug": "ngua-o-nguoi-chay-than",
+    "khoa": "Bộ phận Thận nhân tạo",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.NGUA.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người bệnh chạy thận nhân tạo.",
+     "heading": "Giảm ngứa da, giữ da lành khi chạy thận",
+     "urgent": {
+      "h": "Báo bác sĩ sớm",
+      "blocks": [
+       {
+        "p": "Ngứa kèm vàng da, nổi mẩn lan nhanh, sốt, vết gãi chảy dịch, sưng đỏ quanh cầu nối: Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Giữ da ẩm, tắm nước ấm vừa, dùng kem dưỡng không mùi.",
+      "Uống thuốc gắn phosphat và ăn đúng chế độ theo hướng dẫn.",
+      "Cắt móng tay ngắn, không gãi mạnh làm trầy da."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về ngứa da ở người chạy thận",
+       "blocks": [
+        {
+         "p": "Ngứa hay gặp ở người chạy thận do da khô, phosphat máu cao, chạy thận chưa đủ. Gãi nhiều dễ làm trầy xước, nhiễm trùng da. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Tắm nhanh bằng nước ấm, xà phòng dịu nhẹ; thoa kem dưỡng ngay sau tắm.",
+          "Mặc quần áo cotton, rộng, thoáng.",
+          "Hạn chế thức ăn nhiều phosphat như nội tạng, đồ hộp, nước ngọt có ga.",
+          "Chạy thận đủ buổi, đủ giờ."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tắm nước quá nóng, không chà xát mạnh.",
+          "Không tự bôi thuốc có corticoid kéo dài.",
+          "Không gãi vùng da quanh cầu nối."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Ngứa nhiều mất ngủ, không giảm sau khi chăm sóc da.",
+          "Da trầy xước sưng đỏ, chảy mủ.",
+          "Vùng cầu nối đỏ, đau, chảy dịch."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Tắm nước thật nóng có giúp hết ngứa không?",
+       "a": "Không, nước nóng làm da khô và ngứa hơn."
+      },
+      {
+       "q": "Vì sao phải uống thuốc gắn phosphat?",
+       "a": "Phosphat cao là một nguyên nhân gây ngứa và hại xương."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Dialysis.",
+       "url": "https://www.nhs.uk/conditions/dialysis/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Bộ phận Thận nhân tạo · Phòng Điều dưỡng"
+    },
+    "icon": "drop"
+   },
+   {
+    "group": "tn",
+    "title": "Quai bị",
+    "points": [
+     "Nghỉ học, nghỉ làm khoảng 5 ngày từ khi sưng tuyến mang tai.",
+     "Ăn mềm, uống đủ nước, hạ sốt theo hướng dẫn.",
+     "Tiêm vắc xin phòng quai bị theo lịch."
+    ],
+    "slug": "quai-bi",
+    "khoa": "Khoa Truyền nhiễm",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.QB.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho cha mẹ có con nhỏ, học sinh, người chưa tiêm vắc xin.",
+     "heading": "Quai bị: nghỉ ngơi, cách ly, theo dõi biến chứng",
+     "urgent": {
+      "h": "Đến khám ngay",
+      "blocks": [
+       {
+        "p": "Sốt cao, đau đầu dữ dội, nôn, cổ cứng, lơ mơ; đau bụng nhiều; sưng đau tinh hoàn. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Nghỉ học, nghỉ làm khoảng 5 ngày từ khi sưng tuyến mang tai.",
+      "Ăn mềm, uống đủ nước, hạ sốt theo hướng dẫn.",
+      "Tiêm vắc xin phòng quai bị theo lịch."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về quai bị",
+       "blocks": [
+        {
+         "p": "Quai bị do virus, lây qua giọt bắn khi ho, hắt hơi, nói chuyện. Tuyến nước bọt mang tai sưng đau một hoặc hai bên. Đa số tự khỏi, nhưng có thể biến chứng viêm tinh hoàn, viêm màng não, viêm tụy. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Chườm ấm hoặc mát vùng sưng cho dễ chịu.",
+          "Ăn cháo, súp mềm; tránh đồ chua làm đau tuyến.",
+          "Hạ sốt bằng paracetamol theo cân nặng, theo hướng dẫn.",
+          "Đeo khẩu trang, rửa tay, dùng đồ dùng riêng."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không đắp lá, bôi vôi, mực tàu lên vùng sưng.",
+          "Không tự dùng kháng sinh: quai bị do virus.",
+          "Không đến trường, nơi đông người khi đang lây."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Sốt cao kéo dài, đau đầu, nôn, cổ cứng.",
+          "Đau bụng vùng trên rốn.",
+          "Sưng, đau tinh hoàn hoặc đau bụng dưới ở nữ."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Có nên bôi vôi, mực tàu lên má sưng không?",
+       "a": "Không, không có tác dụng và có thể gây kích ứng da."
+      },
+      {
+       "q": "Quai bị có cần kháng sinh không?",
+       "a": "Không, quai bị do virus; chỉ điều trị triệu chứng."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Mumps.",
+       "url": "https://www.nhs.uk/conditions/mumps/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Truyền nhiễm · Phòng Điều dưỡng"
+    },
+    "icon": "bug"
+   },
+   {
+    "group": "tn",
+    "title": "Thủy đậu",
+    "points": [
+     "Cách ly đến khi các mụn nước đóng vảy hết.",
+     "Tắm nước ấm, cắt móng tay, không làm vỡ mụn nước.",
+     "Tiêm vắc xin thủy đậu để phòng bệnh."
+    ],
+    "slug": "thuy-dau",
+    "khoa": "Khoa Truyền nhiễm",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.TD.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho cha mẹ có con nhỏ, phụ nữ mang thai, người chưa mắc hoặc chưa tiêm vắc xin.",
+     "heading": "Thủy đậu: giữ sạch da, không làm vỡ mụn nước",
+     "urgent": {
+      "h": "Đến khám ngay",
+      "blocks": [
+       {
+        "p": "Sốt cao kéo dài, mụn nước sưng đỏ chảy mủ, khó thở, ho nhiều, lơ mơ, co giật; phụ nữ mang thai, trẻ sơ sinh, người suy giảm miễn dịch mắc thủy đậu. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Cách ly đến khi các mụn nước đóng vảy hết.",
+      "Tắm nước ấm, cắt móng tay, không làm vỡ mụn nước.",
+      "Tiêm vắc xin thủy đậu để phòng bệnh."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về thủy đậu",
+       "blocks": [
+        {
+         "p": "Thủy đậu do virus, lây rất mạnh qua đường hô hấp và tiếp xúc với dịch mụn nước. Bệnh thường lành sau 1 đến 2 tuần nhưng có thể bội nhiễm da, viêm phổi, viêm não. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Tắm hằng ngày bằng nước ấm, lau khô nhẹ nhàng.",
+          "Mặc quần áo rộng, thoáng; thay hằng ngày.",
+          "Hạ sốt bằng paracetamol theo hướng dẫn.",
+          "Bôi thuốc theo đơn của bác sĩ."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không kiêng tắm, kiêng gió.",
+          "Không chọc vỡ mụn nước, không bôi thuốc đỏ, lá cây, kem đánh răng.",
+          "Không dùng aspirin hạ sốt cho trẻ."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Mụn nước sưng đỏ, đau, chảy mủ.",
+          "Ho, khó thở, sốt cao kéo dài trên 3 ngày.",
+          "Đau đầu, nôn, lơ mơ, co giật."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Bị thủy đậu có nên kiêng tắm không?",
+       "a": "Không. Tắm nước ấm giúp sạch da, giảm bội nhiễm."
+      },
+      {
+       "q": "Khi nào hết lây?",
+       "a": "Khi tất cả mụn nước đã đóng vảy."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Chickenpox.",
+       "url": "https://www.nhs.uk/conditions/chickenpox/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Truyền nhiễm · Phòng Điều dưỡng"
+    },
+    "icon": "bug"
+   },
+   {
+    "group": "man",
+    "title": "Thoát vị đĩa đệm cột sống thắt lưng",
+    "points": [
+     "Vẫn vận động nhẹ nhàng, tránh nằm bất động lâu ngày.",
+     "Cúi nhấc vật nặng đúng tư thế: gập gối, giữ lưng thẳng.",
+     "Tê vùng hậu môn, bí tiểu, yếu chân: khám ngay."
+    ],
+    "slug": "thoat-vi-dia-dem",
+    "khoa": "Khoa Y học cổ truyền – Phục hồi chức năng",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.TVDD.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người đau lưng lan xuống chân, người lao động nặng, ngồi nhiều.",
+     "heading": "Đau lưng lan chân: vận động đúng, tránh làm nặng thêm",
+     "urgent": {
+      "h": "Đến khám ngay",
+      "blocks": [
+       {
+        "p": "Đau lưng kèm tê vùng hậu môn, sinh dục; bí tiểu hoặc tiểu không tự chủ; yếu liệt chân tăng dần; đau kèm sốt, sụt cân. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Vẫn vận động nhẹ nhàng, tránh nằm bất động lâu ngày.",
+      "Cúi nhấc vật nặng đúng tư thế: gập gối, giữ lưng thẳng.",
+      "Tê vùng hậu môn, bí tiểu, yếu chân: khám ngay."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về thoát vị đĩa đệm cột sống thắt lưng",
+       "blocks": [
+        {
+         "p": "Đĩa đệm là lớp đệm giữa các đốt sống. Khi đĩa đệm thoát ra chèn rễ thần kinh sẽ gây đau lưng lan xuống mông, chân, tê bì. Đa số cải thiện sau vài tuần với thuốc, vật lý trị liệu và tập luyện. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Đi bộ nhẹ, tăng dần theo sức; tập các bài theo hướng dẫn của kỹ thuật y.",
+          "Chườm ấm vùng lưng khi đau.",
+          "Ngồi ghế có tựa lưng, đứng dậy đi lại sau mỗi 30 đến 45 phút.",
+          "Giữ cân nặng hợp lý."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không bê vật nặng khi đang đau.",
+          "Không nhờ người không chuyên bẻ, nắn cột sống.",
+          "Không tự dùng thuốc giảm đau, thuốc có corticoid kéo dài."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Đau không giảm sau 4 đến 6 tuần điều trị.",
+          "Yếu chân, đi lại khó.",
+          "Tê vùng hậu môn, rối loạn tiểu tiện."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Đau lưng có nên nằm yên một chỗ nhiều ngày?",
+       "a": "Không, nên vận động nhẹ nhàng để hồi phục nhanh hơn."
+      },
+      {
+       "q": "Bí tiểu kèm đau lưng có nguy hiểm không?",
+       "a": "Có, cần khám ngay vì rễ thần kinh có thể bị chèn ép nặng."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Slipped disc.",
+       "url": "https://www.nhs.uk/conditions/slipped-disc/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Y học cổ truyền – Phục hồi chức năng · Phòng Điều dưỡng"
+    },
+    "icon": "walk"
+   },
+   {
+    "group": "man",
+    "title": "Liệt mặt ngoại biên (liệt dây VII)",
+    "points": [
+     "Khám sớm trong 72 giờ đầu để được điều trị phù hợp.",
+     "Bảo vệ mắt: nhỏ nước mắt nhân tạo, đeo kính, che mắt khi ngủ.",
+     "Tập cơ mặt trước gương theo hướng dẫn."
+    ],
+    "slug": "liet-mat-ngoai-bien",
+    "khoa": "Khoa Y học cổ truyền – Phục hồi chức năng",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.LVII.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người bị méo miệng, nhắm mắt không kín và người nhà.",
+     "heading": "Liệt mặt: khám sớm, bảo vệ mắt và tập cơ mặt đúng",
+     "urgent": {
+      "h": "Đi cấp cứu ngay",
+      "blocks": [
+       {
+        "p": "Méo miệng kèm yếu tay chân, nói khó, nhìn mờ, chóng mặt, đau đầu dữ dội: có thể là đột quỵ. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Khám sớm trong 72 giờ đầu để được điều trị phù hợp.",
+      "Bảo vệ mắt: nhỏ nước mắt nhân tạo, đeo kính, che mắt khi ngủ.",
+      "Tập cơ mặt trước gương theo hướng dẫn."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về liệt mặt ngoại biên (liệt dây VII)",
+       "blocks": [
+        {
+         "p": "Liệt mặt ngoại biên do dây thần kinh số VII bị viêm, chèn ép; hay gặp sau nhiễm lạnh, nhiễm virus. Một bên mặt yếu: miệng méo, mắt nhắm không kín, uống nước bị trào. Đa số hồi phục trong vài tuần đến vài tháng. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Nhỏ nước mắt nhân tạo nhiều lần trong ngày; dùng mỡ tra mắt, băng che mắt khi ngủ theo hướng dẫn.",
+          "Đeo kính khi ra đường, tránh gió bụi.",
+          "Tập nhướn mày, nhắm mắt, phồng má, huýt sáo, cười trước gương.",
+          "Súc miệng sau ăn vì thức ăn dễ đọng bên liệt."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự giật, chích lể, đắp thuốc lên mặt.",
+          "Không để mắt khô, không dụi mắt.",
+          "Không ngồi trước quạt, máy lạnh thổi thẳng vào mặt."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Méo miệng kèm yếu tay chân, nói khó (nghi đột quỵ).",
+          "Mắt đỏ, đau, nhìn mờ.",
+          "Không cải thiện sau 3 tuần."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Méo miệng kèm yếu tay chân là gì?",
+       "a": "Có thể là đột quỵ, cần đi cấp cứu ngay."
+      },
+      {
+       "q": "Vì sao phải nhỏ mắt?",
+       "a": "Mắt nhắm không kín dễ khô, loét giác mạc."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Bell's palsy.",
+       "url": "https://www.nhs.uk/conditions/bells-palsy/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Y học cổ truyền – Phục hồi chức năng · Phòng Điều dưỡng"
+    },
+    "icon": "eye"
+   },
+   {
+    "group": "man",
+    "title": "Bệnh gout",
+    "points": [
+     "Hạn chế rượu bia, nội tạng, thịt đỏ, hải sản, nước ngọt.",
+     "Uống đủ nước, giữ cân nặng hợp lý.",
+     "Uống thuốc hạ acid uric đều đặn theo đơn, không tự ngưng."
+    ],
+    "slug": "gout",
+    "khoa": "Khoa Nội tổng quát",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.GOUT.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người bị gout, acid uric máu cao.",
+     "heading": "Gout: ăn uống hợp lý, uống thuốc đều để không tái phát",
+     "urgent": {
+      "h": "Đến khám ngay",
+      "blocks": [
+       {
+        "p": "Khớp sưng nóng đỏ kèm sốt cao, rét run; đau lan nhiều khớp; tiểu ít, đau hông lưng. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Hạn chế rượu bia, nội tạng, thịt đỏ, hải sản, nước ngọt.",
+      "Uống đủ nước, giữ cân nặng hợp lý.",
+      "Uống thuốc hạ acid uric đều đặn theo đơn, không tự ngưng."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về bệnh gout",
+       "blocks": [
+        {
+         "p": "Gout do acid uric trong máu tăng cao, lắng đọng thành tinh thể ở khớp, gây cơn viêm khớp đau dữ dội, hay gặp ở ngón chân cái. Nếu không điều trị có thể tạo hạt tophi, tổn thương khớp và thận. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Trong cơn đau: nghỉ ngơi, kê cao chân, chườm lạnh.",
+          "Uống 2 lít nước mỗi ngày nếu không có bệnh tim, thận cần hạn chế nước.",
+          "Ăn nhiều rau, sữa ít béo.",
+          "Tái khám, xét nghiệm acid uric theo hẹn."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự mua thuốc giảm đau, thuốc có corticoid uống kéo dài.",
+          "Không uống rượu bia, nhất là bia.",
+          "Không tự ngưng thuốc khi hết đau."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Cơn đau tái phát nhiều lần.",
+          "Sưng khớp kèm sốt.",
+          "Nổi cục dưới da quanh khớp, tiểu ra sỏi."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Hết đau có được ngưng thuốc hạ acid uric?",
+       "a": "Không, cần uống đều theo đơn để phòng tái phát."
+      },
+      {
+       "q": "Thức uống nào nên hạn chế?",
+       "a": "Rượu, bia và nước ngọt có đường."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Gout.",
+       "url": "https://www.nhs.uk/conditions/gout/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
+    },
+    "icon": "walk"
+   },
+   {
+    "group": "man",
+    "title": "Thoái hóa khớp gối",
+    "points": [
+     "Giảm cân nếu thừa cân giúp giảm đau gối rõ rệt.",
+     "Tập cơ đùi, đi bộ, đạp xe, bơi đều đặn.",
+     "Không tự tiêm thuốc vào khớp, không dùng thuốc không rõ nguồn gốc."
+    ],
+    "slug": "thoai-hoa-khop-goi",
+    "khoa": "Khoa Nội tổng quát",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.THK.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người trung niên, cao tuổi, người thừa cân bị đau gối.",
+     "heading": "Đau gối do thoái hóa: tập luyện và giảm cân là quan trọng nhất",
+     "urgent": {
+      "h": "Đến khám sớm",
+      "blocks": [
+       {
+        "p": "Gối sưng nóng đỏ, sốt; đau dữ dội sau té ngã, không đi được; gối biến dạng. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Giảm cân nếu thừa cân giúp giảm đau gối rõ rệt.",
+      "Tập cơ đùi, đi bộ, đạp xe, bơi đều đặn.",
+      "Không tự tiêm thuốc vào khớp, không dùng thuốc không rõ nguồn gốc."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về thoái hóa khớp gối",
+       "blocks": [
+        {
+         "p": "Thoái hóa khớp gối là tình trạng sụn khớp mòn dần theo tuổi, làm đau, cứng khớp, lục cục khi vận động. Bệnh không chữa khỏi hẳn nhưng có thể giảm đau, giữ khả năng đi lại. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Tập co duỗi gối, nâng chân thẳng mỗi ngày theo hướng dẫn của kỹ thuật y.",
+          "Chườm ấm khi khớp cứng, chườm lạnh khi sưng đau.",
+          "Dùng gậy ở tay bên đối diện gối đau khi cần.",
+          "Ngồi ghế, dùng bồn cầu cao thay vì ngồi xổm."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không ngồi xổm, quỳ lâu, leo nhiều bậc thang.",
+          "Không tự uống thuốc giảm đau, thuốc có corticoid kéo dài.",
+          "Không đắp lá, chích lể vào khớp."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Đau tăng, đi lại khó dù đã tập.",
+          "Gối sưng nóng đỏ.",
+          "Đau cả khi nghỉ, đau về đêm."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Đau gối có nên ngừng vận động?",
+       "a": "Không, tập đúng cách giúp khớp khỏe hơn."
+      },
+      {
+       "q": "Tư thế nào nên tránh?",
+       "a": "Ngồi xổm, quỳ lâu, leo nhiều cầu thang."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Osteoarthritis.",
+       "url": "https://www.nhs.uk/conditions/osteoarthritis/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
+    },
+    "icon": "walk"
+   },
+   {
+    "group": "man",
+    "title": "Sỏi tiết niệu",
+    "points": [
+     "Uống đủ nước để nước tiểu trong, khoảng 2 đến 2,5 lít mỗi ngày nếu không bị hạn chế nước.",
+     "Ăn nhạt, hạn chế nội tạng, thịt đỏ.",
+     "Đau quặn kèm sốt: khám ngay."
+    ],
+    "slug": "soi-tiet-nieu",
+    "khoa": "Khoa Ngoại tổng quát",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.STN.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người bị sỏi thận, sỏi niệu quản và người dễ tái phát sỏi.",
+     "heading": "Sỏi tiết niệu: uống đủ nước, khám khi đau quặn hoặc sốt",
+     "urgent": {
+      "h": "Đến khám ngay",
+      "blocks": [
+       {
+        "p": "Đau quặn hông lưng kèm sốt, rét run; tiểu ra máu nhiều; bí tiểu hoặc tiểu rất ít. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Uống đủ nước để nước tiểu trong, khoảng 2 đến 2,5 lít mỗi ngày nếu không bị hạn chế nước.",
+      "Ăn nhạt, hạn chế nội tạng, thịt đỏ.",
+      "Đau quặn kèm sốt: khám ngay."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về sỏi tiết niệu",
+       "blocks": [
+        {
+         "p": "Sỏi hình thành khi chất khoáng trong nước tiểu kết tinh. Sỏi di chuyển gây cơn đau quặn thận dữ dội, có thể tắc đường tiểu, nhiễm trùng. Sỏi dễ tái phát nếu uống ít nước. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Uống nước đều trong ngày, uống thêm khi trời nóng, lao động.",
+          "Giữ lại sỏi nếu tiểu ra để mang đi xét nghiệm.",
+          "Tái khám, siêu âm theo hẹn kể cả khi hết đau.",
+          "Uống thuốc theo đơn."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự uống thuốc nam, nước lá để tán sỏi khi chưa khám.",
+          "Không nhịn tiểu.",
+          "Không bỏ tái khám khi hết đau."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Đau quặn không giảm sau dùng thuốc.",
+          "Sốt, rét run, nước tiểu đục.",
+          "Tiểu ít, phù."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Hết đau là sỏi đã ra?",
+       "a": "Chưa chắc, cần siêu âm kiểm tra theo hẹn."
+      },
+      {
+       "q": "Uống bao nhiêu nước mỗi ngày?",
+       "a": "Khoảng 2 đến 2,5 lít nếu bác sĩ không dặn hạn chế nước."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Kidney stones.",
+       "url": "https://www.nhs.uk/conditions/kidney-stones/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Ngoại tổng quát · Phòng Điều dưỡng"
+    },
+    "icon": "drop"
+   },
+   {
+    "group": "ck",
+    "title": "Chăm sóc răng miệng, phòng sâu răng",
+    "points": [
+     "Chải răng 2 lần mỗi ngày với kem có fluor, mỗi lần 2 phút.",
+     "Hạn chế bánh kẹo, nước ngọt, nhất là trước khi ngủ.",
+     "Khám răng định kỳ 6 tháng một lần."
+    ],
+    "slug": "cham-soc-rang-mieng",
+    "khoa": "Khoa Liên chuyên khoa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.RM.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người dân, cha mẹ có con nhỏ.",
+     "heading": "Chải răng đúng, khám răng định kỳ để giữ răng chắc khỏe",
+     "urgent": {
+      "h": "Đến khám sớm",
+      "blocks": [
+       {
+        "p": "Sưng mặt, sưng nướu kèm sốt; đau răng dữ dội; chảy máu không cầm; há miệng hạn chế. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Chải răng 2 lần mỗi ngày với kem có fluor, mỗi lần 2 phút.",
+      "Hạn chế bánh kẹo, nước ngọt, nhất là trước khi ngủ.",
+      "Khám răng định kỳ 6 tháng một lần."
+     ],
+     "sections": [
+      {
+       "h": "Vì sao răng bị sâu, nướu bị viêm",
+       "blocks": [
+        {
+         "p": "Sâu răng do vi khuẩn trong mảng bám biến đường thành acid, làm mòn men răng. Viêm nướu gây chảy máu khi chải răng. Phát hiện sớm thì điều trị đơn giản, ít tốn kém. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Chải đủ các mặt răng, chải nhẹ theo chiều dọc; dùng chỉ nha khoa.",
+          "Trẻ em: cha mẹ chải giúp đến khoảng 7 tuổi; dùng lượng kem bằng hạt gạo khi dưới 3 tuổi, bằng hạt đậu khi 3 đến 6 tuổi.",
+          "Thay bàn chải mỗi 3 tháng.",
+          "Súc miệng sau ăn."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không cho trẻ ngủ khi đang ngậm bình sữa.",
+          "Không dùng tăm, vật nhọn xỉa răng mạnh.",
+          "Không tự mua kháng sinh khi đau răng."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Ê buốt, đau răng, lỗ sâu.",
+          "Chảy máu nướu kéo dài, hôi miệng.",
+          "Răng lung lay, sưng mặt."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Mỗi ngày nên chải răng mấy lần?",
+       "a": "2 lần, buổi sáng và trước khi ngủ, mỗi lần 2 phút."
+      },
+      {
+       "q": "Có nên cho trẻ ngậm bình sữa khi ngủ?",
+       "a": "Không, dễ gây sâu răng sữa."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Tooth decay.",
+       "url": "https://www.nhs.uk/conditions/tooth-decay/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
+    },
+    "icon": "star"
+   },
+   {
+    "group": "ck",
+    "title": "Chăm sóc sau nhổ răng",
+    "points": [
+     "Cắn chặt gạc 30 đến 60 phút sau nhổ răng.",
+     "24 giờ đầu: không súc miệng mạnh, không khạc nhổ, không hút ống hút.",
+     "Ăn mềm, nguội; uống thuốc theo đơn."
+    ],
+    "slug": "sau-nho-rang",
+    "khoa": "Khoa Liên chuyên khoa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.NR.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người vừa nhổ răng, tiểu phẫu răng khôn.",
+     "heading": "Sau nhổ răng: cắn gạc đúng, giữ cục máu đông",
+     "urgent": {
+      "h": "Đến khám ngay",
+      "blocks": [
+       {
+        "p": "Chảy máu không cầm sau khi cắn gạc 1 giờ; sưng mặt tăng dần, sốt; há miệng khó, nuốt đau nhiều. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Cắn chặt gạc 30 đến 60 phút sau nhổ răng.",
+      "24 giờ đầu: không súc miệng mạnh, không khạc nhổ, không hút ống hút.",
+      "Ăn mềm, nguội; uống thuốc theo đơn."
+     ],
+     "sections": [
+      {
+       "h": "Vì sao cần chăm sóc đúng sau nhổ răng",
+       "blocks": [
+        {
+         "p": "Sau nhổ răng, cục máu đông hình thành trong ổ răng giúp vết thương lành. Súc miệng mạnh, hút thuốc, hút ống hút có thể làm bong cục máu đông, gây đau, chảy máu, viêm ổ răng. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Chườm lạnh má bên nhổ trong ngày đầu để giảm sưng.",
+          "Từ ngày thứ hai: súc miệng nhẹ bằng nước muối ấm sau ăn.",
+          "Chải răng nhẹ, tránh vùng nhổ.",
+          "Kê gối cao khi ngủ."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không dùng lưỡi, tay chạm vào ổ răng.",
+          "Không hút thuốc, uống rượu bia trong vài ngày đầu.",
+          "Không ăn đồ cứng, nóng, cay."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Chảy máu kéo dài.",
+          "Đau tăng sau 2 đến 3 ngày, hôi miệng.",
+          "Sưng, sốt, há miệng hạn chế."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Ngày đầu có nên súc miệng thật mạnh?",
+       "a": "Không, dễ làm bong cục máu đông."
+      },
+      {
+       "q": "Chườm gì để giảm sưng?",
+       "a": "Chườm lạnh ngoài má trong ngày đầu."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Wisdom tooth removal.",
+       "url": "https://www.nhs.uk/tests-and-treatments/wisdom-tooth-removal/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
+    },
+    "icon": "bandage"
+   },
+   {
+    "group": "ck",
+    "title": "Viêm mũi xoang",
+    "points": [
+     "Rửa mũi bằng nước muối sinh lý đúng cách.",
+     "Không tự dùng thuốc xịt co mạch quá 3 đến 5 ngày.",
+     "Tránh khói thuốc, bụi; đeo khẩu trang."
+    ],
+    "slug": "viem-mui-xoang",
+    "khoa": "Khoa Liên chuyên khoa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.VMX.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người hay nghẹt mũi, chảy mũi, đau nhức vùng mặt.",
+     "heading": "Viêm mũi xoang: rửa mũi đúng, dùng thuốc theo đơn",
+     "urgent": {
+      "h": "Đến khám ngay",
+      "blocks": [
+       {
+        "p": "Sưng đỏ quanh mắt, nhìn mờ, nhìn đôi; đau đầu dữ dội, cổ cứng, sốt cao, lơ mơ. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Rửa mũi bằng nước muối sinh lý đúng cách.",
+      "Không tự dùng thuốc xịt co mạch quá 3 đến 5 ngày.",
+      "Tránh khói thuốc, bụi; đeo khẩu trang."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về viêm mũi xoang",
+       "blocks": [
+        {
+         "p": "Viêm mũi xoang là viêm niêm mạc mũi và các xoang quanh mũi, thường sau cảm cúm, dị ứng. Triệu chứng: nghẹt mũi, chảy mũi đặc, đau nhức trán, má, giảm ngửi. Đa số tự cải thiện trong 7 đến 10 ngày. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Rửa mũi bằng nước muối sinh lý, cúi đầu, để nước chảy ra bên kia; xì mũi nhẹ từng bên.",
+          "Uống đủ nước, xông hơi nước ấm.",
+          "Kê cao đầu khi ngủ.",
+          "Người có dị ứng: tránh tác nhân gây dị ứng, dùng thuốc theo đơn."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự mua kháng sinh.",
+          "Không xịt thuốc co mạch kéo dài: gây nghẹt mũi nặng hơn.",
+          "Không xì mũi mạnh cả hai bên cùng lúc."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Triệu chứng kéo dài trên 10 ngày hoặc nặng lên.",
+          "Sốt cao, đau nhức mặt nhiều.",
+          "Tái phát nhiều lần trong năm."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Có nên xịt thuốc co mạch hằng ngày?",
+       "a": "Không, chỉ dùng ngắn ngày theo hướng dẫn."
+      },
+      {
+       "q": "Rửa mũi bằng gì?",
+       "a": "Nước muối sinh lý."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Sinusitis (sinus infection).",
+       "url": "https://www.nhs.uk/conditions/sinusitis-sinus-infection/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
+    },
+    "icon": "wind"
+   },
+   {
+    "group": "ck",
+    "title": "Viêm họng, viêm amidan",
+    "points": [
+     "Đa số viêm họng do virus, tự khỏi trong 1 tuần.",
+     "Súc họng nước muối ấm, uống đủ nước ấm.",
+     "Chỉ dùng kháng sinh khi bác sĩ kê."
+    ],
+    "slug": "viem-hong-amidan",
+    "khoa": "Khoa Liên chuyên khoa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.VHA.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người lớn, trẻ em bị đau họng.",
+     "heading": "Đau họng: chăm sóc tại nhà và biết khi nào cần khám",
+     "urgent": {
+      "h": "Đến khám ngay",
+      "blocks": [
+       {
+        "p": "Khó thở, chảy nước dãi, không nuốt được; há miệng hạn chế, sưng một bên họng; sốt cao không hạ. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Đa số viêm họng do virus, tự khỏi trong 1 tuần.",
+      "Súc họng nước muối ấm, uống đủ nước ấm.",
+      "Chỉ dùng kháng sinh khi bác sĩ kê."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về viêm họng, viêm amidan",
+       "blocks": [
+        {
+         "p": "Viêm họng, viêm amidan gây đau rát họng, nuốt đau, sốt. Phần lớn do virus; một số do liên cầu khuẩn cần kháng sinh đủ liều để tránh biến chứng tim, thận. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Súc họng nước muối ấm nhiều lần trong ngày.",
+          "Ăn mềm, uống nước ấm, nghỉ ngơi.",
+          "Hạ sốt theo hướng dẫn.",
+          "Khi được kê kháng sinh: uống đủ ngày, kể cả khi đã đỡ."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự mua kháng sinh.",
+          "Không uống nước đá, hút thuốc lá.",
+          "Không ngưng kháng sinh giữa chừng."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Đau họng trên 1 tuần hoặc tái phát nhiều lần.",
+          "Sốt cao, nổi hạch cổ đau.",
+          "Khàn tiếng kéo dài trên 3 tuần."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Viêm họng có luôn cần kháng sinh?",
+       "a": "Không, đa số do virus, chỉ dùng khi bác sĩ kê."
+      },
+      {
+       "q": "Súc họng bằng gì?",
+       "a": "Nước muối ấm."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Tonsillitis.",
+       "url": "https://www.nhs.uk/conditions/tonsillitis/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
+    },
+    "icon": "thermo"
+   },
+   {
+    "group": "ck",
+    "title": "Viêm da cơ địa (chàm)",
+    "points": [
+     "Dưỡng ẩm da nhiều lần mỗi ngày, cả khi da đã đỡ.",
+     "Tránh xà phòng mạnh, quần áo len, nước nóng.",
+     "Dùng thuốc bôi đúng loại, đúng thời gian bác sĩ kê."
+    ],
+    "slug": "viem-da-co-dia",
+    "khoa": "Khoa Khám bệnh",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.VDCD.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho người bị chàm, cha mẹ có con bị viêm da cơ địa.",
+     "heading": "Viêm da cơ địa: dưỡng ẩm hằng ngày, tránh yếu tố kích thích",
+     "urgent": {
+      "h": "Đến khám sớm",
+      "blocks": [
+       {
+        "p": "Da sưng đỏ, nóng, chảy mủ, đóng vảy vàng; mụn nước lan nhanh kèm sốt. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Dưỡng ẩm da nhiều lần mỗi ngày, cả khi da đã đỡ.",
+      "Tránh xà phòng mạnh, quần áo len, nước nóng.",
+      "Dùng thuốc bôi đúng loại, đúng thời gian bác sĩ kê."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về viêm da cơ địa (chàm)",
+       "blocks": [
+        {
+         "p": "Viêm da cơ địa là bệnh da mạn tính, hay tái phát: da khô, ngứa, đỏ, có khi rỉ dịch. Bệnh không lây. Chăm sóc da đúng giúp giảm số đợt bùng phát. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Tắm nước ấm 5 đến 10 phút, sữa tắm dịu nhẹ; thoa kem dưỡng ngay sau tắm.",
+          "Cắt móng tay ngắn; mặc quần áo cotton.",
+          "Tìm và tránh yếu tố làm bệnh nặng: bụi, lông thú, mồ hôi, căng thẳng.",
+          "Dùng thuốc bôi theo đơn."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự bôi thuốc có corticoid mạnh kéo dài.",
+          "Không tắm nước nóng, chà xát mạnh.",
+          "Không đắp lá, tắm nước lá khi da trầy xước."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Ngứa nhiều mất ngủ.",
+          "Da nhiễm trùng: sưng, đau, mủ.",
+          "Không đỡ sau 1 đến 2 tuần điều trị."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Da đỡ rồi có cần dưỡng ẩm tiếp?",
+       "a": "Có, dưỡng ẩm hằng ngày giúp giảm tái phát."
+      },
+      {
+       "q": "Viêm da cơ địa có lây không?",
+       "a": "Không lây."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Atopic eczema.",
+       "url": "https://www.nhs.uk/conditions/atopic-eczema/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Khám bệnh · Phòng Điều dưỡng"
+    },
+    "icon": "hand"
+   },
+   {
+    "group": "me",
+    "title": "Chuẩn bị trước khi mang thai",
+    "points": [
+     "Khám sức khỏe tiền hôn nhân, trước mang thai cho cả vợ và chồng.",
+     "Uống acid folic ít nhất 1 tháng trước khi có thai theo hướng dẫn.",
+     "Mong con trên 1 năm chưa có thai (trên 6 tháng nếu vợ trên 35 tuổi): khám hiếm muộn."
+    ],
+    "slug": "chuan-bi-mang-thai",
+    "khoa": "Khoa Phụ sản",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.CBMT.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho các cặp vợ chồng chuẩn bị có con, người mong con lâu chưa có thai.",
+     "heading": "Chuẩn bị sức khỏe trước mang thai để mẹ khỏe, con khỏe",
+     "urgent": {
+      "h": "Đến khám sớm",
+      "blocks": [
+       {
+        "p": "Trễ kinh kèm đau bụng dữ dội, ra huyết âm đạo, choáng váng: có thể là thai ngoài tử cung. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Khám sức khỏe tiền hôn nhân, trước mang thai cho cả vợ và chồng.",
+      "Uống acid folic ít nhất 1 tháng trước khi có thai theo hướng dẫn.",
+      "Mong con trên 1 năm chưa có thai (trên 6 tháng nếu vợ trên 35 tuổi): khám hiếm muộn."
+     ],
+     "sections": [
+      {
+       "h": "Vì sao cần chuẩn bị trước khi mang thai",
+       "blocks": [
+        {
+         "p": "Chuẩn bị tốt trước mang thai giúp giảm nguy cơ dị tật thai, sinh non, tai biến cho mẹ. Người có bệnh mạn tính như tăng huyết áp, đái tháo đường, tuyến giáp cần được bác sĩ điều chỉnh trước. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Tiêm phòng các bệnh như rubella, viêm gan B, cúm theo tư vấn.",
+          "Ăn uống đủ chất, giữ cân nặng hợp lý.",
+          "Bỏ thuốc lá, rượu bia; tránh hóa chất độc hại.",
+          "Người đang dùng thuốc lâu dài: hỏi bác sĩ trước khi có thai."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự dùng thuốc, thuốc nam khi nghi có thai.",
+          "Không trì hoãn khám khi mong con lâu chưa có.",
+          "Không bỏ qua bệnh mạn tính chưa kiểm soát."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Mong con lâu chưa có thai.",
+          "Kinh nguyệt không đều, đau bụng kinh nhiều.",
+          "Từng sảy thai, thai lưu nhiều lần."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Khi nào nên uống acid folic?",
+       "a": "Ít nhất 1 tháng trước khi có thai, theo hướng dẫn của bác sĩ."
+      },
+      {
+       "q": "Bao lâu chưa có thai thì nên khám?",
+       "a": "Sau 1 năm, hoặc sau 6 tháng nếu vợ trên 35 tuổi."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Planning your pregnancy.",
+       "url": "https://www.nhs.uk/pregnancy/trying-for-a-baby/planning-your-pregnancy/",
+       "org": "NHS"
+      },
+      {
+       "t": "NHS. Infertility.",
+       "url": "https://www.nhs.uk/conditions/infertility/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Phụ sản · Phòng Điều dưỡng"
+    },
+    "icon": "baby"
+   },
+   {
+    "group": "me",
+    "title": "Tiêm chủng đầy đủ, đúng lịch",
+    "points": [
+     "Mang sổ tiêm chủng mỗi lần đi tiêm, đi khám.",
+     "Tiêm đủ mũi, đúng lịch theo hướng dẫn của nhân viên y tế.",
+     "Ở lại theo dõi 30 phút sau tiêm, theo dõi tiếp tại nhà 24 đến 48 giờ."
+    ],
+    "slug": "tiem-chung-dung-lich",
+    "khoa": "Tổ Tiêm chủng",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.TCDL.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho cha mẹ có con nhỏ, phụ nữ chuẩn bị mang thai, người lớn tuổi.",
+     "heading": "Tiêm chủng đủ mũi, đúng lịch để phòng bệnh nguy hiểm",
+     "urgent": {
+      "h": "Đến viện ngay",
+      "blocks": [
+       {
+        "p": "Sau tiêm: khó thở, tím tái, nổi mề đay toàn thân, li bì, co giật, sốt cao trên 39 độ C không hạ. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Mang sổ tiêm chủng mỗi lần đi tiêm, đi khám.",
+      "Tiêm đủ mũi, đúng lịch theo hướng dẫn của nhân viên y tế.",
+      "Ở lại theo dõi 30 phút sau tiêm, theo dõi tiếp tại nhà 24 đến 48 giờ."
+     ],
+     "sections": [
+      {
+       "h": "Vì sao cần tiêm chủng đầy đủ, đúng lịch",
+       "blocks": [
+        {
+         "p": "Vắc xin giúp cơ thể tạo miễn dịch phòng các bệnh nguy hiểm như sởi, bạch hầu, ho gà, uốn ván, viêm gan B, viêm não Nhật Bản. Tiêm đủ và đúng lịch giúp bảo vệ trẻ và cộng đồng. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Khai báo với nhân viên y tế: trẻ đang sốt, đang bệnh, từng phản ứng nặng sau tiêm.",
+          "Trễ lịch: đến tiêm bù càng sớm càng tốt, không cần tiêm lại từ đầu với nhiều loại vắc xin theo tư vấn.",
+          "Sau tiêm: cho trẻ bú, uống nhiều hơn; hạ sốt theo hướng dẫn.",
+          "Lưu giữ sổ, phiếu tiêm chủng cẩn thận."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không chườm, đắp lá, bôi dầu vào chỗ tiêm.",
+          "Không bỏ tiêm vì sợ trẻ sốt nhẹ.",
+          "Không về ngay trước 30 phút theo dõi."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Trễ lịch tiêm hoặc mất sổ tiêm.",
+          "Chỗ tiêm sưng to, đỏ, đau tăng sau 2 ngày.",
+          "Trẻ quấy khóc kéo dài, bỏ bú."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Trễ lịch tiêm có phải tiêm lại từ đầu?",
+       "a": "Thường không, đến tiêm bù sớm và hỏi nhân viên y tế."
+      },
+      {
+       "q": "Sau tiêm phải ở lại bao lâu?",
+       "a": "30 phút tại điểm tiêm, theo dõi tiếp tại nhà 24 đến 48 giờ."
+      }
+     ],
+     "refs": [
+      {
+       "t": "WHO. Immunization coverage.",
+       "url": "https://www.who.int/news-room/fact-sheets/detail/immunization-coverage",
+       "org": "WHO"
+      },
+      {
+       "t": "NHS. Vaccinations.",
+       "url": "https://www.nhs.uk/vaccinations/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Tổ Tiêm chủng · Phòng Điều dưỡng"
+    },
+    "icon": "syringe"
    }
   ]
  },
@@ -7141,7 +9508,7 @@ window.PULSE_DATA = {
  },
  "mucluc": {
   "cap-cuu": {
-   "updated": "2026-11-15",
+   "updated": "2026-11-22",
    "intro": "Sắp xếp theo các tình trạng thường gặp tại Khoa Cấp cứu trước. Bài dùng chung là bài của khoa khác, được đưa vào mục lục này vì người bệnh hay vào cấp cứu với tình trạng đó.",
    "items": [
     {
@@ -7175,11 +9542,29 @@ window.PULSE_DATA = {
     {
      "slug": "so-cuu-bong",
      "why": "Sơ cứu đúng trong 20 phút đầu, không bôi kem đánh răng, nước mắm."
+    },
+    {
+     "slug": "nhoi-mau-co-tim"
+    },
+    {
+     "slug": "ngung-tim-ep-tim"
+    },
+    {
+     "slug": "ran-can"
+    },
+    {
+     "slug": "phan-ve"
+    },
+    {
+     "slug": "ngo-doc-thuoc-tru-sau"
+    },
+    {
+     "slug": "ngo-doc-ruou-thuc-pham"
     }
    ]
   },
   "dieu-duong": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "phong-te-nga-khi-nam-vien"
@@ -7198,11 +9583,14 @@ window.PULSE_DATA = {
     },
     {
      "slug": "cac-buoc-di-kham-benh"
+    },
+    {
+     "slug": "ngung-tim-ep-tim"
     }
    ]
   },
   "kham-benh": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "cac-buoc-di-kham-benh"
@@ -7227,12 +9615,15 @@ window.PULSE_DATA = {
     },
     {
      "slug": "dung-khang-sinh-dung-cach"
+    },
+    {
+     "slug": "viem-da-co-dia"
     }
    ]
   },
   "noi-tq": {
    "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "viem-phe-quan",
@@ -7273,6 +9664,15 @@ window.PULSE_DATA = {
     },
     {
      "slug": "dung-thuoc-an-toan"
+    },
+    {
+     "slug": "nhoi-mau-co-tim"
+    },
+    {
+     "slug": "gout"
+    },
+    {
+     "slug": "thoai-hoa-khop-goi"
     }
    ]
   },
@@ -7301,7 +9701,7 @@ window.PULSE_DATA = {
   },
   "truyen-nhiem": {
    "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "viem-phe-quan",
@@ -7335,11 +9735,17 @@ window.PULSE_DATA = {
     },
     {
      "slug": "tay-chan-mieng-o-tre"
+    },
+    {
+     "slug": "quai-bi"
+    },
+    {
+     "slug": "thuy-dau"
     }
    ]
   },
   "nhi": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "tay-chan-mieng-o-tre"
@@ -7373,11 +9779,26 @@ window.PULSE_DATA = {
     },
     {
      "slug": "rua-tay-dung-cach"
+    },
+    {
+     "slug": "quai-bi"
+    },
+    {
+     "slug": "thuy-dau"
+    },
+    {
+     "slug": "cham-soc-rang-mieng"
+    },
+    {
+     "slug": "viem-hong-amidan"
+    },
+    {
+     "slug": "tiem-chung-dung-lich"
     }
    ]
   },
   "phu-san": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "dau-hieu-nguy-hiem-khi-mang-thai"
@@ -7399,11 +9820,14 @@ window.PULSE_DATA = {
     },
     {
      "slug": "rua-tay-dung-cach"
+    },
+    {
+     "slug": "chuan-bi-mang-thai"
     }
    ]
   },
   "ngoai-tq": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "chuan-bi-truoc-mo"
@@ -7422,11 +9846,14 @@ window.PULSE_DATA = {
     },
     {
      "slug": "dung-khang-sinh-dung-cach"
+    },
+    {
+     "slug": "soi-tiet-nieu"
     }
    ]
   },
   "ngoai-ct": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "cham-soc-bo-bot"
@@ -7445,6 +9872,9 @@ window.PULSE_DATA = {
     },
     {
      "slug": "phong-loet-ti-de"
+    },
+    {
+     "slug": "thoat-vi-dia-dem"
     }
    ]
   },
@@ -7463,7 +9893,7 @@ window.PULSE_DATA = {
    ]
   },
   "lien-ck": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "viem-ket-mac"
@@ -7482,12 +9912,24 @@ window.PULSE_DATA = {
     },
     {
      "slug": "dung-khang-sinh-dung-cach"
+    },
+    {
+     "slug": "cham-soc-rang-mieng"
+    },
+    {
+     "slug": "sau-nho-rang"
+    },
+    {
+     "slug": "viem-mui-xoang"
+    },
+    {
+     "slug": "viem-hong-amidan"
     }
    ]
   },
   "yhct": {
    "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "tap-van-dong-tai-nha",
@@ -7510,6 +9952,15 @@ window.PULSE_DATA = {
     },
     {
      "slug": "phong-loet-ti-de"
+    },
+    {
+     "slug": "thoat-vi-dia-dem"
+    },
+    {
+     "slug": "liet-mat-ngoai-bien"
+    },
+    {
+     "slug": "thoai-hoa-khop-goi"
     }
    ]
   },
@@ -7542,7 +9993,7 @@ window.PULSE_DATA = {
    ]
   },
   "duoc": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "dung-thuoc-an-toan"
@@ -7552,6 +10003,9 @@ window.PULSE_DATA = {
     },
     {
      "slug": "hen-phe-quan"
+    },
+    {
+     "slug": "phan-ve"
     }
    ]
   },
@@ -7579,7 +10033,7 @@ window.PULSE_DATA = {
    ]
   },
   "dinh-duong": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "dinh-duong-cho-nguoi-benh"
@@ -7595,12 +10049,18 @@ window.PULSE_DATA = {
     },
     {
      "slug": "cham-soc-cau-noi-fav"
+    },
+    {
+     "slug": "ngo-doc-ruou-thuc-pham"
+    },
+    {
+     "slug": "tang-kali-mau"
     }
    ]
   },
   "tnt": {
    "intro": "Sắp theo danh sách 10 bệnh thường gặp năm 2026 do khoa cung cấp; bài dùng chung là bài của khoa khác có liên quan.",
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "cham-soc-cau-noi-fav",
@@ -7621,11 +10081,20 @@ window.PULSE_DATA = {
     {
      "slug": "dung-thuoc-an-toan",
      "why": "Thuốc huyết áp, sắt, tạo máu, chống ngứa"
+    },
+    {
+     "slug": "ha-huyet-ap-khi-chay-than"
+    },
+    {
+     "slug": "tang-kali-mau"
+    },
+    {
+     "slug": "ngua-o-nguoi-chay-than"
     }
    ]
   },
   "tc": {
-   "updated": "2026-11-21",
+   "updated": "2026-11-22",
    "items": [
     {
      "slug": "theo-doi-tre-sau-tiem-chung"
@@ -7638,6 +10107,12 @@ window.PULSE_DATA = {
     },
     {
      "slug": "cum"
+    },
+    {
+     "slug": "phan-ve"
+    },
+    {
+     "slug": "tiem-chung-dung-lich"
     }
    ]
   }
@@ -7663,6 +10138,7 @@ window.PULSE_DATA = {
      "dai-thao-duong",
      "copd",
      "nhan-biet-som-dot-quy",
+     "nhoi-mau-co-tim",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7713,6 +10189,9 @@ window.PULSE_DATA = {
     "topics": [
      "tap-van-dong-tai-nha",
      "phong-te-nga-khi-nam-vien",
+     "thoat-vi-dia-dem",
+     "gout",
+     "thoai-hoa-khop-goi",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7738,6 +10217,7 @@ window.PULSE_DATA = {
      "chuan-bi-truoc-mo",
      "cham-soc-vet-mo-tai-nha",
      "dung-khang-sinh-dung-cach",
+     "soi-tiet-nieu",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7763,6 +10243,7 @@ window.PULSE_DATA = {
     "topics": [
      "dau-hieu-nguy-hiem-khi-mang-thai",
      "nuoi-con-bang-sua-me",
+     "chuan-bi-mang-thai",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7777,6 +10258,11 @@ window.PULSE_DATA = {
      "sot-xuat-huyet",
      "soi",
      "theo-doi-tre-sau-tiem-chung",
+     "quai-bi",
+     "thuy-dau",
+     "cham-soc-rang-mieng",
+     "viem-hong-amidan",
+     "tiem-chung-dung-lich",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7802,6 +10288,8 @@ window.PULSE_DATA = {
     "topics": [
      "viem-phe-quan",
      "cum",
+     "viem-mui-xoang",
+     "viem-hong-amidan",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7813,6 +10301,8 @@ window.PULSE_DATA = {
     "khoa": "lien-ck",
     "topics": [
      "dung-khang-sinh-dung-cach",
+     "cham-soc-rang-mieng",
+     "sau-nho-rang",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7825,6 +10315,8 @@ window.PULSE_DATA = {
     "topics": [
      "soi",
      "rua-tay-dung-cach",
+     "thuy-dau",
+     "viem-da-co-dia",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7836,6 +10328,7 @@ window.PULSE_DATA = {
     "khoa": "phu-san",
     "topics": [
      "dau-hieu-nguy-hiem-khi-mang-thai",
+     "chuan-bi-mang-thai",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7847,6 +10340,8 @@ window.PULSE_DATA = {
     "khoa": "tc",
     "topics": [
      "theo-doi-tre-sau-tiem-chung",
+     "phan-ve",
+     "tiem-chung-dung-lich",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -7874,6 +10369,7 @@ window.PULSE_DATA = {
      "phong-te-nga-khi-nam-vien",
      "nhan-biet-som-dot-quy",
      "dinh-duong-cho-nguoi-benh",
+     "thoai-hoa-khop-goi",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
