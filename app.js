@@ -869,13 +869,18 @@
     pageView.appendChild(el("h1", { class: "page-title", text: "Reel" }));
     var R = collectReels();
     pageView.appendChild(el("p", { class: "page-intro", text: L(R.length + " video ngắn giới thiệu khoa, bộ phận và giáo dục sức khỏe. Bấm tên khoa, bộ phận dưới mỗi video để xem trang của khoa, bộ phận đó.", R.length + " short videos. Tap the department name under each video to open its page.") }));
-    pageView.appendChild(el("div", { class: "reel-grid" }, R.map(function (r) {
+    function card(r) {
       var links = r.units.map(function (c) { var h = unitByCode(c); return el("a", { class: "reel-unit", href: "#/khoa/" + c, text: tr(h.u.name) + " →" }); });
       r.topics.forEach(function (t) { links.push(el("a", { class: "reel-topic", href: "#/gdsk/" + t.slug, text: L("Bài: ", "Article: ") + tr(t.title) })); });
       var fig = reelFigure(r.vd);
       fig.appendChild(el("div", { class: "reel-links" }, links));
       return fig;
-    })));
+    }
+    var A = R.filter(function (r) { return !r.topics.length; }), B = R.filter(function (r) { return r.topics.length; });
+    [[L("Reel giới thiệu khoa, bộ phận", "Department intro reels"), A], [L("Reel giáo dục sức khỏe", "Health education reels"), B]].forEach(function (g) {
+      if (!g[1].length) return;
+      pageView.appendChild(el("section", { class: "page-section reel-sec" }, [el("h2", { text: g[0] + " (" + g[1].length + ")" }), el("div", { class: "reel-grid" }, g[1].map(card))]));
+    });
     document.title = "Reel" + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
   function renderRichKhoa(k) {

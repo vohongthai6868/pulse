@@ -3646,8 +3646,8 @@ window.PULSE_DATA = {
      "caption": "Poster Đục thủy tinh thể"
     },
     "video": {
-     "src": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.mp4",
-     "poster": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.jpg",
+     "src": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.mp4?v=20261123n",
+     "poster": "video/gdsk/reel-sau-mo-duc-thuy-tinh-the.jpg?v=20261123n",
      "caption": "Video: Chăm sóc mắt sau mổ đục thủy tinh thể (khoảng 1 phút)"
     }
    },
@@ -8730,8 +8730,8 @@ window.PULSE_DATA = {
     ]
    ],
    "video": {
-    "src": "video/khoa/tnt.mp4",
-    "poster": "video/khoa/tnt.jpg",
+    "src": "video/khoa/tnt.mp4?v=20261123n",
+    "poster": "video/khoa/tnt.jpg?v=20261123n",
     "caption": "Video giới thiệu Bộ phận Thận nhân tạo (khoảng 1 phút)"
    }
   },
@@ -8853,8 +8853,8 @@ window.PULSE_DATA = {
     "Mong quý người bệnh và thân nhân thực hiện tốt nội quy, chúc quý người bệnh sớm phục hồi sức khỏe."
    ],
    "video": {
-    "src": "video/khoa/yhct.mp4",
-    "poster": "video/khoa/yhct.jpg",
+    "src": "video/khoa/yhct.mp4?v=20261123n",
+    "poster": "video/khoa/yhct.jpg?v=20261123n",
     "caption": "Video giới thiệu Khoa Y học cổ truyền - Phục hồi chức năng (khoảng 1 phút)"
    }
   },
@@ -9068,8 +9068,8 @@ window.PULSE_DATA = {
     ]
    ],
    "video": {
-    "src": "video/khoa/noi-tq.mp4?v=20261123j",
-    "poster": "video/khoa/noi-tq.jpg?v=20261123j",
+    "src": "video/khoa/noi-tq.mp4?v=20261123n",
+    "poster": "video/khoa/noi-tq.jpg?v=20261123n",
     "caption": "Video giới thiệu Khoa Nội tổng quát (khoảng 1 phút)"
    }
   },
@@ -9150,8 +9150,8 @@ window.PULSE_DATA = {
    ],
    "message": "Sức khỏe của người bệnh là sự quan tâm và trách nhiệm của chúng tôi. Rất mong người bệnh và thân nhân phối hợp, tuân thủ hướng dẫn điều trị để phục hồi tốt nhất.",
    "video": {
-    "src": "video/khoa/noi-th.mp4?v=20261123j",
-    "poster": "video/khoa/noi-th.jpg?v=20261123j",
+    "src": "video/khoa/noi-th.mp4?v=20261123n",
+    "poster": "video/khoa/noi-th.jpg?v=20261123n",
     "caption": "Video giới thiệu Khoa Nội tiêu hóa (khoảng 1 phút)"
    },
    "photos": [
@@ -9287,8 +9287,8 @@ window.PULSE_DATA = {
    ],
    "video": [
     {
-     "src": "video/khoa/nhi.mp4?v=20261123j",
-     "poster": "video/khoa/nhi.jpg?v=20261123j",
+     "src": "video/khoa/nhi.mp4?v=20261123n",
+     "poster": "video/khoa/nhi.jpg?v=20261123n",
      "caption": "Video giới thiệu Khoa Nhi (khoảng 1 phút)"
     },
     {
@@ -9524,8 +9524,8 @@ window.PULSE_DATA = {
     ]
    ],
    "video": {
-    "src": "video/khoa/cdha.mp4?v=20261123j",
-    "poster": "video/khoa/cdha.jpg?v=20261123j",
+    "src": "video/khoa/cdha.mp4?v=20261123n",
+    "poster": "video/khoa/cdha.jpg?v=20261123n",
     "caption": "Video giới thiệu Khoa Chẩn đoán hình ảnh - Thăm dò chức năng (khoảng 1 phút)"
    }
   },
