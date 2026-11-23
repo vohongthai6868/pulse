@@ -4197,13 +4197,13 @@ window.PULSE_DATA = {
     },
     "video": [
      {
-      "src": "video/gdsk/reel-cum-mua.mp4?v=20261123e",
-      "poster": "video/gdsk/reel-cum-mua.jpg?v=20261123e",
+      "src": "video/gdsk/reel-cum-mua.mp4?v=20261123f",
+      "poster": "video/gdsk/reel-cum-mua.jpg?v=20261123f",
       "caption": "Video: Cúm mùa, nhận biết sớm và phòng lây"
      },
      {
-      "src": "video/gdsk/reel-rsv-cum-o-tre.mp4?v=20261123e",
-      "poster": "video/gdsk/reel-rsv-cum-o-tre.jpg?v=20261123e",
+      "src": "video/gdsk/reel-rsv-cum-o-tre.mp4?v=20261123f",
+      "poster": "video/gdsk/reel-rsv-cum-o-tre.jpg?v=20261123f",
       "caption": "Video: RSV và cúm ở trẻ khi giao mùa"
      }
     ]
@@ -5809,8 +5809,8 @@ window.PULSE_DATA = {
      "caption": "Poster Theo dõi trẻ sau tiêm chủng"
     },
     "video": {
-     "src": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.mp4?v=20261123e",
-     "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg?v=20261123e",
+     "src": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.mp4?v=20261123f",
+     "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg?v=20261123f",
      "caption": "Video: Theo dõi 30 phút sau tiêm"
     }
    },
@@ -5921,7 +5921,7 @@ window.PULSE_DATA = {
     },
     "posterExtra": [
      {
-      "img": "img/gdsk/info-nhoi-mau-co-tim.jpg",
+      "img": "img/gdsk/info-nhoi-mau-co-tim.jpg?v=2",
       "caption": "Infographic: Nhồi máu cơ tim, nhận biết sớm"
      }
     ]
@@ -6029,13 +6029,13 @@ window.PULSE_DATA = {
     "icon": "heart",
     "video": [
      {
-      "src": "video/gdsk/reel-so-cuu-ngung-tim-cong-dong.mp4?v=20261123e",
-      "poster": "video/gdsk/reel-so-cuu-ngung-tim-cong-dong.jpg?v=20261123e",
+      "src": "video/gdsk/reel-so-cuu-ngung-tim-cong-dong.mp4?v=20261123f",
+      "poster": "video/gdsk/reel-so-cuu-ngung-tim-cong-dong.jpg?v=20261123f",
       "caption": "Video: Sơ cứu ngừng tim ngoài cộng đồng"
      },
      {
-      "src": "video/gdsk/reel-cap-cuu-ngung-tim-trong-benh-vien.mp4?v=20261123e",
-      "poster": "video/gdsk/reel-cap-cuu-ngung-tim-trong-benh-vien.jpg?v=20261123e",
+      "src": "video/gdsk/reel-cap-cuu-ngung-tim-trong-benh-vien.mp4?v=20261123f",
+      "poster": "video/gdsk/reel-cap-cuu-ngung-tim-trong-benh-vien.jpg?v=20261123f",
       "caption": "Video: Cấp cứu ngừng tim trong bệnh viện (dành cho nhân viên y tế)"
      }
     ],
@@ -6045,7 +6045,7 @@ window.PULSE_DATA = {
     },
     "posterExtra": [
      {
-      "img": "img/gdsk/info-cap-cuu-ngung-tim-trong-benh-vien.jpg",
+      "img": "img/gdsk/info-cap-cuu-ngung-tim-trong-benh-vien.jpg?v=2",
       "caption": "Infographic: Quy trình cấp cứu ngừng tim, ngừng thở trong bệnh viện"
      }
     ]
@@ -8294,13 +8294,13 @@ window.PULSE_DATA = {
     "icon": "syringe",
     "video": [
      {
-      "src": "video/gdsk/reel-an-toan-tiem-chung.mp4?v=20261123e",
-      "poster": "video/gdsk/reel-an-toan-tiem-chung.jpg?v=20261123e",
+      "src": "video/gdsk/reel-an-toan-tiem-chung.mp4?v=20261123f",
+      "poster": "video/gdsk/reel-an-toan-tiem-chung.jpg?v=20261123f",
       "caption": "Video: An toàn tiêm chủng và giờ mở cửa"
      },
      {
-      "src": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.mp4?v=20261123e",
-      "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg?v=20261123e",
+      "src": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.mp4?v=20261123f",
+      "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg?v=20261123f",
       "caption": "Video: Theo dõi 30 phút sau tiêm"
      }
     ],
@@ -8411,12 +8411,12 @@ window.PULSE_DATA = {
     },
     "icon": "bug",
     "video": {
-     "src": "video/gdsk/reel-nao-mo-cau.mp4?v=20261123e",
-     "poster": "video/gdsk/reel-nao-mo-cau.jpg?v=20261123e",
+     "src": "video/gdsk/reel-nao-mo-cau.mp4?v=20261123f",
+     "poster": "video/gdsk/reel-nao-mo-cau.jpg?v=20261123f",
      "caption": "Video: Bệnh não mô cầu, dấu hiệu cần đi cấp cứu"
     },
     "poster": {
-     "img": "img/gdsk/poster-nao-mo-cau.jpg",
+     "img": "img/gdsk/poster-nao-mo-cau.jpg?v=2",
      "caption": "Poster Cẩm nang phòng bệnh não mô cầu"
     }
    }
@@ -8524,13 +8524,13 @@ window.PULSE_DATA = {
      "caption": "Video giới thiệu Tổ Tiêm chủng (khoảng 22 giây, dựng từ ảnh của khoa)"
     },
     {
-     "src": "video/gdsk/reel-an-toan-tiem-chung.mp4?v=20261123e",
-     "poster": "video/gdsk/reel-an-toan-tiem-chung.jpg?v=20261123e",
+     "src": "video/gdsk/reel-an-toan-tiem-chung.mp4?v=20261123f",
+     "poster": "video/gdsk/reel-an-toan-tiem-chung.jpg?v=20261123f",
      "caption": "Video: An toàn tiêm chủng và giờ mở cửa"
     },
     {
-     "src": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.mp4?v=20261123e",
-     "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg?v=20261123e",
+     "src": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.mp4?v=20261123f",
+     "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg?v=20261123f",
      "caption": "Video: Theo dõi 30 phút sau tiêm"
     }
    ]
@@ -9212,8 +9212,8 @@ window.PULSE_DATA = {
      "caption": "Video giới thiệu Khoa Nhi (khoảng 1 phút)"
     },
     {
-     "src": "video/gdsk/reel-rsv-cum-o-tre.mp4?v=20261123e",
-     "poster": "video/gdsk/reel-rsv-cum-o-tre.jpg?v=20261123e",
+     "src": "video/gdsk/reel-rsv-cum-o-tre.mp4?v=20261123f",
+     "poster": "video/gdsk/reel-rsv-cum-o-tre.jpg?v=20261123f",
      "caption": "Video: RSV và cúm ở trẻ khi giao mùa"
     }
    ]
@@ -10832,19 +10832,19 @@ window.PULSE_DATA = {
  },
  "unitVideo": {
   "dieu-duong": {
-   "src": "video/gdsk/reel-an-toan-nguoi-benh.mp4?v=20261123e",
-   "poster": "video/gdsk/reel-an-toan-nguoi-benh.jpg?v=20261123e",
+   "src": "video/gdsk/reel-an-toan-nguoi-benh.mp4?v=20261123f",
+   "poster": "video/gdsk/reel-an-toan-nguoi-benh.jpg?v=20261123f",
    "caption": "Video: An toàn người bệnh, 5 hành động nhỏ"
   },
   "truyen-nhiem": [
    {
-    "src": "video/gdsk/reel-nao-mo-cau.mp4?v=20261123e",
-    "poster": "video/gdsk/reel-nao-mo-cau.jpg?v=20261123e",
+    "src": "video/gdsk/reel-nao-mo-cau.mp4?v=20261123f",
+    "poster": "video/gdsk/reel-nao-mo-cau.jpg?v=20261123f",
     "caption": "Video: Bệnh não mô cầu"
    },
    {
-    "src": "video/gdsk/reel-cum-mua.mp4?v=20261123e",
-    "poster": "video/gdsk/reel-cum-mua.jpg?v=20261123e",
+    "src": "video/gdsk/reel-cum-mua.mp4?v=20261123f",
+    "poster": "video/gdsk/reel-cum-mua.jpg?v=20261123f",
     "caption": "Video: Cúm mùa"
    }
   ]
