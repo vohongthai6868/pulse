@@ -555,7 +555,7 @@
   });
 
   // Sub-pages (#/about, #/guides, #/privacy, #/terms)
-  var PAGE_RE = /^#\/(about|guides|privacy|terms|nguoibenh|daotao|hoidap)$/;
+  var PAGE_RE = /^#\/(about|guides|privacy|terms|nguoibenh|daotao|hoidap|tuyendung)$/;
   var GDSK_RE = /^#\/gdsk\/([a-z0-9-]+)$/;
   var TOPIC_RE = /^#\/topic\/([a-z]+)$/;
   var KHOA_RE = /^#\/khoa\/([a-z0-9-]+)$/;
@@ -635,7 +635,7 @@
       el("h2", { text: L("Phòng khám chuyên khoa (" + P.items.length + ")", "Specialty clinics") }),
       el("p", { class: "unit-guide-hint", text: P.intro }),
       el("ul", { class: "pk-list" }, P.items.map(function (x) {
-        return el("li", {}, [el("a", { href: "#/phong-kham/" + x.slug }, [el("span", { class: "pk-name", text: x.name }), el("span", { class: "pk-doc", text: x.bacsi && x.bacsi.length ? x.bacsi.join(", ") : L("Bác sĩ: đang cập nhật", "Doctors: updating") })])]);
+        return el("li", {}, [el("a", { href: "#/phong-kham/" + x.slug }, [el("span", { class: "pk-name", text: x.name })])]);
       })),
     ]);
   }
@@ -648,8 +648,6 @@
     pageView.appendChild(el("p", { class: "page-intro", text: L("Thuộc Khoa Khám bệnh, Bệnh viện Đa khoa Nhật Tân. Giờ khám: ", "Outpatient department, Nhat Tan General Hospital. Hours: ") + P.gio + "." }));
     addBookingBar();
     pageView.appendChild(pkGuide());
-    pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Bác sĩ khám", "Doctors") }),
-      el("p", { text: x.bacsi && x.bacsi.length ? x.bacsi.join(", ") : L("Danh sách bác sĩ đang được cập nhật.", "Doctor list is being updated.") })]));
     var tps = x.topics.map(function (s) { return DATA.gdsk.topics.filter(function (t) { return t.slug === s; })[0]; }).filter(Boolean);
     pageView.appendChild(el("section", { class: "page-section unit-gdsk" }, [el("h2", { text: L("Bài giáo dục sức khỏe nên đọc", "Health education articles") }),
       el("ol", { class: "unit-gdsk-list unit-gdsk-ol" }, tps.map(function (t, i) { return el("li", {}, [el("a", { href: "#/gdsk/" + t.slug, text: (i + 1) + ". " + tr(t.title) })]); }))]));
@@ -684,7 +682,6 @@
     function bookBtn(x) { return el("a", { class: "cpk-book", href: BOOKING_URL, target: "_blank", rel: "noopener", text: L("Đăng ký khám ", "Book ") + (x ? x.name.replace(/^Phòng khám /, "") : "") + " →" }); }
     function card(x, why) {
       return el("li", { class: "cpk-res" }, [el("strong", { text: x.name }), why ? el("span", { class: "cpk-why", text: why }) : null,
-        el("span", { class: "pk-doc", text: x.bacsi && x.bacsi.length ? L("Bác sĩ: ", "Doctors: ") + x.bacsi.join(", ") : L("Bác sĩ: đang cập nhật", "Doctors: updating") }),
         el("span", { class: "cpk-act" }, [bookBtn(x), el("a", { href: "#/phong-kham/" + x.slug, text: L("Xem phòng khám", "Clinic page") })])].filter(Boolean));
     }
     function draw() {

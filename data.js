@@ -1026,6 +1026,86 @@ window.PULSE_DATA = {
      }
     }
    ]
+  },
+  "tuyendung": {
+   "title": {
+    "vi": "Tuyển dụng",
+    "en": "Careers"
+   },
+   "intro": {
+    "vi": "Thông tin tuyển dụng của Bệnh viện Đa khoa Nhật Tân. Thông báo chính thức chỉ đăng tại trang này và các kênh chính thức của bệnh viện.",
+    "en": "Thông tin tuyển dụng của Bệnh viện Đa khoa Nhật Tân. Thông báo chính thức chỉ đăng tại trang này và các kênh chính thức của bệnh viện."
+   },
+   "sections": [
+    {
+     "h": {
+      "vi": "Thông báo tuyển dụng hiện tại",
+      "en": "Thông báo tuyển dụng hiện tại"
+     },
+     "p": {
+      "vi": "Hiện chưa có thông báo tuyển dụng mới. Khi bệnh viện có nhu cầu, thông báo (vị trí, số lượng, điều kiện, thời hạn nộp hồ sơ) sẽ được đăng tại đây.",
+      "en": "Hiện chưa có thông báo tuyển dụng mới. Khi bệnh viện có nhu cầu, thông báo (vị trí, số lượng, điều kiện, thời hạn nộp hồ sơ) sẽ được đăng tại đây."
+     }
+    },
+    {
+     "h": {
+      "vi": "Nhóm vị trí bệnh viện thường tuyển",
+      "en": "Nhóm vị trí bệnh viện thường tuyển"
+     },
+     "items": {
+      "vi": [
+       "Bác sĩ",
+       "Điều dưỡng",
+       "Hộ sinh",
+       "Kỹ thuật y (KTY)",
+       "Dược sĩ",
+       "Nhân viên hành chính, hỗ trợ"
+      ],
+      "en": [
+       "Bác sĩ",
+       "Điều dưỡng",
+       "Hộ sinh",
+       "Kỹ thuật y (KTY)",
+       "Dược sĩ",
+       "Nhân viên hành chính, hỗ trợ"
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Hồ sơ dự tuyển thường gồm",
+      "en": "Hồ sơ dự tuyển thường gồm"
+     },
+     "items": {
+      "vi": [
+       "Đơn dự tuyển",
+       "Sơ yếu lý lịch",
+       "Bản sao văn bằng, chứng chỉ",
+       "Giấy phép hành nghề (nếu vị trí yêu cầu)",
+       "Giấy chứng nhận sức khỏe",
+       "Bản sao căn cước công dân"
+      ],
+      "en": [
+       "Đơn dự tuyển",
+       "Sơ yếu lý lịch",
+       "Bản sao văn bằng, chứng chỉ",
+       "Giấy phép hành nghề (nếu vị trí yêu cầu)",
+       "Giấy chứng nhận sức khỏe",
+       "Bản sao căn cước công dân"
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Liên hệ",
+      "en": "Liên hệ"
+     },
+     "p": {
+      "vi": "Gọi tổng đài Nhật Tân 24/24: 0296 3562 357 để được hướng dẫn. Chỉ nộp hồ sơ theo thông báo chính thức của bệnh viện; không nộp tiền hay hồ sơ qua người tự xưng có thể \"lo việc\".",
+      "en": "Gọi tổng đài Nhật Tân 24/24: 0296 3562 357 để được hướng dẫn. Chỉ nộp hồ sơ theo thông báo chính thức của bệnh viện; không nộp tiền hay hồ sơ qua người tự xưng có thể \"lo việc\"."
+     }
+    }
+   ]
   }
  },
  "i18n": {
@@ -9530,8 +9610,8 @@ window.PULSE_DATA = {
     ]
    ],
    "video": {
-    "src": "video/khoa/kham-benh.mp4",
-    "poster": "video/khoa/kham-benh.jpg",
+    "src": "video/khoa/kham-benh.mp4?v=20261123g",
+    "poster": "video/khoa/kham-benh.jpg?v=20261123g",
     "caption": "Video giới thiệu Khoa Khám bệnh (36 giây; hình từ video của khoa, đã che mặt người bệnh)"
    }
   },
