@@ -735,7 +735,7 @@
   function renderKhoaPage(key) {
     var hit = unitByCode(key);
     var k = DATA.khoa && DATA.khoa[key];
-    if (!k) { renderUnitPage(hit); unitExtras(hit, key); addBookingBar(); return; }
+    if (!k) { renderUnitPage(hit); var uv = DATA.unitVideo && DATA.unitVideo[key]; if (uv) pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Video truyền thông", "Videos") })].concat([].concat(uv).map(reelFigure)))); unitExtras(hit, key); addBookingBar(); return; }
     renderRichKhoa(k);
     if (key === "kham-benh" && DATA.phongkham) {
       var vsec = pageView.querySelector(".reel") ? pageView.querySelector(".reel").parentNode : null;
@@ -853,7 +853,7 @@
         el("figcaption", { text: tr(k.photos[0][1]) }),
       ]));
     }
-    if (k.video) pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Video giới thiệu", "Intro video") }), reelFigure(k.video)]));
+    if (k.video) pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Video giới thiệu", "Intro video") })].concat([].concat(k.video).map(reelFigure))));
     pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Thông tin đơn vị", "Unit information") }), el("dl", { class: "khoa-facts" }, [].concat.apply([], k.facts.map(function (f) { return [el("dt", { text: tr(f[0]) }), el("dd", { text: tr(f[1]) })]; })))]));
     k.sections.forEach(function (s) {
       pageView.appendChild(el("section", { class: "page-section" }, [
@@ -933,7 +933,7 @@
         el("ul", {}, art.remember.map(function (k) { var li = el("li"); li.innerHTML = gIcon("star", 18); li.appendChild(document.createTextNode(k)); return li; }))]);
       pageView.appendChild(r);
     }
-    if (tp.video) pageView.appendChild(el("section", { class: "page-section art-section" }, [el("h2", { text: L("Xem video ngắn", "Short video") }), reelFigure(tp.video)]));
+    if (tp.video) pageView.appendChild(el("section", { class: "page-section art-section" }, [el("h2", { text: L("Xem video ngắn", "Short video") })].concat([].concat(tp.video).map(reelFigure))));
     art.sections.forEach(function (sec) {
       var box = el("section", { class: "page-section art-section" + (sec.cls ? " " + sec.cls : "") }, [el("h2", { text: sec.h })]);
       artBlocks(box, sec.blocks);

@@ -521,6 +521,7 @@ window.PULSE_EN = {
 "Viêm da cơ địa (chàm)": "Atopic eczema",
 "Chuẩn bị trước khi mang thai": "Preparing for pregnancy",
 "Tiêm chủng đầy đủ, đúng lịch": "Full, on-time vaccination",
+"Bệnh não mô cầu": "Meningococcal disease",
 "HS": "Midwife",
 "KTY": "MT"
 };

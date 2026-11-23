@@ -4194,7 +4194,19 @@ window.PULSE_DATA = {
     "poster": {
      "img": "img/gdsk/poster-cum.jpg",
      "caption": "Poster Cúm mùa"
-    }
+    },
+    "video": [
+     {
+      "src": "video/gdsk/reel-cum-mua.mp4",
+      "poster": "video/gdsk/reel-cum-mua.jpg",
+      "caption": "Video: Cúm mùa, nhận biết sớm và phòng lây"
+     },
+     {
+      "src": "video/gdsk/reel-rsv-cum-o-tre.mp4",
+      "poster": "video/gdsk/reel-rsv-cum-o-tre.jpg",
+      "caption": "Video: RSV và cúm ở trẻ khi giao mùa"
+     }
+    ]
    },
    {
     "group": "me",
@@ -5795,6 +5807,11 @@ window.PULSE_DATA = {
     "poster": {
      "img": "img/gdsk/poster-theo-doi-tre-sau-tiem-chung.jpg",
      "caption": "Poster Theo dõi trẻ sau tiêm chủng"
+    },
+    "video": {
+     "src": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.mp4",
+     "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg",
+     "caption": "Video: Theo dõi 30 phút sau tiêm"
     }
    },
    {
@@ -5921,7 +5938,7 @@ window.PULSE_DATA = {
       "h": "Làm ngay",
       "blocks": [
        {
-        "p": "Người bất tỉnh, gọi không đáp, không thở hoặc thở ngáp: hô hoán người hỗ trợ, nhờ người gọi xe đưa đi viện, bắt đầu ép tim ngay. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+        "p": "Người bất tỉnh, gọi không đáp, không thở hoặc thở ngáp: hô hoán người hỗ trợ, gọi cấp cứu 115 (khi ở ngoài cộng đồng), bắt đầu ép tim ngay. Trong bệnh viện: gọi hỗ trợ, kích hoạt báo động nội viện. Tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
        }
       ]
      },
@@ -5999,7 +6016,19 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
     },
-    "icon": "heart"
+    "icon": "heart",
+    "video": [
+     {
+      "src": "video/gdsk/reel-so-cuu-ngung-tim-cong-dong.mp4",
+      "poster": "video/gdsk/reel-so-cuu-ngung-tim-cong-dong.jpg",
+      "caption": "Video: Sơ cứu ngừng tim ngoài cộng đồng"
+     },
+     {
+      "src": "video/gdsk/reel-cap-cuu-ngung-tim-trong-benh-vien.mp4",
+      "poster": "video/gdsk/reel-cap-cuu-ngung-tim-trong-benh-vien.jpg",
+      "caption": "Video: Cấp cứu ngừng tim trong bệnh viện (dành cho nhân viên y tế)"
+     }
+    ]
    },
    {
     "group": "an",
@@ -8162,7 +8191,126 @@ window.PULSE_DATA = {
      ],
      "unit": "Tổ Tiêm chủng · Phòng Điều dưỡng"
     },
-    "icon": "syringe"
+    "icon": "syringe",
+    "video": [
+     {
+      "src": "video/gdsk/reel-an-toan-tiem-chung.mp4",
+      "poster": "video/gdsk/reel-an-toan-tiem-chung.jpg",
+      "caption": "Video: An toàn tiêm chủng và giờ mở cửa"
+     },
+     {
+      "src": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.mp4",
+      "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg",
+      "caption": "Video: Theo dõi 30 phút sau tiêm"
+     }
+    ]
+   },
+   {
+    "group": "tn",
+    "title": "Bệnh não mô cầu",
+    "points": [
+     "Sốt cao kèm đau đầu, cứng gáy hoặc ban tím: đến viện ngay, không chờ.",
+     "Tiêm vắc xin phòng não mô cầu theo tư vấn của nhân viên y tế.",
+     "Người tiếp xúc gần với người bệnh cần được y tế hướng dẫn dùng thuốc dự phòng."
+    ],
+    "slug": "nao-mo-cau",
+    "khoa": "Khoa Truyền nhiễm",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.NMC.BTT",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-22",
+     "lead": "Dành cho cha mẹ có con nhỏ, học sinh, sinh viên, người sống tập trung đông người.",
+     "heading": "Não mô cầu tiến triển rất nhanh: sốt kèm cứng gáy, ban tím là phải đi viện ngay",
+     "urgent": {
+      "h": "Đến viện ngay",
+      "blocks": [
+       {
+        "p": "Sốt cao đột ngột, đau đầu dữ dội, nôn, cổ cứng; nổi ban tím, chấm xuất huyết không mất khi ấn; lơ mơ, co giật; trẻ nhỏ bỏ bú, li bì, thóp phồng. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Sốt cao kèm đau đầu, cứng gáy hoặc ban tím: đến viện ngay, không chờ.",
+      "Tiêm vắc xin phòng não mô cầu theo tư vấn của nhân viên y tế.",
+      "Người tiếp xúc gần với người bệnh cần được y tế hướng dẫn dùng thuốc dự phòng."
+     ],
+     "sections": [
+      {
+       "h": "Hiểu đúng về bệnh não mô cầu",
+       "blocks": [
+        {
+         "p": "Bệnh do vi khuẩn não mô cầu, lây qua giọt bắn đường hô hấp khi tiếp xúc gần. Bệnh có thể gây viêm màng não, nhiễm khuẩn huyết, diễn tiến nặng trong vài giờ và để lại di chứng. Điều trị kháng sinh sớm tại bệnh viện giúp cứu sống người bệnh. [1]"
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc đúng cách",
+       "blocks": [
+        {
+         "items": [
+          "Theo dõi sát trẻ sốt: tình trạng tỉnh táo, ăn bú, da có nổi ban không.",
+          "Che miệng khi ho, hắt hơi; rửa tay thường xuyên; nhà cửa thông thoáng.",
+          "Người tiếp xúc gần (cùng nhà, cùng phòng) theo dõi sức khỏe và làm theo hướng dẫn của y tế.",
+          "Giữ sổ tiêm chủng, tiêm vắc xin đủ mũi theo lịch."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Những việc không nên làm",
+       "blocks": [
+        {
+         "items": [
+          "Không tự ở nhà hạ sốt rồi chờ khi có cứng gáy, ban tím.",
+          "Không tự mua kháng sinh uống thay cho việc đi khám.",
+          "Không dùng chung khăn, cốc, bàn chải."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "Khi nào cần đi khám",
+       "blocks": [
+        {
+         "items": [
+          "Sốt kèm đau đầu, nôn, cứng cổ.",
+          "Nổi ban tím, chấm xuất huyết.",
+          "Lơ mơ, co giật, trẻ li bì, bỏ bú."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Ban tím kèm sốt cao nên làm gì?",
+       "a": "Đến viện ngay, đây có thể là dấu hiệu não mô cầu."
+      },
+      {
+       "q": "Người ở cùng nhà với người bệnh cần làm gì?",
+       "a": "Liên hệ y tế để được hướng dẫn theo dõi và dùng thuốc dự phòng."
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Meningitis.",
+       "url": "https://www.nhs.uk/conditions/meningitis/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Khoa Truyền nhiễm · Phòng Điều dưỡng"
+    },
+    "icon": "bug",
+    "video": {
+     "src": "video/gdsk/reel-nao-mo-cau.mp4",
+     "poster": "video/gdsk/reel-nao-mo-cau.jpg",
+     "caption": "Video: Bệnh não mô cầu, dấu hiệu cần đi cấp cứu"
+    }
    }
   ]
  },
@@ -8261,11 +8409,23 @@ window.PULSE_DATA = {
     "title": "Zalo Tổ Tiêm chủng",
     "text": "Quét mã bằng Zalo hoặc thêm số 0943 971 821 để được tư vấn, đặt lịch hẹn và nhắc lịch tiêm."
    },
-   "video": {
-    "src": "video/khoa/tc.mp4",
-    "poster": "video/khoa/tc.jpg",
-    "caption": "Video giới thiệu Tổ Tiêm chủng (khoảng 22 giây, dựng từ ảnh của khoa)"
-   }
+   "video": [
+    {
+     "src": "video/khoa/tc.mp4",
+     "poster": "video/khoa/tc.jpg",
+     "caption": "Video giới thiệu Tổ Tiêm chủng (khoảng 22 giây, dựng từ ảnh của khoa)"
+    },
+    {
+     "src": "video/gdsk/reel-an-toan-tiem-chung.mp4",
+     "poster": "video/gdsk/reel-an-toan-tiem-chung.jpg",
+     "caption": "Video: An toàn tiêm chủng và giờ mở cửa"
+    },
+    {
+     "src": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.mp4",
+     "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg",
+     "caption": "Video: Theo dõi 30 phút sau tiêm"
+    }
+   ]
   },
   "tnt": {
    "name": "Bộ phận Thận nhân tạo",
@@ -8937,11 +9097,18 @@ window.PULSE_DATA = {
      "Chiếu đèn điều trị vàng da sơ sinh"
     ]
    ],
-   "video": {
-    "src": "video/khoa/nhi.mp4",
-    "poster": "video/khoa/nhi.jpg",
-    "caption": "Video giới thiệu Khoa Nhi (khoảng 1 phút)"
-   }
+   "video": [
+    {
+     "src": "video/khoa/nhi.mp4",
+     "poster": "video/khoa/nhi.jpg",
+     "caption": "Video giới thiệu Khoa Nhi (khoảng 1 phút)"
+    },
+    {
+     "src": "video/gdsk/reel-rsv-cum-o-tre.mp4",
+     "poster": "video/gdsk/reel-rsv-cum-o-tre.jpg",
+     "caption": "Video: RSV và cúm ở trẻ khi giao mùa"
+    }
+   ]
   },
   "phu-san": {
    "name": "Khoa Phụ sản",
@@ -9741,6 +9908,9 @@ window.PULSE_DATA = {
     },
     {
      "slug": "thuy-dau"
+    },
+    {
+     "slug": "nao-mo-cau"
     }
    ]
   },
@@ -9794,6 +9964,9 @@ window.PULSE_DATA = {
     },
     {
      "slug": "tiem-chung-dung-lich"
+    },
+    {
+     "slug": "nao-mo-cau"
     }
    ]
   },
@@ -10263,6 +10436,7 @@ window.PULSE_DATA = {
      "cham-soc-rang-mieng",
      "viem-hong-amidan",
      "tiem-chung-dung-lich",
+     "nao-mo-cau",
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
@@ -10546,6 +10720,25 @@ window.PULSE_DATA = {
    "tiem-chung",
    "kham-suc-khoe",
    "ngoai-chan-thuong"
+  ]
+ },
+ "unitVideo": {
+  "dieu-duong": {
+   "src": "video/gdsk/reel-an-toan-nguoi-benh.mp4",
+   "poster": "video/gdsk/reel-an-toan-nguoi-benh.jpg",
+   "caption": "Video: An toàn người bệnh, 5 hành động nhỏ"
+  },
+  "truyen-nhiem": [
+   {
+    "src": "video/gdsk/reel-nao-mo-cau.mp4",
+    "poster": "video/gdsk/reel-nao-mo-cau.jpg",
+    "caption": "Video: Bệnh não mô cầu"
+   },
+   {
+    "src": "video/gdsk/reel-cum-mua.mp4",
+    "poster": "video/gdsk/reel-cum-mua.jpg",
+    "caption": "Video: Cúm mùa"
+   }
   ]
  }
 };
