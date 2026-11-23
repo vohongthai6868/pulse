@@ -588,6 +588,7 @@
     var gm = GDSK_RE.exec(location.hash);
     if (gm && DATA.gdsk.topics.some(function (x) { return x.slug === gm[1]; })) return "gdsk:" + gm[1];
     if (/^#\/chon-phong-kham\/?$/.test(location.hash) && DATA.trolyPK) return "chonpk";
+    if (/^#\/reel\/?$/.test(location.hash)) return "reel";
     var pm = PK_RE.exec(location.hash);
     if (pm && DATA.phongkham && DATA.phongkham.items.some(function (x) { return x.slug === pm[1]; })) return "pk:" + pm[1];
     var km = KHOA_RE.exec(location.hash);
@@ -836,6 +837,46 @@
     var v = el("video", { controls: "", playsinline: "", preload: "none", poster: vd.poster || "", src: vd.src });
     v.setAttribute("aria-label", tr(vd.caption));
     return el("figure", { class: "reel" }, [v, el("figcaption", { text: tr(vd.caption) })]);
+  }
+
+  // Mục Reel: gom mọi reel trên web, mỗi reel có đường dẫn về khoa, bộ phận (và bài GDSK nếu có).
+  function collectReels() {
+    var map = {}, order = [];
+    function key(src) { return String(src).split("?")[0]; }
+    function add(vd, code, topic) {
+      if (!vd || !vd.src) return;
+      var k = key(vd.src);
+      if (!map[k]) { map[k] = { vd: vd, units: [], topics: [] }; order.push(k); }
+      var r = map[k];
+      if (code && r.units.indexOf(code) < 0 && unitByCode(code)) r.units.push(code);
+      if (topic && r.topics.indexOf(topic) < 0) r.topics.push(topic);
+    }
+    (DATA.departments || []).forEach(function (g) { g.units.forEach(function (u) {
+      var c = u.page; if (!c) return;
+      if (DATA.khoa && DATA.khoa[c] && DATA.khoa[c].video) [].concat(DATA.khoa[c].video).forEach(function (vd) { add(vd, c); });
+      if (DATA.unitVideo && DATA.unitVideo[c]) [].concat(DATA.unitVideo[c]).forEach(function (vd) { add(vd, c); });
+    }); });
+    DATA.gdsk.topics.forEach(function (t) {
+      if (!t.video) return;
+      var hit = unitByName(t.khoa) || (khoaFromSlug(khoaSlug(t.khoa || "")) === "Phòng Điều dưỡng" ? unitByCode("dieu-duong") : null);
+      [].concat(t.video).forEach(function (vd) { add(vd, hit ? hit.u.page : null, t); });
+    });
+    return order.map(function (k) { return map[k]; });
+  }
+  function renderReelPage() {
+    pageView.textContent = ""; pageView.classList.remove("art-v2");
+    pageView.appendChild(el("a", { class: "back-link", href: "#top", text: L("← Về trang chủ", "← Back to home") }));
+    pageView.appendChild(el("h1", { class: "page-title", text: "Reel" }));
+    var R = collectReels();
+    pageView.appendChild(el("p", { class: "page-intro", text: L(R.length + " video ngắn giới thiệu khoa, bộ phận và giáo dục sức khỏe. Bấm tên khoa, bộ phận dưới mỗi video để xem trang của khoa, bộ phận đó.", R.length + " short videos. Tap the department name under each video to open its page.") }));
+    pageView.appendChild(el("div", { class: "reel-grid" }, R.map(function (r) {
+      var links = r.units.map(function (c) { var h = unitByCode(c); return el("a", { class: "reel-unit", href: "#/khoa/" + c, text: tr(h.u.name) + " →" }); });
+      r.topics.forEach(function (t) { links.push(el("a", { class: "reel-topic", href: "#/gdsk/" + t.slug, text: L("Bài: ", "Article: ") + tr(t.title) })); });
+      var fig = reelFigure(r.vd);
+      fig.appendChild(el("div", { class: "reel-links" }, links));
+      return fig;
+    })));
+    document.title = "Reel" + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
   function renderRichKhoa(k) {
     pageView.textContent = "";
@@ -1149,7 +1190,7 @@
     if (name) {
       homeView.hidden = true;
       pageView.hidden = false;
-      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else if (name.indexOf("gdsk:") === 0) renderGdskPage(name.slice(5)); else if (name.indexOf("pk:") === 0) renderPhongKham(name.slice(3)); else if (name === "chonpk") renderChonPK(); else renderPage(name);
+      if (name.indexOf("topic:") === 0) renderTopicPage(name.slice(6)); else if (name.indexOf("khoa:") === 0) renderKhoaPage(name.slice(5)); else if (name.indexOf("gdsk:") === 0) renderGdskPage(name.slice(5)); else if (name.indexOf("pk:") === 0) renderPhongKham(name.slice(3)); else if (name === "chonpk") renderChonPK(); else if (name === "reel") renderReelPage(); else renderPage(name);
       addCollapse(pageView);
       pageView.appendChild(el("div", { class: "page-home" }, [el("a", { class: "back-link home-btn", href: "#top", text: L("← Về trang chủ", "← Back to home") })]));
       if (scroll) window.scrollTo(0, 0);
