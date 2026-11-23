@@ -5914,7 +5914,17 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
     },
-    "icon": "heart"
+    "icon": "heart",
+    "poster": {
+     "img": "img/gdsk/poster-nhoi-mau-co-tim.jpg",
+     "caption": "Poster Nhồi máu cơ tim: nhận biết sớm"
+    },
+    "posterExtra": [
+     {
+      "img": "img/gdsk/info-nhoi-mau-co-tim.jpg",
+      "caption": "Infographic: Nhồi máu cơ tim, nhận biết sớm"
+     }
+    ]
    },
    {
     "group": "an",
@@ -6028,6 +6038,16 @@ window.PULSE_DATA = {
       "poster": "video/gdsk/reel-cap-cuu-ngung-tim-trong-benh-vien.jpg",
       "caption": "Video: Cấp cứu ngừng tim trong bệnh viện (dành cho nhân viên y tế)"
      }
+    ],
+    "poster": {
+     "img": "img/gdsk/poster-ngung-tim-ep-tim.jpg",
+     "caption": "Poster Ngừng tim: gọi người và ép tim ngay"
+    },
+    "posterExtra": [
+     {
+      "img": "img/gdsk/info-cap-cuu-ngung-tim-trong-benh-vien.jpg",
+      "caption": "Infographic: Quy trình cấp cứu ngừng tim, ngừng thở trong bệnh viện"
+     }
     ]
    },
    {
@@ -6136,7 +6156,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
     },
-    "icon": "alert"
+    "icon": "alert",
+    "poster": {
+     "img": "img/gdsk/poster-ran-can.jpg",
+     "caption": "Poster Rắn cắn: sơ cứu đúng"
+    }
    },
    {
     "group": "an",
@@ -6238,7 +6262,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
     },
-    "icon": "alert"
+    "icon": "alert",
+    "poster": {
+     "img": "img/gdsk/poster-phan-ve.jpg",
+     "caption": "Poster Phản vệ: dị ứng nặng, xử trí khẩn"
+    }
    },
    {
     "group": "an",
@@ -6340,7 +6368,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
     },
-    "icon": "flask"
+    "icon": "flask",
+    "poster": {
+     "img": "img/gdsk/poster-ngo-doc-thuoc-tru-sau.jpg",
+     "caption": "Poster Ngộ độc thuốc trừ sâu"
+    }
    },
    {
     "group": "an",
@@ -6447,7 +6479,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc · Phòng Điều dưỡng"
     },
-    "icon": "alert"
+    "icon": "alert",
+    "poster": {
+     "img": "img/gdsk/poster-ngo-doc-ruou-thuc-pham.jpg",
+     "caption": "Poster Ngộ độc rượu và thực phẩm"
+    }
    },
    {
     "group": "man",
@@ -6549,7 +6585,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Bộ phận Thận nhân tạo · Phòng Điều dưỡng"
     },
-    "icon": "drop"
+    "icon": "drop",
+    "poster": {
+     "img": "img/gdsk/poster-ha-huyet-ap-khi-chay-than.jpg",
+     "caption": "Poster Tụt huyết áp khi chạy thận"
+    }
    },
    {
     "group": "man",
@@ -6651,7 +6691,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Bộ phận Thận nhân tạo · Phòng Điều dưỡng"
     },
-    "icon": "apple"
+    "icon": "apple",
+    "poster": {
+     "img": "img/gdsk/poster-tang-kali-mau.jpg",
+     "caption": "Poster Kali máu cao ở người bệnh thận"
+    }
    },
    {
     "group": "man",
@@ -6753,7 +6797,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Bộ phận Thận nhân tạo · Phòng Điều dưỡng"
     },
-    "icon": "drop"
+    "icon": "drop",
+    "poster": {
+     "img": "img/gdsk/poster-ngua-o-nguoi-chay-than.jpg",
+     "caption": "Poster Ngứa da ở người chạy thận"
+    }
    },
    {
     "group": "tn",
@@ -6855,7 +6903,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Truyền nhiễm · Phòng Điều dưỡng"
     },
-    "icon": "bug"
+    "icon": "bug",
+    "poster": {
+     "img": "img/gdsk/poster-quai-bi.jpg",
+     "caption": "Poster Quai bị"
+    }
    },
    {
     "group": "tn",
@@ -6957,7 +7009,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Truyền nhiễm · Phòng Điều dưỡng"
     },
-    "icon": "bug"
+    "icon": "bug",
+    "poster": {
+     "img": "img/gdsk/poster-thuy-dau.jpg",
+     "caption": "Poster Thủy đậu"
+    }
    },
    {
     "group": "man",
@@ -7059,7 +7115,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Y học cổ truyền – Phục hồi chức năng · Phòng Điều dưỡng"
     },
-    "icon": "walk"
+    "icon": "walk",
+    "poster": {
+     "img": "img/gdsk/poster-thoat-vi-dia-dem.jpg",
+     "caption": "Poster Thoát vị đĩa đệm cột sống thắt lưng"
+    }
    },
    {
     "group": "man",
@@ -7161,7 +7221,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Y học cổ truyền – Phục hồi chức năng · Phòng Điều dưỡng"
     },
-    "icon": "eye"
+    "icon": "eye",
+    "poster": {
+     "img": "img/gdsk/poster-liet-mat-ngoai-bien.jpg",
+     "caption": "Poster Liệt mặt ngoại biên (liệt dây VII)"
+    }
    },
    {
     "group": "man",
@@ -7263,7 +7327,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
-    "icon": "walk"
+    "icon": "walk",
+    "poster": {
+     "img": "img/gdsk/poster-gout.jpg",
+     "caption": "Poster Bệnh gout"
+    }
    },
    {
     "group": "man",
@@ -7365,7 +7433,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Nội tổng quát · Phòng Điều dưỡng"
     },
-    "icon": "walk"
+    "icon": "walk",
+    "poster": {
+     "img": "img/gdsk/poster-thoai-hoa-khop-goi.jpg",
+     "caption": "Poster Thoái hóa khớp gối"
+    }
    },
    {
     "group": "man",
@@ -7467,7 +7539,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Ngoại tổng quát · Phòng Điều dưỡng"
     },
-    "icon": "drop"
+    "icon": "drop",
+    "poster": {
+     "img": "img/gdsk/poster-soi-tiet-nieu.jpg",
+     "caption": "Poster Sỏi tiết niệu"
+    }
    },
    {
     "group": "ck",
@@ -7569,7 +7645,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
     },
-    "icon": "star"
+    "icon": "star",
+    "poster": {
+     "img": "img/gdsk/poster-cham-soc-rang-mieng.jpg",
+     "caption": "Poster Chăm sóc răng miệng, phòng sâu răng"
+    }
    },
    {
     "group": "ck",
@@ -7671,7 +7751,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
     },
-    "icon": "bandage"
+    "icon": "bandage",
+    "poster": {
+     "img": "img/gdsk/poster-sau-nho-rang.jpg",
+     "caption": "Poster Chăm sóc sau nhổ răng"
+    }
    },
    {
     "group": "ck",
@@ -7773,7 +7857,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
     },
-    "icon": "wind"
+    "icon": "wind",
+    "poster": {
+     "img": "img/gdsk/poster-viem-mui-xoang.jpg",
+     "caption": "Poster Viêm mũi xoang"
+    }
    },
    {
     "group": "ck",
@@ -7875,7 +7963,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Liên chuyên khoa · Phòng Điều dưỡng"
     },
-    "icon": "thermo"
+    "icon": "thermo",
+    "poster": {
+     "img": "img/gdsk/poster-viem-hong-amidan.jpg",
+     "caption": "Poster Viêm họng, viêm amidan"
+    }
    },
    {
     "group": "ck",
@@ -7977,7 +8069,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Khám bệnh · Phòng Điều dưỡng"
     },
-    "icon": "hand"
+    "icon": "hand",
+    "poster": {
+     "img": "img/gdsk/poster-viem-da-co-dia.jpg",
+     "caption": "Poster Viêm da cơ địa (chàm)"
+    }
    },
    {
     "group": "me",
@@ -8084,7 +8180,11 @@ window.PULSE_DATA = {
      ],
      "unit": "Khoa Phụ sản · Phòng Điều dưỡng"
     },
-    "icon": "baby"
+    "icon": "baby",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-mang-thai.jpg",
+     "caption": "Poster Chuẩn bị trước khi mang thai"
+    }
    },
    {
     "group": "me",
@@ -8203,7 +8303,11 @@ window.PULSE_DATA = {
       "poster": "video/gdsk/reel-theo-doi-30-phut-sau-tiem.jpg",
       "caption": "Video: Theo dõi 30 phút sau tiêm"
      }
-    ]
+    ],
+    "poster": {
+     "img": "img/gdsk/poster-tiem-chung-dung-lich.jpg",
+     "caption": "Poster Tiêm chủng đầy đủ, đúng lịch"
+    }
    },
    {
     "group": "tn",

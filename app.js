@@ -944,7 +944,9 @@
       el("figure", { class: "art-poster" }, [
         el("a", { href: tp.poster.img, target: "_blank", rel: "noopener" }, [el("img", { src: tp.poster.img, alt: tr(tp.poster.caption), loading: "lazy" })]),
         el("figcaption", { text: tr(tp.poster.caption) + L(" (bấm để phóng to)", " (tap to enlarge)") }),
-      ])]));
+      ])].concat((tp.posterExtra || []).map(function (px) { return el("figure", { class: "art-poster" }, [
+        el("a", { href: px.img, target: "_blank", rel: "noopener" }, [el("img", { src: px.img, alt: tr(px.caption), loading: "lazy" })]),
+        el("figcaption", { text: tr(px.caption) + L(" (bấm để phóng to)", " (tap to enlarge)") })]); }))));
     if (art.quiz && art.quiz.length) {
       var q = el("section", { class: "page-section art-quiz" }, [el("h2", { text: L("Tự kiểm tra: bạn đã nhớ chưa?", "Self-check: do you remember?") }),
         el("p", { class: "art-quiz-hint", text: L("Bấm vào từng câu hỏi để xem đáp án.", "Tap each question to see the answer.") })]);
