@@ -8414,6 +8414,10 @@ window.PULSE_DATA = {
      "src": "video/gdsk/reel-nao-mo-cau.mp4",
      "poster": "video/gdsk/reel-nao-mo-cau.jpg",
      "caption": "Video: Bệnh não mô cầu, dấu hiệu cần đi cấp cứu"
+    },
+    "poster": {
+     "img": "img/gdsk/poster-nao-mo-cau.jpg",
+     "caption": "Poster Cẩm nang phòng bệnh não mô cầu"
     }
    }
   ]
