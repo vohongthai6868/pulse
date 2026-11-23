@@ -8599,8 +8599,8 @@ window.PULSE_DATA = {
    },
    "video": [
     {
-     "src": "video/khoa/tc.mp4",
-     "poster": "video/khoa/tc.jpg",
+     "src": "video/khoa/tc.mp4?v=20261123j",
+     "poster": "video/khoa/tc.jpg?v=20261123j",
      "caption": "Video giới thiệu Tổ Tiêm chủng (khoảng 22 giây, dựng từ ảnh của khoa)"
     },
     {
@@ -8952,8 +8952,8 @@ window.PULSE_DATA = {
     "Mong quý bà con vui lòng hợp tác, thực hiện nội quy này. Trân trọng cảm ơn."
    ],
    "video": {
-    "src": "video/khoa/cap-cuu.mp4",
-    "poster": "video/khoa/cap-cuu.jpg",
+    "src": "video/khoa/cap-cuu.mp4?v=20261123j",
+    "poster": "video/khoa/cap-cuu.jpg?v=20261123j",
     "caption": "Video giới thiệu Khoa Cấp cứu – HSTC – Chống độc (khoảng 28 giây, dựng từ ảnh của khoa)"
    }
   },
@@ -9068,8 +9068,8 @@ window.PULSE_DATA = {
     ]
    ],
    "video": {
-    "src": "video/khoa/noi-tq.mp4",
-    "poster": "video/khoa/noi-tq.jpg",
+    "src": "video/khoa/noi-tq.mp4?v=20261123j",
+    "poster": "video/khoa/noi-tq.jpg?v=20261123j",
     "caption": "Video giới thiệu Khoa Nội tổng quát (khoảng 1 phút)"
    }
   },
@@ -9150,8 +9150,8 @@ window.PULSE_DATA = {
    ],
    "message": "Sức khỏe của người bệnh là sự quan tâm và trách nhiệm của chúng tôi. Rất mong người bệnh và thân nhân phối hợp, tuân thủ hướng dẫn điều trị để phục hồi tốt nhất.",
    "video": {
-    "src": "video/khoa/noi-th.mp4",
-    "poster": "video/khoa/noi-th.jpg",
+    "src": "video/khoa/noi-th.mp4?v=20261123j",
+    "poster": "video/khoa/noi-th.jpg?v=20261123j",
     "caption": "Video giới thiệu Khoa Nội tiêu hóa (khoảng 1 phút)"
    },
    "photos": [
@@ -9287,8 +9287,8 @@ window.PULSE_DATA = {
    ],
    "video": [
     {
-     "src": "video/khoa/nhi.mp4",
-     "poster": "video/khoa/nhi.jpg",
+     "src": "video/khoa/nhi.mp4?v=20261123j",
+     "poster": "video/khoa/nhi.jpg?v=20261123j",
      "caption": "Video giới thiệu Khoa Nhi (khoảng 1 phút)"
     },
     {
@@ -9413,8 +9413,8 @@ window.PULSE_DATA = {
     ]
    ],
    "video": {
-    "src": "video/khoa/phu-san.mp4",
-    "poster": "video/khoa/phu-san.jpg",
+    "src": "video/khoa/phu-san.mp4?v=20261123j",
+    "poster": "video/khoa/phu-san.jpg?v=20261123j",
     "caption": "Video giới thiệu Khoa Phụ sản (khoảng 36 giây, dựng từ ảnh của khoa)"
    }
   },
@@ -9524,8 +9524,8 @@ window.PULSE_DATA = {
     ]
    ],
    "video": {
-    "src": "video/khoa/cdha.mp4",
-    "poster": "video/khoa/cdha.jpg",
+    "src": "video/khoa/cdha.mp4?v=20261123j",
+    "poster": "video/khoa/cdha.jpg?v=20261123j",
     "caption": "Video giới thiệu Khoa Chẩn đoán hình ảnh - Thăm dò chức năng (khoảng 1 phút)"
    }
   },
