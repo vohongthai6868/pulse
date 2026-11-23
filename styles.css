@@ -962,3 +962,4 @@ a.cite { cursor: pointer; }
 .cpk-best { align-self: flex-start; padding: 3px 10px; border-radius: 12px; background: #d0202a; color: #fff; font-size: .85rem; font-weight: 700; }
 .cpk-result-sec .pk-doc, .cpk-result-sec .cpk-why { color: #333; }
 .cpk-result-sec { scroll-margin-top: 130px; }
+.comm-poster figcaption { font-size: .9rem; text-align: center; margin-top: 6px; opacity: .8; }
