@@ -8630,7 +8630,7 @@ window.PULSE_DATA = {
     ],
     [
      "Ca lọc máu",
-     "3 ca/ngày: ca 1 3g30 – 7g00; ca 2 7g30 – 11g00; ca 3 11g30 – 15g00. Nhân viên theo dõi người bệnh liên tục trong suốt ca lọc."
+     "3 ca/ngày: Ca 1 (3g30 – 7g00); Ca 2 (7g30 – 11g00); Ca 3 (11g30 – 15g00). Nhân viên theo dõi người bệnh liên tục trong suốt ca lọc."
     ],
     [
      "Nhân lực",

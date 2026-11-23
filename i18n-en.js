@@ -365,7 +365,7 @@ window.PULSE_EN = {
 "Lọc máu chu kỳ cho người bệnh suy thận: chạy thận nhân tạo (HD), lọc máu HDF Online, lọc máu cấp cứu; chăm sóc đường vào mạch máu và đồng hành cùng người bệnh lâu dài. Phương châm: Tận tâm – Chu đáo – An toàn – Hiệu quả.": "Regular dialysis for patients with kidney failure: haemodialysis (HD), online HDF and emergency dialysis; vascular access care and long-term support. Motto: Dedicated – Attentive – Safe – Effective.",
 "Tầng trệt, Khu D": "Ground floor, Block D",
 "Ca lọc máu": "Dialysis shifts",
-"3 ca/ngày: ca 1 3g30 – 7g00; ca 2 7g30 – 11g00; ca 3 11g30 – 15g00. Nhân viên theo dõi người bệnh liên tục trong suốt ca lọc.": "3 shifts a day: 3:30 – 7:00, 7:30 – 11:00, 11:30 – 15:00, with continuous monitoring during each session.",
+"3 ca/ngày: Ca 1 (3g30 – 7g00); Ca 2 (7g30 – 11g00); Ca 3 (11g30 – 15g00). Nhân viên theo dõi người bệnh liên tục trong suốt ca lọc.": "3 shifts a day: Shift 1 (3:30 – 7:00), Shift 2 (7:30 – 11:00), Shift 3 (11:30 – 15:00), with continuous monitoring during each session.",
 "10 điều dưỡng: 3 đại học, 7 cao đẳng": "10 nurses: 3 with bachelor's degrees, 7 with college diplomas",
 "Hình thức": "Type",
 "Điều trị ngoại trú lọc máu chu kỳ, không bố trí giường nội trú": "Outpatient regular dialysis; no inpatient beds",
