@@ -959,7 +959,7 @@
           return k.qr.href ? el("a", { href: k.qr.href, target: "_blank", rel: "noopener", "aria-label": tr(k.qr.btn || "Mở trang đăng ký") }, [qi]) : qi;
         })(),
         el("p", { text: tr(k.qr.text) }),
-        k.qr.href ? el("a", { class: "btn-primary", href: k.qr.href, target: "_blank", rel: "noopener", text: tr(k.qr.btn || "Mở trang đăng ký") }) : null,
+        k.qr.href ? el("a", { class: "btn-primary qr-blink", href: k.qr.href, target: "_blank", rel: "noopener", text: tr(k.qr.btn || "Mở trang đăng ký") }) : null,
       ].filter(Boolean)));
     }
     if (k.message) pageView.appendChild(el("blockquote", { class: "khoa-message", text: tr(k.message) }));
@@ -1144,6 +1144,24 @@
     document.title = tr(tp.title) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
   }
 
+  // Trang Liên hệ: số điện thoại, Zalo, email, địa chỉ thành liên kết bấm được, nhấp nháy.
+  function contactLine(txt, kind) {
+    var a = function (href, label, ext) {
+      return el("a", ext ? { class: "lh-link", href: href, target: "_blank", rel: "noopener", text: label } : { class: "lh-link", href: href, text: label });
+    };
+    if (kind === "map") return el("p", {}, [a("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("Bệnh viện Đa khoa Nhật Tân, 32 Phạm Ngọc Thạch, Châu Đốc, An Giang"), txt, true)]);
+    var li = el("li"), re = /(0\d{2,3}(?: ?\d){6,8})|([\w.+-]+@[\w-]+\.[\w.]+)|(\(có Zalo\)|\(also on Zalo\))/g, last = 0, m, phone = "";
+    while ((m = re.exec(txt))) {
+      if (m.index > last) li.appendChild(document.createTextNode(txt.slice(last, m.index)));
+      if (m[1]) { phone = m[1].replace(/ /g, ""); li.appendChild(a("tel:" + phone, m[1])); }
+      else if (m[2]) li.appendChild(a("mailto:" + m[2], m[2]));
+      else li.appendChild(a("https://zalo.me/" + phone, m[3], true));
+      last = re.lastIndex;
+    }
+    if (last < txt.length) li.appendChild(document.createTextNode(txt.slice(last)));
+    return li;
+  }
+
   function renderPage(name) {
     var page = DATA.pages[name];
     pageView.textContent = "";
@@ -1158,11 +1176,12 @@
       var d = new Date(page.updated + "T00:00:00");
       pageView.appendChild(el("p", { class: "page-updated", text: t("lastUpdated") + ": " + d.toLocaleDateString(state.lang === "vi" ? "vi-VN" : "en-US", { year: "numeric", month: "long", day: "numeric" }) }));
     }
-    page.sections.forEach(function (s) {
+    var lk = name === "privacy";
+    page.sections.forEach(function (s, si) {
       var block = el("section", { class: "page-section" }, [el("h2", { text: s.h[state.lang] })]);
-      if (s.p) block.appendChild(el("p", { text: s.p[state.lang] }));
+      if (s.p) block.appendChild(lk && si === 0 ? contactLine(s.p[state.lang], "map") : el("p", { text: s.p[state.lang] }));
       if (s.items) {
-        block.appendChild(el(s.ordered ? "ol" : "ul", {}, s.items[state.lang].map(function (txt) { return el("li", { text: txt }); })));
+        block.appendChild(el(s.ordered ? "ol" : "ul", {}, s.items[state.lang].map(function (txt) { return lk ? contactLine(txt, "li") : el("li", { text: txt }); })));
       }
       pageView.appendChild(block);
     });
