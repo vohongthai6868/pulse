@@ -9982,8 +9982,8 @@ window.PULSE_DATA = {
    "message": "Phòng chống bệnh lây, chung tay trách nhiệm.",
    "video": [
     {
-     "src": "video/khoa/truyen-nhiem.mp4?v=20261125k",
-     "poster": "video/khoa/truyen-nhiem.jpg?v=20261125k",
+     "src": "video/khoa/truyen-nhiem.mp4?v=20261125l",
+     "poster": "video/khoa/truyen-nhiem.jpg?v=20261125l",
      "caption": "Video giới thiệu Khoa Truyền nhiễm (khoảng 1 phút)"
     },
     {
