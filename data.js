@@ -532,7 +532,18 @@ window.PULSE_DATA = {
       ]
      }
     }
-   ]
+   ],
+   "cover": {
+    "img": "img/bv/toan-canh-bv-nhat-tan-1600.jpg?v=20261125g",
+    "alt": {
+     "vi": "Toàn cảnh Bệnh viện Đa khoa Nhật Tân nhìn từ trên cao",
+     "en": "Aerial view of Nhat Tan General Hospital"
+    },
+    "caption": {
+     "vi": "Toàn cảnh Bệnh viện Đa khoa Nhật Tân",
+     "en": "Nhat Tan General Hospital"
+    }
+   }
   },
   "guides": {
    "title": {
@@ -11077,6 +11088,210 @@ window.PULSE_DATA = {
     "src": "video/gdsk/reel-cum-mua.mp4?v=20261123f",
     "poster": "video/gdsk/reel-cum-mua.jpg?v=20261123f",
     "caption": "Video: Cúm mùa"
+   }
+  ]
+ },
+ "buongkham": {
+  "updated": "2026-11-25",
+  "note": "CC & CN: đo chiều cao và cân nặng trước khi vào phòng.",
+  "khu": [
+   {
+    "name": "Khu A",
+    "rooms": [
+     [
+      "A1",
+      "BK Nội tổng quát 1 + Cấp cứu tổng hợp"
+     ],
+     [
+      "A2",
+      "BK Lão khoa"
+     ],
+     [
+      "A3",
+      "BK Nội tiết 2"
+     ],
+     [
+      "A4",
+      "BK Tăng huyết áp"
+     ],
+     [
+      "A5",
+      "BK Nội tiết"
+     ],
+     [
+      "A6",
+      "BK Tim mạch"
+     ],
+     [
+      "A7",
+      "BK Ngoại ung bướu"
+     ],
+     [
+      "A8",
+      "BK Ngoại niệu – nam khoa (7g00 – 15g30 thứ Bảy hằng tuần)"
+     ],
+     [
+      "A9",
+      "BK Ngoại tổng quát"
+     ],
+     [
+      "A11",
+      "BK Ngoại chấn thương"
+     ],
+     [
+      "A13",
+      "Buồng tiểu phẫu"
+     ],
+     [
+      "A101",
+      "BK Nội theo yêu cầu 3"
+     ],
+     [
+      "A102",
+      "BK Hô hấp"
+     ],
+     [
+      "A103",
+      "BK Nội tổng quát 3"
+     ],
+     [
+      "A104",
+      "BK Sức khỏe tâm thần"
+     ],
+     [
+      "A105",
+      "BK Nội tổng quát 2"
+     ],
+     [
+      "A106",
+      "BK Nội tổng quát 5"
+     ],
+     [
+      "A108",
+      "BK Nội tổng quát 4"
+     ],
+     [
+      "A109",
+      "BK Nội tổng quát"
+     ],
+     [
+      "A111",
+      "BK Nhi 1"
+     ],
+     [
+      "A113",
+      "BK Nhi 2"
+     ],
+     [
+      "A200",
+      "BK Viêm gan"
+     ],
+     [
+      "A201",
+      "BK Nội tiêu hóa"
+     ],
+     [
+      "A207",
+      "BK Da liễu 3"
+     ],
+     [
+      "A209",
+      "BK Da liễu 2"
+     ],
+     [
+      "A211",
+      "BK Da liễu 1"
+     ],
+     [
+      "A213",
+      "Dinh dưỡng"
+     ]
+    ]
+   },
+   {
+    "name": "Khu B",
+    "rooms": [
+     [
+      "B3",
+      "Hô hấp ký (chức năng hô hấp), Holter huyết áp, phế thân ký, dao động xung ký (IOS) có thuốc, FeNO (giờ hành chính, làm thông trưa). Cần đo CC & CN và có kết quả chụp X-quang trước"
+     ],
+     [
+      "B6",
+      "X-quang (7g00 – 10g30 và 13g00 – 15g30, thứ Hai đến thứ Sáu)"
+     ],
+     [
+      "B7",
+      "X-quang, CT, MRI, đo loãng xương (cần đo CC & CN)"
+     ],
+     [
+      "B11",
+      "Siêu âm"
+     ],
+     [
+      "B17",
+      "Điện cơ, điện não, lưu huyết não (cần đo CC & CN), thần kinh thực vật, huyết áp tứ chi, test tetany, đánh giá thương tổn bàn chân đái tháo đường (làm thông trưa đến 17g00)"
+     ],
+     [
+      "B18",
+      "Siêu âm theo yêu cầu"
+     ],
+     [
+      "B19",
+      "BK Mắt 2"
+     ],
+     [
+      "B23",
+      "BK Mắt 1"
+     ],
+     [
+      "B24",
+      "Điện tim"
+     ],
+     [
+      "B32",
+      "BK Răng – Hàm – Mặt"
+     ],
+     [
+      "B38",
+      "Nội soi Tai – Mũi – Họng"
+     ],
+     [
+      "B40",
+      "BK Tai – Mũi – Họng"
+     ],
+     [
+      "B48",
+      "Nội soi tiêu hóa"
+     ],
+     [
+      "B101",
+      "BK Nội theo yêu cầu 2"
+     ],
+     [
+      "B103",
+      "BK Nội theo yêu cầu 1"
+     ],
+     [
+      "B104",
+      "Xét nghiệm"
+     ],
+     [
+      "B109",
+      "Khám thai"
+     ],
+     [
+      "B110",
+      "Khám phụ khoa; xét nghiệm Liqui-Prep, Pap smear, GBS"
+     ],
+     [
+      "B112",
+      "Hiếm muộn"
+     ],
+     [
+      "B201",
+      "Khám sức khỏe"
+     ]
+    ]
    }
   ]
  }

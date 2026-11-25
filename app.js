@@ -640,6 +640,27 @@
       })),
     ]);
   }
+  // Danh sách buồng khám, cận lâm sàng theo số phòng (Khu A, Khu B), có ô tìm nhanh.
+  function bkList() {
+    var B = DATA.buongkham;
+    var sec = el("section", { class: "page-section bk-sec" }, [
+      el("h2", { text: L("Danh sách buồng khám, cận lâm sàng", "Clinic and test rooms") }),
+      el("p", { class: "unit-guide-hint", text: L("BK: buồng khám. ", "BK: consultation room. ") + B.note })]);
+    var q = el("input", { type: "search", class: "bk-search", placeholder: L("Tìm phòng: nhi, siêu âm, A102…", "Search rooms…"), "aria-label": L("Tìm buồng khám", "Search rooms") });
+    sec.appendChild(q);
+    var groups = B.khu.map(function (k) {
+      var lis = k.rooms.map(function (r) { var li = el("li", {}, [el("span", { class: "bk-code", text: r[0] }), el("span", { class: "bk-name", text: r[1] })]); li._t = (r[0] + " " + r[1]).toLowerCase(); return li; });
+      var g = el("div", { class: "bk-khu" }, [el("h3", { text: k.name }), el("ul", { class: "bk-list" }, lis)]); g._lis = lis; return g;
+    });
+    groups.forEach(function (g) { sec.appendChild(g); });
+    var none = el("p", { class: "bk-none", text: L("Không tìm thấy phòng phù hợp. Gọi 0296 3562 357 để được hướng dẫn.", "No match. Call 0296 3562 357.") }); none.hidden = true; sec.appendChild(none);
+    q.addEventListener("input", function () {
+      var v = q.value.trim().toLowerCase(), any = false;
+      groups.forEach(function (g) { var c = 0; g._lis.forEach(function (li) { var ok = !v || li._t.indexOf(v) >= 0; li.hidden = !ok; if (ok) c++; }); g.hidden = !c; if (c) any = true; });
+      none.hidden = any;
+    });
+    return sec;
+  }
   function renderPhongKham(slug) {
     var P = DATA.phongkham, x = P.items.filter(function (i) { return i.slug === slug; })[0];
     pageView.textContent = ""; pageView.classList.remove("art-v2");
@@ -738,7 +759,7 @@
     if (key === "kham-benh" && DATA.phongkham) {
       var vsec = pageView.querySelector(".reel") ? pageView.querySelector(".reel").parentNode : null;
       var ref = vsec ? vsec.nextSibling : null;
-      pageView.insertBefore(pkGuide(), ref); pageView.insertBefore(pkList(), ref);
+      pageView.insertBefore(pkGuide(), ref); pageView.insertBefore(pkList(), ref); if (DATA.buongkham) pageView.insertBefore(bkList(), ref);
     }
     unitExtras(hit || { u: { name: k.name, page: key } }, key);
     addBookingBar();
@@ -1117,6 +1138,9 @@
     pageView.classList.remove("art-v2");
     pageView.appendChild(el("a", { class: "back-link", href: "#top", text: t("backHome") }));
     pageView.appendChild(el("h1", { class: "page-title", text: page.title[state.lang] }));
+    if (page.cover) pageView.appendChild(el("figure", { class: "bv-cover page-cover" }, [
+      el("img", { src: page.cover.img, alt: page.cover.alt[state.lang], loading: "lazy", width: "1600", height: "1200" }),
+      el("figcaption", { text: page.cover.caption[state.lang] })]));
     if (page.intro) pageView.appendChild(el("p", { class: "page-intro", text: page.intro[state.lang] }));
     if (page.updated) {
       var d = new Date(page.updated + "T00:00:00");
