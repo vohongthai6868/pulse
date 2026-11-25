@@ -1,5 +1,7 @@
 /* Bản dịch tiếng Anh: khóa là câu tiếng Việt trong data.js */
 window.PULSE_EN = {
+"Mở trang đăng ký": "Open booking page",
+"Mở Zalo Tổ Tiêm chủng": "Open the Immunization Unit on Zalo",
 "Đường dây nóng: 0855 08 03 04 (có Zalo)": "Hotline: 0855 08 03 04 (also on Zalo)",
 "Email: benhviennhattan@gmail.com": "Email: benhviennhattan@gmail.com",
 "Thêm trang Hỏi đáp và Hướng dẫn người bệnh": "New Q&A and Patient guide pages",
