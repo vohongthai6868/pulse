@@ -646,10 +646,19 @@
     var sec = el("section", { class: "page-section bk-sec" }, [
       el("h2", { text: L("Danh sách buồng khám, cận lâm sàng", "Clinic and test rooms") }),
       el("p", { class: "unit-guide-hint", text: L("BK: buồng khám. ", "BK: consultation room. ") + B.note })]);
-    var q = el("input", { type: "search", class: "bk-search", placeholder: L("Tìm phòng: nhi, siêu âm, A102…", "Search rooms…"), "aria-label": L("Tìm buồng khám", "Search rooms") });
+    sec.appendChild(el("p", { class: "bk-all" }, [document.createTextNode(L("Mọi người bệnh nên đọc: ", "For every patient: ")),
+      el("a", { href: "#/gdsk/cac-buoc-di-kham-benh", text: L("Các bước đi khám bệnh", "Steps for an outpatient visit") }), document.createTextNode(" · "),
+      el("a", { href: "#/gdsk/an-toan-nguoi-benh", text: L("An toàn người bệnh", "Patient safety") })]));
+    var q = el("input", { type: "search", class: "bk-search", placeholder: L("Tìm phòng hoặc bệnh: nhi, siêu âm, gout…", "Search rooms…"), "aria-label": L("Tìm buồng khám", "Search rooms") });
     sec.appendChild(q);
     var groups = B.khu.map(function (k) {
-      var lis = k.rooms.map(function (r) { var li = el("li", {}, [el("span", { class: "bk-code", text: r[0] }), el("span", { class: "bk-name", text: r[1] })]); li._t = (r[0] + " " + r[1]).toLowerCase(); return li; });
+      var lis = k.rooms.map(function (r) {
+        var tps = (r[2] || []).map(function (sl) { return DATA.gdsk.topics.filter(function (t) { return t.slug === sl; })[0]; }).filter(Boolean);
+        var body = [el("span", { class: "bk-name", text: r[1] })];
+        if (tps.length) body.push(el("details", { class: "bk-gdsk" }, [el("summary", { text: L("Bài giáo dục sức khỏe (" + tps.length + ")", "Health education (" + tps.length + ")") }),
+          el("ul", {}, tps.map(function (t) { return el("li", {}, [el("a", { href: "#/gdsk/" + t.slug, text: tr(t.title) })]); }))]));
+        var li = el("li", {}, [el("span", { class: "bk-code", text: r[0] }), el("div", { class: "bk-body" }, body)]);
+        li._t = (r[0] + " " + r[1] + " " + tps.map(function (t) { return tr(t.title); }).join(" ")).toLowerCase(); return li; });
       var g = el("div", { class: "bk-khu" }, [el("h3", { text: k.name }), el("ul", { class: "bk-list" }, lis)]); g._lis = lis; return g;
     });
     groups.forEach(function (g) { sec.appendChild(g); });
