@@ -976,3 +976,22 @@ a.cite { cursor: pointer; }
 .reel-read { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
 .reel-read-btn { display: block; text-align: center; background: #d61f26; color: #fff; font-weight: 700; font-size: 14px; line-height: 1.35; padding: 8px 12px; border-radius: 10px; text-decoration: none; }
 .reel-read-btn:hover { background: #b3161c; }
+
+/* Ảnh toàn cảnh bệnh viện */
+.bv-cover { margin-top: 8px; margin-bottom: 40px; }
+.bv-cover img { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+.bv-cover figcaption { margin-top: 8px; font-size: .9rem; color: var(--muted, #555); text-align: center; }
+.page-cover { margin: 8px 0 24px; padding: 0; }
+.bk-search { width: 100%; max-width: 420px; padding: 10px 14px; border: 1.5px solid #cfe0f3; border-radius: 10px; font-size: 16px; margin: 8px 0 4px; }
+.bk-khu h3 { margin: 16px 0 8px; color: #0b4f9c; }
+.bk-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; }
+.bk-list li { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border: 1px solid #dbe6f3; border-radius: 10px; background: var(--surface, #fff); }
+.bk-list li[hidden], .bk-khu[hidden] { display: none; }
+.bk-code { flex: 0 0 auto; min-width: 48px; text-align: center; font-weight: 700; color: #fff; background: #0b4f9c; border-radius: 8px; padding: 2px 6px; }
+.bk-name { line-height: 1.45; }
+.bk-none { color: var(--muted); }
+.bk-body { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.bk-gdsk summary { cursor: pointer; color: #d61f26; font-weight: 600; font-size: .92rem; }
+.bk-gdsk ul { margin: 6px 0 2px; padding-left: 18px; }
+.bk-gdsk li { margin: 3px 0; }
+.bk-all { margin: 6px 0; }

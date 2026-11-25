@@ -1,5 +1,7 @@
 /* Bản dịch tiếng Anh: khóa là câu tiếng Việt trong data.js */
 window.PULSE_EN = {
+"Đường dây nóng: 0855 08 03 04 (có Zalo)": "Hotline: 0855 08 03 04 (also on Zalo)",
+"Email: benhviennhattan@gmail.com": "Email: benhviennhattan@gmail.com",
 "Thêm trang Hỏi đáp và Hướng dẫn người bệnh": "New Q&A and Patient guide pages",
 "Người bệnh, người nhà xem nhanh những điều cần biết khi nhập viện, nằm viện, ra viện, số điện thoại cần gọi, cách góp ý và cách dùng mã QR trên tờ rơi.": "Patients and families can quickly find what to know about admission, hospital stay and discharge, which numbers to call, how to give feedback and how to use leaflet QR codes.",
 "Thêm trang Đào tạo và nghiên cứu khoa học": "New Training and research page",
@@ -91,7 +93,7 @@ window.PULSE_EN = {
 "Chăm sóc toàn diện, bàn giao an toàn, xác định đúng người bệnh, tư vấn giáo dục sức khỏe khi nằm viện và khi ra viện.": "Comprehensive care, safe handover, correct patient identification, and health education during the stay and at discharge.",
 "Liên hệ": "Contact",
 "Địa chỉ": "Address",
-"Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân, 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang.": "Nursing Department, Nhat Tan General Hospital, 32 Pham Ngoc Thach, Chau Long 7 quarter, Chau Doc ward, An Giang province.",
+"Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân, 32 Phạm Ngọc Thạch, Khóm Châu Long 7, Phường Châu Đốc, Tỉnh An Giang.": "Nursing Department, Nhat Tan General Hospital, 32 Pham Ngoc Thach, Chau Long 7 quarter, Chau Doc ward, An Giang province.",
 "Điện thoại": "Phone",
 "Tổng đài, cấp cứu 24/24: 0296 3562 357": "Switchboard and 24/7 emergency: 0296 3562 357",
 "Liên hệ công tác: 0296 3562 678": "Work enquiries: 0296 3562 678",
@@ -128,7 +130,7 @@ window.PULSE_EN = {
 "Thông báo": "Notices",
 "Chuyên mục": "Categories",
 "bài": "posts",
-"32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang.": "32 Pham Ngoc Thach, Chau Long 7 quarter, Chau Doc ward, An Giang province.",
+"32 Phạm Ngọc Thạch, Khóm Châu Long 7, Phường Châu Đốc, Tỉnh An Giang.": "32 Pham Ngoc Thach, Chau Long 7 quarter, Chau Doc ward, An Giang province.",
 "Trang": "Pages",
 "Gửi email": "Send email",
 "Tin tức": "News",

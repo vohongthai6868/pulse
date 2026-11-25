@@ -532,7 +532,18 @@ window.PULSE_DATA = {
       ]
      }
     }
-   ]
+   ],
+   "cover": {
+    "img": "img/bv/toan-canh-bv-nhat-tan-1600.jpg?v=20261125j",
+    "alt": {
+     "vi": "Toàn cảnh Bệnh viện Đa khoa Nhật Tân nhìn từ trên cao",
+     "en": "Aerial view of Nhat Tan General Hospital"
+    },
+    "caption": {
+     "vi": "Toàn cảnh Bệnh viện Đa khoa Nhật Tân",
+     "en": "Nhat Tan General Hospital"
+    }
+   }
   },
   "guides": {
    "title": {
@@ -626,8 +637,8 @@ window.PULSE_DATA = {
       "vi": "Địa chỉ"
      },
      "p": {
-      "en": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân, 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang.",
-      "vi": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân, 32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang."
+      "en": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân, 32 Phạm Ngọc Thạch, Khóm Châu Long 7, Phường Châu Đốc, Tỉnh An Giang.",
+      "vi": "Phòng Điều dưỡng, Bệnh viện Đa khoa Nhật Tân, 32 Phạm Ngọc Thạch, Khóm Châu Long 7, Phường Châu Đốc, Tỉnh An Giang."
      }
     },
     {
@@ -638,11 +649,15 @@ window.PULSE_DATA = {
      "items": {
       "en": [
        "Tổng đài, cấp cứu 24/24: 0296 3562 357",
-       "Liên hệ công tác: 0296 3562 678"
+       "Đường dây nóng: 0855 08 03 04 (có Zalo)",
+       "Liên hệ công tác: 0296 3562 678",
+       "Email: benhviennhattan@gmail.com"
       ],
       "vi": [
        "Tổng đài, cấp cứu 24/24: 0296 3562 357",
-       "Liên hệ công tác: 0296 3562 678"
+       "Đường dây nóng: 0855 08 03 04 (có Zalo)",
+       "Liên hệ công tác: 0296 3562 678",
+       "Email: benhviennhattan@gmail.com"
       ]
      }
     },
@@ -1030,79 +1045,133 @@ window.PULSE_DATA = {
   "tuyendung": {
    "title": {
     "vi": "Tuyển dụng",
-    "en": "Careers"
+    "en": "Tuyển dụng"
    },
    "intro": {
-    "vi": "Thông tin tuyển dụng của Bệnh viện Đa khoa Nhật Tân. Thông báo chính thức chỉ đăng tại trang này và các kênh chính thức của bệnh viện.",
-    "en": "Thông tin tuyển dụng của Bệnh viện Đa khoa Nhật Tân. Thông báo chính thức chỉ đăng tại trang này và các kênh chính thức của bệnh viện."
+    "vi": "Thông tin tuyển dụng của Bệnh viện Đa khoa Nhật Tân, cập nhật 25/11/2026. Thông báo chính thức chỉ đăng tại trang này và các kênh chính thức của bệnh viện.",
+    "en": "Thông tin tuyển dụng của Bệnh viện Đa khoa Nhật Tân, cập nhật 25/11/2026. Thông báo chính thức chỉ đăng tại trang này và các kênh chính thức của bệnh viện."
    },
    "sections": [
     {
      "h": {
-      "vi": "Thông báo tuyển dụng hiện tại",
-      "en": "Thông báo tuyển dụng hiện tại"
+      "vi": "Điều dưỡng Gây mê hồi sức (đăng 21/11/2026)",
+      "en": "Điều dưỡng Gây mê hồi sức (đăng 21/11/2026)"
      },
      "p": {
-      "vi": "Hiện chưa có thông báo tuyển dụng mới. Khi bệnh viện có nhu cầu, thông báo (vị trí, số lượng, điều kiện, thời hạn nộp hồ sơ) sẽ được đăng tại đây.",
-      "en": "Hiện chưa có thông báo tuyển dụng mới. Khi bệnh viện có nhu cầu, thông báo (vị trí, số lượng, điều kiện, thời hạn nộp hồ sơ) sẽ được đăng tại đây."
-     }
-    },
-    {
-     "h": {
-      "vi": "Nhóm vị trí bệnh viện thường tuyển",
-      "en": "Nhóm vị trí bệnh viện thường tuyển"
+      "vi": "Hình thức làm việc: toàn thời gian. Quyền lợi: môi trường làm việc chuyên nghiệp, có cơ hội phát triển nghề nghiệp; BHXH, BHYT, BHTN, nghỉ phép, thưởng, lễ tết theo quy định; khám sức khỏe định kỳ hằng năm. Có cơ hội đào tạo nâng cao nghiệp vụ, tham gia nghiên cứu khoa học.",
+      "en": "Hình thức làm việc: toàn thời gian. Quyền lợi: môi trường làm việc chuyên nghiệp, có cơ hội phát triển nghề nghiệp; BHXH, BHYT, BHTN, nghỉ phép, thưởng, lễ tết theo quy định; khám sức khỏe định kỳ hằng năm. Có cơ hội đào tạo nâng cao nghiệp vụ, tham gia nghiên cứu khoa học."
      },
      "items": {
       "vi": [
-       "Bác sĩ",
-       "Điều dưỡng",
-       "Hộ sinh",
-       "Kỹ thuật y (KTY)",
-       "Dược sĩ",
-       "Nhân viên hành chính, hỗ trợ"
+       "Tuổi đời: dưới 30",
+       "Cử nhân Điều dưỡng có chứng chỉ đào tạo Gây mê hồi sức, hoặc Cử nhân Gây mê hồi sức",
+       "Có chứng chỉ hành nghề"
       ],
       "en": [
-       "Bác sĩ",
-       "Điều dưỡng",
-       "Hộ sinh",
-       "Kỹ thuật y (KTY)",
-       "Dược sĩ",
-       "Nhân viên hành chính, hỗ trợ"
+       "Tuổi đời: dưới 30",
+       "Cử nhân Điều dưỡng có chứng chỉ đào tạo Gây mê hồi sức, hoặc Cử nhân Gây mê hồi sức",
+       "Có chứng chỉ hành nghề"
       ]
      }
     },
     {
      "h": {
-      "vi": "Hồ sơ dự tuyển thường gồm",
-      "en": "Hồ sơ dự tuyển thường gồm"
+      "vi": "Nhân viên bảo trì, sửa chữa: 02 người (đăng 06/11/2026)",
+      "en": "Nhân viên bảo trì, sửa chữa: 02 người (đăng 06/11/2026)"
+     },
+     "p": {
+      "vi": "Hình thức làm việc: toàn thời gian. Quyền lợi: môi trường làm việc chuyên nghiệp, có cơ hội phát triển nghề nghiệp; BHXH, BHYT, BHTN, nghỉ phép, thưởng, lễ tết theo quy định; khám sức khỏe định kỳ hằng năm.",
+      "en": "Hình thức làm việc: toàn thời gian. Quyền lợi: môi trường làm việc chuyên nghiệp, có cơ hội phát triển nghề nghiệp; BHXH, BHYT, BHTN, nghỉ phép, thưởng, lễ tết theo quy định; khám sức khỏe định kỳ hằng năm."
      },
      "items": {
       "vi": [
-       "Đơn dự tuyển",
-       "Sơ yếu lý lịch",
-       "Bản sao văn bằng, chứng chỉ",
-       "Giấy phép hành nghề (nếu vị trí yêu cầu)",
-       "Giấy chứng nhận sức khỏe",
-       "Bản sao căn cước công dân"
+       "Nam, dưới 35 tuổi",
+       "Tốt nghiệp trung cấp, cao đẳng ngành điện, điện tử, điện lạnh hoặc ngành liên quan",
+       "Ưu tiên người có kinh nghiệm"
       ],
       "en": [
-       "Đơn dự tuyển",
-       "Sơ yếu lý lịch",
-       "Bản sao văn bằng, chứng chỉ",
-       "Giấy phép hành nghề (nếu vị trí yêu cầu)",
-       "Giấy chứng nhận sức khỏe",
-       "Bản sao căn cước công dân"
+       "Nam, dưới 35 tuổi",
+       "Tốt nghiệp trung cấp, cao đẳng ngành điện, điện tử, điện lạnh hoặc ngành liên quan",
+       "Ưu tiên người có kinh nghiệm"
       ]
      }
     },
     {
      "h": {
-      "vi": "Liên hệ",
-      "en": "Liên hệ"
+      "vi": "Nhân viên thông dịch tiếng Khmer: 01 người (đăng 06/11/2026)",
+      "en": "Nhân viên thông dịch tiếng Khmer: 01 người (đăng 06/11/2026)"
      },
      "p": {
-      "vi": "Gọi tổng đài Nhật Tân 24/24: 0296 3562 357 để được hướng dẫn. Chỉ nộp hồ sơ theo thông báo chính thức của bệnh viện; không nộp tiền hay hồ sơ qua người tự xưng có thể \"lo việc\".",
-      "en": "Gọi tổng đài Nhật Tân 24/24: 0296 3562 357 để được hướng dẫn. Chỉ nộp hồ sơ theo thông báo chính thức của bệnh viện; không nộp tiền hay hồ sơ qua người tự xưng có thể \"lo việc\"."
+      "vi": "Hình thức làm việc: toàn thời gian. Quyền lợi: môi trường làm việc chuyên nghiệp, có cơ hội phát triển nghề nghiệp; BHXH, BHYT, BHTN, nghỉ phép, thưởng, lễ tết theo quy định; khám sức khỏe định kỳ hằng năm.",
+      "en": "Hình thức làm việc: toàn thời gian. Quyền lợi: môi trường làm việc chuyên nghiệp, có cơ hội phát triển nghề nghiệp; BHXH, BHYT, BHTN, nghỉ phép, thưởng, lễ tết theo quy định; khám sức khỏe định kỳ hằng năm."
+     },
+     "items": {
+      "vi": [
+       "Dưới 35 tuổi, tốt nghiệp trung cấp trở lên",
+       "Thành thạo tiếng Khmer cả 4 kỹ năng nghe, nói, đọc, viết",
+       "Thông dịch Khmer – Việt và ngược lại trong giao tiếp trực tiếp",
+       "Ưu tiên người có kinh nghiệm"
+      ],
+      "en": [
+       "Dưới 35 tuổi, tốt nghiệp trung cấp trở lên",
+       "Thành thạo tiếng Khmer cả 4 kỹ năng nghe, nói, đọc, viết",
+       "Thông dịch Khmer – Việt và ngược lại trong giao tiếp trực tiếp",
+       "Ưu tiên người có kinh nghiệm"
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Thông báo đã đăng trước đây",
+      "en": "Thông báo đã đăng trước đây"
+     },
+     "p": {
+      "vi": "Các vị trí dưới đây đã đăng tuyển; gọi Phòng Tổ chức hành chính để biết còn nhận hồ sơ hay không.",
+      "en": "Các vị trí dưới đây đã đăng tuyển; gọi Phòng Tổ chức hành chính để biết còn nhận hồ sơ hay không."
+     },
+     "items": {
+      "vi": [
+       "Bác sĩ chuyên khoa Răng – Hàm – Mặt (10/2026): nam, dưới 30 tuổi, có giấy phép hành nghề khám bệnh, chữa bệnh; thu nhập thỏa thuận",
+       "Y sĩ Y học cổ truyền (09/2026): có giấy phép hành nghề",
+       "Nhân viên công nghệ thông tin: 01 người (07/2026): tốt nghiệp CNTT hoặc ngành liên quan; hiểu mạng, phần cứng; biết lập trình ứng dụng di động và web"
+      ],
+      "en": [
+       "Bác sĩ chuyên khoa Răng – Hàm – Mặt (10/2026): nam, dưới 30 tuổi, có giấy phép hành nghề khám bệnh, chữa bệnh; thu nhập thỏa thuận",
+       "Y sĩ Y học cổ truyền (09/2026): có giấy phép hành nghề",
+       "Nhân viên công nghệ thông tin: 01 người (07/2026): tốt nghiệp CNTT hoặc ngành liên quan; hiểu mạng, phần cứng; biết lập trình ứng dụng di động và web"
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Hồ sơ ứng tuyển",
+      "en": "Hồ sơ ứng tuyển"
+     },
+     "items": {
+      "vi": [
+       "Đơn xin việc",
+       "Sơ yếu lý lịch",
+       "02 ảnh 3x4 cm",
+       "Bản sao văn bằng, chứng chỉ chuyên môn",
+       "Chứng chỉ hành nghề, giấy phép hành nghề (nếu vị trí yêu cầu)"
+      ],
+      "en": [
+       "Đơn xin việc",
+       "Sơ yếu lý lịch",
+       "02 ảnh 3x4 cm",
+       "Bản sao văn bằng, chứng chỉ chuyên môn",
+       "Chứng chỉ hành nghề, giấy phép hành nghề (nếu vị trí yêu cầu)"
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Liên hệ ứng tuyển",
+      "en": "Liên hệ ứng tuyển"
+     },
+     "p": {
+      "vi": "Phòng Tổ chức hành chính (Lầu 3, Khu A), Bệnh viện Đa khoa Nhật Tân. Điện thoại: 0296 3562 678. Email: hcnhattan@gmail.com, benhviennhattan@gmail.com. Chỉ nộp hồ sơ theo thông báo chính thức của bệnh viện; không nộp tiền hay hồ sơ qua người tự xưng có thể \"lo việc\".",
+      "en": "Phòng Tổ chức hành chính (Lầu 3, Khu A), Bệnh viện Đa khoa Nhật Tân. Điện thoại: 0296 3562 678. Email: hcnhattan@gmail.com, benhviennhattan@gmail.com. Chỉ nộp hồ sơ theo thông báo chính thức của bệnh viện; không nộp tiền hay hồ sơ qua người tự xưng có thể \"lo việc\"."
      }
     }
    ]
@@ -1136,7 +1205,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang.",
+   "footerAbout": "32 Phạm Ngọc Thạch, Khóm Châu Long 7, Phường Châu Đốc, Tỉnh An Giang.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",
@@ -1215,7 +1284,7 @@ window.PULSE_DATA = {
    "noticeHeading": "Thông báo",
    "topicHeading": "Chuyên mục",
    "topicStories": "bài",
-   "footerAbout": "32 Phạm Ngọc Thạch, khóm Châu Long 7, phường Châu Đốc, tỉnh An Giang.",
+   "footerAbout": "32 Phạm Ngọc Thạch, Khóm Châu Long 7, Phường Châu Đốc, Tỉnh An Giang.",
    "footerPages": "Trang",
    "footerEmail": "Gửi email",
    "navNews": "Tin tức",
@@ -11077,6 +11146,444 @@ window.PULSE_DATA = {
     "src": "video/gdsk/reel-cum-mua.mp4?v=20261123f",
     "poster": "video/gdsk/reel-cum-mua.jpg?v=20261123f",
     "caption": "Video: Cúm mùa"
+   }
+  ]
+ },
+ "buongkham": {
+  "updated": "2026-11-25",
+  "note": "CC & CN: đo chiều cao và cân nặng trước khi vào phòng.",
+  "khu": [
+   {
+    "name": "Khu A",
+    "rooms": [
+     [
+      "A1",
+      "BK Nội tổng quát 1 + Cấp cứu tổng hợp",
+      [
+       "tang-huyet-ap",
+       "dai-thao-duong",
+       "nhan-biet-som-dot-quy",
+       "nhoi-mau-co-tim",
+       "phan-ve"
+      ]
+     ],
+     [
+      "A2",
+      "BK Lão khoa",
+      [
+       "phong-te-nga-khi-nam-vien",
+       "tang-huyet-ap",
+       "thoai-hoa-khop-goi",
+       "dung-thuoc-an-toan",
+       "duc-thuy-tinh-the"
+      ]
+     ],
+     [
+      "A3",
+      "BK Nội tiết 2",
+      [
+       "dai-thao-duong",
+       "dinh-duong-cho-nguoi-benh",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A4",
+      "BK Tăng huyết áp",
+      [
+       "tang-huyet-ap",
+       "nhan-biet-som-dot-quy",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A5",
+      "BK Nội tiết",
+      [
+       "dai-thao-duong",
+       "dinh-duong-cho-nguoi-benh",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A6",
+      "BK Tim mạch",
+      [
+       "nhoi-mau-co-tim",
+       "tang-huyet-ap",
+       "ngung-tim-ep-tim",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A7",
+      "BK Ngoại ung bướu",
+      [
+       "chuan-bi-truoc-mo",
+       "cham-soc-vet-mo-tai-nha",
+       "dinh-duong-cho-nguoi-benh"
+      ]
+     ],
+     [
+      "A8",
+      "BK Ngoại niệu – nam khoa (7g00 – 15g30 thứ Bảy hằng tuần)",
+      [
+       "soi-tiet-nieu",
+       "chuan-bi-truoc-mo",
+       "cham-soc-vet-mo-tai-nha"
+      ]
+     ],
+     [
+      "A9",
+      "BK Ngoại tổng quát",
+      [
+       "chuan-bi-truoc-mo",
+       "cham-soc-vet-mo-tai-nha",
+       "dung-khang-sinh-dung-cach"
+      ]
+     ],
+     [
+      "A11",
+      "BK Ngoại chấn thương",
+      [
+       "cham-soc-bo-bot",
+       "tap-van-dong-tai-nha",
+       "thoat-vi-dia-dem",
+       "thoai-hoa-khop-goi"
+      ]
+     ],
+     [
+      "A13",
+      "Buồng tiểu phẫu",
+      [
+       "cham-soc-vet-mo-tai-nha",
+       "so-cuu-bong",
+       "dung-khang-sinh-dung-cach"
+      ]
+     ],
+     [
+      "A101",
+      "BK Nội theo yêu cầu 3",
+      [
+       "tang-huyet-ap",
+       "dai-thao-duong",
+       "gout",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A102",
+      "BK Hô hấp",
+      [
+       "hen-phe-quan",
+       "copd",
+       "viem-phe-quan",
+       "lao-phoi",
+       "cum"
+      ]
+     ],
+     [
+      "A103",
+      "BK Nội tổng quát 3",
+      [
+       "tang-huyet-ap",
+       "dai-thao-duong",
+       "gout",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A104",
+      "BK Sức khỏe tâm thần",
+      [
+       "dung-thuoc-an-toan",
+       "an-toan-nguoi-benh"
+      ]
+     ],
+     [
+      "A105",
+      "BK Nội tổng quát 2",
+      [
+       "tang-huyet-ap",
+       "dai-thao-duong",
+       "viem-phe-quan",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A106",
+      "BK Nội tổng quát 5",
+      [
+       "tang-huyet-ap",
+       "dai-thao-duong",
+       "gout",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A108",
+      "BK Nội tổng quát 4",
+      [
+       "tang-huyet-ap",
+       "dai-thao-duong",
+       "copd",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A109",
+      "BK Nội tổng quát",
+      [
+       "tang-huyet-ap",
+       "dai-thao-duong",
+       "sot-xuat-huyet",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A111",
+      "BK Nhi 1",
+      [
+       "tay-chan-mieng-o-tre",
+       "sot-xuat-huyet",
+       "soi",
+       "thuy-dau",
+       "nuoi-con-bang-sua-me"
+      ]
+     ],
+     [
+      "A113",
+      "BK Nhi 2",
+      [
+       "tay-chan-mieng-o-tre",
+       "viem-phe-quan",
+       "quai-bi",
+       "tiem-chung-dung-lich",
+       "tat-khuc-xa"
+      ]
+     ],
+     [
+      "A200",
+      "BK Viêm gan",
+      [
+       "viem-gan-b",
+       "dinh-duong-cho-nguoi-benh",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "A201",
+      "BK Nội tiêu hóa",
+      [
+       "viem-gan-b",
+       "dinh-duong-cho-nguoi-benh",
+       "dung-khang-sinh-dung-cach",
+       "ngo-doc-ruou-thuc-pham"
+      ]
+     ],
+     [
+      "A207",
+      "BK Da liễu 3",
+      [
+       "viem-da-co-dia",
+       "thuy-dau"
+      ]
+     ],
+     [
+      "A209",
+      "BK Da liễu 2",
+      [
+       "viem-da-co-dia",
+       "thuy-dau"
+      ]
+     ],
+     [
+      "A211",
+      "BK Da liễu 1",
+      [
+       "viem-da-co-dia",
+       "thuy-dau"
+      ]
+     ],
+     [
+      "A213",
+      "Dinh dưỡng",
+      [
+       "dinh-duong-cho-nguoi-benh",
+       "dai-thao-duong",
+       "gout"
+      ]
+     ]
+    ]
+   },
+   {
+    "name": "Khu B",
+    "rooms": [
+     [
+      "B3",
+      "Hô hấp ký (chức năng hô hấp), Holter huyết áp, phế thân ký, dao động xung ký (IOS) có thuốc, FeNO (giờ hành chính, làm thông trưa). Cần đo CC & CN và có kết quả chụp X-quang trước",
+      [
+       "hen-phe-quan",
+       "copd",
+       "lao-phoi"
+      ]
+     ],
+     [
+      "B6",
+      "X-quang (7g00 – 10g30 và 13g00 – 15g30, thứ Hai đến thứ Sáu)",
+      [
+       "chuan-bi-sieu-am-chup-phim"
+      ]
+     ],
+     [
+      "B7",
+      "X-quang, CT, MRI, đo loãng xương (cần đo CC & CN)",
+      [
+       "chuan-bi-sieu-am-chup-phim"
+      ]
+     ],
+     [
+      "B11",
+      "Siêu âm",
+      [
+       "chuan-bi-sieu-am-chup-phim"
+      ]
+     ],
+     [
+      "B17",
+      "Điện cơ, điện não, lưu huyết não (cần đo CC & CN), thần kinh thực vật, huyết áp tứ chi, test tetany, đánh giá thương tổn bàn chân đái tháo đường (làm thông trưa đến 17g00)",
+      [
+       "nhan-biet-som-dot-quy",
+       "dai-thao-duong",
+       "liet-mat-ngoai-bien"
+      ]
+     ],
+     [
+      "B18",
+      "Siêu âm theo yêu cầu",
+      [
+       "chuan-bi-sieu-am-chup-phim"
+      ]
+     ],
+     [
+      "B19",
+      "BK Mắt 2",
+      [
+       "duc-thuy-tinh-the",
+       "viem-ket-mac",
+       "tat-khuc-xa"
+      ]
+     ],
+     [
+      "B23",
+      "BK Mắt 1",
+      [
+       "duc-thuy-tinh-the",
+       "viem-ket-mac",
+       "tat-khuc-xa"
+      ]
+     ],
+     [
+      "B24",
+      "Điện tim",
+      [
+       "nhoi-mau-co-tim",
+       "tang-huyet-ap"
+      ]
+     ],
+     [
+      "B32",
+      "BK Răng – Hàm – Mặt",
+      [
+       "cham-soc-rang-mieng",
+       "sau-nho-rang"
+      ]
+     ],
+     [
+      "B38",
+      "Nội soi Tai – Mũi – Họng",
+      [
+       "viem-mui-xoang",
+       "viem-hong-amidan"
+      ]
+     ],
+     [
+      "B40",
+      "BK Tai – Mũi – Họng",
+      [
+       "viem-mui-xoang",
+       "viem-hong-amidan",
+       "quai-bi"
+      ]
+     ],
+     [
+      "B48",
+      "Nội soi tiêu hóa",
+      [
+       "viem-gan-b",
+       "dinh-duong-cho-nguoi-benh"
+      ]
+     ],
+     [
+      "B101",
+      "BK Nội theo yêu cầu 2",
+      [
+       "tang-huyet-ap",
+       "dai-thao-duong",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "B103",
+      "BK Nội theo yêu cầu 1",
+      [
+       "tang-huyet-ap",
+       "dai-thao-duong",
+       "dung-thuoc-an-toan"
+      ]
+     ],
+     [
+      "B104",
+      "Xét nghiệm",
+      [
+       "chuan-bi-lay-mau-xet-nghiem"
+      ]
+     ],
+     [
+      "B109",
+      "Khám thai",
+      [
+       "dau-hieu-nguy-hiem-khi-mang-thai",
+       "nuoi-con-bang-sua-me",
+       "tiem-chung-dung-lich"
+      ]
+     ],
+     [
+      "B110",
+      "Khám phụ khoa; xét nghiệm Liqui-Prep, Pap smear, GBS",
+      [
+       "chuan-bi-mang-thai",
+       "chuan-bi-lay-mau-xet-nghiem"
+      ]
+     ],
+     [
+      "B112",
+      "Hiếm muộn",
+      [
+       "chuan-bi-mang-thai",
+       "dau-hieu-nguy-hiem-khi-mang-thai"
+      ]
+     ],
+     [
+      "B201",
+      "Khám sức khỏe",
+      [
+       "chuan-bi-lay-mau-xet-nghiem",
+       "tang-huyet-ap",
+       "dai-thao-duong"
+      ]
+     ]
+    ]
    }
   ]
  }
