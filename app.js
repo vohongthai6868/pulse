@@ -833,10 +833,20 @@
       el("p", { text: L("Quét mã để mở trang giới thiệu này trên điện thoại.", "Scan to open this introduction page on your phone.") }),
     ]));
   }
-  function reelFigure(vd) {
+  // Reel về bệnh nào thì có nút dẫn về bài GDSK đó để đọc tiếp (bỏ qua bài đang mở).
+  function reelTopics(vd, skip) {
+    var k = String(vd.src).split("?")[0];
+    return DATA.gdsk.topics.filter(function (t) {
+      return t.slug !== skip && t.video && [].concat(t.video).some(function (x) { return String(x.src).split("?")[0] === k; });
+    });
+  }
+  function reelFigure(vd, skip) {
     var v = el("video", { controls: "", playsinline: "", preload: "none", poster: vd.poster || "", src: vd.src });
     v.setAttribute("aria-label", tr(vd.caption));
-    return el("figure", { class: "reel" }, [v, el("figcaption", { text: tr(vd.caption) })]);
+    var kids = [v, el("figcaption", { text: tr(vd.caption) })];
+    var tps = reelTopics(vd, skip);
+    if (tps.length) kids.push(el("div", { class: "reel-read" }, tps.map(function (t) { return el("a", { class: "reel-read-btn", href: "#/gdsk/" + t.slug, text: L("Đọc tiếp bài: ", "Read the article: ") + tr(t.title) + " →" }); })));
+    return el("figure", { class: "reel" }, kids);
   }
 
   // Mục Reel: gom mọi reel trên web, mỗi reel có đường dẫn về khoa, bộ phận (và bài GDSK nếu có).
@@ -871,7 +881,6 @@
     pageView.appendChild(el("p", { class: "page-intro", text: L(R.length + " video ngắn giới thiệu khoa, bộ phận và giáo dục sức khỏe. Bấm tên khoa, bộ phận dưới mỗi video để xem trang của khoa, bộ phận đó.", R.length + " short videos. Tap the department name under each video to open its page.") }));
     function card(r) {
       var links = r.units.map(function (c) { var h = unitByCode(c); return el("a", { class: "reel-unit", href: "#/khoa/" + c, text: tr(h.u.name) + " →" }); });
-      r.topics.forEach(function (t) { links.push(el("a", { class: "reel-topic", href: "#/gdsk/" + t.slug, text: L("Bài: ", "Article: ") + tr(t.title) })); });
       var fig = reelFigure(r.vd);
       fig.appendChild(el("div", { class: "reel-links" }, links));
       return fig;
@@ -976,7 +985,7 @@
         el("ul", {}, art.remember.map(function (k) { var li = el("li"); li.innerHTML = gIcon("star", 18); li.appendChild(document.createTextNode(k)); return li; }))]);
       pageView.appendChild(r);
     }
-    if (tp.video) pageView.appendChild(el("section", { class: "page-section art-section" }, [el("h2", { text: L("Xem video ngắn", "Short video") })].concat([].concat(tp.video).map(reelFigure))));
+    if (tp.video) pageView.appendChild(el("section", { class: "page-section art-section" }, [el("h2", { text: L("Xem video ngắn", "Short video") })].concat([].concat(tp.video).map(function (x) { return reelFigure(x, tp.slug); }))));
     art.sections.forEach(function (sec) {
       var box = el("section", { class: "page-section art-section" + (sec.cls ? " " + sec.cls : "") }, [el("h2", { text: sec.h })]);
       artBlocks(box, sec.blocks);

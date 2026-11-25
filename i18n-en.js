@@ -254,6 +254,7 @@ window.PULSE_EN = {
 "Rửa tay trước khi ăn, sau khi đi vệ sinh, trước và sau khi chăm sóc người bệnh.": "Wash hands before eating, after using the toilet, and before and after caring for a patient.",
 "Thời gian rửa tay với xà phòng ít nhất 40–60 giây.": "Wash with soap for at least 40–60 seconds.",
 "Phòng té ngã khi nằm viện": "Preventing falls in hospital",
+"An toàn người bệnh: 5 việc nhỏ cùng tham gia": "Patient safety: 5 small things to take part in",
 "Bật đèn khi đi lại ban đêm, mang dép chống trơn, nhờ người hỗ trợ khi chóng mặt.": "Turn on the light when walking at night, wear non-slip footwear, and ask for help if dizzy.",
 "Luôn kéo thanh chắn giường khi người bệnh nằm; để vật dụng cần thiết trong tầm với.": "Always raise the bed rails when the patient is lying down; keep essentials within reach.",
 "Báo ngay điều dưỡng khi người bệnh mệt, hoa mắt hoặc vừa dùng thuốc an thần.": "Tell the nurse right away if the patient feels weak, dizzy or has just taken a sedative.",

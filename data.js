@@ -8499,6 +8499,150 @@ window.PULSE_DATA = {
      "img": "img/gdsk/poster-nao-mo-cau.jpg?v=2",
      "caption": "Poster Cẩm nang phòng bệnh não mô cầu"
     }
+   },
+   {
+    "group": "an",
+    "title": "An toàn người bệnh: 5 việc nhỏ cùng tham gia",
+    "points": [
+     "Khi được hỏi, nói rõ họ tên và năm sinh; đeo vòng nhận dạng suốt thời gian nằm viện.",
+     "Báo ngay cho điều dưỡng khi thấy thuốc lạ, khác thường lệ hoặc thấy người bệnh có dấu hiệu bất thường.",
+     "Bấm chuông gọi khi cần ra khỏi giường mà chưa đi vững."
+    ],
+    "slug": "an-toan-nguoi-benh",
+    "khoa": "Phòng Điều dưỡng",
+    "icon": "shield",
+    "video": {
+     "src": "video/gdsk/reel-an-toan-nguoi-benh.mp4?v=20261123f",
+     "poster": "video/gdsk/reel-an-toan-nguoi-benh.jpg?v=20261123f",
+     "caption": "Video: An toàn người bệnh, 5 hành động nhỏ"
+    },
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.ATNB.BTT",
+     "version": "01",
+     "issued": false,
+     "lead": "Dành cho người bệnh và người nhà trong thời gian khám, điều trị tại bệnh viện. Người bệnh và người nhà là một mắt xích quan trọng giúp phát hiện sớm sai sót.",
+     "heading": "An toàn người bệnh: 5 việc nhỏ người bệnh, người nhà cùng tham gia",
+     "urgent": {
+      "h": "Khi thấy điều bất thường",
+      "blocks": [
+       {
+        "p": "Báo ngay điều dưỡng, bác sĩ đang chăm sóc hoặc bấm chuông gọi khi người bệnh khó thở, lơ mơ, đau tăng, chảy máu, nổi mẩn ngứa sau dùng thuốc, hoặc khi thấy thuốc, dịch truyền không đúng như đã được dặn. Khi đã về nhà, đến bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     },
+     "remember": [
+      "Khi được hỏi, nói rõ họ tên và năm sinh; đeo vòng nhận dạng suốt thời gian nằm viện.",
+      "Báo ngay cho điều dưỡng khi thấy thuốc lạ, khác thường lệ hoặc thấy người bệnh có dấu hiệu bất thường.",
+      "Bấm chuông gọi khi cần ra khỏi giường mà chưa đi vững."
+     ],
+     "sections": [
+      {
+       "h": "Vì sao người bệnh cần cùng tham gia",
+       "blocks": [
+        {
+         "p": "Sai sót trong chăm sóc y tế có thể xảy ra ở bất kỳ cơ sở y tế nào, và phần lớn có thể phòng ngừa được. Khi người bệnh và người nhà biết mình cần làm gì, hỏi lại khi chưa rõ và báo ngay khi thấy bất thường, nguy cơ sai sót giảm đi rõ rệt. [1]"
+        }
+       ]
+      },
+      {
+       "h": "1. Xác định đúng người bệnh",
+       "blocks": [
+        {
+         "items": [
+          "Trước khi tiêm, truyền, phát thuốc, lấy máu, chụp chiếu hay phẫu thuật, nhân viên y tế sẽ hỏi họ tên và năm sinh, đối chiếu với vòng đeo tay. Đây là việc bắt buộc, không phải vì nhân viên quên.",
+          "Tự nói rõ họ tên đầy đủ và năm sinh, không chỉ trả lời \"dạ phải\".",
+          "Đeo vòng nhận dạng suốt thời gian nằm viện; báo điều dưỡng khi vòng bị mất, rách, mờ chữ hoặc ghi sai."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "2. Trao đổi rõ ràng với nhân viên y tế",
+       "blocks": [
+        {
+         "items": [
+          "Kể đầy đủ bệnh đang có, thuốc đang dùng (kể cả thuốc nam, thực phẩm chức năng) và thuốc từng bị dị ứng.",
+          "Hỏi lại khi chưa hiểu chẩn đoán, xét nghiệm, cách dùng thuốc hoặc lịch tái khám; có thể nhờ ghi ra giấy.",
+          "Khi đổi ca, chuyển khoa hay ra viện, nhân viên y tế bàn giao thông tin người bệnh cho nhau. Người nhà nên cử một người chính để trao đổi với khoa."
+         ],
+         "ordered": false
+        }
+       ]
+      },
+      {
+       "h": "3. Phòng ngừa té ngã",
+       "blocks": [
+        {
+         "items": [
+          "Bấm chuông gọi khi cần đi vệ sinh hoặc ra khỏi giường mà chưa tự đi vững.",
+          "Ngồi ở mép giường 1 đến 2 phút trước khi đứng; mang dép chống trượt.",
+          "Không để người bệnh có nguy cơ cao ở một mình; khi phải đi vắng, báo cho điều dưỡng."
+         ],
+         "ordered": false
+        },
+        {
+         "note": "Xem thêm bài \"Phòng té ngã khi nằm viện\" trong Góc truyền thông."
+        }
+       ]
+      },
+      {
+       "h": "4. Dùng thuốc an toàn",
+       "blocks": [
+        {
+         "items": [
+          "Trước khi dùng thuốc, nhân viên y tế đối chiếu y lệnh với tên người bệnh, tên thuốc, liều, đường dùng và giờ dùng.",
+          "Hỏi lại khi thấy viên thuốc lạ, số viên khác ngày thường hoặc chai dịch truyền khác lần trước.",
+          "Không tự ý mang thuốc ngoài vào dùng, không tự chỉnh tốc độ dịch truyền; báo ngay khi nổi mẩn, ngứa, khó thở, đau rát chỗ truyền."
+         ],
+         "ordered": false
+        },
+        {
+         "note": "Xem thêm bài \"Dùng thuốc an toàn\" trong Góc truyền thông."
+        }
+       ]
+      },
+      {
+       "h": "5. Báo ngay khi thấy điều bất thường",
+       "blocks": [
+        {
+         "items": [
+          "Báo điều dưỡng, bác sĩ khi thấy sai tên, sai thuốc, chậm trễ, thiết bị kêu báo động lâu, sàn ướt, giường hỏng hoặc bất kỳ điều gì khiến bạn lo lắng.",
+          "Bệnh viện khuyến khích người bệnh, người nhà góp ý và báo sự cố. Việc báo cáo nhằm tìm nguyên nhân và cải tiến, không nhằm quy lỗi cá nhân. [3]",
+          "Có thể góp ý trực tiếp với điều dưỡng trưởng khoa hoặc gọi tổng đài 0296 3562 357."
+         ],
+         "ordered": false
+        }
+       ]
+      }
+     ],
+     "quiz": [
+      {
+       "q": "Điều dưỡng hỏi họ tên, năm sinh nhiều lần mỗi ngày, có phải vì quên không?",
+       "a": "Không. Đó là bước bắt buộc để chắc chắn đúng người bệnh trước mỗi lần dùng thuốc, làm thủ thuật."
+      },
+      {
+       "q": "Thấy viên thuốc hôm nay khác hôm qua thì làm gì?",
+       "a": "Hỏi lại điều dưỡng trước khi uống. Nhân viên y tế sẽ kiểm tra lại y lệnh."
+      }
+     ],
+     "refs": [
+      {
+       "t": "WHO. Patient safety (fact sheet).",
+       "url": "https://www.who.int/news-room/fact-sheets/detail/patient-safety",
+       "org": "WHO"
+      },
+      {
+       "t": "WHO. Global Patient Safety Action Plan 2021–2030.",
+       "url": "https://www.who.int/teams/integrated-health-services/patient-safety/policy/global-patient-safety-action-plan",
+       "org": "WHO"
+      },
+      "Bộ Y tế. Thông tư số 43/2018/TT-BYT ngày 26/12/2018 hướng dẫn phòng ngừa sự cố y khoa trong các cơ sở khám bệnh, chữa bệnh.",
+      "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện."
+     ],
+     "unit": "Phòng Điều dưỡng"
+    }
    }
   ]
  },
@@ -9921,6 +10065,9 @@ window.PULSE_DATA = {
   "dieu-duong": {
    "updated": "2026-11-22",
    "items": [
+    {
+     "slug": "an-toan-nguoi-benh"
+    },
     {
      "slug": "phong-te-nga-khi-nam-vien"
     },
