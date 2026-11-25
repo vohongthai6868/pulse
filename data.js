@@ -8812,7 +8812,9 @@ window.PULSE_DATA = {
    "qr": {
     "img": "img/khoa/tc-qr-zalo.jpg",
     "title": "Zalo Tổ Tiêm chủng",
-    "text": "Quét mã bằng Zalo hoặc thêm số 0943 971 821 để được tư vấn, đặt lịch hẹn và nhắc lịch tiêm."
+    "text": "Quét mã bằng Zalo hoặc thêm số 0943 971 821 để được tư vấn, đặt lịch hẹn và nhắc lịch tiêm.",
+    "href": "https://zaloapp.com/qr/p/mhyb8nn3z6jy",
+    "btn": "Mở Zalo Tổ Tiêm chủng"
    },
    "video": [
     {

@@ -954,9 +954,12 @@
     if (k.qr) {
       pageView.appendChild(el("section", { class: "page-section khoa-qr" }, [
         el("h2", { text: tr(k.qr.title) }),
-        el("img", { src: k.qr.img, alt: L("Mã QR Zalo ", "Zalo QR code ") + tr(k.name), loading: "lazy", width: "320" }),
+        (function () {
+          var qi = el("img", { src: k.qr.img, alt: L("Mã QR Zalo ", "Zalo QR code ") + tr(k.name), loading: "lazy", width: "320" });
+          return k.qr.href ? el("a", { href: k.qr.href, target: "_blank", rel: "noopener", "aria-label": tr(k.qr.btn || "Mở trang đăng ký") }, [qi]) : qi;
+        })(),
         el("p", { text: tr(k.qr.text) }),
-        k.qr.href ? el("a", { class: "btn-primary", href: k.qr.href, target: "_blank", rel: "noopener", text: L("Mở trang đăng ký", "Open booking page") }) : null,
+        k.qr.href ? el("a", { class: "btn-primary", href: k.qr.href, target: "_blank", rel: "noopener", text: tr(k.qr.btn || "Mở trang đăng ký") }) : null,
       ].filter(Boolean)));
     }
     if (k.message) pageView.appendChild(el("blockquote", { class: "khoa-message", text: tr(k.message) }));
