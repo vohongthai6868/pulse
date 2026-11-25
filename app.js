@@ -959,7 +959,7 @@
           return k.qr.href ? el("a", { href: k.qr.href, target: "_blank", rel: "noopener", "aria-label": tr(k.qr.btn || "Mở trang đăng ký") }, [qi]) : qi;
         })(),
         el("p", { text: tr(k.qr.text) }),
-        k.qr.href ? el("a", { class: "btn-primary", href: k.qr.href, target: "_blank", rel: "noopener", text: tr(k.qr.btn || "Mở trang đăng ký") }) : null,
+        k.qr.href ? el("a", { class: "btn-primary qr-blink", href: k.qr.href, target: "_blank", rel: "noopener", text: tr(k.qr.btn || "Mở trang đăng ký") }) : null,
       ].filter(Boolean)));
     }
     if (k.message) pageView.appendChild(el("blockquote", { class: "khoa-message", text: tr(k.message) }));
