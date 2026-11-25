@@ -9916,6 +9916,117 @@ window.PULSE_DATA = {
     "poster": "video/khoa/lien-ck-mat.jpg",
     "caption": "Video giới thiệu buồng khám Mắt (43 giây; hình từ video của khoa, đã che mặt người bệnh)"
    }
+  },
+  "truyen-nhiem": {
+   "name": "Khoa Truyền nhiễm",
+   "updated": "2026-11-25",
+   "intro": "Điều trị các bệnh lý nhiễm trùng, truyền nhiễm và chẩn đoán, điều trị, quản lý bệnh lao; chú trọng phát hiện sớm, đánh giá mức độ nặng, điều trị phù hợp và hạn chế biến chứng.",
+   "facts": [
+    [
+     "Điều dưỡng trưởng",
+     "CNĐD. Hà Lâm Nhã Phương"
+    ],
+    [
+     "Vị trí",
+     "Tầng trệt, Khu C"
+    ],
+    [
+     "Giường bệnh",
+     "25 giường kế hoạch / 30 giường thực kê"
+    ],
+    [
+     "Nhân lực",
+     "08 điều dưỡng: 2 đại học, 6 cao đẳng"
+    ],
+    [
+     "Hoạt động",
+     "24/24 giờ"
+    ],
+    [
+     "Tổng đài, cấp cứu 24/24",
+     "0296 3562 357"
+    ]
+   ],
+   "sections": [
+    {
+     "h": "Chức năng, nhiệm vụ",
+     "items": [
+      "Điều trị các bệnh lý nhiễm trùng, truyền nhiễm; chẩn đoán, điều trị và quản lý bệnh lao.",
+      "Tiếp nhận người bệnh từ thường gặp đến phức tạp; phát hiện sớm, đánh giá mức độ nặng, điều trị phù hợp và hạn chế biến chứng.",
+      "Tư vấn người bệnh tuân thủ điều trị, phòng ngừa lây nhiễm, bảo vệ sức khỏe bản thân và cộng đồng."
+     ]
+    },
+    {
+     "h": "Kỹ thuật nổi bật",
+     "items": [
+      "Phụ bác sĩ rút dịch màng phổi, rút dịch màng bụng, chọc dò tủy sống.",
+      "Truyền dịch bằng máy đếm giọt trong cấp cứu người bệnh sốt xuất huyết nặng.",
+      "Hút đàm và sử dụng các phương tiện hỗ trợ hô hấp."
+     ]
+    },
+    {
+     "h": "Hoạt động chăm sóc đặc trưng",
+     "items": [
+      "Chăm sóc người bệnh hướng tới toàn diện.",
+      "Tư vấn, giáo dục sức khỏe phòng ngừa lây nhiễm.",
+      "Thường xuyên cập nhật kiến thức chuyên môn."
+     ]
+    },
+    {
+     "h": "Sáng kiến, cải tiến",
+     "items": [
+      "Truyền thông giáo dục sức khỏe qua mã QR."
+     ]
+    }
+   ],
+   "message": "Phòng chống bệnh lây, chung tay trách nhiệm.",
+   "video": [
+    {
+     "src": "video/khoa/truyen-nhiem.mp4?v=20261125l",
+     "poster": "video/khoa/truyen-nhiem.jpg?v=20261125l",
+     "caption": "Video giới thiệu Khoa Truyền nhiễm (khoảng 1 phút)"
+    },
+    {
+     "src": "video/gdsk/reel-nao-mo-cau.mp4?v=20261123f",
+     "poster": "video/gdsk/reel-nao-mo-cau.jpg?v=20261123f",
+     "caption": "Video: Bệnh não mô cầu"
+    },
+    {
+     "src": "video/gdsk/reel-cum-mua.mp4?v=20261123f",
+     "poster": "video/gdsk/reel-cum-mua.jpg?v=20261123f",
+     "caption": "Video: Cúm mùa"
+    }
+   ],
+   "photos": [
+    [
+     "img/khoa/truyen-nhiem-01.jpg",
+     "Tập thể điều dưỡng Khoa Truyền nhiễm"
+    ],
+    [
+     "img/khoa/truyen-nhiem-02.jpg",
+     "Điều dưỡng phụ bác sĩ thực hiện thủ thuật chọc dò theo chỉ định"
+    ],
+    [
+     "img/khoa/truyen-nhiem-03.jpg",
+     "Điều dưỡng chuẩn bị, kiểm tra dịch chọc dò"
+    ],
+    [
+     "img/khoa/truyen-nhiem-04.jpg",
+     "Theo dõi truyền dịch bằng máy kiểm soát tốc độ theo chỉ định"
+    ],
+    [
+     "img/khoa/truyen-nhiem-05.jpg",
+     "Tư vấn giáo dục sức khỏe, phòng ngừa lây nhiễm cho người bệnh"
+    ],
+    [
+     "img/khoa/truyen-nhiem-06.jpg",
+     "Sinh hoạt chuyên môn, cập nhật kiến thức tại khoa"
+    ],
+    [
+     "img/khoa/truyen-nhiem-07.jpg",
+     "Đội ngũ Khoa Truyền nhiễm trực 24/24"
+    ]
+   ]
   }
  },
  "huongdan": {
