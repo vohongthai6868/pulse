@@ -971,3 +971,8 @@ a.cite { cursor: pointer; }
 .reel-links a { font-size: 13px; font-weight: 600; text-decoration: none; padding: 4px 10px; border-radius: 999px; line-height: 1.35; }
 .reel-unit { background: #0b4f9c; color: #fff; }
 .reel-topic { background: var(--surface-2, #eef4fb); color: #0b4f9c; border: 1px solid #c9dbf1; }
+
+/* Nút đọc tiếp bài dưới reel */
+.reel-read { display: flex; flex-direction: column; gap: 6px; margin-top: 8px; }
+.reel-read-btn { display: block; text-align: center; background: #d61f26; color: #fff; font-weight: 700; font-size: 14px; line-height: 1.35; padding: 8px 12px; border-radius: 10px; text-decoration: none; }
+.reel-read-btn:hover { background: #b3161c; }
