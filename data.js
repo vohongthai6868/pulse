@@ -8642,6 +8642,10 @@ window.PULSE_DATA = {
       "Bộ Y tế. Thông tư số 31/2021/TT-BYT ngày 28/12/2021 quy định hoạt động điều dưỡng trong bệnh viện."
      ],
      "unit": "Phòng Điều dưỡng"
+    },
+    "poster": {
+     "img": "img/gdsk/poster-an-toan-nguoi-benh.jpg",
+     "caption": "Poster An toàn người bệnh"
     }
    }
   ]
