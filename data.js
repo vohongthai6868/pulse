@@ -11699,5 +11699,115 @@ window.PULSE_DATA = {
     ]
    }
   ]
+ },
+ "unitFacts": {
+  "dieu-duong": {
+   "head": [
+    "Trưởng phòng",
+    "CKIĐD. Võ Hồng Thái"
+   ],
+   "nhanluc": "02 người",
+   "hoatdong": [
+    "Giờ làm việc",
+    "Thứ Hai – Thứ Sáu: 7g00 – 11g00, 13g00 – 17g00; Thứ Bảy: 7g00 – 11g00"
+   ]
+  },
+  "kham-benh": {
+   "head": [
+    "Điều dưỡng trưởng",
+    "Nguyễn Thị Dung"
+   ]
+  },
+  "cap-cuu": {
+   "head": [
+    "Điều dưỡng trưởng",
+    "CNĐD. Trần Thị Quyến"
+   ],
+   "giuong": "12 giường kế hoạch / 17 giường thực kê",
+   "nhanluc": "11 người khối điều dưỡng"
+  },
+  "noi-th": {
+   "head": [
+    "Điều dưỡng trưởng",
+    "Võ Thị Ngọc Nhờ"
+   ]
+  },
+  "nhi": {
+   "head": [
+    "Điều dưỡng trưởng",
+    "Thái Thị Thúy Hằng"
+   ]
+  },
+  "ngoai-tq": {
+   "head": [
+    "Điều dưỡng trưởng",
+    "CNĐD. Bùi Thị Huệ"
+   ],
+   "giuong": "20 giường kế hoạch / 20 giường thực kê",
+   "nhanluc": "05 điều dưỡng",
+   "hoatdong": [
+    "Hoạt động",
+    "24/24 giờ"
+   ]
+  },
+  "ngoai-ct": {
+   "head": [
+    "Điều dưỡng trưởng",
+    "Huỳnh Thanh Tuyền"
+   ],
+   "giuong": "18 giường kế hoạch / 18 giường thực kê",
+   "nhanluc": "06 điều dưỡng",
+   "hoatdong": [
+    "Hoạt động",
+    "24/24 giờ"
+   ]
+  },
+  "ptgmhs": {
+   "head": [
+    "Điều dưỡng trưởng",
+    "Nguyễn Thị Diễm My"
+   ],
+   "giuong": "05 giường kế hoạch / 05 giường thực kê",
+   "nhanluc": "12 người khối điều dưỡng"
+  },
+  "lien-ck": {
+   "head": [
+    "Điều dưỡng trưởng",
+    "Huỳnh Thị Cẩm Tú"
+   ],
+   "nhanluc": "17 người khối điều dưỡng"
+  },
+  "yhct": {
+   "head": [
+    "Kỹ thuật y trưởng",
+    "Võ Thái Ngọc"
+   ]
+  },
+  "xet-nghiem": {
+   "head": [
+    "Kỹ thuật y trưởng",
+    "Lê Thị Mỹ Thanh"
+   ],
+   "nhanluc": "15 người"
+  },
+  "duoc": {
+   "head": [
+    "Trưởng khoa",
+    "Trần Hoài Nam"
+   ],
+   "nhanluc": "22 dược sĩ"
+  },
+  "ksnk": {
+   "head": [
+    "Điều dưỡng trưởng",
+    "Phan Tuấn Khanh"
+   ]
+  },
+  "tc": {
+   "head": [
+    "Trưởng tổ",
+    "Nguyễn Thị Diễm Phương"
+   ]
+  }
  }
 };
