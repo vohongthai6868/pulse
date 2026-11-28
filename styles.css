@@ -1036,3 +1036,8 @@ a.cite { cursor: pointer; }
 html[lang="en"] .btn-booking::after, html[lang="en"] .booking-bar::after { content: "👆 TAP HERE"; }
 @keyframes vg-bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
 @media (prefers-reduced-motion: reduce) { .vg-open { animation: none; } .btn-booking::after, .booking-bar::after { animation: none; } }
+.pk-list li.pk-li { display: flex; gap: 8px; align-items: stretch; }
+.pk-list li.pk-li > a:first-child { flex: 1; min-width: 0; }
+.pk-list a.pk-book { flex: none; flex-direction: row; align-items: center; justify-content: center; padding: 10px 14px; min-height: 44px; background: #d0202a; border-color: #d0202a; color: #fff; font-weight: 800; white-space: nowrap; }
+.pk-list a.pk-book:hover { background: #a8161f; border-color: #a8161f; }
+.cpk-tip { display: block; margin-top: 6px; font-size: 15px; color: #0b4f9c; font-weight: 600; }

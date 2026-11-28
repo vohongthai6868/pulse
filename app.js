@@ -668,9 +668,10 @@
   if ("speechSynthesis" in window) { try { window.speechSynthesis.getVoices(); window.speechSynthesis.onvoiceschanged = function () {}; } catch (e) {} }
   window.addEventListener("hashchange", stopVoice);
   (function () { var hb = document.querySelector(".hero-booking-note") || document.querySelector(".hero .btn-booking"); if (hb) hb.parentNode.insertBefore(voiceGuideBtn(), hb.nextSibling); })();
-  function addBookingBar() {
+  function pkTip(x) { return x && x.dk ? L("Trang đăng ký của bệnh viện mở ra. Ở ô “Chuyên khoa khám”, chọn: " + x.dk, "On the booking page, under specialty choose: " + x.dk) : ""; }
+  function addBookingBar(pk) {
     var bar = el("a", { class: "booking-bar", href: BOOKING_URL, target: "_blank", rel: "noopener" }, [
-      el("span", { class: "booking-bar-txt" }, [el("strong", { text: L("ĐĂNG KÝ KHÁM BỆNH TRỰC TUYẾN", "BOOK AN APPOINTMENT ONLINE") }), el("span", { text: L("Khám lần đầu hoặc đổi phòng khám: gọi 0296 3562 357 để được tư vấn chọn phòng · Tái khám: chọn lại phòng khám cũ", "First visit or new clinic: call for advice · Follow-up: choose your previous clinic") })]),
+      el("span", { class: "booking-bar-txt" }, [el("strong", { text: pk ? L("ĐĂNG KÝ KHÁM " + pk.name.toUpperCase(), "BOOK " + pk.name.toUpperCase()) : L("ĐĂNG KÝ KHÁM BỆNH TRỰC TUYẾN", "BOOK AN APPOINTMENT ONLINE") }), el("span", { text: pk ? pkTip(pk) : L("Khám lần đầu hoặc đổi phòng khám: gọi 0296 3562 357 để được tư vấn chọn phòng · Tái khám: chọn lại phòng khám cũ", "First visit or new clinic: call for advice · Follow-up: choose your previous clinic") })]),
       el("span", { class: "booking-bar-go", "aria-hidden": "true", text: "→" }),
     ]);
     var intro = pageView.querySelector(".page-intro");
@@ -694,7 +695,8 @@
       el("h2", { text: L("Phòng khám chuyên khoa (" + P.items.length + ")", "Specialty clinics") }),
       el("p", { class: "unit-guide-hint", text: P.intro }),
       el("ul", { class: "pk-list" }, P.items.map(function (x) {
-        return el("li", {}, [el("a", { href: "#/phong-kham/" + x.slug }, [el("span", { class: "pk-name", text: x.name })])]);
+        return el("li", { class: "pk-li" }, [el("a", { href: "#/phong-kham/" + x.slug }, [el("span", { class: "pk-name", text: x.name })]),
+          el("a", { class: "pk-book", href: BOOKING_URL, target: "_blank", rel: "noopener", title: pkTip(x), "aria-label": L("Đăng ký khám ", "Book ") + x.name, text: L("Đăng ký →", "Book →") })]);
       })),
     ]);
   }
@@ -735,7 +737,7 @@
     pageView.appendChild(el("span", { class: "tag", style: "--c:#0b4f9c", text: L("Phòng khám", "Clinic") }));
     pageView.appendChild(el("h1", { class: "page-title", text: x.name }));
     pageView.appendChild(el("p", { class: "page-intro", text: L("Thuộc Khoa Khám bệnh, Bệnh viện Đa khoa Nhật Tân. Giờ khám: ", "Outpatient department, Nhat Tan General Hospital. Hours: ") + P.gio + "." }));
-    addBookingBar();
+    addBookingBar(x);
     pageView.appendChild(pkGuide());
     var tps = x.topics.map(function (s) { return DATA.gdsk.topics.filter(function (t) { return t.slug === s; })[0]; }).filter(Boolean);
     pageView.appendChild(el("section", { class: "page-section unit-gdsk" }, [el("h2", { text: L("Bài giáo dục sức khỏe nên đọc", "Health education articles") }),
@@ -771,7 +773,8 @@
     function bookBtn(x) { return el("a", { class: "cpk-book", href: BOOKING_URL, target: "_blank", rel: "noopener", text: L("Đăng ký khám ", "Book ") + (x ? x.name.replace(/^Phòng khám /, "") : "") + " →" }); }
     function card(x, why) {
       return el("li", { class: "cpk-res" }, [el("strong", { text: x.name }), why ? el("span", { class: "cpk-why", text: why }) : null,
-        el("span", { class: "cpk-act" }, [bookBtn(x), el("a", { href: "#/phong-kham/" + x.slug, text: L("Xem phòng khám", "Clinic page") })])].filter(Boolean));
+        el("span", { class: "cpk-act" }, [bookBtn(x), el("a", { href: "#/phong-kham/" + x.slug, text: L("Xem phòng khám", "Clinic page") })]),
+        x.dk ? el("span", { class: "cpk-tip", text: pkTip(x) }) : null].filter(Boolean));
     }
     function draw() {
       box.textContent = "";
