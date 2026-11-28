@@ -760,11 +760,12 @@
     draw();
     document.title = L("Gợi ý chọn phòng khám — Điều dưỡng BV Nhật Tân", "Clinic helper — Nhat Tan Hospital Nursing");
   }
+  var currentKhoa = null;
   function renderKhoaPage(key) {
     var hit = unitByCode(key);
     var k = DATA.khoa && DATA.khoa[key];
     if (!k) { renderUnitPage(hit); var uv = DATA.unitVideo && DATA.unitVideo[key]; if (uv) pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Video truyền thông", "Videos") })].concat([].concat(uv).map(reelFigure)))); unitExtras(hit, key); addBookingBar(); return; }
-    renderRichKhoa(k);
+    currentKhoa = key; renderRichKhoa(k);
     if (key === "kham-benh" && DATA.phongkham) {
       var vsec = pageView.querySelector(".reel") ? pageView.querySelector(".reel").parentNode : null;
       var ref = vsec ? vsec.nextSibling : null;
@@ -773,6 +774,31 @@
     unitExtras(hit || { u: { name: k.name, page: key } }, key);
     addBookingBar();
     document.title = tr(k.name) + L(" — Điều dưỡng BV Nhật Tân", " — Nhat Tan Hospital Nursing");
+  }
+  // Khung "Thông tin đơn vị" thống nhất cho mọi khoa, phòng, bộ phận: người phụ trách, vị trí, giường bệnh (đơn vị có giường), nhân lực, hoạt động, tổng đài.
+  var BED_UNITS = ["cap-cuu", "noi-tq", "noi-th", "truyen-nhiem", "nhi", "phu-san", "ngoai-tq", "ngoai-ct", "ptgmhs"];
+  var PEND = function () { return L("Đang cập nhật", "Being updated"); };
+  function stdFacts(code, grp, facts) {
+    var X = (DATA.unitFacts && DATA.unitFacts[code]) || {};
+    var rest = facts.map(function (f) { return [tr(f[0]), tr(f[1])]; });
+    function take(re) { for (var i = 0; i < rest.length; i++) if (re.test(rest[i][0])) return rest.splice(i, 1)[0]; return null; }
+    var out = [];
+    var head = take(/trưởng|Trưởng/);
+    var defHead = grp === "Phòng chức năng" ? L("Trưởng phòng", "Head") : grp === "Tổ chuyên trách" ? L("Tổ trưởng", "Team leader") : L("Điều dưỡng trưởng", "Head nurse");
+    out.push(head || (X.head ? [X.head[0], X.head[1]] : [defHead, PEND()]));
+    out.push(take(/^Vị trí/) || [L("Vị trí", "Location"), X.vitri || PEND()]);
+    if (BED_UNITS.indexOf(code) >= 0) out.push(take(/^Giường/) || [L("Giường bệnh", "Beds"), X.giuong || PEND()]);
+    var nl = take(/^Nhân (lực|sự)/); out.push(nl || [L("Nhân lực", "Staff"), X.nhanluc || PEND()]);
+    var hd = take(/^(Hoạt động|Giờ làm việc|Giờ hành chính|Cấp cứu|Ca lọc máu)/);
+    if (!hd && code === "kham-benh" && DATA.phongkham) hd = [L("Giờ khám", "Clinic hours"), DATA.phongkham.gio];
+    out.push(hd || (X.hoatdong ? [X.hoatdong[0], X.hoatdong[1]] : [L("Hoạt động", "Hours"), PEND()]));
+    var tong = take(/^Tổng đài/);
+    rest.forEach(function (f) { if (!/^(Thuộc|Nhóm đơn vị)$/.test(f[0])) out.push(f); });
+    out.push(tong || [L("Tổng đài, cấp cứu 24/24", "Switchboard, emergency 24/7"), "0296 3562 357"]);
+    return out;
+  }
+  function factsSection(out) {
+    return el("section", { class: "page-section" }, [el("h2", { text: L("Thông tin đơn vị", "Unit information") }), el("dl", { class: "khoa-facts" }, [].concat.apply([], out.map(function (f) { return [el("dt", { text: f[0] }), telify(el("dd", f[1] === PEND() ? { class: "fact-pend" } : {}), f[1])]; })))]);
   }
   function renderUnitPage(hit) {
     var u = hit.u, g = hit.g;
@@ -789,10 +815,9 @@
       [L("Thuộc", "Part of"), L("Bệnh viện Đa khoa Nhật Tân", "Nhat Tan General Hospital")],
       [L("Nhóm đơn vị", "Unit group"), tr(g.groupLabel)],
     ];
-    if (u.roles && u.roles.length) facts.push([L("Nhân lực điều dưỡng", "Nursing staff"), u.roles.map(tr).join(", ")]);
     facts.push([L("Tổng đài, cấp cứu 24/24", "Switchboard, emergency 24/7"), "0296 3562 357"]);
     facts.push([L("Liên hệ công tác", "Administrative contact"), "0296 3562 678"]);
-    pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Thông tin đơn vị", "Unit information") }), el("dl", { class: "khoa-facts" }, [].concat.apply([], facts.map(function (f) { return [el("dt", { text: f[0] }), telify(el("dd"), f[1])]; })))]));
+    pageView.appendChild(factsSection(stdFacts(u.page, tr(g.groupLabel), facts)));
     if (u.page === "dieu-duong" && DATA.pages.about) {
       var ab = DATA.pages.about;
       ab.sections.slice(0, 1).forEach(function (s) {
@@ -936,7 +961,7 @@
       ]));
     }
     if (k.video) pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Video giới thiệu", "Intro video") })].concat([].concat(k.video).map(reelFigure))));
-    pageView.appendChild(el("section", { class: "page-section" }, [el("h2", { text: L("Thông tin đơn vị", "Unit information") }), el("dl", { class: "khoa-facts" }, [].concat.apply([], k.facts.map(function (f) { return [el("dt", { text: tr(f[0]) }), el("dd", { text: tr(f[1]) })]; })))]));
+    var kh = unitByCode(k.page || currentKhoa); pageView.appendChild(factsSection(stdFacts(k.page || currentKhoa, kh && kh.g ? tr(kh.g.groupLabel) : "", k.facts)));
     k.sections.forEach(function (s) {
       pageView.appendChild(el("section", { class: "page-section" }, [
         el("h2", { text: tr(s.h) }),
