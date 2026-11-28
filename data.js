@@ -889,7 +889,7 @@ window.PULSE_DATA = {
     "vi": "Phòng Điều dưỡng tổ chức đào tạo liên tục, kiểm tra tay nghề và khuyến khích nghiên cứu khoa học, sáng kiến cải tiến để nâng cao chất lượng chăm sóc người bệnh.",
     "en": "The Nursing Department runs continuing education, skills assessment and encourages research and improvement initiatives to raise the quality of patient care."
    },
-   "updated": "2026-11-13",
+   "updated": "2026-11-28",
    "sections": [
     {
      "h": {
@@ -910,6 +910,519 @@ window.PULSE_DATA = {
        "Training on communication skills and code of conduct in the digital environment for all staff on 4 November 2026.",
        "Nurses sent to external courses, including paediatric emergency care at Children's Hospital 1 (October 2026).",
        "Online continuing education for nurses, midwives and medical technologists, such as the electronic medical record course under Circular 32/2023/TT-BYT."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Chương trình thực hành lâm sàng khối ĐD, HS, KTY, Y sĩ",
+      "en": "Clinical practice programme for nurses, midwives, technicians and assistant physicians"
+     },
+     "p": {
+      "vi": "Bảy chương trình thực hành lâm sàng do các khoa xây dựng, Phòng Điều dưỡng tổng hợp (cập nhật 28/11/2026), gồm 192 nội dung, tổng 1.626 giờ. Hai hình thức dạy - học: cầm tay chỉ việc và dạy - học bên giường bệnh, ca ngắn.",
+      "en": "Seven clinical practice programmes prepared by the departments and compiled by the Nursing Department (updated 28 Nov 2026): 192 topics, 1,626 hours in total. Teaching methods: hands-on coaching and short bedside teaching sessions."
+     }
+    },
+    {
+     "h": {
+      "vi": "Khoa Nhi: 24 nội dung, 160 giờ",
+      "en": "Pediatrics: 24 topics, 160 hours"
+     },
+     "p": {
+      "vi": "Người hướng dẫn: CNĐD. Ngô Thị Ngọc.",
+      "en": "Clinical instructors: CNĐD. Ngô Thị Ngọc."
+     },
+     "ordered": true,
+     "items": {
+      "vi": [
+       "Quy trình tiếp nhận người bệnh nhập viện tại Khoa Nhi: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình tiếp nhận người bệnh tại Phòng khám Nhi: 8 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 40 giờ, cầm tay chỉ việc.",
+       "Quy trình cho người bệnh xuất viện tại Khoa Nhi: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật lấy máu mao mạch thử đường huyết tại giường: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình sử dụng thuốc an thần, gây nghiện: 2 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp phát thuốc hằng ngày: 2 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật truyền hồng cầu lắng và máu toàn phần: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chiếu đèn vàng da: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật bơm Diazepam qua đường hậu môn: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật phun khí dung: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật sử dụng máy bơm tiêm điện: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật sử dụng máy truyền dịch: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật tiêm thuốc qua khóa lưu kim: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật truyền dịch bằng tay: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật lấy máu mao mạch quay thể tích khối hồng cầu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh sốt xuất huyết: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh tay chân miệng: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người người bệnh viêm phổi: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh viêm dạ dày ruột đại tràng: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sởi: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh co giật do sốt: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh vàng da sơ sinh: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh hen phế quản: 4 giờ, bên giường bệnh, ca ngắn."
+      ],
+      "en": [
+       "Quy trình tiếp nhận người bệnh nhập viện tại Khoa Nhi: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình tiếp nhận người bệnh tại Phòng khám Nhi: 8 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 40 giờ, cầm tay chỉ việc.",
+       "Quy trình cho người bệnh xuất viện tại Khoa Nhi: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật lấy máu mao mạch thử đường huyết tại giường: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình sử dụng thuốc an thần, gây nghiện: 2 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp phát thuốc hằng ngày: 2 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật truyền hồng cầu lắng và máu toàn phần: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chiếu đèn vàng da: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật bơm Diazepam qua đường hậu môn: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật phun khí dung: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật sử dụng máy bơm tiêm điện: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật sử dụng máy truyền dịch: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật tiêm thuốc qua khóa lưu kim: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật truyền dịch bằng tay: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật lấy máu mao mạch quay thể tích khối hồng cầu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh sốt xuất huyết: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh tay chân miệng: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người người bệnh viêm phổi: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh viêm dạ dày ruột đại tràng: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sởi: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh co giật do sốt: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh vàng da sơ sinh: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh hen phế quản: 4 giờ, bên giường bệnh, ca ngắn."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Khoa Phụ sản: 30 nội dung, 186 giờ",
+      "en": "Obstetrics and Gynecology: 30 topics, 186 hours"
+     },
+     "p": {
+      "vi": "Người hướng dẫn: CNHS. Trần Thị Minh Trang.",
+      "en": "Clinical instructors: CNHS. Trần Thị Minh Trang."
+     },
+     "ordered": true,
+     "items": {
+      "vi": [
+       "Quy trình tiếp nhận người bệnh tại khoa: 2 giờ, cầm tay chỉ việc.",
+       "Quy trình chuyển mổ cấp cứu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu sặc sữa: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình xử lý tình huống bé bỏ rơi: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình tiếp nhận sản phụ sanh rớt ngoại viện: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình khám thai: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình đo Monitor sản khoa: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc thai phụ đái tháo đường thai kỳ: 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình theo dõi sản phụ tăng huyết áp thai kỳ: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình theo dõi chuyển dạ và đỡ sanh: 10 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình xử trí tích cực giai đoạn III: 10 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật cắt may tầng sinh môn: 6 giờ, cầm tay chỉ việc.",
+       "Quy trình xử trí băng huyết sau sanh: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc thiết yếu bà mẹ, trẻ sơ sinh trong và ngay sau sanh ngả âm đạo (EENC): 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình đón trẻ sau sanh thường và sau sanh mổ: 6 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc theo dõi mẹ và bé trong 6 giờ đầu sau sanh: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc thiết yếu bà mẹ, trẻ sơ sinh trong và ngay sau sanh mổ: 10 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình khám phụ khoa: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh thai nghén: 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh rong kinh – rong huyết: 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình rửa âm hộ và chăm sóc vết may tầng sinh môn: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình thay băng: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình tắm bé tại bệnh viện: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình tư vấn lựa chọn biện pháp tránh thai: 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật đặt dụng cụ tử cung: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình phá thai bằng thuốc cho tuổi thai dưới 63 ngày vô kinh: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình phá thai bằng thuốc cho thai ngừng phát triển: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 10 giờ, cầm tay chỉ việc.",
+       "Báo cáo sự cố y khoa: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình thực hiện 5S: 4 giờ, cầm tay chỉ việc."
+      ],
+      "en": [
+       "Quy trình tiếp nhận người bệnh tại khoa: 2 giờ, cầm tay chỉ việc.",
+       "Quy trình chuyển mổ cấp cứu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu sặc sữa: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình xử lý tình huống bé bỏ rơi: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình tiếp nhận sản phụ sanh rớt ngoại viện: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình khám thai: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình đo Monitor sản khoa: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc thai phụ đái tháo đường thai kỳ: 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình theo dõi sản phụ tăng huyết áp thai kỳ: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình theo dõi chuyển dạ và đỡ sanh: 10 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình xử trí tích cực giai đoạn III: 10 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật cắt may tầng sinh môn: 6 giờ, cầm tay chỉ việc.",
+       "Quy trình xử trí băng huyết sau sanh: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc thiết yếu bà mẹ, trẻ sơ sinh trong và ngay sau sanh ngả âm đạo (EENC): 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình đón trẻ sau sanh thường và sau sanh mổ: 6 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc theo dõi mẹ và bé trong 6 giờ đầu sau sanh: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc thiết yếu bà mẹ, trẻ sơ sinh trong và ngay sau sanh mổ: 10 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình khám phụ khoa: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh thai nghén: 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh rong kinh – rong huyết: 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình rửa âm hộ và chăm sóc vết may tầng sinh môn: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình thay băng: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình tắm bé tại bệnh viện: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình tư vấn lựa chọn biện pháp tránh thai: 6 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật đặt dụng cụ tử cung: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình phá thai bằng thuốc cho tuổi thai dưới 63 ngày vô kinh: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình phá thai bằng thuốc cho thai ngừng phát triển: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 10 giờ, cầm tay chỉ việc.",
+       "Báo cáo sự cố y khoa: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình thực hiện 5S: 4 giờ, cầm tay chỉ việc."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Khoa Nội tổng quát: 29 nội dung, 176 giờ",
+      "en": "General Internal Medicine: 29 topics, 176 hours"
+     },
+     "p": {
+      "vi": "Người hướng dẫn: CNĐD. Lê Thị Huỳnh Hoa.",
+      "en": "Clinical instructors: CNĐD. Lê Thị Huỳnh Hoa."
+     },
+     "ordered": true,
+     "items": {
+      "vi": [
+       "Quy trình tiếp nhận – đánh giá ban đầu: 6 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn phòng ngừa nhiễm khuẩn bệnh viện: 10 giờ, cầm tay chỉ việc.",
+       "Đánh giá dấu hiệu sinh tồn định kỳ, theo ca hoặc tình trạng bệnh: 3 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn vệ sinh cá nhân, thay băng, catheter: 3 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn quy trình cấp phát thuốc hằng ngày: 6 giờ, cầm tay chỉ việc.",
+       "Đánh giá thang điểm đau, loét tỳ đè, nguy cơ té ngã: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn ghi chép hồ sơ bệnh án, bệnh án điện tử: 40 giờ, cầm tay chỉ việc.",
+       "Giáo dục sức khoẻ: dinh dưỡng, vệ sinh, vận động, tuân thủ dùng thuốc: 3 giờ, cầm tay chỉ việc.",
+       "Báo cáo sự cố y khoa: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Theo dõi tri giác: thang điểm Glasgow, tập vận động, phòng ngừa loét: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh suy tim: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh suy thận: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh đái tháo đường: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh tăng huyết áp: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh hen phế quản: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh COPD: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh viêm phổi: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh tai biến mạch máu não: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Hướng dẫn quy trình xuất viện, thanh toán, hẹn tái khám: 40 giờ, cầm tay chỉ việc.",
+       "Quy trình truyền dịch: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình truyền máu: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình tiêm bắp: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình thay băng: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình tiêm dưới da: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình thông tiểu: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình tiêm thuốc qua kim luồn: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình thông dạ dày: 3 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn quy trình 5S: 3 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn quy định giao tiếp trong bệnh viện: 3 giờ, bên giường bệnh, ca ngắn."
+      ],
+      "en": [
+       "Quy trình tiếp nhận – đánh giá ban đầu: 6 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn phòng ngừa nhiễm khuẩn bệnh viện: 10 giờ, cầm tay chỉ việc.",
+       "Đánh giá dấu hiệu sinh tồn định kỳ, theo ca hoặc tình trạng bệnh: 3 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn vệ sinh cá nhân, thay băng, catheter: 3 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn quy trình cấp phát thuốc hằng ngày: 6 giờ, cầm tay chỉ việc.",
+       "Đánh giá thang điểm đau, loét tỳ đè, nguy cơ té ngã: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn ghi chép hồ sơ bệnh án, bệnh án điện tử: 40 giờ, cầm tay chỉ việc.",
+       "Giáo dục sức khoẻ: dinh dưỡng, vệ sinh, vận động, tuân thủ dùng thuốc: 3 giờ, cầm tay chỉ việc.",
+       "Báo cáo sự cố y khoa: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Theo dõi tri giác: thang điểm Glasgow, tập vận động, phòng ngừa loét: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh suy tim: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh suy thận: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh đái tháo đường: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh tăng huyết áp: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh hen phế quản: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh COPD: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh viêm phổi: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh tai biến mạch máu não: 3 giờ, bên giường bệnh, ca ngắn.",
+       "Hướng dẫn quy trình xuất viện, thanh toán, hẹn tái khám: 40 giờ, cầm tay chỉ việc.",
+       "Quy trình truyền dịch: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình truyền máu: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình tiêm bắp: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình thay băng: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình tiêm dưới da: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình thông tiểu: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình tiêm thuốc qua kim luồn: 3 giờ, cầm tay chỉ việc.",
+       "Quy trình thông dạ dày: 3 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn quy trình 5S: 3 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn quy định giao tiếp trong bệnh viện: 3 giờ, bên giường bệnh, ca ngắn."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Khoa Ngoại tổng quát: 30 nội dung, 176 giờ",
+      "en": "General Surgery: 30 topics, 176 hours"
+     },
+     "p": {
+      "vi": "Người hướng dẫn: CNĐD. Bùi Thị Huệ.",
+      "en": "Clinical instructors: CNĐD. Bùi Thị Huệ."
+     },
+     "ordered": true,
+     "items": {
+      "vi": [
+       "Quy trình tiếp nhận – đánh giá ban đầu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chuẩn bị người bệnh trước phẫu thuật: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc người bệnh sau phẫu thuật: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc vết mổ sạch: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc vết mổ nhiễm: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc ống dẫn lưu ngực/ ổ bụng: 4 giờ, cầm tay chỉ việc.",
+       "Tư vấn giáo dục sức khoẻ: dinh dưỡng, vận động, theo dõi vết mổ sau khi nằm viện: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Tư vấn giáo dục sức khoẻ: dinh dưỡng, vận động, theo dõi vết mổ sau khi ra viện: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình thực hiện 5S: 4 giờ, cầm tay chỉ việc.",
+       "Báo cáo sự cố y khoa: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp phát thuốc hằng ngày: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật tiêm bắp: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật tiêm mạch: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật tiêm dưới da: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật bơm thuốc qua khóa lưu kim: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật thông tiểu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật đặt sonde dạ dày: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh viêm ruột thừa: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh trĩ: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sỏi niệu quản: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sỏi thận: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh thoát vị bẹn: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh áp xe hậu môn: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh rò hậu môn: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh hẹp bao quy đầu: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh tràn khí màng phổi: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sỏi túi mật: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sỏi bàng quang: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh lồng ruột: 8 giờ, bên giường bệnh, ca ngắn."
+      ],
+      "en": [
+       "Quy trình tiếp nhận – đánh giá ban đầu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chuẩn bị người bệnh trước phẫu thuật: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc người bệnh sau phẫu thuật: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc vết mổ sạch: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc vết mổ nhiễm: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc ống dẫn lưu ngực/ ổ bụng: 4 giờ, cầm tay chỉ việc.",
+       "Tư vấn giáo dục sức khoẻ: dinh dưỡng, vận động, theo dõi vết mổ sau khi nằm viện: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Tư vấn giáo dục sức khoẻ: dinh dưỡng, vận động, theo dõi vết mổ sau khi ra viện: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình thực hiện 5S: 4 giờ, cầm tay chỉ việc.",
+       "Báo cáo sự cố y khoa: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp phát thuốc hằng ngày: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật tiêm bắp: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật tiêm mạch: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật tiêm dưới da: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật bơm thuốc qua khóa lưu kim: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật thông tiểu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật đặt sonde dạ dày: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh viêm ruột thừa: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh trĩ: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sỏi niệu quản: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sỏi thận: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh thoát vị bẹn: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh áp xe hậu môn: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh rò hậu môn: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh hẹp bao quy đầu: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh tràn khí màng phổi: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sỏi túi mật: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sỏi bàng quang: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh lồng ruột: 8 giờ, bên giường bệnh, ca ngắn."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Khoa Ngoại chấn thương: 23 nội dung, 176 giờ",
+      "en": "Trauma Surgery: 23 topics, 176 hours"
+     },
+     "p": {
+      "vi": "Người hướng dẫn: CNĐD. Nguyễn Thị Minh Thu.",
+      "en": "Clinical instructors: CNĐD. Nguyễn Thị Minh Thu."
+     },
+     "ordered": true,
+     "items": {
+      "vi": [
+       "Quy trình tiếp nhận người bệnh nhập viện: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn ghi chép hồ sơ bệnh án: 44 giờ, cầm tay chỉ việc.",
+       "Quy trình chuẩn bị người bệnh trước phẫu thuật: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sau phẫu thuật: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc vết mổ sạch: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc vết mổ nhiễm: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật cố định tạm thời người bệnh gãy xương: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc khung cố định ngoài: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật đánh giá mức độ ý thức: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh chấn thương sọ não: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật đặt và rút sonde tiểu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình đưa người bệnh đi làm cận lâm sàng: 4 giờ, cầm tay chỉ việc.",
+       "Tư vấn, giáo dục sức khoẻ người bệnh khi nằm viện: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Tư vấn, giáo dục sức khoẻ người bệnh khi ra viện: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Sơ cứu vết thương thường: 4 giờ, cầm tay chỉ việc.",
+       "Sơ cứu vết thương bỏng: 4 giờ, cầm tay chỉ việc.",
+       "Sơ cứu cầm máu: 4 giờ, cầm tay chỉ việc.",
+       "Sơ cứu chấn thương cột sống: 4 giờ, cầm tay chỉ việc.",
+       "Sơ cứu hạ đường huyết: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn phòng ngừa nhiễm khuẩn bệnh viện: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn phân loại rác thải: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình xuất viện, thanh toán, hẹn tái khám: 44 giờ, cầm tay chỉ việc.",
+       "Quy trình hoàn thành hồ sơ bệnh án trả về phòng y vụ: 8 giờ, cầm tay chỉ việc."
+      ],
+      "en": [
+       "Quy trình tiếp nhận người bệnh nhập viện: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn ghi chép hồ sơ bệnh án: 44 giờ, cầm tay chỉ việc.",
+       "Quy trình chuẩn bị người bệnh trước phẫu thuật: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sau phẫu thuật: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc vết mổ sạch: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật chăm sóc vết mổ nhiễm: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật cố định tạm thời người bệnh gãy xương: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc khung cố định ngoài: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật đánh giá mức độ ý thức: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh chấn thương sọ não: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật đặt và rút sonde tiểu: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình đưa người bệnh đi làm cận lâm sàng: 4 giờ, cầm tay chỉ việc.",
+       "Tư vấn, giáo dục sức khoẻ người bệnh khi nằm viện: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Tư vấn, giáo dục sức khoẻ người bệnh khi ra viện: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Sơ cứu vết thương thường: 4 giờ, cầm tay chỉ việc.",
+       "Sơ cứu vết thương bỏng: 4 giờ, cầm tay chỉ việc.",
+       "Sơ cứu cầm máu: 4 giờ, cầm tay chỉ việc.",
+       "Sơ cứu chấn thương cột sống: 4 giờ, cầm tay chỉ việc.",
+       "Sơ cứu hạ đường huyết: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn phòng ngừa nhiễm khuẩn bệnh viện: 4 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn phân loại rác thải: 4 giờ, cầm tay chỉ việc.",
+       "Quy trình xuất viện, thanh toán, hẹn tái khám: 44 giờ, cầm tay chỉ việc.",
+       "Quy trình hoàn thành hồ sơ bệnh án trả về phòng y vụ: 8 giờ, cầm tay chỉ việc."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc (khối ĐD, HS, KTY): 21 nội dung, 176 giờ",
+      "en": "Emergency, Intensive Care and Poison Control (nurses, midwives, technicians): 21 topics, 176 hours"
+     },
+     "p": {
+      "vi": "Người hướng dẫn: CNĐD. Trần Thị Quyến, CNĐD. Nguyễn Kim Huyền.",
+      "en": "Clinical instructors: CNĐD. Trần Thị Quyến, CNĐD. Nguyễn Kim Huyền."
+     },
+     "ordered": true,
+     "items": {
+      "vi": [
+       "Quy trình tiếp nhận và xử trí người bệnh tại khoa: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu ngưng hô hấp tuần hoàn: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu sốc phản vệ: 8 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 16 giờ, cầm tay chỉ việc.",
+       "Tư vấn giáo dục sức khoẻ: dinh dưỡng, vệ sinh, sử dụng thuốc: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Báo cáo sự cố y khoa: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình sử dụng thuốc an thần, gây nghiện: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình quản lý, sử dụng thuốc nguy cơ cao: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng phổi: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng bụng: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ đặt nội khí quản: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ đặt catheter tĩnh mạch trung tâm: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật thở oxy qua nội khí quản: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc canuyn mở khí quản: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc ống nội khí quản: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc người bệnh thở máy: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc catheter tĩnh mạch trung tâm: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật ghi điện tim cấp cứu tại giường: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sốc nhiễm trùng – nhiễm trùng huyết: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh phù phổi cấp: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh ngộ độc: 8 giờ, cầm tay chỉ việc."
+      ],
+      "en": [
+       "Quy trình tiếp nhận và xử trí người bệnh tại khoa: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu ngưng hô hấp tuần hoàn: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu sốc phản vệ: 8 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 16 giờ, cầm tay chỉ việc.",
+       "Tư vấn giáo dục sức khoẻ: dinh dưỡng, vệ sinh, sử dụng thuốc: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Báo cáo sự cố y khoa: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình sử dụng thuốc an thần, gây nghiện: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình quản lý, sử dụng thuốc nguy cơ cao: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng phổi: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng bụng: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ đặt nội khí quản: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ đặt catheter tĩnh mạch trung tâm: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật thở oxy qua nội khí quản: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc canuyn mở khí quản: 4 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc ống nội khí quản: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc người bệnh thở máy: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc catheter tĩnh mạch trung tâm: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật ghi điện tim cấp cứu tại giường: 8 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sốc nhiễm trùng – nhiễm trùng huyết: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh phù phổi cấp: 8 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh ngộ độc: 8 giờ, cầm tay chỉ việc."
+      ]
+     }
+    },
+    {
+     "h": {
+      "vi": "Khoa Cấp cứu – Hồi sức tích cực và Chống độc (khối Y sĩ): 35 nội dung, 576 giờ",
+      "en": "Emergency, Intensive Care and Poison Control (assistant physicians): 35 topics, 576 hours"
+     },
+     "p": {
+      "vi": "Người hướng dẫn: CNĐD. Trần Thị Quyến, CNĐD. Nguyễn Kim Huyền.",
+      "en": "Clinical instructors: CNĐD. Trần Thị Quyến, CNĐD. Nguyễn Kim Huyền."
+     },
+     "ordered": true,
+     "items": {
+      "vi": [
+       "Quy trình tiếp nhận và xử trí người bệnh tại khoa: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu ngưng hô hấp tuần hoàn: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu sốc phản vệ: 16 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 16 giờ, cầm tay chỉ việc.",
+       "Tư vấn giáo dục sức khoẻ: dinh dưỡng, vệ sinh, sử dụng thuốc: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Báo cáo sự cố y khoa: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình thực hiện 5S: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình sử dụng thuốc an thần, gây nghiện: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình quản lý, sử dụng thuốc nguy cơ cao: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật truyền máu: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng phổi: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng bụng: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng tim: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ đặt nội khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ đặt catheter tĩnh mạch trung tâm: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật hút đàm đường hô hấp dưới bằng hệ thống hút kín: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật thở oxy qua nội khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc canuyn mở khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc ống nội khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc người bệnh thở máy: 32 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật đo áp lực của bóng chèn ở người bệnh đặt nội khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc catheter tĩnh mạch trung tâm: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật ghi điện tim cấp cứu tại giường: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật truyền dịch bằng máy truyền dịch: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật truyền dịch bằng bơm tiêm điện: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sốc nhiễm trùng – nhiễm trùng huyết: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh phù phổi cấp: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh ngộ độc: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh xuất huyết não: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh nhồi máu cơ tim: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh suy hô hấp cấp: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh sốc tim: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh sốc phản vệ: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh rối loạn nhịp tim: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh nhồi máu não: 16 giờ, cầm tay chỉ việc."
+      ],
+      "en": [
+       "Quy trình tiếp nhận và xử trí người bệnh tại khoa: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu ngưng hô hấp tuần hoàn: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình cấp cứu sốc phản vệ: 16 giờ, cầm tay chỉ việc.",
+       "Hướng dẫn hồ sơ bệnh án điện tử: 16 giờ, cầm tay chỉ việc.",
+       "Tư vấn giáo dục sức khoẻ: dinh dưỡng, vệ sinh, sử dụng thuốc: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Báo cáo sự cố y khoa: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình thực hiện 5S: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình sử dụng thuốc an thần, gây nghiện: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình quản lý, sử dụng thuốc nguy cơ cao: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật truyền máu: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng phổi: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng bụng: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ chọc dò dịch màng tim: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ đặt nội khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật phụ bác sĩ đặt catheter tĩnh mạch trung tâm: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật hút đàm đường hô hấp dưới bằng hệ thống hút kín: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật thở oxy qua nội khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc canuyn mở khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc ống nội khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc người bệnh thở máy: 32 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật đo áp lực của bóng chèn ở người bệnh đặt nội khí quản: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật chăm sóc catheter tĩnh mạch trung tâm: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật ghi điện tim cấp cứu tại giường: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật truyền dịch bằng máy truyền dịch: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình kỹ thuật truyền dịch bằng bơm tiêm điện: 16 giờ, bên giường bệnh, ca ngắn.",
+       "Quy trình chăm sóc người bệnh sốc nhiễm trùng – nhiễm trùng huyết: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh phù phổi cấp: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh ngộ độc: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh xuất huyết não: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh nhồi máu cơ tim: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh suy hô hấp cấp: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh sốc tim: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh sốc phản vệ: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh rối loạn nhịp tim: 16 giờ, cầm tay chỉ việc.",
+       "Quy trình chăm sóc người bệnh nhồi máu não: 16 giờ, cầm tay chỉ việc."
       ]
      }
     },
@@ -8716,6 +9229,2236 @@ window.PULSE_DATA = {
      "img": "img/gdsk/poster-an-toan-nguoi-benh.jpg",
      "caption": "Poster An toàn người bệnh"
     }
+   },
+   {
+    "group": "man",
+    "title": "Sa sút trí tuệ ở người cao tuổi: nhận biết sớm",
+    "points": [
+     "Hay quên việc vừa xảy ra, hỏi lặp lại hoặc lạc ở nơi quen thuộc là dấu hiệu cần chú ý.",
+     "Ghi ví dụ và thời điểm.",
+     "Lú lẫn đột ngột, méo miệng, nói khó hoặc yếu tay chân cần được cấp cứu ngay."
+    ],
+    "slug": "sa-sut-tri-tue-o-nguoi-cao-tuoi-nhan-biet-som",
+    "khoa": "Lão khoa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK01.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A2 (Lão khoa).",
+     "heading": "Nhận biết thay đổi trong sinh hoạt",
+     "remember": [
+      "Hay quên việc vừa xảy ra, hỏi lặp lại hoặc lạc ở nơi quen thuộc là dấu hiệu cần chú ý.",
+      "Ghi ví dụ và thời điểm.",
+      "Lú lẫn đột ngột, méo miệng, nói khó hoặc yếu tay chân cần được cấp cứu ngay."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nhận biết",
+       "blocks": [
+        {
+         "p": "Hay quên việc vừa xảy ra, hỏi lặp lại hoặc lạc ở nơi quen thuộc là dấu hiệu cần chú ý."
+        }
+       ]
+      },
+      {
+       "h": "Ghi lại thay đổi",
+       "blocks": [
+        {
+         "p": "Ghi ví dụ và thời điểm. Nhờ người thân đi cùng khi khám để bổ sung thông tin."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Việc quên có cản trở uống thuốc, quản lý tiền hoặc sinh hoạt hằng ngày không?"
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "CDC. Sa sút trí tuệ ở người cao tuổi: nhận biết sớm.",
+       "url": "https://www.cdc.gov/",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Lão khoa · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi cần đi khám ngay",
+      "blocks": [
+       {
+        "p": "Lú lẫn đột ngột, méo miệng, nói khó hoặc yếu tay chân cần được cấp cứu ngay. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "heart",
+    "poster": {
+     "img": "img/gdsk/poster-sa-sut-tri-tue-o-nguoi-cao-tuoi-nhan-biet-som.jpg",
+     "caption": "Poster Sa sút trí tuệ ở người cao tuổi: nhận biết sớm"
+    }
+   },
+   {
+    "group": "man",
+    "title": "Loãng xương: phòng gãy xương",
+    "points": [
+     "Hỏi bác sĩ về đo mật độ xương nếu lớn tuổi, từng gãy xương do va chạm nhẹ hoặc có yếu tố nguy cơ.",
+     "Tập chịu sức nặng và giữ thăng bằng phù hợp.",
+     "Đau hông nhiều, không đứng được hoặc nghi gãy xương: đi khám ngay và hạn chế di chuyển vùng đau."
+    ],
+    "slug": "loang-xuong-phong-gay-xuong",
+    "khoa": "Lão khoa; Chẩn đoán hình ảnh",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK02.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A2, B7 (Lão khoa; Chẩn đoán hình ảnh).",
+     "heading": "Bảo vệ xương và giảm nguy cơ té ngã",
+     "remember": [
+      "Hỏi bác sĩ về đo mật độ xương nếu lớn tuổi, từng gãy xương do va chạm nhẹ hoặc có yếu tố nguy cơ.",
+      "Tập chịu sức nặng và giữ thăng bằng phù hợp.",
+      "Đau hông nhiều, không đứng được hoặc nghi gãy xương: đi khám ngay và hạn chế di chuyển vùng đau."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Đánh giá nguy cơ",
+       "blocks": [
+        {
+         "p": "Hỏi bác sĩ về đo mật độ xương nếu lớn tuổi, từng gãy xương do va chạm nhẹ hoặc có yếu tố nguy cơ."
+        }
+       ]
+      },
+      {
+       "h": "Giữ xương chắc khỏe",
+       "blocks": [
+        {
+         "p": "Tập chịu sức nặng và giữ thăng bằng phù hợp. Trao đổi về lượng canxi và vitamin D cần thiết."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Lối đi có đủ sáng, có thảm trơn hoặc vật cản dễ làm vấp không?"
+        }
+       ]
+      },
+      {
+       "h": "Sau khi ngã",
+       "blocks": [
+        {
+         "p": "Đau hông nhiều, không đứng được hoặc nghi gãy xương: đi khám ngay và hạn chế di chuyển vùng đau."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NIAMS. Loãng xương: phòng gãy xương.",
+       "url": "https://niams.nih.gov/",
+       "org": "NIAMS"
+      }
+     ],
+     "unit": "Lão khoa; Chẩn đoán hình ảnh · Phòng Điều dưỡng"
+    },
+    "icon": "walk",
+    "poster": {
+     "img": "img/gdsk/poster-loang-xuong-phong-gay-xuong.jpg",
+     "caption": "Poster Loãng xương: phòng gãy xương"
+    }
+   },
+   {
+    "group": "man",
+    "title": "Bệnh tuyến giáp: bướu cổ, cường giáp, suy giáp",
+    "points": [
+     "Cổ to hoặc có khối ở trước cổ có thể liên quan đến tuyến giáp.",
+     "Hồi hộp, sụt cân hoặc mệt, sợ lạnh, tăng cân có thể gặp trong bệnh tuyến giáp.",
+     "Khó thở do vùng cổ chèn ép hoặc cảm giác nghẹt thở cần được đánh giá cấp cứu."
+    ],
+    "slug": "benh-tuyen-giap-buou-co-cuong-giap-suy-giap",
+    "khoa": "Nội tiết",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK03.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A3, A5 (Nội tiết).",
+     "heading": "Dấu hiệu ở cổ và thay đổi toàn thân",
+     "remember": [
+      "Cổ to hoặc có khối ở trước cổ có thể liên quan đến tuyến giáp.",
+      "Hồi hộp, sụt cân hoặc mệt, sợ lạnh, tăng cân có thể gặp trong bệnh tuyến giáp.",
+      "Khó thở do vùng cổ chèn ép hoặc cảm giác nghẹt thở cần được đánh giá cấp cứu."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Quan sát vùng cổ",
+       "blocks": [
+        {
+         "p": "Cổ to hoặc có khối ở trước cổ có thể liên quan đến tuyến giáp. Hãy đặt lịch khám để được đánh giá."
+        }
+       ]
+      },
+      {
+       "h": "Theo dõi triệu chứng",
+       "blocks": [
+        {
+         "p": "Hồi hộp, sụt cân hoặc mệt, sợ lạnh, tăng cân có thể gặp trong bệnh tuyến giáp."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Triệu chứng bắt đầu khi nào? Mang theo kết quả xét nghiệm và danh sách thuốc đang dùng."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NIDDK. Bệnh tuyến giáp: bướu cổ, cường giáp, suy giáp.",
+       "url": "https://niddk.nih.gov/",
+       "org": "NIDDK"
+      }
+     ],
+     "unit": "Nội tiết · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi cần đi khám ngay",
+      "blocks": [
+       {
+        "p": "Khó thở do vùng cổ chèn ép hoặc cảm giác nghẹt thở cần được đánh giá cấp cứu. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "pulse",
+    "poster": {
+     "img": "img/gdsk/poster-benh-tuyen-giap-buou-co-cuong-giap-suy-giap.jpg",
+     "caption": "Poster Bệnh tuyến giáp: bướu cổ, cường giáp, suy giáp"
+    }
+   },
+   {
+    "group": "man",
+    "title": "Hạ đường huyết: nhận biết và xử trí",
+    "points": [
+     "Run, vã mồ hôi, đói, hồi hộp hoặc lú lẫn có thể là dấu hiệu hạ đường huyết.",
+     "Với người lớn còn nuốt an toàn và đường huyết dưới 70 mg/dL, dùng 15 g đường hấp thu nhanh.",
+     "Gọi cấp cứu."
+    ],
+    "slug": "ha-duong-huyet-nhan-biet-va-xu-tri",
+    "khoa": "Nội tiết",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK04.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A3, A5 (Nội tiết).",
+     "heading": "Biết cách xử trí khi đường huyết xuống thấp",
+     "remember": [
+      "Run, vã mồ hôi, đói, hồi hộp hoặc lú lẫn có thể là dấu hiệu hạ đường huyết.",
+      "Với người lớn còn nuốt an toàn và đường huyết dưới 70 mg/dL, dùng 15 g đường hấp thu nhanh.",
+      "Gọi cấp cứu."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nhận biết",
+       "blocks": [
+        {
+         "p": "Run, vã mồ hôi, đói, hồi hộp hoặc lú lẫn có thể là dấu hiệu hạ đường huyết. Đo đường huyết nếu có máy."
+        }
+       ]
+      },
+      {
+       "h": "Xử trí khi còn tỉnh",
+       "blocks": [
+        {
+         "p": "Với người lớn còn nuốt an toàn và đường huyết dưới 70 mg/dL, dùng 15 g đường hấp thu nhanh."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Đo lại sau 15 phút. Nếu vẫn dưới 70 mg/dL, lặp lại. Hỏi bác sĩ kế hoạch riêng cho trẻ em."
+        }
+       ]
+      },
+      {
+       "h": "Nếu lơ mơ hoặc bất tỉnh",
+       "blocks": [
+        {
+         "p": "Gọi cấp cứu. Không cho ăn uống. Dùng glucagon nếu có sẵn và đã được hướng dẫn."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "CDC. Hạ đường huyết: nhận biết và xử trí.",
+       "url": "https://www.cdc.gov/",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Nội tiết · Phòng Điều dưỡng"
+    },
+    "icon": "drop",
+    "poster": {
+     "img": "img/gdsk/poster-ha-duong-huyet-nhan-biet-va-xu-tri.jpg",
+     "caption": "Poster Hạ đường huyết: nhận biết và xử trí"
+    }
+   },
+   {
+    "group": "man",
+    "title": "Suy tim: theo dõi tại nhà",
+    "points": [
+     "Cân vào cùng thời điểm mỗi sáng.",
+     "Dùng thuốc đúng toa.",
+     "Khó thở dữ dội lúc nghỉ, đau ngực hoặc ngất cần được cấp cứu ngay."
+    ],
+    "slug": "suy-tim-theo-doi-tai-nha",
+    "khoa": "Tim mạch",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK05.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A6 (Tim mạch).",
+     "heading": "Cân đều đặn và theo dõi khó thở",
+     "remember": [
+      "Cân vào cùng thời điểm mỗi sáng.",
+      "Dùng thuốc đúng toa.",
+      "Khó thở dữ dội lúc nghỉ, đau ngực hoặc ngất cần được cấp cứu ngay."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Theo dõi hằng ngày",
+       "blocks": [
+        {
+         "p": "Cân vào cùng thời điểm mỗi sáng. Ghi cân nặng, mức độ khó thở và tình trạng phù chân."
+        }
+       ]
+      },
+      {
+       "h": "Thực hiện kế hoạch điều trị",
+       "blocks": [
+        {
+         "p": "Dùng thuốc đúng toa. Hỏi bác sĩ về giới hạn muối, dịch và mức tăng cân cần báo."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Bạn có khó thở hơn, phải kê thêm gối hoặc phù chân tăng trong vài ngày qua không?"
+        }
+       ]
+      },
+      {
+       "h": "Khi cần cấp cứu",
+       "blocks": [
+        {
+         "p": "Khó thở dữ dội lúc nghỉ, đau ngực hoặc ngất cần được cấp cứu ngay."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "American Heart Association. Suy tim: theo dõi tại nhà.",
+       "url": "https://www.heart.org/",
+       "org": "American Heart Association"
+      }
+     ],
+     "unit": "Tim mạch · Phòng Điều dưỡng"
+    },
+    "icon": "heart",
+    "poster": {
+     "img": "img/gdsk/poster-suy-tim-theo-doi-tai-nha.jpg",
+     "caption": "Poster Suy tim: theo dõi tại nhà"
+    }
+   },
+   {
+    "group": "man",
+    "title": "Rối loạn mỡ máu",
+    "points": [
+     "Mỡ máu cao thường không gây triệu chứng.",
+     "Ưu tiên rau, đậu, ngũ cốc nguyên hạt.",
+     "Mang kết quả xét nghiệm đến buồng khám để đánh giá nguy cơ tim mạch và trao đổi về điều trị."
+    ],
+    "slug": "roi-loan-mo-mau",
+    "khoa": "Tim mạch; Tăng huyết áp",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK06.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A6, A4 (Tim mạch; Tăng huyết áp).",
+     "heading": "Xét nghiệm để biết mức mỡ máu",
+     "remember": [
+      "Mỡ máu cao thường không gây triệu chứng.",
+      "Ưu tiên rau, đậu, ngũ cốc nguyên hạt.",
+      "Mang kết quả xét nghiệm đến buồng khám để đánh giá nguy cơ tim mạch và trao đổi về điều trị."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Hiểu kết quả",
+       "blocks": [
+        {
+         "p": "Mỡ máu cao thường không gây triệu chứng. Xét nghiệm giúp đánh giá LDL, HDL và triglycerid."
+        }
+       ]
+      },
+      {
+       "h": "Điều chỉnh thói quen",
+       "blocks": [
+        {
+         "p": "Ưu tiên rau, đậu, ngũ cốc nguyên hạt. Hạn chế chất béo bão hòa và vận động phù hợp."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Bạn có biết mức LDL mục tiêu và lịch xét nghiệm lại của mình không?"
+        }
+       ]
+      },
+      {
+       "h": "Việc cần làm",
+       "blocks": [
+        {
+         "p": "Mang kết quả xét nghiệm đến buồng khám để đánh giá nguy cơ tim mạch và trao đổi về điều trị."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "CDC. Rối loạn mỡ máu.",
+       "url": "https://www.cdc.gov/",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Tim mạch; Tăng huyết áp · Phòng Điều dưỡng"
+    },
+    "icon": "drop",
+    "poster": {
+     "img": "img/gdsk/poster-roi-loan-mo-mau.jpg",
+     "caption": "Poster Rối loạn mỡ máu"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Tầm soát sớm ung thư vú",
+    "points": [
+     "Chụp nhũ ảnh có thể phát hiện ung thư vú sớm.",
+     "Cho bác sĩ biết nếu người thân từng mắc ung thư vú hoặc buồng trứng, nhất là khi còn trẻ.",
+     "Nếu sờ thấy khối, thấy da lõm hoặc núm vú tiết dịch máu, đặt lịch khám sớm."
+    ],
+    "slug": "tam-soat-som-ung-thu-vu",
+    "khoa": "Ngoại ung bướu",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK07.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A7 (Ngoại ung bướu).",
+     "heading": "Trao đổi về lịch chụp nhũ ảnh",
+     "remember": [
+      "Chụp nhũ ảnh có thể phát hiện ung thư vú sớm.",
+      "Cho bác sĩ biết nếu người thân từng mắc ung thư vú hoặc buồng trứng, nhất là khi còn trẻ.",
+      "Nếu sờ thấy khối, thấy da lõm hoặc núm vú tiết dịch máu, đặt lịch khám sớm."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Tầm soát khi chưa có dấu hiệu",
+       "blocks": [
+        {
+         "p": "Chụp nhũ ảnh có thể phát hiện ung thư vú sớm. Lịch chụp tùy tuổi, nguy cơ và hướng dẫn của bác sĩ."
+        }
+       ]
+      },
+      {
+       "h": "Báo tiền sử gia đình",
+       "blocks": [
+        {
+         "p": "Cho bác sĩ biết nếu người thân từng mắc ung thư vú hoặc buồng trứng, nhất là khi còn trẻ."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Bạn có nhớ lần chụp gần nhất và còn giữ phim, kết quả cũ không?"
+        }
+       ]
+      },
+      {
+       "h": "Khi có thay đổi ở vú",
+       "blocks": [
+        {
+         "p": "Nếu sờ thấy khối, thấy da lõm hoặc núm vú tiết dịch máu, đặt lịch khám sớm."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "CDC. Tầm soát sớm ung thư vú.",
+       "url": "https://www.cdc.gov/",
+       "org": "CDC"
+      },
+      {
+       "t": "CDC. Tầm soát sớm ung thư vú.",
+       "url": "https://www.cdc.gov/",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Ngoại ung bướu · Phòng Điều dưỡng"
+    },
+    "icon": "shield",
+    "poster": {
+     "img": "img/gdsk/poster-tam-soat-som-ung-thu-vu.jpg",
+     "caption": "Poster Tầm soát sớm ung thư vú"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Tầm soát sớm ung thư đại trực tràng",
+    "points": [
+     "Xét nghiệm phân và nội soi đại tràng là các lựa chọn.",
+     "Cho bác sĩ biết nếu từng có polyp, bệnh viêm ruột hoặc người thân mắc ung thư đại trực tràng.",
+     "Đi khám sớm nếu đi ngoài ra máu, thay đổi thói quen đại tiện kéo dài hoặc sụt cân không rõ lý do."
+    ],
+    "slug": "tam-soat-som-ung-thu-dai-truc-trang",
+    "khoa": "Ngoại ung bướu; Nội soi tiêu hóa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK08.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A7, B48 (Ngoại ung bướu; Nội soi tiêu hóa).",
+     "heading": "Hỏi về xét nghiệm phân và nội soi",
+     "remember": [
+      "Xét nghiệm phân và nội soi đại tràng là các lựa chọn.",
+      "Cho bác sĩ biết nếu từng có polyp, bệnh viêm ruột hoặc người thân mắc ung thư đại trực tràng.",
+      "Đi khám sớm nếu đi ngoài ra máu, thay đổi thói quen đại tiện kéo dài hoặc sụt cân không rõ lý do."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Tầm soát khi chưa có triệu chứng",
+       "blocks": [
+        {
+         "p": "Xét nghiệm phân và nội soi đại tràng là các lựa chọn. Hỏi bác sĩ phương pháp phù hợp với nguy cơ của bạn."
+        }
+       ]
+      },
+      {
+       "h": "Báo yếu tố nguy cơ",
+       "blocks": [
+        {
+         "p": "Cho bác sĩ biết nếu từng có polyp, bệnh viêm ruột hoặc người thân mắc ung thư đại trực tràng."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Bạn đã có lịch tầm soát hoặc lịch nội soi theo dõi sau xét nghiệm phân bất thường chưa?"
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "National Cancer Institute. Tầm soát sớm ung thư đại trực tràng.",
+       "url": "https://www.cancer.gov/",
+       "org": "National Cancer Institute"
+      }
+     ],
+     "unit": "Ngoại ung bướu; Nội soi tiêu hóa · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi có dấu hiệu bất thường",
+      "blocks": [
+       {
+        "p": "Đi khám sớm nếu đi ngoài ra máu, thay đổi thói quen đại tiện kéo dài hoặc sụt cân không rõ lý do. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "scan",
+    "poster": {
+     "img": "img/gdsk/poster-tam-soat-som-ung-thu-dai-truc-trang.jpg",
+     "caption": "Poster Tầm soát sớm ung thư đại trực tràng"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Phì đại tuyến tiền liệt",
+    "points": [
+     "Tia tiểu yếu, khó bắt đầu tiểu, tiểu đêm hoặc cảm giác tiểu chưa hết là các dấu hiệu thường gặp.",
+     "Ghi số lần tiểu, thời điểm thức dậy ban đêm và các thuốc đang dùng để trao đổi với bác sĩ.",
+     "Không tiểu được, nhất là khi căng đau bụng dưới, cần được khám ngay."
+    ],
+    "slug": "phi-dai-tuyen-tien-liet",
+    "khoa": "Ngoại niệu – nam khoa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK09.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A8 (Ngoại niệu – nam khoa).",
+     "heading": "Tiểu khó kéo dài nên được đánh giá",
+     "remember": [
+      "Tia tiểu yếu, khó bắt đầu tiểu, tiểu đêm hoặc cảm giác tiểu chưa hết là các dấu hiệu thường gặp.",
+      "Ghi số lần tiểu, thời điểm thức dậy ban đêm và các thuốc đang dùng để trao đổi với bác sĩ.",
+      "Không tiểu được, nhất là khi căng đau bụng dưới, cần được khám ngay."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nhận biết",
+       "blocks": [
+        {
+         "p": "Tia tiểu yếu, khó bắt đầu tiểu, tiểu đêm hoặc cảm giác tiểu chưa hết là các dấu hiệu thường gặp."
+        }
+       ]
+      },
+      {
+       "h": "Ghi nhật ký đi tiểu",
+       "blocks": [
+        {
+         "p": "Ghi số lần tiểu, thời điểm thức dậy ban đêm và các thuốc đang dùng để trao đổi với bác sĩ."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Tiểu khó có làm gián đoạn giấc ngủ hoặc sinh hoạt của bạn không?"
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NIDDK. Phì đại tuyến tiền liệt.",
+       "url": "https://niddk.nih.gov/",
+       "org": "NIDDK"
+      }
+     ],
+     "unit": "Ngoại niệu – nam khoa · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi cần đi khám ngay",
+      "blocks": [
+       {
+        "p": "Không tiểu được, nhất là khi căng đau bụng dưới, cần được khám ngay. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "steth",
+    "poster": {
+     "img": "img/gdsk/poster-phi-dai-tuyen-tien-liet.jpg",
+     "caption": "Poster Phì đại tuyến tiền liệt"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Viêm ruột thừa: dấu hiệu cần đến viện ngay",
+    "points": [
+     "Đau có thể bắt đầu quanh rốn rồi chuyển xuống bụng dưới bên phải và tăng khi cử động.",
+     "Có thể chán ăn, buồn nôn, nôn hoặc sốt.",
+     "Nếu nghi viêm ruột thừa, đến cơ sở y tế ngay."
+    ],
+    "slug": "viem-ruot-thua-dau-hieu-can-den-vien-ngay",
+    "khoa": "Ngoại tổng quát",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK10.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A9 (Ngoại tổng quát).",
+     "heading": "Đau bụng tăng dần cần đi viện",
+     "remember": [
+      "Đau có thể bắt đầu quanh rốn rồi chuyển xuống bụng dưới bên phải và tăng khi cử động.",
+      "Có thể chán ăn, buồn nôn, nôn hoặc sốt.",
+      "Nếu nghi viêm ruột thừa, đến cơ sở y tế ngay."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nhận biết",
+       "blocks": [
+        {
+         "p": "Đau có thể bắt đầu quanh rốn rồi chuyển xuống bụng dưới bên phải và tăng khi cử động."
+        }
+       ]
+      },
+      {
+       "h": "Dấu hiệu kèm theo",
+       "blocks": [
+        {
+         "p": "Có thể chán ăn, buồn nôn, nôn hoặc sốt. Trẻ nhỏ và người cao tuổi có thể biểu hiện khác."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Ghi thời điểm bắt đầu đau, vị trí đau, sốt và số lần nôn để báo nhân viên y tế."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NIDDK. Viêm ruột thừa: dấu hiệu cần đến viện ngay.",
+       "url": "https://niddk.nih.gov/",
+       "org": "NIDDK"
+      }
+     ],
+     "unit": "Ngoại tổng quát · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Đi viện ngay",
+      "blocks": [
+       {
+        "p": "Nếu nghi viêm ruột thừa, đến cơ sở y tế ngay. Tránh tự dùng thuốc nhuận tràng hoặc trì hoãn ở nhà. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "alert",
+    "poster": {
+     "img": "img/gdsk/poster-viem-ruot-thua-dau-hieu-can-den-vien-ngay.jpg",
+     "caption": "Poster Viêm ruột thừa: dấu hiệu cần đến viện ngay"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Thoát vị bẹn",
+    "points": [
+     "Khối phồng ở bẹn có thể rõ hơn khi đứng, ho hoặc gắng sức và nhỏ đi khi nằm.",
+     "Bác sĩ sẽ đánh giá nguyên nhân và tư vấn theo dõi hoặc điều trị phù hợp.",
+     "Khối bẹn đau tăng, không xẹp, đỏ tím hoặc kèm nôn: đi cấp cứu ngay."
+    ],
+    "slug": "thoat-vi-ben",
+    "khoa": "Ngoại tổng quát",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK11.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A9 (Ngoại tổng quát).",
+     "heading": "Khối phồng vùng bẹn cần được khám",
+     "remember": [
+      "Khối phồng ở bẹn có thể rõ hơn khi đứng, ho hoặc gắng sức và nhỏ đi khi nằm.",
+      "Bác sĩ sẽ đánh giá nguyên nhân và tư vấn theo dõi hoặc điều trị phù hợp.",
+      "Khối bẹn đau tăng, không xẹp, đỏ tím hoặc kèm nôn: đi cấp cứu ngay."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Quan sát",
+       "blocks": [
+        {
+         "p": "Khối phồng ở bẹn có thể rõ hơn khi đứng, ho hoặc gắng sức và nhỏ đi khi nằm."
+        }
+       ]
+      },
+      {
+       "h": "Đặt lịch khám",
+       "blocks": [
+        {
+         "p": "Bác sĩ sẽ đánh giá nguyên nhân và tư vấn theo dõi hoặc điều trị phù hợp."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Khối xuất hiện khi nào? Có đau hoặc to dần không? Không cố ấn khối đang đau."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NIDDK. Thoát vị bẹn.",
+       "url": "https://niddk.nih.gov/",
+       "org": "NIDDK"
+      }
+     ],
+     "unit": "Ngoại tổng quát · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Dấu hiệu nguy hiểm",
+      "blocks": [
+       {
+        "p": "Khối bẹn đau tăng, không xẹp, đỏ tím hoặc kèm nôn: đi cấp cứu ngay. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "steth",
+    "poster": {
+     "img": "img/gdsk/poster-thoat-vi-ben.jpg",
+     "caption": "Poster Thoát vị bẹn"
+    }
+   },
+   {
+    "group": "an",
+    "title": "Sơ cứu gãy xương, bong gân",
+    "points": [
+     "Giữ yên vùng đau ở tư thế hiện có.",
+     "Cho khớp nghỉ.",
+     "Gãy hở, biến dạng rõ, đau nhiều, tê hoặc chi lạnh cần được khám cấp cứu."
+    ],
+    "slug": "so-cuu-gay-xuong-bong-gan",
+    "khoa": "Ngoại chấn thương",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK12.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A11 (Ngoại chấn thương).",
+     "heading": "Giữ yên vùng chấn thương",
+     "remember": [
+      "Giữ yên vùng đau ở tư thế hiện có.",
+      "Cho khớp nghỉ.",
+      "Gãy hở, biến dạng rõ, đau nhiều, tê hoặc chi lạnh cần được khám cấp cứu."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nghi gãy xương",
+       "blocks": [
+        {
+         "p": "Giữ yên vùng đau ở tư thế hiện có. Không kéo hoặc nắn chỉnh. Che vết thương hở bằng gạc sạch."
+        }
+       ]
+      },
+      {
+       "h": "Nếu nghi bong gân nhẹ",
+       "blocks": [
+        {
+         "p": "Cho khớp nghỉ. Chườm lạnh qua khăn 15–20 phút mỗi lần; tránh đặt đá trực tiếp lên da."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Có biến dạng, tê, da tái lạnh hoặc không thể chịu lực không?"
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Sơ cứu gãy xương, bong gân.",
+       "url": "https://www.nhs.uk/",
+       "org": "NHS"
+      },
+      {
+       "t": "NHS. Sơ cứu gãy xương, bong gân.",
+       "url": "https://www.nhs.uk/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Ngoại chấn thương · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi cần đi khám ngay",
+      "blocks": [
+       {
+        "p": "Gãy hở, biến dạng rõ, đau nhiều, tê hoặc chi lạnh cần được khám cấp cứu. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "bandage",
+    "poster": {
+     "img": "img/gdsk/poster-so-cuu-gay-xuong-bong-gan.jpg",
+     "caption": "Poster Sơ cứu gãy xương, bong gân"
+    }
+   },
+   {
+    "group": "an",
+    "title": "Chăm sóc vết thương nhỏ và ngày cắt chỉ",
+    "points": [
+     "Rửa tay, ép bằng gạc sạch để cầm máu.",
+     "Thay băng theo hướng dẫn.",
+     "Máu vẫn chảy dù ép trực tiếp, vết rách sâu hoặc có dị vật mắc trong vết thương."
+    ],
+    "slug": "cham-soc-vet-thuong-nho-va-ngay-cat-chi",
+    "khoa": "Buồng tiểu phẫu",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK13.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A13 (Buồng tiểu phẫu).",
+     "heading": "Giữ vết thương sạch và nhớ lịch hẹn",
+     "remember": [
+      "Rửa tay, ép bằng gạc sạch để cầm máu.",
+      "Thay băng theo hướng dẫn.",
+      "Máu vẫn chảy dù ép trực tiếp, vết rách sâu hoặc có dị vật mắc trong vết thương."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Sơ cứu vết nhỏ",
+       "blocks": [
+        {
+         "p": "Rửa tay, ép bằng gạc sạch để cầm máu. Rửa vết thương bằng nước sạch và che bằng băng sạch."
+        }
+       ]
+      },
+      {
+       "h": "Theo dõi hằng ngày",
+       "blocks": [
+        {
+         "p": "Thay băng theo hướng dẫn. Đi khám nếu đỏ lan, sưng đau tăng, có mủ hoặc sốt."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Xem lịch cắt chỉ trên giấy hẹn. Hỏi cơ sở y tế về tiêm phòng uốn ván nếu cần."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Chăm sóc vết thương nhỏ và ngày cắt chỉ.",
+       "url": "https://www.nhs.uk/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Buồng tiểu phẫu · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi cần đi khám ngay",
+      "blocks": [
+       {
+        "p": "Máu vẫn chảy dù ép trực tiếp, vết rách sâu hoặc có dị vật mắc trong vết thương. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "bandage",
+    "poster": {
+     "img": "img/gdsk/poster-cham-soc-vet-thuong-nho-va-ngay-cat-chi.jpg",
+     "caption": "Poster Chăm sóc vết thương nhỏ và ngày cắt chỉ"
+    }
+   },
+   {
+    "group": "tn",
+    "title": "Viêm phổi",
+    "points": [
+     "Ho, sốt, đau ngực khi thở và khó thở có thể gặp trong viêm phổi.",
+     "Đi khám sớm nếu ho sốt kèm khó thở hoặc nếu người bệnh lớn tuổi, có bệnh nền hay là trẻ nhỏ.",
+     "Khó thở rõ, tím môi, lơ mơ hoặc lú lẫn mới xuất hiện cần cấp cứu ngay."
+    ],
+    "slug": "viem-phoi",
+    "khoa": "Hô hấp",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK14.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A102 (Hô hấp).",
+     "heading": "Nhận biết khó thở và dấu hiệu nặng",
+     "remember": [
+      "Ho, sốt, đau ngực khi thở và khó thở có thể gặp trong viêm phổi.",
+      "Đi khám sớm nếu ho sốt kèm khó thở hoặc nếu người bệnh lớn tuổi, có bệnh nền hay là trẻ nhỏ.",
+      "Khó thở rõ, tím môi, lơ mơ hoặc lú lẫn mới xuất hiện cần cấp cứu ngay."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nhận biết",
+       "blocks": [
+        {
+         "p": "Ho, sốt, đau ngực khi thở và khó thở có thể gặp trong viêm phổi."
+        }
+       ]
+      },
+      {
+       "h": "Đi khám khi có triệu chứng",
+       "blocks": [
+        {
+         "p": "Đi khám sớm nếu ho sốt kèm khó thở hoặc nếu người bệnh lớn tuổi, có bệnh nền hay là trẻ nhỏ."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Hơi thở có nhanh hoặc khó hơn bình thường? Người bệnh có uống được và tỉnh táo không?"
+        }
+       ]
+      },
+      {
+       "h": "Khi cần cấp cứu",
+       "blocks": [
+        {
+         "p": "Khó thở rõ, tím môi, lơ mơ hoặc lú lẫn mới xuất hiện cần cấp cứu ngay."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "CDC. Viêm phổi.",
+       "url": "https://www.cdc.gov/",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Hô hấp · Phòng Điều dưỡng"
+    },
+    "icon": "wind",
+    "poster": {
+     "img": "img/gdsk/poster-viem-phoi.jpg",
+     "caption": "Poster Viêm phổi"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Trầm cảm, lo âu: nhận biết và tìm hỗ trợ",
+    "points": [
+     "Buồn bã, mất hứng thú hoặc lo lắng khó kiểm soát có thể ảnh hưởng đến giấc ngủ và công việc.",
+     "Trao đổi với người tin cậy hoặc nhân viên y tế khi triệu chứng kéo dài hay ảnh hưởng sinh hoạt.",
+     "Nếu có ý nghĩ tự làm hại mình, báo ngay người tin cậy và tìm hỗ trợ cấp cứu."
+    ],
+    "slug": "tram-cam-lo-au-nhan-biet-va-tim-ho-tro",
+    "khoa": "Sức khỏe tâm thần",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK15.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A104 (Sức khỏe tâm thần).",
+     "heading": "Nhận biết thay đổi và tìm người hỗ trợ",
+     "remember": [
+      "Buồn bã, mất hứng thú hoặc lo lắng khó kiểm soát có thể ảnh hưởng đến giấc ngủ và công việc.",
+      "Trao đổi với người tin cậy hoặc nhân viên y tế khi triệu chứng kéo dài hay ảnh hưởng sinh hoạt.",
+      "Nếu có ý nghĩ tự làm hại mình, báo ngay người tin cậy và tìm hỗ trợ cấp cứu."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nhận biết",
+       "blocks": [
+        {
+         "p": "Buồn bã, mất hứng thú hoặc lo lắng khó kiểm soát có thể ảnh hưởng đến giấc ngủ và công việc."
+        }
+       ]
+      },
+      {
+       "h": "Chủ động chia sẻ",
+       "blocks": [
+        {
+         "p": "Trao đổi với người tin cậy hoặc nhân viên y tế khi triệu chứng kéo dài hay ảnh hưởng sinh hoạt."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Gần đây bạn có tránh gặp gỡ, ngủ kém hoặc khó hoàn thành việc thường ngày không?"
+        }
+       ]
+      },
+      {
+       "h": "Khi cần hỗ trợ khẩn",
+       "blocks": [
+        {
+         "p": "Nếu có ý nghĩ tự làm hại mình, báo ngay người tin cậy và tìm hỗ trợ cấp cứu."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NIMH. Trầm cảm, lo âu: nhận biết và tìm hỗ trợ.",
+       "url": "https://nimh.nih.gov/",
+       "org": "NIMH"
+      }
+     ],
+     "unit": "Sức khỏe tâm thần · Phòng Điều dưỡng"
+    },
+    "icon": "heart",
+    "poster": {
+     "img": "img/gdsk/poster-tram-cam-lo-au-nhan-biet-va-tim-ho-tro.jpg",
+     "caption": "Poster Trầm cảm, lo âu: nhận biết và tìm hỗ trợ"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Mất ngủ: ngủ đủ, ngủ ngon",
+    "points": [
+     "Đi ngủ và thức dậy gần cùng giờ mỗi ngày.",
+     "Hạn chế caffeine về chiều tối và tránh màn hình sát giờ ngủ.",
+     "Khó ngủ kéo dài, ảnh hưởng ban ngày hoặc ngáy to kèm ngưng thở nên được đánh giá."
+    ],
+    "slug": "mat-ngu-ngu-du-ngu-ngon",
+    "khoa": "Sức khỏe tâm thần",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK16.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A104 (Sức khỏe tâm thần).",
+     "heading": "Tạo lịch ngủ đều đặn",
+     "remember": [
+      "Đi ngủ và thức dậy gần cùng giờ mỗi ngày.",
+      "Hạn chế caffeine về chiều tối và tránh màn hình sát giờ ngủ.",
+      "Khó ngủ kéo dài, ảnh hưởng ban ngày hoặc ngáy to kèm ngưng thở nên được đánh giá."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Giữ giờ thức dậy ổn định",
+       "blocks": [
+        {
+         "p": "Đi ngủ và thức dậy gần cùng giờ mỗi ngày. Giữ phòng ngủ yên tĩnh, tối và thoáng."
+        }
+       ]
+      },
+      {
+       "h": "Điều chỉnh buổi tối",
+       "blocks": [
+        {
+         "p": "Hạn chế caffeine về chiều tối và tránh màn hình sát giờ ngủ."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Ghi giờ ngủ, giờ thức, giấc ngủ ngày và mức buồn ngủ ban ngày trong vài ngày."
+        }
+       ]
+      },
+      {
+       "h": "Khi nên đi khám",
+       "blocks": [
+        {
+         "p": "Khó ngủ kéo dài, ảnh hưởng ban ngày hoặc ngáy to kèm ngưng thở nên được đánh giá."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHLBI. Mất ngủ: ngủ đủ, ngủ ngon.",
+       "url": "https://nhlbi.nih.gov/",
+       "org": "NHLBI"
+      }
+     ],
+     "unit": "Sức khỏe tâm thần · Phòng Điều dưỡng"
+    },
+    "icon": "clock",
+    "poster": {
+     "img": "img/gdsk/poster-mat-ngu-ngu-du-ngu-ngon.jpg",
+     "caption": "Poster Mất ngủ: ngủ đủ, ngủ ngon"
+    }
+   },
+   {
+    "group": "me",
+    "title": "Sốt ở trẻ em: xử trí tại nhà",
+    "points": [
+     "Dùng nhiệt kế, ghi giờ đo.",
+     "Cho trẻ uống hoặc bú thường xuyên.",
+     "Trẻ dưới 3 tháng sốt từ 38 °C hoặc trẻ có dấu hiệu nặng cần được khám ngay."
+    ],
+    "slug": "sot-o-tre-em-xu-tri-tai-nha",
+    "khoa": "Nhi",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK17.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A111, A113 (Nhi).",
+     "heading": "Đo nhiệt độ và quan sát tình trạng của trẻ",
+     "remember": [
+      "Dùng nhiệt kế, ghi giờ đo.",
+      "Cho trẻ uống hoặc bú thường xuyên.",
+      "Trẻ dưới 3 tháng sốt từ 38 °C hoặc trẻ có dấu hiệu nặng cần được khám ngay."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Đo và ghi nhiệt độ",
+       "blocks": [
+        {
+         "p": "Dùng nhiệt kế, ghi giờ đo. Theo dõi trẻ bú, uống, đi tiểu, thở và mức độ tỉnh táo."
+        }
+       ]
+      },
+      {
+       "h": "Chăm sóc tại nhà",
+       "blocks": [
+        {
+         "p": "Cho trẻ uống hoặc bú thường xuyên. Nếu dùng thuốc hạ sốt, hỏi về liều theo cân nặng."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Trẻ có khó đánh thức, thở khó, ít tiểu, co giật hoặc phát ban bất thường không?"
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Sốt ở trẻ em: xử trí tại nhà.",
+       "url": "https://www.nhs.uk/",
+       "org": "NHS"
+      }
+     ],
+     "unit": "Nhi · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi cần đi khám ngay",
+      "blocks": [
+       {
+        "p": "Trẻ dưới 3 tháng sốt từ 38 °C hoặc trẻ có dấu hiệu nặng cần được khám ngay. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "thermo",
+    "poster": {
+     "img": "img/gdsk/poster-sot-o-tre-em-xu-tri-tai-nha.jpg",
+     "caption": "Poster Sốt ở trẻ em: xử trí tại nhà"
+    }
+   },
+   {
+    "group": "me",
+    "title": "Tiêu chảy cấp ở trẻ: bù nước bằng ORS",
+    "points": [
+     "Dùng nước sạch và đúng lượng nước ghi trên gói.",
+     "Cho trẻ uống từng thìa hoặc ngụm nhỏ, thường xuyên.",
+     "Trẻ lừ đừ, không uống được, nôn liên tục hoặc đi ngoài có máu cần khám ngay."
+    ],
+    "slug": "tieu-chay-cap-o-tre-bu-nuoc-bang-ors",
+    "khoa": "Nhi",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK18.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A111, A113 (Nhi).",
+     "heading": "Pha ORS đúng lượng nước ghi trên gói",
+     "remember": [
+      "Dùng nước sạch và đúng lượng nước ghi trên gói.",
+      "Cho trẻ uống từng thìa hoặc ngụm nhỏ, thường xuyên.",
+      "Trẻ lừ đừ, không uống được, nôn liên tục hoặc đi ngoài có máu cần khám ngay."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Pha đúng",
+       "blocks": [
+        {
+         "p": "Dùng nước sạch và đúng lượng nước ghi trên gói. Không pha đặc, pha loãng hoặc thêm đường."
+        }
+       ]
+      },
+      {
+       "h": "Cho uống từng ngụm",
+       "blocks": [
+        {
+         "p": "Cho trẻ uống từng thìa hoặc ngụm nhỏ, thường xuyên. Tiếp tục cho bú và ăn phù hợp tuổi."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Trẻ có ít tiểu, khô miệng, mắt trũng, uống kém hoặc lừ đừ không?"
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "WHO. Tiêu chảy cấp ở trẻ: bù nước bằng ORS.",
+       "url": "https://www.who.int/",
+       "org": "WHO"
+      }
+     ],
+     "unit": "Nhi · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi cần đi khám ngay",
+      "blocks": [
+       {
+        "p": "Trẻ lừ đừ, không uống được, nôn liên tục hoặc đi ngoài có máu cần khám ngay. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "drop",
+    "poster": {
+     "img": "img/gdsk/poster-tieu-chay-cap-o-tre-bu-nuoc-bang-ors.jpg",
+     "caption": "Poster Tiêu chảy cấp ở trẻ: bù nước bằng ORS"
+    }
+   },
+   {
+    "group": "man",
+    "title": "Viêm loét dạ dày, trào ngược dạ dày – thực quản",
+    "points": [
+     "Ợ nóng, ợ chua hay gặp trong trào ngược.",
+     "Tránh nằm ngay sau ăn.",
+     "Nôn ra máu, đi ngoài phân đen như hắc ín hoặc choáng cần được cấp cứu."
+    ],
+    "slug": "viem-loet-da-day-trao-nguoc-da-day-thuc-quan",
+    "khoa": "Nội tiêu hóa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK19.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A201 (Nội tiêu hóa).",
+     "heading": "Theo dõi triệu chứng và dùng thuốc đúng toa",
+     "remember": [
+      "Ợ nóng, ợ chua hay gặp trong trào ngược.",
+      "Tránh nằm ngay sau ăn.",
+      "Nôn ra máu, đi ngoài phân đen như hắc ín hoặc choáng cần được cấp cứu."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nhận biết",
+       "blocks": [
+        {
+         "p": "Ợ nóng, ợ chua hay gặp trong trào ngược. Đau vùng trên rốn có thể gặp trong viêm loét."
+        }
+       ]
+      },
+      {
+       "h": "Điều chỉnh thói quen",
+       "blocks": [
+        {
+         "p": "Tránh nằm ngay sau ăn. Hỏi bác sĩ trước khi dùng thuốc giảm đau kháng viêm và dùng thuốc đúng toa."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Bạn có nuốt khó, sụt cân không rõ lý do hoặc triệu chứng kéo dài không? Hãy đi khám."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NIDDK. Viêm loét dạ dày, trào ngược dạ dày – thực quản.",
+       "url": "https://niddk.nih.gov/",
+       "org": "NIDDK"
+      },
+      {
+       "t": "NIDDK. Viêm loét dạ dày, trào ngược dạ dày – thực quản.",
+       "url": "https://niddk.nih.gov/",
+       "org": "NIDDK"
+      }
+     ],
+     "unit": "Nội tiêu hóa · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Dấu hiệu xuất huyết",
+      "blocks": [
+       {
+        "p": "Nôn ra máu, đi ngoài phân đen như hắc ín hoặc choáng cần được cấp cứu. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "pill",
+    "poster": {
+     "img": "img/gdsk/poster-viem-loet-da-day-trao-nguoc-da-day-thuc-quan.jpg",
+     "caption": "Poster Viêm loét dạ dày, trào ngược dạ dày – thực quản"
+    }
+   },
+   {
+    "group": "tn",
+    "title": "Nấm da",
+    "points": [
+     "Nấm da có thể gây mảng ngứa, có vảy và bờ rõ.",
+     "Giữ da sạch, khô.",
+     "Khám nếu tổn thương lan rộng, ở da đầu, móng hoặc không cải thiện."
+    ],
+    "slug": "nam-da",
+    "khoa": "Da liễu",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK20.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A207, A209, A211 (Da liễu).",
+     "heading": "Giữ da khô và dùng thuốc đúng hướng dẫn",
+     "remember": [
+      "Nấm da có thể gây mảng ngứa, có vảy và bờ rõ.",
+      "Giữ da sạch, khô.",
+      "Khám nếu tổn thương lan rộng, ở da đầu, móng hoặc không cải thiện."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nhận biết",
+       "blocks": [
+        {
+         "p": "Nấm da có thể gây mảng ngứa, có vảy và bờ rõ. Biểu hiện thay đổi tùy vùng da."
+        }
+       ]
+      },
+      {
+       "h": "Giảm lây lan",
+       "blocks": [
+        {
+         "p": "Giữ da sạch, khô. Không dùng chung khăn, quần áo hoặc giày dép."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Bạn có dùng kem chứa corticoid khi chưa được chẩn đoán không? Loại kem này có thể làm nấm nặng hơn."
+        }
+       ]
+      },
+      {
+       "h": "Khi nên đi khám",
+       "blocks": [
+        {
+         "p": "Khám nếu tổn thương lan rộng, ở da đầu, móng hoặc không cải thiện."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "CDC. Nấm da.",
+       "url": "https://www.cdc.gov/",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Da liễu · Phòng Điều dưỡng"
+    },
+    "icon": "bug",
+    "poster": {
+     "img": "img/gdsk/poster-nam-da.jpg",
+     "caption": "Poster Nấm da"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Mụn trứng cá",
+    "points": [
+     "Dùng sản phẩm dịu nhẹ.",
+     "Không cạy hoặc nặn mụn.",
+     "Mụn sâu, đau, để sẹo hoặc ảnh hưởng tâm lý nên được bác sĩ da liễu đánh giá."
+    ],
+    "slug": "mun-trung-ca",
+    "khoa": "Da liễu",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK21.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A207, A209, A211 (Da liễu).",
+     "heading": "Chăm sóc nhẹ nhàng và tránh nặn mụn",
+     "remember": [
+      "Dùng sản phẩm dịu nhẹ.",
+      "Không cạy hoặc nặn mụn.",
+      "Mụn sâu, đau, để sẹo hoặc ảnh hưởng tâm lý nên được bác sĩ da liễu đánh giá."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Rửa mặt nhẹ nhàng",
+       "blocks": [
+        {
+         "p": "Dùng sản phẩm dịu nhẹ. Tránh chà xát mạnh hoặc rửa mặt quá nhiều."
+        }
+       ]
+      },
+      {
+       "h": "Hạn chế kích ứng",
+       "blocks": [
+        {
+         "p": "Không cạy hoặc nặn mụn. Ưu tiên sản phẩm ghi không gây bít tắc lỗ chân lông."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Bạn có đang dùng nhiều sản phẩm trị mụn cùng lúc khiến da đỏ, rát hoặc bong tróc không?"
+        }
+       ]
+      },
+      {
+       "h": "Khi nên đi khám",
+       "blocks": [
+        {
+         "p": "Mụn sâu, đau, để sẹo hoặc ảnh hưởng tâm lý nên được bác sĩ da liễu đánh giá."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "American Academy of Dermatology. Mụn trứng cá.",
+       "url": "https://www.aad.org/",
+       "org": "American Academy of Dermatology"
+      }
+     ],
+     "unit": "Da liễu · Phòng Điều dưỡng"
+    },
+    "icon": "eye",
+    "poster": {
+     "img": "img/gdsk/poster-mun-trung-ca.jpg",
+     "caption": "Poster Mụn trứng cá"
+    }
+   },
+   {
+    "group": "tn",
+    "title": "Zona thần kinh (giời leo)",
+    "points": [
+     "Zona thường gây đau rát và nổi cụm mụn nước ở một bên cơ thể.",
+     "Che vùng tổn thương và rửa tay.",
+     "Ban gần mắt, đau mắt hoặc nhìn mờ cần được đánh giá ngay."
+    ],
+    "slug": "zona-than-kinh-gioi-leo",
+    "khoa": "Da liễu",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK22.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A207, A209, A211 (Da liễu).",
+     "heading": "Đau rát và mụn nước một bên cơ thể",
+     "remember": [
+      "Zona thường gây đau rát và nổi cụm mụn nước ở một bên cơ thể.",
+      "Che vùng tổn thương và rửa tay.",
+      "Ban gần mắt, đau mắt hoặc nhìn mờ cần được đánh giá ngay."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nhận biết",
+       "blocks": [
+        {
+         "p": "Zona thường gây đau rát và nổi cụm mụn nước ở một bên cơ thể."
+        }
+       ]
+      },
+      {
+       "h": "Giảm nguy cơ lây",
+       "blocks": [
+        {
+         "p": "Che vùng tổn thương và rửa tay. Tránh tiếp xúc trực tiếp với người có nguy cơ cao cho đến khi tổn thương đóng vảy."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Ghi ngày bắt đầu nổi ban để bác sĩ cân nhắc điều trị sớm."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "CDC. Zona thần kinh (giời leo).",
+       "url": "https://www.cdc.gov/",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Da liễu · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi cần đi khám ngay",
+      "blocks": [
+       {
+        "p": "Ban gần mắt, đau mắt hoặc nhìn mờ cần được đánh giá ngay. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "bug",
+    "poster": {
+     "img": "img/gdsk/poster-zona-than-kinh-gioi-leo.jpg",
+     "caption": "Poster Zona thần kinh (giời leo)"
+    }
+   },
+   {
+    "group": "man",
+    "title": "Thừa cân, béo phì",
+    "points": [
+     "Cân nặng cần được xem cùng chiều cao, vòng eo và tình trạng sức khỏe.",
+     "Tăng rau, đậu và thực phẩm ít chế biến.",
+     "Trao đổi với chuyên khoa Dinh dưỡng để lập kế hoạch phù hợp với tuổi và bệnh nền."
+    ],
+    "slug": "thua-can-beo-phi",
+    "khoa": "Dinh dưỡng",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK23.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám A213 (Dinh dưỡng).",
+     "heading": "Đặt mục tiêu phù hợp và theo dõi tiến độ",
+     "remember": [
+      "Cân nặng cần được xem cùng chiều cao, vòng eo và tình trạng sức khỏe.",
+      "Tăng rau, đậu và thực phẩm ít chế biến.",
+      "Trao đổi với chuyên khoa Dinh dưỡng để lập kế hoạch phù hợp với tuổi và bệnh nền."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Đánh giá cùng nhân viên y tế",
+       "blocks": [
+        {
+         "p": "Cân nặng cần được xem cùng chiều cao, vòng eo và tình trạng sức khỏe. Trẻ em dùng chuẩn theo tuổi."
+        }
+       ]
+      },
+      {
+       "h": "Chọn thay đổi vừa sức",
+       "blocks": [
+        {
+         "p": "Tăng rau, đậu và thực phẩm ít chế biến. Thay nước ngọt bằng nước lọc và vận động phù hợp."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Trong tuần này bạn có thể duy trì thay đổi nhỏ nào về ăn uống hoặc vận động?"
+        }
+       ]
+      },
+      {
+       "h": "Khi cần hỗ trợ",
+       "blocks": [
+        {
+         "p": "Trao đổi với chuyên khoa Dinh dưỡng để lập kế hoạch phù hợp với tuổi và bệnh nền."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "WHO. Thừa cân, béo phì.",
+       "url": "https://www.who.int/",
+       "org": "WHO"
+      }
+     ],
+     "unit": "Dinh dưỡng · Phòng Điều dưỡng"
+    },
+    "icon": "apple",
+    "poster": {
+     "img": "img/gdsk/poster-thua-can-beo-phi.jpg",
+     "caption": "Poster Thừa cân, béo phì"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Chuẩn bị đo chức năng hô hấp, FENO",
+    "points": [
+     "Xác nhận loại xét nghiệm, giờ đo và yêu cầu riêng.",
+     "Mang danh sách thuốc hít.",
+     "Thông báo nếu đang sốt, có nhiễm trùng hô hấp hoặc mới phẫu thuật để được hướng dẫn."
+    ],
+    "slug": "chuan-bi-do-chuc-nang-ho-hap-feno",
+    "khoa": "Thăm dò chức năng hô hấp",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK24.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám B3 (Thăm dò chức năng hô hấp).",
+     "heading": "Hỏi trước về thuốc hít và cách chuẩn bị",
+     "remember": [
+      "Xác nhận loại xét nghiệm, giờ đo và yêu cầu riêng.",
+      "Mang danh sách thuốc hít.",
+      "Thông báo nếu đang sốt, có nhiễm trùng hô hấp hoặc mới phẫu thuật để được hướng dẫn."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Xem giấy hẹn",
+       "blocks": [
+        {
+         "p": "Xác nhận loại xét nghiệm, giờ đo và yêu cầu riêng. Đo chức năng hô hấp và FeNO có cách chuẩn bị khác nhau."
+        }
+       ]
+      },
+      {
+       "h": "Hỏi về thuốc đang dùng",
+       "blocks": [
+        {
+         "p": "Mang danh sách thuốc hít. Chỉ tạm ngưng thuốc khi phòng đo hoặc bác sĩ hướng dẫn."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Hỏi phòng đo về thời điểm cần tránh hút thuốc, ăn uống hoặc vận động mạnh trước buổi đo."
+        }
+       ]
+      },
+      {
+       "h": "Báo trước buổi đo",
+       "blocks": [
+        {
+         "p": "Thông báo nếu đang sốt, có nhiễm trùng hô hấp hoặc mới phẫu thuật để được hướng dẫn."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "American Thoracic Society. Chuẩn bị đo chức năng hô hấp, FENO.",
+       "url": "https://site.thoracic.org/",
+       "org": "American Thoracic Society"
+      },
+      {
+       "t": "George Eliot Hospital NHS. Chuẩn bị đo chức năng hô hấp, FENO.",
+       "url": "https://geh.nhs.uk/",
+       "org": "George Eliot Hospital NHS"
+      }
+     ],
+     "unit": "Thăm dò chức năng hô hấp · Phòng Điều dưỡng"
+    },
+    "icon": "wind",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-do-chuc-nang-ho-hap-feno.jpg",
+     "caption": "Poster Chuẩn bị đo chức năng hô hấp, FENO"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Chuẩn bị chụp CT, MRI",
+    "points": [
+     "Mang giấy chỉ định và kết quả cũ.",
+     "Thông báo nếu có thể mang thai, có bệnh thận hoặc từng phản ứng với thuốc cản quang.",
+     "Nếu sợ không gian kín hoặc chưa rõ về thiết bị cấy ghép, liên hệ phòng chụp trước."
+    ],
+    "slug": "chuan-bi-chup-ct-mri",
+    "khoa": "Chẩn đoán hình ảnh",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK25.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám B7 (Chẩn đoán hình ảnh).",
+     "heading": "Kiểm tra an toàn trước khi vào phòng chụp",
+     "remember": [
+      "Mang giấy chỉ định và kết quả cũ.",
+      "Thông báo nếu có thể mang thai, có bệnh thận hoặc từng phản ứng với thuốc cản quang.",
+      "Nếu sợ không gian kín hoặc chưa rõ về thiết bị cấy ghép, liên hệ phòng chụp trước."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Xác nhận loại chụp",
+       "blocks": [
+        {
+         "p": "Mang giấy chỉ định và kết quả cũ. Hỏi có dùng thuốc cản quang hay cần nhịn ăn không."
+        }
+       ]
+      },
+      {
+       "h": "Báo yếu tố an toàn",
+       "blocks": [
+        {
+         "p": "Thông báo nếu có thể mang thai, có bệnh thận hoặc từng phản ứng với thuốc cản quang."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra trước mri",
+       "blocks": [
+        {
+         "p": "Báo máy tạo nhịp, thiết bị cấy ghép hoặc dị vật kim loại. Tháo vật kim loại theo hướng dẫn."
+        }
+       ]
+      },
+      {
+       "h": "Báo trước khi chụp",
+       "blocks": [
+        {
+         "p": "Nếu sợ không gian kín hoặc chưa rõ về thiết bị cấy ghép, liên hệ phòng chụp trước."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "RadiologyInfo.org. Chuẩn bị chụp CT, MRI.",
+       "url": "https://www.radiologyinfo.org/",
+       "org": "RadiologyInfo.org"
+      },
+      {
+       "t": "RadiologyInfo.org. Chuẩn bị chụp CT, MRI.",
+       "url": "https://www.radiologyinfo.org/",
+       "org": "RadiologyInfo.org"
+      }
+     ],
+     "unit": "Chẩn đoán hình ảnh · Phòng Điều dưỡng"
+    },
+    "icon": "scan",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-chup-ct-mri.jpg",
+     "caption": "Poster Chuẩn bị chụp CT, MRI"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Chuẩn bị đo điện não, điện cơ",
+    "points": [
+     "Để tóc sạch, khô và không dùng gel hoặc sáp.",
+     "Không bôi kem ở vùng da sẽ đo.",
+     "Tiếp tục thuốc theo chỉ định hiện tại, trừ khi bác sĩ hoặc phòng đo hướng dẫn khác."
+    ],
+    "slug": "chuan-bi-do-dien-nao-dien-co",
+    "khoa": "Thăm dò chức năng thần kinh",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK26.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám B17 (Thăm dò chức năng thần kinh).",
+     "heading": "Chuẩn bị khác nhau cho điện não và điện cơ",
+     "remember": [
+      "Để tóc sạch, khô và không dùng gel hoặc sáp.",
+      "Không bôi kem ở vùng da sẽ đo.",
+      "Tiếp tục thuốc theo chỉ định hiện tại, trừ khi bác sĩ hoặc phòng đo hướng dẫn khác."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Đo điện não (eeg)",
+       "blocks": [
+        {
+         "p": "Để tóc sạch, khô và không dùng gel hoặc sáp. Chỉ thay đổi giờ ngủ khi có hướng dẫn cụ thể."
+        }
+       ]
+      },
+      {
+       "h": "Đo điện cơ (emg)",
+       "blocks": [
+        {
+         "p": "Không bôi kem ở vùng da sẽ đo. Báo nếu dùng thuốc chống đông hoặc có thiết bị cấy ghép."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Mang giấy chỉ định, danh sách thuốc và kết quả cũ. Xác nhận loại xét nghiệm trước khi đi."
+        }
+       ]
+      },
+      {
+       "h": "Hỏi trước khi đổi thuốc",
+       "blocks": [
+        {
+         "p": "Tiếp tục thuốc theo chỉ định hiện tại, trừ khi bác sĩ hoặc phòng đo hướng dẫn khác."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Chuẩn bị đo điện não, điện cơ.",
+       "url": "https://www.nhs.uk/",
+       "org": "NHS"
+      },
+      {
+       "t": "Cambridge University Hospitals NHS. Chuẩn bị đo điện não, điện cơ.",
+       "url": "https://cuh.nhs.uk/",
+       "org": "Cambridge University Hospitals NHS"
+      }
+     ],
+     "unit": "Thăm dò chức năng thần kinh · Phòng Điều dưỡng"
+    },
+    "icon": "pulse",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-do-dien-nao-dien-co.jpg",
+     "caption": "Poster Chuẩn bị đo điện não, điện cơ"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Chuẩn bị đo điện tim, Holter",
+    "points": [
+     "Mặc áo dễ thay.",
+     "Ghi giờ và hoạt động khi có hồi hộp, chóng mặt hoặc đau ngực.",
+     "Đau ngực kéo dài, khó thở dữ dội hoặc ngất cần cấp cứu ngay, kể cả khi đang đeo máy."
+    ],
+    "slug": "chuan-bi-do-dien-tim-holter",
+    "khoa": "Điện tim",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK27.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám B24 (Điện tim).",
+     "heading": "Chuẩn bị da sạch và ghi nhật ký triệu chứng",
+     "remember": [
+      "Mặc áo dễ thay.",
+      "Ghi giờ và hoạt động khi có hồi hộp, chóng mặt hoặc đau ngực.",
+      "Đau ngực kéo dài, khó thở dữ dội hoặc ngất cần cấp cứu ngay, kể cả khi đang đeo máy."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Trước khi đo",
+       "blocks": [
+        {
+         "p": "Mặc áo dễ thay. Tránh bôi kem, dầu hoặc phấn lên ngực trước khi gắn điện cực."
+        }
+       ]
+      },
+      {
+       "h": "Trong thời gian đeo holter",
+       "blocks": [
+        {
+         "p": "Ghi giờ và hoạt động khi có hồi hộp, chóng mặt hoặc đau ngực. Giữ máy khô theo hướng dẫn."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Bạn có biết cách liên hệ nếu điện cực bong và khi nào phải trả thiết bị không?"
+        }
+       ]
+      },
+      {
+       "h": "Khi cần cấp cứu",
+       "blocks": [
+        {
+         "p": "Đau ngực kéo dài, khó thở dữ dội hoặc ngất cần cấp cứu ngay, kể cả khi đang đeo máy."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NHS. Chuẩn bị đo điện tim, Holter.",
+       "url": "https://www.nhs.uk/",
+       "org": "NHS"
+      },
+      {
+       "t": "University Health Network. Chuẩn bị đo điện tim, Holter.",
+       "url": "https://www.uhn.ca/",
+       "org": "University Health Network"
+      }
+     ],
+     "unit": "Điện tim · Phòng Điều dưỡng"
+    },
+    "icon": "pulse",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-do-dien-tim-holter.jpg",
+     "caption": "Poster Chuẩn bị đo điện tim, Holter"
+    }
+   },
+   {
+    "group": "ck",
+    "title": "Chuẩn bị nội soi dạ dày, đại tràng",
+    "points": [
+     "Nhịn ăn và uống theo thời điểm ghi trên giấy hẹn.",
+     "Uống thuốc làm sạch ruột đúng cách và đúng giờ theo đơn.",
+     "Sắp xếp người đưa về và làm theo hướng dẫn về lái xe sau thủ thuật."
+    ],
+    "slug": "chuan-bi-noi-soi-da-day-dai-trang",
+    "khoa": "Nội soi tiêu hóa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK28.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám B48 (Nội soi tiêu hóa).",
+     "heading": "Theo đúng hướng dẫn nhịn ăn và làm sạch ruột",
+     "remember": [
+      "Nhịn ăn và uống theo thời điểm ghi trên giấy hẹn.",
+      "Uống thuốc làm sạch ruột đúng cách và đúng giờ theo đơn.",
+      "Sắp xếp người đưa về và làm theo hướng dẫn về lái xe sau thủ thuật."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Nội soi dạ dày",
+       "blocks": [
+        {
+         "p": "Nhịn ăn và uống theo thời điểm ghi trên giấy hẹn. Hỏi trước nếu chưa rõ loại chất lỏng được phép."
+        }
+       ]
+      },
+      {
+       "h": "Nội soi đại tràng",
+       "blocks": [
+        {
+         "p": "Uống thuốc làm sạch ruột đúng cách và đúng giờ theo đơn. Thực hiện chế độ ăn được hướng dẫn."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Báo thuốc chống đông, thuốc điều trị đái tháo đường và các dị ứng. Hỏi trước khi đổi hoặc ngưng thuốc."
+        }
+       ]
+      },
+      {
+       "h": "Nếu nội soi có an thần",
+       "blocks": [
+        {
+         "p": "Sắp xếp người đưa về và làm theo hướng dẫn về lái xe sau thủ thuật."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "NIDDK. Chuẩn bị nội soi dạ dày, đại tràng.",
+       "url": "https://niddk.nih.gov/",
+       "org": "NIDDK"
+      },
+      {
+       "t": "NIDDK. Chuẩn bị nội soi dạ dày, đại tràng.",
+       "url": "https://niddk.nih.gov/",
+       "org": "NIDDK"
+      }
+     ],
+     "unit": "Nội soi tiêu hóa · Phòng Điều dưỡng"
+    },
+    "icon": "scan",
+    "poster": {
+     "img": "img/gdsk/poster-chuan-bi-noi-soi-da-day-dai-trang.jpg",
+     "caption": "Poster Chuẩn bị nội soi dạ dày, đại tràng"
+    }
+   },
+   {
+    "group": "me",
+    "title": "Tầm soát ung thư cổ tử cung (Pap smear)",
+    "points": [
+     "Pap smear tìm thay đổi tế bào cổ tử cung.",
+     "Tuổi bắt đầu, loại xét nghiệm và khoảng cách giữa các lần tùy tiền sử và hướng dẫn áp dụng.",
+     "Ra máu sau quan hệ, giữa kỳ kinh hoặc sau mãn kinh cần đi khám để tìm nguyên nhân."
+    ],
+    "slug": "tam-soat-ung-thu-co-tu-cung-pap-smear",
+    "khoa": "Phụ khoa",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK29.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám B110 (Phụ khoa).",
+     "heading": "Xét nghiệm định kỳ theo lịch được tư vấn",
+     "remember": [
+      "Pap smear tìm thay đổi tế bào cổ tử cung.",
+      "Tuổi bắt đầu, loại xét nghiệm và khoảng cách giữa các lần tùy tiền sử và hướng dẫn áp dụng.",
+      "Ra máu sau quan hệ, giữa kỳ kinh hoặc sau mãn kinh cần đi khám để tìm nguyên nhân."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Hiểu các xét nghiệm",
+       "blocks": [
+        {
+         "p": "Pap smear tìm thay đổi tế bào cổ tử cung. Xét nghiệm HPV tìm các típ HPV nguy cơ cao."
+        }
+       ]
+      },
+      {
+       "h": "Đặt lịch phù hợp",
+       "blocks": [
+        {
+         "p": "Tuổi bắt đầu, loại xét nghiệm và khoảng cách giữa các lần tùy tiền sử và hướng dẫn áp dụng."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Bạn có nhớ kết quả, ngày xét nghiệm gần nhất và lịch theo dõi được dặn không?"
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "CDC. Tầm soát ung thư cổ tử cung (Pap smear).",
+       "url": "https://www.cdc.gov/",
+       "org": "CDC"
+      }
+     ],
+     "unit": "Phụ khoa · Phòng Điều dưỡng",
+     "urgent": {
+      "h": "Khi có dấu hiệu bất thường",
+      "blocks": [
+       {
+        "p": "Ra máu sau quan hệ, giữa kỳ kinh hoặc sau mãn kinh cần đi khám để tìm nguyên nhân. Đến ngay bệnh viện, cơ sở y tế gần nhất hoặc gọi tổng đài Bệnh viện Nhật Tân 0296 3562 357 (24/24)."
+       }
+      ]
+     }
+    },
+    "icon": "shield",
+    "poster": {
+     "img": "img/gdsk/poster-tam-soat-ung-thu-co-tu-cung-pap-smear.jpg",
+     "caption": "Poster Tầm soát ung thư cổ tử cung (Pap smear)"
+    }
+   },
+   {
+    "group": "me",
+    "title": "Hiếm muộn: khi nào nên đi khám",
+    "points": [
+     "Nên đi khám nếu chưa có thai sau 12 tháng quan hệ đều đặn, không dùng biện pháp tránh thai.",
+     "Nên đi khám sau 6 tháng nếu chưa có thai.",
+     "Khám sớm nếu kinh rất thưa hoặc không đều, có tiền sử bệnh ảnh hưởng sinh sản hoặc đã biết yếu tố nguy cơ."
+    ],
+    "slug": "hiem-muon-khi-nao-nen-di-kham",
+    "khoa": "Hiếm muộn",
+    "article": {
+     "layout": "v2",
+     "code": "TTGDSK.BK30.POSTER",
+     "version": "01",
+     "issued": false,
+     "checked": "2026-11-28",
+     "lead": "Dành cho người bệnh và người nhà đến Buồng khám B112 (Hiếm muộn).",
+     "heading": "Khám sớm hơn khi có yếu tố nguy cơ",
+     "remember": [
+      "Nên đi khám nếu chưa có thai sau 12 tháng quan hệ đều đặn, không dùng biện pháp tránh thai.",
+      "Nên đi khám sau 6 tháng nếu chưa có thai.",
+      "Khám sớm nếu kinh rất thưa hoặc không đều, có tiền sử bệnh ảnh hưởng sinh sản hoặc đã biết yếu tố nguy cơ."
+     ],
+     "rememberTitle": "3 điều cần nhớ",
+     "sections": [
+      {
+       "h": "Khi dưới 35 tuổi",
+       "blocks": [
+        {
+         "p": "Nên đi khám nếu chưa có thai sau 12 tháng quan hệ đều đặn, không dùng biện pháp tránh thai."
+        }
+       ]
+      },
+      {
+       "h": "Từ 35 tuổi trở lên",
+       "blocks": [
+        {
+         "p": "Nên đi khám sau 6 tháng nếu chưa có thai. Trên 40 tuổi, nên trao đổi sớm với bác sĩ."
+        }
+       ]
+      },
+      {
+       "h": "Tự kiểm tra",
+       "blocks": [
+        {
+         "p": "Ghi chu kỳ kinh, thời gian mong con, bệnh sử và thuốc đang dùng. Nên đánh giá cả hai người."
+        }
+       ]
+      },
+      {
+       "h": "Khi nên khám sớm",
+       "blocks": [
+        {
+         "p": "Khám sớm nếu kinh rất thưa hoặc không đều, có tiền sử bệnh ảnh hưởng sinh sản hoặc đã biết yếu tố nguy cơ."
+        }
+       ]
+      }
+     ],
+     "refs": [
+      {
+       "t": "ASRM. Hiếm muộn: khi nào nên đi khám.",
+       "url": "https://www.asrm.org/",
+       "org": "ASRM"
+      }
+     ],
+     "unit": "Hiếm muộn · Phòng Điều dưỡng"
+    },
+    "icon": "baby",
+    "poster": {
+     "img": "img/gdsk/poster-hiem-muon-khi-nao-nen-di-kham.jpg",
+     "caption": "Poster Hiếm muộn: khi nào nên đi khám"
+    }
    }
   ]
  },
@@ -10834,7 +13577,10 @@ window.PULSE_DATA = {
      "nhan-biet-som-dot-quy",
      "nhoi-mau-co-tim",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "suy-tim-theo-doi-tai-nha",
+     "roi-loan-mo-mau",
+     "viem-phoi"
     ],
     "bacsi": []
    },
@@ -10859,7 +13605,9 @@ window.PULSE_DATA = {
      "tang-huyet-ap",
      "dinh-duong-cho-nguoi-benh",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "benh-tuyen-giap-buou-co-cuong-giap-suy-giap",
+     "ha-duong-huyet-nhan-biet-va-xu-tri"
     ],
     "bacsi": []
    },
@@ -10872,7 +13620,10 @@ window.PULSE_DATA = {
      "dinh-duong-cho-nguoi-benh",
      "dung-khang-sinh-dung-cach",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "viem-loet-da-day-trao-nguoc-da-day-thuc-quan",
+     "chuan-bi-noi-soi-da-day-dai-trang",
+     "tam-soat-som-ung-thu-dai-truc-trang"
     ],
     "bacsi": []
    },
@@ -10887,7 +13638,8 @@ window.PULSE_DATA = {
      "gout",
      "thoai-hoa-khop-goi",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "loang-xuong-phong-gay-xuong"
     ],
     "bacsi": []
    },
@@ -10899,7 +13651,10 @@ window.PULSE_DATA = {
      "chuan-bi-truoc-mo",
      "cham-soc-vet-mo-tai-nha",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "viem-ruot-thua-dau-hieu-can-den-vien-ngay",
+     "thoat-vi-ben",
+     "tam-soat-som-ung-thu-vu"
     ],
     "bacsi": []
    },
@@ -10913,7 +13668,8 @@ window.PULSE_DATA = {
      "dung-khang-sinh-dung-cach",
      "soi-tiet-nieu",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "phi-dai-tuyen-tien-liet"
     ],
     "bacsi": []
    },
@@ -10926,7 +13682,9 @@ window.PULSE_DATA = {
      "tap-van-dong-tai-nha",
      "so-cuu-bong",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "so-cuu-gay-xuong-bong-gan",
+     "cham-soc-vet-thuong-nho-va-ngay-cat-chi"
     ],
     "bacsi": []
    },
@@ -10939,7 +13697,9 @@ window.PULSE_DATA = {
      "nuoi-con-bang-sua-me",
      "chuan-bi-mang-thai",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "tam-soat-ung-thu-co-tu-cung-pap-smear",
+     "tam-soat-som-ung-thu-vu"
     ],
     "bacsi": []
    },
@@ -10959,7 +13719,9 @@ window.PULSE_DATA = {
      "tiem-chung-dung-lich",
      "nao-mo-cau",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "sot-o-tre-em-xu-tri-tai-nha",
+     "tieu-chay-cap-o-tre-bu-nuoc-bang-ors"
     ],
     "bacsi": []
    },
@@ -11013,7 +13775,10 @@ window.PULSE_DATA = {
      "thuy-dau",
      "viem-da-co-dia",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "nam-da",
+     "mun-trung-ca",
+     "zona-than-kinh-gioi-leo"
     ],
     "bacsi": []
    },
@@ -11025,7 +13790,8 @@ window.PULSE_DATA = {
      "dau-hieu-nguy-hiem-khi-mang-thai",
      "chuan-bi-mang-thai",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "hiem-muon-khi-nao-nen-di-kham"
     ],
     "bacsi": []
    },
@@ -11051,7 +13817,12 @@ window.PULSE_DATA = {
      "chuan-bi-sieu-am-chup-phim",
      "tang-huyet-ap",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "thua-can-beo-phi",
+     "roi-loan-mo-mau",
+     "tam-soat-som-ung-thu-vu",
+     "tam-soat-som-ung-thu-dai-truc-trang",
+     "tam-soat-ung-thu-co-tu-cung-pap-smear"
     ],
     "bacsi": []
    },
@@ -11066,7 +13837,9 @@ window.PULSE_DATA = {
      "dinh-duong-cho-nguoi-benh",
      "thoai-hoa-khop-goi",
      "cac-buoc-di-kham-benh",
-     "dung-thuoc-an-toan"
+     "dung-thuoc-an-toan",
+     "sa-sut-tri-tue-o-nguoi-cao-tuoi-nhan-biet-som",
+     "loang-xuong-phong-gay-xuong"
     ],
     "bacsi": []
    }
@@ -11263,7 +14036,7 @@ window.PULSE_DATA = {
   ]
  },
  "buongkham": {
-  "updated": "2026-11-25",
+  "updated": "2026-11-28",
   "note": "CC & CN: đo chiều cao và cân nặng trước khi vào phòng.",
   "khu": [
    {
@@ -11288,7 +14061,9 @@ window.PULSE_DATA = {
        "tang-huyet-ap",
        "thoai-hoa-khop-goi",
        "dung-thuoc-an-toan",
-       "duc-thuy-tinh-the"
+       "duc-thuy-tinh-the",
+       "sa-sut-tri-tue-o-nguoi-cao-tuoi-nhan-biet-som",
+       "loang-xuong-phong-gay-xuong"
       ]
      ],
      [
@@ -11297,7 +14072,9 @@ window.PULSE_DATA = {
       [
        "dai-thao-duong",
        "dinh-duong-cho-nguoi-benh",
-       "dung-thuoc-an-toan"
+       "dung-thuoc-an-toan",
+       "benh-tuyen-giap-buou-co-cuong-giap-suy-giap",
+       "ha-duong-huyet-nhan-biet-va-xu-tri"
       ]
      ],
      [
@@ -11306,7 +14083,8 @@ window.PULSE_DATA = {
       [
        "tang-huyet-ap",
        "nhan-biet-som-dot-quy",
-       "dung-thuoc-an-toan"
+       "dung-thuoc-an-toan",
+       "roi-loan-mo-mau"
       ]
      ],
      [
@@ -11315,7 +14093,9 @@ window.PULSE_DATA = {
       [
        "dai-thao-duong",
        "dinh-duong-cho-nguoi-benh",
-       "dung-thuoc-an-toan"
+       "dung-thuoc-an-toan",
+       "benh-tuyen-giap-buou-co-cuong-giap-suy-giap",
+       "ha-duong-huyet-nhan-biet-va-xu-tri"
       ]
      ],
      [
@@ -11325,7 +14105,9 @@ window.PULSE_DATA = {
        "nhoi-mau-co-tim",
        "tang-huyet-ap",
        "ngung-tim-ep-tim",
-       "dung-thuoc-an-toan"
+       "dung-thuoc-an-toan",
+       "suy-tim-theo-doi-tai-nha",
+       "roi-loan-mo-mau"
       ]
      ],
      [
@@ -11334,7 +14116,9 @@ window.PULSE_DATA = {
       [
        "chuan-bi-truoc-mo",
        "cham-soc-vet-mo-tai-nha",
-       "dinh-duong-cho-nguoi-benh"
+       "dinh-duong-cho-nguoi-benh",
+       "tam-soat-som-ung-thu-vu",
+       "tam-soat-som-ung-thu-dai-truc-trang"
       ]
      ],
      [
@@ -11343,7 +14127,8 @@ window.PULSE_DATA = {
       [
        "soi-tiet-nieu",
        "chuan-bi-truoc-mo",
-       "cham-soc-vet-mo-tai-nha"
+       "cham-soc-vet-mo-tai-nha",
+       "phi-dai-tuyen-tien-liet"
       ]
      ],
      [
@@ -11352,7 +14137,9 @@ window.PULSE_DATA = {
       [
        "chuan-bi-truoc-mo",
        "cham-soc-vet-mo-tai-nha",
-       "dung-khang-sinh-dung-cach"
+       "dung-khang-sinh-dung-cach",
+       "viem-ruot-thua-dau-hieu-can-den-vien-ngay",
+       "thoat-vi-ben"
       ]
      ],
      [
@@ -11362,7 +14149,8 @@ window.PULSE_DATA = {
        "cham-soc-bo-bot",
        "tap-van-dong-tai-nha",
        "thoat-vi-dia-dem",
-       "thoai-hoa-khop-goi"
+       "thoai-hoa-khop-goi",
+       "so-cuu-gay-xuong-bong-gan"
       ]
      ],
      [
@@ -11371,7 +14159,8 @@ window.PULSE_DATA = {
       [
        "cham-soc-vet-mo-tai-nha",
        "so-cuu-bong",
-       "dung-khang-sinh-dung-cach"
+       "dung-khang-sinh-dung-cach",
+       "cham-soc-vet-thuong-nho-va-ngay-cat-chi"
       ]
      ],
      [
@@ -11392,7 +14181,8 @@ window.PULSE_DATA = {
        "copd",
        "viem-phe-quan",
        "lao-phoi",
-       "cum"
+       "cum",
+       "viem-phoi"
       ]
      ],
      [
@@ -11410,7 +14200,9 @@ window.PULSE_DATA = {
       "BK Sức khỏe tâm thần",
       [
        "dung-thuoc-an-toan",
-       "an-toan-nguoi-benh"
+       "an-toan-nguoi-benh",
+       "tram-cam-lo-au-nhan-biet-va-tim-ho-tro",
+       "mat-ngu-ngu-du-ngu-ngon"
       ]
      ],
      [
@@ -11461,7 +14253,9 @@ window.PULSE_DATA = {
        "sot-xuat-huyet",
        "soi",
        "thuy-dau",
-       "nuoi-con-bang-sua-me"
+       "nuoi-con-bang-sua-me",
+       "sot-o-tre-em-xu-tri-tai-nha",
+       "tieu-chay-cap-o-tre-bu-nuoc-bang-ors"
       ]
      ],
      [
@@ -11472,7 +14266,9 @@ window.PULSE_DATA = {
        "viem-phe-quan",
        "quai-bi",
        "tiem-chung-dung-lich",
-       "tat-khuc-xa"
+       "tat-khuc-xa",
+       "sot-o-tre-em-xu-tri-tai-nha",
+       "tieu-chay-cap-o-tre-bu-nuoc-bang-ors"
       ]
      ],
      [
@@ -11491,7 +14287,8 @@ window.PULSE_DATA = {
        "viem-gan-b",
        "dinh-duong-cho-nguoi-benh",
        "dung-khang-sinh-dung-cach",
-       "ngo-doc-ruou-thuc-pham"
+       "ngo-doc-ruou-thuc-pham",
+       "viem-loet-da-day-trao-nguoc-da-day-thuc-quan"
       ]
      ],
      [
@@ -11499,7 +14296,10 @@ window.PULSE_DATA = {
       "BK Da liễu 3",
       [
        "viem-da-co-dia",
-       "thuy-dau"
+       "thuy-dau",
+       "nam-da",
+       "mun-trung-ca",
+       "zona-than-kinh-gioi-leo"
       ]
      ],
      [
@@ -11507,7 +14307,10 @@ window.PULSE_DATA = {
       "BK Da liễu 2",
       [
        "viem-da-co-dia",
-       "thuy-dau"
+       "thuy-dau",
+       "nam-da",
+       "mun-trung-ca",
+       "zona-than-kinh-gioi-leo"
       ]
      ],
      [
@@ -11515,7 +14318,10 @@ window.PULSE_DATA = {
       "BK Da liễu 1",
       [
        "viem-da-co-dia",
-       "thuy-dau"
+       "thuy-dau",
+       "nam-da",
+       "mun-trung-ca",
+       "zona-than-kinh-gioi-leo"
       ]
      ],
      [
@@ -11524,7 +14330,8 @@ window.PULSE_DATA = {
       [
        "dinh-duong-cho-nguoi-benh",
        "dai-thao-duong",
-       "gout"
+       "gout",
+       "thua-can-beo-phi"
       ]
      ]
     ]
@@ -11538,7 +14345,8 @@ window.PULSE_DATA = {
       [
        "hen-phe-quan",
        "copd",
-       "lao-phoi"
+       "lao-phoi",
+       "chuan-bi-do-chuc-nang-ho-hap-feno"
       ]
      ],
      [
@@ -11552,7 +14360,9 @@ window.PULSE_DATA = {
       "B7",
       "X-quang, CT, MRI, đo loãng xương (cần đo CC & CN)",
       [
-       "chuan-bi-sieu-am-chup-phim"
+       "chuan-bi-sieu-am-chup-phim",
+       "loang-xuong-phong-gay-xuong",
+       "chuan-bi-chup-ct-mri"
       ]
      ],
      [
@@ -11568,7 +14378,8 @@ window.PULSE_DATA = {
       [
        "nhan-biet-som-dot-quy",
        "dai-thao-duong",
-       "liet-mat-ngoai-bien"
+       "liet-mat-ngoai-bien",
+       "chuan-bi-do-dien-nao-dien-co"
       ]
      ],
      [
@@ -11601,7 +14412,8 @@ window.PULSE_DATA = {
       "Điện tim",
       [
        "nhoi-mau-co-tim",
-       "tang-huyet-ap"
+       "tang-huyet-ap",
+       "chuan-bi-do-dien-tim-holter"
       ]
      ],
      [
@@ -11634,7 +14446,9 @@ window.PULSE_DATA = {
       "Nội soi tiêu hóa",
       [
        "viem-gan-b",
-       "dinh-duong-cho-nguoi-benh"
+       "dinh-duong-cho-nguoi-benh",
+       "tam-soat-som-ung-thu-dai-truc-trang",
+       "chuan-bi-noi-soi-da-day-dai-trang"
       ]
      ],
      [
@@ -11676,7 +14490,8 @@ window.PULSE_DATA = {
       "Khám phụ khoa; xét nghiệm Liqui-Prep, Pap smear, GBS",
       [
        "chuan-bi-mang-thai",
-       "chuan-bi-lay-mau-xet-nghiem"
+       "chuan-bi-lay-mau-xet-nghiem",
+       "tam-soat-ung-thu-co-tu-cung-pap-smear"
       ]
      ],
      [
@@ -11684,7 +14499,8 @@ window.PULSE_DATA = {
       "Hiếm muộn",
       [
        "chuan-bi-mang-thai",
-       "dau-hieu-nguy-hiem-khi-mang-thai"
+       "dau-hieu-nguy-hiem-khi-mang-thai",
+       "hiem-muon-khi-nao-nen-di-kham"
       ]
      ],
      [
