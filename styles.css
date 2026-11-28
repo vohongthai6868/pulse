@@ -1016,3 +1016,23 @@ a.cite { cursor: pointer; }
 @keyframes qr-ring { 0% { border-color: #d0202a; } 50% { border-color: #0b4f9c; } }
 @media (prefers-reduced-motion: reduce) { .qr-blink, .khoa-qr a img { animation: none; } }
 .khoa-facts dd.fact-pend { font-style: italic; color: var(--text-3, var(--text-2)); opacity: .8; }
+/* Nút nghe hướng dẫn đăng ký khám bằng giọng đọc + làm nổi nút đăng ký (28/11/2026) */
+.vg { margin: 10px 0 6px; width: 100%; }
+.vg-open { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 10px 18px; border-radius: 999px; border: 3px solid #0b4f9c; background: #fff; color: #0b4f9c; font: inherit; font-size: 17px; font-weight: 800; cursor: pointer; animation: vg-pulse 1.6s ease-in-out infinite; }
+.vg-ico { font-size: 24px; line-height: 1; }
+@keyframes vg-pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(11,79,156,.45); } 50% { box-shadow: 0 0 0 9px rgba(11,79,156,0); } }
+.vg-box { margin-top: 10px; padding: 14px 16px; border-radius: 14px; background: #fff; color: #10233f; border: 2px solid #0b4f9c; text-align: left; }
+.vg-h { font-weight: 800; font-size: 18px; margin: 0 0 8px; }
+.vg-box ol { margin: 0; padding-left: 24px; }
+.vg-box li { font-size: 17px; line-height: 1.5; padding: 6px 8px; border-radius: 8px; margin-bottom: 4px; }
+.vg-box li.on { background: #fff3c4; outline: 2px solid #f2b705; font-weight: 700; }
+.vg-note { margin: 8px 0 0; color: #b00012; font-weight: 700; }
+.vg-acts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.vg-play, .vg-go { min-height: 46px; padding: 10px 16px; border-radius: 10px; font: inherit; font-weight: 800; font-size: 16px; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; }
+.vg-play { border: 2px solid #0b4f9c; background: #eaf2fb; color: #0b4f9c; }
+.vg-go { background: #d0202a; color: #fff; border: 2px solid #d0202a; }
+.btn-booking, .booking-bar { position: relative; }
+.btn-booking::after, .booking-bar::after { content: "👆 BẤM VÀO ĐÂY"; position: absolute; top: -14px; right: 14px; background: #ffd23f; color: #8a0010; font-size: 13px; font-weight: 900; letter-spacing: .3px; padding: 3px 10px; border-radius: 999px; border: 2px solid #d0202a; animation: vg-bounce 1s ease-in-out infinite; pointer-events: none; }
+html[lang="en"] .btn-booking::after, html[lang="en"] .booking-bar::after { content: "👆 TAP HERE"; }
+@keyframes vg-bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
+@media (prefers-reduced-motion: reduce) { .vg-open { animation: none; } .btn-booking::after, .booking-bar::after { animation: none; } }

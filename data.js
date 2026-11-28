@@ -14035,8 +14035,8 @@ window.PULSE_DATA = {
    }
   ],
   "ptgmhs": {
-   "src": "video/khoa/ptgmhs.mp4?v=20261128s",
-   "poster": "video/khoa/ptgmhs.jpg?v=20261128s",
+   "src": "video/khoa/ptgmhs.mp4?v=20261128u",
+   "poster": "video/khoa/ptgmhs.jpg?v=20261128u",
    "caption": "Video giới thiệu Khoa Phẫu thuật - Gây mê hồi sức (35 giây, có lồng tiếng)"
   }
  },
