@@ -14033,7 +14033,12 @@ window.PULSE_DATA = {
     "poster": "video/gdsk/reel-cum-mua.jpg?v=20261123f",
     "caption": "Video: Cúm mùa"
    }
-  ]
+  ],
+  "ptgmhs": {
+   "src": "video/khoa/ptgmhs.mp4?v=20261128s",
+   "poster": "video/khoa/ptgmhs.jpg?v=20261128s",
+   "caption": "Video giới thiệu Khoa Phẫu thuật - Gây mê hồi sức (35 giây, có lồng tiếng)"
+  }
  },
  "buongkham": {
   "updated": "2026-11-28",
