@@ -13582,7 +13582,8 @@ window.PULSE_DATA = {
      "roi-loan-mo-mau",
      "viem-phoi"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Nội Tổng Quát"
    },
    {
     "slug": "viem-gan",
@@ -13594,7 +13595,8 @@ window.PULSE_DATA = {
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Viêm Gan"
    },
    {
     "slug": "noi-tiet",
@@ -13609,7 +13611,8 @@ window.PULSE_DATA = {
      "benh-tuyen-giap-buou-co-cuong-giap-suy-giap",
      "ha-duong-huyet-nhan-biet-va-xu-tri"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Nội Tiết"
    },
    {
     "slug": "noi-tieu-hoa",
@@ -13625,7 +13628,8 @@ window.PULSE_DATA = {
      "chuan-bi-noi-soi-da-day-dai-trang",
      "tam-soat-som-ung-thu-dai-truc-trang"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Nội Tiêu Hóa"
    },
    {
     "slug": "co-xuong-khop",
@@ -13641,7 +13645,8 @@ window.PULSE_DATA = {
      "dung-thuoc-an-toan",
      "loang-xuong-phong-gay-xuong"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Cơ Xương Khớp"
    },
    {
     "slug": "ngoai-tong-quat",
@@ -13656,7 +13661,8 @@ window.PULSE_DATA = {
      "thoat-vi-ben",
      "tam-soat-som-ung-thu-vu"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Ngoại Tổng Quát"
    },
    {
     "slug": "ngoai-tiet-nieu",
@@ -13671,7 +13677,8 @@ window.PULSE_DATA = {
      "dung-thuoc-an-toan",
      "phi-dai-tuyen-tien-liet"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Ngoại Tiết Niệu"
    },
    {
     "slug": "ngoai-chan-thuong",
@@ -13686,7 +13693,8 @@ window.PULSE_DATA = {
      "so-cuu-gay-xuong-bong-gan",
      "cham-soc-vet-thuong-nho-va-ngay-cat-chi"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Ngoại Chấn Thương"
    },
    {
     "slug": "san-phu-khoa",
@@ -13701,7 +13709,8 @@ window.PULSE_DATA = {
      "tam-soat-ung-thu-co-tu-cung-pap-smear",
      "tam-soat-som-ung-thu-vu"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Sản Phụ Khoa"
    },
    {
     "slug": "nhi-khoa",
@@ -13723,7 +13732,8 @@ window.PULSE_DATA = {
      "sot-o-tre-em-xu-tri-tai-nha",
      "tieu-chay-cap-o-tre-bu-nuoc-bang-ors"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Nhi Khoa"
    },
    {
     "slug": "mat",
@@ -13736,7 +13746,8 @@ window.PULSE_DATA = {
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Khám Mắt"
    },
    {
     "slug": "tai-mui-hong",
@@ -13750,7 +13761,8 @@ window.PULSE_DATA = {
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Khám Tai-Mũi-Họng"
    },
    {
     "slug": "rang-ham-mat",
@@ -13763,7 +13775,8 @@ window.PULSE_DATA = {
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Khám Răng Hàm Mặt"
    },
    {
     "slug": "da-lieu",
@@ -13780,7 +13793,8 @@ window.PULSE_DATA = {
      "mun-trung-ca",
      "zona-than-kinh-gioi-leo"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Khám Da Liễu"
    },
    {
     "slug": "hiem-muon",
@@ -13793,7 +13807,8 @@ window.PULSE_DATA = {
      "dung-thuoc-an-toan",
      "hiem-muon-khi-nao-nen-di-kham"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Khám hiếm muộn"
    },
    {
     "slug": "tiem-chung",
@@ -13806,7 +13821,8 @@ window.PULSE_DATA = {
      "cac-buoc-di-kham-benh",
      "dung-thuoc-an-toan"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Tiêm Chủng"
    },
    {
     "slug": "kham-suc-khoe",
@@ -13824,7 +13840,8 @@ window.PULSE_DATA = {
      "tam-soat-som-ung-thu-dai-truc-trang",
      "tam-soat-ung-thu-co-tu-cung-pap-smear"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Khám sức khỏe"
    },
    {
     "slug": "lao-hoc",
@@ -13841,7 +13858,8 @@ window.PULSE_DATA = {
      "sa-sut-tri-tue-o-nguoi-cao-tuoi-nhan-biet-som",
      "loang-xuong-phong-gay-xuong"
     ],
-    "bacsi": []
+    "bacsi": [],
+    "dk": "Lão Học"
    }
   ]
  },
@@ -14035,8 +14053,13 @@ window.PULSE_DATA = {
    }
   ],
   "ptgmhs": {
-   "src": "video/khoa/ptgmhs.mp4?v=20261128t",
-   "poster": "video/khoa/ptgmhs.jpg?v=20261128t",
+<<<<<<< HEAD
+   "src": "video/khoa/ptgmhs.mp4?v=20261128w",
+   "poster": "video/khoa/ptgmhs.jpg?v=20261128w",
+=======
+   "src": "video/khoa/ptgmhs.mp4?v=20261128w",
+   "poster": "video/khoa/ptgmhs.jpg?v=20261128w",
+>>>>>>> origin/main
    "caption": "Video giới thiệu Khoa Phẫu thuật - Gây mê hồi sức (35 giây, có lồng tiếng)"
   }
  },

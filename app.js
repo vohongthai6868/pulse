@@ -612,14 +612,72 @@
   function unitGdskList(name) { return unitTopics(name); }
   var BOOKING_URL = "https://89338.byt.vn/kcb/dang-ky-kham";
   function cpkLink() { return el("a", { class: "cpk-link", href: "#/chon-phong-kham", text: L("Chưa biết chọn phòng khám nào? Dùng trợ lý gợi ý →", "Not sure which clinic? Use the helper →") }); }
-  function addBookingBar() {
+  // Hướng dẫn đăng ký khám bằng giọng đọc (Web Speech API, giọng tiếng Việt có sẵn trên điện thoại). 28/11/2026
+  var VOICE_STEPS = [
+    ["Bấm nút đỏ “Đăng ký khám bệnh trực tuyến”. Trang đăng ký của Bệnh viện Nhật Tân sẽ mở ra. Nếu trang hỏi về cookie, bấm “Chấp nhận”.", "Bấm nút đỏ, Đăng ký khám bệnh trực tuyến. Trang đăng ký của Bệnh viện Nhật Tân sẽ mở ra. Nếu trang hỏi về cookie, bấm Chấp nhận."],
+    ["Phần Thông tin bệnh nhân: nhập họ và tên, ngày sinh, số căn cước công dân, số điện thoại, tỉnh hoặc thành phố và phường, xã. Ô có dấu * là bắt buộc.", "Phần thông tin bệnh nhân: nhập họ và tên, ngày sinh, số căn cước công dân, số điện thoại, tỉnh hoặc thành phố, và phường, xã. Ô có dấu sao là bắt buộc."],
+    ["Phần Thông tin khám bệnh: chọn ngày khám và giờ khám (sáng 7g00 – 11g00, chiều 13g00 – 17g00). Nên đăng ký trước ít nhất 1 ngày.", "Phần thông tin khám bệnh: chọn ngày khám và giờ khám. Buổi sáng từ 7 giờ đến 11 giờ, buổi chiều từ 13 giờ đến 17 giờ. Nên đăng ký trước ít nhất một ngày."],
+    ["Chọn chuyên khoa khám. Tái khám: chọn lại đúng phòng khám cũ. Khám lần đầu hoặc chưa biết chọn phòng: gọi 0296 3562 357 để được tư vấn.", "Chọn chuyên khoa khám. Nếu tái khám, chọn lại đúng phòng khám cũ. Nếu khám lần đầu hoặc chưa biết chọn phòng nào, gọi tổng đài không hai chín sáu, ba năm sáu hai, ba năm bảy để được tư vấn."],
+    ["Nếu có bảo hiểm y tế, nhập số thẻ BHYT. Ghi ngắn gọn triệu chứng chính.", "Nếu có bảo hiểm y tế, nhập số thẻ bảo hiểm y tế. Ghi ngắn gọn triệu chứng chính."],
+    ["Đánh dấu ô “Tôi đồng ý với điều khoản sử dụng”, rồi bấm nút “ĐĂNG KÝ”.", "Đánh dấu vào ô, Tôi đồng ý với điều khoản sử dụng, rồi bấm nút Đăng ký."],
+    ["Khi đến khám, mang theo căn cước công dân, thẻ BHYT (hoặc ứng dụng VNeID); tái khám mang thêm giấy hẹn, đơn thuốc và kết quả cũ.", "Khi đến khám, nhớ mang theo căn cước công dân, thẻ bảo hiểm y tế hoặc ứng dụng V N e I D. Nếu tái khám, mang thêm giấy hẹn, đơn thuốc và kết quả cũ. Cảm ơn quý vị."]
+  ];
+  var voiceBox = null;
+  function viVoice() {
+    if (!("speechSynthesis" in window)) return null;
+    var vs = window.speechSynthesis.getVoices().filter(function (v) { return /^vi/i.test(v.lang); });
+    var f = vs.filter(function (v) { return /female|nữ|linh|hoaimy|an\b|thi|my/i.test(v.name); });
+    return f[0] || vs[0] || null;
+  }
+  function stopVoice() {
+    try { window.speechSynthesis.cancel(); } catch (e) {}
+    if (voiceBox) { voiceBox.querySelectorAll("li").forEach(function (li) { li.classList.remove("on"); }); var b = voiceBox.querySelector(".vg-play"); if (b) b.textContent = L("▶ Nghe lại", "▶ Play again"); }
+  }
+  function playVoice(box) {
+    var ok = "speechSynthesis" in window, note = box.querySelector(".vg-note");
+    if (!ok) { note.hidden = false; return; }
+    var synth = window.speechSynthesis; synth.cancel();
+    var v = viVoice(); if (!v) note.hidden = false;
+    var lis = box.querySelectorAll("li"), btn = box.querySelector(".vg-play"); btn.textContent = L("■ Dừng đọc", "■ Stop");
+    VOICE_STEPS.forEach(function (st, i) {
+      var u = new SpeechSynthesisUtterance("Bước " + (i + 1) + ". " + st[1]); u.lang = "vi-VN"; if (v) u.voice = v; u.rate = 0.92;
+      u.onstart = function () { lis.forEach(function (li) { li.classList.remove("on"); }); lis[i].classList.add("on"); lis[i].scrollIntoView({ block: "nearest", behavior: "smooth" }); };
+      if (i === VOICE_STEPS.length - 1) u.onend = function () { stopVoice(); };
+      synth.speak(u);
+    });
+  }
+  function voiceGuideBtn() {
+    var wrap = el("div", { class: "vg" });
+    var open = el("button", { type: "button", class: "vg-open", "aria-expanded": "false" }, [el("span", { class: "vg-ico", "aria-hidden": "true", text: "🔊" }), el("span", { text: L("Nghe hướng dẫn đăng ký khám", "Listen: how to book") })]);
+    var box = el("div", { class: "vg-box", hidden: "" }, [
+      el("p", { class: "vg-h", text: L("7 bước đăng ký khám trực tuyến", "7 steps to book online") }),
+      el("ol", {}, VOICE_STEPS.map(function (st) { return telify(el("li"), st[0]); })),
+      telify(el("p", { class: "vg-note", hidden: "" }), L("Điện thoại chưa có giọng đọc tiếng Việt. Quý vị đọc các bước ở trên, hoặc gọi 0296 3562 357 để được hướng dẫn.", "No Vietnamese voice on this device. Please read the steps above or call 0296 3562 357.")),
+      el("div", { class: "vg-acts" }, [
+        el("button", { type: "button", class: "vg-play", text: L("■ Dừng đọc", "■ Stop") }),
+        el("a", { class: "vg-go", href: BOOKING_URL, target: "_blank", rel: "noopener", text: L("Mở trang đăng ký →", "Open booking page →") })
+      ])
+    ]);
+    open.addEventListener("click", function () {
+      var show = box.hidden; box.hidden = !show; open.setAttribute("aria-expanded", show ? "true" : "false");
+      if (show) { if (voiceBox && voiceBox !== box) { voiceBox.hidden = true; } stopVoice(); voiceBox = box; playVoice(box); } else stopVoice();
+    });
+    box.querySelector(".vg-play").addEventListener("click", function () { if (/Dừng|Stop/.test(this.textContent)) stopVoice(); else playVoice(box); });
+    wrap.appendChild(open); wrap.appendChild(box); return wrap;
+  }
+  if ("speechSynthesis" in window) { try { window.speechSynthesis.getVoices(); window.speechSynthesis.onvoiceschanged = function () {}; } catch (e) {} }
+  window.addEventListener("hashchange", stopVoice);
+  (function () { var hb = document.querySelector(".hero-booking-note") || document.querySelector(".hero .btn-booking"); if (hb) hb.parentNode.insertBefore(voiceGuideBtn(), hb.nextSibling); })();
+  function pkTip(x) { return x && x.dk ? L("Trang đăng ký của bệnh viện mở ra. Ở ô “Chuyên khoa khám”, chọn: " + x.dk, "On the booking page, under specialty choose: " + x.dk) : ""; }
+  function addBookingBar(pk) {
     var bar = el("a", { class: "booking-bar", href: BOOKING_URL, target: "_blank", rel: "noopener" }, [
-      el("span", { class: "booking-bar-txt" }, [el("strong", { text: L("ĐĂNG KÝ KHÁM BỆNH TRỰC TUYẾN", "BOOK AN APPOINTMENT ONLINE") }), el("span", { text: L("Khám lần đầu hoặc đổi phòng khám: gọi 0296 3562 357 để được tư vấn chọn phòng · Tái khám: chọn lại phòng khám cũ", "First visit or new clinic: call for advice · Follow-up: choose your previous clinic") })]),
+      el("span", { class: "booking-bar-txt" }, [el("strong", { text: pk ? L("ĐĂNG KÝ KHÁM " + pk.name.toUpperCase(), "BOOK " + pk.name.toUpperCase()) : L("ĐĂNG KÝ KHÁM BỆNH TRỰC TUYẾN", "BOOK AN APPOINTMENT ONLINE") }), el("span", { text: pk ? pkTip(pk) : L("Khám lần đầu hoặc đổi phòng khám: gọi 0296 3562 357 để được tư vấn chọn phòng · Tái khám: chọn lại phòng khám cũ", "First visit or new clinic: call for advice · Follow-up: choose your previous clinic") })]),
       el("span", { class: "booking-bar-go", "aria-hidden": "true", text: "→" }),
     ]);
     var intro = pageView.querySelector(".page-intro");
     if (intro && intro.nextSibling) pageView.insertBefore(bar, intro.nextSibling); else pageView.appendChild(bar);
-    if (DATA.trolyPK) bar.parentNode.insertBefore(cpkLink(), bar.nextSibling);
+    bar.parentNode.insertBefore(voiceGuideBtn(), bar.nextSibling);
+    if (DATA.trolyPK) bar.parentNode.insertBefore(cpkLink(), bar.nextSibling.nextSibling);
   }
   function pkGuide() {
     var P = DATA.phongkham;
@@ -627,6 +685,7 @@
       el("h2", { text: L("Hướng dẫn đăng ký khám trực tuyến", "How to book online") }),
       el("ul", {}, P.huongdan.map(function (x) { return telify(el("li"), x); })),
       el("p", { class: "unit-guide-hint", text: L("Giờ khám: ", "Hours: ") + P.gio }),
+      voiceGuideBtn(),
       DATA.trolyPK ? cpkLink() : null,
     ].filter(Boolean));
   }
@@ -636,7 +695,8 @@
       el("h2", { text: L("Phòng khám chuyên khoa (" + P.items.length + ")", "Specialty clinics") }),
       el("p", { class: "unit-guide-hint", text: P.intro }),
       el("ul", { class: "pk-list" }, P.items.map(function (x) {
-        return el("li", {}, [el("a", { href: "#/phong-kham/" + x.slug }, [el("span", { class: "pk-name", text: x.name })])]);
+        return el("li", { class: "pk-li" }, [el("a", { href: "#/phong-kham/" + x.slug }, [el("span", { class: "pk-name", text: x.name })]),
+          el("a", { class: "pk-book", href: BOOKING_URL, target: "_blank", rel: "noopener", title: pkTip(x), "aria-label": L("Đăng ký khám ", "Book ") + x.name, text: L("Đăng ký →", "Book →") })]);
       })),
     ]);
   }
@@ -677,7 +737,7 @@
     pageView.appendChild(el("span", { class: "tag", style: "--c:#0b4f9c", text: L("Phòng khám", "Clinic") }));
     pageView.appendChild(el("h1", { class: "page-title", text: x.name }));
     pageView.appendChild(el("p", { class: "page-intro", text: L("Thuộc Khoa Khám bệnh, Bệnh viện Đa khoa Nhật Tân. Giờ khám: ", "Outpatient department, Nhat Tan General Hospital. Hours: ") + P.gio + "." }));
-    addBookingBar();
+    addBookingBar(x);
     pageView.appendChild(pkGuide());
     var tps = x.topics.map(function (s) { return DATA.gdsk.topics.filter(function (t) { return t.slug === s; })[0]; }).filter(Boolean);
     pageView.appendChild(el("section", { class: "page-section unit-gdsk" }, [el("h2", { text: L("Bài giáo dục sức khỏe nên đọc", "Health education articles") }),
@@ -713,7 +773,8 @@
     function bookBtn(x) { return el("a", { class: "cpk-book", href: BOOKING_URL, target: "_blank", rel: "noopener", text: L("Đăng ký khám ", "Book ") + (x ? x.name.replace(/^Phòng khám /, "") : "") + " →" }); }
     function card(x, why) {
       return el("li", { class: "cpk-res" }, [el("strong", { text: x.name }), why ? el("span", { class: "cpk-why", text: why }) : null,
-        el("span", { class: "cpk-act" }, [bookBtn(x), el("a", { href: "#/phong-kham/" + x.slug, text: L("Xem phòng khám", "Clinic page") })])].filter(Boolean));
+        el("span", { class: "cpk-act" }, [bookBtn(x), el("a", { href: "#/phong-kham/" + x.slug, text: L("Xem phòng khám", "Clinic page") })]),
+        x.dk ? el("span", { class: "cpk-tip", text: pkTip(x) }) : null].filter(Boolean));
     }
     function draw() {
       box.textContent = "";
